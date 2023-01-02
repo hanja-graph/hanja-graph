@@ -52,7 +52,7 @@ const importDB = async (dbData) => {
 export const getOPFSQueryFunctions = () => {
   return {
     queryDB: queryDB,
-    exportDB: queryDB,
+    exportDB: exportDB,
     importDB: importDB,
   };
 };

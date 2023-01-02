@@ -60,7 +60,7 @@ const importDB = async (dbData) => {
 export const getKVVFSQueryFunctions = () => {
   return {
     queryDB: queryDB,
-    exportDB: queryDB,
+    exportDB: exportDB,
     importDB: importDB,
   };
 };
