@@ -28,7 +28,13 @@ people use it.
 ## The graph-like nature of East Asian languages
 While reviewing and studying vocabulary in Korean, the inevitable conclusion one reaches is that
 Hanja word roots are a very useful learning tool. I'm not the first to think this; see 
-*Handbook**of**Korean**Vocabulary*.
+*Handbook of Korean Vocabulary*.
+
+It can be thought of as a Graph-like structure. If each Korean word consisting of multiple Hanja
+roots is a graph node, and so are individual Hanja, a word node is connected to its' requisite
+Hanja node. We can traverse this graph from one word node to nearby word nodes, and words that
+have low topological distance from one another tend to have similar meanings. This is practically
+useful for a couple of reasons.
 
 * Anecdotally, words for which one already has internalized words that share one or more Hanja are 
   much easier to learn than otherwise. I've reached the point where I don't even add a word to 
@@ -110,6 +116,8 @@ Following the above observations, we focus on creating a review flow based on th
 * A card view that allows the user to naturally see words that are connected through roots that they know.
 * A review scheduling algorithm that schedules cards based on whether one has seen related words recently 
   (and thereby implicitly reviewed that word).
-* A focus on generating sight words for reading by exercising L2 word comprehension without considering
-  increasing the likelihood of spontaneous usage of words in L1. In other words, breadth, not depth.
+* L2 to L1 cards only, since an explicit non-goal of this project is improving functional vocabulary
+  directly.
+* Shades of meaning conveyed through example sentences in Korean, not the addition of additional English 
+  synonyms.
 * Aggressive deduplication of words that differ only in their grammatical usage and not essential meaning.
