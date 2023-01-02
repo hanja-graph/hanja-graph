@@ -85,7 +85,6 @@ function CardWrapper() {
   let { cardId } = useParams();
   const navigate = useNavigate();
   const [cardIdText, setCardIdText] = useState("");
-  const [cardIdTextIsValid, setCardIdTextIsValid] = useState(false);
   const goToCard = (_e: React.MouseEvent<HTMLElement>) => {
     if (cardIdText.length > 0) {
       const newCardId = parseInt(cardIdText);
@@ -108,17 +107,10 @@ function CardWrapper() {
           type="text"
           value={cardIdText}
           onChange={(e) => {
-            setCardIdTextIsValid(false);
             setCardIdText(e.target.value);
-            const newCardId = parseInt(cardIdText);
-            if (cardIdText.length > 0 && newCardId != NaN) {
-              setCardIdTextIsValid(true);
-            }
           }}
         />
-        <button onClick={goToCard} disabled={!cardIdTextIsValid}>
-          Go
-        </button>
+        <button onClick={goToCard}>Go</button>
       </div>
     );
   }
