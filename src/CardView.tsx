@@ -125,9 +125,9 @@ export default class CardView extends React.Component<
                   }
                 }
                 const englishMeaningQuery = `SELECT definition FROM hanja_definition WHERE hanjas = "${hanja}"`;
-                const englishMeaningQueryResult =
-                  queryDictionary(englishMeaningQuery);
-                console.log(englishMeaningQueryResult);
+                const englishMeaningQueryResult = await queryDictionary(
+                  englishMeaningQuery
+                );
                 let englishMeaning = "";
                 if (englishMeaningQueryResult.length > 0) {
                   const englishMeaningValues =
