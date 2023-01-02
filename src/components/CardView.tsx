@@ -103,8 +103,7 @@ export default class CardView extends React.Component<
           const siblingsLists: Array<SiblingsViewProps> = [];
           for (let i = 0; i < word.hanja.length; i++) {
             const hanja = word.hanja[i];
-            const hangul = word.hangul[i];
-            const siblings = await getSiblings(hanja, hangul);
+            const siblings = await getSiblings(hanja, word.hangul);
             let englishMeaning = await getEnglishDefinitionForHanja(hanja);
             siblingsLists.push({
               siblings: siblings,

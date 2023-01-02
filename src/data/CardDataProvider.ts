@@ -84,10 +84,10 @@ export async function getEnglishDefinitionForHanja(
 
 export async function getSiblings(
   hanja: string,
-  hangul: string
+  hangulWord: string
 ): Promise<Array<Word>> {
-  assertCharacter(hangul);
-  const hanjaQuery = `SELECT hanja, hangul, english FROM hanjas WHERE hanja LIKE '%${hanja}%' AND hangul != '${hangul}';`;
+  assertCharacter(hanja);
+  const hanjaQuery = `SELECT hanja, hangul, english FROM hanjas WHERE hanja LIKE '%${hanja}%' AND hangul != '${hangulWord}';`;
   const hanjaQueryResult = await queryDictionary(hanjaQuery);
   const siblings = [];
   if (hanjaQueryResult.values.length > 0) {
