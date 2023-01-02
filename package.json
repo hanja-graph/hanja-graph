@@ -8,10 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@jlongster/sql.js": "^1.6.7",
     "absurd-sql": "^0.0.53",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "@jlongster/sql.js": "^1.6.7"
+    "reactjs-popup": "^2.0.5"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",
