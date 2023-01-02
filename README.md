@@ -2,6 +2,9 @@
 A flash card program for Korean vocabulary that utilizes the Hanja word roots
 to help you form associations between related words.
 
+For more information on the intent and design of this project, please see the
+[design](design/README.md) section.
+
 ## Instructions
 ### Developing
 First, install [node.js](https://nodejs.org/en/download/). Then,
