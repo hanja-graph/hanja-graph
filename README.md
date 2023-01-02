@@ -7,7 +7,7 @@ For more information on the intent and design of this project, please see the
 
 # A production version of the app is deployed here:
 * [DB browser](https://hanja-graph.github.io/hanja-graph/index.html?app=repl) - to debug the development database.
-* [Card browser](https://hanja-graph.github.io/hanja-graph/index.html?app=card&card_id=4).
+* [Card browser](https://hanja-graph.github.io/hanja-graph/index.html?app=card&card_id=1).
 * [Insert](https://hanja-graph.github.io/hanja-graph/index.html?app=insert) - Insert a card.
 
 ## Instructions
