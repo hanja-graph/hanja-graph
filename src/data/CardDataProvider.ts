@@ -7,6 +7,7 @@ export const initializeAndSeedDictionary = async () => {
   if (selectFromHanjasResult.error) {
     console.log("Seeding dictionary.");
     await queryDictionary(hanjaDictionarySeed);
+    console.log("Done seeding dictionary.");
   } else {
     console.log("no need to seed");
   }

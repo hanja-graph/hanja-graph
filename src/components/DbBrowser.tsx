@@ -4,6 +4,7 @@ import {
   exportDatabase,
   importDatabase,
 } from "../db/CardDatabase.js";
+import { initializeAndSeedDictionary } from "../data/CardDataProvider";
 import { Component } from "react";
 
 class ReplProps {}
@@ -91,6 +92,11 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
     reader.readAsArrayBuffer(file);
   }
 
+  async clearDatabase() {
+    await importDatabase(new ArrayBuffer(0));
+    await initializeAndSeedDictionary();
+  }
+
   render() {
     return (
       <div>
@@ -116,6 +122,9 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
         <div>
           <button onClick={this.importDatabase.bind(this)}>Import</button>
           <input id="fileItem" type="file"></input>
+        </div>
+        <div>
+          <button onClick={this.clearDatabase.bind(this)}>Clear</button>
         </div>
       </div>
     );
