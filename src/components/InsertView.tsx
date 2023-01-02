@@ -3,7 +3,7 @@ import { AddHanjaView, AddHanjaViewState } from "./AddHanjaView";
 import { Dropdown } from "./Dropdown";
 import {
   getHangulforHanja,
-  addHanjasWord,
+  addWord,
   addHanjaWordAndDefinition,
 } from "../data/CardDataProvider";
 
@@ -62,7 +62,7 @@ export default class InsertView extends React.Component<
     console.log(
       `Adding ${this.state.hanjaWord}, ${hangul}, ${this.state.englishMeaning}`
     );
-    addHanjasWord(this.state.hanjaWord, hangul, this.state.englishMeaning);
+    addWord(this.state.hanjaWord, hangul, this.state.englishMeaning);
   }
 
   addHanjaWord(hanjaState: AddHanjaViewState) {

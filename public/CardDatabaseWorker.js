@@ -17,14 +17,18 @@
  * initialize.
  */
 importScripts(["./jswasm/sqlite3.js"]);
-const DICTIONARY_DB_STORAGE_PATH = "/sql/card_db.sqlite";
+const CONFIG = {
+  print: console.log,
+  printErr: console.error,
+};
+const DICTIONARY_DB_FILE_NAME = "card_db.sqlite";
 let dictionaryDBSingleton = undefined;
 let sqlite3Singleton;
 
 const initDBEngine = async function () {
   if (!sqlite3Singleton) {
     try {
-      const newSqlite3Singleton = await sqlite3InitModule();
+      const newSqlite3Singleton = await sqlite3InitModule(CONFIG);
       const capi = newSqlite3Singleton.capi;
       if (!capi.sqlite3_vfs_find("opfs") || !newSqlite3Singleton.opfs) {
         return undefined;
@@ -63,7 +67,7 @@ onmessage = async function (e) {
     }
     const dictionaryDB = await mountDictionaryDatabase(
       dbEngine,
-      DICTIONARY_DB_STORAGE_PATH
+      DICTIONARY_DB_FILE_NAME
     );
     if (!dictionaryDB) {
       postMessage({
@@ -85,7 +89,7 @@ onmessage = async function (e) {
     const dbEngine = await initDBEngine();
     const dictionaryDB = await mountDictionaryDatabase(
       dbEngine,
-      DICTIONARY_DB_STORAGE_PATH
+      DICTIONARY_DB_FILE_NAME
     );
     try {
       const resultRows = [];
@@ -121,40 +125,49 @@ onmessage = async function (e) {
     const dbEngine = await initDBEngine();
     const dictionaryDB = await mountDictionaryDatabase(
       dbEngine,
-      DICTIONARY_DB_STORAGE_PATH
+      DICTIONARY_DB_FILE_NAME
     );
     const dbArr = dbEngine.capi.sqlite3_js_db_export(dictionaryDB.pointer);
     postMessage({
       buffer: dbArr.buffer,
     });
   } else if (e.data["type"] !== undefined && e.data["type"] == "import") {
+    const dbData = e.data["buffer"];
+    if (!dbData) {
+      postMessage({
+        status: false,
+        reason: "No buffer provided.",
+      });
+    }
     try {
       const dbEngine = await initDBEngine();
-      const dictionaryDB = await mountDictionaryDatabase(
+      let dictionaryDB = await mountDictionaryDatabase(
         dbEngine,
-        DICTIONARY_DB_STORAGE_PATH
+        DICTIONARY_DB_FILE_NAME
       );
-      const dbData = e.data["buffer"];
-      if (!dbData) {
-        postMessage({
-          status: false,
-          reason: "No buffer provided.",
-        });
-      }
-      const bytes = new Uint8Array(dbData);
-      const p = dbEngine.wasm.allocFromTypedArray(bytes);
-      dbEngine.capi.sqlite3_deserialize(
-        dictionaryDB.pointer,
-        "main",
-        p,
-        bytes.length,
-        bytes.length,
-        dbEngine.capi.SQLITE_DESERIALIZE_FREEONCLOSE
+      dictionaryDB.close();
+      const opfs = dbEngine.opfs;
+      await opfs.rmfr("/sql");
+      const root = await navigator.storage.getDirectory();
+      const dbFileHandle = await root.getFileHandle(DICTIONARY_DB_FILE_NAME, {
+        create: true,
+      });
+      const dbAccessHandle = await dbFileHandle.createSyncAccessHandle();
+      const view = new DataView(dbData);
+      const writtenSize = dbAccessHandle.write(view);
+      await dbAccessHandle.flush();
+      await dbAccessHandle.close();
+      console.log(`Read ${writtenSize} bytes.`);
+      dictionaryDBSingleton = undefined;
+      dictionaryDB = await mountDictionaryDatabase(
+        dbEngine,
+        "/" + DICTIONARY_DB_FILE_NAME
       );
       postMessage({
         status: true,
       });
     } catch (e) {
+      console.log(e);
       postMessage({
         status: false,
         reason: e.message,

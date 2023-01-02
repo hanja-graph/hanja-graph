@@ -1,10 +1,14 @@
 let dictionaryDBSingleton = undefined;
 let sqlite3Singleton = undefined;
+const CONFIG = {
+  print: console.log,
+  printErr: console.error,
+};
 
 const initDBEngine = async function () {
   if (!sqlite3Singleton) {
     console.log("Loading sqlite3 module");
-    sqlite3Singleton = await sqlite3InitModule();
+    sqlite3Singleton = await sqlite3InitModule(CONFIG);
     const capi = sqlite3Singleton.capi;
     console.log(
       `sqlite3 version=${capi.sqlite3_libversion()}, sourceId=${capi.sqlite3_sourceid()}`
