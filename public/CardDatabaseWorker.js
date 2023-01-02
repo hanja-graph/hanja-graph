@@ -134,7 +134,13 @@ onmessage = async function (e) {
         dbEngine,
         DICTIONARY_DB_STORAGE_PATH
       );
-      const dbData = e.data["bytes"];
+      const dbData = e.data["buffer"];
+      if (!dbData) {
+        postMessage({
+          status: false,
+          reason: "No buffer provided.",
+        });
+      }
       const bytes = new Uint8Array(dbData);
       const p = dbEngine.wasm.allocFromTypedArray(bytes);
       dbEngine.capi.sqlite3_deserialize(
