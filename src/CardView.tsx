@@ -60,8 +60,10 @@ class SiblingsView extends React.Component<SiblingsViewProps, any> {
 
   render() {
     let rows = [];
+    let i = 0;
     for (const elem of this.props.siblings) {
-      rows.push(<SiblingView word={elem} />);
+      rows.push(<SiblingView key={i} word={elem} />);
+      i++;
     }
     return (
       <div>
@@ -167,6 +169,7 @@ export default class CardView extends React.Component<
             <Popup
               trigger={<button>{this.state.word.hangul[i]}</button>}
               position="right top"
+              key={i}
             >
               <div>
                 <SiblingsView
