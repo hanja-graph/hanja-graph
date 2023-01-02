@@ -2,6 +2,7 @@ import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { queryDictionary } from "../db/CardDatabase.js";
+import { getSiblings } from "../data/CardDataProvider.js";
 
 class CardViewProps {
   constructor(readonly cardId: number) {}
@@ -107,19 +108,7 @@ export default class CardView extends React.Component<
               const english = String(value[2]);
               const siblingsLists: Array<SiblingsViewProps> = [];
               for (const hanja of hanjas) {
-                const hanjaQuery = `SELECT hanja, hangul, english FROM hanjas WHERE hanja LIKE "%${hanja}%" AND hangul != "${hangul}";`;
-                const hanjaQueryResult = await queryDictionary(hanjaQuery);
-                const siblings = [];
-                if (hanjaQueryResult.length > 0) {
-                  const siblingResults = hanjaQueryResult[0].values;
-                  for (const rec of siblingResults) {
-                    if (rec.length == 3) {
-                      siblings.push(
-                        new Word(String(rec[0]), String(rec[1]), String(rec[2]))
-                      );
-                    }
-                  }
-                }
+                const siblings = await getSiblings(hanja, hangul);
                 const englishMeaningQuery = `SELECT definition FROM hanja_definition WHERE hanjas = "${hanja}"`;
                 const englishMeaningQueryResult = await queryDictionary(
                   englishMeaningQuery
