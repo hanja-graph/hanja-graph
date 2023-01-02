@@ -51,6 +51,14 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
   async exportDatabase() {
     try {
       const resultDump = await exportDatabase();
+      console.log(resultDump);
+      const blob = new Blob([resultDump], { type: "application/octet-stream" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "card-db.sqlite");
+      document.body.appendChild(link);
+      link.click();
     } catch (err) {
       const error = err as Error;
       this.setError(error.toString());

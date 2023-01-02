@@ -49,8 +49,10 @@ export const queryDB = async (query) => {
 };
 
 const exportDB = async () => {
-  // TODO
-  return "";
+  const dbEngine = await initDBEngine();
+  const dictionaryDB = await createOrGetDatabase();
+  const dbArr = dbEngine.capi.sqlite3_js_db_export(dictionaryDB.pointer);
+  return dbArr.buffer;
 };
 
 const importDB = async (dbData) => {

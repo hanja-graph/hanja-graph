@@ -118,5 +118,9 @@ onmessage = async function (e) {
       dbEngine,
       DICTIONARY_DB_STORAGE_PATH
     );
+    const dbArr = dbEngine.capi.sqlite3_js_db_export(dictionaryDB.pointer);
+    postMessage({
+      buffer: dbArr.buffer,
+    });
   }
 };

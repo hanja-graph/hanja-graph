@@ -41,8 +41,15 @@ export const queryDB = async (query) => {
 };
 
 const exportDB = async () => {
-  // TODO
-  return "";
+  return new Promise((resolve) => {
+    const dbWorker = createOrGetDbWorker();
+    dbWorker.onmessage = function (e) {
+      resolve(e.data.buffer);
+    };
+    dbWorker.postMessage({
+      type: "export",
+    });
+  });
 };
 
 const importDB = async (dbData) => {

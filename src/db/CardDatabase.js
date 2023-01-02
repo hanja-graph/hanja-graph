@@ -35,12 +35,6 @@ export const queryDictionary = async (query) => {
 };
 
 export const exportDatabase = async () => {
-  const opfsInitResponse = await initOPFSWorker();
-  if (!opfsInitResponse.initSucceeded) {
-    console.log("init failed");
-  }
-  console.log(opfsInitResponse);
-  const q = "SELECT * FROM hanjas LIMIT 2;";
-  const res = await queryDictionary(q);
-  console.log(res);
+  const dbProvider = await initializeQueryProvider();
+  return dbProvider.exportDB();
 };
