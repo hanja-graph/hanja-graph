@@ -39,8 +39,6 @@ export async function getHangulforHanja(hanja: string): Promise<Array<string>> {
   if (result.values.length == 0) {
     return [];
   }
-  console.log(result);
-  //return result[0].values[0].toString();
   return result.values.map((elem) => elem.toString());
 }
 
@@ -90,8 +88,6 @@ export async function getSiblings(
   const hanjaQuery = `SELECT hanja, hangul, english FROM hanjas WHERE hanja LIKE '%${hanja}%' AND hangul != '${hangul}';`;
   const hanjaQueryResult = await queryDictionary(hanjaQuery);
   const siblings = [];
-  console.log(hanjaQuery);
-  console.log(hanjaQueryResult);
   if (hanjaQueryResult.values.length > 0) {
     const siblingResults = hanjaQueryResult.values;
     for (const rec of siblingResults) {
