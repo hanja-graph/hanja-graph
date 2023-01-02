@@ -2,7 +2,7 @@ import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { queryDictionary } from "../db/CardDatabase.js";
-import { getSiblings } from "../data/CardDataProvider.js";
+import { getWord, getSiblings } from "../data/CardDataProvider.js";
 
 class CardViewProps {
   constructor(readonly cardId: number) {}
@@ -96,44 +96,35 @@ export default class CardView extends React.Component<
   componentDidMount() {
     const queryData = async () => {
       try {
-        const query = `SELECT c0hanja, c1hangul, c2english FROM hanjas_content WHERE docid = ${this.props.cardId};`;
-        const queryResult = await queryDictionary(query);
-        if (queryResult.length > 0) {
-          const values = queryResult[0]["values"];
-          if (values.length > 0) {
-            const value = values[0];
-            if (value.length == 3) {
-              const hanjas = String(value[0]);
-              const hangul = String(value[1]);
-              const english = String(value[2]);
-              const siblingsLists: Array<SiblingsViewProps> = [];
-              for (const hanja of hanjas) {
-                const siblings = await getSiblings(hanja, hangul);
-                const englishMeaningQuery = `SELECT definition FROM hanja_definition WHERE hanjas = "${hanja}"`;
-                const englishMeaningQueryResult = await queryDictionary(
-                  englishMeaningQuery
-                );
-                let englishMeaning = "";
-                if (englishMeaningQueryResult.length > 0) {
-                  const englishMeaningValues =
-                    englishMeaningQueryResult[0].values;
-                  if (englishMeaningValues.length > 0) {
-                    englishMeaning = String(englishMeaningValues[0]);
-                  }
-                }
-                siblingsLists.push({
-                  siblings: siblings,
-                  hanja: hanja,
-                  englishMeaning: englishMeaning,
-                });
+        const word = await getWord(this.props.cardId);
+        if (word) {
+          const siblingsLists: Array<SiblingsViewProps> = [];
+          for (let i = 0; i < word.hanja.length; i++) {
+            const hanja = word.hanja[i];
+            const hangul = word.hangul[i];
+            const siblings = await getSiblings(hanja, hangul);
+            const englishMeaningQuery = `SELECT definition FROM hanja_definition WHERE hanjas = "${hanja}"`;
+            const englishMeaningQueryResult = await queryDictionary(
+              englishMeaningQuery
+            );
+            let englishMeaning = "";
+            if (englishMeaningQueryResult.length > 0) {
+              const englishMeaningValues = englishMeaningQueryResult[0].values;
+              if (englishMeaningValues.length > 0) {
+                englishMeaning = String(englishMeaningValues[0]);
               }
-              this.setState({
-                status: undefined,
-                word: new Word(hanjas, hangul, english),
-                siblings: siblingsLists,
-              });
             }
+            siblingsLists.push({
+              siblings: siblings,
+              hanja: hanja,
+              englishMeaning: englishMeaning,
+            });
           }
+          this.setState({
+            status: undefined,
+            word: word,
+            siblings: siblingsLists,
+          });
         }
       } catch (err) {
         // TODO: Set component to a show an error

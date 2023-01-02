@@ -22,6 +22,24 @@ export async function getHangulforHanja(
   return result[0].values[0].toString();
 }
 
+export async function getWord(cardId: number): Promise<Word | undefined> {
+  const query = `SELECT c0hanja, c1hangul, c2english FROM hanjas_content WHERE docid = ${cardId};`;
+  const queryResult = await queryDictionary(query);
+  if (queryResult.length > 0) {
+    const values = queryResult[0]["values"];
+    if (values.length > 0) {
+      const value = values[0];
+      if (value.length == 3) {
+        const hanja = String(value[0]);
+        const hangul = String(value[1]);
+        const english = String(value[2]);
+        return new Word(hanja, hangul, english);
+      }
+    }
+  }
+  return undefined;
+}
+
 export async function getSiblings(
   hanja: string,
   hangul: string
