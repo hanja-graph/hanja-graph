@@ -1,11 +1,24 @@
-import { useState } from "react";
+import { useState, Component } from "react";
 import "./App.css";
-import { initCardDB } from "./CardDatabase.js";
+import { runQuery } from "./CardDatabase.js";
 
-function App() {
-  initCardDB();
-  const [count, setCount] = useState(0);
-  return <div className="App">{"FooBar"}</div>;
+class AppProps {}
+
+class AppState {}
+
+export default class App extends Component<AppProps, AppState> {
+  constructor(props: AppProps) {
+    super(props);
+    this.state = new AppState();
+  }
+  componentDidMount() {
+    const startDb = async () => {
+      const queryResult = await runQuery("SELECT * FROM hello;");
+      console.log(queryResult);
+    };
+    startDb();
+  }
+  render() {
+    return <div>{"Foo"}</div>;
+  }
 }
-
-export default App;

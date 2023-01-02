@@ -31,17 +31,34 @@ const initDB = async function () {
     PRAGMA journal_mode=MEMORY;
   `);
   console.log("Done.");
+  return db;
+};
+
+let db = undefined;
+
+const setupDB = async () => {
+  console.log("create table");
+  try {
+    db.exec("CREATE TABLE hello (a int, b char);");
+  } catch (e) {
+    console.log(`error: ${e}`);
+  }
+  console.log("insert values");
+  try {
+    db.exec("INSERT INTO hello VALUES (0, 'hello');");
+    db.exec("INSERT INTO hello VALUES (1, 'world');");
+  } catch (e) {
+    console.log(`error: ${e}`);
+  }
 };
 
 onmessage = async function (e) {
-  await initDB();
-  console.log("Worker: Message received from main script");
-  const result = e.data[0] * e.data[1];
-  if (isNaN(result)) {
-    postMessage("Please write two numbers");
-  } else {
-    const workerResult = "Result: " + result;
-    console.log("Worker: Posting message back to main script");
-    postMessage(workerResult);
+  console.log("setup");
+  if (!db) {
+    db = await initDB();
   }
+  await setupDB();
+
+  const result = db.exec(e.data);
+  postMessage(result);
 };
