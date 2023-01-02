@@ -88,7 +88,8 @@ function CardWrapper() {
   const goToCard = (_e: React.MouseEvent<HTMLElement>) => {
     if (cardIdText.length > 0) {
       const newCardId = parseInt(cardIdText);
-      if (newCardId != NaN) {
+      console.log(newCardId);
+      if (!isNaN(newCardId)) {
         navigate(`/cards/${newCardId}`);
       }
     }
@@ -110,7 +111,9 @@ function CardWrapper() {
             setCardIdText(e.target.value);
           }}
         />
-        <button onClick={goToCard}>Go</button>
+        <button onClick={goToCard} disabled={isNaN(parseInt(cardIdText))}>
+          Go
+        </button>
       </div>
     );
   }
