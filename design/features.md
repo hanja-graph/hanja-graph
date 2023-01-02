@@ -9,7 +9,7 @@ means that your decks and progress can always be persisted. The card review sche
 mechanism is thoughtful and effective. The creator of this project has used this tool 
 to good effect for over 10 years. There isn't even the need to mention alternatives.
 
-# Compound temporal interest
+# Compound interest
 So if Anki is good enough and has traction, why squirt yet another open source project into
 the aether? Won't it be ignored?
 
@@ -30,7 +30,7 @@ While reviewing and studying vocabulary in Korean, the inevitable conclusion one
 Hanja word roots are a very useful learning tool. I'm not the first to think this; see 
 *Handbook**of**Korean**Vocabulary*.
 
-* Anecdotally, ords for which one already has internalized words that share one or more Hanja are 
+* Anecdotally, words for which one already has internalized words that share one or more Hanja are 
   much easier to learn than otherwise. I've reached the point where I don't even add a word to 
   my flash card deck if I don't recognize at least one of the underlying Hanja roots, because 
   it's such a waste of time to try to memorize it.
@@ -44,7 +44,33 @@ Hanja word roots are a very useful learning tool. I'm not the first to think thi
   chance of knowing when to use each word - 판결 for formal decisions by official bodies, "결정" as 
   less formal or personal resolutions or conclusions.
 
-## Enabling reading for pleasure by leveraging word roots
+## Decoupling grammar from meaning
+Different parts of speech are formed through Korean grammatical patterns, so the same word root can
+be a part of several Korean "words" that can be seen as a grammatical conjugation of that word root.
+For example:
+
+계산 is present in the following words:
+
+계산 - A calculation
+계산하다 - To calculate
+계산적이다 - Computational, of or relating to computation or calculation
+
+Or for 번덕:
+
+변덕 - Whim
+변덕스럽다 - Whimsical
+변덕을 부리다- To behave whimsically
+
+Language learners can easily know one of these and guess the others through context.
+
+Dictionaries such as [Naver](https://endic.naver.com) list all of these words individually. When 
+constructing flash card decks, it's very easy to end up with all of these in your deck despite
+features of that program which would prevent duplicates.
+
+Preventing duplication through schematization and uniqueness constraints prevents this, meaning less
+irrelevant information and a greater ability of the scheduling algorithm to develop balanced study sets.
+
+## Enabling reading for pleasure
 Language production and comprehension are very complex tasks. The traditional breakdown into reading,
 writing, listening, and  speaking is very useful because one can be very good at one or two of these things
 while being hopeless at the other.
@@ -80,8 +106,10 @@ and more genuine pleasure and interest.
 
 # Differentiating features of this project
 Following the above observations, we focus on creating a review flow based on the following principles.
+
 * A card view that allows the user to naturally see words that are connected through roots that they know.
 * A review scheduling algorithm that schedules cards based on whether one has seen related words recently 
   (and thereby implicitly reviewed that word).
 * A focus on generating sight words for reading by exercising L2 word comprehension without considering
   increasing the likelihood of spontaneous usage of words in L1. In other words, breadth, not depth.
+* Aggressive deduplication of words that differ only in their grammatical usage and not essential meaning.
