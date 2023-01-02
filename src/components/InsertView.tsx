@@ -1,5 +1,6 @@
 import React from "react";
 import { AddHanjaView, AddHanjaViewState } from "./AddHanjaView";
+import { Dropdown } from "./Dropdown";
 import {
   getHangulforHanja,
   addHanjaWordAndDefinition,
@@ -9,9 +10,9 @@ class InsertViewProps {}
 class InsertViewState {
   constructor(
     readonly hanjaWord: string = "",
-    readonly hangulWord: string = "",
-    readonly hanjaToHangulMemo: Map<string, string> = new Map(),
-    readonly undefinedHanjas: Set<string> = new Set()
+    readonly hangulWord: Array<Array<string>> = [],
+    readonly undefinedHanjas: Set<string> = new Set(),
+    readonly selectedHangul: Array<number> = []
   ) {}
 }
 
@@ -29,27 +30,19 @@ export default class InsertView extends React.Component<
       ...this.state,
     };
     newState.hanjaWord = e.target.value;
-    let hangulWord = "";
     this.setState({
       ...this.state,
       hanjaWord: e.target.value,
     });
+    newState.hangulWord = [];
     newState.undefinedHanjas = new Set();
-    for (const hanjaChar of e.target.value) {
-      if (newState.hanjaToHangulMemo.has(hanjaChar)) {
-        hangulWord = hangulWord + newState.hanjaToHangulMemo.get(hanjaChar);
-      } else {
-        const hangulChar = await getHangulforHanja(hanjaChar);
-        if (hangulChar) {
-          hangulWord = hangulWord + hangulChar;
-          newState.hanjaToHangulMemo.set(hanjaChar, hangulChar);
-        } else {
-          newState.undefinedHanjas.add(hanjaChar);
-          hangulWord = hangulWord + "?";
-        }
-      }
+    for (let i = 0; i < e.target.value.length; i++) {
+      const hanjaChar = e.target.value[i];
+      const hangulChars = await getHangulforHanja(hanjaChar);
+      newState.hangulWord.push(hangulChars);
+      newState.selectedHangul.push(0);
     }
-    newState.hangulWord = hangulWord;
+    console.log(newState);
     this.setState(newState);
   }
 
@@ -66,6 +59,18 @@ export default class InsertView extends React.Component<
     );
   }
 
+  onSelectionChange(i: number, e: React.ChangeEvent<HTMLSelectElement>) {
+    console.log(i);
+    console.log(e);
+    const newState = { ...this.state };
+    const selectedIdx = this.state.hangulWord[i].findIndex(
+      (val) => val == e.target.value
+    );
+    console.log(selectedIdx);
+    newState.selectedHangul[i] = selectedIdx;
+    this.setState(newState);
+  }
+
   render() {
     let hanjaView = <div></div>;
     if (this.state.undefinedHanjas.size > 0) {
@@ -77,6 +82,22 @@ export default class InsertView extends React.Component<
         />
       );
     }
+    const hangulView = [];
+    for (let i = 0; i < this.state.hangulWord.length; i++) {
+      hangulView.push(
+        <div key={i}>
+          <Dropdown
+            options={this.state.hangulWord[i]}
+            value={
+              this.state.hangulWord[i].length == 0
+                ? undefined
+                : this.state.hangulWord[i][this.state.selectedHangul[i]]
+            }
+            onChange={this.onSelectionChange.bind(this, i)}
+          />
+        </div>
+      );
+    }
     return (
       <div>
         <h1>Insert a word</h1>
@@ -85,10 +106,8 @@ export default class InsertView extends React.Component<
           value={this.state.hanjaWord}
           onChange={this.setHanjaBox.bind(this)}
         ></textarea>
-        <textarea value={this.state.hangulWord} readOnly={true}>
-          "
-        </textarea>
-        {hanjaView}
+        <div>{hangulView}</div>
+        <div>{hanjaView}</div>
         <button onClick={this.commitWord.bind(this)}>Commit</button>
       </div>
     );

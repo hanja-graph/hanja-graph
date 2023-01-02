@@ -1,4 +1,5 @@
 import { queryDictionary } from "../db/CardDatabase.js";
+import { QueryExecResult } from "sql.js";
 
 function assertCharacter(maybeCharacter: string) {
   if (maybeCharacter.length != 1) {
@@ -14,16 +15,16 @@ class Word {
   ) {}
 }
 
-export async function getHangulforHanja(
-  hanja: string
-): Promise<string | undefined> {
+export async function getHangulforHanja(hanja: string): Promise<Array<string>> {
   assertCharacter(hanja);
   const query = `SELECT hangul FROM korean_pronunciation WHERE hanjas LIKE '%${hanja}%';`;
   const result = await queryDictionary(query);
   if (result.length == 0) {
-    return undefined;
+    return [];
   }
-  return result[0].values[0].toString();
+  console.log(result);
+  //return result[0].values[0].toString();
+  return result[0].values.map((elem) => elem.toString());
 }
 
 export async function getWord(cardId: number): Promise<Word | undefined> {

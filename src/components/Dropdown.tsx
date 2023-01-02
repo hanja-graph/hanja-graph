@@ -2,11 +2,11 @@ import React from "react";
 
 type SelectionChangeEvent = (e: React.ChangeEvent<HTMLSelectElement>) => void;
 
-type OptionType = { label: string; value: string }[];
+type OptionType = string[];
 
 export class DropdownProps {
   constructor(
-    readonly value: string,
+    readonly value: string | undefined,
     readonly options: OptionType,
     readonly onChange: SelectionChangeEvent
   ) {}
@@ -23,10 +23,11 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
   render() {
     return (
       <label>
-        {this.props.value}
         <select value={this.props.value} onChange={this.props.onChange}>
-          {this.props.options.map((option) => (
-            <option value={option.value}>{option.label}</option>
+          {this.props.options.map((option, i) => (
+            <option key={i} value={option}>
+              {option}
+            </option>
           ))}
         </select>
       </label>
