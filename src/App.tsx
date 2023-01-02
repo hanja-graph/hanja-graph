@@ -14,8 +14,6 @@ const appParameter = urlParams.get("app");
 if (appParameter) {
   application = appParameter;
 }
-const rootElement = document.getElementById("root");
-
 class AppProps {}
 
 class AppState {}
