@@ -5,6 +5,10 @@ to help you form associations between related words.
 For more information on the intent and design of this project, please see the
 [design](design/README.md) section.
 
+This is still under development and really doesn't work yet.
+
+[Known issues](known-issues.md) lists the planned features and bug fixes.
+
 A production version of the app is deployed here:
 * [DB browser](https://hanja-graph.github.io/hanja-graph/index.html?app=repl) - to debug the development database.
 * [Card browser](https://hanja-graph.github.io/hanja-graph/index.html?app=card&card_id=1).
