@@ -1,4 +1,4 @@
-import { queryDictionary } from "./db/CardDatabase.js";
+import { queryDictionary } from "../db/CardDatabase.js";
 
 export async function getHangulforHanja(
   hanja: string
