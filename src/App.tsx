@@ -3,6 +3,7 @@ import "./App.css";
 
 import DbBrowser from "./DbBrowser";
 import CardView from "./CardView";
+import InsertView from "./InsertView";
 
 // Set up URL parameters
 const queryString = window.location.search;
@@ -39,6 +40,12 @@ export default class App extends Component<AppProps, AppState> {
           </div>
         );
       }
+    } else if (application == "insert") {
+      return (
+        <div>
+          <InsertView />
+        </div>
+      );
     }
     return (
       <div>
