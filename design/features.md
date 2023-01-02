@@ -1,6 +1,5 @@
-# Motivation
 This project aims to solve the problem of domain-specific Korean vocabulary study.
-## Existing work
+# Existing work
 The [Anki](https://apps.ankiweb.net/) flash card system is a great contribution to the
 collective language learning community. It solves the problem of memorization in a 
 way that has gone well beyond a minimal viable product. Apps on major mobile platforms
@@ -10,7 +9,7 @@ means that your decks and progress can always be persisted. The card review sche
 mechanism is thoughtful and effective. The creator of this project has used this tool 
 to good effect for over 10 years. There isn't even the need to mention alternatives.
 
-## Compound temporal interest
+# Compound temporal interest
 So if Anki is good enough and has traction, why squirt yet another open source project into
 the aether? Won't it be ignored?
 
@@ -24,9 +23,9 @@ So the creator of this project opted to spend a lump sum of his time to make him
 at studying because it's likely to pay dividends to him personally, regardless of whether other
 people use it.
 
-## Domain-specific problems
+# Domain-specific problems
 
-### The graph-like nature of East Asian languages
+## The graph-like nature of East Asian languages
 While reviewing and studying vocabulary in Korean, the inevitable conclusion one reaches is that
 Hanja word roots are a very useful learning tool. I'm not the first to think this; see 
 *Handbook**of**Korean**Vocabulary*.
@@ -45,7 +44,7 @@ Hanja word roots are a very useful learning tool. I'm not the first to think thi
   chance of knowing when to use each word - 판결 for formal decisions by official bodies, "결정" as 
   less formal or personal resolutions or conclusions.
 
-### Enabling reading for pleasure by leveraging word roots
+## Enabling reading for pleasure by leveraging word roots
 Language production and comprehension are very complex tasks. The traditional breakdown into reading,
 writing, listening, and  speaking is very useful because one can be very good at one or two of these things
 while being hopeless at the other.
@@ -79,7 +78,7 @@ it's very feasible to scan a sentence where one doesn't recognize several words 
 essential meaning, meaning less time spent with your nose in a dictionary, less interruptions to flow state,
 and more genuine pleasure and interest.
 
-## Differentiating features of this project
+# Differentiating features of this project
 Following the above observations, we focus on creating a review flow based on the following principles.
 * A card view that allows the user to naturally see words that are connected through roots that they know.
 * A review scheduling algorithm that schedules cards based on whether one has seen related words recently 
