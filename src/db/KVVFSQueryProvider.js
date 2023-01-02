@@ -33,7 +33,10 @@ export const queryDB = async (query) => {
       resultRows: resultRows,
     });
     if (resultRows.length == 0) {
-      return undefined;
+      return {
+        columns: [],
+        values: [],
+      };
     }
     const result = {
       columns: Object.getOwnPropertyNames(resultRows[0]),
