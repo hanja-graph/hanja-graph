@@ -4,31 +4,23 @@ import "reactjs-popup/dist/index.css";
 import { queryDictionary } from "./CardDatabase.js";
 
 class CardViewProps {
-  cardId: number = 0;
-
-  constructor(cardId: number = 0) {
-    this.cardId = cardId;
-  }
+  constructor(readonly cardId: number) {}
 }
 
 class Word {
-  hanja: string = "";
-  hangul: string = "";
-  english: string = "";
-
-  constructor(hanja: string, hangul: string, english: string) {
-    this.hanja = hanja;
-    this.hangul = hangul;
-    this.english = english;
-  }
+  constructor(
+    readonly hanja: string,
+    readonly hangul: string,
+    readonly english: string
+  ) {}
 }
 
 class SiblingViewProps {
-  word: Word = new Word("", "", "");
+  constructor(readonly word: Word) {}
 }
 
 class SiblingViewState {
-  revealed: boolean = false;
+  constructor(readonly revealed: boolean = false) {}
 }
 
 class SiblingView extends React.Component<SiblingViewProps, SiblingViewState> {
@@ -54,9 +46,11 @@ class SiblingView extends React.Component<SiblingViewProps, SiblingViewState> {
 }
 
 class SiblingsViewProps {
-  siblings: Array<Word> = [];
-  hanja: string = "";
-  englishMeaning: string = "";
+  constructor(
+    readonly siblings: Array<Word>,
+    readonly hanja: string,
+    readonly englishMeaning: string
+  ) {}
 }
 
 class SiblingsView extends React.Component<SiblingsViewProps, any> {
@@ -83,7 +77,7 @@ class SiblingsView extends React.Component<SiblingsViewProps, any> {
 class CardViewState {
   englishVisible: boolean = false;
   status: string | undefined;
-  word: Word = new Word("", "", "");
+  word: Word | undefined = undefined;
   siblings: Array<SiblingsViewProps> = [];
 }
 
@@ -166,31 +160,35 @@ export default class CardView extends React.Component<
   render() {
     const rows = [];
     let extra = "";
-    for (let i = 0; i < this.state.word.hangul.length; i++) {
-      if (i < this.state.siblings.length) {
-        rows.push(
-          <Popup
-            trigger={<button>{this.state.word.hangul[i]}</button>}
-            position="right top"
-          >
-            <div>
-              <SiblingsView
-                siblings={this.state.siblings[i].siblings}
-                hanja={this.state.siblings[i].hanja}
-                englishMeaning={this.state.siblings[i].englishMeaning}
-              />
-            </div>
-          </Popup>
-        );
-      } else {
-        extra = extra + this.state.word.hangul[i];
+    if (this.state.word) {
+      for (let i = 0; i < this.state.word.hangul.length; i++) {
+        if (i < this.state.siblings.length) {
+          rows.push(
+            <Popup
+              trigger={<button>{this.state.word.hangul[i]}</button>}
+              position="right top"
+            >
+              <div>
+                <SiblingsView
+                  siblings={this.state.siblings[i].siblings}
+                  hanja={this.state.siblings[i].hanja}
+                  englishMeaning={this.state.siblings[i].englishMeaning}
+                />
+              </div>
+            </Popup>
+          );
+        } else {
+          extra = extra + this.state.word.hangul[i];
+        }
       }
     }
     return (
       <div>
         <div>{this.state.status != undefined ? this.state.status : ""}</div>
         <button onClick={this.toggleEnglish.bind(this)}>
-          {this.state.englishVisible ? this.state.word.english : "영어"}
+          {this.state.englishVisible && this.state.word
+            ? this.state.word.english
+            : "영어"}
         </button>
         <div>
           {rows}
