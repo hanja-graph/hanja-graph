@@ -1,7 +1,7 @@
 # Motivation
 This project aims to solve the problem of domain-specific Korean vocabulary study.
 ## Existing work
-The (Anki)[https://apps.ankiweb.net/] flash card system is a great contribution to the
+The [Anki](https://apps.ankiweb.net/) flash card system is a great contribution to the
 collective language learning community. It solves the problem of memorization in a 
 way that has gone well beyond a minimal viable product. Apps on major mobile platforms
 allow convenient casual study when one is out and about. AnkiWeb allows data entry or
