@@ -11,10 +11,7 @@ hasn't yet been tested.
 
 [Known issues](known-issues.md) lists the planned features and bug fixes.
 
-A production version of the app is deployed here:
-* [DB browser](https://hanja-graph.github.io/hanja-graph/index.html?app=repl) - to debug the development database.
-* [Card browser](https://hanja-graph.github.io/hanja-graph/index.html?app=card&card_id=1).
-* [Insert](https://hanja-graph.github.io/hanja-graph/index.html?app=insert) - Insert a card.
+A production version of the app is deployed [here](https://hanja-graph.github.io/hanja-graph/index.html).
 
 ## Instructions
 ### Developing
@@ -27,17 +24,11 @@ npm run dev
 ```
 ### Apps
 #### Database browser
-Development versions:
+[Development version](https://localhost:3000/index.html);
 (Available while `npm run dev` is active).
-* [DB browser](https://localhost:3000/index.html?app=repl) - to debug the development database.
-* [Card browser](https://localhost:3000/index.html?app=card&card_id=4).
-* [Insert](https://localhost:3000/index.html?app=insert) - Insert a card.
 
-Production versions:
+[Local production version](https://localhost:3001/index.html);
 (available after running `npm run build && ./test-server.py` - will predict what is available after deployment).
-* [DB browser](https://localhost:3001/index.html?app=repl) - to debug the development database.
-* [Card browser](https://localhost:3001/index.html?app=card&card_id=4).
-* [Insert](https://localhost:3001/index.html?app=insert) - Insert a card.
 
 # References
 The Hanja dictionary seed comes from [here](https://github.com/dbravender/hanja-dictionary).

@@ -1,67 +1,138 @@
-import { Component } from "react";
 import "./App.css";
-
+import { useState, useEffect } from "react";
 import DbBrowser from "./components/DbBrowser";
 import CardView from "./components/CardView";
 import InsertView from "./components/InsertView";
 import { initializeAndSeedDictionary } from "./data/CardDataProvider";
 
-// Set up URL parameters
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
+import {
+  Routes,
+  Route,
+  Outlet,
+  Link,
+  useParams,
+  useNavigate,
+} from "react-router-dom";
 
-// Load app based on input parameter.
-let application: string = "db_browser";
-const appParameter = urlParams.get("app");
-if (appParameter) {
-  application = appParameter;
-}
-class AppProps {}
+export default function App() {
+  const [isInitialized, setIsInitialized] = useState(false);
+  const [isInitializing, setIsInitializing] = useState(false);
 
-class AppState {
-  constructor(readonly dbInitialized: boolean = false) {}
-}
-
-export default class App extends Component<AppProps, AppState> {
-  constructor(props: AppProps) {
-    super(props);
-    this.state = new AppState();
-  }
-
-  async componentDidMount() {
-    await initializeAndSeedDictionary();
-    this.setState({ dbInitialized: true });
-  }
-
-  render() {
-    if (!this.state.dbInitialized) {
-      return <div></div>;
-    } else if (application == "repl") {
-      return (
-        <div>
-          <DbBrowser />
-        </div>
-      );
-    } else if (application == "card") {
-      const cardParameter = urlParams.get("card_id");
-      if (cardParameter) {
-        return (
-          <div>
-            <CardView cardId={parseInt(cardParameter)} />
-          </div>
-        );
-      }
-    } else if (application == "insert") {
-      return (
-        <div>
-          <InsertView />
-        </div>
-      );
+  useEffect(() => {
+    if (!isInitialized && !isInitializing) {
+      initializeAndSeedDictionary().then(() => {
+        setIsInitialized(true);
+      });
     }
+    setIsInitializing(true);
+  });
+  if (!isInitialized) {
+    return "Loading...";
+  } else {
     return (
       <div>
-        <DbBrowser />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="db" element={<DbBrowser />} />
+            <Route path="add" element={<InsertView />} />
+            <Route path="cards">
+              <Route index element={<CardWrapper />} />
+              <Route path=":cardId" element={<CardWrapper />} />
+            </Route>
+            <Route path="*" element={<NoMatch />} />
+          </Route>
+        </Routes>
       </div>
     );
   }
+}
+
+function Layout() {
+  return (
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/db">Database</Link>
+          </li>
+          <li>
+            <Link to="/add">Add card</Link>
+          </li>
+          <li>
+            <Link to="/cards">Card view</Link>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <Outlet />
+    </div>
+  );
+}
+
+function Home() {
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
+  );
+}
+
+function CardWrapper() {
+  let { cardId } = useParams();
+  const navigate = useNavigate();
+  const [cardIdText, setCardIdText] = useState("");
+  const [cardIdTextIsValid, setCardIdTextIsValid] = useState(false);
+  const goToCard = (_e: React.MouseEvent<HTMLElement>) => {
+    if (cardIdText.length > 0) {
+      const newCardId = parseInt(cardIdText);
+      if (newCardId != NaN) {
+        navigate(`/cards/${newCardId}`);
+      }
+    }
+  };
+  if (cardId) {
+    return (
+      <div>
+        <CardView cardId={parseInt(cardId)} />
+        <Link to="/cards">Card index</Link>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <input
+          type="text"
+          value={cardIdText}
+          onChange={(e) => {
+            setCardIdTextIsValid(false);
+            setCardIdText(e.target.value);
+            const newCardId = parseInt(cardIdText);
+            console.log(cardIdText);
+            console.log(newCardId);
+            if (cardIdText.length > 0 && newCardId != NaN) {
+              setCardIdTextIsValid(true);
+            }
+          }}
+        />
+        <button onClick={goToCard} disabled={!cardIdTextIsValid}>
+          Go
+        </button>
+      </div>
+    );
+  }
+}
+
+function NoMatch() {
+  return (
+    <div>
+      <h2>Nothing to see here!</h2>
+      <p>
+        <Link to="/">Go to the home page</Link>
+      </p>
+    </div>
+  );
 }
