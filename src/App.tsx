@@ -27,7 +27,7 @@ export default function App() {
     setIsInitializing(true);
   });
   if (!isInitialized) {
-    return "Loading...";
+    return <div>{"Loading..."}</div>;
   } else {
     return (
       <div>
@@ -40,7 +40,7 @@ export default function App() {
               <Route index element={<CardWrapper />} />
               <Route path=":cardId" element={<CardWrapper />} />
             </Route>
-            <Route path="*" element={<NoMatch />} />
+            <Route path="*" element={<Home />} />
           </Route>
         </Routes>
       </div>
@@ -111,8 +111,6 @@ function CardWrapper() {
             setCardIdTextIsValid(false);
             setCardIdText(e.target.value);
             const newCardId = parseInt(cardIdText);
-            console.log(cardIdText);
-            console.log(newCardId);
             if (cardIdText.length > 0 && newCardId != NaN) {
               setCardIdTextIsValid(true);
             }
