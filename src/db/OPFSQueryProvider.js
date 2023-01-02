@@ -2,13 +2,11 @@ let dbWorkerSingleton = undefined;
 
 const createOrGetDbWorker = () => {
   if (!dbWorkerSingleton) {
-    dbWorkerSingleton = new Worker(
-      new URL("/CardDatabaseWorker.js", import.meta.url) +
-        "&sqlite3.dir=jswasm",
-      {
-        type: "classic",
-      }
-    );
+    const url = new URL("/assets/CardDatabaseWorker.js", import.meta.url);
+    url.searchParams.append("sqlite3.dir", "jswasm");
+    dbWorkerSingleton = new Worker(url, {
+      type: "classic",
+    });
   }
   return dbWorkerSingleton;
 };

@@ -138,13 +138,14 @@ function ResultsTable(props: { resp: QueryResponse | undefined }) {
   if (!props.resp) {
     return <table></table>;
   }
+  // For debugging.
+  /*
   let concatStr = "";
   for (const row of props.resp.values) {
     concatStr += `'${row[0]}'\n`;
   }
-  /*
   for (const row of props.resp.values) {
-    concatStr += "INSERT INTO `hanjas` VALUES(NULL,";
+    concatStr += "(";
     for (const [i, col] of row.entries()) {
       concatStr += `'${col}'`;
       if (i != row.length - 1) {
@@ -153,7 +154,27 @@ function ResultsTable(props: { resp: QueryResponse | undefined }) {
     }
     concatStr += ");\n";
   }
-  concatStr += "\n";
-  */
   return <div>{concatStr}</div>;
+  */
+  return (
+    <table>
+      <thead>
+        <tr>
+          {props.resp.columns.map((columnName: any, i: any) => (
+            <td key={i}>{columnName}</td>
+          ))}
+        </tr>
+      </thead>
+
+      <tbody>
+        {props.resp.values.map((row: Array<any>, i: any) => (
+          <tr key={i}>
+            {row.map((col: any, i: any) => (
+              <td key={i}>{col}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
 }
