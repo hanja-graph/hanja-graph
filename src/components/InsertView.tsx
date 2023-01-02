@@ -51,7 +51,6 @@ export default class InsertView extends React.Component<
   }
 
   addHanjaWord(hanjaState: AddHanjaViewState) {
-    console.log("TODO: add hanja word");
     addHanjaWordAndDefinition(
       hanjaState.hanja,
       hanjaState.meaning,
