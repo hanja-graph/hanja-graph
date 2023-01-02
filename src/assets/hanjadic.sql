@@ -3,7 +3,8 @@ CREATE TABLE `hanjas` (
   `hanja` text,
   `hangul` text,
   `english` text,
-  CONSTRAINT UC_Hanjas UNIQUE (hanja, hangul, english)
+  CONSTRAINT UC_Hanjas UNIQUE (hanja, hangul, english),
+  CONSTRAINT CHK_Hanjas CHECK (LENGTH(hanja) = LENGTH(hangul))
 );
 
 BEGIN;
