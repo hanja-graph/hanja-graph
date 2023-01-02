@@ -6,18 +6,5 @@ import mkcert from "vite-plugin-mkcert";
 export default defineConfig({
   base: "",
   server: { https: true, port: 3000 },
-  plugins: [
-    react(),
-    mkcert(),
-    {
-      name: "configure-response-headers",
-      configureServer: (server) => {
-        server.middlewares.use((_req, res, next) => {
-          res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
-          res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
-          next();
-        });
-      },
-    },
-  ],
+  plugins: [react(), mkcert()],
 });
