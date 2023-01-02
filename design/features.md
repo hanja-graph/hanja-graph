@@ -1,0 +1,88 @@
+# Motivation
+This project aims to solve the problem of domain-specific Korean vocabulary study.
+## Existing work
+The (Anki)[https://apps.ankiweb.net/] flash card system is a great contribution to the
+collective language learning community. It solves the problem of memorization in a 
+way that has gone well beyond a minimal viable product. Apps on major mobile platforms
+allow convenient casual study when one is out and about. AnkiWeb allows data entry or
+card review on desktops for those with that use case, and the underlying sync mechanism
+means that your decks and progress can always be persisted. The card review scheduling 
+mechanism is thoughtful and effective. The creator of this project has used this tool 
+to good effect for over 10 years. There isn't even the need to mention alternatives.
+
+## Compound temporal interest
+So if Anki is good enough and has traction, why squirt yet another open source project into
+the aether? Won't it be ignored?
+
+First off, small efficiency gains can have a large payoff. Second-language vocabulary study
+is something that is time-consuming. If students ever want to become literate at a second language,
+they need to invest hundreds of hours into vocabulary study. Spaced repetition seems like
+a relatively small investment as you do it, because it's infrequent and in small chunks when
+that time would otherwise just go into reading online news, but it adds up.
+
+So the creator of this project opted to spend a lump sum of his time to make himself more efficient
+at studying because it's likely to pay dividends to him personally, regardless of whether other
+people use it.
+
+## Domain-specific problems
+
+### The graph-like nature of East Asian languages
+While reviewing and studying vocabulary in Korean, the inevitable conclusion one reaches is that
+Hanja word roots are a very useful learning tool. I'm not the first to think this; see 
+*Handbook**of**Korean**Vocabulary*.
+
+* Anecdotally, ords for which one already has internalized words that share one or more Hanja are 
+  much easier to learn than otherwise. I've reached the point where I don't even add a word to 
+  my flash card deck if I don't recognize at least one of the underlying Hanja roots, because 
+  it's such a waste of time to try to memorize it.
+
+* Reviewing words in clusters is potentially a more useful and efficientthan reviewing them divorced 
+  of context. I naturally find myself thinking "what is the difference between these two words?" 
+  For example, "판결" and "결정" which share the "결" root and both could be loosely translated as 
+  "decide" or "resolve." Without even thinking too hard on the essential meaning of each character, 
+  one can note that "판" also occurs in "판사" (the vocation) "재판" (trial). If one already happens 
+  to know these two words, one can essentially study all of them at once, and also have a better 
+  chance of knowing when to use each word - 판결 for formal decisions by official bodies, "결정" as 
+  less formal or personal resolutions or conclusions.
+
+### Enabling reading for pleasure by leveraging word roots
+Language production and comprehension are very complex tasks. The traditional breakdown into reading,
+writing, listening, and  speaking is very useful because one can be very good at one or two of these things
+while being hopeless at the other.
+
+In my experience, there's a pretty big gap between the ability to comprehend a word written in L2 and
+use the same word in a spoken sentence. So that means we should focus on studying words in our active
+vocabulary, right? After all, aren't we more likely to just forget words we don't use?
+
+In a classroom focused on speaking skills, yes, and this is what most people tend to focus on for good
+reasons. Being able to speak a language has the most practical benefit. But speaking is only 
+something you can do with people, and opportunities are naturally going be limited in an adult's life,
+when at least 8 hours is devoted to one's day job.
+
+Flash cards are a great way to expose yourself to vocabulary, and *reading* is the perfect companion for
+a busy adult to actually exercise vocabulary so it can be retained.
+
+The problem is that most adults will not have patience for reading material that has too low a reading,
+and having a functional conversational vocabulary is not good enough to reach a flow state when reading
+authentic L2 texts, which stands in the way of the "pleasure" part of "reading for pleasure." 
+
+Using and exercising a large reading vocabulary is a lot easier than maintaing a large number of words
+one can authentically produce  n a sentence. So this leads to the ability to reach a flow state while
+reading genuinely interesting L2 material - novels and news.
+
+Which suggests that performing study tasks that are targeted at increasing the number of words one can 
+have an outsized effect on language acquisition. As one becomes better able to read genuinely interesting
+things in L2, one spends more time in L2, which improves the other skills as well.
+
+And Korean is a great language to streamline this process. Once one acquires a decent number of words roots,
+it's very feasible to scan a sentence where one doesn't recognize several words and still derive the
+essential meaning, meaning less time spent with your nose in a dictionary, less interruptions to flow state,
+and more genuine pleasure and interest.
+
+## Differentiating features of this project
+Following the above observations, we focus on creating a review flow based on the following principles.
+* A card view that allows the user to naturally see words that are connected through roots that they know.
+* A review scheduling algorithm that schedules cards based on whether one has seen related words recently 
+  (and thereby implicitly reviewed that word).
+* A focus on generating sight words for reading by exercising L2 word comprehension without considering
+  increasing the likelihood of spontaneous usage of words in L1. In other words, breadth, not depth.
