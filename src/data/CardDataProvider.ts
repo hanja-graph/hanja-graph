@@ -1,5 +1,11 @@
 import { queryDictionary } from "../db/CardDatabase.js";
 
+function assertCharacter(maybeCharacter: string) {
+  if (maybeCharacter.length != 1) {
+    throw new Error("Is not a character");
+  }
+}
+
 class Word {
   constructor(
     readonly hanja: string,
@@ -11,9 +17,7 @@ class Word {
 export async function getHangulforHanja(
   hanja: string
 ): Promise<string | undefined> {
-  if (hanja.length > 1 || hanja.length == 0) {
-    throw Error("Function takes only one characrter");
-  }
+  assertCharacter(hanja);
   const query = `SELECT hangul FROM korean_pronunciation WHERE hanjas LIKE '%${hanja}%';`;
   const result = await queryDictionary(query);
   if (result.length == 0) {
@@ -43,6 +47,7 @@ export async function getWord(cardId: number): Promise<Word | undefined> {
 export async function getEnglishDefinitionForHanja(
   hanja: string
 ): Promise<string | undefined> {
+  assertCharacter(hanja);
   const englishMeaningQuery = `SELECT definition FROM hanja_definition WHERE hanjas = "${hanja}"`;
   const englishMeaningQueryResult = await queryDictionary(englishMeaningQuery);
   if (englishMeaningQueryResult.length > 0) {
@@ -58,6 +63,7 @@ export async function getSiblings(
   hanja: string,
   hangul: string
 ): Promise<Array<Word>> {
+  assertCharacter(hangul);
   const hanjaQuery = `SELECT hanja, hangul, english FROM hanjas WHERE hanja LIKE "%${hanja}%" AND hangul != "${hangul}";`;
   const hanjaQueryResult = await queryDictionary(hanjaQuery);
   const siblings = [];
@@ -70,4 +76,61 @@ export async function getSiblings(
     }
   }
   return siblings;
+}
+
+export async function koreanPronunciationDefined(
+  hanjaCharacter: string
+): Promise<boolean> {
+  assertCharacter(hanjaCharacter);
+  const query = `SELECT hangul FROM korean_pronunciation WHERE hanjas like '%${hanjaCharacter}%'`;
+  const results = await queryDictionary(query);
+  return results.length > 0;
+}
+
+export async function hanjaDefinitionExists(
+  hanjaCharacter: string
+): Promise<boolean> {
+  assertCharacter(hanjaCharacter);
+  const query = `SELECT hanjas FROM hanja_definition WHERE hanjas = '${hanjaCharacter}'`;
+  const results = await queryDictionary(query);
+  return results.length > 0;
+}
+
+async function addHangulPronunciationForHanja(
+  hanjaCharacter: string,
+  hangulPronunciation: string
+) {
+  assertCharacter(hanjaCharacter);
+  assertCharacter(hangulPronunciation);
+  const query = `UPDATE korean_pronunciation SET hanjas = hanjas || '${hanjaCharacter}' WHERE hangul = '${hangulPronunciation};`;
+  await queryDictionary(query);
+}
+
+async function addHanjaMeaning(hanjaCharacter: string, meaning: string) {
+  assertCharacter(hanjaCharacter);
+  const query = `INSERT INTO hanja_definition (hanjas, definition) VALUES ('${hanjaCharacter}', '${meaning}')`;
+  await queryDictionary(query);
+}
+
+export async function addHanjaWordAndDefinition(
+  hanjaCharacter: string,
+  meaning: string,
+  hangulPronunciation: string
+): Promise<void> {
+  assertCharacter(hanjaCharacter);
+  assertCharacter(hangulPronunciation);
+  const hasHanjaDefinition = await hanjaDefinitionExists(hanjaCharacter);
+  const hasKoreanPronunciation = await koreanPronunciationDefined(
+    hangulPronunciation
+  );
+  if (!hasHanjaDefinition && !hasKoreanPronunciation) {
+    await addHangulPronunciationForHanja(hanjaCharacter, hangulPronunciation);
+    await addHanjaMeaning(hanjaCharacter, meaning);
+  } else if (hasHanjaDefinition && hasKoreanPronunciation) {
+    return;
+  } else {
+    throw new Error(
+      "Invalid state: hasHanjaDefinition=${hasHanjaDefinition}, hasKoreanPronunciation=${hasKoreanPronunciation}"
+    );
+  }
 }

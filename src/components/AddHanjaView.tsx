@@ -8,6 +8,7 @@ class AddHanjaViewProps {
 }
 export class AddHanjaViewState {
   constructor(
+    readonly hanja: string = "",
     readonly koreanPronuncation: string = "",
     readonly meaning: string = ""
   ) {}
@@ -19,7 +20,7 @@ export class AddHanjaView extends React.Component<
 > {
   constructor(props: AddHanjaViewProps) {
     super(props);
-    this.state = new AddHanjaViewState();
+    this.state = new AddHanjaViewState(props.hanja, "", "");
   }
 
   setKoreanPronunciation(e: React.ChangeEvent<HTMLInputElement>) {

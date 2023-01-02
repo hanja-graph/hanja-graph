@@ -1,6 +1,9 @@
 import React from "react";
 import { AddHanjaView, AddHanjaViewState } from "./AddHanjaView";
-import { getHangulforHanja } from "../data/CardDataProvider";
+import {
+  getHangulforHanja,
+  addHanjaWordAndDefinition,
+} from "../data/CardDataProvider";
 
 class InsertViewProps {}
 class InsertViewState {
@@ -56,6 +59,11 @@ export default class InsertView extends React.Component<
 
   addHanjaWord(hanjaState: AddHanjaViewState) {
     console.log("TODO: add hanja word");
+    addHanjaWordAndDefinition(
+      hanjaState.hanja,
+      hanjaState.meaning,
+      hanjaState.koreanPronuncation
+    );
   }
 
   render() {
