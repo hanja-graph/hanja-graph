@@ -1,19 +1,19 @@
 import { initBackend } from "absurd-sql/dist/indexeddb-main-thread";
 import CardDatabaseWorker from "./CardDatabase.worker.js?worker";
 
-let worker = undefined;
+let dbWorker = undefined;
 
-const runQuery = async (query) => {
+const queryDictionary = async (query) => {
   return new Promise((resolve) => {
-    if (!worker) {
-      worker = new CardDatabaseWorker();
-      initBackend(worker);
+    if (!dbWorker) {
+      dbWorker = new CardDatabaseWorker();
+      initBackend(dbWorker);
     }
-    worker.onmessage = function (e) {
+    dbWorker.onmessage = function (e) {
       resolve(e.data);
     };
-    worker.postMessage(query);
+    dbWorker.postMessage(query);
   });
 };
 
-export { runQuery };
+export { queryDictionary };

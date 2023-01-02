@@ -1,6 +1,6 @@
 import { useState, Component } from "react";
 import "./App.css";
-import { runQuery } from "./CardDatabase.js";
+import { queryDictionary } from "./CardDatabase.js";
 
 class AppProps {}
 
@@ -13,7 +13,7 @@ export default class App extends Component<AppProps, AppState> {
   }
   componentDidMount() {
     const startDb = async () => {
-      const queryResult = await runQuery("SELECT * FROM hello;");
+      const queryResult = await queryDictionary("SELECT * FROM hello;");
       console.log(queryResult);
     };
     startDb();
