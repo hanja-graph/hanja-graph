@@ -93,19 +93,20 @@ when at least 8 hours is devoted to your day job.
 Flash cards are a great way to expose yourself to vocabulary, and *reading* is the perfect companion for
 a busy adult to actually exercise vocabulary so it can be retained.
 
-The problem is that most adults will not have patience for reading material that has too low a reading,
-and having a functional conversational vocabulary is not good enough to reach a flow state when reading
-authentic L2 texts, which stands in the way of the "pleasure" part of "reading for pleasure." 
+The problem is that most adults will not have patience for reading material that has too low a reading 
+level (nobody really wants to read children's books as an adult), and having a functional conversational 
+vocabulary is not good enough to reach a flow state when reading authentic L2 texts, which stands in 
+the way of the "pleasure" part of "reading for pleasure." 
 
 Using and exercising a large reading vocabulary is a lot easier than maintaing a large number of words
 you can authentically produce in a sentence. So this leads to the ability to reach a flow state while
 reading genuinely interesting L2 material - novels and news.
 
-Which suggests that performing study tasks that are targeted at increasing the number of words you can read
+This suggests that performing study tasks that are targeted at increasing the number of words you can read
 has an outsized effect on language acquisition. As you becomes better able to read genuinely interesting
 things in L2, you spend more time in L2, which improves the other skills as well.
 
-And Korean is a great language to streamline this process. Once you acquire a decent number of words roots,
+Korean is a great language to streamline this process. Once you acquire a decent number of words roots,
 it's very feasible to scan a sentence where you don't recognize several words and still derive the
 essential meaning, meaning less time spent with your nose in a dictionary, less interruptions to flow state,
 and more genuine pleasure and interest.
