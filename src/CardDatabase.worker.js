@@ -2,6 +2,7 @@ import initSqlJs from "@jlongster/sql.js";
 import { SQLiteFS } from "absurd-sql";
 import IndexedDBBackend from "absurd-sql/dist/indexeddb-backend";
 import sqlWasm from "@jlongster/sql.js/dist/sql-wasm.wasm?url";
+import hanjaDictionarySeed from "./assets/hanjadic.sql?raw";
 
 const DICTIONARY_DB_STORAGE_PATH = "/sql/db.sqlite";
 
@@ -39,15 +40,10 @@ const mountDictionaryDatabase = async (dbSingleton, dbPath) => {
 
 const setupDB = async (db) => {
   try {
-    db.exec("CREATE TABLE hello (a int, b char);");
+    db.exec("SELECT * FROM hanjas LIMIT 1;");
   } catch (e) {
-    console.log(`error: ${e}`);
-  }
-  try {
-    db.exec("INSERT INTO hello VALUES (0, 'hello');");
-    db.exec("INSERT INTO hello VALUES (1, 'world');");
-  } catch (e) {
-    console.log(`error: ${e}`);
+    console.log(`Loading new database.`);
+    db.exec(hanjaDictionarySeed);
   }
 };
 

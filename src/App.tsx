@@ -13,7 +13,9 @@ export default class App extends Component<AppProps, AppState> {
   }
   componentDidMount() {
     const startDb = async () => {
-      const queryResult = await queryDictionary("SELECT * FROM hello;");
+      const queryResult = await queryDictionary(
+        "SELECT * FROM hanjas LIMIT 1;"
+      );
       console.log(queryResult);
     };
     startDb();
