@@ -88,7 +88,6 @@ function CardWrapper() {
   const goToCard = (_e: React.MouseEvent<HTMLElement>) => {
     if (cardIdText.length > 0) {
       const newCardId = parseInt(cardIdText);
-      console.log(newCardId);
       if (!isNaN(newCardId)) {
         navigate(`/cards/${newCardId}`);
       }
