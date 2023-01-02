@@ -2,7 +2,11 @@ import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { queryDictionary } from "../db/CardDatabase.js";
-import { getWord, getSiblings } from "../data/CardDataProvider.js";
+import {
+  getWord,
+  getSiblings,
+  getEnglishDefinitionForHanja,
+} from "../data/CardDataProvider.js";
 
 class CardViewProps {
   constructor(readonly cardId: number) {}
@@ -79,7 +83,6 @@ class SiblingsView extends React.Component<SiblingsViewProps, any> {
 
 class CardViewState {
   englishVisible: boolean = false;
-  status: string | undefined;
   word: Word | undefined = undefined;
   siblings: Array<SiblingsViewProps> = [];
 }
@@ -103,32 +106,19 @@ export default class CardView extends React.Component<
             const hanja = word.hanja[i];
             const hangul = word.hangul[i];
             const siblings = await getSiblings(hanja, hangul);
-            const englishMeaningQuery = `SELECT definition FROM hanja_definition WHERE hanjas = "${hanja}"`;
-            const englishMeaningQueryResult = await queryDictionary(
-              englishMeaningQuery
-            );
-            let englishMeaning = "";
-            if (englishMeaningQueryResult.length > 0) {
-              const englishMeaningValues = englishMeaningQueryResult[0].values;
-              if (englishMeaningValues.length > 0) {
-                englishMeaning = String(englishMeaningValues[0]);
-              }
-            }
+            let englishMeaning = await getEnglishDefinitionForHanja(hanja);
             siblingsLists.push({
               siblings: siblings,
               hanja: hanja,
-              englishMeaning: englishMeaning,
+              englishMeaning: englishMeaning ? englishMeaning : "",
             });
           }
           this.setState({
-            status: undefined,
             word: word,
             siblings: siblingsLists,
           });
         }
-      } catch (err) {
-        // TODO: Set component to a show an error
-      }
+      } catch (err) {}
     };
     queryData();
   }
@@ -167,7 +157,6 @@ export default class CardView extends React.Component<
     }
     return (
       <div>
-        <div>{this.state.status != undefined ? this.state.status : ""}</div>
         <button onClick={this.toggleEnglish.bind(this)}>
           {this.state.englishVisible && this.state.word
             ? this.state.word.english

@@ -40,6 +40,20 @@ export async function getWord(cardId: number): Promise<Word | undefined> {
   return undefined;
 }
 
+export async function getEnglishDefinitionForHanja(
+  hanja: string
+): Promise<string | undefined> {
+  const englishMeaningQuery = `SELECT definition FROM hanja_definition WHERE hanjas = "${hanja}"`;
+  const englishMeaningQueryResult = await queryDictionary(englishMeaningQuery);
+  if (englishMeaningQueryResult.length > 0) {
+    const englishMeaningValues = englishMeaningQueryResult[0].values;
+    if (englishMeaningValues.length > 0) {
+      return englishMeaningValues[0].toString();
+    }
+  }
+  return undefined;
+}
+
 export async function getSiblings(
   hanja: string,
   hangul: string
