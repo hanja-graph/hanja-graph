@@ -53,7 +53,16 @@ const exportDB = async () => {
 };
 
 const importDB = async (dbData) => {
-  // TODO
+  return new Promise((resolve) => {
+    const dbWorker = createOrGetDbWorker();
+    dbWorker.onmessage = function (e) {
+      resolve(e.data.status);
+    };
+    dbWorker.postMessage({
+      type: "import",
+      buffer: dbData,
+    });
+  });
 };
 
 export const getOPFSQueryFunctions = () => {

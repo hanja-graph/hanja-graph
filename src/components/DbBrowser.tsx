@@ -1,5 +1,9 @@
 import "./repl-styles.css";
-import { queryDictionary, exportDatabase } from "../db/CardDatabase.js";
+import {
+  queryDictionary,
+  exportDatabase,
+  importDatabase,
+} from "../db/CardDatabase.js";
 import { Component } from "react";
 
 class ReplProps {}
@@ -64,9 +68,31 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
       this.setError(error.toString());
     }
   }
+  async importDatabase() {
+    const fileElement = document.getElementById("fileItem") as HTMLInputElement;
+    if (!fileElement) {
+      return;
+    }
+    if (!fileElement.files) {
+      return;
+    }
+    if (fileElement.files.length == 0) {
+      alert("No file added, can't import");
+      return;
+    }
+    const file = fileElement.files[0];
+    let reader = new FileReader();
+
+    reader.onload = async function (_) {
+      if (reader.result) {
+        const result = await importDatabase(reader.result as ArrayBuffer);
+        console.log(`Import result: ${result}`);
+      }
+    };
+    reader.readAsArrayBuffer(file);
+  }
 
   render() {
-    console.log(this.state.results);
     return (
       <div>
         <div className="App">
@@ -87,6 +113,10 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
         </div>
         <div>
           <button onClick={this.exportDatabase.bind(this)}>Export</button>
+        </div>
+        <div>
+          <button onClick={this.importDatabase.bind(this)}>Import</button>
+          <input id="fileItem" type="file"></input>
         </div>
       </div>
     );

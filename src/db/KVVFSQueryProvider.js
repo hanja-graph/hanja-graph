@@ -56,7 +56,23 @@ const exportDB = async () => {
 };
 
 const importDB = async (dbData) => {
-  // TODO
+  try {
+    const dbEngine = await initDBEngine();
+    const dictionaryDB = await createOrGetDatabase();
+    const bytes = new Uint8Array(dbData);
+    const p = dbEngine.wasm.allocFromTypedArray(bytes);
+    dbEngine.capi.sqlite3_deserialize(
+      dictionaryDB.pointer,
+      "main",
+      p,
+      bytes.length,
+      bytes.length,
+      dbEngine.capi.SQLITE_DESERIALIZE_FREEONCLOSE
+    );
+  } catch (e) {
+    return false;
+  }
+  return true;
 };
 
 export const getKVVFSQueryFunctions = () => {

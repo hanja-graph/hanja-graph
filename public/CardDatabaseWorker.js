@@ -122,5 +122,32 @@ onmessage = async function (e) {
     postMessage({
       buffer: dbArr.buffer,
     });
+  } else if (e.data["type"] !== undefined && e.data["type"] == "import") {
+    try {
+      const dbEngine = await initDBEngine();
+      const dictionaryDB = await mountDictionaryDatabase(
+        dbEngine,
+        DICTIONARY_DB_STORAGE_PATH
+      );
+      const dbData = e.data["bytes"];
+      const bytes = new Uint8Array(dbData);
+      const p = dbEngine.wasm.allocFromTypedArray(bytes);
+      dbEngine.capi.sqlite3_deserialize(
+        dictionaryDB.pointer,
+        "main",
+        p,
+        bytes.length,
+        bytes.length,
+        dbEngine.capi.SQLITE_DESERIALIZE_FREEONCLOSE
+      );
+      postMessage({
+        status: true,
+      });
+    } catch (e) {
+      postMessage({
+        status: false,
+        reason: e.message,
+      });
+    }
   }
 };

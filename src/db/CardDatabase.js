@@ -38,3 +38,8 @@ export const exportDatabase = async () => {
   const dbProvider = await initializeQueryProvider();
   return dbProvider.exportDB();
 };
+
+export const importDatabase = async (dbData) => {
+  const dbProvider = await initializeQueryProvider();
+  return dbProvider.importDB(dbData);
+};
