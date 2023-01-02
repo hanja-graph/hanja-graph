@@ -111,7 +111,7 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
           <button onClick={this.exportDatabase.bind(this)}>Export</button>
           <button onClick={this.importDatabase.bind(this)}>Import</button>
           <input id="fileItem" type="file"></input>
-          <button onClick={this.clearDatabase.bind(this)}>Clear</button>
+          <button onClick={this.clearDatabase.bind(this)}>Reset DB</button>
         </div>
         <textarea
           id="queryBox"
