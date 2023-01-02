@@ -6,12 +6,14 @@ import hanjaDictionarySeed from "./assets/hanjadic.sql?raw";
 
 const DICTIONARY_DB_STORAGE_PATH = "/sql/db.sqlite";
 
-let dbSingleton = undefined;
+let dbEngineSingleton = undefined;
+let dictionaryDBSingleton = undefined;
 
 const initDBEngine = async function () {
-  if (dbSingleton) {
-    return initDBEngine;
+  if (dbEngineSingleton) {
+    return dbEngineSingleton;
   }
+  console.log("Initializing database engine.");
   let SQL = await initSqlJs({
     locateFile: (file) => {
       return sqlWasm;
@@ -22,19 +24,25 @@ const initDBEngine = async function () {
 
   SQL.FS.mkdir("/sql");
   SQL.FS.mount(sqlFS, {}, "/sql");
+  dbEngineSingleton = SQL;
   return SQL;
 };
 
-const mountDictionaryDatabase = async (dbSingleton, dbPath) => {
-  let db = new dbSingleton.Database(dbPath, { filename: true });
+const mountDictionaryDatabase = async (dbEngine, dbPath) => {
+  if (dictionaryDBSingleton) {
+    return dictionaryDBSingleton;
+  }
+  console.log("Initializing dictionary DB.");
+  let db = new dbEngine.Database(dbPath, { filename: true });
   if (typeof SharedArrayBuffer === "undefined") {
-    let stream = dbSingleton.FS.open(dbPath, "a+");
+    let stream = dbEngine.FS.open(dbPath, "a+");
     await stream.node.contents.readIfFallback();
-    dbSingleton.FS.close(stream);
+    dbEngine.FS.close(stream);
   }
   db.exec(`
     PRAGMA journal_mode=MEMORY;
   `);
+  dictionaryDBSingleton = db;
   return db;
 };
 
@@ -42,7 +50,7 @@ const setupDB = async (db) => {
   try {
     db.exec("SELECT * FROM hanjas LIMIT 1;");
   } catch (e) {
-    console.log(`Loading new database.`);
+    console.log(`Initializing DB with seed data.`);
     db.exec(hanjaDictionarySeed);
   }
 };
