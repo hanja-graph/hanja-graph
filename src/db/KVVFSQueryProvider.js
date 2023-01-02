@@ -19,7 +19,7 @@ export const createOrGetDatabase = async () => {
   return dictionaryDBSingleton;
 };
 
-export const queryKVVFSDatabase = async (query) => {
+export const queryDB = async (query) => {
   const dictionaryDB = await createOrGetDatabase();
   try {
     const resultRows = [];
@@ -46,4 +46,21 @@ export const queryKVVFSDatabase = async (query) => {
       error: e.message,
     };
   }
+};
+
+const exportDB = async () => {
+  // TODO
+  return "";
+};
+
+const importDB = async (dbData) => {
+  // TODO
+};
+
+export const getKVVFSQueryFunctions = () => {
+  return {
+    queryDB: queryDB,
+    exportDB: queryDB,
+    importDB: importDB,
+  };
 };

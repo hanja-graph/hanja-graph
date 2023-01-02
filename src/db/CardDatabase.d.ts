@@ -5,3 +5,4 @@ interface QueryResponse {
 }
 export function queryDictionary(query: string): Promise<QueryResponse>;
 export function exportDatabase(): Promise<string>;
+export function importDatabase(dbData: string): Promise<void>;

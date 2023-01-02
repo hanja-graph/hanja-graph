@@ -1,17 +1,20 @@
-import { initOPFSWorker, queryOPFSWorker } from "./OPFSQueryProvider";
-import { createOrGetDatabase, queryKVVFSDatabase } from "./KVVFSQueryProvider";
+import { initOPFSWorker, getOPFSQueryFunctions } from "./OPFSQueryProvider";
+import {
+  createOrGetDatabase,
+  getKVVFSQueryFunctions,
+} from "./KVVFSQueryProvider";
 
-let queryProviderSingleton = undefined;
+let dbProviderSingleton = undefined;
 
-const initializeDictionary = async () => {
-  if (queryProviderSingleton) {
-    return queryProviderSingleton;
+const initializeQueryProvider = async () => {
+  if (dbProviderSingleton) {
+    return dbProviderSingleton;
   }
   const opfsWorker = await initOPFSWorker();
   if (opfsWorker) {
-    queryProviderSingleton = queryOPFSWorker;
+    dbProviderSingleton = getOPFSQueryFunctions();
     console.log("Initialized OPFS query provider.");
-    return queryProviderSingleton;
+    return dbProviderSingleton;
   } else {
     console.log("Failed to initialize OPFS query provider, trying KVVFS");
   }
@@ -21,14 +24,14 @@ const initializeDictionary = async () => {
       "Could not initialize any query provider, so cannot provide access to a card database."
     );
   }
-  queryProviderSingleton = queryKVVFSDatabase;
+  dbProviderSingleton = getKVVFSQueryFunctions();
   console.log("Initialized LVVFS query provider.");
-  return queryProviderSingleton;
+  return dbProviderSingleton;
 };
 
 export const queryDictionary = async (query) => {
-  const queryProvider = await initializeDictionary();
-  return await queryProvider(query);
+  const dbProvider = await initializeQueryProvider();
+  return await dbProvider.queryDB(query);
 };
 
 export const exportDatabase = async () => {

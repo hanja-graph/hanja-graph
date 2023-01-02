@@ -17,7 +17,9 @@ export const initOPFSWorker = async () => {
   return new Promise((resolve) => {
     const dbWorker = createOrGetDbWorker();
     dbWorker.onmessage = function (e) {
-      resolve(e.data);
+      resolve(
+        e.data.initSucceeded !== undefined ? e.data.initSucceeded : false
+      );
     };
     dbWorker.postMessage({
       type: "init",
@@ -25,7 +27,7 @@ export const initOPFSWorker = async () => {
   });
 };
 
-export const queryOPFSWorker = async (query) => {
+export const queryDB = async (query) => {
   return new Promise((resolve) => {
     const dbWorker = createOrGetDbWorker();
     dbWorker.onmessage = function (e) {
@@ -36,4 +38,21 @@ export const queryOPFSWorker = async (query) => {
       query: query,
     });
   });
+};
+
+const exportDB = async () => {
+  // TODO
+  return "";
+};
+
+const importDB = async (dbData) => {
+  // TODO
+};
+
+export const getOPFSQueryFunctions = () => {
+  return {
+    queryDB: queryDB,
+    exportDB: queryDB,
+    importDB: importDB,
+  };
 };
