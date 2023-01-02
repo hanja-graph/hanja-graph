@@ -1,5 +1,6 @@
 {
   "name": "hanja-graph",
+  "homepage": "https://hanja-graph.github.io",
   "private": true,
   "version": "0.0.0",
   "scripts": {
