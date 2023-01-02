@@ -5,7 +5,9 @@ to help you form associations between related words.
 For more information on the intent and design of this project, please see the
 [design](design/README.md) section.
 
-This is still under development and really doesn't work yet.
+This is still under development and really doesn't work yet. The only supported
+browser is Chrome; there are issues preventing compatibility on Safari and Firefox
+hasn't yet been tested.
 
 [Known issues](known-issues.md) lists the planned features and bug fixes.
 
