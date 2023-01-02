@@ -31,6 +31,7 @@ export default class InsertView extends React.Component<
       ...this.state,
       hanjaWord: e.target.value,
     });
+    newState.undefinedHanjas = new Set();
     for (const hanjaChar of e.target.value) {
       if (newState.hanjaToHangulMemo.has(hanjaChar)) {
         hangulWord = hangulWord + newState.hanjaToHangulMemo.get(hanjaChar);
