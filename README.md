@@ -5,7 +5,7 @@ to help you form associations between related words.
 For more information on the intent and design of this project, please see the
 [design](design/README.md) section.
 
-# A production version of the app is deployed here:
+A production version of the app is deployed here:
 * [DB browser](https://hanja-graph.github.io/hanja-graph/index.html?app=repl) - to debug the development database.
 * [Card browser](https://hanja-graph.github.io/hanja-graph/index.html?app=card&card_id=1).
 * [Insert](https://hanja-graph.github.io/hanja-graph/index.html?app=insert) - Insert a card.
