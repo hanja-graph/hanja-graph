@@ -45,10 +45,10 @@ useful for a couple of reasons.
   of context. I naturally find myself thinking "what is the difference between these two words?" 
   For example, "판결" and "결정" which share the "결" root and both could be loosely translated as 
   "decide" or "resolve." Without even thinking too hard on the essential meaning of each character, 
-  one can note that "판" also occurs in "판사" (judge, the vocation) "재판" (trial). If one already 
-  happens to know these two words, one can essentially study all of them at once, and also have a 
-  better chance of knowing when to use each word - 판결 for formal decisions by official bodies, 
-  "결정" as less formal or personal resolutions or conclusions.
+  one can note that "판" also occurs in "판사" (judge, the vocation) and "재판" (trial). If one 
+  already happens to know these two words, one can essentially study all of them at once, and also 
+  have a better chance of knowing when to use each word - 판결 for formal decisions by official 
+  bodies, "결정" as less formal or personal resolutions or conclusions.
 
 ## Decoupling grammar from meaning
 Different parts of speech are formed through Korean grammatical patterns, so the same word root can
