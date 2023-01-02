@@ -4,6 +4,7 @@ import "./App.css";
 import DbBrowser from "./components/DbBrowser";
 import CardView from "./components/CardView";
 import InsertView from "./components/InsertView";
+import { initializeDictionary } from "./db/CardDatabase";
 
 // Set up URL parameters
 const queryString = window.location.search;
@@ -17,15 +18,25 @@ if (appParameter) {
 }
 class AppProps {}
 
-class AppState {}
+class AppState {
+  constructor(readonly dbInitialized: boolean = false) {}
+}
 
 export default class App extends Component<AppProps, AppState> {
   constructor(props: AppProps) {
     super(props);
     this.state = new AppState();
   }
+
+  async componentDidMount() {
+    await initializeDictionary();
+    this.setState({ dbInitialized: true });
+  }
+
   render() {
-    if (application == "repl") {
+    if (!this.state.dbInitialized) {
+      return <div></div>;
+    } else if (application == "repl") {
       return (
         <div>
           <DbBrowser />
