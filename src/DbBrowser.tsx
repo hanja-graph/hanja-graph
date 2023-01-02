@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import "./repl-styles.css";
 import { queryDictionary } from "./CardDatabase.js";
 import { Component } from "react";
