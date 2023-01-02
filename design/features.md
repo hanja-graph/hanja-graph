@@ -98,7 +98,7 @@ and having a functional conversational vocabulary is not good enough to reach a 
 authentic L2 texts, which stands in the way of the "pleasure" part of "reading for pleasure." 
 
 Using and exercising a large reading vocabulary is a lot easier than maintaing a large number of words
-one can authentically produce  n a sentence. So this leads to the ability to reach a flow state while
+one can authentically produce in a sentence. So this leads to the ability to reach a flow state while
 reading genuinely interesting L2 material - novels and news.
 
 Which suggests that performing study tasks that are targeted at increasing the number of words one can 
