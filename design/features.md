@@ -57,15 +57,15 @@ For example:
 
 계산 is present in the following words:
 
-계산 - A calculation
-계산하다 - To calculate
-계산적이다 - Computational, of or relating to computation or calculation
+* 계산 - A calculation
+* 계산하다 - To calculate
+* 계산적이다 - Computational, of or relating to computation or calculation
 
 Or for 번덕:
 
-변덕 - Whim
-변덕스럽다 - Whimsical
-변덕을 부리다- To behave whimsically
+* 변덕 - Whim
+* 변덕스럽다 - Whimsical
+* 변덕을 부리다- To behave whimsically
 
 Language learners can easily know one of these and guess the others through context.
 
