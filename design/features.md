@@ -41,7 +41,7 @@ useful for a couple of reasons.
   my flash card deck if I don't recognize at least one of the underlying Hanja roots, because 
   it's such a waste of time to try to memorize it.
 
-* Reviewing words in clusters is potentially a more useful and efficientthan reviewing them divorced 
+* Reviewing words in clusters is potentially a more useful and efficient than reviewing them divorced 
   of context. I naturally find myself thinking "what is the difference between these two words?" 
   For example, "판결" and "결정" which share the "결" root and both could be loosely translated as 
   "decide" or "resolve." Without even thinking too hard on the essential meaning of each character, 
