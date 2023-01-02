@@ -6,7 +6,8 @@ export const initializeAndSeedDictionary = async () => {
   let selectFromHanjasResult = await queryDictionary(isDbSeededQuery);
   if (selectFromHanjasResult.error) {
     console.log("Seeding dictionary.");
-    await queryDictionary(hanjaDictionarySeed);
+    const seedResult = await queryDictionary(hanjaDictionarySeed);
+    console.log(seedResult);
     console.log("Done seeding dictionary.");
   } else {
     console.log("no need to seed");
@@ -44,7 +45,7 @@ export async function getHangulforHanja(hanja: string): Promise<Array<string>> {
 }
 
 export async function getWord(cardId: number): Promise<Word | undefined> {
-  const query = `SELECT c0hanja, c1hangul, c2english FROM hanjas_content WHERE docid = ${cardId};`;
+  const query = `SELECT hanja, hangul, english FROM hanjas WHERE id = ${cardId};`;
   const queryResult = await queryDictionary(query);
   if (queryResult.values.length > 0) {
     const values = queryResult.values;
