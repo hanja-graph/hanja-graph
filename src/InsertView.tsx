@@ -1,6 +1,6 @@
 import React from "react";
-import { queryDictionary } from "./CardDatabase.js";
 import { AddHanjaView, AddHanjaViewState } from "./AddHanjaView";
+import { getHangulforHanja } from "./CardDataProvider";
 
 class InsertViewProps {}
 class InsertViewState {
@@ -10,18 +10,6 @@ class InsertViewState {
     readonly hanjaToHangulMemo: Map<string, string> = new Map(),
     readonly undefinedHanjas: Set<string> = new Set()
   ) {}
-}
-
-async function getHangulforHanja(hanja: string): Promise<string | undefined> {
-  if (hanja.length > 1 || hanja.length == 0) {
-    throw Error("Function takes only one characrter");
-  }
-  const query = `SELECT hangul FROM korean_pronunciation WHERE hanjas LIKE '%${hanja}%';`;
-  const result = await queryDictionary(query);
-  if (result.length == 0) {
-    return undefined;
-  }
-  return result[0].values[0].toString();
 }
 
 export default class InsertView extends React.Component<
