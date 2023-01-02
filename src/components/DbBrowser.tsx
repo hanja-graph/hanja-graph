@@ -30,6 +30,11 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
   }
 
   setQueryBox(e: React.ChangeEvent<HTMLTextAreaElement>) {
+    const textArea = document.getElementById("queryBox");
+    if (textArea) {
+      textArea.style.height = "auto";
+      textArea.style.height = textArea.scrollHeight + "px";
+    }
     this.setState({ ...this.state, query: e.target.value });
   }
 
@@ -101,31 +106,25 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
     return (
       <div>
         <div className="App">
-          <h1>React SQL interpreter</h1>
-
-          <textarea
-            placeholder="Enter some SQL. No inspiration ? Try “select sqlite_version()”"
-            value={this.state.query}
-            onChange={this.setQueryBox.bind(this)}
-          ></textarea>
+          <h1>Database Browser</h1>
           <button onClick={this.executeQuery.bind(this)}>Execute </button>
-
-          <pre className="error">{(this.state.error || "").toString()}</pre>
-
-          <pre>
-            <ResultsTable resp={this.state.results} />
-          </pre>
-        </div>
-        <div>
           <button onClick={this.exportDatabase.bind(this)}>Export</button>
-        </div>
-        <div>
           <button onClick={this.importDatabase.bind(this)}>Import</button>
           <input id="fileItem" type="file"></input>
-        </div>
-        <div>
           <button onClick={this.clearDatabase.bind(this)}>Clear</button>
         </div>
+        <textarea
+          id="queryBox"
+          className="query-area"
+          placeholder="Enter some SQL. No inspiration ? Try “select sqlite_version()”"
+          value={this.state.query}
+          onChange={this.setQueryBox.bind(this)}
+        ></textarea>
+        <pre className="error">{(this.state.error || "").toString()}</pre>
+
+        <pre>
+          <ResultsTable resp={this.state.results} />
+        </pre>
       </div>
     );
   }
