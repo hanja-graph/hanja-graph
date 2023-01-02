@@ -1,6 +1,6 @@
 import { useState, Component } from "react";
 import "./App.css";
-import { queryDictionary } from "./CardDatabase.js";
+import DbBrowser from "./DbBrowser";
 
 class AppProps {}
 
@@ -11,16 +11,11 @@ export default class App extends Component<AppProps, AppState> {
     super(props);
     this.state = new AppState();
   }
-  componentDidMount() {
-    const startDb = async () => {
-      const queryResult = await queryDictionary(
-        "SELECT * FROM hanjas LIMIT 1;"
-      );
-      console.log(queryResult);
-    };
-    startDb();
-  }
   render() {
-    return <div>{"Foo"}</div>;
+    return (
+      <div>
+        <DbBrowser />
+      </div>
+    );
   }
 }
