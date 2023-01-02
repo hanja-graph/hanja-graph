@@ -61,7 +61,7 @@ For example:
 * 계산하다 - To calculate
 * 계산적이다 - Computational, of or relating to computation or calculation
 
-Or for 번덕:
+Or for 변덕:
 
 * 변덕 - Whim
 * 변덕스럽다 - Whimsical
