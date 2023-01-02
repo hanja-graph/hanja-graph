@@ -56,12 +56,19 @@ const setupDB = async (db) => {
 };
 
 onmessage = async function (e) {
-  const dbEngine = await initDBEngine();
-  const dictionaryDB = await mountDictionaryDatabase(
-    dbEngine,
-    DICTIONARY_DB_STORAGE_PATH
-  );
-  await setupDB(dictionaryDB);
-  const result = dictionaryDB.exec(e.data);
-  postMessage(result);
+  if (e.data["type"] !== undefined && e.data["type"] == "query") {
+    if (!e.data["query"]) {
+      throw new Error(
+        "Invalid message; type was 'query' but no 'query' was specified."
+      );
+    }
+    const dbEngine = await initDBEngine();
+    const dictionaryDB = await mountDictionaryDatabase(
+      dbEngine,
+      DICTIONARY_DB_STORAGE_PATH
+    );
+    await setupDB(dictionaryDB);
+    const result = dictionaryDB.exec(e.data["query"]);
+    postMessage(result);
+  }
 };

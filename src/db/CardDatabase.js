@@ -16,6 +16,9 @@ export const queryDictionary = async (query) => {
     dbWorker.onmessage = function (e) {
       resolve(e.data);
     };
-    dbWorker.postMessage(query);
+    dbWorker.postMessage({
+      type: "query",
+      query: query,
+    });
   });
 };
