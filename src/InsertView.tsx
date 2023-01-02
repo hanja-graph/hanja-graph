@@ -1,12 +1,14 @@
 import React from "react";
 import { queryDictionary } from "./CardDatabase.js";
+import { AddHanjaView, AddHanjaViewState } from "./AddHanjaView";
 
 class InsertViewProps {}
 class InsertViewState {
   constructor(
     readonly hanjaWord: string = "",
     readonly hangulWord: string = "",
-    readonly hanjaToHangulMemo: Map<string, string> = new Map()
+    readonly hanjaToHangulMemo: Map<string, string> = new Map(),
+    readonly undefinedHanjas: Set<string> = new Set()
   ) {}
 }
 
@@ -50,6 +52,7 @@ export default class InsertView extends React.Component<
           hangulWord = hangulWord + hangulChar;
           newState.hanjaToHangulMemo.set(hanjaChar, hangulChar);
         } else {
+          newState.undefinedHanjas.add(hanjaChar);
           hangulWord = hangulWord + "?";
         }
       }
@@ -62,7 +65,21 @@ export default class InsertView extends React.Component<
     console.log("TODO: commit word");
   }
 
+  addHanjaWord(hanjaState: AddHanjaViewState) {
+    console.log("TODO: add hanja word");
+  }
+
   render() {
+    let hanjaView = <div></div>;
+    if (this.state.undefinedHanjas.size > 0) {
+      const hanjaToAdd = this.state.undefinedHanjas.values().next().value;
+      hanjaView = (
+        <AddHanjaView
+          hanja={hanjaToAdd}
+          onSubmit={this.addHanjaWord.bind(this)}
+        />
+      );
+    }
     return (
       <div>
         <h1>Insert a word</h1>
@@ -74,6 +91,7 @@ export default class InsertView extends React.Component<
         <textarea value={this.state.hangulWord} readOnly={true}>
           "
         </textarea>
+        {hanjaView}
         <button onClick={this.commitWord.bind(this)}>Commit</button>
       </div>
     );
