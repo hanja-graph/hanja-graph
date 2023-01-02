@@ -133,6 +133,15 @@ async function addHanjaMeaning(hanjaCharacter: string, meaning: string) {
   await queryDictionary(query);
 }
 
+export async function addHanjasWord(
+  hanja: string,
+  hangul: string,
+  english: string
+) {
+  const query = `INSERT INTO hanjas (hanja, hangul, english) VALUES ('${hanja}', '${hangul}', '${english}')`;
+  await queryDictionary(query);
+}
+
 export async function addHanjaWordAndDefinition(
   hanjaCharacter: string,
   meaning: string,

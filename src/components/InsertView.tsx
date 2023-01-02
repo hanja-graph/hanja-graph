@@ -3,6 +3,7 @@ import { AddHanjaView, AddHanjaViewState } from "./AddHanjaView";
 import { Dropdown } from "./Dropdown";
 import {
   getHangulforHanja,
+  addHanjasWord,
   addHanjaWordAndDefinition,
 } from "../data/CardDataProvider";
 
@@ -10,6 +11,7 @@ class InsertViewProps {}
 class InsertViewState {
   constructor(
     readonly hanjaWord: string = "",
+    readonly englishMeaning: string = "",
     readonly hangulWord: Array<Array<string>> = [],
     readonly undefinedHanjas: Set<string> = new Set(),
     readonly selectedHangul: Array<number> = []
@@ -42,12 +44,25 @@ export default class InsertView extends React.Component<
       newState.hangulWord.push(hangulChars);
       newState.selectedHangul.push(0);
     }
-    console.log(newState);
     this.setState(newState);
+  }
+  async setEnglishMeaning(e: React.ChangeEvent<HTMLTextAreaElement>) {
+    this.setState({
+      ...this.state,
+      englishMeaning: e.target.value,
+    });
   }
 
   commitWord() {
     console.log("TODO: commit word");
+    let hangul = "";
+    for (const char of this.state.hangulWord) {
+      hangul += char;
+    }
+    console.log(
+      `Adding ${this.state.hanjaWord}, ${hangul}, ${this.state.englishMeaning}`
+    );
+    addHanjasWord(this.state.hanjaWord, hangul, this.state.englishMeaning);
   }
 
   addHanjaWord(hanjaState: AddHanjaViewState) {
@@ -65,7 +80,6 @@ export default class InsertView extends React.Component<
     const selectedIdx = this.state.hangulWord[i].findIndex(
       (val) => val == e.target.value
     );
-    console.log(selectedIdx);
     newState.selectedHangul[i] = selectedIdx;
     this.setState(newState);
   }
@@ -104,6 +118,11 @@ export default class InsertView extends React.Component<
           placeholder="Enter a hanja word"
           value={this.state.hanjaWord}
           onChange={this.setHanjaBox.bind(this)}
+        ></textarea>
+        <textarea
+          placeholder="Enter the English meaning"
+          value={this.state.englishMeaning}
+          onChange={this.setEnglishMeaning.bind(this)}
         ></textarea>
         <div>{hangulView}</div>
         <div>{hanjaView}</div>
