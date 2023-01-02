@@ -1,3 +1,8 @@
-import { QueryExecResult } from "sql.js";
-export function queryDictionary(query: string): Promise<QueryExecResult[]>;
+interface QueryResponse {
+  columns: Array<string>;
+  values: Array<any>;
+  error?: string | undefined;
+}
+export function queryDictionary(query: string): Promise<QueryResponse>;
 export function initializeDictionary(): Promise<void>;
+export function exportDatabase(): Promise<string>;

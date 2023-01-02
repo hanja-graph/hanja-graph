@@ -1,12 +1,18 @@
 import "./repl-styles.css";
-import { queryDictionary } from "../db/CardDatabase.js";
+import { queryDictionary, exportDatabase } from "../db/CardDatabase.js";
 import { Component } from "react";
 
 class ReplProps {}
 
+interface QueryResponse {
+  columns: Array<string>;
+  values: Array<any>;
+  error?: string | undefined;
+}
+
 class ReplState {
   constructor(
-    readonly results: any = [],
+    readonly results: QueryResponse | undefined = undefined,
     readonly error: string | undefined = undefined,
     readonly query: string = ""
   ) {}
@@ -32,10 +38,9 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
 
   async executeQuery() {
     try {
-      console.log(`ran query: ${this.state.query}`);
-      const results = await queryDictionary(this.state.query);
+      const results: QueryResponse = await queryDictionary(this.state.query);
       this.setResults(results);
-      this.setError(undefined);
+      this.setError(results.error);
     } catch (err) {
       const error = err as Error;
       this.setError(error.toString());
@@ -43,28 +48,38 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
     }
   }
 
+  async exportDatabase() {
+    try {
+      const resultDump = await exportDatabase();
+    } catch (err) {
+      const error = err as Error;
+      this.setError(error.toString());
+    }
+  }
+
   render() {
+    console.log(this.state.results);
     return (
-      <div className="App">
-        <h1>React SQL interpreter</h1>
+      <div>
+        <div className="App">
+          <h1>React SQL interpreter</h1>
 
-        <textarea
-          placeholder="Enter some SQL. No inspiration ? Try “select sqlite_version()”"
-          value={this.state.query}
-          onChange={this.setQueryBox.bind(this)}
-        ></textarea>
-        <button onClick={this.executeQuery.bind(this)}>Execute </button>
+          <textarea
+            placeholder="Enter some SQL. No inspiration ? Try “select sqlite_version()”"
+            value={this.state.query}
+            onChange={this.setQueryBox.bind(this)}
+          ></textarea>
+          <button onClick={this.executeQuery.bind(this)}>Execute </button>
 
-        <pre className="error">{(this.state.error || "").toString()}</pre>
+          <pre className="error">{(this.state.error || "").toString()}</pre>
 
-        <pre>
-          {
-            // results contains one object per select statement in the query
-            this.state.results.map(({ columns, values }: any, i: number) => (
-              <ResultsTable key={i} columns={columns} values={values} />
-            ))
-          }
-        </pre>
+          <pre>
+            <ResultsTable resp={this.state.results} />
+          </pre>
+        </div>
+        <div>
+          <button onClick={this.exportDatabase.bind(this)}>Export</button>
+        </div>
       </div>
     );
   }
@@ -72,24 +87,27 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
 
 /**
  * Renders a single value of the array returned by db.exec(...) as a table
- * @param {import("sql.js").QueryExecResult} props
+ * @param {QueryResponse} props
  */
-function ResultsTable({ columns, values }: any) {
+function ResultsTable(props: { resp: QueryResponse | undefined }) {
+  if (!props.resp) {
+    return <table></table>;
+  }
   return (
     <table>
       <thead>
         <tr>
-          {columns.map((columnName: any, i: any) => (
+          {props.resp.columns.map((columnName: any, i: any) => (
             <td key={i}>{columnName}</td>
           ))}
         </tr>
       </thead>
 
       <tbody>
-        {values.map((row: any, i: any) => (
+        {props.resp.values.map((row: Array<any>, i: any) => (
           <tr key={i}>
-            {row.map((value: any, i: any) => (
-              <td key={i}>{value}</td>
+            {row.map((col: any, i: any) => (
+              <td key={i}>{col}</td>
             ))}
           </tr>
         ))}

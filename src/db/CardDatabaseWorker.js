@@ -1,8 +1,10 @@
+/*
 import initSqlJs from "@jlongster/sql.js";
 import { SQLiteFS } from "absurd-sql";
 import IndexedDBBackend from "absurd-sql/dist/indexeddb-backend";
 import sqlWasm from "@jlongster/sql.js/dist/sql-wasm.wasm?url";
 import hanjaDictionarySeed from "../assets/hanjadic.sql?raw";
+*/
 
 const DICTIONARY_DB_STORAGE_PATH = "/sql/db.sqlite";
 
@@ -76,7 +78,9 @@ onmessage = async function (e) {
     const result = dictionaryDB.exec(e.data["query"]);
     postMessage(result);
   } else if (e.data["type"] !== undefined && e.data["type"] == "export") {
-    console.log(self.location);
+    const urlParams = new URL(self.location.href).searchParams;
+    console.log(urlParams);
+    console.log(self);
     /*
     if (sqlite3 === undefined) {
       sqlite3 = await sqlite3InitModule(CONFIG);
