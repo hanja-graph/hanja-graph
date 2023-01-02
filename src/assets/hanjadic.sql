@@ -7771,7 +7771,7 @@ INSERT INTO `hanjas` VALUES(NULL,'南山','남산','Nam mountain');
 COMMIT;
 
 CREATE VIRTUAL TABLE `hanja_definition` USING fts3(
-  `hanjas` text,
+  `hanjas` text unique,
   `definition` text,
 );
 
