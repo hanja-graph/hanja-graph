@@ -3,7 +3,7 @@ This project aims to solve the problem of domain-specific Korean vocabulary stud
 The [Anki](https://apps.ankiweb.net/) flash card system is a great contribution to the
 collective language learning community. It solves the problem of memorization in a 
 way that has gone well beyond a minimal viable product. Apps on major mobile platforms
-allow convenient casual study when one is out and about. AnkiWeb allows data entry or
+allow convenient casual study when you are out and about. AnkiWeb allows data entry or
 card review on desktops for those with that use case, and the underlying sync mechanism
 means that your decks and progress can always be persisted. The card review scheduling 
 mechanism is thoughtful and effective. The creator of this project has used this tool 
@@ -36,7 +36,7 @@ Hanja node. We can traverse this graph from one word node to nearby word nodes, 
 have low topological distance from one another tend to have similar meanings. This is practically
 useful for a couple of reasons.
 
-* Anecdotally, words for which one already has internalized words that share one or more Hanja are 
+* Anecdotally, words for which you've already internalized words that share one or more Hanja are 
   much easier to learn than otherwise. I've reached the point where I don't even add a word to 
   my flash card deck if I don't recognize at least one of the underlying Hanja roots, because 
   it's such a waste of time to try to memorize it.
@@ -45,8 +45,8 @@ useful for a couple of reasons.
   of context. I naturally find myself thinking "what is the difference between these two words?" 
   For example, "판결" and "결정" which share the "결" root and both could be loosely translated as 
   "decide" or "resolve." Without even thinking too hard on the essential meaning of each character, 
-  one can note that "판" also occurs in "판사" (judge, the vocation) and "재판" (trial). If one 
-  already happens to know these two words, one can essentially study all of them at once, and also 
+  you can note that "판" also occurs in "판사" (judge, the vocation) and "재판" (trial). If you
+  already happens to know these two words, you can essentially study all of them at once, and also 
   have a better chance of knowing when to use each word - 판결 for formal decisions by official 
   bodies, "결정" as less formal or personal resolutions or conclusions.
 
@@ -78,7 +78,7 @@ irrelevant information and a greater ability of the scheduling algorithm to deve
 
 ## Enabling reading for pleasure
 Language production and comprehension are very complex tasks. The traditional breakdown into reading,
-writing, listening, and  speaking is very useful because one can be very good at one or two of these things
+writing, listening, and  speaking is very useful because you can be very good at one or two of these things
 while being hopeless at the other.
 
 In my experience, there's a pretty big gap between the ability to comprehend a word written in L2 and
@@ -88,7 +88,7 @@ vocabulary, right? After all, aren't we more likely to just forget words we don'
 In a classroom focused on speaking skills, yes, and this is what most people tend to focus on for good
 reasons. Being able to speak a language has the most practical benefit. But speaking is only 
 something you can do with people, and opportunities are naturally going be limited in an adult's life,
-when at least 8 hours is devoted to one's day job.
+when at least 8 hours is devoted to your day job.
 
 Flash cards are a great way to expose yourself to vocabulary, and *reading* is the perfect companion for
 a busy adult to actually exercise vocabulary so it can be retained.
@@ -98,15 +98,15 @@ and having a functional conversational vocabulary is not good enough to reach a 
 authentic L2 texts, which stands in the way of the "pleasure" part of "reading for pleasure." 
 
 Using and exercising a large reading vocabulary is a lot easier than maintaing a large number of words
-one can authentically produce in a sentence. So this leads to the ability to reach a flow state while
+you can authentically produce in a sentence. So this leads to the ability to reach a flow state while
 reading genuinely interesting L2 material - novels and news.
 
-Which suggests that performing study tasks that are targeted at increasing the number of words one can 
-have an outsized effect on language acquisition. As one becomes better able to read genuinely interesting
-things in L2, one spends more time in L2, which improves the other skills as well.
+Which suggests that performing study tasks that are targeted at increasing the number of words you can read
+has an outsized effect on language acquisition. As you becomes better able to read genuinely interesting
+things in L2, you spend more time in L2, which improves the other skills as well.
 
-And Korean is a great language to streamline this process. Once one acquires a decent number of words roots,
-it's very feasible to scan a sentence where one doesn't recognize several words and still derive the
+And Korean is a great language to streamline this process. Once you acquire a decent number of words roots,
+it's very feasible to scan a sentence where you don't recognize several words and still derive the
 essential meaning, meaning less time spent with your nose in a dictionary, less interruptions to flow state,
 and more genuine pleasure and interest.
 
@@ -114,7 +114,7 @@ and more genuine pleasure and interest.
 Following the above observations, we focus on creating a review flow based on the following principles.
 
 * A card view that allows the user to naturally see words that are connected through roots that they know.
-* A review scheduling algorithm that schedules cards based on whether one has seen related words recently 
+* A review scheduling algorithm that schedules cards based on whether you have seen related words recently 
   (and thereby implicitly reviewed that word).
 * L2 to L1 cards only, since an explicit non-goal of this project is improving functional vocabulary
   directly.
