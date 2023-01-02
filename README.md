@@ -24,10 +24,12 @@ npm run dev
 ```
 ### Apps
 #### Database browser
-[Development version](https://localhost:3000/index.html);
+[Development version](https://localhost:3000/index.html)
+
 (Available while `npm run dev` is active).
 
-[Local production version](https://localhost:3001/index.html);
+[Local production version](https://localhost:3001/index.html)
+
 (available after running `npm run build && ./test-server.py` - will predict what is available after deployment).
 
 # References
