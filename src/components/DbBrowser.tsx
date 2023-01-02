@@ -39,18 +39,26 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
   }
 
   setResults(results: any) {
-    this.setState({ ...this.state, results: results });
+    const newState = { ...this.state, results: results, error: undefined };
+    this.setState(newState);
   }
 
   setError(error: string | undefined) {
-    this.setState({ ...this.state, error: error });
+    const newState = {
+      ...this.state,
+      results: { columns: [], values: [] },
+      error: error,
+    };
+    this.setState(newState);
   }
 
   async executeQuery() {
     try {
       const results: QueryResponse = await queryDictionary(this.state.query);
       this.setResults(results);
-      this.setError(results.error);
+      if (results.error) {
+        this.setError(results.error);
+      }
     } catch (err) {
       const error = err as Error;
       this.setError(error.toString());
