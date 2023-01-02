@@ -4,5 +4,4 @@ interface QueryResponse {
   error?: string | undefined;
 }
 export function queryDictionary(query: string): Promise<QueryResponse>;
-export function initializeDictionary(): Promise<void>;
 export function exportDatabase(): Promise<string>;

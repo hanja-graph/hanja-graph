@@ -4,7 +4,7 @@ import "./App.css";
 import DbBrowser from "./components/DbBrowser";
 import CardView from "./components/CardView";
 import InsertView from "./components/InsertView";
-import { initializeDictionary } from "./db/CardDatabase";
+import { initializeAndSeedDictionary } from "./data/CardDataProvider";
 
 // Set up URL parameters
 const queryString = window.location.search;
@@ -29,7 +29,7 @@ export default class App extends Component<AppProps, AppState> {
   }
 
   async componentDidMount() {
-    await initializeDictionary();
+    await initializeAndSeedDictionary();
     this.setState({ dbInitialized: true });
   }
 

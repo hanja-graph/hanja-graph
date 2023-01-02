@@ -1,4 +1,22 @@
 import { queryDictionary } from "../db/CardDatabase.js";
+import hanjaDictionarySeed from "../assets/hanjadic.sql?raw";
+
+export const initializeAndSeedDictionary = async () => {
+  const isDbSeededQuery = "SELECT * FROM hanjas LIMIT 2;";
+  let selectFromHanjasResult = await queryDictionary(isDbSeededQuery);
+  if (selectFromHanjasResult.error) {
+    console.log("Seeding dictionary.");
+    await queryDictionary(hanjaDictionarySeed);
+  } else {
+    console.log("no need to seed");
+  }
+  selectFromHanjasResult = await queryDictionary(isDbSeededQuery);
+  if (selectFromHanjasResult.error) {
+    throw new Error(
+      `Seeding failed; after seeding, we got error ${selectFromHanjasResult.error}`
+    );
+  }
+};
 
 function assertCharacter(maybeCharacter: string) {
   if (maybeCharacter.length != 1) {
