@@ -1,5 +1,5 @@
 import "./repl-styles.css";
-import { queryDictionary } from "./CardDatabase.js";
+import { queryDictionary } from "./db/CardDatabase.js";
 import { Component } from "react";
 
 class ReplProps {}
