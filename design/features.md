@@ -31,7 +31,7 @@ Hanja word roots are a very useful learning tool. I'm not the first to think thi
 *Handbook of Korean Vocabulary*.
 
 It can be thought of as a Graph-like structure. If each Korean word consisting of multiple Hanja
-roots is a graph node, and so are individual Hanja, a word node is connected to its' requisite
+roots is a graph node, and so are individual Hanja, a word node is connected to its requisite
 Hanja node. We can traverse this graph from one word node to nearby word nodes, and words that
 have low topological distance from one another tend to have similar meanings. This is practically
 useful for a couple of reasons.
@@ -121,3 +121,8 @@ Following the above observations, we focus on creating a review flow based on th
 * Shades of meaning conveyed through example sentences in Korean, not the addition of additional English 
   synonyms.
 * Aggressive deduplication of words that differ only in their grammatical usage and not essential meaning.
+
+
+Another explicit non-goal of this project is to teach its users how to read of write Hanja themselves. In
+my experience, with Korean at least this is a massive waste of time that distracts from actual useful
+language skills.
