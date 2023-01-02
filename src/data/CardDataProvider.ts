@@ -45,6 +45,11 @@ export async function getWord(cardId: number): Promise<Word | undefined> {
   return undefined;
 }
 
+export async function addWord(hanja: string, hangul: string, english: string) {
+  const query = `INSERT INTO hanjas_content (c0hanja, c1hangul, c2english) VALUES ('${hanja}', '${hangul}', '${english}');`;
+  await queryDictionary(query);
+}
+
 export async function getEnglishDefinitionForHanja(
   hanja: string
 ): Promise<string | undefined> {
