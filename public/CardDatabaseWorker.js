@@ -95,7 +95,12 @@ onmessage = async function (e) {
         resultRows: resultRows,
       });
       if (resultRows.length == 0) {
-        return undefined;
+        postMessage({
+          columns: [],
+          values: [],
+          error: e.message,
+        });
+        return;
       }
       const result = {
         columns: Object.getOwnPropertyNames(resultRows[0]),

@@ -55,7 +55,6 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
   async exportDatabase() {
     try {
       const resultDump = await exportDatabase();
-      console.log(resultDump);
       const blob = new Blob([resultDump], { type: "application/octet-stream" });
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
