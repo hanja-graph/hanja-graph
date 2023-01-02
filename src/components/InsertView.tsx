@@ -1,6 +1,6 @@
 import React from "react";
 import { AddHanjaView, AddHanjaViewState } from "./AddHanjaView";
-import { getHangulforHanja } from "./data/CardDataProvider";
+import { getHangulforHanja } from "../data/CardDataProvider";
 
 class InsertViewProps {}
 class InsertViewState {

@@ -1,7 +1,7 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-import { queryDictionary } from "./db/CardDatabase.js";
+import { queryDictionary } from "../db/CardDatabase.js";
 
 class CardViewProps {
   constructor(readonly cardId: number) {}

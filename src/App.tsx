@@ -1,9 +1,9 @@
 import { Component } from "react";
 import "./App.css";
 
-import DbBrowser from "./DbBrowser";
-import CardView from "./CardView";
-import InsertView from "./InsertView";
+import DbBrowser from "./components/DbBrowser";
+import CardView from "./components/CardView";
+import InsertView from "./components/InsertView";
 
 // Set up URL parameters
 const queryString = window.location.search;
