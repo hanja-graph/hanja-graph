@@ -3,7 +3,12 @@ import { useState, useEffect } from "react";
 import DbBrowser from "./components/DbBrowser";
 import CardView from "./components/CardView";
 import InsertView from "./components/InsertView";
-import { initializeAndSeedDictionary } from "./data/CardDataProvider";
+import {
+  initializeAndSeedDictionary,
+  searchForCardWithHanja,
+  searchForCardWithHangul,
+  searchForCardWithEnglish,
+} from "./data/CardDataProvider";
 
 import {
   Routes,
@@ -81,6 +86,22 @@ function Home() {
   );
 }
 
+async function fuzzySearch(searchQuery: string): Promise<undefined | number> {
+  let result = await searchForCardWithHanja(searchQuery);
+  if (result != undefined) {
+    return result;
+  }
+  result = await searchForCardWithHangul(searchQuery);
+  if (result != undefined) {
+    return result;
+  }
+  result = await searchForCardWithEnglish(searchQuery);
+  if (result != undefined) {
+    return result;
+  }
+  return undefined;
+}
+
 function CardWrapper() {
   let { cardId } = useParams();
   const navigate = useNavigate();
@@ -90,6 +111,12 @@ function CardWrapper() {
       const newCardId = parseInt(cardIdText);
       if (!isNaN(newCardId)) {
         navigate(`/cards/${newCardId}`);
+      } else {
+        fuzzySearch(cardIdText).then((result) => {
+          if (result != undefined) {
+            navigate(`/cards/${result}`);
+          }
+        });
       }
     }
   };
@@ -110,8 +137,8 @@ function CardWrapper() {
             setCardIdText(e.target.value);
           }}
         />
-        <button onClick={goToCard} disabled={isNaN(parseInt(cardIdText))}>
-          Go
+        <button onClick={goToCard} disabled={cardIdText.length == 0}>
+          Search
         </button>
       </div>
     );

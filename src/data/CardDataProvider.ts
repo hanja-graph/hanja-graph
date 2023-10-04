@@ -1,4 +1,4 @@
-import { queryDictionary } from "../db/CardDatabase.js";
+import { queryDictionary, QueryResponse } from "../db/CardDatabase.js";
 import hanjaDictionarySeed from "../assets/hanjadic.sql?raw";
 
 export const initializeAndSeedDictionary = async () => {
@@ -108,6 +108,39 @@ export async function koreanPronunciationDefined(
   const query = `SELECT hangul FROM korean_pronunciation WHERE hanjas like '%${hanjaCharacter}%'`;
   const results = await queryDictionary(query);
   return results.values.length > 0;
+}
+
+export async function searchForCardWithHanja(
+  searchQuery: string
+): Promise<number | undefined> {
+  const query = `SELECT id FROM hanjas WHERE hanja LIKE '%${searchQuery}%'`;
+  const results = await queryDictionary(query);
+  if (results.values.length > 0) {
+    return results.values[0];
+  }
+  return undefined;
+}
+
+export async function searchForCardWithHangul(
+  searchQuery: string
+): Promise<number | undefined> {
+  const query = `SELECT id FROM hanjas WHERE hangul LIKE '%${searchQuery}%'`;
+  const results = await queryDictionary(query);
+  if (results.values.length > 0) {
+    return results.values[0];
+  }
+  return undefined;
+}
+
+export async function searchForCardWithEnglish(
+  searchQuery: string
+): Promise<number | undefined> {
+  const query = `SELECT id FROM hanjas WHERE english LIKE '%${searchQuery}%'`;
+  const results = await queryDictionary(query);
+  if (results.values.length > 0) {
+    return results.values[0];
+  }
+  return undefined;
 }
 
 export async function hanjaDefinitionExists(
