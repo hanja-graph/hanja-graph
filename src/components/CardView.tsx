@@ -96,9 +96,20 @@ export default class CardView extends React.Component<
   }
 
   componentDidMount() {
+    this.updateView(this.props);
+  }
+
+  componentDidUpdate(prevProps: CardViewProps) {
+    if (prevProps.cardId == this.props.cardId) {
+      return;
+    }
+    this.updateView(this.props);
+  }
+
+  updateView(props: CardViewProps) {
     const queryData = async () => {
       try {
-        const word = await getWord(this.props.cardId);
+        const word = await getWord(props.cardId);
         if (word) {
           const siblingsLists: Array<SiblingsViewProps> = [];
           for (let i = 0; i < word.hanja.length; i++) {
@@ -114,6 +125,7 @@ export default class CardView extends React.Component<
           this.setState({
             word: word,
             siblings: siblingsLists,
+            englishVisible: false,
           });
         }
       } catch (err) {}

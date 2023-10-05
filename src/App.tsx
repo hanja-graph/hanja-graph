@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import DbBrowser from "./components/DbBrowser";
 import CardView from "./components/CardView";
 import InsertView from "./components/InsertView";
+import StudyView from "./components/StudyView";
 import {
   initializeAndSeedDictionary,
   searchForCardWithHanja,
@@ -44,6 +45,10 @@ export default function App() {
             <Route path="cards">
               <Route index element={<CardWrapper />} />
               <Route path=":cardId" element={<CardWrapper />} />
+            </Route>
+            <Route path="study">
+              <Route index element={<StudyWrapper />} />
+              <Route path=":deckIdText" element={<StudyWrapper />} />
             </Route>
             <Route path="*" element={<Home />} />
           </Route>
@@ -145,13 +150,32 @@ function CardWrapper() {
   }
 }
 
-function NoMatch() {
+function StudyWrapper() {
+  let { deckIdText } = useParams();
+  if (deckIdText == undefined) {
+    return (
+      <div>
+        Deck is invalid
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+      </div>
+    );
+  }
+  const deckId = parseInt(deckIdText);
+  if (isNaN(deckId)) {
+    return (
+      <div>
+        Could not parse deck ID
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+      </div>
+    );
+  }
   return (
     <div>
-      <h2>Nothing to see here!</h2>
-      <p>
-        <Link to="/">Go to the home page</Link>
-      </p>
+      <StudyView deckId={deckId} />
     </div>
   );
 }

@@ -1,4 +1,5 @@
-import { queryDictionary, QueryResponse } from "../db/CardDatabase.js";
+import { queryDictionary } from "../db/CardDatabase.js";
+import { CardReviewState } from "../scheduler/SM2";
 import hanjaDictionarySeed from "../assets/hanjadic.sql?raw";
 
 export const initializeAndSeedDictionary = async () => {
@@ -26,12 +27,25 @@ function assertCharacter(maybeCharacter: string) {
   }
 }
 
-class Word {
+export class Word {
   constructor(
     readonly hanja: string,
     readonly hangul: string,
     readonly english: string
   ) {}
+}
+
+export class Deck {
+  constructor(readonly name: string, readonly id: number) {}
+}
+
+export interface CardReviewStateEntry {
+  readonly cardId: number;
+  cardReviewState: CardReviewState;
+}
+
+export interface DeckReviewManifest {
+  reviewState: Array<CardReviewStateEntry>;
 }
 
 export async function getHangulforHanja(hanja: string): Promise<Array<string>> {
@@ -189,4 +203,29 @@ export async function addHanjaWordAndDefinition(
       "Invalid state: hasHanjaDefinition=${hasHanjaDefinition}, hasKoreanPronunciation=${hasKoreanPronunciation}"
     );
   }
+}
+
+// A stub, TODO: implement
+export async function getDecks(): Promise<Array<Deck>> {
+  return [new Deck("foo", 0), new Deck("bar", 1)];
+}
+
+// A stub, TODO: implement
+export async function getCardsForDeck(
+  deckId: number
+): Promise<DeckReviewManifest> {
+  if (deckId == 0) {
+    return {
+      reviewState: [
+        { cardId: 239, cardReviewState: new CardReviewState(0, 1.3, 1) },
+        { cardId: 583, cardReviewState: new CardReviewState(0, 1.3, 1) },
+      ],
+    };
+  }
+  return {
+    reviewState: [
+      { cardId: 111, cardReviewState: new CardReviewState(0, 1.3, 1) },
+      { cardId: 1111, cardReviewState: new CardReviewState(0, 1.3, 1) },
+    ],
+  };
 }
