@@ -4,6 +4,7 @@ import DbBrowser from "./components/DbBrowser";
 import CardView from "./components/CardView";
 import InsertView from "./components/InsertView";
 import StudyView from "./components/StudyView";
+import DecksView from "./components/DecksView";
 import {
   initializeAndSeedDictionary,
   searchForCardWithHanja,
@@ -46,6 +47,7 @@ export default function App() {
               <Route index element={<CardWrapper />} />
               <Route path=":cardId" element={<CardWrapper />} />
             </Route>
+            <Route path="decks" element={<DecksView />} />
             <Route path="study">
               <Route index element={<StudyWrapper />} />
               <Route path=":deckIdText" element={<StudyWrapper />} />
@@ -71,6 +73,9 @@ function Layout() {
           </li>
           <li>
             <Link to="/add">Add card</Link>
+          </li>
+          <li>
+            <Link to="/decks">Decks</Link>
           </li>
           <li>
             <Link to="/cards">Card view</Link>

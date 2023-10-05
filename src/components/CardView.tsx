@@ -170,7 +170,7 @@ export default class CardView extends React.Component<
         <button onClick={this.toggleEnglish.bind(this)}>
           {this.state.englishVisible && this.state.word
             ? this.state.word.english
-            : "영어"}
+            : "?"}
         </button>
         <div>
           {rows}

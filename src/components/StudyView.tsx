@@ -30,7 +30,6 @@ export default class StudyView extends React.Component<
 
   componentDidMount() {
     const queryData = async () => {
-      console.log(this.props);
       try {
         const deck = await getCardsForDeck(this.props.deckId);
         let doneWithCard = [];
@@ -49,7 +48,6 @@ export default class StudyView extends React.Component<
   }
 
   onPostReview(grade: number) {
-    console.log(`${this.state.cardIdx} - ${grade}`);
     const deck = this.state.deck;
     let cardIdx = this.state.cardIdx;
     deck.reviewState[cardIdx].cardReviewState = processReview(
@@ -66,15 +64,10 @@ export default class StudyView extends React.Component<
 
     // Increment until we get to a card that needs reviewed.
     while (initialCardIdx != cardIdx) {
-      console.log(cardIdx);
       if (cardIdx >= deck.reviewState.length) {
-        console.log("fell off end");
-        console.log(cardIdx);
         cardIdx = 0;
       }
       if (!doneWithCard[cardIdx]) {
-        console.log("out");
-        console.log(cardIdx);
         break;
       }
       cardIdx += 1;
@@ -84,7 +77,6 @@ export default class StudyView extends React.Component<
     if (doneWithCard[cardIdx]) {
       cardIdx = -1;
     }
-    console.log(`after ${cardIdx} / ${doneWithCard}`);
     this.setState({
       ...this.state,
       deck: deck,
@@ -97,15 +89,9 @@ export default class StudyView extends React.Component<
     if (this.state.cardIdx < 0 || this.state.deck.reviewState.length == 0) {
       return <div>You have finished all reviews.</div>;
     }
-    console.log(
-      `Rendering ${this.state.cardIdx} / ${
-        this.state.deck.reviewState[this.state.cardIdx].cardId
-      }`
-    );
     return (
       <div>
         <div>
-          {this.state.deck.reviewState[this.state.cardIdx].cardId}
           <CardView
             cardId={this.state.deck.reviewState[this.state.cardIdx].cardId}
           ></CardView>
