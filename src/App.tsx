@@ -141,7 +141,6 @@ function SearchWrapper() {
   const navigate = useNavigate();
   const [hanjaHangul, setHanjaHangul] = useState("");
   const goToCard = (_e: React.MouseEvent<HTMLElement>) => {
-    console.log("go to card");
     if (hanjaHangul.length > 0) {
       fuzzySearch(hanjaHangul).then((result) => {
         if (result != undefined) {

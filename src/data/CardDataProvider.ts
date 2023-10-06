@@ -1,24 +1,59 @@
 import { queryDictionary } from "../db/CardDatabase.js";
 import { CardReviewState } from "../scheduler/SM2";
-import hanjaDictionarySeed from "../assets/hanjadic.sql?raw";
+import hanjasSchema from "../assets//schemas/hanjas.sql?raw";
+import hanjaDefinitionSchema from "../assets//schemas/hanja_definition.sql?raw";
+import koreanPronunciationSchema from "../assets//schemas/korean_pronunciation.sql?raw";
+import radicalsSchema from "../assets//schemas/radicals.sql?raw";
 
-export const initializeAndSeedDictionary = async () => {
-  const isDbSeededQuery = "SELECT * FROM hanjas LIMIT 2;";
-  let selectFromHanjasResult = await queryDictionary(isDbSeededQuery);
+import hanjasData from "../assets//sources/bravender/hanjas.sql?raw";
+import hanjaDefinitionData from "../assets//sources/bravender/hanja_definition.sql?raw";
+import koreanPronunciationData from "../assets//sources/bravender/korean_pronunciation.sql?raw";
+import radicalsData from "../assets//sources/bravender/radicals.sql?raw";
+
+export const loadTable = async (
+  schema: any,
+  dataSource: any,
+  probeQuery: string
+) => {
+  let selectFromHanjasResult = await queryDictionary(probeQuery);
   if (selectFromHanjasResult.error) {
-    console.log("Seeding dictionary.");
-    const seedResult = await queryDictionary(hanjaDictionarySeed);
+    let seedResult = await queryDictionary(schema);
     console.log(seedResult);
-    console.log("Done seeding dictionary.");
+    seedResult = await queryDictionary(dataSource);
+    console.log(seedResult);
   } else {
     console.log("no need to seed");
   }
-  selectFromHanjasResult = await queryDictionary(isDbSeededQuery);
+  selectFromHanjasResult = await queryDictionary(probeQuery);
   if (selectFromHanjasResult.error) {
     throw new Error(
       `Seeding failed; after seeding, we got error ${selectFromHanjasResult.error}`
     );
   }
+};
+
+export const initializeAndSeedDictionary = async () => {
+  console.log("Seeding radicals");
+  await loadTable(
+    radicalsSchema,
+    radicalsData,
+    "SELECT * FROM radicals LIMIT 1;"
+  );
+  console.log("Seeding hanja definitions.");
+  await loadTable(
+    hanjaDefinitionSchema,
+    hanjaDefinitionData,
+    "SELECT * FROM hanja_definition LIMIT 1;"
+  );
+  console.log("Seeding Korean pronunciation.");
+  await loadTable(
+    koreanPronunciationSchema,
+    koreanPronunciationData,
+    "SELECT * FROM korean_pronunciation LIMIT 1;"
+  );
+  console.log("Seeding hanja words.");
+  await loadTable(hanjasSchema, hanjasData, "SELECT * FROM hanjas LIMIT 1;");
+  console.log("Done seeding all.");
 };
 
 function assertCharacter(maybeCharacter: string) {
