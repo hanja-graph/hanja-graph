@@ -8,7 +8,7 @@ import {
 } from "../data/CardDataProvider.js";
 
 class CardViewProps {
-  constructor(readonly cardId: number) {}
+  constructor(readonly hanjaHangul: string) {}
 }
 
 class Word {
@@ -100,7 +100,7 @@ export default class CardView extends React.Component<
   }
 
   componentDidUpdate(prevProps: CardViewProps) {
-    if (prevProps.cardId == this.props.cardId) {
+    if (prevProps.hanjaHangul == this.props.hanjaHangul) {
       return;
     }
     this.updateView(this.props);
@@ -109,7 +109,7 @@ export default class CardView extends React.Component<
   updateView(props: CardViewProps) {
     const queryData = async () => {
       try {
-        const word = await getWord(props.cardId);
+        const word = await getWord(props.hanjaHangul);
         if (word) {
           const siblingsLists: Array<SiblingsViewProps> = [];
           for (let i = 0; i < word.hanja.length; i++) {

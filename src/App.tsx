@@ -10,6 +10,7 @@ import {
   searchForCardWithHanja,
   searchForCardWithHangul,
   searchForCardWithEnglish,
+  getWord,
 } from "./data/CardDataProvider";
 
 import {
@@ -43,10 +44,11 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="db" element={<DbBrowser />} />
             <Route path="add" element={<InsertView />} />
-            <Route path="cards">
+            <Route path="card">
               <Route index element={<CardWrapper />} />
-              <Route path=":cardId" element={<CardWrapper />} />
+              <Route path=":hanjaHangul" element={<CardWrapper />} />
             </Route>
+            <Route path="cards" element={<SearchWrapper />} />
             <Route path="decks" element={<DecksView />} />
             <Route path="study">
               <Route index element={<StudyWrapper />} />
@@ -96,7 +98,11 @@ function Home() {
   );
 }
 
-async function fuzzySearch(searchQuery: string): Promise<undefined | number> {
+async function fuzzySearch(searchQuery: string): Promise<undefined | string> {
+  const word = await getWord(searchQuery);
+  if (word != undefined) {
+    return searchQuery;
+  }
   let result = await searchForCardWithHanja(searchQuery);
   if (result != undefined) {
     return result;
@@ -113,46 +119,51 @@ async function fuzzySearch(searchQuery: string): Promise<undefined | number> {
 }
 
 function CardWrapper() {
-  let { cardId } = useParams();
-  const navigate = useNavigate();
-  const [cardIdText, setCardIdText] = useState("");
-  const goToCard = (_e: React.MouseEvent<HTMLElement>) => {
-    if (cardIdText.length > 0) {
-      const newCardId = parseInt(cardIdText);
-      if (!isNaN(newCardId)) {
-        navigate(`/cards/${newCardId}`);
-      } else {
-        fuzzySearch(cardIdText).then((result) => {
-          if (result != undefined) {
-            navigate(`/cards/${result}`);
-          }
-        });
-      }
-    }
-  };
-  if (cardId) {
+  const { hanjaHangul } = useParams();
+  if (hanjaHangul == undefined) {
     return (
       <div>
-        <CardView cardId={parseInt(cardId)} />
-        <Link to="/cards">Card index</Link>
-      </div>
-    );
-  } else {
-    return (
-      <div>
-        <input
-          type="text"
-          value={cardIdText}
-          onChange={(e) => {
-            setCardIdText(e.target.value);
-          }}
-        />
-        <button onClick={goToCard} disabled={cardIdText.length == 0}>
-          Search
-        </button>
+        Did not get a card.
+        <li>
+          <Link to="/">Home</Link>
+        </li>
       </div>
     );
   }
+  return (
+    <div>
+      <CardView hanjaHangul={hanjaHangul} />
+    </div>
+  );
+}
+
+function SearchWrapper() {
+  const navigate = useNavigate();
+  const [hanjaHangul, setHanjaHangul] = useState("");
+  const goToCard = (_e: React.MouseEvent<HTMLElement>) => {
+    console.log("go to card");
+    if (hanjaHangul.length > 0) {
+      fuzzySearch(hanjaHangul).then((result) => {
+        if (result != undefined) {
+          navigate(`/card/${result}`);
+        }
+      });
+    }
+  };
+  return (
+    <div>
+      <input
+        type="text"
+        value={hanjaHangul}
+        onChange={(e) => {
+          setHanjaHangul(e.target.value);
+        }}
+      />
+      <button onClick={goToCard} disabled={hanjaHangul.length == 0}>
+        Search
+      </button>
+    </div>
+  );
 }
 
 function StudyWrapper() {

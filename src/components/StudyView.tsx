@@ -61,6 +61,9 @@ export default class StudyView extends React.Component<
     // Go to the next card
     const initialCardIdx = cardIdx;
     cardIdx += 1;
+    if (doneWithCard.length == 1) {
+      cardIdx = 0;
+    }
 
     // Increment until we get to a card that needs reviewed.
     while (initialCardIdx != cardIdx) {
@@ -93,7 +96,9 @@ export default class StudyView extends React.Component<
       <div>
         <div>
           <CardView
-            cardId={this.state.deck.reviewState[this.state.cardIdx].cardId}
+            hanjaHangul={
+              this.state.deck.reviewState[this.state.cardIdx].hanjaHangul
+            }
           ></CardView>
         </div>
         <div>

@@ -40,7 +40,7 @@ export class Deck {
 }
 
 export interface CardReviewStateEntry {
-  readonly cardId: number;
+  readonly hanjaHangul: string;
   cardReviewState: CardReviewState;
 }
 
@@ -58,8 +58,8 @@ export async function getHangulforHanja(hanja: string): Promise<Array<string>> {
   return result.values.map((elem) => elem.toString());
 }
 
-export async function getWord(cardId: number): Promise<Word | undefined> {
-  const query = `SELECT hanja, hangul, english FROM hanjas WHERE id = ${cardId};`;
+export async function getWord(hanjahangul: string): Promise<Word | undefined> {
+  const query = `SELECT hanja, hangul, english FROM hanjas WHERE  hanja || hangul = '${hanjahangul}';`;
   const queryResult = await queryDictionary(query);
   if (queryResult.values.length > 0) {
     const values = queryResult.values;
@@ -77,7 +77,7 @@ export async function getWord(cardId: number): Promise<Word | undefined> {
 }
 
 export async function addWord(hanja: string, hangul: string, english: string) {
-  const query = `INSERT INTO hanjas_content (c0hanja, c1hangul, c2english) VALUES ('${hanja}', '${hangul}', '${english}');`;
+  const query = `INSERT INTO hanjas (hanja, hangul, english) VALUES ('${hanja}', '${hangul}', '${english}');`;
   await queryDictionary(query);
 }
 
@@ -126,8 +126,8 @@ export async function koreanPronunciationDefined(
 
 export async function searchForCardWithHanja(
   searchQuery: string
-): Promise<number | undefined> {
-  const query = `SELECT id FROM hanjas WHERE hanja LIKE '%${searchQuery}%'`;
+): Promise<string | undefined> {
+  const query = `SELECT hanja || hangul FROM hanjas WHERE hanja LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
   if (results.values.length > 0) {
     return results.values[0];
@@ -137,8 +137,8 @@ export async function searchForCardWithHanja(
 
 export async function searchForCardWithHangul(
   searchQuery: string
-): Promise<number | undefined> {
-  const query = `SELECT id FROM hanjas WHERE hangul LIKE '%${searchQuery}%'`;
+): Promise<string | undefined> {
+  const query = `SELECT hanja || hangul FROM hanjas WHERE hangul LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
   if (results.values.length > 0) {
     return results.values[0];
@@ -148,8 +148,8 @@ export async function searchForCardWithHangul(
 
 export async function searchForCardWithEnglish(
   searchQuery: string
-): Promise<number | undefined> {
-  const query = `SELECT id FROM hanjas WHERE english LIKE '%${searchQuery}%'`;
+): Promise<string | undefined> {
+  const query = `SELECT hanja || hangul FROM hanjas WHERE english LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
   if (results.values.length > 0) {
     return results.values[0];
@@ -217,15 +217,23 @@ export async function getCardsForDeck(
   if (deckId == 0) {
     return {
       reviewState: [
-        { cardId: 239, cardReviewState: new CardReviewState(0, 1.3, 1) },
-        { cardId: 583, cardReviewState: new CardReviewState(0, 1.3, 1) },
+        {
+          hanjaHangul: "漢字한자",
+          cardReviewState: new CardReviewState(0, 1.3, 1),
+        },
+        {
+          hanjaHangul: "地下지하",
+          cardReviewState: new CardReviewState(0, 1.3, 1),
+        },
       ],
     };
   }
   return {
     reviewState: [
-      { cardId: 111, cardReviewState: new CardReviewState(0, 1.3, 1) },
-      { cardId: 1111, cardReviewState: new CardReviewState(0, 1.3, 1) },
+      {
+        hanjaHangul: "地下지하",
+        cardReviewState: new CardReviewState(0, 1.3, 1),
+      },
     ],
   };
 }
