@@ -260,7 +260,6 @@ export async function getCardsForDeck(
 ): Promise<DeckReviewManifest> {
   const query = `SELECT hanja, hangul FROM tags WHERE name = '${deckName}';`;
   const res = await queryDictionary(query);
-  console.log(res);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
     // TODO: properly populate cardReviewState from DB
