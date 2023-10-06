@@ -5,22 +5,10 @@ import CardView from "./components/CardView";
 import InsertView from "./components/InsertView";
 import StudyView from "./components/StudyView";
 import DecksView from "./components/DecksView";
-import {
-  initializeAndSeedDictionary,
-  searchForCardWithHanja,
-  searchForCardWithHangul,
-  searchForCardWithEnglish,
-  getWord,
-} from "./data/CardDataProvider";
+import SearchView from "./components/SearchView";
+import { initializeAndSeedDictionary } from "./data/CardDataProvider";
 
-import {
-  Routes,
-  Route,
-  Outlet,
-  Link,
-  useParams,
-  useNavigate,
-} from "react-router-dom";
+import { Routes, Route, Outlet, Link, useParams } from "react-router-dom";
 
 export default function App() {
   const [isInitialized, setIsInitialized] = useState(false);
@@ -48,7 +36,10 @@ export default function App() {
               <Route index element={<CardWrapper />} />
               <Route path=":hanjaHangul" element={<CardWrapper />} />
             </Route>
-            <Route path="cards" element={<SearchWrapper />} />
+            <Route path="search">
+              <Route index element={<SearchView />} />
+              <Route path=":searchQuery" element={<SearchView />} />
+            </Route>
             <Route path="decks" element={<DecksView />} />
             <Route path="study">
               <Route index element={<StudyWrapper />} />
@@ -80,7 +71,7 @@ function Layout() {
             <Link to="/decks">Decks</Link>
           </li>
           <li>
-            <Link to="/cards">Card view</Link>
+            <Link to="/search">Search</Link>
           </li>
         </ul>
       </nav>
@@ -96,26 +87,6 @@ function Home() {
       <h2>Home</h2>
     </div>
   );
-}
-
-async function fuzzySearch(searchQuery: string): Promise<undefined | string> {
-  const word = await getWord(searchQuery);
-  if (word != undefined) {
-    return searchQuery;
-  }
-  let result = await searchForCardWithHanja(searchQuery);
-  if (result != undefined) {
-    return result;
-  }
-  result = await searchForCardWithHangul(searchQuery);
-  if (result != undefined) {
-    return result;
-  }
-  result = await searchForCardWithEnglish(searchQuery);
-  if (result != undefined) {
-    return result;
-  }
-  return undefined;
 }
 
 function CardWrapper() {
@@ -137,45 +108,10 @@ function CardWrapper() {
   );
 }
 
-function SearchWrapper() {
-  const navigate = useNavigate();
-  const [hanjaHangul, setHanjaHangul] = useState("");
-  const goToCard = (_e: React.MouseEvent<HTMLElement>) => {
-    if (hanjaHangul.length > 0) {
-      fuzzySearch(hanjaHangul).then((result) => {
-        if (result != undefined) {
-          navigate(`/card/${result}`);
-        }
-      });
-    }
-  };
-  return (
-    <div>
-      <input
-        type="text"
-        value={hanjaHangul}
-        onChange={(e) => {
-          setHanjaHangul(e.target.value);
-        }}
-      />
-      <button onClick={goToCard} disabled={hanjaHangul.length == 0}>
-        Search
-      </button>
-    </div>
-  );
-}
-
 function StudyWrapper() {
   let { deckName } = useParams();
   if (deckName == undefined) {
-    return (
-      <div>
-        Deck is invalid
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-      </div>
-    );
+    return <div></div>;
   }
   return (
     <div>

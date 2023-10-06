@@ -3,17 +3,12 @@ import {
   queryDictionary,
   exportDatabase,
   importDatabase,
+  QueryResponse,
 } from "../db/CardDatabase.js";
 import { initializeAndSeedDictionary } from "../data/CardDataProvider";
 import { Component } from "react";
 
 class ReplProps {}
-
-interface QueryResponse {
-  columns: Array<string>;
-  values: Array<any>;
-  error?: string | undefined;
-}
 
 class ReplState {
   constructor(

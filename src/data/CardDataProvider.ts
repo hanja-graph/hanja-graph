@@ -1,4 +1,4 @@
-import { queryDictionary } from "../db/CardDatabase.js";
+import { queryDictionary, QueryResponse } from "../db/CardDatabase.js";
 import { CardReviewState } from "../scheduler/SM2";
 import hanjasSchema from "../assets//schemas/hanjas.sql?raw";
 import hanjaDefinitionSchema from "../assets//schemas/hanja_definition.sql?raw";
@@ -73,7 +73,32 @@ export class Word {
     readonly hangul: string,
     readonly english: string
   ) {}
+
+  public get hanjaHangul() {
+    return `${this.hanja}${this.hangul}`;
+  }
 }
+
+const unpackWordFromQuery = (value: any) => {
+  if (value.length == 3) {
+    const hanja = String(value[0]);
+    const hangul = String(value[1]);
+    const english = String(value[2]);
+    return new Word(hanja, hangul, english);
+  }
+  return undefined;
+};
+
+const unpackWordsFromQuery = (queryResult: QueryResponse) => {
+  const words: Array<Word> = [];
+  for (const res of queryResult.values) {
+    const unpacked = unpackWordFromQuery(res);
+    if (unpacked !== undefined) {
+      words.push(unpacked);
+    }
+  }
+  return words;
+};
 
 export class Deck {
   constructor(readonly name: string) {}
@@ -104,16 +129,9 @@ export async function getWord(hanjahangul: string): Promise<Word | undefined> {
   if (queryResult.values.length > 0) {
     const values = queryResult.values;
     if (values.length > 0) {
-      const value = values[0];
-      if (value.length == 3) {
-        const hanja = String(value[0]);
-        const hangul = String(value[1]);
-        const english = String(value[2]);
-        return new Word(hanja, hangul, english);
-      }
+      return unpackWordFromQuery(values[0]);
     }
   }
-  return undefined;
 }
 
 export async function addWord(hanja: string, hangul: string, english: string) {
@@ -166,35 +184,38 @@ export async function koreanPronunciationDefined(
 
 export async function searchForCardWithHanja(
   searchQuery: string
-): Promise<string | undefined> {
-  const query = `SELECT hanja || hangul FROM hanjas WHERE hanja LIKE '%${searchQuery}%'`;
+): Promise<Array<Word>> {
+  const query = `SELECT hanja, hangul, english FROM hanjas WHERE hanja LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
-  if (results.values.length > 0) {
-    return results.values[0];
-  }
-  return undefined;
+  return unpackWordsFromQuery(results);
 }
 
 export async function searchForCardWithHangul(
   searchQuery: string
-): Promise<string | undefined> {
-  const query = `SELECT hanja || hangul FROM hanjas WHERE hangul LIKE '%${searchQuery}%'`;
+): Promise<Array<Word>> {
+  const query = `SELECT hanja, hangul, english FROM hanjas WHERE hangul LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
-  if (results.values.length > 0) {
-    return results.values[0];
-  }
-  return undefined;
+  return unpackWordsFromQuery(results);
 }
 
 export async function searchForCardWithEnglish(
   searchQuery: string
-): Promise<string | undefined> {
-  const query = `SELECT hanja || hangul FROM hanjas WHERE english LIKE '%${searchQuery}%'`;
+): Promise<Array<Word>> {
+  const query = `SELECT hanja, hangul, english FROM hanjas WHERE english LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
-  if (results.values.length > 0) {
-    return results.values[0];
+  return unpackWordsFromQuery(results);
+}
+
+export async function fuzzySearch(searchQuery: string): Promise<Array<Word>> {
+  const word = await getWord(searchQuery);
+  if (word != undefined) {
+    return [word];
   }
-  return undefined;
+  let words: Array<Word> = [];
+  words = words.concat(await searchForCardWithHanja(searchQuery));
+  words = words.concat(await searchForCardWithHangul(searchQuery));
+  words = words.concat(await searchForCardWithEnglish(searchQuery));
+  return words;
 }
 
 export async function hanjaDefinitionExists(

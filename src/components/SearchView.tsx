@@ -1,0 +1,77 @@
+import { useState, useEffect } from "react";
+import { fuzzySearch, Word } from "../data/CardDataProvider";
+import { Link, useNavigate, useParams } from "react-router-dom";
+
+function SearchResults(props: { words: Array<Word> }) {
+  return (
+    <table>
+      <thead>
+        <tr>
+          {["hanja", "hangul", "english", "card"].map(
+            (columnName: any, i: any) => (
+              <td key={i}>{columnName}</td>
+            )
+          )}
+        </tr>
+      </thead>
+
+      <tbody>
+        {props.words.map((word: Word, i: any) => (
+          <tr key={i}>
+            {[
+              word.hanja,
+              word.hangul,
+              word.english,
+              <Link to={`/card/${word.hanjaHangul}`}> card </Link>,
+            ].map((col: any, i: any) => (
+              <td key={i}>{col}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+export default function SearchView() {
+  const [searchQueryInput, setSearchQueryInput] = useState("");
+  const [tableData, setTableData] = useState<Array<Word>>([]);
+  const { searchQuery } = useParams();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (searchQuery !== undefined && searchQuery.length > 0) {
+      setSearchQueryInput(searchQuery);
+      fuzzySearch(searchQuery).then((result) => {
+        setTableData(result);
+      });
+    } else {
+      setTableData([]);
+      setSearchQueryInput("");
+    }
+  }, [searchQuery]);
+  return (
+    <div>
+      <input
+        type="text"
+        value={searchQueryInput}
+        onChange={(e) => {
+          setSearchQueryInput(e.target.value);
+        }}
+      />
+      <button
+        onClick={() => {
+          fuzzySearch(searchQueryInput).then((result) => {
+            setTableData(result);
+            navigate(`/search/${searchQueryInput}`);
+          });
+        }}
+        disabled={searchQueryInput.length == 0}
+      >
+        Search
+      </button>
+      <div>
+        <SearchResults words={tableData} />
+      </div>
+    </div>
+  );
+}
