@@ -9,7 +9,7 @@ import CardView from "./CardView";
 import { processReview } from "../scheduler/SM2";
 
 class StudyViewProps {
-  constructor(readonly deckId: number) {}
+  constructor(readonly deckName: string) {}
 }
 export class StudyViewState {
   constructor(
@@ -31,7 +31,7 @@ export default class StudyView extends React.Component<
   componentDidMount() {
     const queryData = async () => {
       try {
-        const deck = await getCardsForDeck(this.props.deckId);
+        const deck = await getCardsForDeck(this.props.deckName);
         let doneWithCard = [];
         for (const _ in deck.reviewState) {
           doneWithCard.push(false);

@@ -1,13 +1,6 @@
 import React from "react";
 import "reactjs-popup/dist/index.css";
-import {
-  Routes,
-  Route,
-  Outlet,
-  Link,
-  useParams,
-  useNavigate,
-} from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { Deck, getDecks } from "../data/CardDataProvider.js";
 
 class DecksViewProps {
@@ -51,7 +44,7 @@ export default class DecksView extends React.Component<
       i++;
       links.push(
         <li key={i}>
-          <Link to={`/study/${deck.id}`}>{deck.name}</Link>
+          <Link to={`/study/${deck.name}`}>{deck.name}</Link>
         </li>
       );
     }

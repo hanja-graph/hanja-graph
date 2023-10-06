@@ -4,11 +4,13 @@ import hanjasSchema from "../assets//schemas/hanjas.sql?raw";
 import hanjaDefinitionSchema from "../assets//schemas/hanja_definition.sql?raw";
 import koreanPronunciationSchema from "../assets//schemas/korean_pronunciation.sql?raw";
 import radicalsSchema from "../assets//schemas/radicals.sql?raw";
+import tagsSchema from "../assets//schemas/tags.sql?raw";
 
 import hanjasData from "../assets//sources/bravender/hanjas.sql?raw";
 import hanjaDefinitionData from "../assets//sources/bravender/hanja_definition.sql?raw";
 import koreanPronunciationData from "../assets//sources/bravender/korean_pronunciation.sql?raw";
 import radicalsData from "../assets//sources/bravender/radicals.sql?raw";
+import tagsData from "../assets//sources/john/tags.sql?raw";
 
 export const loadTable = async (
   schema: any,
@@ -53,6 +55,9 @@ export const initializeAndSeedDictionary = async () => {
   );
   console.log("Seeding hanja words.");
   await loadTable(hanjasSchema, hanjasData, "SELECT * FROM hanjas LIMIT 1;");
+
+  console.log("Seeding tags.");
+  await loadTable(tagsSchema, tagsData, "SELECT * FROM tags LIMIT 1;");
   console.log("Done seeding all.");
 };
 
@@ -71,7 +76,7 @@ export class Word {
 }
 
 export class Deck {
-  constructor(readonly name: string, readonly id: number) {}
+  constructor(readonly name: string) {}
 }
 
 export interface CardReviewStateEntry {
@@ -240,35 +245,31 @@ export async function addHanjaWordAndDefinition(
   }
 }
 
-// A stub, TODO: implement
 export async function getDecks(): Promise<Array<Deck>> {
-  return [new Deck("foo", 0), new Deck("bar", 1)];
+  const query = "SELECT DISTINCT name FROM tags;";
+  const res = await queryDictionary(query);
+  let decks: Array<Deck> = [];
+  for (const elem of res.values) {
+    decks = decks.concat(new Deck(elem[0]));
+  }
+  return decks;
 }
 
-// A stub, TODO: implement
 export async function getCardsForDeck(
-  deckId: number
+  deckName: string
 ): Promise<DeckReviewManifest> {
-  if (deckId == 0) {
-    return {
-      reviewState: [
-        {
-          hanjaHangul: "漢字한자",
-          cardReviewState: new CardReviewState(0, 1.3, 1),
-        },
-        {
-          hanjaHangul: "地下지하",
-          cardReviewState: new CardReviewState(0, 1.3, 1),
-        },
-      ],
-    };
+  const query = `SELECT hanja, hangul FROM tags WHERE name = '${deckName}';`;
+  const res = await queryDictionary(query);
+  console.log(res);
+  let states: Array<CardReviewStateEntry> = [];
+  for (const elem of res.values) {
+    // TODO: properly populate cardReviewState from DB
+    states.push({
+      hanjaHangul: `${elem[0]}${elem[1]}`,
+      cardReviewState: new CardReviewState(0, 1.3, 1),
+    });
   }
   return {
-    reviewState: [
-      {
-        hanjaHangul: "地下지하",
-        cardReviewState: new CardReviewState(0, 1.3, 1),
-      },
-    ],
+    reviewState: states,
   };
 }

@@ -110,6 +110,7 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
     await queryDictionary("DROP TABLE hanja_definition;");
     await queryDictionary("DROP TABLE korean_pronunciation;");
     await queryDictionary("DROP TABLE radicals;");
+    await queryDictionary("DROP TABLE tags;");
     await initializeAndSeedDictionary();
   }
 

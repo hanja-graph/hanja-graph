@@ -52,7 +52,7 @@ export default function App() {
             <Route path="decks" element={<DecksView />} />
             <Route path="study">
               <Route index element={<StudyWrapper />} />
-              <Route path=":deckIdText" element={<StudyWrapper />} />
+              <Route path=":deckName" element={<StudyWrapper />} />
             </Route>
             <Route path="*" element={<Home />} />
           </Route>
@@ -166,8 +166,8 @@ function SearchWrapper() {
 }
 
 function StudyWrapper() {
-  let { deckIdText } = useParams();
-  if (deckIdText == undefined) {
+  let { deckName } = useParams();
+  if (deckName == undefined) {
     return (
       <div>
         Deck is invalid
@@ -177,20 +177,9 @@ function StudyWrapper() {
       </div>
     );
   }
-  const deckId = parseInt(deckIdText);
-  if (isNaN(deckId)) {
-    return (
-      <div>
-        Could not parse deck ID
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-      </div>
-    );
-  }
   return (
     <div>
-      <StudyView deckId={deckId} />
+      <StudyView deckName={deckName} />
     </div>
   );
 }
