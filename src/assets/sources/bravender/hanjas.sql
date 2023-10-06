@@ -1,6071 +1,6069 @@
-BEGIN;
-INSERT INTO `hanjas` VALUES('牽牛星','견우성','Altair');
-INSERT INTO `hanjas` VALUES('兩棲類','양서류','Amphibia');
-INSERT INTO `hanjas` VALUES('北氷洋','북빙양','Arctic Ocean');
-INSERT INTO `hanjas` VALUES('濠洲','호주','Australia');
-INSERT INTO `hanjas` VALUES('聖書','성서','Bible');
-INSERT INTO `hanjas` VALUES('白人','백인','Caucasian');
-INSERT INTO `hanjas` VALUES('攝氏','섭씨','Celsius');
-INSERT INTO `hanjas` VALUES('中米','중미','Central America');
-INSERT INTO `hanjas` VALUES('中國','중국','China');
-INSERT INTO `hanjas` VALUES('漢字','한자','Chinese character');
-INSERT INTO `hanjas` VALUES('中共','중공','Communist China');
-INSERT INTO `hanjas` VALUES('死海','사해','Dead Sea');
-INSERT INTO `hanjas` VALUES('東印度','동인도','East Indies');
-INSERT INTO `hanjas` VALUES('極東','극동','Far East');
-INSERT INTO `hanjas` VALUES('金曜日','금요일','Friday');
-INSERT INTO `hanjas` VALUES('風疹','풍진','German measles');
-INSERT INTO `hanjas` VALUES('獨逸','독일','Germany');
-INSERT INTO `hanjas` VALUES('北斗七星','북두칠성','Great Bear');
-INSERT INTO `hanjas` VALUES('聖地','성지','Holy Land');
-INSERT INTO `hanjas` VALUES('日本','일본','Japan');
-INSERT INTO `hanjas` VALUES('韓國','한국','Korea');
-INSERT INTO `hanjas` VALUES('下院','하원','Lower House');
-INSERT INTO `hanjas` VALUES('滿洲','만주','Manchuria');
-INSERT INTO `hanjas` VALUES('地中海','지중해','Mediterranean Sea');
-INSERT INTO `hanjas` VALUES('中生代','중생대','Mesozoic era');
-INSERT INTO `hanjas` VALUES('西半球','서반구','Occident');
-INSERT INTO `hanjas` VALUES('東洋風','동양풍','Oriental');
-INSERT INTO `hanjas` VALUES('紅海','홍해','Red Sea');
-INSERT INTO `hanjas` VALUES('土曜日','토요일','Saturday');
-INSERT INTO `hanjas` VALUES('天狼星','천랑성','Sirius');
-INSERT INTO `hanjas` VALUES('南支那海','남지나해','South China Sea');
-INSERT INTO `hanjas` VALUES('日曜日','일요일','Sunday');
-INSERT INTO `hanjas` VALUES('木曜日','목요일','Thursday');
-INSERT INTO `hanjas` VALUES('火曜日','화요일','Tuesday');
-INSERT INTO `hanjas` VALUES('水曜日','수요일','Wednesday');
-INSERT INTO `hanjas` VALUES('神父','신부','abbe');
-INSERT INTO `hanjas` VALUES('省略','생략','abbreviation');
-INSERT INTO `hanjas` VALUES('略語','약어','abbreviation');
-INSERT INTO `hanjas` VALUES('略字','약자','abbreviation');
-INSERT INTO `hanjas` VALUES('退位','퇴위','abdication');
-INSERT INTO `hanjas` VALUES('腹部','복부','abdomen');
-INSERT INTO `hanjas` VALUES('才能','재능','ability');
-INSERT INTO `hanjas` VALUES('異常','이상','abnormality');
-INSERT INTO `hanjas` VALUES('原住民','원주민','aboriginal');
-INSERT INTO `hanjas` VALUES('膿瘍','농양','abscess');
-INSERT INTO `hanjas` VALUES('不在','부재','absence');
-INSERT INTO `hanjas` VALUES('缺席','결석','absence');
-INSERT INTO `hanjas` VALUES('吸收','흡수','absorption');
-INSERT INTO `hanjas` VALUES('禁慾','금욕','abstinence');
-INSERT INTO `hanjas` VALUES('抽象的','추상적','abstract');
-INSERT INTO `hanjas` VALUES('潤澤','윤택','abundance');
-INSERT INTO `hanjas` VALUES('濫用','남용','abuse,misappropriation');
-INSERT INTO `hanjas` VALUES('虐待','학대','abuse');
-INSERT INTO `hanjas` VALUES('學究的','학구적','academic');
-INSERT INTO `hanjas` VALUES('加速','가속','acceleration');
-INSERT INTO `hanjas` VALUES('加速度','가속도','acceleration');
-INSERT INTO `hanjas` VALUES('事故','사고','accident');
-INSERT INTO `hanjas` VALUES('歡呼','환호','acclamation');
-INSERT INTO `hanjas` VALUES('喝采','갈채','acclamation');
-INSERT INTO `hanjas` VALUES('融通','융통','accommodation');
-INSERT INTO `hanjas` VALUES('伴奏','반주','accompaniment');
-INSERT INTO `hanjas` VALUES('共犯者','공범자','accomplice');
-INSERT INTO `hanjas` VALUES('同類','동류','accomplice');
-INSERT INTO `hanjas` VALUES('集積','집적','accumulation');
-INSERT INTO `hanjas` VALUES('醋酸','초산','acetic acid');
-INSERT INTO `hanjas` VALUES('酸敗','산패','acidification');
-INSERT INTO `hanjas` VALUES('酸性','산성','acidity');
-INSERT INTO `hanjas` VALUES('面識','면식','acquaintance');
-INSERT INTO `hanjas` VALUES('取得','취득','acquisition');
-INSERT INTO `hanjas` VALUES('獲得','획득','acquisition');
-INSERT INTO `hanjas` VALUES('活躍','활약','activity');
-INSERT INTO `hanjas` VALUES('活況','활황','activity');
-INSERT INTO `hanjas` VALUES('鍼術','침술','acupuncture');
-INSERT INTO `hanjas` VALUES('加數','가수','addend');
-INSERT INTO `hanjas` VALUES('執着','집착','adhesion');
-INSERT INTO `hanjas` VALUES('粘着','점착','adhesion');
-INSERT INTO `hanjas` VALUES('隣接','인접','adjacent');
-INSERT INTO `hanjas` VALUES('休會','휴회','adjourn');
-INSERT INTO `hanjas` VALUES('修整','수정','adjustment');
-INSERT INTO `hanjas` VALUES('行政','행정','administration');
-INSERT INTO `hanjas` VALUES('提督','제독','admiral');
-INSERT INTO `hanjas` VALUES('感嘆','감탄','admiration');
-INSERT INTO `hanjas` VALUES('自認','자인','admission');
-INSERT INTO `hanjas` VALUES('訓戒','훈계','admonition');
-INSERT INTO `hanjas` VALUES('採擇','채택','adoption');
-INSERT INTO `hanjas` VALUES('愛慕','애모','adoration');
-INSERT INTO `hanjas` VALUES('崇拜者','숭배자','adorer');
-INSERT INTO `hanjas` VALUES('成人','성인','adult');
-INSERT INTO `hanjas` VALUES('姦夫','간부','adulterer');
-INSERT INTO `hanjas` VALUES('姦通','간통','adultery');
-INSERT INTO `hanjas` VALUES('利點','이점','advantage');
-INSERT INTO `hanjas` VALUES('副詞','부사','adverb');
-INSERT INTO `hanjas` VALUES('逆境','역경','adversity');
-INSERT INTO `hanjas` VALUES('廣告','광고','advertisement');
-INSERT INTO `hanjas` VALUES('忠告','충고','advice');
-INSERT INTO `hanjas` VALUES('助言','조언','advice');
-INSERT INTO `hanjas` VALUES('助言者','조언자','adviser');
-INSERT INTO `hanjas` VALUES('顧問','고문','adviser');
-INSERT INTO `hanjas` VALUES('飛行機','비행기','aeroplane');
-INSERT INTO `hanjas` VALUES('審美的','심미적','aesthetic');
-INSERT INTO `hanjas` VALUES('加入','가입','affiliation');
-INSERT INTO `hanjas` VALUES('斷言','단언','affirmation');
-INSERT INTO `hanjas` VALUES('後産','후산','afterbirth');
-INSERT INTO `hanjas` VALUES('後腦','후뇌','afterbrain');
-INSERT INTO `hanjas` VALUES('後甲板','후갑판','afterdeck');
-INSERT INTO `hanjas` VALUES('殘像','잔상','afterimage');
-INSERT INTO `hanjas` VALUES('午後','오후','afternoon');
-INSERT INTO `hanjas` VALUES('餘震','여진','aftershock');
-INSERT INTO `hanjas` VALUES('瑪瑙','마노','agate');
-INSERT INTO `hanjas` VALUES('代理店','대리점','agency');
-INSERT INTO `hanjas` VALUES('議題','의제','agenda');
-INSERT INTO `hanjas` VALUES('集成','집성','aggregation');
-INSERT INTO `hanjas` VALUES('侵略的','침략적','aggressive');
-INSERT INTO `hanjas` VALUES('侵略者','침략자','aggressor');
-INSERT INTO `hanjas` VALUES('動亂','동란','agitation');
-INSERT INTO `hanjas` VALUES('農業','농업','agriculture');
-INSERT INTO `hanjas` VALUES('農學','농학','agriculture');
-INSERT INTO `hanjas` VALUES('禾本學','화본학','agrostology');
-INSERT INTO `hanjas` VALUES('不殺生','불살생','ahimsa');
-INSERT INTO `hanjas` VALUES('副官','부관','aide');
-INSERT INTO `hanjas` VALUES('空中','공중','air');
-INSERT INTO `hanjas` VALUES('防空','방공','air defense');
-INSERT INTO `hanjas` VALUES('空襲','공습','air raid');
-INSERT INTO `hanjas` VALUES('空輸','공수','air transport');
-INSERT INTO `hanjas` VALUES('空港','공항','airport');
-INSERT INTO `hanjas` VALUES('飛行船','비행선','airship');
-INSERT INTO `hanjas` VALUES('敏活','민활','alacrity');
-INSERT INTO `hanjas` VALUES('警鐘','경종','alarm bell');
-INSERT INTO `hanjas` VALUES('信天翁','신천옹','albatross');
-INSERT INTO `hanjas` VALUES('代數','대수','algebra');
-INSERT INTO `hanjas` VALUES('殺藻劑','살조제','algicide');
-INSERT INTO `hanjas` VALUES('寓話','우화','allegory');
-INSERT INTO `hanjas` VALUES('頭韻','두운','alliteration');
-INSERT INTO `hanjas` VALUES('合金','합금','alloy');
-INSERT INTO `hanjas` VALUES('扁桃','편도','almond');
-INSERT INTO `hanjas` VALUES('布施','보시','alms');
-INSERT INTO `hanjas` VALUES('沈香','침향','aloe');
-INSERT INTO `hanjas` VALUES('交流','교류','alternating current');
-INSERT INTO `hanjas` VALUES('大使','대사','ambassador');
-INSERT INTO `hanjas` VALUES('琥珀','호박','amber');
-INSERT INTO `hanjas` VALUES('野心','야심','ambition');
-INSERT INTO `hanjas` VALUES('覇氣','패기','ambition');
-INSERT INTO `hanjas` VALUES('救急車','구급차','ambulance');
-INSERT INTO `hanjas` VALUES('伏兵','복병','ambush');
-INSERT INTO `hanjas` VALUES('改正','개정','amendment');
-INSERT INTO `hanjas` VALUES('紫水晶','자수정','amethyst');
-INSERT INTO `hanjas` VALUES('友好的','우호적','amicable');
-INSERT INTO `hanjas` VALUES('彈藥','탄약','ammunition');
-INSERT INTO `hanjas` VALUES('恩赦','은사','amnesty');
-INSERT INTO `hanjas` VALUES('大赦','대사','amnesty');
-INSERT INTO `hanjas` VALUES('特赦','특사','amnesty');
-INSERT INTO `hanjas` VALUES('同化作用','동화작용','anabolism');
-INSERT INTO `hanjas` VALUES('類推','유추','analogy');
-INSERT INTO `hanjas` VALUES('分析','분석','analysis');
-INSERT INTO `hanjas` VALUES('解析','해석','analysis');
-INSERT INTO `hanjas` VALUES('無政府','무정부','anarchy');
-INSERT INTO `hanjas` VALUES('破門','파문','anathema');
-INSERT INTO `hanjas` VALUES('逸話','일화','anecdote');
-INSERT INTO `hanjas` VALUES('狹心症','협심증','angina pectoris');
-INSERT INTO `hanjas` VALUES('被子植物','피자식물','angiosperm');
-INSERT INTO `hanjas` VALUES('角度','각도','angle');
-INSERT INTO `hanjas` VALUES('角速度','각속도','angular velocity');
-INSERT INTO `hanjas` VALUES('動物','동물','animal');
-INSERT INTO `hanjas` VALUES('畜産','축산','animal husbandry');
-INSERT INTO `hanjas` VALUES('全滅','전멸','annihilation');
-INSERT INTO `hanjas` VALUES('記念日','기념일','anniversary');
-INSERT INTO `hanjas` VALUES('註解','주해','annotation');
-INSERT INTO `hanjas` VALUES('陽極','양극','anode');
-INSERT INTO `hanjas` VALUES('匿名-','익명자','anonym');
-INSERT INTO `hanjas` VALUES('匿名','익명','anonymity');
-INSERT INTO `hanjas` VALUES('無名','무명','anonymity');
-INSERT INTO `hanjas` VALUES('對蹠的','대척적','antipodal');
-INSERT INTO `hanjas` VALUES('古物','고물','antique');
-INSERT INTO `hanjas` VALUES('反意語','반의어','antonym');
-INSERT INTO `hanjas` VALUES('肛門','항문','anus');
-INSERT INTO `hanjas` VALUES('大動脈','대동맥','aorta');
-INSERT INTO `hanjas` VALUES('格言','격언','aphorism');
-INSERT INTO `hanjas` VALUES('催淫劑','최음제','aphrodisiac');
-INSERT INTO `hanjas` VALUES('媚藥','미약','aphrodisiac');
-INSERT INTO `hanjas` VALUES('養蜂','양봉','apiculture');
-INSERT INTO `hanjas` VALUES('默示','묵시','apocalypse');
-INSERT INTO `hanjas` VALUES('謝罪','사죄','apology');
-INSERT INTO `hanjas` VALUES('變節','변절','apostasy');
-INSERT INTO `hanjas` VALUES('妖怪','요괴','apparition');
-INSERT INTO `hanjas` VALUES('出頭','출두','appearance');
-INSERT INTO `hanjas` VALUES('慾望','욕망','appetite');
-INSERT INTO `hanjas` VALUES('應募者','응모자','applicant');
-INSERT INTO `hanjas` VALUES('應用','응용','application');
-INSERT INTO `hanjas` VALUES('鑑賞','감상','appreciation');
-INSERT INTO `hanjas` VALUES('徒弟','도제','apprentice');
-INSERT INTO `hanjas` VALUES('見習','견습','apprentice');
-INSERT INTO `hanjas` VALUES('接近','접근','approach');
-INSERT INTO `hanjas` VALUES('充當','충당','appropriation');
-INSERT INTO `hanjas` VALUES('是認','시인','approval');
-INSERT INTO `hanjas` VALUES('贊成','찬성','approval');
-INSERT INTO `hanjas` VALUES('大略','대략','approximately');
-INSERT INTO `hanjas` VALUES('近似値','근사치','approximation');
-INSERT INTO `hanjas` VALUES('從物','종물','appurtenance');
-INSERT INTO `hanjas` VALUES('適性','적성','aptitude');
-INSERT INTO `hanjas` VALUES('水族館','수족관','aquarium');
-INSERT INTO `hanjas` VALUES('弓術','궁술','archery');
-INSERT INTO `hanjas` VALUES('群島','군도','archipelago');
-INSERT INTO `hanjas` VALUES('多島海','다도해','archipelago');
-INSERT INTO `hanjas` VALUES('公文書','공문서','archives');
-INSERT INTO `hanjas` VALUES('面積','면적','area');
-INSERT INTO `hanjas` VALUES('算數','산수','arithmetic');
-INSERT INTO `hanjas` VALUES('等差數列','등차수열','arithmetic progression');
-INSERT INTO `hanjas` VALUES('方舟','방주','ark');
-INSERT INTO `hanjas` VALUES('軍備','군비','armament');
-INSERT INTO `hanjas` VALUES('陸軍','육군','army');
-INSERT INTO `hanjas` VALUES('氣品','기품','aroma');
-INSERT INTO `hanjas` VALUES('整理','정리','arrangement');
-INSERT INTO `hanjas` VALUES('配列','배열','arrangement');
-INSERT INTO `hanjas` VALUES('編曲','편곡','arrangement');
-INSERT INTO `hanjas` VALUES('逮捕','체포','arrest');
-INSERT INTO `hanjas` VALUES('到着','도착','arrival');
-INSERT INTO `hanjas` VALUES('放火','방화','arson');
-INSERT INTO `hanjas` VALUES('藝術','예술','art');
-INSERT INTO `hanjas` VALUES('美術館','미술관','art gallery');
-INSERT INTO `hanjas` VALUES('動脈','동맥','artery');
-INSERT INTO `hanjas` VALUES('條目','조목','article');
-INSERT INTO `hanjas` VALUES('條項','조항','article');
-INSERT INTO `hanjas` VALUES('造花','조화','artificial flowers');
-INSERT INTO `hanjas` VALUES('砲兵','포병','artillery');
-INSERT INTO `hanjas` VALUES('石綿','석면','asbestos');
-INSERT INTO `hanjas` VALUES('局面','국면','aspect');
-INSERT INTO `hanjas` VALUES('樣相','양상','aspect');
-INSERT INTO `hanjas` VALUES('抱負','포부','aspiration');
-INSERT INTO `hanjas` VALUES('刺客','자객','assassin');
-INSERT INTO `hanjas` VALUES('暗殺','암살','assassination');
-INSERT INTO `hanjas` VALUES('暴行','폭행','assault');
-INSERT INTO `hanjas` VALUES('集會','집회','assembly');
-INSERT INTO `hanjas` VALUES('組立','조립','assembly');
-INSERT INTO `hanjas` VALUES('資産','자산','asset');
-INSERT INTO `hanjas` VALUES('同化','동화','assimilation');
-INSERT INTO `hanjas` VALUES('助力','조력','assistance');
-INSERT INTO `hanjas` VALUES('助手','조수','assistant');
-INSERT INTO `hanjas` VALUES('同僚','동료','associate');
-INSERT INTO `hanjas` VALUES('組合','조합','association');
-INSERT INTO `hanjas` VALUES('喘息','천식','asthma');
-INSERT INTO `hanjas` VALUES('亂視','난시','astigmatism');
-INSERT INTO `hanjas` VALUES('占星術','점성술','astrology');
-INSERT INTO `hanjas` VALUES('非對稱','비대칭','asymmetry');
-INSERT INTO `hanjas` VALUES('無神論','무신론','atheism');
-INSERT INTO `hanjas` VALUES('大氣','대기','atmosphere');
-INSERT INTO `hanjas` VALUES('環礁','환초','atoll');
-INSERT INTO `hanjas` VALUES('原子','원자','atom');
-INSERT INTO `hanjas` VALUES('微塵','미진','atom');
-INSERT INTO `hanjas` VALUES('心房','심방','atrium');
-INSERT INTO `hanjas` VALUES('愛着','애착','attachment');
-INSERT INTO `hanjas` VALUES('屬性','속성','attribute');
-INSERT INTO `hanjas` VALUES('聽衆','청중','audience');
-INSERT INTO `hanjas` VALUES('監査','감사','audit');
-INSERT INTO `hanjas` VALUES('講堂','강당','auditorium');
-INSERT INTO `hanjas` VALUES('伯母','백모','aunt');
-INSERT INTO `hanjas` VALUES('聽診','청진','auscultation');
-INSERT INTO `hanjas` VALUES('嚴格','엄격','austerity');
-INSERT INTO `hanjas` VALUES('著者','저자','author');
-INSERT INTO `hanjas` VALUES('權威','권위','authority');
-INSERT INTO `hanjas` VALUES('權能','권능','authority');
-INSERT INTO `hanjas` VALUES('權限','권한','authority');
-INSERT INTO `hanjas` VALUES('自閉症','자폐증','autism');
-INSERT INTO `hanjas` VALUES('自敍傳','자서전','autobiography');
-INSERT INTO `hanjas` VALUES('自署','자서','autograph');
-INSERT INTO `hanjas` VALUES('自動車','자동차','automobile');
-INSERT INTO `hanjas` VALUES('自治','자치','autonomy');
-INSERT INTO `hanjas` VALUES('檢屍','검시','autopsy');
-INSERT INTO `hanjas` VALUES('助動詞','조동사','auxiliary verb');
-INSERT INTO `hanjas` VALUES('有效','유효','availability');
-INSERT INTO `hanjas` VALUES('餘技','여기','avocation');
-INSERT INTO `hanjas` VALUES('覺醒','각성','awakening');
-INSERT INTO `hanjas` VALUES('公理','공리','axiom');
-INSERT INTO `hanjas` VALUES('車軸','차축','axle');
-INSERT INTO `hanjas` VALUES('氣骨','기골','backbone');
-INSERT INTO `hanjas` VALUES('背景','배경','background');
-INSERT INTO `hanjas` VALUES('背泳','배영','backstroke');
-INSERT INTO `hanjas` VALUES('不良','불량','badness');
-INSERT INTO `hanjas` VALUES('保釋','보석','bail');
-INSERT INTO `hanjas` VALUES('重曹','중조','baking soda');
-INSERT INTO `hanjas` VALUES('實彈','실탄','ball cartridge');
-INSERT INTO `hanjas` VALUES('氣球','기구','balloon');
-INSERT INTO `hanjas` VALUES('香油','향유','balm');
-INSERT INTO `hanjas` VALUES('鳳仙花','봉선화','balsam');
-INSERT INTO `hanjas` VALUES('禁制','금제','ban');
-INSERT INTO `hanjas` VALUES('繃帶','붕대','bandage');
-INSERT INTO `hanjas` VALUES('堤防','제방','bank');
-INSERT INTO `hanjas` VALUES('銀行','은행','bank');
-INSERT INTO `hanjas` VALUES('破産','파산','bankruptcy');
-INSERT INTO `hanjas` VALUES('破綻','파탄','bankruptcy');
-INSERT INTO `hanjas` VALUES('旗幟','기치','banner');
-INSERT INTO `hanjas` VALUES('宴會','연회','banquet');
-INSERT INTO `hanjas` VALUES('洗禮','세례','baptism');
-INSERT INTO `hanjas` VALUES('晴雨計','청우계','barometer');
-INSERT INTO `hanjas` VALUES('男爵','남작','baron');
-INSERT INTO `hanjas` VALUES('兵營','병영','barrack');
-INSERT INTO `hanjas` VALUES('彈幕','탄막','barrage');
-INSERT INTO `hanjas` VALUES('關門','관문','barrier');
-INSERT INTO `hanjas` VALUES('障壁','장벽','barrier');
-INSERT INTO `hanjas` VALUES('玄武岩','현무암','basalt');
-INSERT INTO `hanjas` VALUES('基地','기지','base');
-INSERT INTO `hanjas` VALUES('走壘','주루','base running');
-INSERT INTO `hanjas` VALUES('野球','야구','baseball');
-INSERT INTO `hanjas` VALUES('地下室','지하실','basement');
-INSERT INTO `hanjas` VALUES('地階','지계','basement');
-INSERT INTO `hanjas` VALUES('籠球','농구','basketball');
-INSERT INTO `hanjas` VALUES('沐浴','목욕','bathing');
-INSERT INTO `hanjas` VALUES('浴室','욕실','bathroom');
-INSERT INTO `hanjas` VALUES('浴槽','욕조','bathtub');
-INSERT INTO `hanjas` VALUES('電池','전지','battery');
-INSERT INTO `hanjas` VALUES('陣容','진용','battle array');
-INSERT INTO `hanjas` VALUES('戰場','전장','battlefield');
-INSERT INTO `hanjas` VALUES('戰艦','전함','battleship');
-INSERT INTO `hanjas` VALUES('銃劍','총검','bayonet');
-INSERT INTO `hanjas` VALUES('海邊','해변','beach');
-INSERT INTO `hanjas` VALUES('光線','광선','beam');
-INSERT INTO `hanjas` VALUES('至福','지복','beatitude');
-INSERT INTO `hanjas` VALUES('海狸','해리','beaver');
-INSERT INTO `hanjas` VALUES('寢臺','침대','bed');
-INSERT INTO `hanjas` VALUES('寢具','침구','bedding');
-INSERT INTO `hanjas` VALUES('便器','변기','bedpan');
-INSERT INTO `hanjas` VALUES('岩床','암상','bedrock');
-INSERT INTO `hanjas` VALUES('寢室','침실','bedroom');
-INSERT INTO `hanjas` VALUES('麥酒','맥주','beer');
-INSERT INTO `hanjas` VALUES('甲蟲','갑충','beetle');
-INSERT INTO `hanjas` VALUES('初心者','초심자','beginner');
-INSERT INTO `hanjas` VALUES('發端','발단','beginning');
-INSERT INTO `hanjas` VALUES('信者','신자','believer');
-INSERT INTO `hanjas` VALUES('恩人','은인','benefactor');
-INSERT INTO `hanjas` VALUES('有益','유익','beneficial');
-INSERT INTO `hanjas` VALUES('安息香','안식향','benzoin');
-INSERT INTO `hanjas` VALUES('遺贈','유증','bequest');
-INSERT INTO `hanjas` VALUES('死別','사별','bereavement');
-INSERT INTO `hanjas` VALUES('脚氣','각기','beriberi');
-INSERT INTO `hanjas` VALUES('自轉車','자전거','bicycle');
-INSERT INTO `hanjas` VALUES('重婚者','중혼자','bigamist');
-INSERT INTO `hanjas` VALUES('重婚','중혼','bigamy');
-INSERT INTO `hanjas` VALUES('膽汁','담즙','bile');
-INSERT INTO `hanjas` VALUES('撞球','당구','billiards');
-INSERT INTO `hanjas` VALUES('複本位制','복본위제','bimetallism');
-INSERT INTO `hanjas` VALUES('生化學','생화학','biochemistry');
-INSERT INTO `hanjas` VALUES('傳記','전기','biography');
-INSERT INTO `hanjas` VALUES('生物學','생물학','biology');
-INSERT INTO `hanjas` VALUES('出生','출생','birth');
-INSERT INTO `hanjas` VALUES('誕生','탄생','birth');
-INSERT INTO `hanjas` VALUES('出産','출산','birth');
-INSERT INTO `hanjas` VALUES('紅茶','홍차','black tea');
-INSERT INTO `hanjas` VALUES('高爐','고로','blast furnace');
-INSERT INTO `hanjas` VALUES('發破','발파','blasting');
-INSERT INTO `hanjas` VALUES('漂白','표백','bleaching');
-INSERT INTO `hanjas` VALUES('祝福','축복','blessing');
-INSERT INTO `hanjas` VALUES('盲點','맹점','blind spot');
-INSERT INTO `hanjas` VALUES('封鎖','봉쇄','blockade');
-INSERT INTO `hanjas` VALUES('血液','혈액','blood');
-INSERT INTO `hanjas` VALUES('血球','혈구','blood cell');
-INSERT INTO `hanjas` VALUES('血塊','혈괴','blood clot');
-INSERT INTO `hanjas` VALUES('敗血症','패혈증','blood poisoning');
-INSERT INTO `hanjas` VALUES('血壓','혈압','blood pressure');
-INSERT INTO `hanjas` VALUES('血管','혈관','blood vessel');
-INSERT INTO `hanjas` VALUES('流血','유혈','bloodshed');
-INSERT INTO `hanjas` VALUES('吸血鬼','흡혈귀','bloodsucker');
-INSERT INTO `hanjas` VALUES('吹管','취관','blowpipe');
-INSERT INTO `hanjas` VALUES('靑寫眞','청사진','blueprint');
-INSERT INTO `hanjas` VALUES('沸騰','비등','boiling');
-INSERT INTO `hanjas` VALUES('爆彈','폭탄','bomb');
-INSERT INTO `hanjas` VALUES('證書','증서','bond');
-INSERT INTO `hanjas` VALUES('焚書','분서','book burning');
-INSERT INTO `hanjas` VALUES('書評','서평','book review');
-INSERT INTO `hanjas` VALUES('簿記','부기','bookkeeping');
-INSERT INTO `hanjas` VALUES('書架','서가','bookshelf');
-INSERT INTO `hanjas` VALUES('露店','노점','booth');
-INSERT INTO `hanjas` VALUES('戰利品','전리품','booty');
-INSERT INTO `hanjas` VALUES('借用','차용','borrowing');
-INSERT INTO `hanjas` VALUES('植物學','식물학','botany');
-INSERT INTO `hanjas` VALUES('隘路','애로','bottleneck');
-INSERT INTO `hanjas` VALUES('境界','경계','boundary');
-INSERT INTO `hanjas` VALUES('拳鬪','권투','boxing');
-INSERT INTO `hanjas` VALUES('少年','소년','boy');
-INSERT INTO `hanjas` VALUES('排斥','배척','boycott');
-INSERT INTO `hanjas` VALUES('腦波','뇌파','brain wave');
-INSERT INTO `hanjas` VALUES('洗腦','세뇌','brainwashing');
-INSERT INTO `hanjas` VALUES('分派','분파','branch');
-INSERT INTO `hanjas` VALUES('支流','지류','branch');
-INSERT INTO `hanjas` VALUES('支脈','지맥','branch');
-INSERT INTO `hanjas` VALUES('烙印','낙인','brand');
-INSERT INTO `hanjas` VALUES('絶交','절교','breach');
-INSERT INTO `hanjas` VALUES('朝飯','조반','breakfast');
-INSERT INTO `hanjas` VALUES('防波堤','방파제','breakwater');
-INSERT INTO `hanjas` VALUES('胸部','흉부','breast');
-INSERT INTO `hanjas` VALUES('乳房','유방','breast');
-INSERT INTO `hanjas` VALUES('胸壁','흉벽','breastwork');
-INSERT INTO `hanjas` VALUES('飼育','사육','breeding');
-INSERT INTO `hanjas` VALUES('簡潔','간결','brevity');
-INSERT INTO `hanjas` VALUES('贈收賄','증수회','bribery');
-INSERT INTO `hanjas` VALUES('新婦','신부','bride');
-INSERT INTO `hanjas` VALUES('艦橋','함교','bridge');
-INSERT INTO `hanjas` VALUES('旅團','여단','brigade');
-INSERT INTO `hanjas` VALUES('光彩','광채','brilliance');
-INSERT INTO `hanjas` VALUES('剛毛','강모','bristle');
-INSERT INTO `hanjas` VALUES('蠶豆','잠두','broad bean');
-INSERT INTO `hanjas` VALUES('放送','방송','broadcast');
-INSERT INTO `hanjas` VALUES('靑銅','청동','bronze');
-INSERT INTO `hanjas` VALUES('蠻行','만행','brutality');
-INSERT INTO `hanjas` VALUES('豫算','예산','budget');
-INSERT INTO `hanjas` VALUES('建物','건물','building');
-INSERT INTO `hanjas` VALUES('球根','구근','bulb');
-INSERT INTO `hanjas` VALUES('浮力','부력','buoyancy');
-INSERT INTO `hanjas` VALUES('官僚','관료','bureaucrat');
-INSERT INTO `hanjas` VALUES('埋葬','매장','burial');
-INSERT INTO `hanjas` VALUES('實業','실업','business');
-INSERT INTO `hanjas` VALUES('營業','영업','business');
-INSERT INTO `hanjas` VALUES('用件','용건','business');
-INSERT INTO `hanjas` VALUES('上半身','상반신','bust');
-INSERT INTO `hanjas` VALUES('副産物','부산물','byproduct');
-INSERT INTO `hanjas` VALUES('船室','선실','cabin');
-INSERT INTO `hanjas` VALUES('仙人掌','선인장','cactus');
-INSERT INTO `hanjas` VALUES('方解石','방해석','calcite');
-INSERT INTO `hanjas` VALUES('打算','타산','calculation');
-INSERT INTO `hanjas` VALUES('結石','결석','calculus');
-INSERT INTO `hanjas` VALUES('無風','무풍','calm');
-INSERT INTO `hanjas` VALUES('平穩','평온','calm, quiet');
-INSERT INTO `hanjas` VALUES('誹謗','비방','calumniate');
-INSERT INTO `hanjas` VALUES('駱駝','낙타','camel');
-INSERT INTO `hanjas` VALUES('迷彩','미채','camouflage');
-INSERT INTO `hanjas` VALUES('僞裝','위장','camouflage');
-INSERT INTO `hanjas` VALUES('幕舍','막사','camp');
-INSERT INTO `hanjas` VALUES('從軍','종군','campaign');
-INSERT INTO `hanjas` VALUES('樟腦','장뇌','camphor');
-INSERT INTO `hanjas` VALUES('校庭','교정','campus');
-INSERT INTO `hanjas` VALUES('燭光','촉광','candlepower');
-INSERT INTO `hanjas` VALUES('天蓋','천개','canopy');
-INSERT INTO `hanjas` VALUES('隱語','은어','cant');
-INSERT INTO `hanjas` VALUES('容量','용량','capacity');
-INSERT INTO `hanjas` VALUES('力量','역량','capacity');
-INSERT INTO `hanjas` VALUES('極刑','극형','capital punishment');
-INSERT INTO `hanjas` VALUES('資本家','자본가','capitalist');
-INSERT INTO `hanjas` VALUES('艇長','정장','captain');
-INSERT INTO `hanjas` VALUES('逮捕者','체포자','captor');
-INSERT INTO `hanjas` VALUES('捕獲','포획','capture');
-INSERT INTO `hanjas` VALUES('洗車','세차','car wash');
-INSERT INTO `hanjas` VALUES('炭水化物','탄수화물','carbohydrate');
-INSERT INTO `hanjas` VALUES('一酸化炭素','일산화탄소','carbon monoxide');
-INSERT INTO `hanjas` VALUES('炭酸','탄산','carbonic acid');
-INSERT INTO `hanjas` VALUES('炭化','탄화','carbonization');
-INSERT INTO `hanjas` VALUES('發癌','발암','carcinogenesis');
-INSERT INTO `hanjas` VALUES('板紙','판지','cardboard');
-INSERT INTO `hanjas` VALUES('愛撫','애무','caress');
-INSERT INTO `hanjas` VALUES('船荷','선하','cargo');
-INSERT INTO `hanjas` VALUES('貨物','화물','cargo');
-INSERT INTO `hanjas` VALUES('蟲齒','충치','caries');
-INSERT INTO `hanjas` VALUES('頌歌','송가','carol');
-INSERT INTO `hanjas` VALUES('絨緞','융단','carpet');
-INSERT INTO `hanjas` VALUES('運搬','운반','carriage');
-INSERT INTO `hanjas` VALUES('保菌者','보균자','carrier');
-INSERT INTO `hanjas` VALUES('傳書鳩','전서구','carrier pigeon');
-INSERT INTO `hanjas` VALUES('軟骨','연골','cartilage');
-INSERT INTO `hanjas` VALUES('乾酪素','건락소','casein');
-INSERT INTO `hanjas` VALUES('鑄鐵','주철','cast iron');
-INSERT INTO `hanjas` VALUES('鑄鋼','주강','cast steel');
-INSERT INTO `hanjas` VALUES('鑄造','주조','casting');
-INSERT INTO `hanjas` VALUES('鑄物','주물','casting');
-INSERT INTO `hanjas` VALUES('去勢','거세','castration');
-INSERT INTO `hanjas` VALUES('負傷者','부상자','casualty');
-INSERT INTO `hanjas` VALUES('觸媒','촉매','catalyst');
-INSERT INTO `hanjas` VALUES('捕球','포구','catch');
-INSERT INTO `hanjas` VALUES('範疇','범주','category');
-INSERT INTO `hanjas` VALUES('部門','부문','category');
-INSERT INTO `hanjas` VALUES('調達','조달','cater');
-INSERT INTO `hanjas` VALUES('毛蟲','모충','caterpillar');
-INSERT INTO `hanjas` VALUES('腸線','장선','catgut');
-INSERT INTO `hanjas` VALUES('注意','주의','caution');
-INSERT INTO `hanjas` VALUES('洞窟','동굴','cave');
-INSERT INTO `hanjas` VALUES('空洞','공동','cavity');
-INSERT INTO `hanjas` VALUES('祝典','축전','celebration');
-INSERT INTO `hanjas` VALUES('名士','명사','celebrity');
-INSERT INTO `hanjas` VALUES('天球','천구','celestial sphere');
-INSERT INTO `hanjas` VALUES('獨身者','독신자','celibate');
-INSERT INTO `hanjas` VALUES('細胞分裂','세포분열','cell division');
-INSERT INTO `hanjas` VALUES('遠心力','원심력','centrifugal force');
-INSERT INTO `hanjas` VALUES('遠心分離機','원심분리기','centrifugal machine');
-INSERT INTO `hanjas` VALUES('龍舌蘭','용설란','century plant');
-INSERT INTO `hanjas` VALUES('陶藝','도예','ceramics');
-INSERT INTO `hanjas` VALUES('窯業','요업','ceramics');
-INSERT INTO `hanjas` VALUES('小腦','소뇌','cerebellum');
-INSERT INTO `hanjas` VALUES('腦貧血','뇌빈혈','cerebral anemia');
-INSERT INTO `hanjas` VALUES('腦脊髓液','뇌척수액','cerebrospinal fluid');
-INSERT INTO `hanjas` VALUES('腦脊髓膜炎','뇌척수막염','cerebrospinal meningitis');
-INSERT INTO `hanjas` VALUES('大腦','대뇌','cerebrum');
-INSERT INTO `hanjas` VALUES('式典','식전','ceremony');
-INSERT INTO `hanjas` VALUES('儀式','의식','ceremony');
-INSERT INTO `hanjas` VALUES('連鎖','연쇄','chain');
-INSERT INTO `hanjas` VALUES('連鎖店','연쇄점','chain store');
-INSERT INTO `hanjas` VALUES('椅子','의자','chair');
-INSERT INTO `hanjas` VALUES('講座','강좌','chair');
-INSERT INTO `hanjas` VALUES('議長','의장','chairman');
-INSERT INTO `hanjas` VALUES('會長','회장','chairman');
-INSERT INTO `hanjas` VALUES('挑戰者','도전자','challenger');
-INSERT INTO `hanjas` VALUES('侍從','시종','chamberlain');
-INSERT INTO `hanjas` VALUES('好機','호기','chance');
-INSERT INTO `hanjas` VALUES('契機','계기','chance');
-INSERT INTO `hanjas` VALUES('變化','변화','change,variety,variation,mutation');
-INSERT INTO `hanjas` VALUES('海峽','해협','channel');
-INSERT INTO `hanjas` VALUES('聖歌','성가','chant');
-INSERT INTO `hanjas` VALUES('分會','분회','chapter');
-INSERT INTO `hanjas` VALUES('品性','품성','character');
-INSERT INTO `hanjas` VALUES('文字','문자','character');
-INSERT INTO `hanjas` VALUES('特質','특질','characteristic');
-INSERT INTO `hanjas` VALUES('特性','특성','characteristic');
-INSERT INTO `hanjas` VALUES('特色','특색','characteristic');
-INSERT INTO `hanjas` VALUES('木炭','목탄','charcoal');
-INSERT INTO `hanjas` VALUES('告發','고발','charge');
-INSERT INTO `hanjas` VALUES('電荷','전하','charge');
-INSERT INTO `hanjas` VALUES('擔當','담당','charge');
-INSERT INTO `hanjas` VALUES('突進','돌진','charge,rush,tear');
-INSERT INTO `hanjas` VALUES('魔力','마력','charm');
-INSERT INTO `hanjas` VALUES('膺懲','응징','chastisement');
-INSERT INTO `hanjas` VALUES('純潔','순결','chastity');
-INSERT INTO `hanjas` VALUES('貞淑','정숙','chastity');
-INSERT INTO `hanjas` VALUES('沮止','저지','check,arrest,retard');
-INSERT INTO `hanjas` VALUES('照査','조사','check');
-INSERT INTO `hanjas` VALUES('化學者','화학자','chemist');
-INSERT INTO `hanjas` VALUES('化學','화학','chemistry');
-INSERT INTO `hanjas` VALUES('胸郭','흉곽','chest');
-INSERT INTO `hanjas` VALUES('水痘','수두','chicken pox');
-INSERT INTO `hanjas` VALUES('頭目','두목','chief');
-INSERT INTO `hanjas` VALUES('寒氣','한기','chill');
-INSERT INTO `hanjas` VALUES('合唱','합창','chorus');
-INSERT INTO `hanjas` VALUES('彩度','채도','chroma');
-INSERT INTO `hanjas` VALUES('年表','연표','chronology');
-INSERT INTO `hanjas` VALUES('菊花','국화','chrysanthemum');
-INSERT INTO `hanjas` VALUES('桂皮','계피','cinnamon');
-INSERT INTO `hanjas` VALUES('圓陣','원진','circle');
-INSERT INTO `hanjas` VALUES('回線','회선','circuit');
-INSERT INTO `hanjas` VALUES('回報','회보','circular');
-INSERT INTO `hanjas` VALUES('流布','유포','circulation');
-INSERT INTO `hanjas` VALUES('外心','외심','circumcenter');
-INSERT INTO `hanjas` VALUES('割禮','할례','circumcision');
-INSERT INTO `hanjas` VALUES('圓周','원주','circumference');
-INSERT INTO `hanjas` VALUES('卷積雲','권적운','cirrocumulus');
-INSERT INTO `hanjas` VALUES('召喚','소환','cite');
-INSERT INTO `hanjas` VALUES('市民','시민','citizen');
-INSERT INTO `hanjas` VALUES('都會','도회','city');
-INSERT INTO `hanjas` VALUES('市議會','시의회','city council');
-INSERT INTO `hanjas` VALUES('民法','민법','civil law');
-INSERT INTO `hanjas` VALUES('民權','민권','civil rights');
-INSERT INTO `hanjas` VALUES('內亂','내란','civil war');
-INSERT INTO `hanjas` VALUES('內戰','내전','civil war');
-INSERT INTO `hanjas` VALUES('非戰鬪員','비전투원','civilian');
-INSERT INTO `hanjas` VALUES('開化','개화','civilization');
-INSERT INTO `hanjas` VALUES('文明','문명','civilization');
-INSERT INTO `hanjas` VALUES('要求者','요구자','claimant');
-INSERT INTO `hanjas` VALUES('透視','투시','clairvoyance');
-INSERT INTO `hanjas` VALUES('千里眼','천리안','clairvoyance');
-INSERT INTO `hanjas` VALUES('一門','일문','clan');
-INSERT INTO `hanjas` VALUES('閥族','벌족','clan');
-INSERT INTO `hanjas` VALUES('部類','부류','class');
-INSERT INTO `hanjas` VALUES('古典','고전','classic');
-INSERT INTO `hanjas` VALUES('級友','급우','classmate');
-INSERT INTO `hanjas` VALUES('粘土','점토','clay');
-INSERT INTO `hanjas` VALUES('淸掃','청소','cleaning');
-INSERT INTO `hanjas` VALUES('極點','극점','climax');
-INSERT INTO `hanjas` VALUES('登攀','등반','climb');
-INSERT INTO `hanjas` VALUES('陰核','음핵','clitoris');
-INSERT INTO `hanjas` VALUES('締結','체결','close');
-INSERT INTO `hanjas` VALUES('終結','종결','close');
-INSERT INTO `hanjas` VALUES('閉回路','폐회로','closed circuit');
-INSERT INTO `hanjas` VALUES('衣服','의복','clothes');
-INSERT INTO `hanjas` VALUES('衣類','의류','clothing');
-INSERT INTO `hanjas` VALUES('棍棒','곤봉','club');
-INSERT INTO `hanjas` VALUES('石炭','석탄','coal');
-INSERT INTO `hanjas` VALUES('炭鑛','탄광','coal mine');
-INSERT INTO `hanjas` VALUES('炭坑','탄갱','coal mine');
-INSERT INTO `hanjas` VALUES('採炭','채탄','coal mining');
-INSERT INTO `hanjas` VALUES('炭層','탄층','coal seam');
-INSERT INTO `hanjas` VALUES('合體','합체','coalesce');
-INSERT INTO `hanjas` VALUES('炭田','탄전','coalfield');
-INSERT INTO `hanjas` VALUES('聯立','연립','coalition');
-INSERT INTO `hanjas` VALUES('沿岸','연안','coast');
-INSERT INTO `hanjas` VALUES('海岸','해안','coast');
-INSERT INTO `hanjas` VALUES('海岸線','해안선','coastline');
-INSERT INTO `hanjas` VALUES('球菌','구균','coccus');
-INSERT INTO `hanjas` VALUES('略號','약호','code');
-INSERT INTO `hanjas` VALUES('成文化','성문화','codification');
-INSERT INTO `hanjas` VALUES('共編者','공편자','coeditor');
-INSERT INTO `hanjas` VALUES('同棲','동서','cohabitation');
-INSERT INTO `hanjas` VALUES('硬貨','경화','coin');
-INSERT INTO `hanjas` VALUES('符合','부합','coincidence');
-INSERT INTO `hanjas` VALUES('冷戰','냉전','cold war');
-INSERT INTO `hanjas` VALUES('寒波','한파','cold wave');
-INSERT INTO `hanjas` VALUES('協同','협동','collaboration');
-INSERT INTO `hanjas` VALUES('合作','합작','collaboration');
-INSERT INTO `hanjas` VALUES('共著','공저','collaboration');
-INSERT INTO `hanjas` VALUES('鎖骨','쇄골','collarbone');
-INSERT INTO `hanjas` VALUES('收集','수집','collection');
-INSERT INTO `hanjas` VALUES('結託','결탁','collusion');
-INSERT INTO `hanjas` VALUES('通謀','통모','collusion');
-INSERT INTO `hanjas` VALUES('結腸','결장','colon');
-INSERT INTO `hanjas` VALUES('植民地','식민지','colony');
-INSERT INTO `hanjas` VALUES('顔料','안료','colorant');
-INSERT INTO `hanjas` VALUES('縱隊','종대','column');
-INSERT INTO `hanjas` VALUES('縱陣','종진','column');
-INSERT INTO `hanjas` VALUES('配合','배합','combination');
-INSERT INTO `hanjas` VALUES('團結','단결','combination');
-INSERT INTO `hanjas` VALUES('聯合','연합','combination');
-INSERT INTO `hanjas` VALUES('可燃性','가연성','combustibility');
-INSERT INTO `hanjas` VALUES('燃燒','연소','combustion');
-INSERT INTO `hanjas` VALUES('喜劇','희극','comedy');
-INSERT INTO `hanjas` VALUES('彗星','혜성','comet');
-INSERT INTO `hanjas` VALUES('慰安者','위안자','comforter');
-INSERT INTO `hanjas` VALUES('通商','통상','commerce');
-INSERT INTO `hanjas` VALUES('交易','교역','commerce');
-INSERT INTO `hanjas` VALUES('營利的','영리적','commercial');
-INSERT INTO `hanjas` VALUES('商法','상법','commercial law');
-INSERT INTO `hanjas` VALUES('職權','직권','commission');
-INSERT INTO `hanjas` VALUES('手數料','수수료','commission');
-INSERT INTO `hanjas` VALUES('將校','장교','commissioned officer');
-INSERT INTO `hanjas` VALUES('言質','언질','commitment');
-INSERT INTO `hanjas` VALUES('准將','준장','commodore');
-INSERT INTO `hanjas` VALUES('公分母','공분모','common denominator');
-INSERT INTO `hanjas` VALUES('公倍數','공배수','common multiple');
-INSERT INTO `hanjas` VALUES('常識','상식','common sense');
-INSERT INTO `hanjas` VALUES('平民','평민','commoner');
-INSERT INTO `hanjas` VALUES('共通','공통','commonness');
-INSERT INTO `hanjas` VALUES('連邦','연방','commonwealth');
-INSERT INTO `hanjas` VALUES('傳達','전달','communication');
-INSERT INTO `hanjas` VALUES('聯絡','연락','communication');
-INSERT INTO `hanjas` VALUES('共産主義','공산주의','communism');
-INSERT INTO `hanjas` VALUES('伴侶','반려','companion');
-INSERT INTO `hanjas` VALUES('同伴者','동반자','companion');
-INSERT INTO `hanjas` VALUES('同伴','동반','company');
-INSERT INTO `hanjas` VALUES('會社','회사','company');
-INSERT INTO `hanjas` VALUES('商會','상회','company');
-INSERT INTO `hanjas` VALUES('尉官','위관','company officer');
-INSERT INTO `hanjas` VALUES('比較','비교','comparison');
-INSERT INTO `hanjas` VALUES('同情心','동정심','compassion');
-INSERT INTO `hanjas` VALUES('編輯','편집','compilation');
-INSERT INTO `hanjas` VALUES('不平','불평','complaint');
-INSERT INTO `hanjas` VALUES('餘角','여각','complementary angle');
-INSERT INTO `hanjas` VALUES('複合','복합','complex');
-INSERT INTO `hanjas` VALUES('追從','추종','compliance');
-INSERT INTO `hanjas` VALUES('餘病','여병','complication');
-INSERT INTO `hanjas` VALUES('共謀','공모','complicity');
-INSERT INTO `hanjas` VALUES('共犯','공범','complicity');
-INSERT INTO `hanjas` VALUES('組版','조판','composition');
-INSERT INTO `hanjas` VALUES('構圖','구도','composition');
-INSERT INTO `hanjas` VALUES('堆肥','퇴비','compost');
-INSERT INTO `hanjas` VALUES('沈着','침착','composure');
-INSERT INTO `hanjas` VALUES('化合物','화합물','compound');
-INSERT INTO `hanjas` VALUES('複利','복리','compound interest');
-INSERT INTO `hanjas` VALUES('理解','이해','comprehension');
-INSERT INTO `hanjas` VALUES('妥協','타협','compromise');
-INSERT INTO `hanjas` VALUES('計算機','계산기','computer');
-INSERT INTO `hanjas` VALUES('同志','동지','comrade');
-INSERT INTO `hanjas` VALUES('凹面','요면','concavity');
-INSERT INTO `hanjas` VALUES('隱蔽','은폐','concealment');
-INSERT INTO `hanjas` VALUES('隱匿','은닉','concealment');
-INSERT INTO `hanjas` VALUES('集中','집중','concentration');
-INSERT INTO `hanjas` VALUES('構想','구상','conception');
-INSERT INTO `hanjas` VALUES('受胎','수태','conception');
-INSERT INTO `hanjas` VALUES('配慮','배려','concern');
-INSERT INTO `hanjas` VALUES('合奏','합주','concert');
-INSERT INTO `hanjas` VALUES('協奏曲','협주곡','concerto');
-INSERT INTO `hanjas` VALUES('租界','조계','concession');
-INSERT INTO `hanjas` VALUES('外耳','외이','concha');
-INSERT INTO `hanjas` VALUES('懷柔','회유','conciliation');
-INSERT INTO `hanjas` VALUES('結末','결말','conclusion');
-INSERT INTO `hanjas` VALUES('結論','결론','conclusion');
-INSERT INTO `hanjas` VALUES('歸結','귀결','conclusion');
-INSERT INTO `hanjas` VALUES('凝縮','응축','condensation');
-INSERT INTO `hanjas` VALUES('煉乳','연유','condensed milk');
-INSERT INTO `hanjas` VALUES('聯邦','연방','confederation');
-INSERT INTO `hanjas` VALUES('自白','자백','confession');
-INSERT INTO `hanjas` VALUES('告白','고백','confession');
-INSERT INTO `hanjas` VALUES('監禁','감금','confinement');
-INSERT INTO `hanjas` VALUES('押收','압수','confiscation');
-INSERT INTO `hanjas` VALUES('直面','직면','confrontation');
-INSERT INTO `hanjas` VALUES('混同','혼동','confusion');
-INSERT INTO `hanjas` VALUES('昏迷','혼미','confusion');
-INSERT INTO `hanjas` VALUES('慶賀','경하','congratulation');
-INSERT INTO `hanjas` VALUES('會衆','회중','congregation');
-INSERT INTO `hanjas` VALUES('推測','추측','conjecture,infer,speculate,imagine');
-INSERT INTO `hanjas` VALUES('臆測','억측','conjecture');
-INSERT INTO `hanjas` VALUES('結膜炎','결막염','conjunctivitis');
-INSERT INTO `hanjas` VALUES('征服','정복','conquest');
-INSERT INTO `hanjas` VALUES('良心','양심','conscience');
-INSERT INTO `hanjas` VALUES('奉獻','봉헌','consecration');
-INSERT INTO `hanjas` VALUES('承諾','승낙','consent');
-INSERT INTO `hanjas` VALUES('顧慮','고려','consideration');
-INSERT INTO `hanjas` VALUES('考察','고찰','consideration');
-INSERT INTO `hanjas` VALUES('託送','탁송','consignment');
-INSERT INTO `hanjas` VALUES('慰藉','위자','consolation');
-INSERT INTO `hanjas` VALUES('子音','자음','consonant');
-INSERT INTO `hanjas` VALUES('子音-','자음자','consonant');
-INSERT INTO `hanjas` VALUES('陰謀','음모','conspiracy');
-INSERT INTO `hanjas` VALUES('謀議','모의','conspiracy');
-INSERT INTO `hanjas` VALUES('節操','절조','constancy');
-INSERT INTO `hanjas` VALUES('常數','상수','constant');
-INSERT INTO `hanjas` VALUES('星座','성좌','constellation');
-INSERT INTO `hanjas` VALUES('憲法','헌법','constitution');
-INSERT INTO `hanjas` VALUES('政體','정체','constitution');
-INSERT INTO `hanjas` VALUES('建造','건조','construction');
-INSERT INTO `hanjas` VALUES('建設','건설','construction');
-INSERT INTO `hanjas` VALUES('建築','건축','construction');
-INSERT INTO `hanjas` VALUES('築造','축조','construction');
-INSERT INTO `hanjas` VALUES('構造','구조','construction');
-INSERT INTO `hanjas` VALUES('領事','영사','consul');
-INSERT INTO `hanjas` VALUES('領事館','영사관','consulate');
-INSERT INTO `hanjas` VALUES('相談','상담','consultation');
-INSERT INTO `hanjas` VALUES('參照','참조','consultation');
-INSERT INTO `hanjas` VALUES('消費者','소비자','consumer');
-INSERT INTO `hanjas` VALUES('消費','소비','consumption');
-INSERT INTO `hanjas` VALUES('蔑視','멸시','contempt');
-INSERT INTO `hanjas` VALUES('侮蔑','모멸','contempt');
-INSERT INTO `hanjas` VALUES('文脈','문맥','context');
-INSERT INTO `hanjas` VALUES('大陸','대륙','continent');
-INSERT INTO `hanjas` VALUES('大陸棚','대륙붕','continental shelf');
-INSERT INTO `hanjas` VALUES('存續','존속','continuance');
-INSERT INTO `hanjas` VALUES('繼續','계속','continuation');
-INSERT INTO `hanjas` VALUES('持續','지속','continuation');
-INSERT INTO `hanjas` VALUES('撞着','당착','contradiction');
-INSERT INTO `hanjas` VALUES('寄附','기부','contribution');
-INSERT INTO `hanjas` VALUES('投稿','투고','contribution');
-INSERT INTO `hanjas` VALUES('劃策','획책','contrive');
-INSERT INTO `hanjas` VALUES('管理','관리','control');
-INSERT INTO `hanjas` VALUES('制御','제어','control');
-INSERT INTO `hanjas` VALUES('論客','논객','controversialist');
-INSERT INTO `hanjas` VALUES('論爭','논쟁','controversy,dispute');
-INSERT INTO `hanjas` VALUES('還流','환류','convection');
-INSERT INTO `hanjas` VALUES('便益','편익','convenience');
-INSERT INTO `hanjas` VALUES('協約','협약','convention');
-INSERT INTO `hanjas` VALUES('會話','회화','conversation');
-INSERT INTO `hanjas` VALUES('談話','담화','conversation');
-INSERT INTO `hanjas` VALUES('轉向','전향','conversion');
-INSERT INTO `hanjas` VALUES('改宗','개종','conversion');
-INSERT INTO `hanjas` VALUES('回旋','회선','convolution');
-INSERT INTO `hanjas` VALUES('護送','호송','convoy');
-INSERT INTO `hanjas` VALUES('痙攣','경련','convulsion');
-INSERT INTO `hanjas` VALUES('冷却器','냉각기','cooler');
-INSERT INTO `hanjas` VALUES('座標','좌표','coordinate');
-INSERT INTO `hanjas` VALUES('捕縛','포박','cop');
-INSERT INTO `hanjas` VALUES('對處','대처','cope');
-INSERT INTO `hanjas` VALUES('複寫','복사','copy');
-INSERT INTO `hanjas` VALUES('筆生','필생','copyist');
-INSERT INTO `hanjas` VALUES('版權','판권','copyright');
-INSERT INTO `hanjas` VALUES('嬌態','교태','coquetry');
-INSERT INTO `hanjas` VALUES('珊瑚','산호','coral');
-INSERT INTO `hanjas` VALUES('角膜','각막','cornea');
-INSERT INTO `hanjas` VALUES('法人','법인','corporation');
-INSERT INTO `hanjas` VALUES('微粒子','미립자','corpuscle');
-INSERT INTO `hanjas` VALUES('補正','보정','correction');
-INSERT INTO `hanjas` VALUES('添削','첨삭','correction');
-INSERT INTO `hanjas` VALUES('對應','대응','correspondence');
-INSERT INTO `hanjas` VALUES('昇汞','승홍','corrosive sublimate');
-INSERT INTO `hanjas` VALUES('轉訛','전와','corruption');
-INSERT INTO `hanjas` VALUES('皮層','피층','cortex');
-INSERT INTO `hanjas` VALUES('皮質','피질','cortex');
-INSERT INTO `hanjas` VALUES('鋼玉','강옥','corundum');
-INSERT INTO `hanjas` VALUES('化粧品','화장품','cosmetic');
-INSERT INTO `hanjas` VALUES('價格','가격','cost');
-INSERT INTO `hanjas` VALUES('原價','원가','cost price');
-INSERT INTO `hanjas` VALUES('綿製品','면제품','cotton goods');
-INSERT INTO `hanjas` VALUES('採綿器','채면기','cotton picker');
-INSERT INTO `hanjas` VALUES('計算','계산','count');
-INSERT INTO `hanjas` VALUES('伯爵','백작','count');
-INSERT INTO `hanjas` VALUES('顔色','안색','countenance');
-INSERT INTO `hanjas` VALUES('逆襲','역습','counterattack');
-INSERT INTO `hanjas` VALUES('防諜','방첩','counterespionage');
-INSERT INTO `hanjas` VALUES('對位法','대위법','counterpoint');
-INSERT INTO `hanjas` VALUES('逆宣傳','역선전','counterpropaganda');
-INSERT INTO `hanjas` VALUES('反革命','반혁명','counterrevolution');
-INSERT INTO `hanjas` VALUES('副署','부서','countersignature');
-INSERT INTO `hanjas` VALUES('田園','전원','country');
-INSERT INTO `hanjas` VALUES('進路','진로','course');
-INSERT INTO `hanjas` VALUES('針路','침로','course');
-INSERT INTO `hanjas` VALUES('課程','과정','course');
-INSERT INTO `hanjas` VALUES('一品','일품','course');
-INSERT INTO `hanjas` VALUES('好意','호의','courtesy');
-INSERT INTO `hanjas` VALUES('法廷','법정','courtroom');
-INSERT INTO `hanjas` VALUES('求婚','구혼','courtship');
-INSERT INTO `hanjas` VALUES('盟約','맹약','covenant');
-INSERT INTO `hanjas` VALUES('牛痘','우두','cow pox');
-INSERT INTO `hanjas` VALUES('卑怯','비겁','cowardice');
-INSERT INTO `hanjas` VALUES('牧童','목동','cowboy');
-INSERT INTO `hanjas` VALUES('分溜','분류','crack');
-INSERT INTO `hanjas` VALUES('名工','명공','craftsman');
-INSERT INTO `hanjas` VALUES('起重機','기중기','crane');
-INSERT INTO `hanjas` VALUES('腦神經','뇌신경','cranial nerve');
-INSERT INTO `hanjas` VALUES('頭蓋','두개','cranium');
-INSERT INTO `hanjas` VALUES('百日紅','백일홍','crape myrtle');
-INSERT INTO `hanjas` VALUES('創造','창조','creation');
-INSERT INTO `hanjas` VALUES('創造者','창조자','creator');
-INSERT INTO `hanjas` VALUES('生物','생물','creature');
-INSERT INTO `hanjas` VALUES('託兒所','탁아소','creche');
-INSERT INTO `hanjas` VALUES('債權者','채권자','creditor');
-INSERT INTO `hanjas` VALUES('信條','신조','creed');
-INSERT INTO `hanjas` VALUES('火葬','화장','cremation');
-INSERT INTO `hanjas` VALUES('犯罪','범죄','crime');
-INSERT INTO `hanjas` VALUES('犯人','범인','criminal');
-INSERT INTO `hanjas` VALUES('廢人','폐인','cripple');
-INSERT INTO `hanjas` VALUES('危機','위기','crisis');
-INSERT INTO `hanjas` VALUES('批判','비판','criticism');
-INSERT INTO `hanjas` VALUES('非難','비난','criticism');
-INSERT INTO `hanjas` VALUES('農作物','농작물','crop');
-INSERT INTO `hanjas` VALUES('十字架','십자가','cross');
-INSERT INTO `hanjas` VALUES('折衷','절충','cross');
-INSERT INTO `hanjas` VALUES('斷面','단면','cross section');
-INSERT INTO `hanjas` VALUES('混信','혼신','cross talk');
-INSERT INTO `hanjas` VALUES('群集','군집','crowd');
-INSERT INTO `hanjas` VALUES('殘虐','잔학','cruelty');
-INSERT INTO `hanjas` VALUES('殘酷','잔혹','cruelty');
-INSERT INTO `hanjas` VALUES('巡航','순항','cruise');
-INSERT INTO `hanjas` VALUES('巡洋艦','순양함','cruiser');
-INSERT INTO `hanjas` VALUES('水晶','수정','crystal');
-INSERT INTO `hanjas` VALUES('立方體','입방체','cube');
-INSERT INTO `hanjas` VALUES('立方','입방','cube');
-INSERT INTO `hanjas` VALUES('料理','요리','cuisine');
-INSERT INTO `hanjas` VALUES('耕作者','경작자','cultivator');
-INSERT INTO `hanjas` VALUES('耕耘機','경운기','cultivator');
-INSERT INTO `hanjas` VALUES('文化','문화','culture');
-INSERT INTO `hanjas` VALUES('修養','수양','culture');
-INSERT INTO `hanjas` VALUES('暗渠','암거','culvert');
-INSERT INTO `hanjas` VALUES('館長','관장','curator');
-INSERT INTO `hanjas` VALUES('治癒','치유','cure');
-INSERT INTO `hanjas` VALUES('好奇心','호기심','curiosity');
-INSERT INTO `hanjas` VALUES('通貨','통화','currency');
-INSERT INTO `hanjas` VALUES('曲線','곡선','curve');
-INSERT INTO `hanjas` VALUES('彎曲','만곡','curve');
-INSERT INTO `hanjas` VALUES('風習','풍습','custom');
-INSERT INTO `hanjas` VALUES('慣例','관례','custom');
-INSERT INTO `hanjas` VALUES('顧客','고객','customer');
-INSERT INTO `hanjas` VALUES('角皮','각피','cuticle');
-INSERT INTO `hanjas` VALUES('週期','주기','cycle');
-INSERT INTO `hanjas` VALUES('周波','주파','cycle');
-INSERT INTO `hanjas` VALUES('圓筒','원통','cylinder');
-INSERT INTO `hanjas` VALUES('短刀','단도','dagger');
-INSERT INTO `hanjas` VALUES('乳製品','유제품','dairy products');
-INSERT INTO `hanjas` VALUES('損傷','손상','damage');
-INSERT INTO `hanjas` VALUES('舞蹈','무도','dancing');
-INSERT INTO `hanjas` VALUES('年月日','연월일','date');
-INSERT INTO `hanjas` VALUES('黎明','여명','dawn');
-INSERT INTO `hanjas` VALUES('晝間','주간','daytime');
-INSERT INTO `hanjas` VALUES('停頓','정돈','deadlock');
-INSERT INTO `hanjas` VALUES('死神','사신','death');
-INSERT INTO `hanjas` VALUES('臨終','임종','deathbed');
-INSERT INTO `hanjas` VALUES('負債','부채','debt');
-INSERT INTO `hanjas` VALUES('衰微','쇠미','decadence');
-INSERT INTO `hanjas` VALUES('腐敗','부패','decay');
-INSERT INTO `hanjas` VALUES('減速','감속','deceleration');
-INSERT INTO `hanjas` VALUES('決定','결정','decision');
-INSERT INTO `hanjas` VALUES('甲板','갑판','deck');
-INSERT INTO `hanjas` VALUES('平敍文','평서문','declarative sentence');
-INSERT INTO `hanjas` VALUES('減壓','감압','decompression');
-INSERT INTO `hanjas` VALUES('老朽','노후','decrepitude');
-INSERT INTO `hanjas` VALUES('獻呈','헌정','dedication');
-INSERT INTO `hanjas` VALUES('控除','공제','deduction');
-INSERT INTO `hanjas` VALUES('打破','타파','defeat');
-INSERT INTO `hanjas` VALUES('排便','배변','defecation');
-INSERT INTO `hanjas` VALUES('被告','피고','defendant');
-INSERT INTO `hanjas` VALUES('防衛','방위','defense');
-INSERT INTO `hanjas` VALUES('守備','수비','defense');
-INSERT INTO `hanjas` VALUES('守勢','수세','defensive');
-INSERT INTO `hanjas` VALUES('缺損','결손','deficit');
-INSERT INTO `hanjas` VALUES('定義','정의','definition');
-INSERT INTO `hanjas` VALUES('落葉','낙엽','defoliation');
-INSERT INTO `hanjas` VALUES('學位','학위','degree');
-INSERT INTO `hanjas` VALUES('神格化','신격화','deification');
-INSERT INTO `hanjas` VALUES('遲滯','지체','delay');
-INSERT INTO `hanjas` VALUES('遲延','지연','delay');
-INSERT INTO `hanjas` VALUES('削除','삭제','deletion');
-INSERT INTO `hanjas` VALUES('熟考','숙고','deliberation');
-INSERT INTO `hanjas` VALUES('審議','심의','deliberation');
-INSERT INTO `hanjas` VALUES('非行','비행','delinquency');
-INSERT INTO `hanjas` VALUES('配達','배달','delivery');
-INSERT INTO `hanjas` VALUES('半神','반신','demigod');
-INSERT INTO `hanjas` VALUES('民主主義','민주주의','democracy');
-INSERT INTO `hanjas` VALUES('論證','논증','demonstration');
-INSERT INTO `hanjas` VALUES('降等','강등','demotion');
-INSERT INTO `hanjas` VALUES('分母','분모','denominator');
-INSERT INTO `hanjas` VALUES('密度','밀도','density');
-INSERT INTO `hanjas` VALUES('出發','출발','departure');
-INSERT INTO `hanjas` VALUES('屬國','속국','dependency');
-INSERT INTO `hanjas` VALUES('依存','의존','dependent');
-INSERT INTO `hanjas` VALUES('品行','품행','deportment');
-INSERT INTO `hanjas` VALUES('預金','예금','deposit');
-INSERT INTO `hanjas` VALUES('供託者','공탁자','depositor');
-INSERT INTO `hanjas` VALUES('預金者','예금자','depositor');
-INSERT INTO `hanjas` VALUES('停車場','정거장','depot');
-INSERT INTO `hanjas` VALUES('由來','유래','derivation');
-INSERT INTO `hanjas` VALUES('下降','하강','descent');
-INSERT INTO `hanjas` VALUES('敍述','서술','description');
-INSERT INTO `hanjas` VALUES('遺棄','유기','desertion');
-INSERT INTO `hanjas` VALUES('指定','지정','designation');
-INSERT INTO `hanjas` VALUES('慾求','욕구','desire');
-INSERT INTO `hanjas` VALUES('絶望','절망','despair');
-INSERT INTO `hanjas` VALUES('必死','필사','desperation');
-INSERT INTO `hanjas` VALUES('自暴自棄','자포자기','desperation');
-INSERT INTO `hanjas` VALUES('天命','천명','destiny');
-INSERT INTO `hanjas` VALUES('驅逐艦','구축함','destroyer');
-INSERT INTO `hanjas` VALUES('破壞','파괴','destruction');
-INSERT INTO `hanjas` VALUES('細部','세부','detail');
-INSERT INTO `hanjas` VALUES('抑留者','억류자','detainee');
-INSERT INTO `hanjas` VALUES('拘留','구류','detention');
-INSERT INTO `hanjas` VALUES('洗劑','세제','detergent');
-INSERT INTO `hanjas` VALUES('低下','저하','deterioration');
-INSERT INTO `hanjas` VALUES('廢位','폐위','dethronement');
-INSERT INTO `hanjas` VALUES('發展','발전','development');
-INSERT INTO `hanjas` VALUES('歸依','귀의','devotion');
-INSERT INTO `hanjas` VALUES('露點','노점','dew point');
-INSERT INTO `hanjas` VALUES('糊精','호정','dextrin');
-INSERT INTO `hanjas` VALUES('糖尿病','당뇨병','diabetes');
-INSERT INTO `hanjas` VALUES('診斷','진단','diagnosis');
-INSERT INTO `hanjas` VALUES('方言','방언','dialect');
-INSERT INTO `hanjas` VALUES('問答','문답','dialogue');
-INSERT INTO `hanjas` VALUES('直徑','직경','diameter');
-INSERT INTO `hanjas` VALUES('日記','일기','diary');
-INSERT INTO `hanjas` VALUES('獨裁的','독재적','dictatorial');
-INSERT INTO `hanjas` VALUES('辭典','사전','dictionary');
-INSERT INTO `hanjas` VALUES('辭書','사서','dictionary');
-INSERT INTO `hanjas` VALUES('困難','곤란','difficulty');
-INSERT INTO `hanjas` VALUES('支障','지장','difficulty');
-INSERT INTO `hanjas` VALUES('要約','요약','digest,summary');
-INSERT INTO `hanjas` VALUES('消化','소화','digestion');
-INSERT INTO `hanjas` VALUES('威嚴','위엄','dignity');
-INSERT INTO `hanjas` VALUES('尊嚴','존엄','dignity');
-INSERT INTO `hanjas` VALUES('貫祿','관록','dignity');
-INSERT INTO `hanjas` VALUES('品位','품위','dignity');
-INSERT INTO `hanjas` VALUES('餘談','여담','digression');
-INSERT INTO `hanjas` VALUES('窮地','궁지','dilemma');
-INSERT INTO `hanjas` VALUES('稀釋','희석','dilution');
-INSERT INTO `hanjas` VALUES('次元','차원','dimension');
-INSERT INTO `hanjas` VALUES('食卓','식탁','dining table');
-INSERT INTO `hanjas` VALUES('晩餐','만찬','dinner');
-INSERT INTO `hanjas` VALUES('午餐','오찬','dinner');
-INSERT INTO `hanjas` VALUES('恐龍','공룡','dinosaur');
-INSERT INTO `hanjas` VALUES('外交官','외교관','diplomat');
-INSERT INTO `hanjas` VALUES('直流','직류','direct current');
-INSERT INTO `hanjas` VALUES('方位','방위','direction');
-INSERT INTO `hanjas` VALUES('重役','중역','director');
-INSERT INTO `hanjas` VALUES('汚物','오물','dirt');
-INSERT INTO `hanjas` VALUES('消失','소실','disappear');
-INSERT INTO `hanjas` VALUES('失望','실망','disappointment');
-INSERT INTO `hanjas` VALUES('天災','천재','disaster');
-INSERT INTO `hanjas` VALUES('災害','재해','disaster');
-INSERT INTO `hanjas` VALUES('慘事','참사','disaster');
-INSERT INTO `hanjas` VALUES('出費','출비','disbursement');
-INSERT INTO `hanjas` VALUES('解雇','해고','discharge');
-INSERT INTO `hanjas` VALUES('弟子','제자','disciple');
-INSERT INTO `hanjas` VALUES('使徒','사도','disciple');
-INSERT INTO `hanjas` VALUES('訓育','훈육','discipline');
-INSERT INTO `hanjas` VALUES('懲戒','징계','discipline');
-INSERT INTO `hanjas` VALUES('變色','변색','discoloration');
-INSERT INTO `hanjas` VALUES('識別','식별','discrimination');
-INSERT INTO `hanjas` VALUES('圓盤','원반','discus');
-INSERT INTO `hanjas` VALUES('討議','토의','discussion');
-INSERT INTO `hanjas` VALUES('論議','논의','discussion');
-INSERT INTO `hanjas` VALUES('辯論','변론','discussion');
-INSERT INTO `hanjas` VALUES('輕蔑','경멸','disdain,scorn,despise');
-INSERT INTO `hanjas` VALUES('變裝','변장','disguise');
-INSERT INTO `hanjas` VALUES('嫌惡','혐오','disgust');
-INSERT INTO `hanjas` VALUES('急送','급송','dispatch');
-INSERT INTO `hanjas` VALUES('急派','급파','dispatch');
-INSERT INTO `hanjas` VALUES('分配者','분배자','dispenser');
-INSERT INTO `hanjas` VALUES('散亂','산란','dispersion');
-INSERT INTO `hanjas` VALUES('陳列','진열','display,exhibit,expose');
-INSERT INTO `hanjas` VALUES('表示','표시','display');
-INSERT INTO `hanjas` VALUES('不快','불쾌','displeasure');
-INSERT INTO `hanjas` VALUES('處分','처분','disposal');
-INSERT INTO `hanjas` VALUES('配置','배치','disposition');
-INSERT INTO `hanjas` VALUES('反證','반증','disproof');
-INSERT INTO `hanjas` VALUES('不合格','불합격','disqualification');
-INSERT INTO `hanjas` VALUES('失格','실격','disqualification');
-INSERT INTO `hanjas` VALUES('無視','무시','disregard,ignore,neglect');
-INSERT INTO `hanjas` VALUES('解剖','해부','dissection');
-INSERT INTO `hanjas` VALUES('散布','산포','dissemination');
-INSERT INTO `hanjas` VALUES('消散','소산','dissipation');
-INSERT INTO `hanjas` VALUES('距離','거리','distance');
-INSERT INTO `hanjas` VALUES('歪曲','왜곡','distortion');
-INSERT INTO `hanjas` VALUES('分布','분포','distribution');
-INSERT INTO `hanjas` VALUES('地區','지구','district');
-INSERT INTO `hanjas` VALUES('疑惑','의혹','distrust');
-INSERT INTO `hanjas` VALUES('同上','동상','ditto');
-INSERT INTO `hanjas` VALUES('利尿劑','이뇨제','diuretic');
-INSERT INTO `hanjas` VALUES('多角的','다각적','diversified');
-INSERT INTO `hanjas` VALUES('轉換','전환','divert');
-INSERT INTO `hanjas` VALUES('神性','신성','divinity');
-INSERT INTO `hanjas` VALUES('分配','분배','division');
-INSERT INTO `hanjas` VALUES('區劃','구획','division');
-INSERT INTO `hanjas` VALUES('師團','사단','division');
-INSERT INTO `hanjas` VALUES('離婚','이혼','divorce');
-INSERT INTO `hanjas` VALUES('書類','서류','document');
-INSERT INTO `hanjas` VALUES('人形','인형','doll');
-INSERT INTO `hanjas` VALUES('白雲石','백운석','dolomite');
-INSERT INTO `hanjas` VALUES('內需','내수','domestic demand');
-INSERT INTO `hanjas` VALUES('優性','우성','dominance');
-INSERT INTO `hanjas` VALUES('寄贈者','기증자','donor');
-INSERT INTO `hanjas` VALUES('投藥','투약','dosage');
-INSERT INTO `hanjas` VALUES('點線','점선','dotted line');
-INSERT INTO `hanjas` VALUES('倍加','배가','doubling');
-INSERT INTO `hanjas` VALUES('豪雨','호우','downpour');
-INSERT INTO `hanjas` VALUES('草案','초안','draft');
-INSERT INTO `hanjas` VALUES('草稿','초고','draft');
-INSERT INTO `hanjas` VALUES('排水','배수','drainage');
-INSERT INTO `hanjas` VALUES('製圖','제도','drawing');
-INSERT INTO `hanjas` VALUES('衣裳','의상','dress');
-INSERT INTO `hanjas` VALUES('流氷','유빙','drift ice');
-INSERT INTO `hanjas` VALUES('訓練','훈련','drill');
-INSERT INTO `hanjas` VALUES('酒宴','주연','drinking bout');
-INSERT INTO `hanjas` VALUES('飮料水','음료수','drinking water');
-INSERT INTO `hanjas` VALUES('運轉','운전','driving');
-INSERT INTO `hanjas` VALUES('單峰駱駝','단봉낙타','dromedary');
-INSERT INTO `hanjas` VALUES('落下','낙하','drop');
-INSERT INTO `hanjas` VALUES('投下','투하','dropping');
-INSERT INTO `hanjas` VALUES('旱魃','한발','drought');
-INSERT INTO `hanjas` VALUES('藥劑','약제','drug');
-INSERT INTO `hanjas` VALUES('鼓手','고수','drummer');
-INSERT INTO `hanjas` VALUES('乾電池','건전지','dry cell');
-INSERT INTO `hanjas` VALUES('乾船渠','건선거','dry dock');
-INSERT INTO `hanjas` VALUES('雜貨','잡화','dry goods');
-INSERT INTO `hanjas` VALUES('乾板','건판','dry plate');
-INSERT INTO `hanjas` VALUES('決鬪','결투','duel');
-INSERT INTO `hanjas` VALUES('公爵','공작','duke');
-INSERT INTO `hanjas` VALUES('公國','공국','dukedom');
-INSERT INTO `hanjas` VALUES('十二指腸','십이지장','duodenum');
-INSERT INTO `hanjas` VALUES('副本','부본','duplicate');
-INSERT INTO `hanjas` VALUES('重複','중복','duplication');
-INSERT INTO `hanjas` VALUES('二心','이심','duplicity');
-INSERT INTO `hanjas` VALUES('王朝','왕조','dynasty');
-INSERT INTO `hanjas` VALUES('鼓膜','고막','eardrum');
-INSERT INTO `hanjas` VALUES('所得','소득','earnings');
-INSERT INTO `hanjas` VALUES('地球','지구','earth');
-INSERT INTO `hanjas` VALUES('地震','지진','earthquake');
-INSERT INTO `hanjas` VALUES('安心','안심','ease');
-INSERT INTO `hanjas` VALUES('經濟','경제','economy');
-INSERT INTO `hanjas` VALUES('儉約','검약','economy');
-INSERT INTO `hanjas` VALUES('恍惚','황홀','ecstasy');
-INSERT INTO `hanjas` VALUES('濕疹','습진','eczema');
-INSERT INTO `hanjas` VALUES('浮腫','부종','edema');
-INSERT INTO `hanjas` VALUES('勅令','칙령','edict');
-INSERT INTO `hanjas` VALUES('抽出','추출','educe');
-INSERT INTO `hanjas` VALUES('效果','효과','effect');
-INSERT INTO `hanjas` VALUES('效力','효력','efficacy');
-INSERT INTO `hanjas` VALUES('利己主義','이기주의','egoism');
-INSERT INTO `hanjas` VALUES('彈力','탄력','elasticity');
-INSERT INTO `hanjas` VALUES('選擧','선거','election');
-INSERT INTO `hanjas` VALUES('選任','선임','election');
-INSERT INTO `hanjas` VALUES('有權者','유권자','electorate');
-INSERT INTO `hanjas` VALUES('電流','전류','electric current');
-INSERT INTO `hanjas` VALUES('電燈','전등','electric light');
-INSERT INTO `hanjas` VALUES('電力','전력','electric power');
-INSERT INTO `hanjas` VALUES('電氣','전기','electricity');
-INSERT INTO `hanjas` VALUES('心電計','심전계','electrocardiograph');
-INSERT INTO `hanjas` VALUES('電極','전극','electrode');
-INSERT INTO `hanjas` VALUES('電解','전해','electrolysis');
-INSERT INTO `hanjas` VALUES('電子','전자','electron');
-INSERT INTO `hanjas` VALUES('挽歌','만가','elegy');
-INSERT INTO `hanjas` VALUES('哀歌','애가','elegy');
-INSERT INTO `hanjas` VALUES('要素','요소','element');
-INSERT INTO `hanjas` VALUES('素粒子','소립자','elementary particles');
-INSERT INTO `hanjas` VALUES('消去','소거','elimination');
-INSERT INTO `hanjas` VALUES('楕圓','타원','ellipse');
-INSERT INTO `hanjas` VALUES('雄辯','웅변','eloquence');
-INSERT INTO `hanjas` VALUES('解明','해명','elucidation');
-INSERT INTO `hanjas` VALUES('築堤','축제','embankment');
-INSERT INTO `hanjas` VALUES('當惑','당혹','embarrassment');
-INSERT INTO `hanjas` VALUES('大使館','대사관','embassy');
-INSERT INTO `hanjas` VALUES('餘燼','여신','ember');
-INSERT INTO `hanjas` VALUES('胎兒','태아','embryo');
-INSERT INTO `hanjas` VALUES('發生學','발생학','embryology');
-INSERT INTO `hanjas` VALUES('移民','이민','emigrant');
-INSERT INTO `hanjas` VALUES('皇帝','황제','emperor');
-INSERT INTO `hanjas` VALUES('帝國','제국','empire');
-INSERT INTO `hanjas` VALUES('皇后','황후','empress');
-INSERT INTO `hanjas` VALUES('蓄膿症','축농증','empyema');
-INSERT INTO `hanjas` VALUES('乳劑','유제','emulsion');
-INSERT INTO `hanjas` VALUES('制定','제정','enactment');
-INSERT INTO `hanjas` VALUES('釉藥','유약','enamel');
-INSERT INTO `hanjas` VALUES('琺瑯','법랑','enamel');
-INSERT INTO `hanjas` VALUES('陣地','진지','encampment');
-INSERT INTO `hanjas` VALUES('腦炎','뇌염','encephalitis');
-INSERT INTO `hanjas` VALUES('蠶食','잠식','encroachment');
-INSERT INTO `hanjas` VALUES('胚乳','배유','endosperm');
-INSERT INTO `hanjas` VALUES('忍耐','인내','endurance');
-INSERT INTO `hanjas` VALUES('執行','집행','enforcement');
-INSERT INTO `hanjas` VALUES('招聘','초빙','engagement');
-INSERT INTO `hanjas` VALUES('機關','기관','engine');
-INSERT INTO `hanjas` VALUES('技師','기사','engineer');
-INSERT INTO `hanjas` VALUES('工學','공학','engineering');
-INSERT INTO `hanjas` VALUES('啓蒙','계몽','enlightenment');
-INSERT INTO `hanjas` VALUES('入隊','입대','enlistment');
-INSERT INTO `hanjas` VALUES('徵募','징모','enlistment');
-INSERT INTO `hanjas` VALUES('軍旗','군기','ensign');
-INSERT INTO `hanjas` VALUES('確保','확보','ensure');
-INSERT INTO `hanjas` VALUES('腸炎','장염','enteritis');
-INSERT INTO `hanjas` VALUES('企業','기업','enterprise');
-INSERT INTO `hanjas` VALUES('熱意','열의','enthusiasm');
-INSERT INTO `hanjas` VALUES('熱狂者','열광자','enthusiast');
-INSERT INTO `hanjas` VALUES('入口','입구','entrance');
-INSERT INTO `hanjas` VALUES('記入','기입','entry');
-INSERT INTO `hanjas` VALUES('列擧','열거','enumeration');
-INSERT INTO `hanjas` VALUES('環境','환경','environment');
-INSERT INTO `hanjas` VALUES('酵素','효소','enzyme');
-INSERT INTO `hanjas` VALUES('酵素學','효소학','enzymology');
-INSERT INTO `hanjas` VALUES('震央','진앙','epicenter');
-INSERT INTO `hanjas` VALUES('流行病','유행병','epidemic');
-INSERT INTO `hanjas` VALUES('亞流','아류','epigone');
-INSERT INTO `hanjas` VALUES('揷話','삽화','episode');
-INSERT INTO `hanjas` VALUES('書簡','서간','epistle');
-INSERT INTO `hanjas` VALUES('同等','동등','equality');
-INSERT INTO `hanjas` VALUES('方程式','방정식','equation');
-INSERT INTO `hanjas` VALUES('赤道','적도','equator');
-INSERT INTO `hanjas` VALUES('等價','등가','equivalence');
-INSERT INTO `hanjas` VALUES('紀元','기원','era');
-INSERT INTO `hanjas` VALUES('年代','연대','era');
-INSERT INTO `hanjas` VALUES('根絶','근절','eradication');
-INSERT INTO `hanjas` VALUES('抹消','말소','erasure');
-INSERT INTO `hanjas` VALUES('建立','건립','erection');
-INSERT INTO `hanjas` VALUES('勃起','발기','erection');
-INSERT INTO `hanjas` VALUES('過失','과실','error');
-INSERT INTO `hanjas` VALUES('失策','실책','error');
-INSERT INTO `hanjas` VALUES('誤差','오차','error');
-INSERT INTO `hanjas` VALUES('噴出','분출','eruption');
-INSERT INTO `hanjas` VALUES('噴火','분화','eruption');
-INSERT INTO `hanjas` VALUES('丹毒','단독','erysipelas');
-INSERT INTO `hanjas` VALUES('逃亡','도망','escape');
-INSERT INTO `hanjas` VALUES('護衛','호위','escort,convoy');
-INSERT INTO `hanjas` VALUES('隨筆','수필','essay');
-INSERT INTO `hanjas` VALUES('試論','시론','essay');
-INSERT INTO `hanjas` VALUES('本質','본질','essence');
-INSERT INTO `hanjas` VALUES('精髓','정수','essence');
-INSERT INTO `hanjas` VALUES('疎遠','소원','estrangement');
-INSERT INTO `hanjas` VALUES('離間','이간','estrangement');
-INSERT INTO `hanjas` VALUES('永遠','영원','eternity, forever');
-INSERT INTO `hanjas` VALUES('永久','영구','eternity');
-INSERT INTO `hanjas` VALUES('倫理學','윤리학','ethics');
-INSERT INTO `hanjas` VALUES('禮法','예법','etiquette');
-INSERT INTO `hanjas` VALUES('優生學','우생학','eugenics');
-INSERT INTO `hanjas` VALUES('宦官','환관','eunuch');
-INSERT INTO `hanjas` VALUES('音便','음편','euphony');
-INSERT INTO `hanjas` VALUES('排出','배출','evacuation');
-INSERT INTO `hanjas` VALUES('避難者','피난자','evacuee');
-INSERT INTO `hanjas` VALUES('夕刊','석간','evening paper');
-INSERT INTO `hanjas` VALUES('夜會','야회','evening party');
-INSERT INTO `hanjas` VALUES('平等','평등','evenness');
-INSERT INTO `hanjas` VALUES('種目','종목','event');
-INSERT INTO `hanjas` VALUES('萬事','만사','everything');
-INSERT INTO `hanjas` VALUES('證言','증언','evidence,attest,testimony');
-INSERT INTO `hanjas` VALUES('展開','전개','evolve');
-INSERT INTO `hanjas` VALUES('誇張','과장','exaggeration');
-INSERT INTO `hanjas` VALUES('檢査','검사','examination');
-INSERT INTO `hanjas` VALUES('審査','심사','examination');
-INSERT INTO `hanjas` VALUES('受驗者','수험자','examinee');
-INSERT INTO `hanjas` VALUES('優秀','우수','excellence');
-INSERT INTO `hanjas` VALUES('卓越','탁월','excellence');
-INSERT INTO `hanjas` VALUES('例外','예외','exception');
-INSERT INTO `hanjas` VALUES('過剩','과잉','excess');
-INSERT INTO `hanjas` VALUES('超過','초과','excess');
-INSERT INTO `hanjas` VALUES('絶叫','절규','exclamation');
-INSERT INTO `hanjas` VALUES('排他的','배타적','exclusive');
-INSERT INTO `hanjas` VALUES('辨明','변명','excuse,apologize,explain');
-INSERT INTO `hanjas` VALUES('口實','구실','excuse');
-INSERT INTO `hanjas` VALUES('例示','예시','exemplification');
-INSERT INTO `hanjas` VALUES('運動','운동','exercise');
-INSERT INTO `hanjas` VALUES('演習','연습','exercise');
-INSERT INTO `hanjas` VALUES('行使','행사','exercise');
-INSERT INTO `hanjas` VALUES('努力','노력','exertion');
-INSERT INTO `hanjas` VALUES('呼氣','호기','exhalation');
-INSERT INTO `hanjas` VALUES('排氣','배기','exhaust');
-INSERT INTO `hanjas` VALUES('消耗','소모','exhaustion');
-INSERT INTO `hanjas` VALUES('出品','출품','exhibit');
-INSERT INTO `hanjas` VALUES('露出症','노출증','exhibitionism');
-INSERT INTO `hanjas` VALUES('出品者','출품자','exhibitor');
-INSERT INTO `hanjas` VALUES('亡命','망명','exile');
-INSERT INTO `hanjas` VALUES('流刑','유형','exile');
-INSERT INTO `hanjas` VALUES('流刑者','유형자','exile');
-INSERT INTO `hanjas` VALUES('存在','존재','existence');
-INSERT INTO `hanjas` VALUES('現存','현존','existing');
-INSERT INTO `hanjas` VALUES('退場','퇴장','exit');
-INSERT INTO `hanjas` VALUES('膨脹','팽창','expansion');
-INSERT INTO `hanjas` VALUES('豫期','예기','expectation');
-INSERT INTO `hanjas` VALUES('方便','방편','expedient');
-INSERT INTO `hanjas` VALUES('便法','편법','expedient');
-INSERT INTO `hanjas` VALUES('經驗','경험','experience,undergo,see');
-INSERT INTO `hanjas` VALUES('實驗','실험','experiment');
-INSERT INTO `hanjas` VALUES('滿了','만료','expiration');
-INSERT INTO `hanjas` VALUES('開發','개발','exploitation');
-INSERT INTO `hanjas` VALUES('探險','탐험','exploration');
-INSERT INTO `hanjas` VALUES('破裂','파열','explosion,rupture');
-INSERT INTO `hanjas` VALUES('爆藥','폭약','explosive');
-INSERT INTO `hanjas` VALUES('輸出','수출','export');
-INSERT INTO `hanjas` VALUES('露出','노출','exposure');
-INSERT INTO `hanjas` VALUES('外延','외연','extension');
-INSERT INTO `hanjas` VALUES('外面','외면','exterior');
-INSERT INTO `hanjas` VALUES('外部','외부','external');
-INSERT INTO `hanjas` VALUES('死滅','사멸','extinction');
-INSERT INTO `hanjas` VALUES('治外法權','치외법권','extraterritoriality');
-INSERT INTO `hanjas` VALUES('極度','극도','extreme');
-INSERT INTO `hanjas` VALUES('外向性','외향성','extroversion');
-INSERT INTO `hanjas` VALUES('充溢','충일','exuberance');
-INSERT INTO `hanjas` VALUES('眼球','안구','eyeball');
-INSERT INTO `hanjas` VALUES('視力','시력','eyesight');
-INSERT INTO `hanjas` VALUES('犬齒','견치','eyetooth');
-INSERT INTO `hanjas` VALUES('前面','전면','facade');
-INSERT INTO `hanjas` VALUES('表面','표면','face');
-INSERT INTO `hanjas` VALUES('面目','면목','face');
-INSERT INTO `hanjas` VALUES('施設','시설','facility');
-INSERT INTO `hanjas` VALUES('黨派','당파','faction');
-INSERT INTO `hanjas` VALUES('因子','인자','factor');
-INSERT INTO `hanjas` VALUES('階乘','계승','factorial');
-INSERT INTO `hanjas` VALUES('失敗','실패','failure');
-INSERT INTO `hanjas` VALUES('減退','감퇴','failure');
-INSERT INTO `hanjas` VALUES('故障','고장','failure');
-INSERT INTO `hanjas` VALUES('落第','낙제','failure');
-INSERT INTO `hanjas` VALUES('氣絶','기절','faint');
-INSERT INTO `hanjas` VALUES('卒倒','졸도','fainting');
-INSERT INTO `hanjas` VALUES('品評會','품평회','fair');
-INSERT INTO `hanjas` VALUES('仙女','선녀','fairy');
-INSERT INTO `hanjas` VALUES('童話','동화','fairy tale');
-INSERT INTO `hanjas` VALUES('仙境','선경','fairyland');
-INSERT INTO `hanjas` VALUES('信義','신의','faith');
-INSERT INTO `hanjas` VALUES('陷落','함락','fall');
-INSERT INTO `hanjas` VALUES('降下','강하','fall');
-INSERT INTO `hanjas` VALUES('墜落','추락','falling');
-INSERT INTO `hanjas` VALUES('遊休','유휴','fallow');
-INSERT INTO `hanjas` VALUES('假聲','가성','falsetto');
-INSERT INTO `hanjas` VALUES('名聲','명성','fame');
-INSERT INTO `hanjas` VALUES('家族','가족','family');
-INSERT INTO `hanjas` VALUES('饑饉','기근','famine');
-INSERT INTO `hanjas` VALUES('空想','공상','fancy');
-INSERT INTO `hanjas` VALUES('笑劇','소극','farce');
-INSERT INTO `hanjas` VALUES('告別','고별','farewell');
-INSERT INTO `hanjas` VALUES('農作','농작','farming');
-INSERT INTO `hanjas` VALUES('分冊','분책','fascicle');
-INSERT INTO `hanjas` VALUES('斷食','단식','fasting');
-INSERT INTO `hanjas` VALUES('絶食','절식','fasting');
-INSERT INTO `hanjas` VALUES('脂肪','지방','fat');
-INSERT INTO `hanjas` VALUES('運命','운명','fate');
-INSERT INTO `hanjas` VALUES('祖國','조국','fatherland');
-INSERT INTO `hanjas` VALUES('疲勞','피로','fatigue');
-INSERT INTO `hanjas` VALUES('祝祭','축제','feast');
-INSERT INTO `hanjas` VALUES('特徵','특징','feature');
-INSERT INTO `hanjas` VALUES('長石','장석','feldspar');
-INSERT INTO `hanjas` VALUES('重罪','중죄','felony');
-INSERT INTO `hanjas` VALUES('肥沃','비옥','fertility');
-INSERT INTO `hanjas` VALUES('豊饒','풍요','fertility');
-INSERT INTO `hanjas` VALUES('肥料','비료','fertilizer');
-INSERT INTO `hanjas` VALUES('領主','영주','feudal lord');
-INSERT INTO `hanjas` VALUES('熱病','열병','fever');
-INSERT INTO `hanjas` VALUES('忠實','충실','fidelity');
-INSERT INTO `hanjas` VALUES('封土','봉토','fief');
-INSERT INTO `hanjas` VALUES('分野','분야','field');
-INSERT INTO `hanjas` VALUES('無花果','무화과','fig');
-INSERT INTO `hanjas` VALUES('鬪鷄','투계','fighting cock');
-INSERT INTO `hanjas` VALUES('模樣','모양','figure');
-INSERT INTO `hanjas` VALUES('圖形','도형','figure');
-INSERT INTO `hanjas` VALUES('美術','미술','fine art');
-INSERT INTO `hanjas` VALUES('指紋','지문','fingerprint');
-INSERT INTO `hanjas` VALUES('火災','화재','fire');
-INSERT INTO `hanjas` VALUES('燒夷彈','소이탄','fire bomb');
-INSERT INTO `hanjas` VALUES('消防署','소방서','fire station');
-INSERT INTO `hanjas` VALUES('火器','화기','firearm');
-INSERT INTO `hanjas` VALUES('爆竹','폭죽','firecracker');
-INSERT INTO `hanjas` VALUES('發砲','발포','firing');
-INSERT INTO `hanjas` VALUES('商社','상사','firm');
-INSERT INTO `hanjas` VALUES('第一','제일','first');
-INSERT INTO `hanjas` VALUES('初版','초판','first edition');
-INSERT INTO `hanjas` VALUES('前半','전반','first half');
-INSERT INTO `hanjas` VALUES('中尉','중위','first lieutenant');
-INSERT INTO `hanjas` VALUES('初犯者','초범자','first offender');
-INSERT INTO `hanjas` VALUES('魚市場','어시장','fish market');
-INSERT INTO `hanjas` VALUES('魚粉','어분','fish meal');
-INSERT INTO `hanjas` VALUES('魚油','어유','fish oil');
-INSERT INTO `hanjas` VALUES('漁夫','어부','fisher');
-INSERT INTO `hanjas` VALUES('漁獲','어획','fishing');
-INSERT INTO `hanjas` VALUES('漁船','어선','fishing boat');
-INSERT INTO `hanjas` VALUES('漁場','어장','fishing ground');
-INSERT INTO `hanjas` VALUES('魚網','어망','fishing net');
-INSERT INTO `hanjas` VALUES('固定','고정','fixation');
-INSERT INTO `hanjas` VALUES('恒星','항성','fixed star');
-INSERT INTO `hanjas` VALUES('備品','비품','fixture');
-INSERT INTO `hanjas` VALUES('旗艦','기함','flagship');
-INSERT INTO `hanjas` VALUES('側面','측면','flank');
-INSERT INTO `hanjas` VALUES('亞麻','아마','flax');
-INSERT INTO `hanjas` VALUES('斑點','반점','fleck');
-INSERT INTO `hanjas` VALUES('船隊','선대','fleet');
-INSERT INTO `hanjas` VALUES('逃走','도주','flight');
-INSERT INTO `hanjas` VALUES('浮游','부유','floating');
-INSERT INTO `hanjas` VALUES('浮動','부동','floating');
-INSERT INTO `hanjas` VALUES('流動資本','유동자본','floating capital');
-INSERT INTO `hanjas` VALUES('洪水','홍수','flood');
-INSERT INTO `hanjas` VALUES('氾濫','범람','flood');
-INSERT INTO `hanjas` VALUES('治水','치수','flood control');
-INSERT INTO `hanjas` VALUES('投光器','투광기','floodlight');
-INSERT INTO `hanjas` VALUES('建坪','건평','floor space');
-INSERT INTO `hanjas` VALUES('花壇','화단','flower bed');
-INSERT INTO `hanjas` VALUES('花園','화원','flower garden');
-INSERT INTO `hanjas` VALUES('花卉','화훼','flowering plant');
-INSERT INTO `hanjas` VALUES('流體','유체','fluid');
-INSERT INTO `hanjas` VALUES('螢石','형석','fluorite');
-INSERT INTO `hanjas` VALUES('紅潮','홍조','flush');
-INSERT INTO `hanjas` VALUES('民俗','민속','folk custom');
-INSERT INTO `hanjas` VALUES('民俗音樂','민속음악','folk music');
-INSERT INTO `hanjas` VALUES('民謠','민요','folk song');
-INSERT INTO `hanjas` VALUES('習俗','습속','folkways');
-INSERT INTO `hanjas` VALUES('從者','종자','follower');
-INSERT INTO `hanjas` VALUES('食中毒','식중독','food poisoning');
-INSERT INTO `hanjas` VALUES('食料品','식료품','foodstuff');
-INSERT INTO `hanjas` VALUES('脚光','각광','footlights');
-INSERT INTO `hanjas` VALUES('脚注','각주','footnote');
-INSERT INTO `hanjas` VALUES('前腦','전뇌','forebrain');
-INSERT INTO `hanjas` VALUES('豫報','예보','forecast');
-INSERT INTO `hanjas` VALUES('豫想','예상','forecast,expect,anticipate');
-INSERT INTO `hanjas` VALUES('前景','전경','foreground');
-INSERT INTO `hanjas` VALUES('外務','외무','foreign affairs');
-INSERT INTO `hanjas` VALUES('外資','외자','foreign capital');
-INSERT INTO `hanjas` VALUES('外國人','외국인','foreigner');
-INSERT INTO `hanjas` VALUES('異人','이인','foreigner');
-INSERT INTO `hanjas` VALUES('豫知','예지','foreknowledge');
-INSERT INTO `hanjas` VALUES('森林','삼림','forest');
-INSERT INTO `hanjas` VALUES('林業','임업','forestry');
-INSERT INTO `hanjas` VALUES('序文','서문','foreword');
-INSERT INTO `hanjas` VALUES('形式','형식','form');
-INSERT INTO `hanjas` VALUES('儀禮的','의례적','formal');
-INSERT INTO `hanjas` VALUES('形成','형성','formation');
-INSERT INTO `hanjas` VALUES('公式','공식','formula');
-INSERT INTO `hanjas` VALUES('堡壘','보루','fort');
-INSERT INTO `hanjas` VALUES('築城','축성','fortification');
-INSERT INTO `hanjas` VALUES('發送','발송','forwarding');
-INSERT INTO `hanjas` VALUES('回送','회송','forwarding');
-INSERT INTO `hanjas` VALUES('養女','양녀','foster daughter');
-INSERT INTO `hanjas` VALUES('土臺','토대','foundation');
-INSERT INTO `hanjas` VALUES('棄兒','기아','foundling');
-INSERT INTO `hanjas` VALUES('萬年筆','만년필','fountain pen');
-INSERT INTO `hanjas` VALUES('水源','수원','fountainhead');
-INSERT INTO `hanjas` VALUES('四球','사구','four balls');
-INSERT INTO `hanjas` VALUES('乳香','유향','frankincense');
-INSERT INTO `hanjas` VALUES('率直','솔직','frankness');
-INSERT INTO `hanjas` VALUES('奇形','기형','freak');
-INSERT INTO `hanjas` VALUES('冷凍','냉동','freezing');
-INSERT INTO `hanjas` VALUES('氷點','빙점','freezing point');
-INSERT INTO `hanjas` VALUES('貨車','화차','freight car');
-INSERT INTO `hanjas` VALUES('貨物船','화물선','freighter');
-INSERT INTO `hanjas` VALUES('狂亂','광란','frenzy');
-INSERT INTO `hanjas` VALUES('頻發','빈발','frequency');
-INSERT INTO `hanjas` VALUES('淡水','담수','fresh water');
-INSERT INTO `hanjas` VALUES('冷凍食品','냉동식품','frozen food');
-INSERT INTO `hanjas` VALUES('果實','과실','fruit');
-INSERT INTO `hanjas` VALUES('果汁','과즙','fruit juice');
-INSERT INTO `hanjas` VALUES('果樹','과수','fruit tree');
-INSERT INTO `hanjas` VALUES('燃料','연료','fuel');
-INSERT INTO `hanjas` VALUES('正裝','정장','full dress');
-INSERT INTO `hanjas` VALUES('滿月','만월','full moon');
-INSERT INTO `hanjas` VALUES('基金','기금','fund');
-INSERT INTO `hanjas` VALUES('毛皮','모피','fur');
-INSERT INTO `hanjas` VALUES('賜暇','사가','furlough');
-INSERT INTO `hanjas` VALUES('休暇','휴가','furlough');
-INSERT INTO `hanjas` VALUES('家具','가구','furniture');
-INSERT INTO `hanjas` VALUES('信管','신관','fuse');
-INSERT INTO `hanjas` VALUES('導火線','도화선','fuse');
-INSERT INTO `hanjas` VALUES('融解','융해','fusion');
-INSERT INTO `hanjas` VALUES('融點','융점','fusion point');
-INSERT INTO `hanjas` VALUES('無用','무용','futility');
-INSERT INTO `hanjas` VALUES('將來','장래','future');
-INSERT INTO `hanjas` VALUES('脚絆','각반','gaiter');
-INSERT INTO `hanjas` VALUES('銀河','은하','galaxy');
-INSERT INTO `hanjas` VALUES('沒食子','몰식자','gallnut');
-INSERT INTO `hanjas` VALUES('膽石','담석','gallstone');
-INSERT INTO `hanjas` VALUES('檢流計','검류계','galvanometer');
-INSERT INTO `hanjas` VALUES('賭博','도박','gambling');
-INSERT INTO `hanjas` VALUES('山峽','산협','gap');
-INSERT INTO `hanjas` VALUES('庭園','정원','garden');
-INSERT INTO `hanjas` VALUES('園藝','원예','gardening');
-INSERT INTO `hanjas` VALUES('氣體','기체','gas');
-INSERT INTO `hanjas` VALUES('胃痛','위통','gastralgia');
-INSERT INTO `hanjas` VALUES('胃液','위액','gastric juice');
-INSERT INTO `hanjas` VALUES('胃炎','위염','gastritis');
-INSERT INTO `hanjas` VALUES('胃下垂','위하수','gastroptosis');
-INSERT INTO `hanjas` VALUES('胃鏡','위경','gastroscope');
-INSERT INTO `hanjas` VALUES('採集','채집','gathering');
-INSERT INTO `hanjas` VALUES('計器','계기','gauge');
-INSERT INTO `hanjas` VALUES('一般','일반','general');
-INSERT INTO `hanjas` VALUES('將軍','장군','general');
-INSERT INTO `hanjas` VALUES('庶務','서무','general affairs');
-INSERT INTO `hanjas` VALUES('總選擧','총선거','general election');
-INSERT INTO `hanjas` VALUES('總支配人','총지배인','general manager');
-INSERT INTO `hanjas` VALUES('總會','총회','general meeting');
-INSERT INTO `hanjas` VALUES('總則','총칙','general rule');
-INSERT INTO `hanjas` VALUES('槪括','개괄','generalization');
-INSERT INTO `hanjas` VALUES('紳士','신사','gentleman');
-INSERT INTO `hanjas` VALUES('親切','친절','gentleness');
-INSERT INTO `hanjas` VALUES('地理','지리','geography');
-INSERT INTO `hanjas` VALUES('地政學','지정학','geopolitics');
-INSERT INTO `hanjas` VALUES('屈地性','굴지성','geotropism');
-INSERT INTO `hanjas` VALUES('細菌','세균','germ');
-INSERT INTO `hanjas` VALUES('萌芽','맹아','germination');
-INSERT INTO `hanjas` VALUES('動名詞','동명사','gerund');
-INSERT INTO `hanjas` VALUES('亡靈','망령','ghost');
-INSERT INTO `hanjas` VALUES('怪談','괴담','ghost story');
-INSERT INTO `hanjas` VALUES('巨人','거인','giant');
-INSERT INTO `hanjas` VALUES('生薑','생강','ginger');
-INSERT INTO `hanjas` VALUES('麒麟','기린','giraffe');
-INSERT INTO `hanjas` VALUES('要點','요점','gist');
-INSERT INTO `hanjas` VALUES('氷醋酸','빙초산','glacial acetic acid');
-INSERT INTO `hanjas` VALUES('氷河','빙하','glacier');
-INSERT INTO `hanjas` VALUES('一見','일견','glance');
-INSERT INTO `hanjas` VALUES('峽谷','협곡','glen');
-INSERT INTO `hanjas` VALUES('滑走','활주','glide');
-INSERT INTO `hanjas` VALUES('暗影','암영','gloom');
-INSERT INTO `hanjas` VALUES('憂鬱','우울','gloom');
-INSERT INTO `hanjas` VALUES('陰鬱','음울','gloom');
-INSERT INTO `hanjas` VALUES('榮光','영광','glory');
-INSERT INTO `hanjas` VALUES('聲門','성문','glottis');
-INSERT INTO `hanjas` VALUES('女神','여신','goddess');
-INSERT INTO `hanjas` VALUES('代父','대부','godfather');
-INSERT INTO `hanjas` VALUES('代母','대모','godmother');
-INSERT INTO `hanjas` VALUES('金箔','금박','gold leaf');
-INSERT INTO `hanjas` VALUES('淋疾','임질','gonorrhea');
-INSERT INTO `hanjas` VALUES('良貨','양화','good money');
-INSERT INTO `hanjas` VALUES('周旋','주선','good offices');
-INSERT INTO `hanjas` VALUES('亂暴者','난폭자','goon');
-INSERT INTO `hanjas` VALUES('痛風','통풍','gout');
-INSERT INTO `hanjas` VALUES('政治','정치','government');
-INSERT INTO `hanjas` VALUES('政府','정부','government');
-INSERT INTO `hanjas` VALUES('與黨','여당','government party');
-INSERT INTO `hanjas` VALUES('支配者','지배자','governor');
-INSERT INTO `hanjas` VALUES('段階','단계','gradation');
-INSERT INTO `hanjas` VALUES('穀物','곡물','grain');
-INSERT INTO `hanjas` VALUES('文法','문법','grammar');
-INSERT INTO `hanjas` VALUES('文典','문전','grammar');
-INSERT INTO `hanjas` VALUES('雄大','웅대','grandeur');
-INSERT INTO `hanjas` VALUES('祖父','조부','grandfather');
-INSERT INTO `hanjas` VALUES('祖母','조모','grandmother');
-INSERT INTO `hanjas` VALUES('花崗岩','화강암','granite');
-INSERT INTO `hanjas` VALUES('石墨','석묵','graphite');
-INSERT INTO `hanjas` VALUES('格鬪','격투','grappling');
-INSERT INTO `hanjas` VALUES('彫像','조상','graven image');
-INSERT INTO `hanjas` VALUES('墓地','묘지','graveyard');
-INSERT INTO `hanjas` VALUES('重力','중력','gravity');
-INSERT INTO `hanjas` VALUES('偉大','위대','greatness');
-INSERT INTO `hanjas` VALUES('慾心','욕심','greed');
-INSERT INTO `hanjas` VALUES('手榴彈','수류탄','grenade');
-INSERT INTO `hanjas` VALUES('地面','지면','ground');
-INSERT INTO `hanjas` VALUES('地盤','지반','ground');
-INSERT INTO `hanjas` VALUES('樹立','수립','ground');
-INSERT INTO `hanjas` VALUES('成長','성장','growth');
-INSERT INTO `hanjas` VALUES('生長','생장','growth');
-INSERT INTO `hanjas` VALUES('發育','발육','growth');
-INSERT INTO `hanjas` VALUES('怨恨','원한','grudge');
-INSERT INTO `hanjas` VALUES('遺恨','유한','grudge');
-INSERT INTO `hanjas` VALUES('營倉','영창','guardhouse');
-INSERT INTO `hanjas` VALUES('案內','안내','guidance');
-INSERT INTO `hanjas` VALUES('指導','지도','guidance');
-INSERT INTO `hanjas` VALUES('斷頭臺','단두대','guillotine');
-INSERT INTO `hanjas` VALUES('砲車','포차','gun carriage');
-INSERT INTO `hanjas` VALUES('砲艦','포함','gunboat');
-INSERT INTO `hanjas` VALUES('火藥','화약','gunpowder');
-INSERT INTO `hanjas` VALUES('銃床','총상','gunstock');
-INSERT INTO `hanjas` VALUES('體操','체조','gymnastics');
-INSERT INTO `hanjas` VALUES('口臭','구취','halitosis');
-INSERT INTO `hanjas` VALUES('幻覺','환각','hallucination');
-INSERT INTO `hanjas` VALUES('半減','반감','halve');
-INSERT INTO `hanjas` VALUES('手細工','수세공','handicraft');
-INSERT INTO `hanjas` VALUES('手藝','수예','handicraft');
-INSERT INTO `hanjas` VALUES('欄干','난간','handrail');
-INSERT INTO `hanjas` VALUES('握手','악수','handshake');
-INSERT INTO `hanjas` VALUES('筆跡','필적','handwriting');
-INSERT INTO `hanjas` VALUES('格納庫','격납고','hangar');
-INSERT INTO `hanjas` VALUES('宿醉','숙취','hangover');
-INSERT INTO `hanjas` VALUES('硬口盖','경구개','hard palate');
-INSERT INTO `hanjas` VALUES('硬水','경수','hard water');
-INSERT INTO `hanjas` VALUES('硬度','경도','hardness');
-INSERT INTO `hanjas` VALUES('無情','무정','hardness');
-INSERT INTO `hanjas` VALUES('倍音','배음','harmonic');
-INSERT INTO `hanjas` VALUES('調和','조화','harmony');
-INSERT INTO `hanjas` VALUES('和聲','화성','harmony');
-INSERT INTO `hanjas` VALUES('艙口','창구','hatch');
-INSERT INTO `hanjas` VALUES('憎惡','증오','hatred');
-INSERT INTO `hanjas` VALUES('乾草','건초','hay');
-INSERT INTO `hanjas` VALUES('本社','본사','head office');
-INSERT INTO `hanjas` VALUES('本店','본점','head office');
-INSERT INTO `hanjas` VALUES('頭痛','두통','headache');
-INSERT INTO `hanjas` VALUES('題目','제목','heading');
-INSERT INTO `hanjas` VALUES('校長','교장','headmaster');
-INSERT INTO `hanjas` VALUES('頭註','두주','headnote');
-INSERT INTO `hanjas` VALUES('本部','본부','headquarters');
-INSERT INTO `hanjas` VALUES('健康','건강','health');
-INSERT INTO `hanjas` VALUES('補聽器','보청기','hearing aid');
-INSERT INTO `hanjas` VALUES('心臟','심장','heart');
-INSERT INTO `hanjas` VALUES('中心','중심','heart');
-INSERT INTO `hanjas` VALUES('心血','심혈','heart''s blood');
-INSERT INTO `hanjas` VALUES('熱容量','열용량','heat capacity');
-INSERT INTO `hanjas` VALUES('熱線','열선','heat rays');
-INSERT INTO `hanjas` VALUES('熱處理','열처리','heat treatment');
-INSERT INTO `hanjas` VALUES('熱波','열파','heat wave');
-INSERT INTO `hanjas` VALUES('天體','천체','heavenly body');
-INSERT INTO `hanjas` VALUES('重水素','중수소','heavy hydrogen');
-INSERT INTO `hanjas` VALUES('重油','중유','heavy oil');
-INSERT INTO `hanjas` VALUES('重水','중수','heavy water');
-INSERT INTO `hanjas` VALUES('覇權','패권','hegemony');
-INSERT INTO `hanjas` VALUES('高地','고지','height');
-INSERT INTO `hanjas` VALUES('嗣子','사자','heir');
-INSERT INTO `hanjas` VALUES('螺旋','나선','helix');
-INSERT INTO `hanjas` VALUES('地獄','지옥','hell');
-INSERT INTO `hanjas` VALUES('舵手','타수','helmsman');
-INSERT INTO `hanjas` VALUES('赤鐵鑛','적철광','hematite');
-INSERT INTO `hanjas` VALUES('半球','반구','hemisphere');
-INSERT INTO `hanjas` VALUES('痔疾','치질','hemorrhoids');
-INSERT INTO `hanjas` VALUES('痔核','치핵','hemorrhoids');
-INSERT INTO `hanjas` VALUES('肝炎','간염','hepatitis');
-INSERT INTO `hanjas` VALUES('草本','초본','herb');
-INSERT INTO `hanjas` VALUES('牧者','목자','herdsman');
-INSERT INTO `hanjas` VALUES('今後','금후','hereafter');
-INSERT INTO `hanjas` VALUES('遺傳','유전','heredity');
-INSERT INTO `hanjas` VALUES('異端','이단','heresy');
-INSERT INTO `hanjas` VALUES('世襲','세습','heritage');
-INSERT INTO `hanjas` VALUES('隱者','은자','hermit');
-INSERT INTO `hanjas` VALUES('英雄','영웅','hero');
-INSERT INTO `hanjas` VALUES('勇士','용사','hero');
-INSERT INTO `hanjas` VALUES('女傑','여걸','heroine');
-INSERT INTO `hanjas` VALUES('躊躇','주저','hesitation');
-INSERT INTO `hanjas` VALUES('他','타','heter');
-INSERT INTO `hanjas` VALUES('他律','타율','heteronomy');
-INSERT INTO `hanjas` VALUES('皮革','피혁','hide');
-INSERT INTO `hanjas` VALUES('象形文字','상형문자','hieroglyph');
-INSERT INTO `hanjas` VALUES('高氣壓','고기압','high atmospheric pressure');
-INSERT INTO `hanjas` VALUES('高血壓','고혈압','high blood pressure');
-INSERT INTO `hanjas` VALUES('高周波','고주파','high frequency');
-INSERT INTO `hanjas` VALUES('高僧','고승','high priest');
-INSERT INTO `hanjas` VALUES('公海','공해','high sea');
-INSERT INTO `hanjas` VALUES('高潮','고조','high tide');
-INSERT INTO `hanjas` VALUES('大逆','대역','high treason');
-INSERT INTO `hanjas` VALUES('滿潮','만조','high water');
-INSERT INTO `hanjas` VALUES('暗示','암시','hint,suggestion');
-INSERT INTO `hanjas` VALUES('河馬','하마','hippopotamus');
-INSERT INTO `hanjas` VALUES('沿革','연혁','history');
-INSERT INTO `hanjas` VALUES('神聖','신성','holiness');
-INSERT INTO `hanjas` VALUES('家庭','가정','home');
-INSERT INTO `hanjas` VALUES('本壘','본루','home plate');
-INSERT INTO `hanjas` VALUES('宿題','숙제','homework');
-INSERT INTO `hanjas` VALUES('同質','동질','homogeneous');
-INSERT INTO `hanjas` VALUES('正直','정직','honesty');
-INSERT INTO `hanjas` VALUES('敬語','경어','honorific');
-INSERT INTO `hanjas` VALUES('希望','희망','hope');
-INSERT INTO `hanjas` VALUES('競馬','경마','horse racing');
-INSERT INTO `hanjas` VALUES('馬術','마술','horsemanship');
-INSERT INTO `hanjas` VALUES('病院','병원','hospital');
-INSERT INTO `hanjas` VALUES('軍勢','군세','host');
-INSERT INTO `hanjas` VALUES('敵意','적의','hostility');
-INSERT INTO `hanjas` VALUES('家屋','가옥','house');
-INSERT INTO `hanjas` VALUES('往診','왕진','house call');
-INSERT INTO `hanjas` VALUES('家事','가사','housework');
-INSERT INTO `hanjas` VALUES('住宅','주택','housing');
-INSERT INTO `hanjas` VALUES('色彩','색채','hue');
-INSERT INTO `hanjas` VALUES('色相','색상','hue');
-INSERT INTO `hanjas` VALUES('人性','인성','human nature');
-INSERT INTO `hanjas` VALUES('人本主義','인본주의','humanism');
-INSERT INTO `hanjas` VALUES('屈辱','굴욕','humiliation');
-INSERT INTO `hanjas` VALUES('謙遜','겸손','humility');
-INSERT INTO `hanjas` VALUES('腐植土','부식토','humus');
-INSERT INTO `hanjas` VALUES('空腹','공복','hunger');
-INSERT INTO `hanjas` VALUES('雜種','잡종','hybrid');
-INSERT INTO `hanjas` VALUES('鹽酸','염산','hydrochloric acid');
-INSERT INTO `hanjas` VALUES('靑酸','청산','hydrocyanic acid');
-INSERT INTO `hanjas` VALUES('加水分解','가수분해','hydrolysis');
-INSERT INTO `hanjas` VALUES('恐水病','공수병','hydrophobia');
-INSERT INTO `hanjas` VALUES('雙曲線','쌍곡선','hyperbola');
-INSERT INTO `hanjas` VALUES('菌絲','균사','hypha');
-INSERT INTO `hanjas` VALUES('僞善','위선','hypocrisy');
-INSERT INTO `hanjas` VALUES('假設','가설','hypothesis');
-INSERT INTO `hanjas` VALUES('浮氷','부빙','ice floe');
-INSERT INTO `hanjas` VALUES('氷水','빙수','ice water');
-INSERT INTO `hanjas` VALUES('氷山','빙산','iceberg');
-INSERT INTO `hanjas` VALUES('魚龍','어룡','ichthyosaur');
-INSERT INTO `hanjas` VALUES('聖像','성상','icon');
-INSERT INTO `hanjas` VALUES('思想','사상','idea');
-INSERT INTO `hanjas` VALUES('理念','이념','idea');
-INSERT INTO `hanjas` VALUES('理想','이상','ideal');
-INSERT INTO `hanjas` VALUES('理想主義','이상주의','idealism');
-INSERT INTO `hanjas` VALUES('理想化','이상화','idealization');
-INSERT INTO `hanjas` VALUES('熟語','숙어','idiom');
-INSERT INTO `hanjas` VALUES('無爲','무위','idleness');
-INSERT INTO `hanjas` VALUES('牧歌的','목가적','idyllic');
-INSERT INTO `hanjas` VALUES('點火','점화','ignition');
-INSERT INTO `hanjas` VALUES('無知','무지','ignorance');
-INSERT INTO `hanjas` VALUES('回腸','회장','ileum');
-INSERT INTO `hanjas` VALUES('惡感情','악감정','ill will');
-INSERT INTO `hanjas` VALUES('違法','위법','illegality');
-INSERT INTO `hanjas` VALUES('文盲','문맹','illiteracy');
-INSERT INTO `hanjas` VALUES('非論理的','비논리적','illogical');
-INSERT INTO `hanjas` VALUES('照明','조명','illumination');
-INSERT INTO `hanjas` VALUES('照度','조도','illumination');
-INSERT INTO `hanjas` VALUES('低能','저능','imbecility');
-INSERT INTO `hanjas` VALUES('模倣','모방','imitation');
-INSERT INTO `hanjas` VALUES('模造','모조','imitation');
-INSERT INTO `hanjas` VALUES('帝政','제정','imperialism');
-INSERT INTO `hanjas` VALUES('用具','용구','implement');
-INSERT INTO `hanjas` VALUES('輸入','수입','import');
-INSERT INTO `hanjas` VALUES('賦課','부과','imposition');
-INSERT INTO `hanjas` VALUES('受精','수정','impregnation');
-INSERT INTO `hanjas` VALUES('印象','인상','impression');
-INSERT INTO `hanjas` VALUES('投獄','투옥','imprisonment');
-INSERT INTO `hanjas` VALUES('禁錮','금고','imprisonment');
-INSERT INTO `hanjas` VALUES('改良','개량','improvement');
-INSERT INTO `hanjas` VALUES('不純','불순','impurity');
-INSERT INTO `hanjas` VALUES('權化','권화','incarnation');
-INSERT INTO `hanjas` VALUES('香爐','향로','incense burner');
-INSERT INTO `hanjas` VALUES('誘因','유인','incentive');
-INSERT INTO `hanjas` VALUES('入射','입사','incidence');
-INSERT INTO `hanjas` VALUES('燒却','소각','incineration');
-INSERT INTO `hanjas` VALUES('包括','포괄','inclusion');
-INSERT INTO `hanjas` VALUES('無能力','무능력','incompetence');
-INSERT INTO `hanjas` VALUES('無能力者','무능력자','incompetent');
-INSERT INTO `hanjas` VALUES('不定','부정','inconstancy');
-INSERT INTO `hanjas` VALUES('編入','편입','incorporation');
-INSERT INTO `hanjas` VALUES('繁殖','번식','increase,multiply');
-INSERT INTO `hanjas` VALUES('孵化','부화','incubation');
-INSERT INTO `hanjas` VALUES('不治','불치','incurability');
-INSERT INTO `hanjas` VALUES('辨償','변상','indemnity');
-INSERT INTO `hanjas` VALUES('自主','자주','independence');
-INSERT INTO `hanjas` VALUES('自立','자립','independence');
-INSERT INTO `hanjas` VALUES('指標','지표','index');
-INSERT INTO `hanjas` VALUES('指數','지수','index number');
-INSERT INTO `hanjas` VALUES('間接','간접','indirectness');
-INSERT INTO `hanjas` VALUES('無分別','무분별','indiscretion');
-INSERT INTO `hanjas` VALUES('個人主義','개인주의','individualism');
-INSERT INTO `hanjas` VALUES('個人主義者','개인주의자','individualist');
-INSERT INTO `hanjas` VALUES('惹起','야기','induce');
-INSERT INTO `hanjas` VALUES('誘發','유발','induce');
-INSERT INTO `hanjas` VALUES('誘導','유도','inducement');
-INSERT INTO `hanjas` VALUES('誘引','유인','inducement');
-INSERT INTO `hanjas` VALUES('工業團地','공업단지','industrial park');
-INSERT INTO `hanjas` VALUES('産業','산업','industry');
-INSERT INTO `hanjas` VALUES('工業','공업','industry');
-INSERT INTO `hanjas` VALUES('內在','내재','indwelling');
-INSERT INTO `hanjas` VALUES('無能','무능','inefficiency');
-INSERT INTO `hanjas` VALUES('不平等','불평등','inequality');
-INSERT INTO `hanjas` VALUES('惰性','타성','inertia');
-INSERT INTO `hanjas` VALUES('惰力','타력','inertia');
-INSERT INTO `hanjas` VALUES('必然的','필연적','inevitable');
-INSERT INTO `hanjas` VALUES('未熟','미숙','inexperience');
-INSERT INTO `hanjas` VALUES('惡評','악평','infamy');
-INSERT INTO `hanjas` VALUES('幼少','유소','infancy');
-INSERT INTO `hanjas` VALUES('劣等','열등','inferiority');
-INSERT INTO `hanjas` VALUES('劣等感','열등감','inferiority complex');
-INSERT INTO `hanjas` VALUES('不妊','불임','infertility');
-INSERT INTO `hanjas` VALUES('內野','내야','infield');
-INSERT INTO `hanjas` VALUES('無窮','무궁','infinitude');
-INSERT INTO `hanjas` VALUES('炎症','염증','inflammation');
-INSERT INTO `hanjas` VALUES('花序','화서','inflorescence');
-INSERT INTO `hanjas` VALUES('權勢','권세','influence');
-INSERT INTO `hanjas` VALUES('偉力','위력','influence');
-INSERT INTO `hanjas` VALUES('有力者','유력자','influencer');
-INSERT INTO `hanjas` VALUES('左右','좌우','influence');
-INSERT INTO `hanjas` VALUES('見聞','견문','information');
-INSERT INTO `hanjas` VALUES('忘恩','망은','ingratitude');
-INSERT INTO `hanjas` VALUES('材料','재료','ingredient');
-INSERT INTO `hanjas` VALUES('吸入','흡입','inhalation');
-INSERT INTO `hanjas` VALUES('傳授','전수','initiation');
-INSERT INTO `hanjas` VALUES('注入','주입','injection');
-INSERT INTO `hanjas` VALUES('傷害','상해','injury');
-INSERT INTO `hanjas` VALUES('危害','위해','injury');
-INSERT INTO `hanjas` VALUES('內陸','내륙','inland');
-INSERT INTO `hanjas` VALUES('內海','내해','inland sea');
-INSERT INTO `hanjas` VALUES('旅館','여관','inn');
-INSERT INTO `hanjas` VALUES('內耳','내이','inner ear');
-INSERT INTO `hanjas` VALUES('無罪','무죄','innocence');
-INSERT INTO `hanjas` VALUES('新機軸','신기축','innovation');
-INSERT INTO `hanjas` VALUES('革新','혁신','innovation');
-INSERT INTO `hanjas` VALUES('照會','조회','inquiry');
-INSERT INTO `hanjas` VALUES('取調','취조','inquiry');
-INSERT INTO `hanjas` VALUES('碑銘','비명','inscription');
-INSERT INTO `hanjas` VALUES('不安定','불안정','insecurity');
-INSERT INTO `hanjas` VALUES('無神經','무신경','insensibility');
-INSERT INTO `hanjas` VALUES('揷入','삽입','insertion');
-INSERT INTO `hanjas` VALUES('眼識','안식','insight');
-INSERT INTO `hanjas` VALUES('識見','식견','insight');
-INSERT INTO `hanjas` VALUES('徽章','휘장','insignia');
-INSERT INTO `hanjas` VALUES('傲慢','오만','insolence');
-INSERT INTO `hanjas` VALUES('監察','감찰','inspection');
-INSERT INTO `hanjas` VALUES('靈感','영감','inspiration');
-INSERT INTO `hanjas` VALUES('鼓吹','고취','inspiration');
-INSERT INTO `hanjas` VALUES('鼓舞','고무','inspiration');
-INSERT INTO `hanjas` VALUES('感化','감화','inspiration');
-INSERT INTO `hanjas` VALUES('設備','설비','installation');
-INSERT INTO `hanjas` VALUES('刹那','찰나','instant');
-INSERT INTO `hanjas` VALUES('本能','본능','instinct');
-INSERT INTO `hanjas` VALUES('訓令','훈령','instruction');
-INSERT INTO `hanjas` VALUES('指令','지령','instruction');
-INSERT INTO `hanjas` VALUES('保險','보험','insurance');
-INSERT INTO `hanjas` VALUES('暴徒','폭도','insurgent');
-INSERT INTO `hanjas` VALUES('反亂者','반란자','insurgent');
-INSERT INTO `hanjas` VALUES('積分','적분','integral');
-INSERT INTO `hanjas` VALUES('保全','보전','integrity');
-INSERT INTO `hanjas` VALUES('知性','지성','intelligence');
-INSERT INTO `hanjas` VALUES('智能','지능','intelligence');
-INSERT INTO `hanjas` VALUES('集約的','집약적','intensive');
-INSERT INTO `hanjas` VALUES('遮斷','차단','interception');
-INSERT INTO `hanjas` VALUES('感興','감흥','interest');
-INSERT INTO `hanjas` VALUES('利害關係','이해관계','interest');
-INSERT INTO `hanjas` VALUES('權益','권익','interest');
-INSERT INTO `hanjas` VALUES('內角','내각','interior angle');
-INSERT INTO `hanjas` VALUES('對話者','대화자','interlocutor');
-INSERT INTO `hanjas` VALUES('幕間','막간','interlude');
-INSERT INTO `hanjas` VALUES('媒介','매개','intermediary');
-INSERT INTO `hanjas` VALUES('仲介','중개','intermediation');
-INSERT INTO `hanjas` VALUES('土葬','토장','interment');
-INSERT INTO `hanjas` VALUES('內面的','내면적','internal');
-INSERT INTO `hanjas` VALUES('通譯','통역','interpretation');
-INSERT INTO `hanjas` VALUES('審問','심문','interrogation');
-INSERT INTO `hanjas` VALUES('質問者','질문자','interrogator');
-INSERT INTO `hanjas` VALUES('中斷','중단','interruption');
-INSERT INTO `hanjas` VALUES('不通','불통','interruption');
-INSERT INTO `hanjas` VALUES('介入','개입','intervention');
-INSERT INTO `hanjas` VALUES('會見','회견','interview');
-INSERT INTO `hanjas` VALUES('面接','면접','interview');
-INSERT INTO `hanjas` VALUES('會見者','회견자','interviewer');
-INSERT INTO `hanjas` VALUES('親密','친밀','intimacy');
-INSERT INTO `hanjas` VALUES('親交','친교','intimacy');
-INSERT INTO `hanjas` VALUES('脅迫者','협박자','intimidator');
-INSERT INTO `hanjas` VALUES('陶醉','도취','intoxication');
-INSERT INTO `hanjas` VALUES('密通','밀통','intrigue');
-INSERT INTO `hanjas` VALUES('導入','도입','introduction');
-INSERT INTO `hanjas` VALUES('序論','서론','introduction');
-INSERT INTO `hanjas` VALUES('亂入者','난입자','intruder');
-INSERT INTO `hanjas` VALUES('失效','실효','invalidation');
-INSERT INTO `hanjas` VALUES('發明','발명','invention');
-INSERT INTO `hanjas` VALUES('搜査','수사','investigation');
-INSERT INTO `hanjas` VALUES('任官','임관','investiture');
-INSERT INTO `hanjas` VALUES('投資','투자','investment');
-INSERT INTO `hanjas` VALUES('出資','출자','investment');
-INSERT INTO `hanjas` VALUES('電離','전리','ionization');
-INSERT INTO `hanjas` VALUES('虹彩','홍채','iris');
-INSERT INTO `hanjas` VALUES('鐵分','철분','iron');
-INSERT INTO `hanjas` VALUES('砂鐵','사철','iron sand');
-INSERT INTO `hanjas` VALUES('鐵器','철기','ironware');
-INSERT INTO `hanjas` VALUES('鐵工','철공','ironworker');
-INSERT INTO `hanjas` VALUES('反語','반어','irony');
-INSERT INTO `hanjas` VALUES('不條理','부조리','irrationality');
-INSERT INTO `hanjas` VALUES('不規則','불규칙','irregularity');
-INSERT INTO `hanjas` VALUES('變則','변칙','irregularity');
-INSERT INTO `hanjas` VALUES('無責任','무책임','irresponsibility');
-INSERT INTO `hanjas` VALUES('灌漑','관개','irrigation');
-INSERT INTO `hanjas` VALUES('孤立','고립','isolation');
-INSERT INTO `hanjas` VALUES('隔離','격리','isolation');
-INSERT INTO `hanjas` VALUES('同型','동형','isomorphism');
-INSERT INTO `hanjas` VALUES('地峽','지협','isthmus');
-INSERT INTO `hanjas` VALUES('項目','항목','item');
-INSERT INTO `hanjas` VALUES('旅程','여정','itinerary');
-INSERT INTO `hanjas` VALUES('道程','도정','itinerary');
-INSERT INTO `hanjas` VALUES('象牙','상아','ivory');
-INSERT INTO `hanjas` VALUES('翡翠','비취','jade');
-INSERT INTO `hanjas` VALUES('硬玉','경옥','jadeite');
-INSERT INTO `hanjas` VALUES('碧玉','벽옥','jasper');
-INSERT INTO `hanjas` VALUES('嫉妬','질투','jealousy');
-INSERT INTO `hanjas` VALUES('棧橋','잔교','jetty');
-INSERT INTO `hanjas` VALUES('裁判官','재판관','judge');
-INSERT INTO `hanjas` VALUES('判事','판사','judge');
-INSERT INTO `hanjas` VALUES('柔道','유도','judo');
-INSERT INTO `hanjas` VALUES('中學校','중학교','junior high school');
-INSERT INTO `hanjas` VALUES('公正','공정','justice');
-INSERT INTO `hanjas` VALUES('萬華鏡','만화경','kaleidoscope');
-INSERT INTO `hanjas` VALUES('核心','핵심','kernel');
-INSERT INTO `hanjas` VALUES('燈油','등유','kerosene');
-INSERT INTO `hanjas` VALUES('要衝','요충','key point');
-INSERT INTO `hanjas` VALUES('腎臟','신장','kidney');
-INSERT INTO `hanjas` VALUES('幼稚園','유치원','kindergarten');
-INSERT INTO `hanjas` VALUES('國王','국왕','king');
-INSERT INTO `hanjas` VALUES('王國','왕국','kingdom');
-INSERT INTO `hanjas` VALUES('廚房','주방','kitchen');
-INSERT INTO `hanjas` VALUES('編物','편물','knitting');
-INSERT INTO `hanjas` VALUES('陰脣','음순','labium');
-INSERT INTO `hanjas` VALUES('勤勞','근로','labor');
-INSERT INTO `hanjas` VALUES('勞動者','노동자','laborer');
-INSERT INTO `hanjas` VALUES('迷宮','미궁','labyrinth');
-INSERT INTO `hanjas` VALUES('乳酸','유산','lactic acid');
-INSERT INTO `hanjas` VALUES('淑女','숙녀','lady');
-INSERT INTO `hanjas` VALUES('貴婦人','귀부인','lady');
-INSERT INTO `hanjas` VALUES('湖水','호수','lake');
-INSERT INTO `hanjas` VALUES('兵長','병장','lance corporal');
-INSERT INTO `hanjas` VALUES('槍騎兵','창기병','lancer');
-INSERT INTO `hanjas` VALUES('陸地','육지','land');
-INSERT INTO `hanjas` VALUES('地雷','지뢰','land mine');
-INSERT INTO `hanjas` VALUES('地租','지조','land tax');
-INSERT INTO `hanjas` VALUES('着陸','착륙','landing');
-INSERT INTO `hanjas` VALUES('地主','지주','landlord');
-INSERT INTO `hanjas` VALUES('造園','조원','landscape gardening');
-INSERT INTO `hanjas` VALUES('言語','언어','language');
-INSERT INTO `hanjas` VALUES('瑠璃','유리','lapis lazuli');
-INSERT INTO `hanjas` VALUES('消滅','소멸','lapse');
-INSERT INTO `hanjas` VALUES('落葉松','낙엽송','larch');
-INSERT INTO `hanjas` VALUES('幼蟲','유충','larva');
-INSERT INTO `hanjas` VALUES('幼生','유생','larva');
-INSERT INTO `hanjas` VALUES('喉頭','후두','larynx');
-INSERT INTO `hanjas` VALUES('無氣力','무기력','lassitude');
-INSERT INTO `hanjas` VALUES('最後','최후','last');
-INSERT INTO `hanjas` VALUES('潛在','잠재','latency');
-INSERT INTO `hanjas` VALUES('旋盤','선반','lathe');
-INSERT INTO `hanjas` VALUES('汽艇','기정','launch');
-INSERT INTO `hanjas` VALUES('熔岩','용암','lava');
-INSERT INTO `hanjas` VALUES('法學','법학','law');
-INSERT INTO `hanjas` VALUES('鉛毒','연독','lead poisoning');
-INSERT INTO `hanjas` VALUES('指導者','지도자','leader');
-INSERT INTO `hanjas` VALUES('主役','주역','leading part');
-INSERT INTO `hanjas` VALUES('腐葉土','부엽토','leaf mold');
-INSERT INTO `hanjas` VALUES('閏年','윤년','leap year');
-INSERT INTO `hanjas` VALUES('學問','학문','learning');
-INSERT INTO `hanjas` VALUES('講師','강사','lecturer');
-INSERT INTO `hanjas` VALUES('講演者','강연자','lecturer');
-INSERT INTO `hanjas` VALUES('元帳','원장','ledger');
-INSERT INTO `hanjas` VALUES('左派','좌파','left wing');
-INSERT INTO `hanjas` VALUES('合法的','합법적','legal');
-INSERT INTO `hanjas` VALUES('立法','입법','legislation');
-INSERT INTO `hanjas` VALUES('立法者','입법자','legislator');
-INSERT INTO `hanjas` VALUES('餘暇','여가','leisure');
-INSERT INTO `hanjas` VALUES('癩病','나병','leprosy');
-INSERT INTO `hanjas` VALUES('學課','학과','lesson');
-INSERT INTO `hanjas` VALUES('課業','과업','lesson');
-INSERT INTO `hanjas` VALUES('致死的','치사적','lethal');
-INSERT INTO `hanjas` VALUES('字體','자체','lettering');
-INSERT INTO `hanjas` VALUES('白血球','백혈구','leucocyte');
-INSERT INTO `hanjas` VALUES('水準','수준','level');
-INSERT INTO `hanjas` VALUES('司書','사서','librarian');
-INSERT INTO `hanjas` VALUES('認可','인가','license');
-INSERT INTO `hanjas` VALUES('甘草','감초','licorice');
-INSERT INTO `hanjas` VALUES('生命','생명','life');
-INSERT INTO `hanjas` VALUES('靭帶','인대','ligament');
-INSERT INTO `hanjas` VALUES('輕騎兵','경기병','light cavalry');
-INSERT INTO `hanjas` VALUES('輕音樂','경음악','light music');
-INSERT INTO `hanjas` VALUES('光波','광파','light wave');
-INSERT INTO `hanjas` VALUES('燈臺','등대','lighthouse');
-INSERT INTO `hanjas` VALUES('百合','백합','lily');
-INSERT INTO `hanjas` VALUES('手足','수족','limb');
-INSERT INTO `hanjas` VALUES('限度','한도','limit');
-INSERT INTO `hanjas` VALUES('際限','제한','limit');
-INSERT INTO `hanjas` VALUES('限定版','한정판','limited edition');
-INSERT INTO `hanjas` VALUES('路線','노선','line');
-INSERT INTO `hanjas` VALUES('血統','혈통','lineage');
-INSERT INTO `hanjas` VALUES('線審','선심','linesman');
-INSERT INTO `hanjas` VALUES('獅子','사자','lion');
-INSERT INTO `hanjas` VALUES('液化','액화','liquefaction');
-INSERT INTO `hanjas` VALUES('液體','액체','liquid');
-INSERT INTO `hanjas` VALUES('流動體','유동체','liquid');
-INSERT INTO `hanjas` VALUES('液量','액량','liquid measure');
-INSERT INTO `hanjas` VALUES('淸算','청산','liquidation');
-INSERT INTO `hanjas` VALUES('流動性','유동성','liquidity');
-INSERT INTO `hanjas` VALUES('聽取','청취','listening');
-INSERT INTO `hanjas` VALUES('文學','문학','literature');
-INSERT INTO `hanjas` VALUES('文獻','문헌','literature');
-INSERT INTO `hanjas` VALUES('文藝','문예','literature');
-INSERT INTO `hanjas` VALUES('快活','쾌활','liveliness');
-INSERT INTO `hanjas` VALUES('生活','생활','living');
-INSERT INTO `hanjas` VALUES('居室','거실','living room');
-INSERT INTO `hanjas` VALUES('荷重','하중','load');
-INSERT INTO `hanjas` VALUES('貸付','대부','loan');
-INSERT INTO `hanjas` VALUES('貸借','대차','loan');
-INSERT INTO `hanjas` VALUES('借款','차관','loan');
-INSERT INTO `hanjas` VALUES('局限','국한','localize');
-INSERT INTO `hanjas` VALUES('破傷風','파상풍','lockjaw');
-INSERT INTO `hanjas` VALUES('下宿','하숙','lodging');
-INSERT INTO `hanjas` VALUES('宿泊','숙박','lodging');
-INSERT INTO `hanjas` VALUES('宿所','숙소','lodging');
-INSERT INTO `hanjas` VALUES('對數','대수','logarithm');
-INSERT INTO `hanjas` VALUES('論理學','논리학','logic');
-INSERT INTO `hanjas` VALUES('論理','논리','logic');
-INSERT INTO `hanjas` VALUES('長壽','장수','longevity');
-INSERT INTO `hanjas` VALUES('憧憬','동경','longing');
-INSERT INTO `hanjas` VALUES('經度','경도','longitude');
-INSERT INTO `hanjas` VALUES('織機','직기','loom');
-INSERT INTO `hanjas` VALUES('損失','손실','loss');
-INSERT INTO `hanjas` VALUES('擴聲器','확성기','loudspeaker');
-INSERT INTO `hanjas` VALUES('愛好','애호','love');
-INSERT INTO `hanjas` VALUES('慈愛','자애','love');
-INSERT INTO `hanjas` VALUES('戀愛','연애','love');
-INSERT INTO `hanjas` VALUES('情事','정사','love affair');
-INSERT INTO `hanjas` VALUES('戀歌','연가','love song');
-INSERT INTO `hanjas` VALUES('干潮','간조','low tide');
-INSERT INTO `hanjas` VALUES('低地','저지','lowland');
-INSERT INTO `hanjas` VALUES('忠誠','충성','loyalty');
-INSERT INTO `hanjas` VALUES('忠節','충절','loyalty');
-INSERT INTO `hanjas` VALUES('潤滑油','윤활유','lubricating oil');
-INSERT INTO `hanjas` VALUES('腰痛','요통','lumbago');
-INSERT INTO `hanjas` VALUES('月蝕','월식','lunar eclipse');
-INSERT INTO `hanjas` VALUES('光澤','광택','lustre');
-INSERT INTO `hanjas` VALUES('奢侈','사치','luxury');
-INSERT INTO `hanjas` VALUES('策動','책동','machination');
-INSERT INTO `hanjas` VALUES('機械','기계','machine');
-INSERT INTO `hanjas` VALUES('機關銃','기관총','machine gun');
-INSERT INTO `hanjas` VALUES('夫人','부인','madam');
-INSERT INTO `hanjas` VALUES('狂氣','광기','madness');
-INSERT INTO `hanjas` VALUES('巨匠','거장','maestro');
-INSERT INTO `hanjas` VALUES('雜誌','잡지','magazine');
-INSERT INTO `hanjas` VALUES('奇術','기술','magic');
-INSERT INTO `hanjas` VALUES('幻燈','환등','magic lantern');
-INSERT INTO `hanjas` VALUES('磁石','자석','magnet');
-INSERT INTO `hanjas` VALUES('磁場','자장','magnetic field');
-INSERT INTO `hanjas` VALUES('磁界','자계','magnetic field');
-INSERT INTO `hanjas` VALUES('磁束','자속','magnetic flux');
-INSERT INTO `hanjas` VALUES('磁針','자침','magnetic needle');
-INSERT INTO `hanjas` VALUES('磁氣','자기','magnetism');
-INSERT INTO `hanjas` VALUES('磁力','자력','magnetism');
-INSERT INTO `hanjas` VALUES('磁鐵鑛','자철광','magnetite');
-INSERT INTO `hanjas` VALUES('倍率','배율','magnification');
-INSERT INTO `hanjas` VALUES('木蓮','목련','magnolia');
-INSERT INTO `hanjas` VALUES('麻雀','마작','mahjong');
-INSERT INTO `hanjas` VALUES('郵送','우송','mailing');
-INSERT INTO `hanjas` VALUES('主力','주력','main force');
-INSERT INTO `hanjas` VALUES('本線','본선','main line');
-INSERT INTO `hanjas` VALUES('維持','유지','maintenance');
-INSERT INTO `hanjas` VALUES('大前提','대전제','major premise');
-INSERT INTO `hanjas` VALUES('長音階','장음계','major scale');
-INSERT INTO `hanjas` VALUES('成年','성년','majority');
-INSERT INTO `hanjas` VALUES('展性','전성','malleability');
-INSERT INTO `hanjas` VALUES('麥芽','맥아','malt');
-INSERT INTO `hanjas` VALUES('乳腺','유선','mammary gland');
-INSERT INTO `hanjas` VALUES('管理人','관리인','manager');
-INSERT INTO `hanjas` VALUES('海牛','해우','manatee');
-INSERT INTO `hanjas` VALUES('表明','표명','manifestation');
-INSERT INTO `hanjas` VALUES('莊園','장원','manor');
-INSERT INTO `hanjas` VALUES('假數','가수','mantissa');
-INSERT INTO `hanjas` VALUES('眞言','진언','mantra');
-INSERT INTO `hanjas` VALUES('製造','제조','manufacture');
-INSERT INTO `hanjas` VALUES('地圖','지도','map');
-INSERT INTO `hanjas` VALUES('大理石','대리석','marble');
-INSERT INTO `hanjas` VALUES('白鐵鑛','백철광','marcasite');
-INSERT INTO `hanjas` VALUES('行軍','행군','march');
-INSERT INTO `hanjas` VALUES('欄外','난외','margin');
-INSERT INTO `hanjas` VALUES('海産物','해산물','marine products');
-INSERT INTO `hanjas` VALUES('符號','부호','mark');
-INSERT INTO `hanjas` VALUES('點數','점수','mark');
-INSERT INTO `hanjas` VALUES('市價','시가','market price');
-INSERT INTO `hanjas` VALUES('侯爵','후작','marquess');
-INSERT INTO `hanjas` VALUES('結婚','결혼','marriage');
-INSERT INTO `hanjas` VALUES('骨髓','골수','marrow');
-INSERT INTO `hanjas` VALUES('沼澤','소택','marsh');
-INSERT INTO `hanjas` VALUES('武道','무도','martial art');
-INSERT INTO `hanjas` VALUES('武術','무술','martial art');
-INSERT INTO `hanjas` VALUES('戒嚴令','계엄령','martial law');
-INSERT INTO `hanjas` VALUES('假裝','가장','masquerade');
-INSERT INTO `hanjas` VALUES('集團','집단','mass');
-INSERT INTO `hanjas` VALUES('名人','명인','master');
-INSERT INTO `hanjas` VALUES('傑作','걸작','masterpiece');
-INSERT INTO `hanjas` VALUES('名作','명작','masterpiece');
-INSERT INTO `hanjas` VALUES('熟達','숙달','mastery');
-INSERT INTO `hanjas` VALUES('試合','시합','match');
-INSERT INTO `hanjas` VALUES('實現','실현','materialization');
-INSERT INTO `hanjas` VALUES('數理的','수리적','mathematic');
-INSERT INTO `hanjas` VALUES('數學者','수학자','mathematician');
-INSERT INTO `hanjas` VALUES('數學','수학','mathematics');
-INSERT INTO `hanjas` VALUES('交配','교배','mating');
-INSERT INTO `hanjas` VALUES('入學','입학','matriculation');
-INSERT INTO `hanjas` VALUES('最大限度','최대한도','maximum');
-INSERT INTO `hanjas` VALUES('市長','시장','mayor');
-INSERT INTO `hanjas` VALUES('食券','식권','meal ticket');
-INSERT INTO `hanjas` VALUES('意義','의의','meaning');
-INSERT INTO `hanjas` VALUES('野卑','야비','meanness');
-INSERT INTO `hanjas` VALUES('手段','수단','measure');
-INSERT INTO `hanjas` VALUES('測量','측량','measurement');
-INSERT INTO `hanjas` VALUES('測定','측정','measurement');
-INSERT INTO `hanjas` VALUES('力學','역학','mechanics');
-INSERT INTO `hanjas` VALUES('賞牌','상패','medal');
-INSERT INTO `hanjas` VALUES('中點','중점','median point');
-INSERT INTO `hanjas` VALUES('調停','조정','mediation');
-INSERT INTO `hanjas` VALUES('醫術','의술','medicine');
-INSERT INTO `hanjas` VALUES('醫學','의학','medicine');
-INSERT INTO `hanjas` VALUES('瞑想','명상','meditation');
-INSERT INTO `hanjas` VALUES('默想','묵상','meditation');
-INSERT INTO `hanjas` VALUES('媒質','매질','medium');
-INSERT INTO `hanjas` VALUES('會合','회합','meeting');
-INSERT INTO `hanjas` VALUES('會場','회장','meeting place');
-INSERT INTO `hanjas` VALUES('諧調','해조','melody');
-INSERT INTO `hanjas` VALUES('旋律','선율','melody');
-INSERT INTO `hanjas` VALUES('鎔解','용해','melting');
-INSERT INTO `hanjas` VALUES('構成員','구성원','member');
-INSERT INTO `hanjas` VALUES('腦膜','뇌막','meninges');
-INSERT INTO `hanjas` VALUES('閉經期','폐경기','menopause');
-INSERT INTO `hanjas` VALUES('暗算','암산','mental arithmetic');
-INSERT INTO `hanjas` VALUES('重商主義','중상주의','mercantilism');
-INSERT INTO `hanjas` VALUES('商船','상선','merchant ship');
-INSERT INTO `hanjas` VALUES('子午線','자오선','meridian');
-INSERT INTO `hanjas` VALUES('功績','공적','merit');
-INSERT INTO `hanjas` VALUES('中間子','중간자','meson');
-INSERT INTO `hanjas` VALUES('救世主','구세주','messiah');
-INSERT INTO `hanjas` VALUES('新陳代謝','신진대사','metabolism');
-INSERT INTO `hanjas` VALUES('變態','변태','metamorphosis');
-INSERT INTO `hanjas` VALUES('轉移','전이','metastasis');
-INSERT INTO `hanjas` VALUES('隕石','운석','meteorite');
-INSERT INTO `hanjas` VALUES('換喩','환유','metonymy');
-INSERT INTO `hanjas` VALUES('雲母','운모','mica');
-INSERT INTO `hanjas` VALUES('微生物','미생물','microbe');
-INSERT INTO `hanjas` VALUES('小宇宙','소우주','microcosm');
-INSERT INTO `hanjas` VALUES('測微計','측미계','micrometer');
-INSERT INTO `hanjas` VALUES('中腦','중뇌','midbrain');
-INSERT INTO `hanjas` VALUES('産婆','산파','midwife');
-INSERT INTO `hanjas` VALUES('風采','풍채','mien');
-INSERT INTO `hanjas` VALUES('偏頭痛','편두통','migraine');
-INSERT INTO `hanjas` VALUES('移住','이주','migration');
-INSERT INTO `hanjas` VALUES('軟鋼','연강','mild steel');
-INSERT INTO `hanjas` VALUES('里程標','이정표','milestone');
-INSERT INTO `hanjas` VALUES('鬪士','투사','militant');
-INSERT INTO `hanjas` VALUES('軍事','군사','military affairs');
-INSERT INTO `hanjas` VALUES('軍政','군정','military government');
-INSERT INTO `hanjas` VALUES('軍法','군법','military law');
-INSERT INTO `hanjas` VALUES('兵役','병역','military service');
-INSERT INTO `hanjas` VALUES('牛乳','우유','milk');
-INSERT INTO `hanjas` VALUES('乳糖','유당','milk sugar');
-INSERT INTO `hanjas` VALUES('讀心術','독심술','mind reading');
-INSERT INTO `hanjas` VALUES('心眼','심안','mind''s eye');
-INSERT INTO `hanjas` VALUES('坑夫','갱부','miner');
-INSERT INTO `hanjas` VALUES('鑛物','광물','mineral');
-INSERT INTO `hanjas` VALUES('鑛油','광유','mineral oil');
-INSERT INTO `hanjas` VALUES('採鑛','채광','mining');
-INSERT INTO `hanjas` VALUES('造幣','조폐','mintage');
-INSERT INTO `hanjas` VALUES('被減數','피감수','minuend');
-INSERT INTO `hanjas` VALUES('奇蹟','기적','miracle');
-INSERT INTO `hanjas` VALUES('靈藥','영약','miracle drug');
-INSERT INTO `hanjas` VALUES('誤算','오산','miscalculation');
-INSERT INTO `hanjas` VALUES('曲解','곡해','misconstruction');
-INSERT INTO `hanjas` VALUES('守錢奴','수전노','miser');
-INSERT INTO `hanjas` VALUES('悲慘','비참','misery');
-INSERT INTO `hanjas` VALUES('不運','불운','misfortune');
-INSERT INTO `hanjas` VALUES('惡政','악정','misgovernment');
-INSERT INTO `hanjas` VALUES('失政','실정','misgovernment');
-INSERT INTO `hanjas` VALUES('誤報','오보','misinformation');
-INSERT INTO `hanjas` VALUES('誤傳','오전','misinformation');
-INSERT INTO `hanjas` VALUES('誤植','오식','misprint');
-INSERT INTO `hanjas` VALUES('情婦','정부','mistress');
-INSERT INTO `hanjas` VALUES('誤解','오해','misunderstanding');
-INSERT INTO `hanjas` VALUES('混合','혼합','mixture');
-INSERT INTO `hanjas` VALUES('動員','동원','mobilization');
-INSERT INTO `hanjas` VALUES('中庸','중용','moderation');
-INSERT INTO `hanjas` VALUES('近代的','근대적','modern');
-INSERT INTO `hanjas` VALUES('謙讓','겸양','modesty');
-INSERT INTO `hanjas` VALUES('水分','수분','moisture');
-INSERT INTO `hanjas` VALUES('糖蜜','당밀','molasses');
-INSERT INTO `hanjas` VALUES('分子','분자','molecule');
-INSERT INTO `hanjas` VALUES('癡漢','치한','molester');
-INSERT INTO `hanjas` VALUES('餘勢','여세','momentum');
-INSERT INTO `hanjas` VALUES('君主','군주','monarch');
-INSERT INTO `hanjas` VALUES('單眼鏡','단안경','monocle');
-INSERT INTO `hanjas` VALUES('獨占的','독점적','monopolistic');
-INSERT INTO `hanjas` VALUES('單音','단음','monotony');
-INSERT INTO `hanjas` VALUES('單調','단조','monotony');
-INSERT INTO `hanjas` VALUES('怪物','괴물','monster');
-INSERT INTO `hanjas` VALUES('修身','수신','moral');
-INSERT INTO `hanjas` VALUES('道義','도의','morality');
-INSERT INTO `hanjas` VALUES('午前','오전','morning');
-INSERT INTO `hanjas` VALUES('抵當','저당','mortgage');
-INSERT INTO `hanjas` VALUES('最惠國','최혜국','most favored nation');
-INSERT INTO `hanjas` VALUES('母艦','모함','mother ship');
-INSERT INTO `hanjas` VALUES('動機','동기','motive');
-INSERT INTO `hanjas` VALUES('原動力','원동력','motive power');
-INSERT INTO `hanjas` VALUES('臺紙','대지','mount');
-INSERT INTO `hanjas` VALUES('山脈','산맥','mountain range');
-INSERT INTO `hanjas` VALUES('山系','산계','mountain system');
-INSERT INTO `hanjas` VALUES('粘膜','점막','mucous membrane');
-INSERT INTO `hanjas` VALUES('倍數','배수','multiple');
-INSERT INTO `hanjas` VALUES('多毛作','다모작','multiple cropping');
-INSERT INTO `hanjas` VALUES('乘數','승수','multiplier');
-INSERT INTO `hanjas` VALUES('殺人','살인','murder');
-INSERT INTO `hanjas` VALUES('博物館','박물관','museum');
-INSERT INTO `hanjas` VALUES('音樂','음악','music');
-INSERT INTO `hanjas` VALUES('麝香','사향','musk');
-INSERT INTO `hanjas` VALUES('點呼','점호','muster');
-INSERT INTO `hanjas` VALUES('銃口','총구','muzzle');
-INSERT INTO `hanjas` VALUES('神秘','신비','mystery');
-INSERT INTO `hanjas` VALUES('神話','신화','myth');
-INSERT INTO `hanjas` VALUES('肉眼','육안','naked eye');
-INSERT INTO `hanjas` VALUES('裸眼','나안','naked eye');
-INSERT INTO `hanjas` VALUES('偏狹','편협','narrowness');
-INSERT INTO `hanjas` VALUES('鼻音','비음','nasal');
-INSERT INTO `hanjas` VALUES('國債','국채','national debt');
-INSERT INTO `hanjas` VALUES('國旗','국기','national flag');
-INSERT INTO `hanjas` VALUES('國籍','국적','nationality');
-INSERT INTO `hanjas` VALUES('土人','토인','native');
-INSERT INTO `hanjas` VALUES('博物學','박물학','natural history');
-INSERT INTO `hanjas` VALUES('天理','천리','natural law');
-INSERT INTO `hanjas` VALUES('歸化','귀화','naturalization');
-INSERT INTO `hanjas` VALUES('勿論','물론','naturally');
-INSERT INTO `hanjas` VALUES('天性','천성','nature');
-INSERT INTO `hanjas` VALUES('軍港','군항','naval station');
-INSERT INTO `hanjas` VALUES('海軍','해군','navy');
-INSERT INTO `hanjas` VALUES('小潮','소조','neap tide');
-INSERT INTO `hanjas` VALUES('星雲','성운','nebula');
-INSERT INTO `hanjas` VALUES('消極的','소극적','negative');
-INSERT INTO `hanjas` VALUES('陰電子','음전자','negatron');
-INSERT INTO `hanjas` VALUES('怠慢','태만','negligence');
-INSERT INTO `hanjas` VALUES('協商','협상','negotiation');
-INSERT INTO `hanjas` VALUES('新參者','신참자','neophyte');
-INSERT INTO `hanjas` VALUES('神經','신경','nerve');
-INSERT INTO `hanjas` VALUES('中和','중화','neutralize');
-INSERT INTO `hanjas` VALUES('中性子','중성자','neutron');
-INSERT INTO `hanjas` VALUES('新體制','신체제','new order');
-INSERT INTO `hanjas` VALUES('消息','소식','news');
-INSERT INTO `hanjas` VALUES('惡夢','악몽','nightmare');
-INSERT INTO `hanjas` VALUES('夜間','야간','nighttime');
-INSERT INTO `hanjas` VALUES('夜想曲','야상곡','nocturne');
-INSERT INTO `hanjas` VALUES('雅號','아호','nom de plume');
-INSERT INTO `hanjas` VALUES('不信任','불신임','nonconfidence');
-INSERT INTO `hanjas` VALUES('非營利的','비영리적','nonprofit');
-INSERT INTO `hanjas` VALUES('正午','정오','noon');
-INSERT INTO `hanjas` VALUES('正常','정상','normalcy');
-INSERT INTO `hanjas` VALUES('正常化','정상화','normalization');
-INSERT INTO `hanjas` VALUES('規範的','규범적','normative');
-INSERT INTO `hanjas` VALUES('北部','북부','north');
-INSERT INTO `hanjas` VALUES('北方','북방','northward');
-INSERT INTO `hanjas` VALUES('急降下','급강하','nose dive');
-INSERT INTO `hanjas` VALUES('手記','수기','note');
-INSERT INTO `hanjas` VALUES('覺書','각서','note');
-INSERT INTO `hanjas` VALUES('手帖','수첩','notebook');
-INSERT INTO `hanjas` VALUES('通知','통지','notice');
-INSERT INTO `hanjas` VALUES('告知','고지','notice');
-INSERT INTO `hanjas` VALUES('告示','고시','notice');
-INSERT INTO `hanjas` VALUES('注目','주목','notice,remark,observe');
-INSERT INTO `hanjas` VALUES('新星','신성','nova');
-INSERT INTO `hanjas` VALUES('方今','방금','now');
-INSERT INTO `hanjas` VALUES('核分裂','핵분열','nuclear fission');
-INSERT INTO `hanjas` VALUES('核融合','핵융합','nuclear fusion');
-INSERT INTO `hanjas` VALUES('核實驗','핵실험','nuclear test');
-INSERT INTO `hanjas` VALUES('數詞','수사','numeral');
-INSERT INTO `hanjas` VALUES('看護','간호','nurse');
-INSERT INTO `hanjas` VALUES('童謠','동요','nursery rhyme');
-INSERT INTO `hanjas` VALUES('育兒','육아','nursing');
-INSERT INTO `hanjas` VALUES('保育','보육','nursing');
-INSERT INTO `hanjas` VALUES('堅果','견과','nut');
-INSERT INTO `hanjas` VALUES('肥大','비대','obesity');
-INSERT INTO `hanjas` VALUES('物體','물체','object');
-INSERT INTO `hanjas` VALUES('猥褻','외설','obscenity');
-INSERT INTO `hanjas` VALUES('不明瞭','불명료','obscurity');
-INSERT INTO `hanjas` VALUES('微賤','미천','obscurity');
-INSERT INTO `hanjas` VALUES('遵守','준수','observance');
-INSERT INTO `hanjas` VALUES('觀察者','관찰자','observer');
-INSERT INTO `hanjas` VALUES('頑固','완고','obstinacy');
-INSERT INTO `hanjas` VALUES('職業','직업','occupation');
-INSERT INTO `hanjas` VALUES('大洋','대양','ocean');
-INSERT INTO `hanjas` VALUES('八邊形','팔변형','octagon');
-INSERT INTO `hanjas` VALUES('無臭','무취','odorless');
-INSERT INTO `hanjas` VALUES('提供','제공','offer');
-INSERT INTO `hanjas` VALUES('獻納','헌납','offering');
-INSERT INTO `hanjas` VALUES('老兵','노병','old soldier');
-INSERT INTO `hanjas` VALUES('老婆','노파','old woman');
-INSERT INTO `hanjas` VALUES('野外','야외','open air');
-INSERT INTO `hanjas` VALUES('開場','개장','opening');
-INSERT INTO `hanjas` VALUES('開通','개통','opening');
-INSERT INTO `hanjas` VALUES('歌劇','가극','opera');
-INSERT INTO `hanjas` VALUES('阿片','아편','opium');
-INSERT INTO `hanjas` VALUES('對抗','대항','opposition');
-INSERT INTO `hanjas` VALUES('壓制','압제','oppression');
-INSERT INTO `hanjas` VALUES('壓制者','압제자','oppressor');
-INSERT INTO `hanjas` VALUES('傳令','전령','orderly');
-INSERT INTO `hanjas` VALUES('鑛石','광석','ore');
-INSERT INTO `hanjas` VALUES('原鑛','원광','ore');
-INSERT INTO `hanjas` VALUES('編成','편성','organization');
-INSERT INTO `hanjas` VALUES('體制','체제','organization');
-INSERT INTO `hanjas` VALUES('團體','단체','organization');
-INSERT INTO `hanjas` VALUES('創意','창의','originality');
-INSERT INTO `hanjas` VALUES('元來','원래','originally');
-INSERT INTO `hanjas` VALUES('創始者','창시자','originator');
-INSERT INTO `hanjas` VALUES('始祖','시조','originator');
-INSERT INTO `hanjas` VALUES('孤兒','고아','orphan');
-INSERT INTO `hanjas` VALUES('發振器','발진기','oscillator');
-INSERT INTO `hanjas` VALUES('駝鳥','타조','ostrich');
-INSERT INTO `hanjas` VALUES('外野','외야','outfield');
-INSERT INTO `hanjas` VALUES('無法者','무법자','outlaw');
-INSERT INTO `hanjas` VALUES('大要','대요','outline');
-INSERT INTO `hanjas` VALUES('槪略','개략','outline');
-INSERT INTO `hanjas` VALUES('前哨','전초','outpost');
-INSERT INTO `hanjas` VALUES('局外者','국외자','outsider');
-INSERT INTO `hanjas` VALUES('門外漢','문외한','outsider');
-INSERT INTO `hanjas` VALUES('外套','외투','overcoat');
-INSERT INTO `hanjas` VALUES('陸橋','육교','overpass');
-INSERT INTO `hanjas` VALUES('監督者','감독자','overseer');
-INSERT INTO `hanjas` VALUES('打倒','타도','overthrow');
-INSERT INTO `hanjas` VALUES('序曲','서곡','overture');
-INSERT INTO `hanjas` VALUES('過勞','과로','overwork');
-INSERT INTO `hanjas` VALUES('排卵','배란','ovulation');
-INSERT INTO `hanjas` VALUES('蓚酸','수산','oxalic acid');
-INSERT INTO `hanjas` VALUES('牛車','우차','oxcart');
-INSERT INTO `hanjas` VALUES('酸化','산화','oxidation');
-INSERT INTO `hanjas` VALUES('酸素','산소','oxygen');
-INSERT INTO `hanjas` VALUES('協定','협정','pact');
-INSERT INTO `hanjas` VALUES('讚歌','찬가','paean');
-INSERT INTO `hanjas` VALUES('塗料','도료','paint');
-INSERT INTO `hanjas` VALUES('宮殿','궁전','palace');
-INSERT INTO `hanjas` VALUES('口蓋','구개','palate');
-INSERT INTO `hanjas` VALUES('掌紋','장문','palm print');
-INSERT INTO `hanjas` VALUES('觸診','촉진','palpation');
-INSERT INTO `hanjas` VALUES('中風','중풍','palsy');
-INSERT INTO `hanjas` VALUES('膵臟','췌장','pancreas');
-INSERT INTO `hanjas` VALUES('伏魔殿','복마전','pandemonium');
-INSERT INTO `hanjas` VALUES('穿山甲','천산갑','pangolin');
-INSERT INTO `hanjas` VALUES('恐慌','공황','panic');
-INSERT INTO `hanjas` VALUES('汎神論','범신론','pantheism');
-INSERT INTO `hanjas` VALUES('無言劇','무언극','pantomime');
-INSERT INTO `hanjas` VALUES('抛物線','포물선','parabola');
-INSERT INTO `hanjas` VALUES('落下傘','낙하산','parachute');
-INSERT INTO `hanjas` VALUES('段落','단락','paragraph');
-INSERT INTO `hanjas` VALUES('視差','시차','parallax');
-INSERT INTO `hanjas` VALUES('緯線','위선','parallel');
-INSERT INTO `hanjas` VALUES('平行','평행','parallelism');
-INSERT INTO `hanjas` VALUES('小包','소포','parcel');
-INSERT INTO `hanjas` VALUES('括弧','괄호','parenthesis');
-INSERT INTO `hanjas` VALUES('公園','공원','park');
-INSERT INTO `hanjas` VALUES('駐車場','주차장','parking lot');
-INSERT INTO `hanjas` VALUES('國會','국회','parliament');
-INSERT INTO `hanjas` VALUES('一部','일부','part');
-INSERT INTO `hanjas` VALUES('偏愛','편애','partiality');
-INSERT INTO `hanjas` VALUES('參加者','참가자','participant');
-INSERT INTO `hanjas` VALUES('關與','관여','participation');
-INSERT INTO `hanjas` VALUES('參加','참가','participation');
-INSERT INTO `hanjas` VALUES('參與','참여','participation');
-INSERT INTO `hanjas` VALUES('分詞','분사','participle');
-INSERT INTO `hanjas` VALUES('通行','통행','passage');
-INSERT INTO `hanjas` VALUES('通路','통로','passage');
-INSERT INTO `hanjas` VALUES('乘客','승객','passenger');
-INSERT INTO `hanjas` VALUES('船客','선객','passenger');
-INSERT INTO `hanjas` VALUES('客船','객선','passenger boat');
-INSERT INTO `hanjas` VALUES('客車','객차','passenger car');
-INSERT INTO `hanjas` VALUES('旅客機','여객기','passenger plane');
-INSERT INTO `hanjas` VALUES('激情','격정','passion');
-INSERT INTO `hanjas` VALUES('情慾','정욕','passion');
-INSERT INTO `hanjas` VALUES('情熱','정열','passion');
-INSERT INTO `hanjas` VALUES('受動態','수동태','passive voice');
-INSERT INTO `hanjas` VALUES('旅券','여권','passport');
-INSERT INTO `hanjas` VALUES('特許','특허','patent');
-INSERT INTO `hanjas` VALUES('賣藥','매약','patent medicine');
-INSERT INTO `hanjas` VALUES('家長','가장','patriarch');
-INSERT INTO `hanjas` VALUES('族長','족장','patriarch');
-INSERT INTO `hanjas` VALUES('愛國者','애국자','patriot');
-INSERT INTO `hanjas` VALUES('愛顧','애고','patronage');
-INSERT INTO `hanjas` VALUES('鋪道','포도','pavement');
-INSERT INTO `hanjas` VALUES('鋪裝','포장','pavement');
-INSERT INTO `hanjas` VALUES('鋪石','포석','paving stone');
-INSERT INTO `hanjas` VALUES('平和','평화','peace');
-INSERT INTO `hanjas` VALUES('講和','강화','peace');
-INSERT INTO `hanjas` VALUES('孔雀','공작','peacock');
-INSERT INTO `hanjas` VALUES('落花生','낙화생','peanut');
-INSERT INTO `hanjas` VALUES('農夫','농부','peasant');
-INSERT INTO `hanjas` VALUES('農民','농민','peasant');
-INSERT INTO `hanjas` VALUES('獨特','독특','peculiarity');
-INSERT INTO `hanjas` VALUES('衒學','현학','pedantry');
-INSERT INTO `hanjas` VALUES('臺座','대좌','pedestal');
-INSERT INTO `hanjas` VALUES('骨盤','골반','pelvis');
-INSERT INTO `hanjas` VALUES('懲役','징역','penal servitude');
-INSERT INTO `hanjas` VALUES('罰金','벌금','penalty');
-INSERT INTO `hanjas` VALUES('鉛筆','연필','pencil');
-INSERT INTO `hanjas` VALUES('看破','간파','penetrate');
-INSERT INTO `hanjas` VALUES('半島','반도','peninsula');
-INSERT INTO `hanjas` VALUES('陰莖','음경','penis');
-INSERT INTO `hanjas` VALUES('習字','습자','penmanship');
-INSERT INTO `hanjas` VALUES('芍藥','작약','peony');
-INSERT INTO `hanjas` VALUES('人民','인민','people');
-INSERT INTO `hanjas` VALUES('知覺','지각','perception');
-INSERT INTO `hanjas` VALUES('濾過','여과','percolation');
-INSERT INTO `hanjas` VALUES('完全','완전','perfection');
-INSERT INTO `hanjas` VALUES('穿孔','천공','perforation');
-INSERT INTO `hanjas` VALUES('演技','연기','performance');
-INSERT INTO `hanjas` VALUES('香水','향수','perfume');
-INSERT INTO `hanjas` VALUES('香料','향료','perfume');
-INSERT INTO `hanjas` VALUES('近地點','근지점','perigee');
-INSERT INTO `hanjas` VALUES('近日點','근일점','perihelion');
-INSERT INTO `hanjas` VALUES('骨膜','골막','periosteum');
-INSERT INTO `hanjas` VALUES('潛望鏡','잠망경','periscope');
-INSERT INTO `hanjas` VALUES('腹膜','복막','peritoneum');
-INSERT INTO `hanjas` VALUES('僞證','위증','perjury');
-INSERT INTO `hanjas` VALUES('永續','영속','permanence');
-INSERT INTO `hanjas` VALUES('許可','허가','permission');
-INSERT INTO `hanjas` VALUES('許容','허용','permission');
-INSERT INTO `hanjas` VALUES('順列','순열','permutation');
-INSERT INTO `hanjas` VALUES('永存','영존','perpetuity');
-INSERT INTO `hanjas` VALUES('迫害者','박해자','persecutor');
-INSERT INTO `hanjas` VALUES('擬人法','의인법','personification');
-INSERT INTO `hanjas` VALUES('體現','체현','personification');
-INSERT INTO `hanjas` VALUES('人員','인원','personnel');
-INSERT INTO `hanjas` VALUES('要員','요원','personnel');
-INSERT INTO `hanjas` VALUES('熟讀','숙독','perusal');
-INSERT INTO `hanjas` VALUES('倒錯','도착','perversion');
-INSERT INTO `hanjas` VALUES('悲觀','비관','pessimism');
-INSERT INTO `hanjas` VALUES('愛稱','애칭','pet name');
-INSERT INTO `hanjas` VALUES('歎願','탄원','petition');
-INSERT INTO `hanjas` VALUES('陳情','진정','petition');
-INSERT INTO `hanjas` VALUES('請願者','청원자','petitioner');
-INSERT INTO `hanjas` VALUES('藥局','약국','pharmacy');
-INSERT INTO `hanjas` VALUES('咽頭','인두','pharynx');
-INSERT INTO `hanjas` VALUES('現象','현상','phenomenon');
-INSERT INTO `hanjas` VALUES('哲學者','철학자','philosopher');
-INSERT INTO `hanjas` VALUES('哲人','철인','philosopher');
-INSERT INTO `hanjas` VALUES('哲學','철학','philosophy');
-INSERT INTO `hanjas` VALUES('哲理','철리','philosophy');
-INSERT INTO `hanjas` VALUES('包莖','포경','phimosis');
-INSERT INTO `hanjas` VALUES('瀉血','사혈','phlebotomy');
-INSERT INTO `hanjas` VALUES('音聲學','음성학','phonetics');
-INSERT INTO `hanjas` VALUES('亞燐酸','아인산','phosphoric acid');
-INSERT INTO `hanjas` VALUES('光化學','광화학','photochemistry');
-INSERT INTO `hanjas` VALUES('光子','광자','photon');
-INSERT INTO `hanjas` VALUES('屈光性','굴광성','phototropism');
-INSERT INTO `hanjas` VALUES('體育','체육','physical education');
-INSERT INTO `hanjas` VALUES('地文學','지문학','physical geography');
-INSERT INTO `hanjas` VALUES('物理學者','물리학자','physicist');
-INSERT INTO `hanjas` VALUES('物理學','물리학','physics');
-INSERT INTO `hanjas` VALUES('重農主義者','중농주의자','physiocrat');
-INSERT INTO `hanjas` VALUES('埠頭','부두','pier');
-INSERT INTO `hanjas` VALUES('色素','색소','pigment');
-INSERT INTO `hanjas` VALUES('巡禮者','순례자','pilgrim');
-INSERT INTO `hanjas` VALUES('巡禮','순례','pilgrimage');
-INSERT INTO `hanjas` VALUES('丸藥','환약','pill');
-INSERT INTO `hanjas` VALUES('代打者','대타자','pinch hitter');
-INSERT INTO `hanjas` VALUES('開拓','개척','pioneer');
-INSERT INTO `hanjas` VALUES('投手','투수','pitcher');
-INSERT INTO `hanjas` VALUES('投球','투구','pitching');
-INSERT INTO `hanjas` VALUES('陷穽','함정','pitfall');
-INSERT INTO `hanjas` VALUES('坑口','갱구','pithead');
-INSERT INTO `hanjas` VALUES('腦下垂體','뇌하수체','pituitary gland');
-INSERT INTO `hanjas` VALUES('場所','장소','place');
-INSERT INTO `hanjas` VALUES('胎盤','태반','placenta');
-INSERT INTO `hanjas` VALUES('疫病','역병','plague');
-INSERT INTO `hanjas` VALUES('平服','평복','plain clothes');
-INSERT INTO `hanjas` VALUES('直言','직언','plain speaking');
-INSERT INTO `hanjas` VALUES('原告','원고','plaintiff');
-INSERT INTO `hanjas` VALUES('方策','방책','plan');
-INSERT INTO `hanjas` VALUES('圖面','도면','plan');
-INSERT INTO `hanjas` VALUES('平面','평면','plane');
-INSERT INTO `hanjas` VALUES('遊星','유성','planet');
-INSERT INTO `hanjas` VALUES('惑星','혹성','planet');
-INSERT INTO `hanjas` VALUES('天象儀','천상의','planetarium');
-INSERT INTO `hanjas` VALUES('植物','식물','plant');
-INSERT INTO `hanjas` VALUES('血漿','혈장','plasma');
-INSERT INTO `hanjas` VALUES('石膏','석고','plaster');
-INSERT INTO `hanjas` VALUES('俳優','배우','player');
-INSERT INTO `hanjas` VALUES('劇場','극장','playhouse');
-INSERT INTO `hanjas` VALUES('掠奪','약탈','plunder,rob');
-INSERT INTO `hanjas` VALUES('大過去','대과거','pluperfect');
-INSERT INTO `hanjas` VALUES('複數','복수','plural');
-INSERT INTO `hanjas` VALUES('合板','합판','plywood');
-INSERT INTO `hanjas` VALUES('肺炎','폐렴','pneumonia');
-INSERT INTO `hanjas` VALUES('詩人','시인','poet');
-INSERT INTO `hanjas` VALUES('韻文','운문','poetry');
-INSERT INTO `hanjas` VALUES('指針','지침','pointer');
-INSERT INTO `hanjas` VALUES('害毒','해독','poison');
-INSERT INTO `hanjas` VALUES('中毒','중독','poisoning');
-INSERT INTO `hanjas` VALUES('極性','극성','polarity');
-INSERT INTO `hanjas` VALUES('偏光','편광','polarization');
-INSERT INTO `hanjas` VALUES('警察','경찰','police');
-INSERT INTO `hanjas` VALUES('警察署','경찰서','police station');
-INSERT INTO `hanjas` VALUES('警官','경관','policeman');
-INSERT INTO `hanjas` VALUES('政策','정책','policy');
-INSERT INTO `hanjas` VALUES('方針','방침','policy');
-INSERT INTO `hanjas` VALUES('政黨','정당','political party');
-INSERT INTO `hanjas` VALUES('政略','정략','politics');
-INSERT INTO `hanjas` VALUES('投票','투표','poll');
-INSERT INTO `hanjas` VALUES('多角形','다각형','polygon');
-INSERT INTO `hanjas` VALUES('石榴','석류','pomegranate');
-INSERT INTO `hanjas` VALUES('俗名','속명','popular name');
-INSERT INTO `hanjas` VALUES('流行歌','유행가','popular song');
-INSERT INTO `hanjas` VALUES('人望','인망','popularity');
-INSERT INTO `hanjas` VALUES('人口','인구','population');
-INSERT INTO `hanjas` VALUES('細孔','세공','pore');
-INSERT INTO `hanjas` VALUES('多孔性','다공성','porosity');
-INSERT INTO `hanjas` VALUES('前兆','전조','portent');
-INSERT INTO `hanjas` VALUES('舷窓','현창','porthole');
-INSERT INTO `hanjas` VALUES('肖像','초상','portrait');
-INSERT INTO `hanjas` VALUES('地位','지위','position');
-INSERT INTO `hanjas` VALUES('陽電氣','양전기','positive electricity');
-INSERT INTO `hanjas` VALUES('確證','확증','positive proof');
-INSERT INTO `hanjas` VALUES('陽電子','양전자','positron');
-INSERT INTO `hanjas` VALUES('郵便','우편','postal service');
-INSERT INTO `hanjas` VALUES('後世','후세','posterity');
-INSERT INTO `hanjas` VALUES('消印','소인','postmark');
-INSERT INTO `hanjas` VALUES('追伸','추신','postscript');
-INSERT INTO `hanjas` VALUES('追白','추백','postscript');
-INSERT INTO `hanjas` VALUES('陶工','도공','potter');
-INSERT INTO `hanjas` VALUES('陶器','도기','pottery');
-INSERT INTO `hanjas` VALUES('動力','동력','power');
-INSERT INTO `hanjas` VALUES('練習','연습','practice,rehearse,exercise');
-INSERT INTO `hanjas` VALUES('實行','실행','practice');
-INSERT INTO `hanjas` VALUES('讚美','찬미','praise');
-INSERT INTO `hanjas` VALUES('祈願','기원','prayer');
-INSERT INTO `hanjas` VALUES('上席','상석','precedence');
-INSERT INTO `hanjas` VALUES('先例','선례','precedent');
-INSERT INTO `hanjas` VALUES('判例','판례','precedent');
-INSERT INTO `hanjas` VALUES('先行','선행','preceding');
-INSERT INTO `hanjas` VALUES('沈澱','침전','precipitation');
-INSERT INTO `hanjas` VALUES('捕食','포식','predation');
-INSERT INTO `hanjas` VALUES('窮境','궁경','predicament');
-INSERT INTO `hanjas` VALUES('述語','술어','predicate');
-INSERT INTO `hanjas` VALUES('優待','우대','preferential treatment');
-INSERT INTO `hanjas` VALUES('接頭辭','접두사','prefix');
-INSERT INTO `hanjas` VALUES('偏見','편견','prejudice');
-INSERT INTO `hanjas` VALUES('前提','전제','premise');
-INSERT INTO `hanjas` VALUES('豫感','예감','premonition');
-INSERT INTO `hanjas` VALUES('先取','선취','preoccupation');
-INSERT INTO `hanjas` VALUES('前置詞','전치사','preposition');
-INSERT INTO `hanjas` VALUES('老眼','노안','presbyopia');
-INSERT INTO `hanjas` VALUES('處方','처방','prescription');
-INSERT INTO `hanjas` VALUES('面前','면전','presence');
-INSERT INTO `hanjas` VALUES('現在','현재','present');
-INSERT INTO `hanjas` VALUES('贈呈','증정','presentation');
-INSERT INTO `hanjas` VALUES('提出','제출','presentation');
-INSERT INTO `hanjas` VALUES('提示','제시','presentation');
-INSERT INTO `hanjas` VALUES('提出者','제출자','presenter');
-INSERT INTO `hanjas` VALUES('防腐','방부','preservation');
-INSERT INTO `hanjas` VALUES('大統領','대통령','president');
-INSERT INTO `hanjas` VALUES('總裁','총재','president');
-INSERT INTO `hanjas` VALUES('總長','총장','president');
-INSERT INTO `hanjas` VALUES('推定','추정','presumption');
-INSERT INTO `hanjas` VALUES('豫防','예방','prevention');
-INSERT INTO `hanjas` VALUES('前科','전과','previous conviction');
-INSERT INTO `hanjas` VALUES('自慢','자만','pride');
-INSERT INTO `hanjas` VALUES('得意','득의','pride');
-INSERT INTO `hanjas` VALUES('司祭','사제','priest');
-INSERT INTO `hanjas` VALUES('素數','소수','prime number');
-INSERT INTO `hanjas` VALUES('王子','왕자','prince');
-INSERT INTO `hanjas` VALUES('大君','대군','prince');
-INSERT INTO `hanjas` VALUES('王女','왕녀','princess');
-INSERT INTO `hanjas` VALUES('主節','주절','principal clause');
-INSERT INTO `hanjas` VALUES('正犯者','정범자','principal offender');
-INSERT INTO `hanjas` VALUES('主犯','주범','principal offender');
-INSERT INTO `hanjas` VALUES('原則','원칙','principle');
-INSERT INTO `hanjas` VALUES('原理','원리','principle');
-INSERT INTO `hanjas` VALUES('印刷','인쇄','printing');
-INSERT INTO `hanjas` VALUES('刑務所','형무소','prison');
-INSERT INTO `hanjas` VALUES('監獄','감옥','prison');
-INSERT INTO `hanjas` VALUES('私法','사법','private law');
-INSERT INTO `hanjas` VALUES('私權','사권','private right');
-INSERT INTO `hanjas` VALUES('缺如','결여','privation');
-INSERT INTO `hanjas` VALUES('特權','특권','privilege');
-INSERT INTO `hanjas` VALUES('特典','특전','privilege');
-INSERT INTO `hanjas` VALUES('褒賞','포상','prize');
-INSERT INTO `hanjas` VALUES('蓋然性','개연성','probability');
-INSERT INTO `hanjas` VALUES('問題','문제','problem');
-INSERT INTO `hanjas` VALUES('非凡','비범','prodigy');
-INSERT INTO `hanjas` VALUES('生産','생산','production');
-INSERT INTO `hanjas` VALUES('作品','작품','production');
-INSERT INTO `hanjas` VALUES('公言','공언','profession');
-INSERT INTO `hanjas` VALUES('先輩','선배','progenitor');
-INSERT INTO `hanjas` VALUES('豫後','예후','prognosis');
-INSERT INTO `hanjas` VALUES('前進','전진','progress');
-INSERT INTO `hanjas` VALUES('數列','수열','progression');
-INSERT INTO `hanjas` VALUES('禁令','금령','prohibition');
-INSERT INTO `hanjas` VALUES('計劃','계획','project,design,envision,scheme,plan,proppose');
-INSERT INTO `hanjas` VALUES('映寫','영사','projection');
-INSERT INTO `hanjas` VALUES('約束','약속','promise');
-INSERT INTO `hanjas` VALUES('昇進','승진','promotion');
-INSERT INTO `hanjas` VALUES('主唱','주창','promotion');
-INSERT INTO `hanjas` VALUES('宣布','선포','promulgation');
-INSERT INTO `hanjas` VALUES('代名詞','대명사','pronoun');
-INSERT INTO `hanjas` VALUES('預言','예언','prophecy');
-INSERT INTO `hanjas` VALUES('提案者','제안자','proponent');
-INSERT INTO `hanjas` VALUES('比例','비례','proportion');
-INSERT INTO `hanjas` VALUES('企圖','기도','propose');
-INSERT INTO `hanjas` VALUES('命題','명제','proposition');
-INSERT INTO `hanjas` VALUES('推進','추진','propulsion');
-INSERT INTO `hanjas` VALUES('散文','산문','prose');
-INSERT INTO `hanjas` VALUES('起訴','기소','prosecution');
-INSERT INTO `hanjas` VALUES('眺望','조망','prospect');
-INSERT INTO `hanjas` VALUES('試掘者','시굴자','prospector');
-INSERT INTO `hanjas` VALUES('繁榮','번영','prosperity');
-INSERT INTO `hanjas` VALUES('賣春','매춘','prostitution');
-INSERT INTO `hanjas` VALUES('俯伏','부복','prostration');
-INSERT INTO `hanjas` VALUES('防禦','방어','protection');
-INSERT INTO `hanjas` VALUES('蛋白質','단백질','protein');
-INSERT INTO `hanjas` VALUES('抗議','항의','protest');
-INSERT INTO `hanjas` VALUES('突起','돌기','protuberance');
-INSERT INTO `hanjas` VALUES('供給者','공급자','provider');
-INSERT INTO `hanjas` VALUES('但書','단서','proviso');
-INSERT INTO `hanjas` VALUES('思慮','사려','prudence');
-INSERT INTO `hanjas` VALUES('剪定','전정','pruning');
-INSERT INTO `hanjas` VALUES('乾癬','건선','psoriasis');
-INSERT INTO `hanjas` VALUES('心理學者','심리학자','psychologist');
-INSERT INTO `hanjas` VALUES('心理學','심리학','psychology');
-INSERT INTO `hanjas` VALUES('雷鳥','뇌조','ptarmigan');
-INSERT INTO `hanjas` VALUES('陰毛','음모','pubes');
-INSERT INTO `hanjas` VALUES('公衆','공중','public');
-INSERT INTO `hanjas` VALUES('公社','공사','public corporation');
-INSERT INTO `hanjas` VALUES('公團','공단','public corporation');
-INSERT INTO `hanjas` VALUES('公債','공채','public debt');
-INSERT INTO `hanjas` VALUES('公敵','공적','public enemy');
-INSERT INTO `hanjas` VALUES('公益','공익','public good');
-INSERT INTO `hanjas` VALUES('公聽會','공청회','public hearing');
-INSERT INTO `hanjas` VALUES('公法','공법','public law');
-INSERT INTO `hanjas` VALUES('與論','여론','public opinion');
-INSERT INTO `hanjas` VALUES('檢事','검사','public prosecutor');
-INSERT INTO `hanjas` VALUES('公賣','공매','public sale');
-INSERT INTO `hanjas` VALUES('公務員','공무원','public servant');
-INSERT INTO `hanjas` VALUES('宣傳','선전','publicity');
-INSERT INTO `hanjas` VALUES('肺結核','폐결핵','pulmonary tuberculosis');
-INSERT INTO `hanjas` VALUES('齒髓','치수','pulp');
-INSERT INTO `hanjas` VALUES('粉碎','분쇄','pulverization');
-INSERT INTO `hanjas` VALUES('處罰','처벌','punishment');
-INSERT INTO `hanjas` VALUES('瞳孔','동공','pupil');
-INSERT INTO `hanjas` VALUES('傀儡','괴뢰','puppet');
-INSERT INTO `hanjas` VALUES('購入','구입','purchase');
-INSERT INTO `hanjas` VALUES('購買者','구매자','purchaser');
-INSERT INTO `hanjas` VALUES('煉獄','연옥','purgatory');
-INSERT INTO `hanjas` VALUES('精製','정제','purification');
-INSERT INTO `hanjas` VALUES('齋戒','재계','purification');
-INSERT INTO `hanjas` VALUES('淸淨','청정','purity');
-INSERT INTO `hanjas` VALUES('潔白','결백','purity');
-INSERT INTO `hanjas` VALUES('追跡者','추적자','pursuer');
-INSERT INTO `hanjas` VALUES('膿疱','농포','pustule');
-INSERT INTO `hanjas` VALUES('幽門','유문','pylorus');
-INSERT INTO `hanjas` VALUES('金字塔','금자탑','pyramid');
-INSERT INTO `hanjas` VALUES('角錐','각추','pyramid');
-INSERT INTO `hanjas` VALUES('除蟲菊','제충국','pyrethrum');
-INSERT INTO `hanjas` VALUES('輝石','휘석','pyroxene');
-INSERT INTO `hanjas` VALUES('資格','자격','qualification');
-INSERT INTO `hanjas` VALUES('數量','수량','quantity');
-INSERT INTO `hanjas` VALUES('分量','분량','quantity');
-INSERT INTO `hanjas` VALUES('量子','양자','quantum');
-INSERT INTO `hanjas` VALUES('量子論','양자론','quantum theory');
-INSERT INTO `hanjas` VALUES('檢疫','검역','quarantine');
-INSERT INTO `hanjas` VALUES('石英','석영','quartz');
-INSERT INTO `hanjas` VALUES('王妃','왕비','queen');
-INSERT INTO `hanjas` VALUES('女王','여왕','queen');
-INSERT INTO `hanjas` VALUES('太后','태후','queen mother');
-INSERT INTO `hanjas` VALUES('探求','탐구','quest');
-INSERT INTO `hanjas` VALUES('流砂','유사','quicksand');
-INSERT INTO `hanjas` VALUES('眞髓','진수','quintessence');
-INSERT INTO `hanjas` VALUES('定足數','정족수','quorum');
-INSERT INTO `hanjas` VALUES('競走','경주','race');
-INSERT INTO `hanjas` VALUES('發光','발광','radiation');
-INSERT INTO `hanjas` VALUES('放熱','방열','radiation');
-INSERT INTO `hanjas` VALUES('輻射','복사','radiation');
-INSERT INTO `hanjas` VALUES('半徑','반경','radius');
-INSERT INTO `hanjas` VALUES('激怒','격노','rage');
-INSERT INTO `hanjas` VALUES('急襲','급습','raid');
-INSERT INTO `hanjas` VALUES('鐵道','철도','railroad');
-INSERT INTO `hanjas` VALUES('雨期','우기','rainy season');
-INSERT INTO `hanjas` VALUES('乾葡萄','건포도','raisin');
-INSERT INTO `hanjas` VALUES('糾合','규합','rally');
-INSERT INTO `hanjas` VALUES('城壁','성벽','rampart');
-INSERT INTO `hanjas` VALUES('兵卒','병졸','rank');
-INSERT INTO `hanjas` VALUES('急流','급류','rapid');
-INSERT INTO `hanjas` VALUES('追認','추인','ratification');
-INSERT INTO `hanjas` VALUES('合理的','합리적','rational');
-INSERT INTO `hanjas` VALUES('原料','원료','raw material');
-INSERT INTO `hanjas` VALUES('素材','소재','raw material');
-INSERT INTO `hanjas` VALUES('反作用','반작용','reaction');
-INSERT INTO `hanjas` VALUES('讀者','독자','reader');
-INSERT INTO `hanjas` VALUES('讀書','독서','reading');
-INSERT INTO `hanjas` VALUES('讀本','독본','reading-book');
-INSERT INTO `hanjas` VALUES('再確認','재확인','reaffirmation');
-INSERT INTO `hanjas` VALUES('試藥','시약','reagent');
-INSERT INTO `hanjas` VALUES('實像','실상','real image');
-INSERT INTO `hanjas` VALUES('物權','물권','real rights');
-INSERT INTO `hanjas` VALUES('實社會','실사회','real world');
-INSERT INTO `hanjas` VALUES('現實','현실','reality');
-INSERT INTO `hanjas` VALUES('現實化','현실화','realization');
-INSERT INTO `hanjas` VALUES('國土','국토','realm');
-INSERT INTO `hanjas` VALUES('再評價','재평가','reappraisal');
-INSERT INTO `hanjas` VALUES('再檢討','재검토','reappraisal');
-INSERT INTO `hanjas` VALUES('背後','배후','rear');
-INSERT INTO `hanjas` VALUES('後尾','후미','rear');
-INSERT INTO `hanjas` VALUES('後衛','후위','rear guard');
-INSERT INTO `hanjas` VALUES('再武裝','재무장','rearmament');
-INSERT INTO `hanjas` VALUES('再軍備','재군비','rearmament');
-INSERT INTO `hanjas` VALUES('道理','도리','reason');
-INSERT INTO `hanjas` VALUES('理由','이유','reason');
-INSERT INTO `hanjas` VALUES('理性','이성','reason');
-INSERT INTO `hanjas` VALUES('論法','논법','reasoning');
-INSERT INTO `hanjas` VALUES('叛徒','반도','rebel');
-INSERT INTO `hanjas` VALUES('謀叛','모반','rebellion');
-INSERT INTO `hanjas` VALUES('召還','소환','recall');
-INSERT INTO `hanjas` VALUES('領收','영수','receipt');
-INSERT INTO `hanjas` VALUES('受取','수취','receipt');
-INSERT INTO `hanjas` VALUES('領收證','영수증','receipt');
-INSERT INTO `hanjas` VALUES('受話器','수화기','receiver');
-INSERT INTO `hanjas` VALUES('應接','응접','reception');
-INSERT INTO `hanjas` VALUES('休憩','휴게','recess');
-INSERT INTO `hanjas` VALUES('退去','퇴거','recession');
-INSERT INTO `hanjas` VALUES('暗誦','암송','recitation');
-INSERT INTO `hanjas` VALUES('朗誦','낭송','recitation');
-INSERT INTO `hanjas` VALUES('認定','인정','recognition');
-INSERT INTO `hanjas` VALUES('認知','인지','recognition');
-INSERT INTO `hanjas` VALUES('反動','반동','recoil');
-INSERT INTO `hanjas` VALUES('回顧','회고','recollection');
-INSERT INTO `hanjas` VALUES('推薦','추천','recommendation');
-INSERT INTO `hanjas` VALUES('薦擧','천거','recommendation');
-INSERT INTO `hanjas` VALUES('偵察','정찰','reconnaissance');
-INSERT INTO `hanjas` VALUES('再考','재고','reconsideration');
-INSERT INTO `hanjas` VALUES('成績','성적','record');
-INSERT INTO `hanjas` VALUES('回收','회수','recovery');
-INSERT INTO `hanjas` VALUES('整流','정류','rectification');
-INSERT INTO `hanjas` VALUES('直腸','직장','rectum');
-INSERT INTO `hanjas` VALUES('再歸','재귀','recursive');
-INSERT INTO `hanjas` VALUES('赤色','적색','red');
-INSERT INTO `hanjas` VALUES('赤潮','적조','red tide');
-INSERT INTO `hanjas` VALUES('赤葡萄酒','적포도주','red wine');
-INSERT INTO `hanjas` VALUES('再割引','재할인','rediscount');
-INSERT INTO `hanjas` VALUES('通分','통분','reduce');
-INSERT INTO `hanjas` VALUES('縮小','축소','reduction');
-INSERT INTO `hanjas` VALUES('暗礁','암초','reef');
-INSERT INTO `hanjas` VALUES('審判','심판','referee');
-INSERT INTO `hanjas` VALUES('言及','언급','reference');
-INSERT INTO `hanjas` VALUES('改定','개정','reform');
-INSERT INTO `hanjas` VALUES('改心','개심','reform,regenerate');
-INSERT INTO `hanjas` VALUES('茶菓','다과','refreshment');
-INSERT INTO `hanjas` VALUES('冷却','냉각','refrigeration');
-INSERT INTO `hanjas` VALUES('辭退','사퇴','refusal');
-INSERT INTO `hanjas` VALUES('論駁','논박','refutation');
-INSERT INTO `hanjas` VALUES('反駁','반박','refutation');
-INSERT INTO `hanjas` VALUES('攝政','섭정','regent');
-INSERT INTO `hanjas` VALUES('聯隊','연대','regiment');
-INSERT INTO `hanjas` VALUES('音域','음역','register');
-INSERT INTO `hanjas` VALUES('再交付','재교부','regrant');
-INSERT INTO `hanjas` VALUES('悔恨','회한','regret');
-INSERT INTO `hanjas` VALUES('定常的','정상적','regular');
-INSERT INTO `hanjas` VALUES('規制','규제','regulation');
-INSERT INTO `hanjas` VALUES('規定','규정','regulation');
-INSERT INTO `hanjas` VALUES('復權','복권','rehabilitation');
-INSERT INTO `hanjas` VALUES('統治','통치','reign,govern');
-INSERT INTO `hanjas` VALUES('君臨','군림','reign');
-INSERT INTO `hanjas` VALUES('馴鹿','순록','reindeer');
-INSERT INTO `hanjas` VALUES('再投資','재투자','reinvest');
-INSERT INTO `hanjas` VALUES('排除','배제','rejection');
-INSERT INTO `hanjas` VALUES('却下','각하','rejection');
-INSERT INTO `hanjas` VALUES('否決','부결','rejection');
-INSERT INTO `hanjas` VALUES('回春','회춘','rejuvenation');
-INSERT INTO `hanjas` VALUES('關聯','관련','relation');
-INSERT INTO `hanjas` VALUES('關係','관계','relation');
-INSERT INTO `hanjas` VALUES('親戚','친척','relative');
-INSERT INTO `hanjas` VALUES('繼電氣','계전기','relay');
-INSERT INTO `hanjas` VALUES('遞傳','체전','relay');
-INSERT INTO `hanjas` VALUES('中繼','중계','relay');
-INSERT INTO `hanjas` VALUES('放免','방면','release');
-INSERT INTO `hanjas` VALUES('解除','해제','release');
-INSERT INTO `hanjas` VALUES('浮彫','부조','relief');
-INSERT INTO `hanjas` VALUES('賞味','상미','relish');
-INSERT INTO `hanjas` VALUES('殘滓','잔재','remain');
-INSERT INTO `hanjas` VALUES('遺骸','유해','remain');
-INSERT INTO `hanjas` VALUES('遺骨','유골','remain');
-INSERT INTO `hanjas` VALUES('療法','요법','remedy');
-INSERT INTO `hanjas` VALUES('回想','회상','reminiscence');
-INSERT INTO `hanjas` VALUES('移動','이동','removal');
-INSERT INTO `hanjas` VALUES('除去','제거','removal');
-INSERT INTO `hanjas` VALUES('一新','일신','renewal');
-INSERT INTO `hanjas` VALUES('刷新','쇄신','renovation');
-INSERT INTO `hanjas` VALUES('高名','고명','renown');
-INSERT INTO `hanjas` VALUES('修理','수리','repair');
-INSERT INTO `hanjas` VALUES('復唱','복창','repetition');
-INSERT INTO `hanjas` VALUES('回答','회답','reply');
-INSERT INTO `hanjas` VALUES('應酬','응수','reply');
-INSERT INTO `hanjas` VALUES('銃聲','총성','report');
-INSERT INTO `hanjas` VALUES('通報','통보','report');
-INSERT INTO `hanjas` VALUES('靜止','정지','repose');
-INSERT INTO `hanjas` VALUES('代表','대표','representative');
-INSERT INTO `hanjas` VALUES('叱責','질책','reprimand');
-INSERT INTO `hanjas` VALUES('飜刻','번각','reprint');
-INSERT INTO `hanjas` VALUES('再生産','재생산','reproduction');
-INSERT INTO `hanjas` VALUES('世評','세평','reputation');
-INSERT INTO `hanjas` VALUES('要求','요구','request,require,requisition,demand');
-INSERT INTO `hanjas` VALUES('要請','요청','request,require');
-INSERT INTO `hanjas` VALUES('懇請','간청','request');
-INSERT INTO `hanjas` VALUES('需要','수요','request');
-INSERT INTO `hanjas` VALUES('必需品','필수품','requisite');
-INSERT INTO `hanjas` VALUES('徵發','징발','requisition');
-INSERT INTO `hanjas` VALUES('轉賣','전매','resale');
-INSERT INTO `hanjas` VALUES('救助','구조','rescue');
-INSERT INTO `hanjas` VALUES('救出','구출','rescue');
-INSERT INTO `hanjas` VALUES('豫備','예비','reserve');
-INSERT INTO `hanjas` VALUES('居住','거주','residence');
-INSERT INTO `hanjas` VALUES('居留','거류','residence');
-INSERT INTO `hanjas` VALUES('駐在','주재','residence');
-INSERT INTO `hanjas` VALUES('辭職','사직','resignation');
-INSERT INTO `hanjas` VALUES('辭任','사임','resignation');
-INSERT INTO `hanjas` VALUES('抛棄','포기','resignation');
-INSERT INTO `hanjas` VALUES('忍從','인종','resignation');
-INSERT INTO `hanjas` VALUES('樹脂','수지','resin');
-INSERT INTO `hanjas` VALUES('決然','결연','resolutely');
-INSERT INTO `hanjas` VALUES('決議','결의','resolution');
-INSERT INTO `hanjas` VALUES('議決','의결','resolve');
-INSERT INTO `hanjas` VALUES('共鳴','공명','resonance');
-INSERT INTO `hanjas` VALUES('共振','공진','resonance');
-INSERT INTO `hanjas` VALUES('資力','자력','resource');
-INSERT INTO `hanjas` VALUES('機略','기략','resource');
-INSERT INTO `hanjas` VALUES('各各','각각','respectively');
-INSERT INTO `hanjas` VALUES('應答','응답','response');
-INSERT INTO `hanjas` VALUES('安靜','안정','rest');
-INSERT INTO `hanjas` VALUES('休養','휴양','rest,recreation');
-INSERT INTO `hanjas` VALUES('永眠','영면','rest');
-INSERT INTO `hanjas` VALUES('再出發','재출발','restart');
-INSERT INTO `hanjas` VALUES('復舊','복구','restoration');
-INSERT INTO `hanjas` VALUES('復位','복위','restoration');
-INSERT INTO `hanjas` VALUES('還付','환부','restoration');
-INSERT INTO `hanjas` VALUES('制止','제지','restraint');
-INSERT INTO `hanjas` VALUES('成果','성과','result');
-INSERT INTO `hanjas` VALUES('合力','합력','resultant force');
-INSERT INTO `hanjas` VALUES('蘇生','소생','resuscitation');
-INSERT INTO `hanjas` VALUES('小賣','소매','retail');
-INSERT INTO `hanjas` VALUES('家臣','가신','retainer');
-INSERT INTO `hanjas` VALUES('臣下','신하','retainer');
-INSERT INTO `hanjas` VALUES('保有','보유','retention');
-INSERT INTO `hanjas` VALUES('退職者','퇴직자','retiree');
-INSERT INTO `hanjas` VALUES('隱居','은거','retirement');
-INSERT INTO `hanjas` VALUES('定年','정년','retirement age');
-INSERT INTO `hanjas` VALUES('重譯','중역','retranslation');
-INSERT INTO `hanjas` VALUES('後退','후퇴','retreat');
-INSERT INTO `hanjas` VALUES('退却','퇴각','retreat');
-INSERT INTO `hanjas` VALUES('報復','보복','retribution');
-INSERT INTO `hanjas` VALUES('逆行','역행','retrograde');
-INSERT INTO `hanjas` VALUES('退化','퇴화','retrogression');
-INSERT INTO `hanjas` VALUES('再發','재발','return');
-INSERT INTO `hanjas` VALUES('返還','반환','return,restore');
-INSERT INTO `hanjas` VALUES('歸還者','귀환자','returnee');
-INSERT INTO `hanjas` VALUES('再會','재회','reunion');
-INSERT INTO `hanjas` VALUES('天啓','천계','revelation');
-INSERT INTO `hanjas` VALUES('啓示','계시','revelation');
-INSERT INTO `hanjas` VALUES('復讐','복수','revenge');
-INSERT INTO `hanjas` VALUES('反射','반사','reverberation');
-INSERT INTO `hanjas` VALUES('背面','배면','reverse');
-INSERT INTO `hanjas` VALUES('逆轉','역전','reverse');
-INSERT INTO `hanjas` VALUES('再吟味','재음미','review');
-INSERT INTO `hanjas` VALUES('視察','시찰','review');
-INSERT INTO `hanjas` VALUES('復習','복습','review');
-INSERT INTO `hanjas` VALUES('改訂','개정','revision');
-INSERT INTO `hanjas` VALUES('校訂','교정','revision');
-INSERT INTO `hanjas` VALUES('運行','운행','revolution');
-INSERT INTO `hanjas` VALUES('狂想曲','광상곡','rhapsody');
-INSERT INTO `hanjas` VALUES('律動','율동','rhythm');
-INSERT INTO `hanjas` VALUES('韻律','운율','rhythm');
-INSERT INTO `hanjas` VALUES('肋骨','늑골','rib');
-INSERT INTO `hanjas` VALUES('小銃','소총','rifle');
-INSERT INTO `hanjas` VALUES('正當','정당','right');
-INSERT INTO `hanjas` VALUES('權利','권리','right');
-INSERT INTO `hanjas` VALUES('直角','직각','right angle');
-INSERT INTO `hanjas` VALUES('霧氷','무빙','rime');
-INSERT INTO `hanjas` VALUES('帳本人','장본인','ringleader');
-INSERT INTO `hanjas` VALUES('白癬','백선','ringworm');
-INSERT INTO `hanjas` VALUES('騷擾','소요','riot');
-INSERT INTO `hanjas` VALUES('騷動','소동','riot');
-INSERT INTO `hanjas` VALUES('圓熟','원숙','ripeness');
-INSERT INTO `hanjas` VALUES('波紋','파문','ripple');
-INSERT INTO `hanjas` VALUES('起床','기상','rising');
-INSERT INTO `hanjas` VALUES('敵手','적수','rival');
-INSERT INTO `hanjas` VALUES('競爭','경쟁','rival,contest,competition');
-INSERT INTO `hanjas` VALUES('河川','하천','river');
-INSERT INTO `hanjas` VALUES('道路','도로','road');
-INSERT INTO `hanjas` VALUES('車道','차도','roadway');
-INSERT INTO `hanjas` VALUES('怒號','노호','roar');
-INSERT INTO `hanjas` VALUES('咆哮','포효','roar');
-INSERT INTO `hanjas` VALUES('岩石','암석','rock');
-INSERT INTO `hanjas` VALUES('鑿岩機','착암기','rock drill');
-INSERT INTO `hanjas` VALUES('屋上','옥상','rooftop');
-INSERT INTO `hanjas` VALUES('根底','근저','root');
-INSERT INTO `hanjas` VALUES('根菜類','근채류','root crop');
-INSERT INTO `hanjas` VALUES('根毛','근모','root hair');
-INSERT INTO `hanjas` VALUES('根莖','근경','root stalk');
-INSERT INTO `hanjas` VALUES('薔薇','장미','rose');
-INSERT INTO `hanjas` VALUES('紫檀','자단','rosewood');
-INSERT INTO `hanjas` VALUES('演壇','연단','rostrum');
-INSERT INTO `hanjas` VALUES('輪番','윤번','rotation');
-INSERT INTO `hanjas` VALUES('圓卓','원탁','round table');
-INSERT INTO `hanjas` VALUES('潰走','궤주','rout');
-INSERT INTO `hanjas` VALUES('航路','항로','route');
-INSERT INTO `hanjas` VALUES('放浪','방랑','roving');
-INSERT INTO `hanjas` VALUES('王權','왕권','royalty');
-INSERT INTO `hanjas` VALUES('摩擦','마찰','rubbing');
-INSERT INTO `hanjas` VALUES('紅玉','홍옥','ruby');
-INSERT INTO `hanjas` VALUES('沒落','몰락','ruin');
-INSERT INTO `hanjas` VALUES('破滅','파멸','ruin');
-INSERT INTO `hanjas` VALUES('罫線','괘선','rule');
-INSERT INTO `hanjas` VALUES('支配','지배','rule,control,dominate');
-INSERT INTO `hanjas` VALUES('統治者','통치자','ruler');
-INSERT INTO `hanjas` VALUES('反芻','반추','rumination');
-INSERT INTO `hanjas` VALUES('挾殺','협살','rundown');
-INSERT INTO `hanjas` VALUES('走者','주자','runner');
-INSERT INTO `hanjas` VALUES('走狗','주구','running dog');
-INSERT INTO `hanjas` VALUES('流水','유수','running water');
-INSERT INTO `hanjas` VALUES('滑走路','활주로','runway');
-INSERT INTO `hanjas` VALUES('決裂','결렬','rupture');
-INSERT INTO `hanjas` VALUES('發情','발정','rut');
-INSERT INTO `hanjas` VALUES('糖類','당류','saccharide');
-INSERT INTO `hanjas` VALUES('不可侵','불가침','sacredness');
-INSERT INTO `hanjas` VALUES('聰明','총명','sagacity');
-INSERT INTO `hanjas` VALUES('航程','항정','sail');
-INSERT INTO `hanjas` VALUES('帆布','범포','sailcloth');
-INSERT INTO `hanjas` VALUES('帆走','범주','sailing');
-INSERT INTO `hanjas` VALUES('出帆','출범','sailing');
-INSERT INTO `hanjas` VALUES('船員','선원','sailor');
-INSERT INTO `hanjas` VALUES('水夫','수부','sailor');
-INSERT INTO `hanjas` VALUES('水兵','수병','sailor');
-INSERT INTO `hanjas` VALUES('聖人','성인','saint');
-INSERT INTO `hanjas` VALUES('販賣','판매','sale');
-INSERT INTO `hanjas` VALUES('賣却','매각','sale');
-INSERT INTO `hanjas` VALUES('唾液','타액','saliva');
-INSERT INTO `hanjas` VALUES('鹽田','염전','saltpan');
-INSERT INTO `hanjas` VALUES('硝石','초석','saltpeter');
-INSERT INTO `hanjas` VALUES('同一','동일','sameness');
-INSERT INTO `hanjas` VALUES('見本','견본','sample');
-INSERT INTO `hanjas` VALUES('裁可','재가','sanction');
-INSERT INTO `hanjas` VALUES('制裁','제재','sanction');
-INSERT INTO `hanjas` VALUES('聖堂','성당','sanctuary');
-INSERT INTO `hanjas` VALUES('砂洲','사주','sandbank');
-INSERT INTO `hanjas` VALUES('砂岩','사암','sandstone');
-INSERT INTO `hanjas` VALUES('樹液','수액','sap');
-INSERT INTO `hanjas` VALUES('靑玉','청옥','sapphire');
-INSERT INTO `hanjas` VALUES('肉腫','육종','sarcoma');
-INSERT INTO `hanjas` VALUES('石棺','석관','sarcophagus');
-INSERT INTO `hanjas` VALUES('衛星','위성','satellite');
-INSERT INTO `hanjas` VALUES('諷刺','풍자','satire,irony,innuendo');
-INSERT INTO `hanjas` VALUES('滿足','만족','satisfaction');
-INSERT INTO `hanjas` VALUES('節約','절약','saving');
-INSERT INTO `hanjas` VALUES('貯蓄','저축','saving');
-INSERT INTO `hanjas` VALUES('疥癬','개선','scabies');
-INSERT INTO `hanjas` VALUES('火傷','화상','scald');
-INSERT INTO `hanjas` VALUES('規模','규모','scale');
-INSERT INTO `hanjas` VALUES('天秤','천칭','scale');
-INSERT INTO `hanjas` VALUES('醜聞','추문','scandal');
-INSERT INTO `hanjas` VALUES('疑獄','의옥','scandal');
-INSERT INTO `hanjas` VALUES('猩紅熱','성홍열','scarlet fever');
-INSERT INTO `hanjas` VALUES('脚本','각본','scenario');
-INSERT INTO `hanjas` VALUES('場面','장면','scene');
-INSERT INTO `hanjas` VALUES('光景','광경','scene');
-INSERT INTO `hanjas` VALUES('風景','풍경','scenery');
-INSERT INTO `hanjas` VALUES('學者','학자','scholar');
-INSERT INTO `hanjas` VALUES('學識','학식','scholarship');
-INSERT INTO `hanjas` VALUES('學校','학교','school');
-INSERT INTO `hanjas` VALUES('學齡','학령','school age');
-INSERT INTO `hanjas` VALUES('科學','과학','science');
-INSERT INTO `hanjas` VALUES('得點','득점','score');
-INSERT INTO `hanjas` VALUES('廢物','폐물','scrap');
-INSERT INTO `hanjas` VALUES('筆記者','필기자','scribe');
-INSERT INTO `hanjas` VALUES('原本','원본','script');
-INSERT INTO `hanjas` VALUES('聖典','성전','scripture');
-INSERT INTO `hanjas` VALUES('吟味','음미','scrutiny');
-INSERT INTO `hanjas` VALUES('壞血病','괴혈병','scurvy');
-INSERT INTO `hanjas` VALUES('海水浴','해수욕','sea bathing');
-INSERT INTO `hanjas` VALUES('海馬','해마','sea horse');
-INSERT INTO `hanjas` VALUES('海面','해면','sea level');
-INSERT INTO `hanjas` VALUES('海路','해로','sea route');
-INSERT INTO `hanjas` VALUES('魚介','어개','seafood');
-INSERT INTO `hanjas` VALUES('印章','인장','seal');
-INSERT INTO `hanjas` VALUES('季節','계절','season');
-INSERT INTO `hanjas` VALUES('座席','좌석','seat');
-INSERT INTO `hanjas` VALUES('海草','해초','seaweed');
-INSERT INTO `hanjas` VALUES('裏作','이작','second crop');
-INSERT INTO `hanjas` VALUES('少尉','소위','second lieutenant');
-INSERT INTO `hanjas` VALUES('秘密','비밀','secrecy');
-INSERT INTO `hanjas` VALUES('秘訣','비결','secret');
-INSERT INTO `hanjas` VALUES('秘書','비서','secretary');
-INSERT INTO `hanjas` VALUES('宗派','종파','sect');
-INSERT INTO `hanjas` VALUES('保障','보장','security');
-INSERT INTO `hanjas` VALUES('證券','증권','security');
-INSERT INTO `hanjas` VALUES('種子','종자','seed');
-INSERT INTO `hanjas` VALUES('選拔','선발','selection');
-INSERT INTO `hanjas` VALUES('自己','자기','self');
-INSERT INTO `hanjas` VALUES('克己','극기','self denial');
-INSERT INTO `hanjas` VALUES('私利','사리','self interest');
-INSERT INTO `hanjas` VALUES('精液','정액','semen');
-INSERT INTO `hanjas` VALUES('年長','연장','seniority');
-INSERT INTO `hanjas` VALUES('感覺','감각','sensation');
-INSERT INTO `hanjas` VALUES('官能','관능','sense');
-INSERT INTO `hanjas` VALUES('好色','호색','sensuality');
-INSERT INTO `hanjas` VALUES('文章','문장','sentence');
-INSERT INTO `hanjas` VALUES('情趣','정취','sentiment');
-INSERT INTO `hanjas` VALUES('感傷','감상','sentiment');
-INSERT INTO `hanjas` VALUES('感傷主義','감상주의','sentimentalism');
-INSERT INTO `hanjas` VALUES('別居','별거','separation');
-INSERT INTO `hanjas` VALUES('後宮','후궁','seraglio');
-INSERT INTO `hanjas` VALUES('連載','연재','serialization');
-INSERT INTO `hanjas` VALUES('蛇紋石','사문석','serpentine');
-INSERT INTO `hanjas` VALUES('血淸','혈청','serum');
-INSERT INTO `hanjas` VALUES('勤務','근무','service');
-INSERT INTO `hanjas` VALUES('裁縫','재봉','sewing');
-INSERT INTO `hanjas` VALUES('尾行者','미행자','shadow');
-INSERT INTO `hanjas` VALUES('頁岩','혈암','shale');
-INSERT INTO `hanjas` VALUES('株主','주주','shareholder');
-INSERT INTO `hanjas` VALUES('板金','판금','sheet metal');
-INSERT INTO `hanjas` VALUES('砲彈','포탄','shell');
-INSERT INTO `hanjas` VALUES('貝塚','패총','shell heap');
-INSERT INTO `hanjas` VALUES('造船','조선','shipbuilding');
-INSERT INTO `hanjas` VALUES('船主','선주','shipowner');
-INSERT INTO `hanjas` VALUES('出荷','출하','shipping');
-INSERT INTO `hanjas` VALUES('震動','진동','shock');
-INSERT INTO `hanjas` VALUES('短靴','단화','shoe');
-INSERT INTO `hanjas` VALUES('疾走','질주','shoot');
-INSERT INTO `hanjas` VALUES('發射','발사','shooting,discharge,catapult');
-INSERT INTO `hanjas` VALUES('射出','사출','shooting');
-INSERT INTO `hanjas` VALUES('短波','단파','short wave');
-INSERT INTO `hanjas` VALUES('短縮','단축','shortening');
-INSERT INTO `hanjas` VALUES('彈丸','탄환','shot');
-INSERT INTO `hanjas` VALUES('霰彈','산탄','shot');
-INSERT INTO `hanjas` VALUES('對決','대결','showdown');
-INSERT INTO `hanjas` VALUES('灌木','관목','shrub');
-INSERT INTO `hanjas` VALUES('休業','휴업','shutdown');
-INSERT INTO `hanjas` VALUES('病床','병상','sickbed');
-INSERT INTO `hanjas` VALUES('病室','병실','sickroom');
-INSERT INTO `hanjas` VALUES('內職','내직','side line');
-INSERT INTO `hanjas` VALUES('餘興','여흥','side show');
-INSERT INTO `hanjas` VALUES('人道','인도','sidewalk');
-INSERT INTO `hanjas` VALUES('側線','측선','siding');
-INSERT INTO `hanjas` VALUES('歎息','탄식','sigh');
-INSERT INTO `hanjas` VALUES('署名','서명','signature');
-INSERT INTO `hanjas` VALUES('沈默','침묵','silence');
-INSERT INTO `hanjas` VALUES('相似','상사','similarity');
-INSERT INTO `hanjas` VALUES('單利','단리','simple interest');
-INSERT INTO `hanjas` VALUES('單文','단문','simple sentence');
-INSERT INTO `hanjas` VALUES('單純','단순','simplicity');
-INSERT INTO `hanjas` VALUES('簡素','간소','simplicity');
-INSERT INTO `hanjas` VALUES('獨身','독신','single');
-INSERT INTO `hanjas` VALUES('單一','단일','single');
-INSERT INTO `hanjas` VALUES('姉妹','자매','sister');
-INSERT INTO `hanjas` VALUES('着席','착석','sit');
-INSERT INTO `hanjas` VALUES('用地','용지','site');
-INSERT INTO `hanjas` VALUES('敷地','부지','site');
-INSERT INTO `hanjas` VALUES('形勢','형세','situation');
-INSERT INTO `hanjas` VALUES('骸骨','해골','skeleton');
-INSERT INTO `hanjas` VALUES('皮膚','피부','skin');
-INSERT INTO `hanjas` VALUES('散兵','산병','skirmisher');
-INSERT INTO `hanjas` VALUES('頭蓋骨','두개골','skull');
-INSERT INTO `hanjas` VALUES('摩天樓','마천루','skyscraper');
-INSERT INTO `hanjas` VALUES('消石灰','소석회','slaked lime');
-INSERT INTO `hanjas` VALUES('粘板岩','점판암','slate');
-INSERT INTO `hanjas` VALUES('屠殺','도살','slaughter');
-INSERT INTO `hanjas` VALUES('不振','부진','slump');
-INSERT INTO `hanjas` VALUES('鎔鑛爐','용광로','smelting furnace');
-INSERT INTO `hanjas` VALUES('喫煙','끽연','smoking');
-INSERT INTO `hanjas` VALUES('速寫','속사','snapshot');
-INSERT INTO `hanjas` VALUES('嘲笑','조소','sneer');
-INSERT INTO `hanjas` VALUES('雪原','설원','snow field');
-INSERT INTO `hanjas` VALUES('凍石','동석','soapstone');
-INSERT INTO `hanjas` VALUES('蹴球','축구','soccer');
-INSERT INTO `hanjas` VALUES('社會','사회','society');
-INSERT INTO `hanjas` VALUES('協會','협회','society');
-INSERT INTO `hanjas` VALUES('男色','남색','sodomy');
-INSERT INTO `hanjas` VALUES('軟口蓋','연구개','soft palate');
-INSERT INTO `hanjas` VALUES('軟水','연수','soft water');
-INSERT INTO `hanjas` VALUES('軟化','연화','softening');
-INSERT INTO `hanjas` VALUES('土壤','토양','soil');
-INSERT INTO `hanjas` VALUES('土地','토지','soil');
-INSERT INTO `hanjas` VALUES('軍人','군인','soldier');
-INSERT INTO `hanjas` VALUES('戰士','전사','soldier');
-INSERT INTO `hanjas` VALUES('莊嚴','장엄','solemnity');
-INSERT INTO `hanjas` VALUES('凝結','응결','solidification');
-INSERT INTO `hanjas` VALUES('孤獨','고독','solitude');
-INSERT INTO `hanjas` VALUES('獨居','독거','solitude');
-INSERT INTO `hanjas` VALUES('溶解','용해','solution');
-INSERT INTO `hanjas` VALUES('溶媒','용매','solvent');
-INSERT INTO `hanjas` VALUES('多少','다소','somewhat');
-INSERT INTO `hanjas` VALUES('唱歌','창가','song');
-INSERT INTO `hanjas` VALUES('歌曲','가곡','song');
-INSERT INTO `hanjas` VALUES('歌唱','가창','song');
-INSERT INTO `hanjas` VALUES('鳴禽','명금','songbird');
-INSERT INTO `hanjas` VALUES('魔術','마술','sorcery');
-INSERT INTO `hanjas` VALUES('音響','음향','sound');
-INSERT INTO `hanjas` VALUES('音波','음파','sound wave');
-INSERT INTO `hanjas` VALUES('測深','측심','sounding');
-INSERT INTO `hanjas` VALUES('測鉛','측연','sounding lead');
-INSERT INTO `hanjas` VALUES('源泉','원천','source');
-INSERT INTO `hanjas` VALUES('出處','출처','source');
-INSERT INTO `hanjas` VALUES('南東','남동','Southeast');
-INSERT INTO `hanjas` VALUES('南西','남서','Southwest');
-INSERT INTO `hanjas` VALUES('記念品','기념품','souvenir');
-INSERT INTO `hanjas` VALUES('空間','공간','space');
-INSERT INTO `hanjas` VALUES('間隔','간격','space');
-INSERT INTO `hanjas` VALUES('全長','전장','span');
-INSERT INTO `hanjas` VALUES('發作','발작','spasm');
-INSERT INTO `hanjas` VALUES('專門','전문','speciality');
-INSERT INTO `hanjas` VALUES('正貨','정화','specie');
-INSERT INTO `hanjas` VALUES('比重','비중','specific gravity');
-INSERT INTO `hanjas` VALUES('比熱','비열','specific heat');
-INSERT INTO `hanjas` VALUES('壯觀','장관','spectacle');
-INSERT INTO `hanjas` VALUES('眼鏡','안경','spectacle');
-INSERT INTO `hanjas` VALUES('分光','분광','spectrum');
-INSERT INTO `hanjas` VALUES('思索','사색','speculation');
-INSERT INTO `hanjas` VALUES('投機','투기','speculation');
-INSERT INTO `hanjas` VALUES('速力','속력','speed');
-INSERT INTO `hanjas` VALUES('綴字','철자','spelling');
-INSERT INTO `hanjas` VALUES('精蟲','정충','sperm');
-INSERT INTO `hanjas` VALUES('精子','정자','sperm');
-INSERT INTO `hanjas` VALUES('括約筋','괄약근','sphincter');
-INSERT INTO `hanjas` VALUES('脊柱','척주','spinal column');
-INSERT INTO `hanjas` VALUES('紡錘','방추','spindle');
-INSERT INTO `hanjas` VALUES('降神術','강신술','spiritualism');
-INSERT INTO `hanjas` VALUES('脾臟','비장','spleen');
-INSERT INTO `hanjas` VALUES('海綿','해면','sponge');
-INSERT INTO `hanjas` VALUES('散發的','산발적','sporadic');
-INSERT INTO `hanjas` VALUES('配偶者','배우자','spouse');
-INSERT INTO `hanjas` VALUES('撒布','살포','sprinkling');
-INSERT INTO `hanjas` VALUES('拍車','박차','spur');
-INSERT INTO `hanjas` VALUES('分隊','분대','squad');
-INSERT INTO `hanjas` VALUES('突風','돌풍','squall');
-INSERT INTO `hanjas` VALUES('疾風','질풍','squall');
-INSERT INTO `hanjas` VALUES('平方','평방','square');
-INSERT INTO `hanjas` VALUES('搾取','착취','squeeze');
-INSERT INTO `hanjas` VALUES('安定','안정','stability');
-INSERT INTO `hanjas` VALUES('部員','부원','staff');
-INSERT INTO `hanjas` VALUES('參謀','참모','staff officer');
-INSERT INTO `hanjas` VALUES('舞臺','무대','stage');
-INSERT INTO `hanjas` VALUES('驛馬車','역마차','stagecoach');
-INSERT INTO `hanjas` VALUES('沈滯','침체','stagnation');
-INSERT INTO `hanjas` VALUES('火刑','화형','stake');
-INSERT INTO `hanjas` VALUES('鍾乳石','종유석','stalactite');
-INSERT INTO `hanjas` VALUES('石筍','석순','stalagmite');
-INSERT INTO `hanjas` VALUES('標準','표준','standard');
-INSERT INTO `hanjas` VALUES('本位','본위','standard');
-INSERT INTO `hanjas` VALUES('主食','주식','staple food');
-INSERT INTO `hanjas` VALUES('右舷','우현','starboard');
-INSERT INTO `hanjas` VALUES('澱粉','전분','starch');
-INSERT INTO `hanjas` VALUES('起點','기점','starting point');
-INSERT INTO `hanjas` VALUES('餓死','아사','starvation');
-INSERT INTO `hanjas` VALUES('陳述','진술','statement');
-INSERT INTO `hanjas` VALUES('聲明','성명','statement');
-INSERT INTO `hanjas` VALUES('靜電氣','정전기','static electricity');
-INSERT INTO `hanjas` VALUES('靜力學','정역학','statics');
-INSERT INTO `hanjas` VALUES('統計','통계','statistics');
-INSERT INTO `hanjas` VALUES('汽笛','기적','steam whistle');
-INSERT INTO `hanjas` VALUES('汽船','기선','steamship');
-INSERT INTO `hanjas` VALUES('鋼鐵','강철','steel');
-INSERT INTO `hanjas` VALUES('惡臭','악취','stench');
-INSERT INTO `hanjas` VALUES('速記','속기','stenography');
-INSERT INTO `hanjas` VALUES('措置','조치','step');
-INSERT INTO `hanjas` VALUES('中性','중성','sterility');
-INSERT INTO `hanjas` VALUES('滅菌','멸균','sterilization');
-INSERT INTO `hanjas` VALUES('胸骨','흉골','sternum');
-INSERT INTO `hanjas` VALUES('死産','사산','stillbirth');
-INSERT INTO `hanjas` VALUES('竹馬','죽마','stilt');
-INSERT INTO `hanjas` VALUES('株券','주권','stock certificate');
-INSERT INTO `hanjas` VALUES('鈍感','둔감','stolidity');
-INSERT INTO `hanjas` VALUES('氣孔','기공','stoma');
-INSERT INTO `hanjas` VALUES('石材','석재','stone');
-INSERT INTO `hanjas` VALUES('核果','핵과','stone fruit');
-INSERT INTO `hanjas` VALUES('終止','종지','stop');
-INSERT INTO `hanjas` VALUES('蓄電池','축전지','storage battery');
-INSERT INTO `hanjas` VALUES('百貨店','백화점','store');
-INSERT INTO `hanjas` VALUES('暴風雨','폭풍우','storm');
-INSERT INTO `hanjas` VALUES('煖爐','난로','stove');
-INSERT INTO `hanjas` VALUES('散在','산재','straggling');
-INSERT INTO `hanjas` VALUES('兵法','병법','strategy');
-INSERT INTO `hanjas` VALUES('戰略','전략','strategy');
-INSERT INTO `hanjas` VALUES('層積雲','층적운','stratocumulus');
-INSERT INTO `hanjas` VALUES('成層圈','성층권','stratosphere');
-INSERT INTO `hanjas` VALUES('地層','지층','stratum');
-INSERT INTO `hanjas` VALUES('狹窄','협착','stricture');
-INSERT INTO `hanjas` VALUES('構造主義','구조주의','structuralism');
-INSERT INTO `hanjas` VALUES('學生','학생','student');
-INSERT INTO `hanjas` VALUES('書齋','서재','study');
-INSERT INTO `hanjas` VALUES('愚鈍','우둔','stupidity');
-INSERT INTO `hanjas` VALUES('花柱','화주','style');
-INSERT INTO `hanjas` VALUES('鐵筆','철필','stylus');
-INSERT INTO `hanjas` VALUES('昇華','승화','sublimation');
-INSERT INTO `hanjas` VALUES('從屬','종속','subordination');
-INSERT INTO `hanjas` VALUES('豫約者','예약자','subscriber');
-INSERT INTO `hanjas` VALUES('應募','응모','subscription');
-INSERT INTO `hanjas` VALUES('陷沒','함몰','subsidence');
-INSERT INTO `hanjas` VALUES('子會社','자회사','subsidiary');
-INSERT INTO `hanjas` VALUES('物質','물질','substance');
-INSERT INTO `hanjas` VALUES('實質','실질','substance');
-INSERT INTO `hanjas` VALUES('立證','입증','substantiation');
-INSERT INTO `hanjas` VALUES('支署','지서','substation');
-INSERT INTO `hanjas` VALUES('代用','대용','substitution');
-INSERT INTO `hanjas` VALUES('代入','대입','substitution');
-INSERT INTO `hanjas` VALUES('轉借','전차','subtenancy');
-INSERT INTO `hanjas` VALUES('小計','소계','subtotal');
-INSERT INTO `hanjas` VALUES('減法','감법','subtraction');
-INSERT INTO `hanjas` VALUES('地下鐵','지하철','subway');
-INSERT INTO `hanjas` VALUES('蔗糖','자당','sucrose');
-INSERT INTO `hanjas` VALUES('窒息','질식','suffocation');
-INSERT INTO `hanjas` VALUES('自殺','자살','suicide');
-INSERT INTO `hanjas` VALUES('適當','적당','suitability');
-INSERT INTO `hanjas` VALUES('摘要','적요','summary');
-INSERT INTO `hanjas` VALUES('太陽','태양','sun');
-INSERT INTO `hanjas` VALUES('日光','일광','sunlight');
-INSERT INTO `hanjas` VALUES('日沒','일몰','sunset');
-INSERT INTO `hanjas` VALUES('淺薄','천박','superficiality');
-INSERT INTO `hanjas` VALUES('超人','초인','superman');
-INSERT INTO `hanjas` VALUES('迷信','미신','superstition');
-INSERT INTO `hanjas` VALUES('補充','보충','supplement');
-INSERT INTO `hanjas` VALUES('補足','보족','supplement');
-INSERT INTO `hanjas` VALUES('補遺','보유','supplement');
-INSERT INTO `hanjas` VALUES('補給','보급','supply');
-INSERT INTO `hanjas` VALUES('贊成者','찬성자','supporter');
-INSERT INTO `hanjas` VALUES('抑制','억제','suppression');
-INSERT INTO `hanjas` VALUES('鎭壓','진압','suppression');
-INSERT INTO `hanjas` VALUES('化膿','화농','suppuration');
-INSERT INTO `hanjas` VALUES('至高','지고','supremacy');
-INSERT INTO `hanjas` VALUES('奇襲','기습','surprise attack');
-INSERT INTO `hanjas` VALUES('超現實主義','초현실주의','surrealism');
-INSERT INTO `hanjas` VALUES('殘存','잔존','survive');
-INSERT INTO `hanjas` VALUES('生存者','생존자','survivor');
-INSERT INTO `hanjas` VALUES('吊橋','적교','suspension bridge');
-INSERT INTO `hanjas` VALUES('縫合','봉합','suture');
-INSERT INTO `hanjas` VALUES('白鳥','백조','swan');
-INSERT INTO `hanjas` VALUES('發汗','발한','sweating');
-INSERT INTO `hanjas` VALUES('水泳','수영','swimming');
-INSERT INTO `hanjas` VALUES('詐取','사취','swindle');
-INSERT INTO `hanjas` VALUES('劍舞','검무','sword dance');
-INSERT INTO `hanjas` VALUES('音節','음절','syllable');
-INSERT INTO `hanjas` VALUES('象徵的','상징적','symbolic');
-INSERT INTO `hanjas` VALUES('同調者','동조자','sympathizer');
-INSERT INTO `hanjas` VALUES('同調','동조','sympathy');
-INSERT INTO `hanjas` VALUES('交響曲','교향곡','symphony');
-INSERT INTO `hanjas` VALUES('症候','증후','symptom');
-INSERT INTO `hanjas` VALUES('症候群','증후군','syndrome');
-INSERT INTO `hanjas` VALUES('綜合','종합','synthesis');
-INSERT INTO `hanjas` VALUES('統合','통합','synthesis');
-INSERT INTO `hanjas` VALUES('梅毒','매독','syphilis');
-INSERT INTO `hanjas` VALUES('體系','체계','system');
-INSERT INTO `hanjas` VALUES('卓子','탁자','table');
-INSERT INTO `hanjas` VALUES('卓球','탁구','table tennis');
-INSERT INTO `hanjas` VALUES('臺地','대지','tableland');
-INSERT INTO `hanjas` VALUES('錠劑','정제','tablet');
-INSERT INTO `hanjas` VALUES('戰術','전술','tactics');
-INSERT INTO `hanjas` VALUES('策略','책략','tactics');
-INSERT INTO `hanjas` VALUES('尾行','미행','tail');
-INSERT INTO `hanjas` VALUES('距骨','거골','talus');
-INSERT INTO `hanjas` VALUES('風味','풍미','taste');
-INSERT INTO `hanjas` VALUES('風致','풍치','taste');
-INSERT INTO `hanjas` VALUES('術語','술어','technical terms');
-INSERT INTO `hanjas` VALUES('工學者','공학자','technologist');
-INSERT INTO `hanjas` VALUES('電報','전보','telegram');
-INSERT INTO `hanjas` VALUES('打電','타전','telegraph');
-INSERT INTO `hanjas` VALUES('望遠鏡','망원경','telescope');
-INSERT INTO `hanjas` VALUES('節制','절제','temperance');
-INSERT INTO `hanjas` VALUES('神殿','신전','temple');
-INSERT INTO `hanjas` VALUES('傾向','경향','tendency');
-INSERT INTO `hanjas` VALUES('緊張','긴장','tension');
-INSERT INTO `hanjas` VALUES('張力','장력','tension');
-INSERT INTO `hanjas` VALUES('期限','기한','term');
-INSERT INTO `hanjas` VALUES('用語','용어','term');
-INSERT INTO `hanjas` VALUES('名辭','명사','term');
-INSERT INTO `hanjas` VALUES('終點','종점','terminus');
-INSERT INTO `hanjas` VALUES('地形','지형','terrain');
-INSERT INTO `hanjas` VALUES('地磁氣','지자기','terrestrial magnetism');
-INSERT INTO `hanjas` VALUES('領土','영토','territory');
-INSERT INTO `hanjas` VALUES('版圖','판도','territory');
-INSERT INTO `hanjas` VALUES('試驗管','시험관','test tube');
-INSERT INTO `hanjas` VALUES('種皮','종피','testa');
-INSERT INTO `hanjas` VALUES('睾丸','고환','testicle');
-INSERT INTO `hanjas` VALUES('感謝','감사','thank');
-INSERT INTO `hanjas` VALUES('解凍','해동','thaw');
-INSERT INTO `hanjas` VALUES('有神論','유신론','theism');
-INSERT INTO `hanjas` VALUES('論題','논제','theme');
-INSERT INTO `hanjas` VALUES('神學','신학','theology');
-INSERT INTO `hanjas` VALUES('理論','이론','theory');
-INSERT INTO `hanjas` VALUES('熱力學','열역학','thermodynamics');
-INSERT INTO `hanjas` VALUES('定立','정립','thesis');
-INSERT INTO `hanjas` VALUES('血栓','혈전','thrombus');
-INSERT INTO `hanjas` VALUES('王座','왕좌','throne');
-INSERT INTO `hanjas` VALUES('玉座','옥좌','throne');
-INSERT INTO `hanjas` VALUES('脛骨','경골','tibia');
-INSERT INTO `hanjas` VALUES('時間','시간','time');
-INSERT INTO `hanjas` VALUES('時刻','시각','time');
-INSERT INTO `hanjas` VALUES('時期','시기','time');
-INSERT INTO `hanjas` VALUES('時世','시세','time');
-INSERT INTO `hanjas` VALUES('時報','시보','time signal');
-INSERT INTO `hanjas` VALUES('先端','선단','tip');
-INSERT INTO `hanjas` VALUES('表題','표제','title');
-INSERT INTO `hanjas` VALUES('字幕','자막','title');
-INSERT INTO `hanjas` VALUES('祝杯','축배','toast');
-INSERT INTO `hanjas` VALUES('便所','변소','toilet');
-INSERT INTO `hanjas` VALUES('公差','공차','tolerance');
-INSERT INTO `hanjas` VALUES('默認','묵인','toleration');
-INSERT INTO `hanjas` VALUES('墓石','묘석','tombstone');
-INSERT INTO `hanjas` VALUES('扁桃腺','편도선','tonsil');
-INSERT INTO `hanjas` VALUES('工具','공구','tool');
-INSERT INTO `hanjas` VALUES('齒痛','치통','toothache');
-INSERT INTO `hanjas` VALUES('話題','화제','topic');
-INSERT INTO `hanjas` VALUES('地勢','지세','topography');
-INSERT INTO `hanjas` VALUES('地誌','지지','topography');
-INSERT INTO `hanjas` VALUES('魚雷','어뢰','torpedo');
-INSERT INTO `hanjas` VALUES('毒素','독소','toxin');
-INSERT INTO `hanjas` VALUES('形跡','형적','trace');
-INSERT INTO `hanjas` VALUES('形迹','형적','trace');
-INSERT INTO `hanjas` VALUES('痕迹','흔적','trace');
-INSERT INTO `hanjas` VALUES('曳光彈','예광탄','tracer bullet');
-INSERT INTO `hanjas` VALUES('氣管','기관','trachea');
-INSERT INTO `hanjas` VALUES('透寫','투사','tracing');
-INSERT INTO `hanjas` VALUES('線路','선로','track');
-INSERT INTO `hanjas` VALUES('賣買','매매','trade');
-INSERT INTO `hanjas` VALUES('商號','상호','trade name');
-INSERT INTO `hanjas` VALUES('因習','인습','tradition');
-INSERT INTO `hanjas` VALUES('傳統','전통','tradition');
-INSERT INTO `hanjas` VALUES('口傳','구전','tradition');
-INSERT INTO `hanjas` VALUES('傳承','전승','tradition');
-INSERT INTO `hanjas` VALUES('悲劇','비극','tragedy');
-INSERT INTO `hanjas` VALUES('轉寫','전사','transcribe');
-INSERT INTO `hanjas` VALUES('變貌','변모','transfiguration');
-INSERT INTO `hanjas` VALUES('過渡的','과도적','transitional');
-INSERT INTO `hanjas` VALUES('飜譯','번역','translation');
-INSERT INTO `hanjas` VALUES('譯者','역자','translator');
-INSERT INTO `hanjas` VALUES('飜譯者','번역자','translator');
-INSERT INTO `hanjas` VALUES('傳送','전송','transmission');
-INSERT INTO `hanjas` VALUES('送信','송신','transmission');
-INSERT INTO `hanjas` VALUES('發信','발신','transmission');
-INSERT INTO `hanjas` VALUES('變移','변이','transmutation');
-INSERT INTO `hanjas` VALUES('移項','이항','transposition');
-INSERT INTO `hanjas` VALUES('轉位','전위','transposition');
-INSERT INTO `hanjas` VALUES('寶物','보물','treasure');
-INSERT INTO `hanjas` VALUES('財寶','재보','treasure');
-INSERT INTO `hanjas` VALUES('秘藏','비장','treasure');
-INSERT INTO `hanjas` VALUES('加工','가공','treatment');
-INSERT INTO `hanjas` VALUES('待遇','대우','treatment');
-INSERT INTO `hanjas` VALUES('塹壕','참호','trench');
-INSERT INTO `hanjas` VALUES('裁判','재판','trial');
-INSERT INTO `hanjas` VALUES('審理','심리','trial');
-INSERT INTO `hanjas` VALUES('試運轉','시운전','trial run');
-INSERT INTO `hanjas` VALUES('部族','부족','tribe');
-INSERT INTO `hanjas` VALUES('三頭筋','삼두근','triceps');
-INSERT INTO `hanjas` VALUES('三脚','삼각','tripod');
-INSERT INTO `hanjas` VALUES('三頭政治','삼두정치','triumvirate');
-INSERT INTO `hanjas` VALUES('賞盃','상배','trophy');
-INSERT INTO `hanjas` VALUES('賞杯','상배','trophy');
-INSERT INTO `hanjas` VALUES('眞理','진리','truth');
-INSERT INTO `hanjas` VALUES('眞實','진실','truth');
-INSERT INTO `hanjas` VALUES('塊莖','괴경','tuber');
-INSERT INTO `hanjas` VALUES('曲調','곡조','tune');
-INSERT INTO `hanjas` VALUES('桐油','동유','tung oil');
-INSERT INTO `hanjas` VALUES('被膜','피막','tunic');
-INSERT INTO `hanjas` VALUES('音叉','음차','tuning fork');
-INSERT INTO `hanjas` VALUES('亂氣流','난기류','turbulence');
-INSERT INTO `hanjas` VALUES('台風','태풍','typhoon');
-INSERT INTO `hanjas` VALUES('暴政','폭정','tyranny');
-INSERT INTO `hanjas` VALUES('僭主','참주','tyrant');
-INSERT INTO `hanjas` VALUES('醜惡','추악','ugliness');
-INSERT INTO `hanjas` VALUES('潰瘍','궤양','ulcer');
-INSERT INTO `hanjas` VALUES('極超短波','극초단파','ultrahigh frequency');
-INSERT INTO `hanjas` VALUES('暗流','암류','undercurrent');
-INSERT INTO `hanjas` VALUES('次官','차관','undersecretary');
-INSERT INTO `hanjas` VALUES('諒解','양해','understanding');
-INSERT INTO `hanjas` VALUES('起伏','기복','undulation');
-INSERT INTO `hanjas` VALUES('失職','실직','unemployment');
-INSERT INTO `hanjas` VALUES('統一','통일','unification');
-INSERT INTO `hanjas` VALUES('一律','일률','uniformity');
-INSERT INTO `hanjas` VALUES('一方的','일방적','unilateral');
-INSERT INTO `hanjas` VALUES('齊唱','제창','unison');
-INSERT INTO `hanjas` VALUES('普遍的','보편적','universal');
-INSERT INTO `hanjas` VALUES('大學','대학','university');
-INSERT INTO `hanjas` VALUES('不親切','불친절','unkindness');
-INSERT INTO `hanjas` VALUES('養育','양육','upbringing');
-INSERT INTO `hanjas` VALUES('尿素','요소','urea');
-INSERT INTO `hanjas` VALUES('輸尿管','수뇨관','ureter');
-INSERT INTO `hanjas` VALUES('尿道','요도','urethra');
-INSERT INTO `hanjas` VALUES('衝動','충동','urge');
-INSERT INTO `hanjas` VALUES('火急','화급','urgency');
-INSERT INTO `hanjas` VALUES('檢尿','검뇨','urinalysis');
-INSERT INTO `hanjas` VALUES('小便','소변','urine');
-INSERT INTO `hanjas` VALUES('使用','사용','use');
-INSERT INTO `hanjas` VALUES('用途','용도','use');
-INSERT INTO `hanjas` VALUES('奪取','탈취','usurpation');
-INSERT INTO `hanjas` VALUES('器具','기구','utensil');
-INSERT INTO `hanjas` VALUES('實用','실용','utility');
-INSERT INTO `hanjas` VALUES('發言','발언','utterance');
-INSERT INTO `hanjas` VALUES('發聲','발성','utterance');
-INSERT INTO `hanjas` VALUES('空席','공석','vacancy');
-INSERT INTO `hanjas` VALUES('眞空','진공','vacuum');
-INSERT INTO `hanjas` VALUES('醉狂','취광','vagary');
-INSERT INTO `hanjas` VALUES('浮浪','부랑','vagrancy');
-INSERT INTO `hanjas` VALUES('溪谷','계곡','valley');
-INSERT INTO `hanjas` VALUES('前衛','전위','vanguard');
-INSERT INTO `hanjas` VALUES('氣化','기화','vaporization');
-INSERT INTO `hanjas` VALUES('變異','변이','variation');
-INSERT INTO `hanjas` VALUES('野菜','야채','vegetable');
-INSERT INTO `hanjas` VALUES('菜食','채식','vegetable diet');
-INSERT INTO `hanjas` VALUES('車輛','차량','vehicle');
-INSERT INTO `hanjas` VALUES('靜脈','정맥','vein');
-INSERT INTO `hanjas` VALUES('通風','통풍','ventilation');
-INSERT INTO `hanjas` VALUES('換氣','환기','ventilation');
-INSERT INTO `hanjas` VALUES('心室','심실','ventricle');
-INSERT INTO `hanjas` VALUES('冒險者','모험자','venturer');
-INSERT INTO `hanjas` VALUES('正確','정확','veracity');
-INSERT INTO `hanjas` VALUES('動詞','동사','verb');
-INSERT INTO `hanjas` VALUES('多辯','다변','verbosity');
-INSERT INTO `hanjas` VALUES('評決','평결','verdict');
-INSERT INTO `hanjas` VALUES('檢證','검증','verification');
-INSERT INTO `hanjas` VALUES('多能','다능','versatility');
-INSERT INTO `hanjas` VALUES('詩形','시형','versification');
-INSERT INTO `hanjas` VALUES('超短波','초단파','very high frequency');
-INSERT INTO `hanjas` VALUES('氣胞','기포','vesicle');
-INSERT INTO `hanjas` VALUES('法衣','법의','vestment');
-INSERT INTO `hanjas` VALUES('老練者','노련자','veteran');
-INSERT INTO `hanjas` VALUES('獸醫','수의','veterinarian');
-INSERT INTO `hanjas` VALUES('惡習','악습','vice');
-INSERT INTO `hanjas` VALUES('太守','태수','viceroy');
-INSERT INTO `hanjas` VALUES('惡循環','악순환','vicious circle');
-INSERT INTO `hanjas` VALUES('盛衰','성쇠','vicissitude');
-INSERT INTO `hanjas` VALUES('意見','의견','view');
-INSERT INTO `hanjas` VALUES('警戒','경계','vigilance');
-INSERT INTO `hanjas` VALUES('惡人','악인','villain');
-INSERT INTO `hanjas` VALUES('違背','위배','violation');
-INSERT INTO `hanjas` VALUES('侵害','침해','violation');
-INSERT INTO `hanjas` VALUES('暴力','폭력','violence');
-INSERT INTO `hanjas` VALUES('善良','선량','virtue');
-INSERT INTO `hanjas` VALUES('貞操','정조','virtue');
-INSERT INTO `hanjas` VALUES('美點','미점','virtue');
-INSERT INTO `hanjas` VALUES('效能','효능','virtue');
-INSERT INTO `hanjas` VALUES('毒性','독성','virulence');
-INSERT INTO `hanjas` VALUES('査證','사증','visa');
-INSERT INTO `hanjas` VALUES('內臟','내장','viscera');
-INSERT INTO `hanjas` VALUES('粘度','점도','viscosity');
-INSERT INTO `hanjas` VALUES('子爵','자작','viscount');
-INSERT INTO `hanjas` VALUES('視覺','시각','vision');
-INSERT INTO `hanjas` VALUES('天罰','천벌','visitation');
-INSERT INTO `hanjas` VALUES('急所','급소','vital');
-INSERT INTO `hanjas` VALUES('活力','활력','vitality');
-INSERT INTO `hanjas` VALUES('音聲','음성','voice');
-INSERT INTO `hanjas` VALUES('火山','화산','volcano');
-INSERT INTO `hanjas` VALUES('意志','의지','volition');
-INSERT INTO `hanjas` VALUES('體積','체적','volume');
-INSERT INTO `hanjas` VALUES('有志','유지','volunteer');
-INSERT INTO `hanjas` VALUES('投票者','투표자','voter');
-INSERT INTO `hanjas` VALUES('俗惡','속악','vulgarity');
-INSERT INTO `hanjas` VALUES('賃金','임금','wage');
-INSERT INTO `hanjas` VALUES('腰部','요부','waist');
-INSERT INTO `hanjas` VALUES('待合室','대합실','waiting room');
-INSERT INTO `hanjas` VALUES('壁新聞','벽신문','wall newspaper');
-INSERT INTO `hanjas` VALUES('戰爭','전쟁','war');
-INSERT INTO `hanjas` VALUES('戰雲','전운','war cloud');
-INSERT INTO `hanjas` VALUES('病棟','병동','ward');
-INSERT INTO `hanjas` VALUES('監房','감방','ward');
-INSERT INTO `hanjas` VALUES('警告','경고','warning');
-INSERT INTO `hanjas` VALUES('軍艦','군함','warship');
-INSERT INTO `hanjas` VALUES('洗濯機','세탁기','washing machine');
-INSERT INTO `hanjas` VALUES('餘熱','여열','waste heat');
-INSERT INTO `hanjas` VALUES('望樓','망루','watchtower');
-INSERT INTO `hanjas` VALUES('睡蓮','수련','water lily');
-INSERT INTO `hanjas` VALUES('水球','수구','water polo');
-INSERT INTO `hanjas` VALUES('瀑布','폭포','waterfall');
-INSERT INTO `hanjas` VALUES('波長','파장','wavelength');
-INSERT INTO `hanjas` VALUES('薄弱','박약','weakness');
-INSERT INTO `hanjas` VALUES('風化','풍화','weathering');
-INSERT INTO `hanjas` VALUES('雜草','잡초','weed');
-INSERT INTO `hanjas` VALUES('重量','중량','weight');
-INSERT INTO `hanjas` VALUES('分銅','분동','weight');
-INSERT INTO `hanjas` VALUES('西洋','서양','west');
-INSERT INTO `hanjas` VALUES('夢精','몽정','wet dream');
-INSERT INTO `hanjas` VALUES('所在','소재','whereabouts');
-INSERT INTO `hanjas` VALUES('旋風','선풍','whirlwind');
-INSERT INTO `hanjas` VALUES('警笛','경적','whistle');
-INSERT INTO `hanjas` VALUES('白色','백색','white');
-INSERT INTO `hanjas` VALUES('白夜','백야','white night');
-INSERT INTO `hanjas` VALUES('白紙','백지','white paper');
-INSERT INTO `hanjas` VALUES('白葡萄酒','백포도주','white wine');
-INSERT INTO `hanjas` VALUES('全部','전부','whole');
-INSERT INTO `hanjas` VALUES('百日咳','백일해','whooping cough');
-INSERT INTO `hanjas` VALUES('未亡人','미망인','widow');
-INSERT INTO `hanjas` VALUES('寡婦','과부','widow');
-INSERT INTO `hanjas` VALUES('風車','풍차','windmill');
-INSERT INTO `hanjas` VALUES('盜聽','도청','wiretap');
-INSERT INTO `hanjas` VALUES('智慧','지혜','wisdom');
-INSERT INTO `hanjas` VALUES('賢明','현명','wisdom');
-INSERT INTO `hanjas` VALUES('魔女','마녀','witch');
-INSERT INTO `hanjas` VALUES('鬼才','귀재','wizard');
-INSERT INTO `hanjas` VALUES('女子','여자','woman');
-INSERT INTO `hanjas` VALUES('婦人','부인','woman');
-INSERT INTO `hanjas` VALUES('女性','여성','woman');
-INSERT INTO `hanjas` VALUES('單語','단어','word');
-INSERT INTO `hanjas` VALUES('語順','어순','word order');
-INSERT INTO `hanjas` VALUES('細工','세공','work');
-INSERT INTO `hanjas` VALUES('世界','세계','world');
-INSERT INTO `hanjas` VALUES('世上','세상','world');
-INSERT INTO `hanjas` VALUES('禮拜','예배','worship');
-INSERT INTO `hanjas` VALUES('負傷','부상','wound');
-INSERT INTO `hanjas` VALUES('花環','화환','wreath');
-INSERT INTO `hanjas` VALUES('筆者','필자','writer');
-INSERT INTO `hanjas` VALUES('著述','저술','writing');
-INSERT INTO `hanjas` VALUES('著作','저작','writing');
-INSERT INTO `hanjas` VALUES('木琴','목금','xylophone');
-INSERT INTO `hanjas` VALUES('年度','연도','year');
-INSERT INTO `hanjas` VALUES('靑春','청춘','youth');
-INSERT INTO `hanjas` VALUES('靑年','청년','youth');
-INSERT INTO `hanjas` VALUES('年少','연소','youth');
-INSERT INTO `hanjas` VALUES('天頂','천정','zenith');
-INSERT INTO `hanjas` VALUES('零點','영점','zero');
-INSERT INTO `hanjas` VALUES('地帶','지대','zone');
-INSERT INTO `hanjas` VALUES('區域','구역','zone');
-INSERT INTO `hanjas` VALUES('動物崇拜','동물숭배','zoolatry');
-INSERT INTO `hanjas` VALUES('一石二鳥','일석이조','to kill two birds with one stone');
-INSERT INTO `hanjas` VALUES('一口二言','일구이언','two-faced');
-INSERT INTO `hanjas` VALUES('八方美人','팔방미인','jack of all trades');
-INSERT INTO `hanjas` VALUES('弱肉强食','약육강식','survival of the fittest');
-INSERT INTO `hanjas` VALUES('多多益善','다다익선','the more the better');
-INSERT INTO `hanjas` VALUES('博學多識','박학다식','well informed');
-INSERT INTO `hanjas` VALUES('人山人海','인산인해','a very large crowd');
-INSERT INTO `hanjas` VALUES('莫上莫下','막상막하','evenly matched');
-INSERT INTO `hanjas` VALUES('賢母良妻','형모양처','a good mother and a good wife');
-INSERT INTO `hanjas` VALUES('一片丹心','일편단심','devoted; fidelity');
-INSERT INTO `hanjas` VALUES('萬壽無疆','만수무강','longevity');
-INSERT INTO `hanjas` VALUES('年','년','year');
-INSERT INTO `hanjas` VALUES('爲','위','to do for the sake of');
-INSERT INTO `hanjas` VALUES('氏','씨','Mister');
-INSERT INTO `hanjas` VALUES('境遇','경우','a case; an instance');
-INSERT INTO `hanjas` VALUES('中','중','the center, the middle');
-INSERT INTO `hanjas` VALUES('-女','그녀','she');
-INSERT INTO `hanjas` VALUES('自身','자신','one''s own self, one''s own body');
-INSERT INTO `hanjas` VALUES('名','명','person counter');
-INSERT INTO `hanjas` VALUES('女子','여자','woman,female');
-INSERT INTO `hanjas` VALUES('個','개','unit or  piece');
-INSERT INTO `hanjas` VALUES('人間','인간','a person, a human being');
-INSERT INTO `hanjas` VALUES('依','의','to be due to, owing to');
-INSERT INTO `hanjas` VALUES('番','번','number, how many times');
-INSERT INTO `hanjas` VALUES('女性','여성','female');
-INSERT INTO `hanjas` VALUES('親舊','친구','a friend');
-INSERT INTO `hanjas` VALUES('後','후','after');
-INSERT INTO `hanjas` VALUES('男子','남자','boy');
-INSERT INTO `hanjas` VALUES('-番','이번','this time');
-INSERT INTO `hanjas` VALUES('過程','과정','process or course');
-INSERT INTO `hanjas` VALUES('特','특','especially');
-INSERT INTO `hanjas` VALUES('時','시','time');
-INSERT INTO `hanjas` VALUES('以上','이상','more than, above');
-INSERT INTO `hanjas` VALUES('只今','지금','now');
-INSERT INTO `hanjas` VALUES('敎育','교육','education');
-INSERT INTO `hanjas` VALUES('歷史','역사','history');
-INSERT INTO `hanjas` VALUES('冊','책','a book');
-INSERT INTO `hanjas` VALUES('當身','당신','you (formal)');
-INSERT INTO `hanjas` VALUES('男便','남편','husband');
-INSERT INTO `hanjas` VALUES('狀況','상황','state of things');
-INSERT INTO `hanjas` VALUES('卽','즉','namely, that is to say');
-INSERT INTO `hanjas` VALUES('狀態','상태','condition, state');
-INSERT INTO `hanjas` VALUES('以後','이후','after that');
-INSERT INTO `hanjas` VALUES('當時','당시','at that time');
-INSERT INTO `hanjas` VALUES('最近','최근','recently');
-INSERT INTO `hanjas` VALUES('自體','자체','one''s own body');
-INSERT INTO `hanjas` VALUES('關','관','refer to or be about');
-INSERT INTO `hanjas` VALUES('亦是','역시','as expected, likewise');
-INSERT INTO `hanjas` VALUES('房','방','a room');
-INSERT INTO `hanjas` VALUES('技術','기술','art or  technique or  ability');
-INSERT INTO `hanjas` VALUES('間','간','the interval between');
-INSERT INTO `hanjas` VALUES('映畵','영화','a movie');
-INSERT INTO `hanjas` VALUES('正-','정말','really');
-INSERT INTO `hanjas` VALUES('結局','결국','after all; in the end');
-INSERT INTO `hanjas` VALUES('敎授','교수','teaching;  instruction');
-INSERT INTO `hanjas` VALUES('-番','한번','once');
-INSERT INTO `hanjas` VALUES('大部分','대부분','most ');
-INSERT INTO `hanjas` VALUES('飮食','음식','food');
-INSERT INTO `hanjas` VALUES('表情','표정','facial expression; look');
-INSERT INTO `hanjas` VALUES('性格','성격','personality; character, nature');
-INSERT INTO `hanjas` VALUES('世紀','세기','century');
-INSERT INTO `hanjas` VALUES('車','차','a vehicle');
-INSERT INTO `hanjas` VALUES('向','향','to face, look out on');
-INSERT INTO `hanjas` VALUES('形態','형태','form, shape');
-INSERT INTO `hanjas` VALUES('各','각','each; every');
-INSERT INTO `hanjas` VALUES('都市','도시','city');
-INSERT INTO `hanjas` VALUES('作業','작업','work');
-INSERT INTO `hanjas` VALUES('雰圍氣','분위기','atmosphere, surroundings');
-INSERT INTO `hanjas` VALUES('于先','우선','firstly, first of all; before everything');
-INSERT INTO `hanjas` VALUES('詩','시','poetry, lines of verse');
-INSERT INTO `hanjas` VALUES('國內','국내','inside the country');
-INSERT INTO `hanjas` VALUES('比','비','to compare to');
-INSERT INTO `hanjas` VALUES('例','예','example');
-INSERT INTO `hanjas` VALUES('內','내','inside');
-INSERT INTO `hanjas` VALUES('山','산','a mountain');
-INSERT INTO `hanjas` VALUES('條件','조건','condition, stipulation');
-INSERT INTO `hanjas` VALUES('門','문','door');
-INSERT INTO `hanjas` VALUES('敎師','교사','instructor');
-INSERT INTO `hanjas` VALUES('大會','대회','a great meeting');
-INSERT INTO `hanjas` VALUES('議員','의원','a member');
-INSERT INTO `hanjas` VALUES('全-','전혀','entirely, utterly, completely');
-INSERT INTO `hanjas` VALUES('子息','자식','one''s children');
-INSERT INTO `hanjas` VALUES('學年','학년','a school year');
-INSERT INTO `hanjas` VALUES('新聞','신문','a newspaper');
-INSERT INTO `hanjas` VALUES('製品','제품','manufactured goods');
-INSERT INTO `hanjas` VALUES('氣分','기분','mood');
-INSERT INTO `hanjas` VALUES('代','대','era, period');
-INSERT INTO `hanjas` VALUES('前','전','before');
-INSERT INTO `hanjas` VALUES('演劇','연극','drama, a play');
-INSERT INTO `hanjas` VALUES('勞動','노동','labor, work');
-INSERT INTO `hanjas` VALUES('過去','과거','the past');
-INSERT INTO `hanjas` VALUES('差異','차이','difference, disparity');
-INSERT INTO `hanjas` VALUES('時節','시절','season, time, occasion');
-INSERT INTO `hanjas` VALUES('物件','물건','a thing');
-INSERT INTO `hanjas` VALUES('直接','직접','directly');
-INSERT INTO `hanjas` VALUES('作家','작가','writer, author');
-INSERT INTO `hanjas` VALUES('佛敎','불교','Buddhism');
-INSERT INTO `hanjas` VALUES('時機','시기','an opportunity, a chance');
-INSERT INTO `hanjas` VALUES('强','강','to be strong,  powerful');
-INSERT INTO `hanjas` VALUES('最高','최고','the best');
-INSERT INTO `hanjas` VALUES('故鄕','고향','hometown');
-INSERT INTO `hanjas` VALUES('多樣','다양','to be various, diverse');
-INSERT INTO `hanjas` VALUES('小說','소설','a novel, fiction story');
-INSERT INTO `hanjas` VALUES('-便','한편','one side, one way');
-INSERT INTO `hanjas` VALUES('記者','기자','a journalist');
-INSERT INTO `hanjas` VALUES('主-','주로','principally, mainly');
-INSERT INTO `hanjas` VALUES('外國','외국','a foreign country');
-INSERT INTO `hanjas` VALUES('次例','차례','order, precedence; one time, one round');
-INSERT INTO `hanjas` VALUES('軍','군','an army');
-INSERT INTO `hanjas` VALUES('父母','부모','parents');
-INSERT INTO `hanjas` VALUES('當','당','to have, to encounter');
-INSERT INTO `hanjas` VALUES('約','약','about, approximately');
-INSERT INTO `hanjas` VALUES('一旦','일단','temporarily');
-INSERT INTO `hanjas` VALUES('組織','조직','group, organization');
-INSERT INTO `hanjas` VALUES('患者','환자','a patient');
-INSERT INTO `hanjas` VALUES('變','변','change');
-INSERT INTO `hanjas` VALUES('兄','형','an elder brother');
-INSERT INTO `hanjas` VALUES('全國','전국','the whole country');
-INSERT INTO `hanjas` VALUES('全','전','all, every');
-INSERT INTO `hanjas` VALUES('式','식','form, style');
-INSERT INTO `hanjas` VALUES('寫眞','사진','picture');
-INSERT INTO `hanjas` VALUES('因','인','to be due to, caused by');
-INSERT INTO `hanjas` VALUES('男性','남성','male');
-INSERT INTO `hanjas` VALUES('對策','대책','countermeasure');
-INSERT INTO `hanjas` VALUES('決-','결코','never; by no means');
-INSERT INTO `hanjas` VALUES('恒常','항상','always');
-INSERT INTO `hanjas` VALUES('回','회','a time, an inning, a round in a game');
-INSERT INTO `hanjas` VALUES('具體的','구체적','concretely');
-INSERT INTO `hanjas` VALUES('番-','번째','~ times');
-INSERT INTO `hanjas` VALUES('基準','기준','a standard or basis');
-INSERT INTO `hanjas` VALUES('末','말','end');
-INSERT INTO `hanjas` VALUES('現場','현장','on site, on location');
-INSERT INTO `hanjas` VALUES('個月','개월','each and every month');
-INSERT INTO `hanjas` VALUES('別-','별로','especially, particularly');
-INSERT INTO `hanjas` VALUES('大衆','대중','the masses');
-INSERT INTO `hanjas` VALUES('各種','각종','all sorts, all varieties');
-INSERT INTO `hanjas` VALUES('避','피','to avoid, keep away');
-INSERT INTO `hanjas` VALUES('主人','주인','the head of a family,the owner');
-INSERT INTO `hanjas` VALUES('線','선','a line, a route');
-INSERT INTO `hanjas` VALUES('選手','선수','an athlete');
-INSERT INTO `hanjas` VALUES('半','반','half');
-INSERT INTO `hanjas` VALUES('觀點','관점','a point of view or a standpoint; outlook');
-INSERT INTO `hanjas` VALUES('基本','기본','a foundation');
-INSERT INTO `hanjas` VALUES('感情','감정','feelings');
-INSERT INTO `hanjas` VALUES('人氣','인기','popularity');
-INSERT INTO `hanjas` VALUES('實際-','실제로','in reality');
-INSERT INTO `hanjas` VALUES('果然','과연','indeed; sure enough; just as one thought');
-INSERT INTO `hanjas` VALUES('以前','이전','formerly, previously, before');
-INSERT INTO `hanjas` VALUES('者','자','a person');
-INSERT INTO `hanjas` VALUES('中央','중앙','the middle; the heart');
-INSERT INTO `hanjas` VALUES('不拘','불구','deformity, malformation');
-INSERT INTO `hanjas` VALUES('國際','국제','international');
-INSERT INTO `hanjas` VALUES('人生','인생','life');
-INSERT INTO `hanjas` VALUES('盞','잔','a cup; a glass');
-INSERT INTO `hanjas` VALUES('外','외','except, save for');
-INSERT INTO `hanjas` VALUES('三國','삼국','three countries');
-INSERT INTO `hanjas` VALUES('願','원','to want');
-INSERT INTO `hanjas` VALUES('數','수','the number of sth');
-INSERT INTO `hanjas` VALUES('倍','배','times, ~-fold');
-INSERT INTO `hanjas` VALUES('授業','수업','instruction, school, teaching');
-INSERT INTO `hanjas` VALUES('宗敎','종교','religion, a faith');
-INSERT INTO `hanjas` VALUES('層','층','floor; grade, class');
-INSERT INTO `hanjas` VALUES('張','장','one piece of sth flat (counter)');
-INSERT INTO `hanjas` VALUES('班','반','group, company, party');
-INSERT INTO `hanjas` VALUES('或-','혹은','if that''s not the case');
-INSERT INTO `hanjas` VALUES('把握','파악','grasp, seize, understand');
-INSERT INTO `hanjas` VALUES('篇','편','compilation, editing');
-INSERT INTO `hanjas` VALUES('便紙','편지','letter');
-INSERT INTO `hanjas` VALUES('共同','공동','association,  union,  collaboration');
-INSERT INTO `hanjas` VALUES('方案','방안','a plan, scheme');
-INSERT INTO `hanjas` VALUES('少女','소녀','a young girl');
-INSERT INTO `hanjas` VALUES('次','차','order, sequence, degree');
-INSERT INTO `hanjas` VALUES('關係者','관계자','the interested or affected parties');
-INSERT INTO `hanjas` VALUES('歲','세','age in years');
-INSERT INTO `hanjas` VALUES('五月','오월','May');
-INSERT INTO `hanjas` VALUES('課','과','a lesson; a section; a department');
-INSERT INTO `hanjas` VALUES('四月','사월','April');
-INSERT INTO `hanjas` VALUES('葛藤','갈등','conflict; troubles');
-INSERT INTO `hanjas` VALUES('初期','초기','the early days, the initial period');
-INSERT INTO `hanjas` VALUES('美','미','beauty, grace');
-INSERT INTO `hanjas` VALUES('視線','시선','one''s line of vision');
-INSERT INTO `hanjas` VALUES('言論','언론','a speech, discussion');
-INSERT INTO `hanjas` VALUES('昨年','작년','last year');
-INSERT INTO `hanjas` VALUES('賃金','임금','wages, pay');
-INSERT INTO `hanjas` VALUES('被害','피해','damage');
-INSERT INTO `hanjas` VALUES('職場','직장','one''s workplace');
-INSERT INTO `hanjas` VALUES('男女','남녀','man and woman');
-INSERT INTO `hanjas` VALUES('九月','구월','September');
-INSERT INTO `hanjas` VALUES('六月','유월','June');
-INSERT INTO `hanjas` VALUES('-中','그중','among the rest of them');
-INSERT INTO `hanjas` VALUES('老人','노인','elderly person');
-INSERT INTO `hanjas` VALUES('英語','영어','the English language');
-INSERT INTO `hanjas` VALUES('出身','출신','a native, place one is from');
-INSERT INTO `hanjas` VALUES('反面','반면','one side');
-INSERT INTO `hanjas` VALUES('業務','업무','buisness, duty');
-INSERT INTO `hanjas` VALUES('入試','입시','an entrance examination');
-INSERT INTO `hanjas` VALUES('靑少年','청소년','young boys and girls, teenagers');
-INSERT INTO `hanjas` VALUES('取','취','to adopt, assume, take');
-INSERT INTO `hanjas` VALUES('社長','사장','company boss');
-INSERT INTO `hanjas` VALUES('三月','삼월','March');
-INSERT INTO `hanjas` VALUES('業體','업체','a business enterprise');
-INSERT INTO `hanjas` VALUES('求','구','to buy, purchase; to look for, to seek, to want');
-INSERT INTO `hanjas` VALUES('萬若','만약','if');
-INSERT INTO `hanjas` VALUES('歲月','세월','the times, things');
-INSERT INTO `hanjas` VALUES('行事','행사','an event, a function');
-INSERT INTO `hanjas` VALUES('神','신','a god');
-INSERT INTO `hanjas` VALUES('王','왕','king');
-INSERT INTO `hanjas` VALUES('漸漸','점점','more and more, by degrees');
-INSERT INTO `hanjas` VALUES('近處','근처','nearby, in the vicinity');
-INSERT INTO `hanjas` VALUES('事情','사정','circumstances');
-INSERT INTO `hanjas` VALUES('都大體','도대체','how on earth?, what the Hell?');
-INSERT INTO `hanjas` VALUES('父母-','부모님','parents');
-INSERT INTO `hanjas` VALUES('初','초','beginning (of), early, initial');
-INSERT INTO `hanjas` VALUES('職員','직원','staff');
-INSERT INTO `hanjas` VALUES('相對','상대','counterpart, companion, rival');
-INSERT INTO `hanjas` VALUES('度','도','degrees (temperature)');
-INSERT INTO `hanjas` VALUES('壁','벽','a wall');
-INSERT INTO `hanjas` VALUES('貿易','무역','trade');
-INSERT INTO `hanjas` VALUES('身體','신체','the body');
-INSERT INTO `hanjas` VALUES('委員','위원','committee member');
-INSERT INTO `hanjas` VALUES('法則','법칙','a law, a rule');
-INSERT INTO `hanjas` VALUES('自轉車','자전거','bicycle');
-INSERT INTO `hanjas` VALUES('位','위','position, grade, rank');
-INSERT INTO `hanjas` VALUES('論理','논리','logic');
-INSERT INTO `hanjas` VALUES('候補','후보','candidate, nominee');
-INSERT INTO `hanjas` VALUES('課題','과제','task, assignment, homework');
-INSERT INTO `hanjas` VALUES('視角','시각','angle/point of view.  관점.');
-INSERT INTO `hanjas` VALUES('來日','내일','tomorrow');
-INSERT INTO `hanjas` VALUES('每日','매일','every day');
-INSERT INTO `hanjas` VALUES('漸次','점차','gradually, in steps');
-INSERT INTO `hanjas` VALUES('級','급','class, grade, rank');
-INSERT INTO `hanjas` VALUES('未來','미래','future');
-INSERT INTO `hanjas` VALUES('病','병','sickness');
-INSERT INTO `hanjas` VALUES('主人公','주인공','the head of a family; the hero/heroine');
-INSERT INTO `hanjas` VALUES('兄-','형님','way a man refers to an older friend (respectful)');
-INSERT INTO `hanjas` VALUES('當場','당장','on the spot, immediately');
-INSERT INTO `hanjas` VALUES('事物','사물','objects, things');
-INSERT INTO `hanjas` VALUES('高等學校','고등학교','high school');
-INSERT INTO `hanjas` VALUES('敎室','교실','classroom');
-INSERT INTO `hanjas` VALUES('媒體','매체','a medium, medias');
-INSERT INTO `hanjas` VALUES('複雜','복잡','be complicated');
-INSERT INTO `hanjas` VALUES('領域','영역','territory');
-INSERT INTO `hanjas` VALUES('不法','불법','illegal');
-INSERT INTO `hanjas` VALUES('色','색','color');
-INSERT INTO `hanjas` VALUES('一定','일정','to be regular, established, uniform; changeless, constant, certain, definite ; invariable (mathematics)');
-INSERT INTO `hanjas` VALUES('數--','수많다','many and many');
-INSERT INTO `hanjas` VALUES('工事','공사','construction work; engineering work');
-INSERT INTO `hanjas` VALUES('博士','박사','doctor');
-INSERT INTO `hanjas` VALUES('性','성','sex (male or female), gender');
-INSERT INTO `hanjas` VALUES('專門家','전문가','a specialist');
-INSERT INTO `hanjas` VALUES('但只','단지','simple, merely');
-INSERT INTO `hanjas` VALUES('舞踊','무용','dancing, a dance');
-INSERT INTO `hanjas` VALUES('海外','해외','abroad, foreign countries');
-INSERT INTO `hanjas` VALUES('文化財','문화재','cultural assets');
-INSERT INTO `hanjas` VALUES('微笑','미소','smile');
-INSERT INTO `hanjas` VALUES('食堂','식당','restaurant');
-INSERT INTO `hanjas` VALUES('以來','이래','since, after that, hereafter');
-INSERT INTO `hanjas` VALUES('事例','사례','thanks, gratitude');
-INSERT INTO `hanjas` VALUES('七月','칠월','July');
-INSERT INTO `hanjas` VALUES('平均','평균','average');
-INSERT INTO `hanjas` VALUES('訓鍊','훈련','training');
-INSERT INTO `hanjas` VALUES('十二月','십이월','December');
-INSERT INTO `hanjas` VALUES('論文','논문','dissertation, an academic paper, thesis');
-INSERT INTO `hanjas` VALUES('或是','혹시','sometimes');
-INSERT INTO `hanjas` VALUES('量','양','quantity, volume');
-INSERT INTO `hanjas` VALUES('節次','절차','process, formalities; 수속');
-INSERT INTO `hanjas` VALUES('屬','속','belong to, be affiliated with');
-INSERT INTO `hanjas` VALUES('以外','이외','except, apart from');
-INSERT INTO `hanjas` VALUES('坪','평','a pyeong (roughly 2 square meters)');
-INSERT INTO `hanjas` VALUES('一週日','일주일','one whole day');
-INSERT INTO `hanjas` VALUES('資源','자원','resources ');
-INSERT INTO `hanjas` VALUES('示威','시위','a demonstration');
-INSERT INTO `hanjas` VALUES('最大','최대','the greatest, the largest');
-INSERT INTO `hanjas` VALUES('平素','평소','ordinary times, ordinarily');
-INSERT INTO `hanjas` VALUES('見解','견해','an opinion, view');
-INSERT INTO `hanjas` VALUES('農事','농사','farming');
-INSERT INTO `hanjas` VALUES('住宅','주택','a house');
-INSERT INTO `hanjas` VALUES('未安','미안','to be sorry');
-INSERT INTO `hanjas` VALUES('人士','인사','people, men of society');
-INSERT INTO `hanjas` VALUES('考慮','고려','regard or  respect');
-INSERT INTO `hanjas` VALUES('農村','농촌','a farm village');
-INSERT INTO `hanjas` VALUES('十月','시월','October');
-INSERT INTO `hanjas` VALUES('子女','자녀','one''s children');
-INSERT INTO `hanjas` VALUES('八月','팔월','August');
-INSERT INTO `hanjas` VALUES('相對方','상대방','conversation partner');
-INSERT INTO `hanjas` VALUES('西歐','서구','Western Europe');
-INSERT INTO `hanjas` VALUES('幅','폭','width; range');
-INSERT INTO `hanjas` VALUES('號','호','a pen name, a title; a number, an issue');
-INSERT INTO `hanjas` VALUES('食口','식구','members of a family, your immediate family members (lit. people you eat with)');
-INSERT INTO `hanjas` VALUES('-字','글자','a letter, a character');
-INSERT INTO `hanjas` VALUES('不動産','부동산','real estate');
-INSERT INTO `hanjas` VALUES('孃','양','miss ~');
-INSERT INTO `hanjas` VALUES('放學','방학','school holidays');
-INSERT INTO `hanjas` VALUES('祖上','조상','ancestors');
-INSERT INTO `hanjas` VALUES('大型','대형','large, full-sized');
-INSERT INTO `hanjas` VALUES('問題點','문제점','the point at issue');
-INSERT INTO `hanjas` VALUES('本格的','본격적','exemplary');
-INSERT INTO `hanjas` VALUES('不可能','불가능','impossible');
-INSERT INTO `hanjas` VALUES('衝擊','충격','an impact, a shock');
-INSERT INTO `hanjas` VALUES('今方','금방','just now;  a moment ago');
-INSERT INTO `hanjas` VALUES('南-','남쪽','south side');
-INSERT INTO `hanjas` VALUES('色-','색깔','color');
-INSERT INTO `hanjas` VALUES('氣','기','energy; breath or  wind');
-INSERT INTO `hanjas` VALUES('憂慮','우려','worry,anxiety,fear');
-INSERT INTO `hanjas` VALUES('雨傘','우산','an umbrella');
-INSERT INTO `hanjas` VALUES('冊床','책상','on the desk');
-INSERT INTO `hanjas` VALUES('單位','단위','a unit, a monad');
-INSERT INTO `hanjas` VALUES('首都','수도','a capital city');
-INSERT INTO `hanjas` VALUES('役','역','a part, a role');
-INSERT INTO `hanjas` VALUES('字','자','a Chinese character');
-INSERT INTO `hanjas` VALUES('卷','권','a volume, a book (counter)');
-INSERT INTO `hanjas` VALUES('時計','시계','clock, timekeeper, timepiece');
-INSERT INTO `hanjas` VALUES('中間','중간','in the middle');
-INSERT INTO `hanjas` VALUES('大體-','대체로','generally, on the whole');
-INSERT INTO `hanjas` VALUES('委員長','위원장','a chairman of a committee');
-INSERT INTO `hanjas` VALUES('藝術家','예술가','an artist');
-INSERT INTO `hanjas` VALUES('意圖','의도','an intention, an aim');
-INSERT INTO `hanjas` VALUES('件','건','a matter or  an object or  a case');
-INSERT INTO `hanjas` VALUES('敎會','교회','preach or  moral instruction');
-INSERT INTO `hanjas` VALUES('大邱','대구','Daegu city');
-INSERT INTO `hanjas` VALUES('科學者','과학자','scientist');
-INSERT INTO `hanjas` VALUES('觀光','관광','sightseeing, tourism');
-INSERT INTO `hanjas` VALUES('手術','수술','surgery');
-INSERT INTO `hanjas` VALUES('食品','식품','groceries');
-INSERT INTO `hanjas` VALUES('一月','일월','January');
-INSERT INTO `hanjas` VALUES('條','조','article, clause');
-INSERT INTO `hanjas` VALUES('會員','회원','a member of a society');
-INSERT INTO `hanjas` VALUES('圖書館','도서관','library');
-INSERT INTO `hanjas` VALUES('地下','지하','underground');
-INSERT INTO `hanjas` VALUES('法律','법률','a law, statute');
-INSERT INTO `hanjas` VALUES('傷處','상처','wound');
-INSERT INTO `hanjas` VALUES('現','현','the present, the existence, actuality');
-INSERT INTO `hanjas` VALUES('畵面','화면','screen');
-INSERT INTO `hanjas` VALUES('君','군','Mister');
-INSERT INTO `hanjas` VALUES('萬一','만일','if, suppose');
-INSERT INTO `hanjas` VALUES('事務室','사무실','office');
-INSERT INTO `hanjas` VALUES('二月','이월','February');
-INSERT INTO `hanjas` VALUES('罪','죄','a crime, a sin');
-INSERT INTO `hanjas` VALUES('後半','후반','the latter/second half');
-INSERT INTO `hanjas` VALUES('不滿','불만','dissatisfaction');
-INSERT INTO `hanjas` VALUES('種','종','a sort,kind,species');
-INSERT INTO `hanjas` VALUES('江','강','river');
-INSERT INTO `hanjas` VALUES('觀客','관객','spectator');
-INSERT INTO `hanjas` VALUES('數字','숫자','a figure, number');
-INSERT INTO `hanjas` VALUES('熱','열','heat');
-INSERT INTO `hanjas` VALUES('中世','중세','the Middle Ages');
-INSERT INTO `hanjas` VALUES('株式','주식','stock');
-INSERT INTO `hanjas` VALUES('商標','상표','trademark, brand');
-INSERT INTO `hanjas` VALUES('姑母','고모','a paternal aunt');
-INSERT INTO `hanjas` VALUES('民主化','민주화','democratization');
-INSERT INTO `hanjas` VALUES('弱','약','to be weak');
-INSERT INTO `hanjas` VALUES('宅','댁','you and your family');
-INSERT INTO `hanjas` VALUES('財政','재정','finances, economy');
-INSERT INTO `hanjas` VALUES('大規模','대규모','on  a large scale');
-INSERT INTO `hanjas` VALUES('同','동','the same');
-INSERT INTO `hanjas` VALUES('民間','민간','civil, private');
-INSERT INTO `hanjas` VALUES('法院','법원','court of justice');
-INSERT INTO `hanjas` VALUES('事實上','사실상','actually, in truth');
-INSERT INTO `hanjas` VALUES('化粧室','화장실','bathroom');
-INSERT INTO `hanjas` VALUES('核','핵','a nucleus, core');
-INSERT INTO `hanjas` VALUES('首席','수석','the top seat');
-INSERT INTO `hanjas` VALUES('適切','적절','appropriateness');
-INSERT INTO `hanjas` VALUES('祭祀','제사','a holiday ceremony');
-INSERT INTO `hanjas` VALUES('週末','주말','weekend');
-INSERT INTO `hanjas` VALUES('來年','내년','next year');
-INSERT INTO `hanjas` VALUES('農産物','농산물','agricultural products');
-INSERT INTO `hanjas` VALUES('大學生','대학생','university student');
-INSERT INTO `hanjas` VALUES('思考','사고','thought, contemplation');
-INSERT INTO `hanjas` VALUES('硏究所','연구소','a reasearch institute');
-INSERT INTO `hanjas` VALUES('假令','가령','for example; supposing or admitting');
-INSERT INTO `hanjas` VALUES('巨大','거대','huge, gigantic, enormous');
-INSERT INTO `hanjas` VALUES('生日','생일','a birthday');
-INSERT INTO `hanjas` VALUES('以下','이하','less than, below');
-INSERT INTO `hanjas` VALUES('勤勞者','근로자','laborer');
-INSERT INTO `hanjas` VALUES('甁','병','a bottle');
-INSERT INTO `hanjas` VALUES('輿論','여론','public opinion, public sentiment towards sth');
-INSERT INTO `hanjas` VALUES('物價','물가','prices of products');
-INSERT INTO `hanjas` VALUES('波濤','파도','waves, billows');
-INSERT INTO `hanjas` VALUES('-色','흰색','gray, ash color');
-INSERT INTO `hanjas` VALUES('歌手','가수','singer');
-INSERT INTO `hanjas` VALUES('單','단','only one, alone');
-INSERT INTO `hanjas` VALUES('放送局','방송국','broadcasting station');
-INSERT INTO `hanjas` VALUES('預金','예금','deposit money');
-INSERT INTO `hanjas` VALUES('直後','직후','immediately after');
-INSERT INTO `hanjas` VALUES('先進國','선진국','a developed country');
-INSERT INTO `hanjas` VALUES('藥','약','medicine');
-INSERT INTO `hanjas` VALUES('窓門','창문','a window');
-INSERT INTO `hanjas` VALUES('秒','초','a second');
-INSERT INTO `hanjas` VALUES('發揮','발휘','display, exhibit');
-INSERT INTO `hanjas` VALUES('中小企業','중소기업','small and medium enterprises');
-INSERT INTO `hanjas` VALUES('協力','협력','cooperation, cooperate with');
-INSERT INTO `hanjas` VALUES('階層','계층','a class, social stratum');
-INSERT INTO `hanjas` VALUES('漫畵','만화','cartoons');
-INSERT INTO `hanjas` VALUES('引上','인상','pulling/drawing up');
-INSERT INTO `hanjas` VALUES('團地','단지','a public apartment complex');
-INSERT INTO `hanjas` VALUES('民主','민주','democracy');
-INSERT INTO `hanjas` VALUES('女人','여인','beauty, belle');
-INSERT INTO `hanjas` VALUES('運營','운영','manage, administer');
-INSERT INTO `hanjas` VALUES('票','표','a marker, indication');
-INSERT INTO `hanjas` VALUES('必要性','필요성','necessity ');
-INSERT INTO `hanjas` VALUES('部位','부위','a region, part');
-INSERT INTO `hanjas` VALUES('十一月','십일월','November');
-INSERT INTO `hanjas` VALUES('兄弟','형제','brothers and sisters');
-INSERT INTO `hanjas` VALUES('華麗','화려','fancy, showy, splendid, colorful');
-INSERT INTO `hanjas` VALUES('洋-','양파','an onion');
-INSERT INTO `hanjas` VALUES('一種','일종','a kind, a sort, a species');
-INSERT INTO `hanjas` VALUES('處地','처지','a situation, circumstances');
-INSERT INTO `hanjas` VALUES('撮影','촬영','photographing, filming, recording');
-INSERT INTO `hanjas` VALUES('形便','형편','the situation, the state of things (esp. financial)');
-INSERT INTO `hanjas` VALUES('徐徐','서서','slowly, little by little');
-INSERT INTO `hanjas` VALUES('身分','신분','social position');
-INSERT INTO `hanjas` VALUES('-房','안방','the inner room');
-INSERT INTO `hanjas` VALUES('自信','자신','self-confidence');
-INSERT INTO `hanjas` VALUES('暫時','잠시','for a little while');
-INSERT INTO `hanjas` VALUES('虎狼-','호랑이','a tiger');
-INSERT INTO `hanjas` VALUES('强化','강화','strengthen');
-INSERT INTO `hanjas` VALUES('本來','본래','originally, primarily');
-INSERT INTO `hanjas` VALUES('稅金','세금','tax');
-INSERT INTO `hanjas` VALUES('實情','실정','the actual situation');
-INSERT INTO `hanjas` VALUES('營養','영양','nutrition');
-INSERT INTO `hanjas` VALUES('肉體','육체','the flesh, the body');
-INSERT INTO `hanjas` VALUES('積極','적극','the positive');
-INSERT INTO `hanjas` VALUES('最小限','최소한','at least');
-INSERT INTO `hanjas` VALUES('北-','북쪽','northern');
-INSERT INTO `hanjas` VALUES('平生','평생','a lifetime');
-INSERT INTO `hanjas` VALUES('幹部','간부','executive management');
-INSERT INTO `hanjas` VALUES('與件','여건','a postulate, a given condition');
-INSERT INTO `hanjas` VALUES('--前','오래전','long ago');
-INSERT INTO `hanjas` VALUES('統制','통제','control, regulation');
-INSERT INTO `hanjas` VALUES('階段','계단','a staircase, a set of stairs');
-INSERT INTO `hanjas` VALUES('反映','반영','reflect, be reflected');
-INSERT INTO `hanjas` VALUES('所屬','소속','belong to, attached to');
-INSERT INTO `hanjas` VALUES('醉','취','to be drunk');
-INSERT INTO `hanjas` VALUES('船長','선장','a captain');
-INSERT INTO `hanjas` VALUES('雪糖','설탕','sugar');
-INSERT INTO `hanjas` VALUES('時點','시점','point in time');
-INSERT INTO `hanjas` VALUES('意思','의사','an intention, a purpose');
-INSERT INTO `hanjas` VALUES('世界觀','세계관','a worldview');
-INSERT INTO `hanjas` VALUES('競爭力','경쟁력','competitiveness');
-INSERT INTO `hanjas` VALUES('情','정','feeling of attachment');
-INSERT INTO `hanjas` VALUES('症狀','증상','symptoms');
-INSERT INTO `hanjas` VALUES('强制','강제','compulsion, coercion');
-INSERT INTO `hanjas` VALUES('料金','요금','a rate, a fare');
-INSERT INTO `hanjas` VALUES('用-','용돈','pocket money, money for expenses');
-INSERT INTO `hanjas` VALUES('爲主','위주','put first in importance');
-INSERT INTO `hanjas` VALUES('飮料','음료','a beverage, a drink');
-INSERT INTO `hanjas` VALUES('地境','지경','a boundary, situation,state');
-INSERT INTO `hanjas` VALUES('痛症','통증','an ache, pain');
-INSERT INTO `hanjas` VALUES('便利','편리','to be convenient, handy');
-INSERT INTO `hanjas` VALUES('現金','현금','cash, ready funds, not a credit card');
-INSERT INTO `hanjas` VALUES('南部','남부','the southern part');
-INSERT INTO `hanjas` VALUES('無條件','무조건','unconditional');
-INSERT INTO `hanjas` VALUES('班長','반장','squad leader');
-INSERT INTO `hanjas` VALUES('附近','부근','neighborhood, vicinity');
-INSERT INTO `hanjas` VALUES('歷史家','역사가','historian');
-INSERT INTO `hanjas` VALUES('硏究者','연구자','researcher');
-INSERT INTO `hanjas` VALUES('演技者','연기자','a performer, an actor');
-INSERT INTO `hanjas` VALUES('警察官','경찰관','a policeman');
-INSERT INTO `hanjas` VALUES('勸','권','advise, persuade, recommend');
-INSERT INTO `hanjas` VALUES('大門','대문','a big gate');
-INSERT INTO `hanjas` VALUES('別途','별도','a separate way');
-INSERT INTO `hanjas` VALUES('市內','시내','the city');
-INSERT INTO `hanjas` VALUES('室內','실내','in the room');
-INSERT INTO `hanjas` VALUES('外交','외교','diplomacy');
-INSERT INTO `hanjas` VALUES('課長','과장','the department/section head');
-INSERT INTO `hanjas` VALUES('劇','극','drama, play');
-INSERT INTO `hanjas` VALUES('茶房','다방','tea room');
-INSERT INTO `hanjas` VALUES('實-','실로','really, indeed');
-INSERT INTO `hanjas` VALUES('煙氣','연기','smoke, fume');
-INSERT INTO `hanjas` VALUES('因緣','인연','cause and occasion');
-INSERT INTO `hanjas` VALUES('一行','일행','a party, group of people, troupe; line');
-INSERT INTO `hanjas` VALUES('知識人','지식인','an intellectual');
-INSERT INTO `hanjas` VALUES('眞摯','진지','to be serious, earnest');
-INSERT INTO `hanjas` VALUES('氣溫','기온','temperature');
-INSERT INTO `hanjas` VALUES('折半','절반','half');
-INSERT INTO `hanjas` VALUES('便安','편안','to be peaceful');
-INSERT INTO `hanjas` VALUES('氣候','기후','climate or  weather');
-INSERT INTO `hanjas` VALUES('大企業','대기업','big enterprise');
-INSERT INTO `hanjas` VALUES('部長','부장','head of a department');
-INSERT INTO `hanjas` VALUES('心理','심리','a mental state');
-INSERT INTO `hanjas` VALUES('心情','심정','one''s heart, one''s feelings');
-INSERT INTO `hanjas` VALUES('正--','정말로','really');
-INSERT INTO `hanjas` VALUES('刑事','형사','a criminal, penal case');
-INSERT INTO `hanjas` VALUES('戱曲','희곡','a drama, a play');
-INSERT INTO `hanjas` VALUES('感動','감동','agitate, stir up the emotions');
-INSERT INTO `hanjas` VALUES('急','급','be urgent, pressing, iminent');
-INSERT INTO `hanjas` VALUES('大衆文化','대중문화','pop culture');
-INSERT INTO `hanjas` VALUES('-氣','물기','moisture');
-INSERT INTO `hanjas` VALUES('禮節','예절','propriety, decorum');
-INSERT INTO `hanjas` VALUES('特定','특정','specify');
-INSERT INTO `hanjas` VALUES('교량','다리','bridge');
-INSERT INTO `hanjas` VALUES('部處','부처','Buddha');
-INSERT INTO `hanjas` VALUES('溫度','온도','temperature');
-INSERT INTO `hanjas` VALUES('絶對-','절대로','absolutely');
-INSERT INTO `hanjas` VALUES('眞-','진짜','real');
-INSERT INTO `hanjas` VALUES('窓-','창밖','outside the window');
-INSERT INTO `hanjas` VALUES('客觀的','객관적','objective');
-INSERT INTO `hanjas` VALUES('部隊','부대','unit, troops, squad (military)');
-INSERT INTO `hanjas` VALUES('視聽者','시청자','television audience member');
-INSERT INTO `hanjas` VALUES('完璧','완벽','perfect');
-INSERT INTO `hanjas` VALUES('從業員','종업원','waiter/waitress');
-INSERT INTO `hanjas` VALUES('學期','학기','an educational term');
-INSERT INTO `hanjas` VALUES('後期','후기','the latter term/period');
-INSERT INTO `hanjas` VALUES('牧師','목사','a pastor');
-INSERT INTO `hanjas` VALUES('收入','수입','income');
-INSERT INTO `hanjas` VALUES('兩-','양쪽','both sides');
-INSERT INTO `hanjas` VALUES('例--','예컨대','for example, such as');
-INSERT INTO `hanjas` VALUES('運動場','운동장','stadium, playground');
-INSERT INTO `hanjas` VALUES('後輩','후배','one''s junior');
-INSERT INTO `hanjas` VALUES('景氣','경기','the business market''s state');
-INSERT INTO `hanjas` VALUES('國會議員','국회의원','a member of the national assembly');
-INSERT INTO `hanjas` VALUES('到底','도저','absolutely impossible; by all means');
-INSERT INTO `hanjas` VALUES('政治權','정치권','political rights');
-INSERT INTO `hanjas` VALUES('學習','학습','learning, education');
-INSERT INTO `hanjas` VALUES('複道','복도','a corridor');
-INSERT INTO `hanjas` VALUES('首相','수상','head of sth; the Prime Minister');
-INSERT INTO `hanjas` VALUES('映像','영상','an image, picture, reflection; multimedia, movies');
-INSERT INTO `hanjas` VALUES('靈魂','영혼','a soul, a spirit');
-INSERT INTO `hanjas` VALUES('運轉士','운전사','a driver');
-INSERT INTO `hanjas` VALUES('週','주','one week');
-INSERT INTO `hanjas` VALUES('乃至','내지','from a to b');
-INSERT INTO `hanjas` VALUES('憤怒','분노','rage,anger');
-INSERT INTO `hanjas` VALUES('所謂','소위','what is called for');
-INSERT INTO `hanjas` VALUES('列車','열차','train');
-INSERT INTO `hanjas` VALUES('正式','정식','formality, due form');
-INSERT INTO `hanjas` VALUES('卽時','즉시','at once, immediately');
-INSERT INTO `hanjas` VALUES('最善','최선','the best, one''s best');
-INSERT INTO `hanjas` VALUES('塔','탑','a tower');
-INSERT INTO `hanjas` VALUES('韓服','한복','Korean traditional clothing');
-INSERT INTO `hanjas` VALUES('唐慌','당황','be confused');
-INSERT INTO `hanjas` VALUES('報告書','보고서','report');
-INSERT INTO `hanjas` VALUES('傷','상','damage, injure');
-INSERT INTO `hanjas` VALUES('食用油','식용유','cooking oil');
-INSERT INTO `hanjas` VALUES('業種','업종','types of industry');
-INSERT INTO `hanjas` VALUES('韓國語','한국어','Korean (language)');
-INSERT INTO `hanjas` VALUES('怯','겁','fear, fright, terror, dread');
-INSERT INTO `hanjas` VALUES('官吏','관리','a government official');
-INSERT INTO `hanjas` VALUES('國際化','국제화','internationalization');
-INSERT INTO `hanjas` VALUES('事前','사전','beforehand, in advance');
-INSERT INTO `hanjas` VALUES('市','시','city');
-INSERT INTO `hanjas` VALUES('新鮮','신선','fresh');
-INSERT INTO `hanjas` VALUES('聯合','연합','combination, federacy, union');
-INSERT INTO `hanjas` VALUES('章','장','a chapter in a book');
-INSERT INTO `hanjas` VALUES('敵','적','the enemy');
-INSERT INTO `hanjas` VALUES('質','질','quality, character');
-INSERT INTO `hanjas` VALUES('責任者','책임자','manager, person in charge');
-INSERT INTO `hanjas` VALUES('總','총','all, entire, whole');
-INSERT INTO `hanjas` VALUES('表','표','a marker, indication');
-INSERT INTO `hanjas` VALUES('品目','품목','item');
-INSERT INTO `hanjas` VALUES('別','별','classified by');
-INSERT INTO `hanjas` VALUES('副作用','부작용','reaction, side effect');
-INSERT INTO `hanjas` VALUES('威脅','위협','menace, threat, intimidation');
-INSERT INTO `hanjas` VALUES('科目','과목','a subject or  a lesson');
-INSERT INTO `hanjas` VALUES('論爭','논쟁','controversy, argument');
-INSERT INTO `hanjas` VALUES('數十','수십','tens of sth');
-INSERT INTO `hanjas` VALUES('儒敎','유교','Confucianism');
-INSERT INTO `hanjas` VALUES('理性','이성','reason, reasoning');
-INSERT INTO `hanjas` VALUES('日常','일상','everyday, usual, ordinary');
-INSERT INTO `hanjas` VALUES('自動','자동','automatic');
-INSERT INTO `hanjas` VALUES('罪悚','죄송','regret, be sorry for');
-INSERT INTO `hanjas` VALUES('重要性','중요성','importance, gravity');
-INSERT INTO `hanjas` VALUES('品質','품질','product quality');
-INSERT INTO `hanjas` VALUES('痕跡','흔적','traces, signs, evidence');
-INSERT INTO `hanjas` VALUES('腦','뇌','brains');
-INSERT INTO `hanjas` VALUES('封套','봉투','envelope');
-INSERT INTO `hanjas` VALUES('社說','사설','an editorial');
-INSERT INTO `hanjas` VALUES('主','주','one''s master, ones employer');
-INSERT INTO `hanjas` VALUES('何如-','하여튼','anyway, at any rate, in any case (interjection)');
-INSERT INTO `hanjas` VALUES('香氣','향기','fragrance, aroma, perfume');
-INSERT INTO `hanjas` VALUES('現地','현지','current location');
-INSERT INTO `hanjas` VALUES('每年','매년','every year');
-INSERT INTO `hanjas` VALUES('燒酒','소주','Korean alchohol');
-INSERT INTO `hanjas` VALUES('乘用車','승용차','a passenger car');
-INSERT INTO `hanjas` VALUES('語塞','어색','to be awkward, shy with words, speechless');
-INSERT INTO `hanjas` VALUES('長點','장점','a merit, strong point');
-INSERT INTO `hanjas` VALUES('平凡','평범','plain, average');
-INSERT INTO `hanjas` VALUES('弘報','홍보','public information, public relations');
-INSERT INTO `hanjas` VALUES('大量','대량','a large quantity');
-INSERT INTO `hanjas` VALUES('生鮮','생선','raw fish');
-INSERT INTO `hanjas` VALUES('臨時','임시','temporary, special');
-INSERT INTO `hanjas` VALUES('桶','통','a tub, a cask');
-INSERT INTO `hanjas` VALUES('特殊','특수','characteristic,distinct,unique');
-INSERT INTO `hanjas` VALUES('合--','합치다','combine, unite');
-INSERT INTO `hanjas` VALUES('企劃','기획','plan, project');
-INSERT INTO `hanjas` VALUES('本性','본성','human nature');
-INSERT INTO `hanjas` VALUES('生産力','생산력','productive capacity');
-INSERT INTO `hanjas` VALUES('留學','유학','study abroad');
-INSERT INTO `hanjas` VALUES('裝備','장비','equipment, fittings');
-INSERT INTO `hanjas` VALUES('政治人','정치인','politician');
-INSERT INTO `hanjas` VALUES('檢討','검토','an examination, investigation, study');
-INSERT INTO `hanjas` VALUES('技法','기법','techniques');
-INSERT INTO `hanjas` VALUES('弄談','농담','a joke');
-INSERT INTO `hanjas` VALUES('擔任','담임','charge, duty');
-INSERT INTO `hanjas` VALUES('途中','도중','on the way');
-INSERT INTO `hanjas` VALUES('人','인','a person');
-INSERT INTO `hanjas` VALUES('字板','자판','keyboard');
-INSERT INTO `hanjas` VALUES('前期','전기','the former period/term');
-INSERT INTO `hanjas` VALUES('中盤','중반','at the middle stage (of a game or contest, or otherwise)');
-INSERT INTO `hanjas` VALUES('各國','각국','each country');
-INSERT INTO `hanjas` VALUES('敎科書','교과서','textbook');
-INSERT INTO `hanjas` VALUES('多數','다수','a great number');
-INSERT INTO `hanjas` VALUES('德分','덕분','indebtedness');
-INSERT INTO `hanjas` VALUES('個國','개국','the foundation of a country');
-INSERT INTO `hanjas` VALUES('汽車','기차','a train');
-INSERT INTO `hanjas` VALUES('使用者','사용자','a user, consumer, employer');
-INSERT INTO `hanjas` VALUES('社會主義','사회주의','socialism');
-INSERT INTO `hanjas` VALUES('首都圈','수도권','the metropolitan area');
-INSERT INTO `hanjas` VALUES('總理','총리','general overseeing, presiding over');
-INSERT INTO `hanjas` VALUES('肯定的','긍정적','affirmation, admission');
-INSERT INTO `hanjas` VALUES('貸出','대출','lending');
-INSERT INTO `hanjas` VALUES('德','덕','virtue, morality');
-INSERT INTO `hanjas` VALUES('反','반','to be contrary to');
-INSERT INTO `hanjas` VALUES('社員','사원','company employee');
-INSERT INTO `hanjas` VALUES('額數','액수','a sum, an amount');
-INSERT INTO `hanjas` VALUES('欲心','욕심','greed, selfishness');
-INSERT INTO `hanjas` VALUES('直前','직전','just immediately before');
-INSERT INTO `hanjas` VALUES('擇','택','choose, select');
-INSERT INTO `hanjas` VALUES('家口','가구','family');
-INSERT INTO `hanjas` VALUES('江-','강물','river water');
-INSERT INTO `hanjas` VALUES('窮極的','궁극적','finally or in the end, 마지막으로');
-INSERT INTO `hanjas` VALUES('極-','극히','exceedingly,  extremely');
-INSERT INTO `hanjas` VALUES('變動','변동','change, flucutation');
-INSERT INTO `hanjas` VALUES('不可避','불가피','inevitable, unavoidable ');
-INSERT INTO `hanjas` VALUES('運','운','fortune, luck, fate');
-INSERT INTO `hanjas` VALUES('日常生活','일상생활','everyday (daily) life');
-INSERT INTO `hanjas` VALUES('自尊心','자존심','self-confidence');
-INSERT INTO `hanjas` VALUES('證券社','증권사','securities corporation');
-INSERT INTO `hanjas` VALUES('津','진','be dark, deep');
-INSERT INTO `hanjas` VALUES('草原','초원','a plain, a prarie');
-INSERT INTO `hanjas` VALUES('最終','최종','last, final, terminal');
-INSERT INTO `hanjas` VALUES('興味','흥미','interest, zeal');
-INSERT INTO `hanjas` VALUES('比率','비율','ratio, percentage');
-INSERT INTO `hanjas` VALUES('騷音','소음','a noise, cacaphony');
-INSERT INTO `hanjas` VALUES('兩國','양국','both countries');
-INSERT INTO `hanjas` VALUES('中部','중부','the center, middle part');
-INSERT INTO `hanjas` VALUES('茶','차','tea');
-INSERT INTO `hanjas` VALUES('菜蔬','채소','vegetables');
-INSERT INTO `hanjas` VALUES('環境汚染','환경오염','environmental pollution');
-INSERT INTO `hanjas` VALUES('價値觀','가치관','one''s values or sense of values, a value system');
-INSERT INTO `hanjas` VALUES('--色','검은색','black, dark');
-INSERT INTO `hanjas` VALUES('紀元前','기원전','B.C.');
-INSERT INTO `hanjas` VALUES('其他','기타','the others or  the rest');
-INSERT INTO `hanjas` VALUES('緊急','긴급','emergency');
-INSERT INTO `hanjas` VALUES('無慮','무려','as many as, no less  than');
-INSERT INTO `hanjas` VALUES('手票','수표','a check');
-INSERT INTO `hanjas` VALUES('實態','실태','the actual conditions,reality');
-INSERT INTO `hanjas` VALUES('日程','일정','to be fixed, settled, regular');
-INSERT INTO `hanjas` VALUES('接','접','adjoin, be adjacent to');
-INSERT INTO `hanjas` VALUES('精誠','정성','true heart, devotion');
-INSERT INTO `hanjas` VALUES('制約','제약','a condition, restriction');
-INSERT INTO `hanjas` VALUES('加','가','to add');
-INSERT INTO `hanjas` VALUES('-醬','간장','soy sauce');
-INSERT INTO `hanjas` VALUES('科','과','a course or  branch of study; a department or  a faculty');
-INSERT INTO `hanjas` VALUES('國語','국어','the national language; Korean');
-INSERT INTO `hanjas` VALUES('上','상','upper');
-INSERT INTO `hanjas` VALUES('樂器','악기','musical instrument');
-INSERT INTO `hanjas` VALUES('年末','연말','the end, close of the year');
-INSERT INTO `hanjas` VALUES('原稿','원고','a manuscript');
-INSERT INTO `hanjas` VALUES('差','차','difference, margin');
-INSERT INTO `hanjas` VALUES('香','향','perfume, incense');
-INSERT INTO `hanjas` VALUES('計座','계좌','account');
-INSERT INTO `hanjas` VALUES('末期','말기','the end, final period');
-INSERT INTO `hanjas` VALUES('亡','망','go to ruin');
-INSERT INTO `hanjas` VALUES('拍手','박수','applause');
-INSERT INTO `hanjas` VALUES('富者','부자','a rich person');
-INSERT INTO `hanjas` VALUES('西-','서쪽','the west');
-INSERT INTO `hanjas` VALUES('孫子','손자','grandson');
-INSERT INTO `hanjas` VALUES('新郞','신랑','a bridegroom');
-INSERT INTO `hanjas` VALUES('實習','실습','actual training, practice');
-INSERT INTO `hanjas` VALUES('自律','자율','self-control, autonomy');
-INSERT INTO `hanjas` VALUES('天障','천장','the ceiling');
-INSERT INTO `hanjas` VALUES('畵家','화가','a painter, a drawer artist');
-INSERT INTO `hanjas` VALUES('賣場','매장','a store, shop');
-INSERT INTO `hanjas` VALUES('名稱','명칭','a name,title');
-INSERT INTO `hanjas` VALUES('實力','실력','one''s real ability,talent');
-INSERT INTO `hanjas` VALUES('人體','인체','the human body');
-INSERT INTO `hanjas` VALUES('疾病','질병','a disease, sickness');
-INSERT INTO `hanjas` VALUES('體力','체력','physical strength');
-INSERT INTO `hanjas` VALUES('各其','각기','each, respectively');
-INSERT INTO `hanjas` VALUES('軍士','군사','a soldier, a private');
-INSERT INTO `hanjas` VALUES('鬼神','귀신','a ghost');
-INSERT INTO `hanjas` VALUES('貴','귀','noble, high; dear; lovable, precious');
-INSERT INTO `hanjas` VALUES('-床','밥상','dinner table');
-INSERT INTO `hanjas` VALUES('沙果','사과','an apple');
-INSERT INTO `hanjas` VALUES('例外','예외','an exception');
-INSERT INTO `hanjas` VALUES('琉璃','유리','a glass pane');
-INSERT INTO `hanjas` VALUES('最大限','최대한','the most, the maximum, highest');
-INSERT INTO `hanjas` VALUES('兄夫','형부','a husband of a girl''s older sister');
-INSERT INTO `hanjas` VALUES('今年','금년','this year');
-INSERT INTO `hanjas` VALUES('機器','기기','equipment, machinery, instrument');
-INSERT INTO `hanjas` VALUES('羅針盤','나침반','a compass');
-INSERT INTO `hanjas` VALUES('大學院','대학원','graduate school');
-INSERT INTO `hanjas` VALUES('到達','도달','arrival');
-INSERT INTO `hanjas` VALUES('辯護士','변호사','lawyer');
-INSERT INTO `hanjas` VALUES('像','상','a statue, a figure');
-INSERT INTO `hanjas` VALUES('想像力','상상력','imagination, imaginative');
-INSERT INTO `hanjas` VALUES('女學生','여학생','female student');
-INSERT INTO `hanjas` VALUES('有利','유리','to be profitable, favorable');
-INSERT INTO `hanjas` VALUES('自然環境','자연환경','natural surroundings');
-INSERT INTO `hanjas` VALUES('地點','지점','a spot, point');
-INSERT INTO `hanjas` VALUES('學父母','학부모','students'' parents');
-INSERT INTO `hanjas` VALUES('冷藏庫','냉장고','freezer');
-INSERT INTO `hanjas` VALUES('連續','연속','continuity, continuous, in succession');
-INSERT INTO `hanjas` VALUES('院長','원장','the chief, the head of');
-INSERT INTO `hanjas` VALUES('遺物','유물','a relic, antiquity, artifact');
-INSERT INTO `hanjas` VALUES('整備','정비','organize; maintain');
-INSERT INTO `hanjas` VALUES('--番','지난번','last time');
-INSERT INTO `hanjas` VALUES('被害者','피해자','victim');
-INSERT INTO `hanjas` VALUES('學用品','학용품','stationary, school supplies');
-INSERT INTO `hanjas` VALUES('花盆','화분','flower pot');
-INSERT INTO `hanjas` VALUES('褐色','갈색','brown');
-INSERT INTO `hanjas` VALUES('感氣','감기','a cold');
-INSERT INTO `hanjas` VALUES('江南','강남','south of a river');
-INSERT INTO `hanjas` VALUES('反撥','반발','repulsion, a backlash');
-INSERT INTO `hanjas` VALUES('飯饌','반찬','side dishes');
-INSERT INTO `hanjas` VALUES('抑鬱','억울','to be victimized, treated unfairly');
-INSERT INTO `hanjas` VALUES('前-','전날','the day before, the day prior');
-INSERT INTO `hanjas` VALUES('健全','건전','healthy, sound, wholesome');
-INSERT INTO `hanjas` VALUES('結婚式','결혼식','wedding ceremony');
-INSERT INTO `hanjas` VALUES('計算器','계산기','calculator');
-INSERT INTO `hanjas` VALUES('廣場','광장','plaza, public square');
-INSERT INTO `hanjas` VALUES('堂堂','당당','dignified');
-INSERT INTO `hanjas` VALUES('罰','벌','punishment');
-INSERT INTO `hanjas` VALUES('-初','애초','the first, the beginning');
-INSERT INTO `hanjas` VALUES('依支','의지','count on, depend on, rely on');
-INSERT INTO `hanjas` VALUES('初盤','초반','early phase, early stage');
-INSERT INTO `hanjas` VALUES('幅--','폭넓다','to be wide-ranging, broad');
-INSERT INTO `hanjas` VALUES('學番','학번','year of graduation');
-INSERT INTO `hanjas` VALUES('學院','학원','academy');
-INSERT INTO `hanjas` VALUES('穀食','곡식','cereals, grains');
-INSERT INTO `hanjas` VALUES('別---','별다르다','particular, special');
-INSERT INTO `hanjas` VALUES('部品','부품','parts, accessories, components');
-INSERT INTO `hanjas` VALUES('西部','서부','the western part');
-INSERT INTO `hanjas` VALUES('俗談','속담','a proverb, saying');
-INSERT INTO `hanjas` VALUES('市中','시중','in the city');
-INSERT INTO `hanjas` VALUES('類似','유사','to be similar, to resemble');
-INSERT INTO `hanjas` VALUES('意欲','의욕','volition, will, desire, drive');
-INSERT INTO `hanjas` VALUES('隣近','인근','neighborhood');
-INSERT INTO `hanjas` VALUES('一般人','일반인','ordinary person, the general public, the public at large');
-INSERT INTO `hanjas` VALUES('定期','정기','a fixed time period');
-INSERT INTO `hanjas` VALUES('終日','종일','all day, throughout the whole day');
-INSERT INTO `hanjas` VALUES('化粧','화장','makeup');
-INSERT INTO `hanjas` VALUES('强烈','강렬','intense,  strong, severe');
-INSERT INTO `hanjas` VALUES('交通事故','교통사고','traffic accident');
-INSERT INTO `hanjas` VALUES('免','면','escape, avoid, get away with');
-INSERT INTO `hanjas` VALUES('摸索','모색','evening twilight');
-INSERT INTO `hanjas` VALUES('四方','사방','the four directions');
-INSERT INTO `hanjas` VALUES('演藝人','연예인','a performer, an entertainer');
-INSERT INTO `hanjas` VALUES('月給','월급','monthly salary');
-INSERT INTO `hanjas` VALUES('敢','감','daringly, boldly');
-INSERT INTO `hanjas` VALUES('强要','강요','insist on, compel, coerce');
-INSERT INTO `hanjas` VALUES('慣習','관습','custom, convention');
-INSERT INTO `hanjas` VALUES('名義','명의','name, title');
-INSERT INTO `hanjas` VALUES('密接','밀접','be close, intimate with');
-INSERT INTO `hanjas` VALUES('箱子','상자','a box, case');
-INSERT INTO `hanjas` VALUES('數--','수없이','be unable to do sth');
-INSERT INTO `hanjas` VALUES('兩','양','both, two');
-INSERT INTO `hanjas` VALUES('通帳','통장','a bankbook (check register)');
-INSERT INTO `hanjas` VALUES('黑人','흑인','black person');
-INSERT INTO `hanjas` VALUES('肝','간','liver');
-INSERT INTO `hanjas` VALUES('競技場','경기장','sports stadium, sports field');
-INSERT INTO `hanjas` VALUES('-瞳子','눈동자','the pupil (of the eye)');
-INSERT INTO `hanjas` VALUES('副會長','부회장','a vice president');
-INSERT INTO `hanjas` VALUES('誠實','성실','be ripe');
-INSERT INTO `hanjas` VALUES('實際','실제','the truth, a fact');
-INSERT INTO `hanjas` VALUES('一切','일체','all-in-one, all, everything, the whole');
-INSERT INTO `hanjas` VALUES('透明','투명','to be transparent, clear');
-INSERT INTO `hanjas` VALUES('擴散','확산','to get diffused');
-INSERT INTO `hanjas` VALUES('經歷','경력','one''s personal history');
-INSERT INTO `hanjas` VALUES('大多數','대다수','a large majority');
-INSERT INTO `hanjas` VALUES('無料','무료','free');
-INSERT INTO `hanjas` VALUES('象徵','상징','symbolize');
-INSERT INTO `hanjas` VALUES('演說','연설','a public speech');
-INSERT INTO `hanjas` VALUES('日子','일자','a date, the number of days');
-INSERT INTO `hanjas` VALUES('恨','한','a grudge, rancor');
-INSERT INTO `hanjas` VALUES('觀光客','관광객','a tourist');
-INSERT INTO `hanjas` VALUES('悲鳴','비명','a scream');
-INSERT INTO `hanjas` VALUES('專用','전용','exclusive or private use');
-INSERT INTO `hanjas` VALUES('至極','지극','very, extremely');
-INSERT INTO `hanjas` VALUES('請','청','ask, request');
-INSERT INTO `hanjas` VALUES('確定','확정','decision, settlement');
-INSERT INTO `hanjas` VALUES('假想','가상','imagination');
-INSERT INTO `hanjas` VALUES('各自','각자','each one, every one');
-INSERT INTO `hanjas` VALUES('間或','간혹','occasionally, at times');
-INSERT INTO `hanjas` VALUES('國産','국산','domestic');
-INSERT INTO `hanjas` VALUES('道','도','road');
-INSERT INTO `hanjas` VALUES('補償','보상','compensation');
-INSERT INTO `hanjas` VALUES('庶民','서민','common people');
-INSERT INTO `hanjas` VALUES('席','석','a seat,sitting place');
-INSERT INTO `hanjas` VALUES('選定','선정','select,choose');
-INSERT INTO `hanjas` VALUES('少數','소수','a small number, a few');
-INSERT INTO `hanjas` VALUES('媤---','시어머니','one''s husband''s mother');
-INSERT INTO `hanjas` VALUES('媤-','시집','one''s husband''s home/family, to marry / take a husband');
-INSERT INTO `hanjas` VALUES('年間','연간','for a year');
-INSERT INTO `hanjas` VALUES('映畵祭','영화제','movie festival');
-INSERT INTO `hanjas` VALUES('豫測','예측','to predict, forecast');
-INSERT INTO `hanjas` VALUES('適合','적합','suitability, fitness');
-INSERT INTO `hanjas` VALUES('電話番號','전화번호','telephone number');
-INSERT INTO `hanjas` VALUES('論','논','argue, discuss, debate');
-INSERT INTO `hanjas` VALUES('道德','도덕','immorality');
-INSERT INTO `hanjas` VALUES('事務所','사무소','office ');
-INSERT INTO `hanjas` VALUES('四寸','사촌','a cousin');
-INSERT INTO `hanjas` VALUES('賞','상','a prize');
-INSERT INTO `hanjas` VALUES('遺跡','유적','remains, relics, ruins');
-INSERT INTO `hanjas` VALUES('一生','일생','one''s lifetime');
-INSERT INTO `hanjas` VALUES('情報化','정보화','the information age');
-INSERT INTO `hanjas` VALUES('種種','종종','sometimes, occasionally');
-INSERT INTO `hanjas` VALUES('紙匣','지갑','a purse, wallet');
-INSERT INTO `hanjas` VALUES('創作','창작','creation, origination');
-INSERT INTO `hanjas` VALUES('趣向','취향','taste, liking, preference');
-INSERT INTO `hanjas` VALUES('學級','학급','a class (school)');
-INSERT INTO `hanjas` VALUES('效率的','효율적','efficiency');
-INSERT INTO `hanjas` VALUES('金額','금액','amount of money');
-INSERT INTO `hanjas` VALUES('名節','명절','holiday');
-INSERT INTO `hanjas` VALUES('飛行','비행','flying, aviation');
-INSERT INTO `hanjas` VALUES('相關--','상관없다','to be of no concern');
-INSERT INTO `hanjas` VALUES('壽命','수명','life span');
-INSERT INTO `hanjas` VALUES('神奇','신기','to be amazing, marvelous, wonderful');
-INSERT INTO `hanjas` VALUES('飮食物','음식물','food and drink');
-INSERT INTO `hanjas` VALUES('自信感','자신감','self-confidence');
-INSERT INTO `hanjas` VALUES('罪人','죄인','a criminal');
-INSERT INTO `hanjas` VALUES('準備物','준비물','stuff that needs to be prepared');
-INSERT INTO `hanjas` VALUES('出入','출입','entrance/exit');
-INSERT INTO `hanjas` VALUES('快感','쾌감','a pleasant sensation, a good feeling');
-INSERT INTO `hanjas` VALUES('何必','하필','why necessarily? why of all things?');
-INSERT INTO `hanjas` VALUES('灰色','회색','gray');
-INSERT INTO `hanjas` VALUES('巨額','거액','fortune, a large sum of money');
-INSERT INTO `hanjas` VALUES('高校','고교','high school');
-INSERT INTO `hanjas` VALUES('敎訓','교훈','lesson, moral');
-INSERT INTO `hanjas` VALUES('--房','노래방','singing room');
-INSERT INTO `hanjas` VALUES('短篇','단편','a piece, fragment');
-INSERT INTO `hanjas` VALUES('明確','명확','clear, precise');
-INSERT INTO `hanjas` VALUES('先進','선진','seniority, advance');
-INSERT INTO `hanjas` VALUES('新規','신규','start anew');
-INSERT INTO `hanjas` VALUES('實-','실은','actually, in fact');
-INSERT INTO `hanjas` VALUES('良心','양심','conscience');
-INSERT INTO `hanjas` VALUES('理事長','이사장','chairman of the board');
-INSERT INTO `hanjas` VALUES('利子','이자','interest');
-INSERT INTO `hanjas` VALUES('症勢','증세','symptoms');
-INSERT INTO `hanjas` VALUES('進級','진급','promotion');
-INSERT INTO `hanjas` VALUES('港口','항구','a port, a harbor');
-INSERT INTO `hanjas` VALUES('-機','헬기','helicopter');
-INSERT INTO `hanjas` VALUES('艱辛','간신','narrowly, barely');
-INSERT INTO `hanjas` VALUES('空軍','공군','the air force');
-INSERT INTO `hanjas` VALUES('技術者','기술자','technician');
-INSERT INTO `hanjas` VALUES('年生','년생','year of birth');
-INSERT INTO `hanjas` VALUES('大都市','대도시','large city');
-INSERT INTO `hanjas` VALUES('帽子','모자','a hat');
-INSERT INTO `hanjas` VALUES('補助','보조','help, assistance, aid');
-INSERT INTO `hanjas` VALUES('不利','불리','to be disadvantageous, unfavorable');
-INSERT INTO `hanjas` VALUES('睡眠','수면','sleep, slumber');
-INSERT INTO `hanjas` VALUES('數千','수천','thousands');
-INSERT INTO `hanjas` VALUES('勝負','승부','a contest, match');
-INSERT INTO `hanjas` VALUES('新入生','신입생','a new student');
-INSERT INTO `hanjas` VALUES('如干','여간','some, a little');
-INSERT INTO `hanjas` VALUES('驛','역','a railroad station, depot');
-INSERT INTO `hanjas` VALUES('影響力','영향력','influence, power to influence');
-INSERT INTO `hanjas` VALUES('禮儀','예의','courtesy, politeness');
-INSERT INTO `hanjas` VALUES('以內','이내','within, less than');
-INSERT INTO `hanjas` VALUES('支拂','지불','to pay');
-INSERT INTO `hanjas` VALUES('派出所','파출소','police precinct station');
-INSERT INTO `hanjas` VALUES('板','판','board');
-INSERT INTO `hanjas` VALUES('漢文','한문','Chinese writing, Chinese classics');
-INSERT INTO `hanjas` VALUES('決勝','결승','finals (in a tournament)');
-INSERT INTO `hanjas` VALUES('公共','공공','public, common');
-INSERT INTO `hanjas` VALUES('敎養','교양','culture, education');
-INSERT INTO `hanjas` VALUES('大槪','대개','mostly, for the most part');
-INSERT INTO `hanjas` VALUES('鬚髥','수염','beard');
-INSERT INTO `hanjas` VALUES('旅券','여권','a passport');
-INSERT INTO `hanjas` VALUES('外貌','외모','outward appearance');
-INSERT INTO `hanjas` VALUES('人工','인공','artificial, man-made');
-INSERT INTO `hanjas` VALUES('長男','장남','the eldest son');
-INSERT INTO `hanjas` VALUES('全般','전반','the whole, all, general');
-INSERT INTO `hanjas` VALUES('隻','척','ship, boat, vessel (counter)');
-INSERT INTO `hanjas` VALUES('葡萄酒','포도주','grape wine');
-INSERT INTO `hanjas` VALUES('學術','학술','science, learning, scolarship');
-INSERT INTO `hanjas` VALUES('高喊','고함','shout, yell, scream');
-INSERT INTO `hanjas` VALUES('臺詞','대사','speech, dialogue');
-INSERT INTO `hanjas` VALUES('罰金','벌금','a fine');
-INSERT INTO `hanjas` VALUES('福','복','luck,happiness');
-INSERT INTO `hanjas` VALUES('部署','부서','department, one''s post, duty');
-INSERT INTO `hanjas` VALUES('城','성','castle, fortress');
-INSERT INTO `hanjas` VALUES('小型','소형','small size');
-INSERT INTO `hanjas` VALUES('新人','신인','rookie, newbie');
-INSERT INTO `hanjas` VALUES('熱情','열정','passion');
-INSERT INTO `hanjas` VALUES('絶對','절대','absoluteness');
-INSERT INTO `hanjas` VALUES('體重','체중','body weight');
-INSERT INTO `hanjas` VALUES('秋夕','추석','Korean Thanksgiving');
-INSERT INTO `hanjas` VALUES('包裝','포장','packing, wrapping');
-INSERT INTO `hanjas` VALUES('玄關','현관','door, entrance');
-INSERT INTO `hanjas` VALUES('現代人','현대인','contemporary/modern man');
-INSERT INTO `hanjas` VALUES('惠澤','혜택','a favor, benefit');
-INSERT INTO `hanjas` VALUES('綠色','녹색','green');
-INSERT INTO `hanjas` VALUES('發電','발전','generate electricity');
-INSERT INTO `hanjas` VALUES('番號','번호','a number');
-INSERT INTO `hanjas` VALUES('本人','본인','person in question');
-INSERT INTO `hanjas` VALUES('商店','상점','a shop, store');
-INSERT INTO `hanjas` VALUES('數百','수백','hundreds');
-INSERT INTO `hanjas` VALUES('室長','실장','boss, president');
-INSERT INTO `hanjas` VALUES('二重','이중','duplication, double');
-INSERT INTO `hanjas` VALUES('正門','정문','the front gate, main entrance');
-INSERT INTO `hanjas` VALUES('窓','창','window');
-INSERT INTO `hanjas` VALUES('親庭','친정','a woman''s maiden home and family');
-INSERT INTO `hanjas` VALUES('行','행','to do, act, behave');
-INSERT INTO `hanjas` VALUES('個別','개별','an individual, each');
-INSERT INTO `hanjas` VALUES('基督敎','기독교','Christianity');
-INSERT INTO `hanjas` VALUES('短點','단점','a weakness, flaw, shortcoming, drawback');
-INSERT INTO `hanjas` VALUES('目錄','목록','list, inventory');
-INSERT INTO `hanjas` VALUES('別名','별명','nickname, alias');
-INSERT INTO `hanjas` VALUES('癌','암','cancer');
-INSERT INTO `hanjas` VALUES('惹端','야단','clamor, uproar; scolding, telling off');
-INSERT INTO `hanjas` VALUES('聯關','연관','relation, connection, concerned with');
-INSERT INTO `hanjas` VALUES('陸軍','육군','the army');
-INSERT INTO `hanjas` VALUES('飮食店','음식점','restaurant');
-INSERT INTO `hanjas` VALUES('人分','인분','portions/servings (counter)');
-INSERT INTO `hanjas` VALUES('粥','죽','rice porridge');
-INSERT INTO `hanjas` VALUES('菓子','과자','a snack, pastries, candy, cookie');
-INSERT INTO `hanjas` VALUES('大學校','대학교','college, university');
-INSERT INTO `hanjas` VALUES('房門','방문','door');
-INSERT INTO `hanjas` VALUES('病--','병들다','get sick');
-INSERT INTO `hanjas` VALUES('相對性','상대성','relativity');
-INSERT INTO `hanjas` VALUES('設問','설문','survey, questionnaire');
-INSERT INTO `hanjas` VALUES('小說家','소설가','novelist');
-INSERT INTO `hanjas` VALUES('留意','유의','to pay attention to, bear in mind, be heedful of');
-INSERT INTO `hanjas` VALUES('儒學','유학','Confucianism');
-INSERT INTO `hanjas` VALUES('引下','인하','reduction, lowering');
-INSERT INTO `hanjas` VALUES('展示會','전시회','an exhibition, show, display');
-INSERT INTO `hanjas` VALUES('政治學','정치학','political science');
-INSERT INTO `hanjas` VALUES('吐','토','to vomit');
-INSERT INTO `hanjas` VALUES('歌詞','가사','words, lyrics');
-INSERT INTO `hanjas` VALUES('加入者','가입자','member, subscriber, policyholder');
-INSERT INTO `hanjas` VALUES('痲藥','마약','narcotics, drugs');
-INSERT INTO `hanjas` VALUES('富','부','wealth, riches');
-INSERT INTO `hanjas` VALUES('所用','소용','use, good');
-INSERT INTO `hanjas` VALUES('手巾','수건','towel, washcloth');
-INSERT INTO `hanjas` VALUES('瞬息間','순식간','a brief instant, a moment');
-INSERT INTO `hanjas` VALUES('詩集','시집','a collection of poems');
-INSERT INTO `hanjas` VALUES('弱點','약점','weakness, a weak point, a vulnerable point');
-INSERT INTO `hanjas` VALUES('洋服','양복','suit');
-INSERT INTO `hanjas` VALUES('女','여','a woman, a girl');
-INSERT INTO `hanjas` VALUES('年齡','연령','age, years of age');
-INSERT INTO `hanjas` VALUES('履歷書','이력서','curriculum vitae, a resume');
-INSERT INTO `hanjas` VALUES('周年','주년','anniversary');
-INSERT INTO `hanjas` VALUES('重大','중대','important, grave');
-INSERT INTO `hanjas` VALUES('中心地','중심지','hub, capital, central (of)');
-INSERT INTO `hanjas` VALUES('出版社','출판사','publishing house, publisher, a publishing company');
-INSERT INTO `hanjas` VALUES('風俗','풍속','manners, customs, morals');
-INSERT INTO `hanjas` VALUES('-層','한층','more, still more');
-INSERT INTO `hanjas` VALUES('干涉','간섭','interfere, meddle, butt in on, intrude');
-INSERT INTO `hanjas` VALUES('渴症','갈증','thirst');
-INSERT INTO `hanjas` VALUES('起源','기원','origin');
-INSERT INTO `hanjas` VALUES('亂離','난리','a war, revolt, panic, fuss');
-INSERT INTO `hanjas` VALUES('男妹','남매','brother and sister');
-INSERT INTO `hanjas` VALUES('相關','상관','care about, be bothered by');
-INSERT INTO `hanjas` VALUES('世','세','a generation,age,epoch');
-INSERT INTO `hanjas` VALUES('按酒','안주','appetizers for alcohol');
-INSERT INTO `hanjas` VALUES('熱氣','열기','heat, hot air; excitement, fever');
-INSERT INTO `hanjas` VALUES('電鐵','전철','metro, subway');
-INSERT INTO `hanjas` VALUES('通話','통화','call, telephone conversation');
-INSERT INTO `hanjas` VALUES('特異','특이','be peculiar, special, unique, eccentric');
-INSERT INTO `hanjas` VALUES('假-','가짜','fake, forgery, imitation, counterfeit');
-INSERT INTO `hanjas` VALUES('强度','강도','intensity, strength');
-INSERT INTO `hanjas` VALUES('急-','급히','fast, quickly, in a hurry');
-INSERT INTO `hanjas` VALUES('說得','설득','persuade, convince');
-INSERT INTO `hanjas` VALUES('食-','식빵','bread');
-INSERT INTO `hanjas` VALUES('運轉者','운전자','the driver');
-INSERT INTO `hanjas` VALUES('琉璃窓','유리창','glass window');
-INSERT INTO `hanjas` VALUES('差異點','차이점','difference');
-INSERT INTO `hanjas` VALUES('總角','총각','a bachelor, a single man');
-INSERT INTO `hanjas` VALUES('颱風','태풍','typhoon');
-INSERT INTO `hanjas` VALUES('敎職','교직','the teaching profession');
-INSERT INTO `hanjas` VALUES('貴重','귀중','to be precious');
-INSERT INTO `hanjas` VALUES('技士','기사','technician');
-INSERT INTO `hanjas` VALUES('寄宿舍','기숙사','a hostel; residence hall');
-INSERT INTO `hanjas` VALUES('單獨','단독','independence');
-INSERT INTO `hanjas` VALUES('散策','산책','a walk, stroll');
-INSERT INTO `hanjas` VALUES('生氣','생기','animation, life');
-INSERT INTO `hanjas` VALUES('書籍','서적','books, publications');
-INSERT INTO `hanjas` VALUES('受驗生','수험생','test-taker, examinee');
-INSERT INTO `hanjas` VALUES('新世代','신세대','the new generation');
-INSERT INTO `hanjas` VALUES('硏究員','연구원','researcher');
-INSERT INTO `hanjas` VALUES('戀愛','연애','date, have a relationship with');
-INSERT INTO `hanjas` VALUES('連休','연휴','long weekend, holiday');
-INSERT INTO `hanjas` VALUES('月曜日','월요일','Monday');
-INSERT INTO `hanjas` VALUES('意外-','의외로','unexpectedly, surprisingly');
-INSERT INTO `hanjas` VALUES('姨母','이모','a maternal aunt');
-INSERT INTO `hanjas` VALUES('鐵','철','steel');
-INSERT INTO `hanjas` VALUES('就職','취직','seek employment, get a job');
-INSERT INTO `hanjas` VALUES('會館','회관','an assembly hall');
-INSERT INTO `hanjas` VALUES('公演場','공연장','auditorium');
-INSERT INTO `hanjas` VALUES('近來','근래','of late or  recently');
-INSERT INTO `hanjas` VALUES('多情','다정','to be kind, affectionate, warm-hearted');
-INSERT INTO `hanjas` VALUES('上流','상류','upper class');
-INSERT INTO `hanjas` VALUES('鮮明','선명','to be clear, distinct');
-INSERT INTO `hanjas` VALUES('選好','선호','to prefer');
-INSERT INTO `hanjas` VALUES('小規模','소규모','small scale');
-INSERT INTO `hanjas` VALUES('隨時-','수시로','frequently, often');
-INSERT INTO `hanjas` VALUES('視野','시야','visual field');
-INSERT INTO `hanjas` VALUES('類型','유형','type, category, class');
-INSERT INTO `hanjas` VALUES('前後','전후','sequence, order, front and rear');
-INSERT INTO `hanjas` VALUES('質的','질적','qualitative');
-INSERT INTO `hanjas` VALUES('齒牙','치아','tooth');
-INSERT INTO `hanjas` VALUES('解說','해설','explanation, commentary');
-INSERT INTO `hanjas` VALUES('黑白','흑백','black and white; right and wrong');
-INSERT INTO `hanjas` VALUES('强盜','강도','robber, burglar');
-INSERT INTO `hanjas` VALUES('經費','경비','expense, cost, charge');
-INSERT INTO `hanjas` VALUES('經濟力','경제력','economic power');
-INSERT INTO `hanjas` VALUES('禁','금','prohibit, ban, forbid');
-INSERT INTO `hanjas` VALUES('農事--','농사짓다','to farm');
-INSERT INTO `hanjas` VALUES('擔當者','담당자','person in charge');
-INSERT INTO `hanjas` VALUES('答辯','답변','an answer, response, reply');
-INSERT INTO `hanjas` VALUES('大體','대체','why on earth?, what the hell?');
-INSERT INTO `hanjas` VALUES('都心','도심','downtown, city center');
-INSERT INTO `hanjas` VALUES('未婚','미혼','unmarried');
-INSERT INTO `hanjas` VALUES('放送社','방송사','broadcasting company');
-INSERT INTO `hanjas` VALUES('辭表','사표','a written resignation');
-INSERT INTO `hanjas` VALUES('生放送','생방송','a live broadcast');
-INSERT INTO `hanjas` VALUES('疏忽','소홀','carelessly, roughly, indifferently, negligently');
-INSERT INTO `hanjas` VALUES('雙--','쌍둥이','twins');
-INSERT INTO `hanjas` VALUES('零下','영하','below zero');
-INSERT INTO `hanjas` VALUES('外國語','외국어','foreign language');
-INSERT INTO `hanjas` VALUES('子正','자정','midnight');
-INSERT INTO `hanjas` VALUES('中學生','중학생','middle school student');
-INSERT INTO `hanjas` VALUES('取材','취재','selection, picking out of news articles (by a reporter)');
-INSERT INTO `hanjas` VALUES('討論會','토론회','debate, panel discussion, forum');
-INSERT INTO `hanjas` VALUES('-盞','한잔','have a drink');
-INSERT INTO `hanjas` VALUES('胡---','호주머니','a pocket');
-INSERT INTO `hanjas` VALUES('郡','군','a county or district');
-INSERT INTO `hanjas` VALUES('-曆','달력','a calendar');
-INSERT INTO `hanjas` VALUES('陶瓷器','도자기','ceramics, porcelain, earthenware');
-INSERT INTO `hanjas` VALUES('變更','변경','change, alteration');
-INSERT INTO `hanjas` VALUES('三寸','삼촌','an uncle');
-INSERT INTO `hanjas` VALUES('相當數','상당수','plenty, a lot of, a considerable number');
-INSERT INTO `hanjas` VALUES('逍風','소풍','picnic');
-INSERT INTO `hanjas` VALUES('新聞紙','신문지','newspaper');
-INSERT INTO `hanjas` VALUES('龍','용','a dragon');
-INSERT INTO `hanjas` VALUES('人間性','인간성','human nature');
-INSERT INTO `hanjas` VALUES('駐韓','주한','residing in Korea');
-INSERT INTO `hanjas` VALUES('中年','중년','middle age');
-INSERT INTO `hanjas` VALUES('高速道路','고속도로','expressway, freeway');
-INSERT INTO `hanjas` VALUES('空冊','공책','notebook');
-INSERT INTO `hanjas` VALUES('記號','기호','taste, preference, liking');
-INSERT INTO `hanjas` VALUES('內外','내외','the interior and exterior ');
-INSERT INTO `hanjas` VALUES('補完','보완','to supplement and make complete, to complement sth');
-INSERT INTO `hanjas` VALUES('史上','사상','all-time, in history');
-INSERT INTO `hanjas` VALUES('思春期','사춘기','adolescence, puberty');
-INSERT INTO `hanjas` VALUES('上半期','상반기','the first,upper half');
-INSERT INTO `hanjas` VALUES('書店','서점','a bookstore');
-INSERT INTO `hanjas` VALUES('新奇','신기','to be amazing, wonderful; to be novel');
-INSERT INTO `hanjas` VALUES('新設','신설','startup, found, establish');
-INSERT INTO `hanjas` VALUES('實感','실감','actual feeling');
-INSERT INTO `hanjas` VALUES('洋襪','양말','a sock');
-INSERT INTO `hanjas` VALUES('自家用','자가용','for personal/family use');
-INSERT INTO `hanjas` VALUES('點檢','점검','inspection, examination');
-INSERT INTO `hanjas` VALUES('早期','조기','an early stage, period');
-INSERT INTO `hanjas` VALUES('鐘','종','a bell');
-INSERT INTO `hanjas` VALUES('鐘--','종소리','the sound of a bell');
-INSERT INTO `hanjas` VALUES('中旬','중순','the second 10 days in a month');
-INSERT INTO `hanjas` VALUES('直線','직선','a straight line');
-INSERT INTO `hanjas` VALUES('銃','총','a gun');
-INSERT INTO `hanjas` VALUES('懷疑','회의','doubt, skepticism');
-INSERT INTO `hanjas` VALUES('街路燈','가로등','a street light');
-INSERT INTO `hanjas` VALUES('感','감','feelings');
-INSERT INTO `hanjas` VALUES('個個人','개개인','individual, each person');
-INSERT INTO `hanjas` VALUES('金','금','gold');
-INSERT INTO `hanjas` VALUES('急激','급격','rapidly, suddenly');
-INSERT INTO `hanjas` VALUES('技能','기능','ability, capacity, skill');
-INSERT INTO `hanjas` VALUES('氣-','기막','breathtaking, perfect, wonderful, amazing, super, fantastic');
-INSERT INTO `hanjas` VALUES('待機','대기','standing by, waiting in the wings, prepared');
-INSERT INTO `hanjas` VALUES('--便','맞은편','opposite side, the other side');
-INSERT INTO `hanjas` VALUES('綿','면','cotton');
-INSERT INTO `hanjas` VALUES('泊','박','number of nights (counter)');
-INSERT INTO `hanjas` VALUES('褓--','보자기','wrapping cloth');
-INSERT INTO `hanjas` VALUES('相關--','상관없이','regardless of, no matter that');
-INSERT INTO `hanjas` VALUES('設使','설사','diarrhea');
-INSERT INTO `hanjas` VALUES('旅館','여관','a hotel, an inn');
-INSERT INTO `hanjas` VALUES('妊娠婦','임신부','an expectant mother, a pregnant woman');
-INSERT INTO `hanjas` VALUES('長期的','장기적','long-term');
-INSERT INTO `hanjas` VALUES('傳說','전설','a tradition, a legend');
-INSERT INTO `hanjas` VALUES('節','절','clause,paragraph');
-INSERT INTO `hanjas` VALUES('注射','주사','a shot, an injection');
-INSERT INTO `hanjas` VALUES('就業','취업','employment, finding a job');
-INSERT INTO `hanjas` VALUES('漆','칠','layer, paint, coat');
-INSERT INTO `hanjas` VALUES('評','평','a criticism');
-INSERT INTO `hanjas` VALUES('下半期','하반기','the second half of the year');
-INSERT INTO `hanjas` VALUES('解答','해답','answer, solution');
-INSERT INTO `hanjas` VALUES('確立','확립','establish, settle');
-INSERT INTO `hanjas` VALUES('感受性','감수성','sensitivity, sensibility');
-INSERT INTO `hanjas` VALUES('--便','건너편','the opposite/other side');
-INSERT INTO `hanjas` VALUES('景致','경치','view, scene, scenery');
-INSERT INTO `hanjas` VALUES('急速','급속','rapidly, swiftly');
-INSERT INTO `hanjas` VALUES('急增','급증','surge, sudden rapid increase');
-INSERT INTO `hanjas` VALUES('面談','면담','an interview, face-to-face talk');
-INSERT INTO `hanjas` VALUES('封紙','봉지','bag');
-INSERT INTO `hanjas` VALUES('非常','비상','emergency');
-INSERT INTO `hanjas` VALUES('事業者','사업자','businessman');
-INSERT INTO `hanjas` VALUES('相對便','상대편','oppenent, rival, competitor, adversary, antagonist');
-INSERT INTO `hanjas` VALUES('所望','소망','desire, wish, hope');
-INSERT INTO `hanjas` VALUES('受動的','수동적','passively');
-INSERT INTO `hanjas` VALUES('-盞','술잔','a glass (for alcohol)');
-INSERT INTO `hanjas` VALUES('視聽率','시청률','ratings');
-INSERT INTO `hanjas` VALUES('新聞社','신문사','newspaper company');
-INSERT INTO `hanjas` VALUES('女軍','여군','a woman soldier');
-INSERT INTO `hanjas` VALUES('戀人','연인','lover, boyfriend, girlfriend, sweetheart, couple');
-INSERT INTO `hanjas` VALUES('豫選','예선','preliminary round, qualifying round');
-INSERT INTO `hanjas` VALUES('圓','원','a circle');
-INSERT INTO `hanjas` VALUES('銀杏--','은행나무','a ginko tree');
-INSERT INTO `hanjas` VALUES('自負心','자부심','pride');
-INSERT INTO `hanjas` VALUES('將次','장차','in the future, someday');
-INSERT INTO `hanjas` VALUES('-便','저편','that side,direction');
-INSERT INTO `hanjas` VALUES('精神科','정신과','psychiatry');
-INSERT INTO `hanjas` VALUES('重要視','중요시','emphasize, regard sth as important, to be crucial');
-INSERT INTO `hanjas` VALUES('支店','지점','branch store');
-INSERT INTO `hanjas` VALUES('換率','환율','the exchange rate');
-INSERT INTO `hanjas` VALUES('降水量','강수량','rainfall, precipitaion');
-INSERT INTO `hanjas` VALUES('區廳','구청','a ward/district office');
-INSERT INTO `hanjas` VALUES('國內外','국내외','"domestic and foreign"');
-INSERT INTO `hanjas` VALUES('旣成','기성','pre-existing, established');
-INSERT INTO `hanjas` VALUES('男學生','남학생','male student');
-INSERT INTO `hanjas` VALUES('農事-','농사일','farming');
-INSERT INTO `hanjas` VALUES('農場','농장','a farm, plantation');
-INSERT INTO `hanjas` VALUES('某','모','so-and-so, a certain Mr. X (used to not directly identify sby)');
-INSERT INTO `hanjas` VALUES('生','생','raw, uncooked; living');
-INSERT INTO `hanjas` VALUES('聖經','성경','the Bible');
-INSERT INTO `hanjas` VALUES('所要','소요','to take (time), to cost');
-INSERT INTO `hanjas` VALUES('瞬間的','순간적','momentary, in a flash, for an instant');
-INSERT INTO `hanjas` VALUES('市廳','시청','city hall');
-INSERT INTO `hanjas` VALUES('娛樂','오락','entertainment');
-INSERT INTO `hanjas` VALUES('人間關係','인간관계','human relations');
-INSERT INTO `hanjas` VALUES('長期間','장기간','for a long period');
-INSERT INTO `hanjas` VALUES('戰線','전선','the battle line');
-INSERT INTO `hanjas` VALUES('車線','차선','a traffic lane');
-INSERT INTO `hanjas` VALUES('肖像畵','초상화','a portrait, a picture');
-INSERT INTO `hanjas` VALUES('出張','출장','a business trip');
-INSERT INTO `hanjas` VALUES('特殊性','특수성','distinct, unique characteristic');
-INSERT INTO `hanjas` VALUES('航空機','항공기','an aircraft');
-INSERT INTO `hanjas` VALUES('繪畵','회화','conversation, talk');
-INSERT INTO `hanjas` VALUES('興味--','흥미롭다','to be interesting, amusing');
-INSERT INTO `hanjas` VALUES('覺悟','각오','determination, resolve');
-INSERT INTO `hanjas` VALUES('經濟學','경제학','economics');
-INSERT INTO `hanjas` VALUES('關心事','관심사','concern, interest');
-INSERT INTO `hanjas` VALUES('國史','국사','national history');
-INSERT INTO `hanjas` VALUES('-間','그간','meanwhile, meantime');
-INSERT INTO `hanjas` VALUES('劇作家','극작가','playwright, playwriter');
-INSERT INTO `hanjas` VALUES('旗','기','flag, ensign, pennant');
-INSERT INTO `hanjas` VALUES('奇跡','기적','miracle');
-INSERT INTO `hanjas` VALUES('-套','말투','one''s way of talking');
-INSERT INTO `hanjas` VALUES('命令語','명령어','directive, command');
-INSERT INTO `hanjas` VALUES('沐浴湯','목욕탕','a bathhouse');
-INSERT INTO `hanjas` VALUES('變身','변신','metamorphosis, transformation');
-INSERT INTO `hanjas` VALUES('父親','부친','father');
-INSERT INTO `hanjas` VALUES('事務','사무','office work');
-INSERT INTO `hanjas` VALUES('些少','사소','unimportant, trifling, insignificant');
-INSERT INTO `hanjas` VALUES('爽快','상쾌','refreshing, exhilirating, brisk');
-INSERT INTO `hanjas` VALUES('姓','성','family name, surname, last name');
-INSERT INTO `hanjas` VALUES('順位','순위','order, ranking');
-INSERT INTO `hanjas` VALUES('雙','쌍','pair, couple');
-INSERT INTO `hanjas` VALUES('歷史上','역사상','historically; historical point of view');
-INSERT INTO `hanjas` VALUES('演奏','연주','musical performance, recital');
-INSERT INTO `hanjas` VALUES('郵遞局','우체국','a post office');
-INSERT INTO `hanjas` VALUES('陸上','육상','on land, on the ground');
-INSERT INTO `hanjas` VALUES('飮酒','음주','drinking (alcohol)');
-INSERT INTO `hanjas` VALUES('離別','이별','parting, separation');
-INSERT INTO `hanjas` VALUES('人材','인재','preson of ability/talent');
-INSERT INTO `hanjas` VALUES('人種','인종','a human race');
-INSERT INTO `hanjas` VALUES('一時的','일시적','temporary, transitory');
-INSERT INTO `hanjas` VALUES('中繼放送','중계방송','relay, transmission');
-INSERT INTO `hanjas` VALUES('車窓','차창','car/train window');
-INSERT INTO `hanjas` VALUES('出發點','출발점','point of departure');
-INSERT INTO `hanjas` VALUES('脫出','탈출','to escape, get away from');
-INSERT INTO `hanjas` VALUES('禁煙','금연','prohibition of smoking');
-INSERT INTO `hanjas` VALUES('旣成世代','기성세대','older generation');
-INSERT INTO `hanjas` VALUES('記述','기술','description, depiction');
-INSERT INTO `hanjas` VALUES('南北','남북','north and south');
-INSERT INTO `hanjas` VALUES('納得','납득','accept, consent, convince, persuade oneself');
-INSERT INTO `hanjas` VALUES('段','단','a grade or class');
-INSERT INTO `hanjas` VALUES('獨創的','독창적','creative, ingenious, original');
-INSERT INTO `hanjas` VALUES('滿點','만점','perfect score');
-INSERT INTO `hanjas` VALUES('每-','매달','every month');
-INSERT INTO `hanjas` VALUES('保守','보수','conservatism');
-INSERT INTO `hanjas` VALUES('保安','보안','security');
-INSERT INTO `hanjas` VALUES('師母-','사모님','Madam');
-INSERT INTO `hanjas` VALUES('三','삼','three');
-INSERT INTO `hanjas` VALUES('色---','색다르다','different, novel');
-INSERT INTO `hanjas` VALUES('時日','시일','time, days');
-INSERT INTO `hanjas` VALUES('迅速','신속','quick, rapid, speedy');
-INSERT INTO `hanjas` VALUES('新製品','신제품','new product');
-INSERT INTO `hanjas` VALUES('豫告','예고','warn, give notice');
-INSERT INTO `hanjas` VALUES('隱隱','은은','soft, gentle, delicate');
-INSERT INTO `hanjas` VALUES('一大','일대','great, remarkable');
-INSERT INTO `hanjas` VALUES('自然現象','자연현상','natural phenomena');
-INSERT INTO `hanjas` VALUES('停留場','정류장','stop, station, bus-stop');
-INSERT INTO `hanjas` VALUES('最新','최신','newest, latest');
-INSERT INTO `hanjas` VALUES('害--','해롭다','harmful, injurious, detrimental');
-INSERT INTO `hanjas` VALUES('玄關門','현관문','the front door');
-INSERT INTO `hanjas` VALUES('--醬','고추장','red pepper paste');
-INSERT INTO `hanjas` VALUES('--場','골프장','golf course');
-INSERT INTO `hanjas` VALUES('空然','공연','in vain, uselessly');
-INSERT INTO `hanjas` VALUES('-前','그전','former days, the past');
-INSERT INTO `hanjas` VALUES('金庫','금고','safe, valut');
-INSERT INTO `hanjas` VALUES('能動的','능동적','actively');
-INSERT INTO `hanjas` VALUES('當分間','당분간','for the present, for now, for a while');
-INSERT INTO `hanjas` VALUES('-山','뒷산','the back side of a mountain');
-INSERT INTO `hanjas` VALUES('美人','미인','a beautiful girl');
-INSERT INTO `hanjas` VALUES('半指','반지','ring');
-INSERT INTO `hanjas` VALUES('本','본','model, example');
-INSERT INTO `hanjas` VALUES('不平等','불평등','inequality');
-INSERT INTO `hanjas` VALUES('山-','산속','the heart of a mountain');
-INSERT INTO `hanjas` VALUES('西洋人','서양인','Westerner');
-INSERT INTO `hanjas` VALUES('所持品','소지품','one''s belongings/possessions');
-INSERT INTO `hanjas` VALUES('食醋','식초','vinegar');
-INSERT INTO `hanjas` VALUES('女同生','여동생','younger sister');
-INSERT INTO `hanjas` VALUES('聯想','연상','association, reminiscent of, remind');
-INSERT INTO `hanjas` VALUES('利害','이해','interests');
-INSERT INTO `hanjas` VALUES('潛水艦','잠수함','submarine');
-INSERT INTO `hanjas` VALUES('奬學金','장학금','scholarship');
-INSERT INTO `hanjas` VALUES('點心時間','점심시간','lunchtime');
-INSERT INTO `hanjas` VALUES('知的','지적','intellectual, brainy');
-INSERT INTO `hanjas` VALUES('進行者','진행자','emcee, master of ceremonies');
-INSERT INTO `hanjas` VALUES('責任感','책임감','sense of responsibility');
-INSERT INTO `hanjas` VALUES('體溫','체온','body temperature');
-INSERT INTO `hanjas` VALUES('醋-','초밥','sushi');
-INSERT INTO `hanjas` VALUES('出入門','출입문','door, gate');
-INSERT INTO `hanjas` VALUES('布帳馬車','포장마차','a wheeled snack bar on the street');
-INSERT INTO `hanjas` VALUES('航空','항공','airport, airline');
-INSERT INTO `hanjas` VALUES('號線','호선','train line number');
-INSERT INTO `hanjas` VALUES('休紙','휴지','toilet paper');
-INSERT INTO `hanjas` VALUES('高速','고속','high speed');
-INSERT INTO `hanjas` VALUES('救','구','rescue a person');
-INSERT INTO `hanjas` VALUES('來-','내달','next month');
-INSERT INTO `hanjas` VALUES('毒','독','potent; spiteful; firm');
-INSERT INTO `hanjas` VALUES('名單','명단','list of names, roll, directory');
-INSERT INTO `hanjas` VALUES('無意味','무의미','meaningless, nonsensical');
-INSERT INTO `hanjas` VALUES('文句','문구','passage, paragraph');
-INSERT INTO `hanjas` VALUES('未滿','미만','under, below; less than');
-INSERT INTO `hanjas` VALUES('士氣','사기','morale, fighting spirit');
-INSERT INTO `hanjas` VALUES('事務職','사무직','office job');
-INSERT INTO `hanjas` VALUES('素質','소질','temperament, character');
-INSERT INTO `hanjas` VALUES('食生活','식생활','dietary life');
-INSERT INTO `hanjas` VALUES('信號燈','신호등','traffic signal');
-INSERT INTO `hanjas` VALUES('新婚旅行','신혼여행','honeymoon');
-INSERT INTO `hanjas` VALUES('硏究室','연구실','a laboratory');
-INSERT INTO `hanjas` VALUES('組','조','company, group, organization');
-INSERT INTO `hanjas` VALUES('卒業生','졸업생','a graduate');
-INSERT INTO `hanjas` VALUES('猖披','창피','to be ashamed');
-INSERT INTO `hanjas` VALUES('跆拳道','태권도','Taekwondo');
-INSERT INTO `hanjas` VALUES('合','합','combine, unite, join, harmonize with, be in accord with');
-INSERT INTO `hanjas` VALUES('家庭敎師','가정교사','private tutor');
-INSERT INTO `hanjas` VALUES('敎育者','교육자','educator, teacher');
-INSERT INTO `hanjas` VALUES('敎材','교재','teaching material, insruction material, textbook');
-INSERT INTO `hanjas` VALUES('男','남','a man');
-INSERT INTO `hanjas` VALUES('無窮花','무궁화','hibiscus, rose of Sharon');
-INSERT INTO `hanjas` VALUES('房--','방바닥','room''s floor');
-INSERT INTO `hanjas` VALUES('社會生活','사회생활','social life');
-INSERT INTO `hanjas` VALUES('數年','수년','several years');
-INSERT INTO `hanjas` VALUES('利用者','이용자','a user; visitor');
-INSERT INTO `hanjas` VALUES('資格證','자격증','a qualification certificate');
-INSERT INTO `hanjas` VALUES('診療','진료','medical examination and treatment');
-INSERT INTO `hanjas` VALUES('窓-','창가','next to a window, the window''s edge');
-INSERT INTO `hanjas` VALUES('焦燥','초조','be impatient, irritated');
-INSERT INTO `hanjas` VALUES('­盞','한잔','to drink a glass of alchohol');
-INSERT INTO `hanjas` VALUES('化粧紙','화장지','paper used for applying makeup');
-INSERT INTO `hanjas` VALUES('歌謠','가요','a song');
-INSERT INTO `hanjas` VALUES('空-','공짜','free ');
-INSERT INTO `hanjas` VALUES('方面','방면','direction');
-INSERT INTO `hanjas` VALUES('法的','법적','legal');
-INSERT INTO `hanjas` VALUES('補修','보수','mend, repair, fix');
-INSERT INTO `hanjas` VALUES('社會學','사회학','social science');
-INSERT INTO `hanjas` VALUES('性的','성적','sexual');
-INSERT INTO `hanjas` VALUES('洗手','세수','hand-washing');
-INSERT INTO `hanjas` VALUES('純眞','순진','to be naive, pure');
-INSERT INTO `hanjas` VALUES('旅行社','여행사','travel agency');
-INSERT INTO `hanjas` VALUES('留學生','유학생','exchange student');
-INSERT INTO `hanjas` VALUES('銀','은','silver');
-INSERT INTO `hanjas` VALUES('障碍人','장애인','a handicapped person');
-INSERT INTO `hanjas` VALUES('再活用品','재활용품','a recycled product');
-INSERT INTO `hanjas` VALUES('正反對','정반대','direct opposition, the exact reverse');
-INSERT INTO `hanjas` VALUES('學點','학점','unit, point, credit, grade');
-INSERT INTO `hanjas` VALUES('閑暇','한가','to be free, not busy');
-INSERT INTO `hanjas` VALUES('大綱','대강','approximately, crude, broad, rough, generally');
-INSERT INTO `hanjas` VALUES('門-','문밖','outside the door');
-INSERT INTO `hanjas` VALUES('不完全','불완전','to be imperfect');
-INSERT INTO `hanjas` VALUES('不平','불평','dissatisfaction');
-INSERT INTO `hanjas` VALUES('生活環境','생활환경','living environment');
-INSERT INTO `hanjas` VALUES('歷史學','역사학','historical studies');
-INSERT INTO `hanjas` VALUES('料理師','요리사','chef, cook');
-INSERT INTO `hanjas` VALUES('願書','원서','an application form, a written request');
-INSERT INTO `hanjas` VALUES('月','월','a month');
-INSERT INTO `hanjas` VALUES('理論的','이론적','theoretical');
-INSERT INTO `hanjas` VALUES('葬禮','장례','a funeral');
-INSERT INTO `hanjas` VALUES('只今-','지금껏','so far, till now');
-INSERT INTO `hanjas` VALUES('參席者','참석자','persons present');
-INSERT INTO `hanjas` VALUES('窓口','창구','a window');
-INSERT INTO `hanjas` VALUES('最低','최저','the lowest, the minimum/lowest price');
-INSERT INTO `hanjas` VALUES('必須','필수','necessary, indispensable');
-INSERT INTO `hanjas` VALUES('回數','횟수','the number of times, the frequency');
-INSERT INTO `hanjas` VALUES('鷄卵','계란','an egg');
-INSERT INTO `hanjas` VALUES('校門','교문','a school gate');
-INSERT INTO `hanjas` VALUES('緊張感','긴장감','feeling of tension');
-INSERT INTO `hanjas` VALUES('每週','매주','every week');
-INSERT INTO `hanjas` VALUES('北','북','north');
-INSERT INTO `hanjas` VALUES('不利益','불이익','disadvantage, drawback');
-INSERT INTO `hanjas` VALUES('不必要','불필요','to be unnecessary');
-INSERT INTO `hanjas` VALUES('産婦人科','산부인과','obstetrics and gynecology');
-INSERT INTO `hanjas` VALUES('修學','수학','pursuit of knowledge');
-INSERT INTO `hanjas` VALUES('外三寸','외삼촌','an uncle on one''s mother''s side');
-INSERT INTO `hanjas` VALUES('傳貰','전세','lease');
-INSERT INTO `hanjas` VALUES('退職金','퇴직금','severance pay, pension');
-INSERT INTO `hanjas` VALUES('還甲','환갑','one''s 60th anniversary');
-INSERT INTO `hanjas` VALUES('簡便','간편','simplicity, convenience');
-INSERT INTO `hanjas` VALUES('觀光地','관광지','tourist area');
-INSERT INTO `hanjas` VALUES('校服','교복','school uniform');
-INSERT INTO `hanjas` VALUES('僑胞','교포','a Korean living abroad');
-INSERT INTO `hanjas` VALUES('滿','만','just, full');
-INSERT INTO `hanjas` VALUES('奔走','분주','be busy, crowded');
-INSERT INTO `hanjas` VALUES('--封紙','비닐봉지','plastic bag');
-INSERT INTO `hanjas` VALUES('水道--','수도꼭지','a faucet, tap');
-INSERT INTO `hanjas` VALUES('軟','연','tender, soft, mild');
-INSERT INTO `hanjas` VALUES('陰曆','음력','the lunar calendar');
-INSERT INTO `hanjas` VALUES('一回用','일회용','disposable');
-INSERT INTO `hanjas` VALUES('專門職','전문직','specialty job');
-INSERT INTO `hanjas` VALUES('電話機','전화기','telephone receiver');
-INSERT INTO `hanjas` VALUES('--週','지난주','last week');
-INSERT INTO `hanjas` VALUES('次男','차남','one''s second eldest son');
-INSERT INTO `hanjas` VALUES('採點','채점','marking, grading, scoring');
-INSERT INTO `hanjas` VALUES('打字機','타자기','a typewriter');
-INSERT INTO `hanjas` VALUES('--中','한밤중','midnight');
-INSERT INTO `hanjas` VALUES('看護師','간호사','nurse');
-INSERT INTO `hanjas` VALUES('高等學生','고등학생','high school student');
-INSERT INTO `hanjas` VALUES('大學敎授','대학교수','university professor');
-INSERT INTO `hanjas` VALUES('飛行場','비행장','an airfield');
-INSERT INTO `hanjas` VALUES('-甁','술병','a bottle of alcohol');
-INSERT INTO `hanjas` VALUES('葉書','엽서','a postcard');
-INSERT INTO `hanjas` VALUES('曜日','요일','weekday');
-INSERT INTO `hanjas` VALUES('運轉技士','운전기사','the driver');
-INSERT INTO `hanjas` VALUES('危險性','위험성','riskiness, jeopardy');
-INSERT INTO `hanjas` VALUES('一','일','one');
-INSERT INTO `hanjas` VALUES('在學','재학','while in school, attending school');
-INSERT INTO `hanjas` VALUES('主觀的','주관적','subjective');
-INSERT INTO `hanjas` VALUES('職場人','직장인','a worker');
-INSERT INTO `hanjas` VALUES('眞心','진심','sincerely, truly');
-INSERT INTO `hanjas` VALUES('冊--','책가방','bookbag');
-INSERT INTO `hanjas` VALUES('齒藥','치약','toothpaste');
-INSERT INTO `hanjas` VALUES('學科','학과','department (college, university)');
-INSERT INTO `hanjas` VALUES('揭示板','게시판','bulletin board');
-INSERT INTO `hanjas` VALUES('共通點','공통점','to share something in common');
-INSERT INTO `hanjas` VALUES('課外','과외','extracurricular work');
-INSERT INTO `hanjas` VALUES('校內','교내','inside the school');
-INSERT INTO `hanjas` VALUES('區','구','ward or  district');
-INSERT INTO `hanjas` VALUES('內的','내적','internal');
-INSERT INTO `hanjas` VALUES('答狀','답장','answer, reply (letter/email)');
-INSERT INTO `hanjas` VALUES('無','무','nothing; lacking');
-INSERT INTO `hanjas` VALUES('別-','별일','a particular thing');
-INSERT INTO `hanjas` VALUES('佛法','불법','Buddhism');
-INSERT INTO `hanjas` VALUES('事業家','사업가','businessman');
-INSERT INTO `hanjas` VALUES('申請書','신청서','application, application form');
-INSERT INTO `hanjas` VALUES('---桶','쓰레기통','garbage can');
-INSERT INTO `hanjas` VALUES('羊','양','a sheep, ram');
-INSERT INTO `hanjas` VALUES('嶺南','영남','the southeastern part of Korea');
-INSERT INTO `hanjas` VALUES('胃','위','the stomach');
-INSERT INTO `hanjas` VALUES('日氣','일기','weather');
-INSERT INTO `hanjas` VALUES('這番','저번','last time, the other day');
-INSERT INTO `hanjas` VALUES('展示場','전시장','an exhibition hall');
-INSERT INTO `hanjas` VALUES('正答','정답','correct answer');
-INSERT INTO `hanjas` VALUES('除隊','제대','be discharged from the military');
-INSERT INTO `hanjas` VALUES('卽席','즉석','instantly, impromptu');
-INSERT INTO `hanjas` VALUES('次次','차차','gradually');
-INSERT INTO `hanjas` VALUES('匣','갑','case, box, pack');
-INSERT INTO `hanjas` VALUES('怯--','겁나다','be frightened or  scared');
-INSERT INTO `hanjas` VALUES('金--','금메달','gold medal');
-INSERT INTO `hanjas` VALUES('童話冊','동화책','a fairy tale');
-INSERT INTO `hanjas` VALUES('-色','밤색','chestnut color, maroon');
-INSERT INTO `hanjas` VALUES('性別','성별','sex distinction');
-INSERT INTO `hanjas` VALUES('洗濯','세탁','laundry');
-INSERT INTO `hanjas` VALUES('所用--','소용없다','to be useless');
-INSERT INTO `hanjas` VALUES('-傷','속상','upset, distressed, annoyed');
-INSERT INTO `hanjas` VALUES('-手巾','손수건','a handkerchief');
-INSERT INTO `hanjas` VALUES('水道-','수돗물','tap water');
-INSERT INTO `hanjas` VALUES('數萬','수만','tens of thousands');
-INSERT INTO `hanjas` VALUES('輸入品','수입품','an imported product');
-INSERT INTO `hanjas` VALUES('食器','식기','dishes, tableware');
-INSERT INTO `hanjas` VALUES('案','안','a plan, proposal, suggestion');
-INSERT INTO `hanjas` VALUES('安否','안부','safety, welfare');
-INSERT INTO `hanjas` VALUES('洋酒','양주','foreign wine/liquors');
-INSERT INTO `hanjas` VALUES('映畵俳優','영화배우','movie actor');
-INSERT INTO `hanjas` VALUES('一等','일등','first place, first rate/class/grade');
-INSERT INTO `hanjas` VALUES('陣痛','진통','labor pains, travail');
-INSERT INTO `hanjas` VALUES('最高級','최고급','the highest grade/class');
-INSERT INTO `hanjas` VALUES('最上','최상','the best, the finest');
-INSERT INTO `hanjas` VALUES('最惡','최악','the worst');
-INSERT INTO `hanjas` VALUES('出國','출국','leave a country');
-INSERT INTO `hanjas` VALUES('街路樹','가로수','a roadside tree');
-INSERT INTO `hanjas` VALUES('間食','간식','snack');
-INSERT INTO `hanjas` VALUES('公主','공주','a royal princess');
-INSERT INTO `hanjas` VALUES('南','남','south');
-INSERT INTO `hanjas` VALUES('--色','노란색','yellow');
-INSERT INTO `hanjas` VALUES('舞踊家','무용가','dancer');
-INSERT INTO `hanjas` VALUES('碑','비','a monument');
-INSERT INTO `hanjas` VALUES('四季節','사계절','the four seasons');
-INSERT INTO `hanjas` VALUES('賞金','상금','prize money');
-INSERT INTO `hanjas` VALUES('洋--','양상추','lettuce');
-INSERT INTO `hanjas` VALUES('女大生','여대생','female college student');
-INSERT INTO `hanjas` VALUES('外家-','외갓집','one''s mother''s maiden home');
-INSERT INTO `hanjas` VALUES('外---','외할머니','a maternal grandmother');
-INSERT INTO `hanjas` VALUES('有能','유능','competent, able, talented');
-INSERT INTO `hanjas` VALUES('遺跡地','유적지','historical site');
-INSERT INTO `hanjas` VALUES('音樂家','음악가','a musician');
-INSERT INTO `hanjas` VALUES('利--','이롭다','beneficial');
-INSERT INTO `hanjas` VALUES('人蔘','인삼','ginseng');
-INSERT INTO `hanjas` VALUES('人相','인상','look, personal appearance');
-INSERT INTO `hanjas` VALUES('再活用','재활용','recycling');
-INSERT INTO `hanjas` VALUES('祭祀-','제삿날','anniversary of a person''s death');
-INSERT INTO `hanjas` VALUES('參考','참고','to refer, consult');
-INSERT INTO `hanjas` VALUES('茶盞','찻잔','a teacup');
-INSERT INTO `hanjas` VALUES('初代','초대','first, founder');
-INSERT INTO `hanjas` VALUES('齒-','칫솔','a toothbrush');
-INSERT INTO `hanjas` VALUES('葡萄','포도','grape(s)');
-INSERT INTO `hanjas` VALUES('學歷','학력','academic background, formal schooling');
-INSERT INTO `hanjas` VALUES('橫斷步道','횡단보도','crosswalk');
-INSERT INTO `hanjas` VALUES('姑母夫','고모부','the husband of one''s paternal aunt');
-INSERT INTO `hanjas` VALUES('公衆電話','공중전화','public payphone');
-INSERT INTO `hanjas` VALUES('科擧','과거','the state examination');
-INSERT INTO `hanjas` VALUES('近郊','근교','suburbs');
-INSERT INTO `hanjas` VALUES('多樣性','다양성','variety');
-INSERT INTO `hanjas` VALUES('-中','밤중','midnight');
-INSERT INTO `hanjas` VALUES('不確實','불확실','be uncertain');
-INSERT INTO `hanjas` VALUES('司會者','사회자','chairperson, host, MC, emcee');
-INSERT INTO `hanjas` VALUES('松-','송편','rice cake steemed over pine needles');
-INSERT INTO `hanjas` VALUES('新婚夫婦','신혼부부','newlyweds');
-INSERT INTO `hanjas` VALUES('冶','야','erotic, sexual, racy, risque');
-INSERT INTO `hanjas` VALUES('-終日','온종일','all day long, the whole day');
-INSERT INTO `hanjas` VALUES('人事-','인사말','words of greeting');
-INSERT INTO `hanjas` VALUES('自販機','자판기','vending machine');
-INSERT INTO `hanjas` VALUES('丈母-','장모님','a man''s mother in law');
-INSERT INTO `hanjas` VALUES('出退勤','출퇴근','commute');
-INSERT INTO `hanjas` VALUES('齒科','치과','a dentist');
-INSERT INTO `hanjas` VALUES('下','하','below, underneath');
-INSERT INTO `hanjas` VALUES('火--','화나다','get angry');
-INSERT INTO `hanjas` VALUES('--房','건넌방','the opposite room');
-INSERT INTO `hanjas` VALUES('空器','공기','public institution');
-INSERT INTO `hanjas` VALUES('企業人','기업인','businessman, entrepreneur');
-INSERT INTO `hanjas` VALUES('男--','남동생','younger brother');
-INSERT INTO `hanjas` VALUES('安東','안동','Andong city');
-INSERT INTO `hanjas` VALUES('反對便','반대편','the opposite side');
-INSERT INTO `hanjas` VALUES('富者-','부잣집','rich man''s house');
-INSERT INTO `hanjas` VALUES('寫眞機','사진기','camera');
-INSERT INTO `hanjas` VALUES('山-','산길','mountain path/road');
-INSERT INTO `hanjas` VALUES('修業','수업','vocational training');
-INSERT INTO `hanjas` VALUES('市外','시외','outside the city, suburbs');
-INSERT INTO `hanjas` VALUES('藥水','약수','medicinal water, mineral water');
-INSERT INTO `hanjas` VALUES('藥品','약품','medicine, medical supplies');
-INSERT INTO `hanjas` VALUES('洋--','양배추','cabbage');
-INSERT INTO `hanjas` VALUES('兩-','양옆','on both sides');
-INSERT INTO `hanjas` VALUES('女高生','여고생','female high school student');
-INSERT INTO `hanjas` VALUES('女王','여왕','queen');
-INSERT INTO `hanjas` VALUES('運動靴','운동화','sneakers, tennis shoes, running shoes, cleats');
-INSERT INTO `hanjas` VALUES('一回用品','일회용품','disposable product');
-INSERT INTO `hanjas` VALUES('週日','주일','a week');
-INSERT INTO `hanjas` VALUES('初等學校','초등학교','elementary school');
-INSERT INTO `hanjas` VALUES('初步','초보','novice, newbie, beginner');
-INSERT INTO `hanjas` VALUES('學費','학비','tuition');
-INSERT INTO `hanjas` VALUES('害','해','damage, injury');
-INSERT INTO `hanjas` VALUES('海外旅行','해외여행','overseas travel');
-INSERT INTO `hanjas` VALUES('孝子','효자','a devoted son');
-INSERT INTO `hanjas` VALUES('江邊','강변','a riverside');
-INSERT INTO `hanjas` VALUES('公休日','공휴일','a legal holiday');
-INSERT INTO `hanjas` VALUES('校時','교시','school period');
-INSERT INTO `hanjas` VALUES('-牌','깡패','gangster');
-INSERT INTO `hanjas` VALUES('大衆交通','대중교통','mass transportation');
-INSERT INTO `hanjas` VALUES('萬歲','만세','everlasting, eternal; hurrah!');
-INSERT INTO `hanjas` VALUES('漫畵家','만화가','cartoonist');
-INSERT INTO `hanjas` VALUES('名銜','명함','business card');
-INSERT INTO `hanjas` VALUES('番地','번지','street address');
-INSERT INTO `hanjas` VALUES('--色','빨간색','deep-red, crimson');
-INSERT INTO `hanjas` VALUES('私立','사립','private');
-INSERT INTO `hanjas` VALUES('私生活','사생활','private life');
-INSERT INTO `hanjas` VALUES('生活水準','생활수준','the standard of living');
-INSERT INTO `hanjas` VALUES('碩士','석사','master''s (degree)');
-INSERT INTO `hanjas` VALUES('順','순','be gentle, meek, docile');
-INSERT INTO `hanjas` VALUES('媤宅','시댁','one''s husband''s family/house');
-INSERT INTO `hanjas` VALUES('媤父母','시부모','parents-in-law, one''s husband''s parents');
-INSERT INTO `hanjas` VALUES('--間','얼마간','some, somewhat; some time, a while');
-INSERT INTO `hanjas` VALUES('外製','외제','foreign brand/import');
-INSERT INTO `hanjas` VALUES('音盤','음반','vinyl record');
-INSERT INTO `hanjas` VALUES('二','이','two');
-INSERT INTO `hanjas` VALUES('理髮所','이발소','barber shop');
-INSERT INTO `hanjas` VALUES('葬禮式','장례식','a funeral');
-INSERT INTO `hanjas` VALUES('財數','재수','luck, fortune');
-INSERT INTO `hanjas` VALUES('再昨年','재작년','the year before last');
-INSERT INTO `hanjas` VALUES('電球','전구','electric light bulb');
-INSERT INTO `hanjas` VALUES('專門店','전문점','specialty store');
-INSERT INTO `hanjas` VALUES('傳統文化','전통문화','traditional culture; cultural heritage');
-INSERT INTO `hanjas` VALUES('尊待-','존댓말','honorific speech');
-INSERT INTO `hanjas` VALUES('酒煎子','주전자','kettle, teakettle');
-INSERT INTO `hanjas` VALUES('初步者','초보자','newbie, beginner, neophyte');
-INSERT INTO `hanjas` VALUES('招請狀','초청장','written invitation');
-INSERT INTO `hanjas` VALUES('村','촌','unfashionable, unsophisticated');
-INSERT INTO `hanjas` VALUES('討論者','토론자','debator, disputant, discussant');
-INSERT INTO `hanjas` VALUES('平常時','평상시','normally');
-INSERT INTO `hanjas` VALUES('學校生活','학교생활','student');
-INSERT INTO `hanjas` VALUES('海物','해물','seafood');
-INSERT INTO `hanjas` VALUES('型','형','shape, form');
-INSERT INTO `hanjas` VALUES('魂--','혼나다','get frightened, scared');
-INSERT INTO `hanjas` VALUES('江北','강북','north of the river');
-INSERT INTO `hanjas` VALUES('觀覽','관람','inspection or  viewing');
-INSERT INTO `hanjas` VALUES('敎育費','교육비','tuition');
-INSERT INTO `hanjas` VALUES('國立','국립','national');
-INSERT INTO `hanjas` VALUES('暖房','난방','a heated room');
-INSERT INTO `hanjas` VALUES('內容物','내용물','contents');
-INSERT INTO `hanjas` VALUES('錄畵','녹화','tree-planting');
-INSERT INTO `hanjas` VALUES('每番','매번','every time');
-INSERT INTO `hanjas` VALUES('無事','무사','be safe, peaceful');
-INSERT INTO `hanjas` VALUES('排球','배구','volleyball');
-INSERT INTO `hanjas` VALUES('生活用品','생활용품','necessities for daily life');
-INSERT INTO `hanjas` VALUES('扇風機','선풍기','a fan');
-INSERT INTO `hanjas` VALUES('女職員','여직원','female employee');
-INSERT INTO `hanjas` VALUES('-房','옆방','the room next door');
-INSERT INTO `hanjas` VALUES('異性','이성','the opposite sex');
-INSERT INTO `hanjas` VALUES('知能','지능','intelligence,intellect, raw intelligence');
-INSERT INTO `hanjas` VALUES('靑--','청바지','blue jeans');
-INSERT INTO `hanjas` VALUES('治療法','치료법','treatment');
-INSERT INTO `hanjas` VALUES('特級','특급','in a special class');
-INSERT INTO `hanjas` VALUES('平日','평일','a weekday');
-INSERT INTO `hanjas` VALUES('-平生','한평생','a lifetime');
-INSERT INTO `hanjas` VALUES('海水浴場','해수욕장','beach');
-INSERT INTO `hanjas` VALUES('號室','호실','room number');
-INSERT INTO `hanjas` VALUES('休紙桶','휴지통','waste paper basket');
-INSERT INTO `hanjas` VALUES('橘','귤','a Jeju orange');
-INSERT INTO `hanjas` VALUES('內科','내과','internal medicine');
-INSERT INTO `hanjas` VALUES('生活費','생활비','cost of living');
-INSERT INTO `hanjas` VALUES('--場','스키장','ski resort');
-INSERT INTO `hanjas` VALUES('-門','앞문','the front gate');
-INSERT INTO `hanjas` VALUES('冊房','책방','bookstore');
-INSERT INTO `hanjas` VALUES('漆板','칠판','blackboard');
-INSERT INTO `hanjas` VALUES('九','구','9');
-INSERT INTO `hanjas` VALUES('映畵館','영화관','movie theater');
-INSERT INTO `hanjas` VALUES('丈母','장모','a man''s mother-in-law');
-INSERT INTO `hanjas` VALUES('地下道','지하도','underground road');
-INSERT INTO `hanjas` VALUES('古宮','고궁','an ancient palace');
-INSERT INTO `hanjas` VALUES('高速--','고속버스','bus for the freeway');
-INSERT INTO `hanjas` VALUES('半-','반말','talk down, informal speach');
-INSERT INTO `hanjas` VALUES('粉紅色','분홍색','pink color');
-INSERT INTO `hanjas` VALUES('四','사','four, the fourth');
-INSERT INTO `hanjas` VALUES('孫女','손녀','granddaughter');
-INSERT INTO `hanjas` VALUES('水泳場','수영장','swimming pool');
-INSERT INTO `hanjas` VALUES('--層','아래층','lower floor');
-INSERT INTO `hanjas` VALUES('日本語','일본어','Japanese');
-INSERT INTO `hanjas` VALUES('掌匣','장갑','gloves');
-INSERT INTO `hanjas` VALUES('初旬','초순','the first third of a month');
-INSERT INTO `hanjas` VALUES('下旬','하순','the final third of the month');
-INSERT INTO `hanjas` VALUES('旣婚','기혼','married');
-INSERT INTO `hanjas` VALUES('圖章','대장','a seal, stamp');
-INSERT INTO `hanjas` VALUES('蔘鷄湯','삼계탕','chicken soup');
-INSERT INTO `hanjas` VALUES('生辰','생신','a birthday');
-INSERT INTO `hanjas` VALUES('市內--','시내버스','inner-city bus');
-INSERT INTO `hanjas` VALUES('郵票','우표','a postage stamp');
-INSERT INTO `hanjas` VALUES('--色','파란색','blue');
-INSERT INTO `hanjas` VALUES('冷麵','냉면','cold noodle soup');
-INSERT INTO `hanjas` VALUES('丹楓','단풍','autumn colors, fall foliage');
-INSERT INTO `hanjas` VALUES('獨逸語','독일어','German');
-INSERT INTO `hanjas` VALUES('丈人','장인','a man''s father in law, the wife''s father');
-INSERT INTO `hanjas` VALUES('外----','외할아버지','a maternal grandfather');
-INSERT INTO `hanjas` VALUES('入國','입국','entering a country');
-INSERT INTO `hanjas` VALUES('體育館','체육관','gymnasium');
-INSERT INTO `hanjas` VALUES('最小','최소','at the least, the minimum');
-INSERT INTO `hanjas` VALUES('七','칠','seven');
-INSERT INTO `hanjas` VALUES('紅茶','홍차','tea, black tea');
-INSERT INTO `hanjas` VALUES('國際線','국제선','international airline');
-INSERT INTO `hanjas` VALUES('百','백','one hundred');
-INSERT INTO `hanjas` VALUES('四十','사십','40');
-INSERT INTO `hanjas` VALUES('眼科','안과','ophthalmology');
-INSERT INTO `hanjas` VALUES('連絡處','연락처','contact information');
-INSERT INTO `hanjas` VALUES('年歲','연세','age, years of age');
-INSERT INTO `hanjas` VALUES('禮式場','예식장','a ceremony hall');
-INSERT INTO `hanjas` VALUES('月貰','월세','monthly rent');
-INSERT INTO `hanjas` VALUES('-層','위층','the upper floor');
-INSERT INTO `hanjas` VALUES('人蔘茶','인삼차','ginseng tea');
-INSERT INTO `hanjas` VALUES('診察','진찰','checkup, physical examination, investigation');
-INSERT INTO `hanjas` VALUES('草綠色','초록색','green');
-INSERT INTO `hanjas` VALUES('八','팔','eight');
-INSERT INTO `hanjas` VALUES('綠茶','녹차','green tea');
-INSERT INTO `hanjas` VALUES('毒感','독감','influenza');
-INSERT INTO `hanjas` VALUES('饅頭','만두','Chinese dumplings');
-INSERT INTO `hanjas` VALUES('--色','보라색','purple');
-INSERT INTO `hanjas` VALUES('軟豆色','연두색','light green');
-INSERT INTO `hanjas` VALUES('溫突','온돌','Korean under-floor heating system');
-INSERT INTO `hanjas` VALUES('六','육','the number six');
-INSERT INTO `hanjas` VALUES('出入國','출입국','entry into a country');
-INSERT INTO `hanjas` VALUES('國內線','국내선','domestic airline');
-INSERT INTO `hanjas` VALUES('三十','삼십','30');
-INSERT INTO `hanjas` VALUES('姓銜','성함','your (his) esteemed name');
-INSERT INTO `hanjas` VALUES('洗濯所','세탁소','laundromat');
-INSERT INTO `hanjas` VALUES('市外--','시외버스','inter-city bus');
-INSERT INTO `hanjas` VALUES('野球場','야구장','baseball field');
-INSERT INTO `hanjas` VALUES('五十','오십','fifty');
-INSERT INTO `hanjas` VALUES('運動服','운동복','sportswear, exercise clothes');
-INSERT INTO `hanjas` VALUES('中國語','중국어','Chinese');
-INSERT INTO `hanjas` VALUES('淸掃機','청소기','a vacuum cleaner');
-INSERT INTO `hanjas` VALUES('七十','칠십','seventy');
-INSERT INTO `hanjas` VALUES('筆筒','필통','pencil case');
-INSERT INTO `hanjas` VALUES('學生證','학생증','student identification');
-INSERT INTO `hanjas` VALUES('兄嫂','형수','the wife of one''s older brother');
-INSERT INTO `hanjas` VALUES('慶尙道','경상도','Kyungsan province');
-INSERT INTO `hanjas` VALUES('觀光--','관광버스','tourist bus');
-INSERT INTO `hanjas` VALUES('冷房','냉방','a cold or unheated room');
-INSERT INTO `hanjas` VALUES('-病','눈병','an eye disease');
-INSERT INTO `hanjas` VALUES('沙糖','사탕','sugar');
-INSERT INTO `hanjas` VALUES('色鉛筆','색연필','colored pencil');
-INSERT INTO `hanjas` VALUES('小兒科','소아과','pediatrics');
-INSERT INTO `hanjas` VALUES('陽曆','양력','the solar calendar');
-INSERT INTO `hanjas` VALUES('五','오','five');
-INSERT INTO `hanjas` VALUES('蹴球場','축구장','soccer field');
-INSERT INTO `hanjas` VALUES('韓食','한식','Korean food');
-INSERT INTO `hanjas` VALUES('世宗大王','세종대왕','Sejong the Great (invented Hangul, the modern Korean script)');
-INSERT INTO `hanjas` VALUES('複寫機','복사기','copy machine, photocopier');
-INSERT INTO `hanjas` VALUES('--湯','설렁탕','beef soup with rice');
-INSERT INTO `hanjas` VALUES('鍾路','종로','Jongno');
-INSERT INTO `hanjas` VALUES('新羅','신라','the Silla Dynasty');
-INSERT INTO `hanjas` VALUES('十','십','10');
-INSERT INTO `hanjas` VALUES('千','천','thousand');
-INSERT INTO `hanjas` VALUES('--色','까만색','black');
-INSERT INTO `hanjas` VALUES('來後年','내후년','the year after next year');
-INSERT INTO `hanjas` VALUES('媤---','시아버지','one''s husband''s father');
-INSERT INTO `hanjas` VALUES('食品店','식품점','grocery store');
-INSERT INTO `hanjas` VALUES('約婚女','약혼녀','fiancee');
-INSERT INTO `hanjas` VALUES('零上','영상','above zero');
-INSERT INTO `hanjas` VALUES('豫買','예매','reservation, advance purchase');
-INSERT INTO `hanjas` VALUES('六十','육십','sixty');
-INSERT INTO `hanjas` VALUES('八十','팔십','80');
-INSERT INTO `hanjas` VALUES('粉筆','분필','chalk');
-INSERT INTO `hanjas` VALUES('約婚者','약혼자','a fiance, an engaged person');
-INSERT INTO `hanjas` VALUES('洋食','양식','raising, farming, culture');
-INSERT INTO `hanjas` VALUES('億','억','one hundred million');
-INSERT INTO `hanjas` VALUES('外科','외과','surgery');
-INSERT INTO `hanjas` VALUES('製菓店','제과점','bakery');
-INSERT INTO `hanjas` VALUES('中食','중식','Chinese food');
-INSERT INTO `hanjas` VALUES('便宜店','편의점','convenience store');
-INSERT INTO `hanjas` VALUES('--湯','갈비탕','beef-rib soup');
-INSERT INTO `hanjas` VALUES('--色','검정색','a large sum of money');
-INSERT INTO `hanjas` VALUES('美容室','미용실','beauty salon');
-INSERT INTO `hanjas` VALUES('二十','이십','twenty');
-INSERT INTO `hanjas` VALUES('忠淸道','충청도','area around Daejon city');
-INSERT INTO `hanjas` VALUES('雪嶽山','설악산','Sorak mountain');
-INSERT INTO `hanjas` VALUES('朝鮮','조선','the Joseon Dynasty');
-INSERT INTO `hanjas` VALUES('仁川空港','인천공항','Incheon International Airport');
-INSERT INTO `hanjas` VALUES('大田','대전','Daejon city');
-INSERT INTO `hanjas` VALUES('根本','근본','root, foundation, basis');
-INSERT INTO `hanjas` VALUES('英國','영국','England');
-INSERT INTO `hanjas` VALUES('九十','구십','90');
-INSERT INTO `hanjas` VALUES('仁川','인천','Incheon city');
-INSERT INTO `hanjas` VALUES('日食','일식','Japanese food');
-INSERT INTO `hanjas` VALUES('初等學生','초등학생','an elementary school student');
-INSERT INTO `hanjas` VALUES('--色','하얀색','white');
-INSERT INTO `hanjas` VALUES('南美','남미','South America');
-INSERT INTO `hanjas` VALUES('金剛山','금강산','Diamond mountain');
-INSERT INTO `hanjas` VALUES('全州','전주','junju');
-INSERT INTO `hanjas` VALUES('全羅道','전라도','southwestern region of South Korea');
-INSERT INTO `hanjas` VALUES('北韓','북한','North Korea');
-INSERT INTO `hanjas` VALUES('釜山','부산','Busan');
-INSERT INTO `hanjas` VALUES('美國','미국','United States of America');
-INSERT INTO `hanjas` VALUES('白頭山','백두산','Baekdoo mountain');
-INSERT INTO `hanjas` VALUES('百濟','백제','historical Korean government');
-INSERT INTO `hanjas` VALUES('北京','북경','Beijing');
-INSERT INTO `hanjas` VALUES('江原道','강원도','region surrounding Seoul');
-INSERT INTO `hanjas` VALUES('京畿道','경기도','region surrounding Seoul');
-INSERT INTO `hanjas` VALUES('景福宮','경복궁','region surrounding Seoul');
-INSERT INTO `hanjas` VALUES('慶州','경주','region surrounding Seoul');
-INSERT INTO `hanjas` VALUES('高句麗','고구려','region surrounding Seoul');
-INSERT INTO `hanjas` VALUES('高麗','고려','region surrounding Seoul');
-INSERT INTO `hanjas` VALUES('光州','광주','region surrounding Seoul');
-INSERT INTO `hanjas` VALUES('金浦空港','김포공항','Gimpo airport');
-INSERT INTO `hanjas` VALUES('蔚山','울산','Ulsan');
-INSERT INTO `hanjas` VALUES('湖南','호남','Honam district');
-INSERT INTO `hanjas` VALUES('智異山','지리산','Jiri mountain');
-INSERT INTO `hanjas` VALUES('濟州島','제주도','Jeju island');
-INSERT INTO `hanjas` VALUES('南大門','남대문','Seoul''s old south gate');
-INSERT INTO `hanjas` VALUES('漢江','한강','Han river');
-INSERT INTO `hanjas` VALUES('漢拏山','한라산','Halla mountain');
-INSERT INTO `hanjas` VALUES('韓半島','한반도','the Korean peninsula');
-INSERT INTO `hanjas` VALUES('平壤','평양','capital of North Korea');
-INSERT INTO `hanjas` VALUES('南大門市場','남대문시장','Namdaemoon shopping center');
-INSERT INTO `hanjas` VALUES('南山','남산','Nam mountain');
-INSERT INTO `hanjas` VALUES('效用','효용','use,utility');
-INSERT INTO `hanjas` VALUES('綿火藥','면화약','cotton powder,guncotton');
-INSERT INTO `hanjas` VALUES('一致','일치','agree,agreement,conformity,correspond,jibe');
-INSERT INTO `hanjas` VALUES('上昇','상승','climb,rising');
-INSERT INTO `hanjas` VALUES('上陸','상륙','disembarkation,landing');
-INSERT INTO `hanjas` VALUES('下水','하수','drainage,sewerage');
-INSERT INTO `hanjas` VALUES('不一致','불일치','disagreement,discord,discrepancy');
-INSERT INTO `hanjas` VALUES('不便','불편','inconvenience,inexpediency');
-INSERT INTO `hanjas` VALUES('不信','불신','discredit,distrust,perfidy');
-INSERT INTO `hanjas` VALUES('不和','불화','discord,dissension');
-INSERT INTO `hanjas` VALUES('不均衡','불균형','disparity,imbalance');
-INSERT INTO `hanjas` VALUES('不安','불안','anxiety,suspense,uneasiness');
-INSERT INTO `hanjas` VALUES('不幸','불행','misfortune,sorrow,unhappiness');
-INSERT INTO `hanjas` VALUES('不正','부정','impropriety,iniquity,injustice');
-INSERT INTO `hanjas` VALUES('不法','불법','illegality,injustice');
-INSERT INTO `hanjas` VALUES('不注意','부주의','carelessness,inattention');
-INSERT INTO `hanjas` VALUES('不貞','부정','infidelity,unchastity');
-INSERT INTO `hanjas` VALUES('世代','세대','age,generation');
-INSERT INTO `hanjas` VALUES('中傷','중상','asperse,defamation,defame,libel,slander');
-INSERT INTO `hanjas` VALUES('中絶','중절','abeyance,interruption');
-INSERT INTO `hanjas` VALUES('中耳','중이','middle ear,tympanum');
-INSERT INTO `hanjas` VALUES('主婦','주부','housewife,mistress');
-INSERT INTO `hanjas` VALUES('主張','주장','advocacy,assertion,contention,insistence');
-INSERT INTO `hanjas` VALUES('主權','주권','dominion,sovereignty,supremacy');
-INSERT INTO `hanjas` VALUES('主義','주의','doctrine,principle,rule');
-INSERT INTO `hanjas` VALUES('主題','주제','subject,theme');
-INSERT INTO `hanjas` VALUES('亂雜','난잡','clutter,promiscuity');
-INSERT INTO `hanjas` VALUES('事件','사건','affair,case,event');
-INSERT INTO `hanjas` VALUES('事實','사실','fact,reality,truth');
-INSERT INTO `hanjas` VALUES('事業','사업','business,enterprise,industry');
-INSERT INTO `hanjas` VALUES('亡命者','망명자','exile,refugee');
-INSERT INTO `hanjas` VALUES('交代','교대','relay,shift');
-INSERT INTO `hanjas` VALUES('交叉','교차','crossing,intersection');
-INSERT INTO `hanjas` VALUES('交換','교환','commute,exchange,interchange,reciprocity');
-INSERT INTO `hanjas` VALUES('交替','교체','change,relay,relief');
-INSERT INTO `hanjas` VALUES('交通','교통','intercourse,traffic');
-INSERT INTO `hanjas` VALUES('交際','교제','association,company');
-INSERT INTO `hanjas` VALUES('人情','인정','human nature,humanity');
-INSERT INTO `hanjas` VALUES('人格','인격','character,individuality,personality');
-INSERT INTO `hanjas` VALUES('人物','인물','character,personage,personality');
-INSERT INTO `hanjas` VALUES('人類','인류','humanity,mankind');
-INSERT INTO `hanjas` VALUES('代價','대가','charge,price');
-INSERT INTO `hanjas` VALUES('代替','대체','replace,substitute');
-INSERT INTO `hanjas` VALUES('代理','대리','deputy,representation');
-INSERT INTO `hanjas` VALUES('代理人','대리인','agent,attorney,representative,substitute');
-INSERT INTO `hanjas` VALUES('代表者','대표자','delegate,representative');
-INSERT INTO `hanjas` VALUES('仲裁','중재','arbitration,intercession,mediation');
-INSERT INTO `hanjas` VALUES('任務','임무','duty,function,office');
-INSERT INTO `hanjas` VALUES('任命','임명','appointment,commission,designation');
-INSERT INTO `hanjas` VALUES('休息','휴식','breathe,repose,rest');
-INSERT INTO `hanjas` VALUES('休戰','휴전','armistice,truce');
-INSERT INTO `hanjas` VALUES('休日','휴일','day off,holiday');
-INSERT INTO `hanjas` VALUES('休止','휴지','cessation,pause,rest');
-INSERT INTO `hanjas` VALUES('伸張','신장','elongation,extension');
-INSERT INTO `hanjas` VALUES('位置','위치','location,position,situation');
-INSERT INTO `hanjas` VALUES('住居','주거','dwelling,residence');
-INSERT INTO `hanjas` VALUES('住所','주소','domicile,residence');
-INSERT INTO `hanjas` VALUES('住民','주민','citizen,population');
-INSERT INTO `hanjas` VALUES('作用','작용','act,action,function,operate,operation');
-INSERT INTO `hanjas` VALUES('使命','사명','errand,mission');
-INSERT INTO `hanjas` VALUES('使節','사절','delegate,envoy');
-INSERT INTO `hanjas` VALUES('使者','사자','emissary,messenger');
-INSERT INTO `hanjas` VALUES('例證','예증','exemplification,illustration,instance');
-INSERT INTO `hanjas` VALUES('供給','공급','furnish,provide,supply');
-INSERT INTO `hanjas` VALUES('侮辱','모욕','affront,contempt,insult');
-INSERT INTO `hanjas` VALUES('侵入','침입','intrude,invasion,raid');
-INSERT INTO `hanjas` VALUES('侵入者','침입자','intruder,invader');
-INSERT INTO `hanjas` VALUES('侵掠','침략','aggression,foray,invasion');
-INSERT INTO `hanjas` VALUES('便宜','편의','accommodation,advantage,convenience,expedience');
-INSERT INTO `hanjas` VALUES('便覽','편람','handbook,manual');
-INSERT INTO `hanjas` VALUES('促進','촉진','acceleration,facilitation,promotion');
-INSERT INTO `hanjas` VALUES('俗人','속인','layman,worldling');
-INSERT INTO `hanjas` VALUES('保存','보존','conservation,maintenance,preservation');
-INSERT INTO `hanjas` VALUES('保留','보류','hold,reserve');
-INSERT INTO `hanjas` VALUES('保管','보관','custody,safekeeping,storage');
-INSERT INTO `hanjas` VALUES('保證','보증','assurance,assure,ensure,guarantee,insure,pledge,undertake,vouch,warrant,warranty');
-INSERT INTO `hanjas` VALUES('保護','보호','care,guardianship,protection,shelter');
-INSERT INTO `hanjas` VALUES('保護者','보호자','guardian,protector');
-INSERT INTO `hanjas` VALUES('信仰','신앙','belief,faith');
-INSERT INTO `hanjas` VALUES('信任','신임','confide,confidence,trust');
-INSERT INTO `hanjas` VALUES('信念','신념','belief,faith');
-INSERT INTO `hanjas` VALUES('信用','신용','belief,confidence,credence,credit,faith,reliance');
-INSERT INTO `hanjas` VALUES('信號','신호','sign,signal,signalize');
-INSERT INTO `hanjas` VALUES('信託','신탁','confide,trust');
-INSERT INTO `hanjas` VALUES('倉庫','창고','storehouse,warehouse');
-INSERT INTO `hanjas` VALUES('個人的','개인적','individual,personal,private');
-INSERT INTO `hanjas` VALUES('個性','개성','individuality,personality');
-INSERT INTO `hanjas` VALUES('倦怠','권태','boredom,weariness');
-INSERT INTO `hanjas` VALUES('假定','가정','assumption,hypothesis,supposition');
-INSERT INTO `hanjas` VALUES('偏差','편차','declination,deviation');
-INSERT INTO `hanjas` VALUES('停止','정지','abeyance,standstill,stoppage');
-INSERT INTO `hanjas` VALUES('偶像','우상','idol,image');
-INSERT INTO `hanjas` VALUES('偶然','우연','chance,fortuity');
-INSERT INTO `hanjas` VALUES('傍觀者','방관자','bystander,onlooker');
-INSERT INTO `hanjas` VALUES('傳導','전도','conduction,transmission');
-INSERT INTO `hanjas` VALUES('僞造','위조','falsification,forgery');
-INSERT INTO `hanjas` VALUES('價値','가치','merit,value');
-INSERT INTO `hanjas` VALUES('償還','상환','redemption,repayment');
-INSERT INTO `hanjas` VALUES('優勢','우세','preponderance,superiority');
-INSERT INTO `hanjas` VALUES('優美','우미','elegance,grace');
-INSERT INTO `hanjas` VALUES('優雅','우아','elegance,grace,refinement');
-INSERT INTO `hanjas` VALUES('元氣','원기','energy,pep,vigor,vitality');
-INSERT INTO `hanjas` VALUES('元金','원금','capital,principal');
-INSERT INTO `hanjas` VALUES('充分','충분','enough,fully,plenty');
-INSERT INTO `hanjas` VALUES('先入觀','선입관','preconception,preoccupation');
-INSERT INTO `hanjas` VALUES('先天的','선천적','congenital,inborn,innate');
-INSERT INTO `hanjas` VALUES('先生','선생','master,teacher');
-INSERT INTO `hanjas` VALUES('先驅者','선구자','forerunner,harbinger,pioneer');
-INSERT INTO `hanjas` VALUES('光學','광학','optic,optics');
-INSERT INTO `hanjas` VALUES('免許','면허','license,permit');
-INSERT INTO `hanjas` VALUES('免除','면제','acquit,release');
-INSERT INTO `hanjas` VALUES('入場','입장','admission,entrance');
-INSERT INTO `hanjas` VALUES('入札','입찰','bid,bidding');
-INSERT INTO `hanjas` VALUES('內包','내포','comprehension,connotation');
-INSERT INTO `hanjas` VALUES('內容','내용','content,matter');
-INSERT INTO `hanjas` VALUES('內部','내부','inside,interior');
-INSERT INTO `hanjas` VALUES('全盛期','전성기','golden age,heyday');
-INSERT INTO `hanjas` VALUES('全體','전체','entirety,whole');
-INSERT INTO `hanjas` VALUES('公害','공해','pollution,public nuisance');
-INSERT INTO `hanjas` VALUES('公平','공평','fairness,justice');
-INSERT INTO `hanjas` VALUES('共生','공생','paragenesis,symbiosis');
-INSERT INTO `hanjas` VALUES('共謀者','공모자','confederate,conspirator');
-INSERT INTO `hanjas` VALUES('兵器','병기','arm,weapon');
-INSERT INTO `hanjas` VALUES('典型的','전형적','archetypal,normal');
-INSERT INTO `hanjas` VALUES('再審','재심','retrial,review');
-INSERT INTO `hanjas` VALUES('再建','재건','reconstruction,rehabilitation');
-INSERT INTO `hanjas` VALUES('再現','재현','reappearance,reproduction');
-INSERT INTO `hanjas` VALUES('再生','재생','rebirth,regeneration,reincarnation');
-INSERT INTO `hanjas` VALUES('冒險','모험','adventure,risk');
-INSERT INTO `hanjas` VALUES('冬眠','동면','hibernation,winter sleep');
-INSERT INTO `hanjas` VALUES('冷氣','냉기','chill,cold');
-INSERT INTO `hanjas` VALUES('冷淡','냉담','coolness,indifference');
-INSERT INTO `hanjas` VALUES('冷靜','냉정','calm,coolness');
-INSERT INTO `hanjas` VALUES('凍傷','동상','chilblain,frostbite');
-INSERT INTO `hanjas` VALUES('凝視','응시','regard,stare');
-INSERT INTO `hanjas` VALUES('出口','출구','exit,outlet,way out');
-INSERT INTO `hanjas` VALUES('出席','출석','attendance,presence');
-INSERT INTO `hanjas` VALUES('出版','출판','issue,publication');
-INSERT INTO `hanjas` VALUES('出現','출현','appearance,arrival');
-INSERT INTO `hanjas` VALUES('分割','분할','division,partition');
-INSERT INTO `hanjas` VALUES('分散','분산','decentralization,dispersion');
-INSERT INTO `hanjas` VALUES('分裂','분열','disrupt,division');
-INSERT INTO `hanjas` VALUES('分解','분해','analysis,disassembly');
-INSERT INTO `hanjas` VALUES('分離','분리','detachment,isolation,segregation,separation');
-INSERT INTO `hanjas` VALUES('切斷','절단','cut,cutting,section');
-INSERT INTO `hanjas` VALUES('切迫','절박','imminence,pressure,urgency');
-INSERT INTO `hanjas` VALUES('刑法','형법','criminal law,penal code');
-INSERT INTO `hanjas` VALUES('刑罰','형벌','penalty,punishment');
-INSERT INTO `hanjas` VALUES('判決','판결','decree,sentence');
-INSERT INTO `hanjas` VALUES('利權','이권','concession,interest');
-INSERT INTO `hanjas` VALUES('利用','이용','use,utilization,utilize');
-INSERT INTO `hanjas` VALUES('利益','이익','gain,interest');
-INSERT INTO `hanjas` VALUES('制度','제도','institution,system');
-INSERT INTO `hanjas` VALUES('制限','제한','limitation,restriction');
-INSERT INTO `hanjas` VALUES('刺戟','자극','excitement,impetus,incentive,stimulus');
-INSERT INTO `hanjas` VALUES('前線','전선','front,front line');
-INSERT INTO `hanjas` VALUES('割引','할인','discount,reduction');
-INSERT INTO `hanjas` VALUES('割當','할당','allotment,assignment');
-INSERT INTO `hanjas` VALUES('劃一','획일','standardization,uniformity');
-INSERT INTO `hanjas` VALUES('加算','가산','add,addition');
-INSERT INTO `hanjas` VALUES('勇敢','용감','bravery,gallantry');
-INSERT INTO `hanjas` VALUES('勇氣','용기','courage,nerve');
-INSERT INTO `hanjas` VALUES('動作','동작','action,motion,movement');
-INSERT INTO `hanjas` VALUES('動悸','동계','palpitation,pulsation');
-INSERT INTO `hanjas` VALUES('動搖','동요','agitation,commotion,excitement');
-INSERT INTO `hanjas` VALUES('勝利','승리','victory,win');
-INSERT INTO `hanjas` VALUES('勝利者','승리자','victor,winner');
-INSERT INTO `hanjas` VALUES('勞力','노력','effort,endeavor');
-INSERT INTO `hanjas` VALUES('勢力','세력','influence,power');
-INSERT INTO `hanjas` VALUES('勤勉','근면','diligence,industry');
-INSERT INTO `hanjas` VALUES('勳章','훈장','decoration,medal,order');
-INSERT INTO `hanjas` VALUES('勸告','권고','counsel,recommendation');
-INSERT INTO `hanjas` VALUES('勸誘','권유','invitation,solicitation');
-INSERT INTO `hanjas` VALUES('包含','포함','comprehension,implication,inclusion');
-INSERT INTO `hanjas` VALUES('包圍','포위','encirclement,envelopment');
-INSERT INTO `hanjas` VALUES('匍匐','포복','crawl,creep,creeping');
-INSERT INTO `hanjas` VALUES('化石','화석','fossil,petrifaction');
-INSERT INTO `hanjas` VALUES('化身','화신','incarnation,personification');
-INSERT INTO `hanjas` VALUES('區分','구분','demarcation,section,sorting');
-INSERT INTO `hanjas` VALUES('區別','구별','differentiation,distinction');
-INSERT INTO `hanjas` VALUES('協議','협의','conference,consultation');
-INSERT INTO `hanjas` VALUES('博愛','박애','charity,humanity,philanthropy');
-INSERT INTO `hanjas` VALUES('博覽會','박람회','exhibition,fair');
-INSERT INTO `hanjas` VALUES('占領','점령','capture,occupation');
-INSERT INTO `hanjas` VALUES('危險','위험','danger,hazard,peril');
-INSERT INTO `hanjas` VALUES('卵子','난자','egg cell,ovule,ovum');
-INSERT INTO `hanjas` VALUES('原因','원인','cause,source');
-INSERT INTO `hanjas` VALUES('原型','원형','model,prototype');
-INSERT INTO `hanjas` VALUES('原形質','원형질','plasma,protoplasm');
-INSERT INTO `hanjas` VALUES('友情','우정','fellowship,friendship');
-INSERT INTO `hanjas` VALUES('反亂','반란','mutiny,rebellion,uprising');
-INSERT INTO `hanjas` VALUES('反對','반대','objection,opposition,resistance,reverse');
-INSERT INTO `hanjas` VALUES('反對者','반대자','dissenter,objector,opposer');
-INSERT INTO `hanjas` VALUES('反復','반복','repeat,repetition');
-INSERT INTO `hanjas` VALUES('反感','반감','antipathy,revolt');
-INSERT INTO `hanjas` VALUES('反應','반응','reaction,response');
-INSERT INTO `hanjas` VALUES('反抗','반항','defiance,resistance,revolt');
-INSERT INTO `hanjas` VALUES('反逆','반역','revolt,treachery');
-INSERT INTO `hanjas` VALUES('反逆者','반역자','rebel,traitor');
-INSERT INTO `hanjas` VALUES('反響','반향','echo,resound,reverberate,reverberation');
-INSERT INTO `hanjas` VALUES('取扱','취급','handling,management');
-INSERT INTO `hanjas` VALUES('受難','수난','passion,suffering');
-INSERT INTO `hanjas` VALUES('口錢','구전','brokerage,commission');
-INSERT INTO `hanjas` VALUES('可燃物','가연물','combustible,inflammable');
-INSERT INTO `hanjas` VALUES('可能性','가능성','likelihood,possibility,potentiality');
-INSERT INTO `hanjas` VALUES('合同','합동','incorporation,union');
-INSERT INTO `hanjas` VALUES('合成','합성','composition,compound,synthesis');
-INSERT INTO `hanjas` VALUES('同情','동정','commiserate,pity,sympathy');
-INSERT INTO `hanjas` VALUES('同意','동의','agreement,consent');
-INSERT INTO `hanjas` VALUES('同盟','동맹','alliance,league');
-INSERT INTO `hanjas` VALUES('同胞','동포','brethren,compatriot,fellowman');
-INSERT INTO `hanjas` VALUES('名譽','명예','credit,honor');
-INSERT INTO `hanjas` VALUES('向上','향상','elevation,improvement,rise');
-INSERT INTO `hanjas` VALUES('否定','부정','denial,negation');
-INSERT INTO `hanjas` VALUES('否認','부인','denial,disapproval,negation,repudiation');
-INSERT INTO `hanjas` VALUES('含蓄','함축','connotation,implication');
-INSERT INTO `hanjas` VALUES('告訴','고소','accusation,complaint');
-INSERT INTO `hanjas` VALUES('周圍','주위','circumference,surrounding');
-INSERT INTO `hanjas` VALUES('周邊','주변','circumference,outskirts');
-INSERT INTO `hanjas` VALUES('呪文','주문','charm,incantation,spell');
-INSERT INTO `hanjas` VALUES('味覺','미각','palate,taste');
-INSERT INTO `hanjas` VALUES('呼吸','호흡','breath,respiration');
-INSERT INTO `hanjas` VALUES('命令','명령','command,dictate,enjoin,instruction,order,prescribe,require');
-INSERT INTO `hanjas` VALUES('和合','화합','concord,harmony,union');
-INSERT INTO `hanjas` VALUES('和解','화해','accommodation,compromise,mediation,reconciliation');
-INSERT INTO `hanjas` VALUES('哀悼','애도','condolence,regret');
-INSERT INTO `hanjas` VALUES('哀願','애원','appeal,petition');
-INSERT INTO `hanjas` VALUES('唯心論','유심론','idealism,mentalism,spiritualism');
-INSERT INTO `hanjas` VALUES('商人','상인','merchant,trader');
-INSERT INTO `hanjas` VALUES('商品','상품','commodity,good,goods,merchandise');
-INSERT INTO `hanjas` VALUES('商業','상업','commerce,trade');
-INSERT INTO `hanjas` VALUES('喪失','상실','forfeit,loss');
-INSERT INTO `hanjas` VALUES('嗜好','기호','liking,taste');
-INSERT INTO `hanjas` VALUES('嘲弄','조롱','mockery,ridicule');
-INSERT INTO `hanjas` VALUES('噴霧器','분무기','atomizer,sprayer');
-INSERT INTO `hanjas` VALUES('嚴肅','엄숙','austerity,gravity,solemnity');
-INSERT INTO `hanjas` VALUES('回廊','회랑','corridor,gallery');
-INSERT INTO `hanjas` VALUES('回復','회복','restoration,return');
-INSERT INTO `hanjas` VALUES('回歸','회귀','recursion,revolution');
-INSERT INTO `hanjas` VALUES('回轉','회전','revolution,turning');
-INSERT INTO `hanjas` VALUES('回避','회피','avoid,evasion');
-INSERT INTO `hanjas` VALUES('固執','고집','insistence,persistence');
-INSERT INTO `hanjas` VALUES('國家','국가','country,state');
-INSERT INTO `hanjas` VALUES('國民','국민','citizen,people');
-INSERT INTO `hanjas` VALUES('圓-','원주','column,cylinder');
-INSERT INTO `hanjas` VALUES('圖表','도표','chart,diagram,graph');
-INSERT INTO `hanjas` VALUES('地域','지역','area,region');
-INSERT INTO `hanjas` VALUES('地方','지방','area,district');
-INSERT INTO `hanjas` VALUES('均衡','균형','balance,equilibrium');
-INSERT INTO `hanjas` VALUES('執事','집사','butler,deacon,steward');
-INSERT INTO `hanjas` VALUES('培養','배양','cultivation,culture');
-INSERT INTO `hanjas` VALUES('基礎','기초','basis,foundation');
-INSERT INTO `hanjas` VALUES('報告','보고','information,report');
-INSERT INTO `hanjas` VALUES('報道','보도','information,report');
-INSERT INTO `hanjas` VALUES('報酬','보수','remuneration,reward');
-INSERT INTO `hanjas` VALUES('墮落','타락','corruption,degradation,depravity');
-INSERT INTO `hanjas` VALUES('壓倒','압도','overcome,overmaster,overpower,overwhelm,whelm');
-INSERT INTO `hanjas` VALUES('壓力','압력','pressure,stress');
-INSERT INTO `hanjas` VALUES('壓迫','압박','oppression,pressure');
-INSERT INTO `hanjas` VALUES('外債','외채','foreign debt,foreign loan');
-INSERT INTO `hanjas` VALUES('外觀','외관','appearance,exterior,facade');
-INSERT INTO `hanjas` VALUES('夢想','몽상','dream,reverie');
-INSERT INTO `hanjas` VALUES('夢遊病','몽유병','sleepwalking,somnambulism');
-INSERT INTO `hanjas` VALUES('夢遊病者','몽유병자','noctambulist,sleepwalker');
-INSERT INTO `hanjas` VALUES('大團圓','대단원','denouement,finale');
-INSERT INTO `hanjas` VALUES('大望','대망','ambition,aspiration');
-INSERT INTO `hanjas` VALUES('大砲','대포','artillery,gun');
-INSERT INTO `hanjas` VALUES('天國','천국','heaven,paradise');
-INSERT INTO `hanjas` VALUES('天才','천재','genius,prodigy');
-INSERT INTO `hanjas` VALUES('天然痘','천연두','smallpox,variola');
-INSERT INTO `hanjas` VALUES('天職','천직','calling,vocation');
-INSERT INTO `hanjas` VALUES('夫婦','부부','couple,pair,spouse');
-INSERT INTO `hanjas` VALUES('失踪','실종','abscondence,disappearance');
-INSERT INTO `hanjas` VALUES('奉仕','봉사','serve,service');
-INSERT INTO `hanjas` VALUES('契約','계약','agreement,compact,contract,covenant');
-INSERT INTO `hanjas` VALUES('奧地','오지','backwoods,hinterland,interior');
-INSERT INTO `hanjas` VALUES('女店員','여점원','saleswoman,shopgirl');
-INSERT INTO `hanjas` VALUES('女給','여급','hostess,waitress');
-INSERT INTO `hanjas` VALUES('妖精','요정','fairy,sprite');
-INSERT INTO `hanjas` VALUES('妨害','방해','hindrance,interference,obstruction');
-INSERT INTO `hanjas` VALUES('委任','위임','commission,consign,entrust');
-INSERT INTO `hanjas` VALUES('委託','위탁','commit,trust');
-INSERT INTO `hanjas` VALUES('姿勢','자세','attitude,posture');
-INSERT INTO `hanjas` VALUES('子孫','자손','descendant,offspring,posterity');
-INSERT INTO `hanjas` VALUES('子宮','자궁','uterus,womb');
-INSERT INTO `hanjas` VALUES('子葉','자엽','cotyledon,seed leaf');
-INSERT INTO `hanjas` VALUES('學園','학원','academy,campus');
-INSERT INTO `hanjas` VALUES('宇宙','우주','space,universe');
-INSERT INTO `hanjas` VALUES('安全','안전','safety,security');
-INSERT INTO `hanjas` VALUES('完了','완료','close,completion');
-INSERT INTO `hanjas` VALUES('完成','완성','complete,completion,finish,perfection');
-INSERT INTO `hanjas` VALUES('定理','정리','proposition,theorem');
-INSERT INTO `hanjas` VALUES('宣告','선고','pronouncement,sentence');
-INSERT INTO `hanjas` VALUES('宣言','선언','declaration,proclamation');
-INSERT INTO `hanjas` VALUES('家畜','가축','domestic animal,livestock');
-INSERT INTO `hanjas` VALUES('家禽','가금','fowl,poultry');
-INSERT INTO `hanjas` VALUES('容器','용기','container,vessel');
-INSERT INTO `hanjas` VALUES('容積','용적','capacity,volume');
-INSERT INTO `hanjas` VALUES('容貌','용모','feature,look');
-INSERT INTO `hanjas` VALUES('宿命','숙명','fate,predestination');
-INSERT INTO `hanjas` VALUES('密告者','밀고자','rat,squealer');
-INSERT INTO `hanjas` VALUES('實例','실례','example,illustration');
-INSERT INTO `hanjas` VALUES('實在','실재','existence,reality');
-INSERT INTO `hanjas` VALUES('實體','실체','entity,substance');
-INSERT INTO `hanjas` VALUES('射手','사수','archer,shooter');
-INSERT INTO `hanjas` VALUES('尊敬','존경','esteem,honor,regard,respect,revere,reverence');
-INSERT INTO `hanjas` VALUES('尊重','존중','esteem,regard,respect');
-INSERT INTO `hanjas` VALUES('對照','대조','antithesis,comparison,contrast');
-INSERT INTO `hanjas` VALUES('對立','대립','confrontation,opposition');
-INSERT INTO `hanjas` VALUES('對話','대화','conversation,dialogue');
-INSERT INTO `hanjas` VALUES('尺度','척도','linear measure,scale');
-INSERT INTO `hanjas` VALUES('居住者','거주자','dweller,inhabitant,occupier,resident');
-INSERT INTO `hanjas` VALUES('展望','전망','outlook,view');
-INSERT INTO `hanjas` VALUES('展示','전시','display,exhibition');
-INSERT INTO `hanjas` VALUES('履行','이행','discharge,implementation');
-INSERT INTO `hanjas` VALUES('屬領','속령','dependency,possession');
-INSERT INTO `hanjas` VALUES('山賊','산적','bandit,brigand');
-INSERT INTO `hanjas` VALUES('崇拜','숭배','adoration,worship');
-INSERT INTO `hanjas` VALUES('工場','공장','factory,workshop');
-INSERT INTO `hanjas` VALUES('左遷','좌천','degradation,demotion');
-INSERT INTO `hanjas` VALUES('差別','차별','discrimination,distinction');
-INSERT INTO `hanjas` VALUES('市場','시장','market,marketplace');
-INSERT INTO `hanjas` VALUES('平價','평가','par,parity');
-INSERT INTO `hanjas` VALUES('平衡','평형','counterpoise,equilibrium');
-INSERT INTO `hanjas` VALUES('年金','연금','annuity,pension');
-INSERT INTO `hanjas` VALUES('年齡','연령','age,year');
-INSERT INTO `hanjas` VALUES('幸福','행복','blessedness,happiness');
-INSERT INTO `hanjas` VALUES('幸運','행운','fortune,good luck');
-INSERT INTO `hanjas` VALUES('幹線','간선','main line,trunk line');
-INSERT INTO `hanjas` VALUES('幻像','환상','illusion,phantom,vision');
-INSERT INTO `hanjas` VALUES('幻影','환영','illusion,phantom,vision');
-INSERT INTO `hanjas` VALUES('幼兒','유아','child,infant');
-INSERT INTO `hanjas` VALUES('幼年','유년','childhood,infancy');
-INSERT INTO `hanjas` VALUES('幽閉','유폐','confinement,imprisonment,incarceration');
-INSERT INTO `hanjas` VALUES('幽靈','유령','apparition,ghost,phantom,specter');
-INSERT INTO `hanjas` VALUES('店員','점원','clerk,shop assistant');
-INSERT INTO `hanjas` VALUES('廢棄','폐기','repeal,scrap');
-INSERT INTO `hanjas` VALUES('廢止','폐지','abolition,rescind,revoke');
-INSERT INTO `hanjas` VALUES('延長','연장','elongation,extension,prolongation');
-INSERT INTO `hanjas` VALUES('引用','인용','citation,quotation');
-INSERT INTO `hanjas` VALUES('彫刻','조각','carving,engraving,grave,sculpture');
-INSERT INTO `hanjas` VALUES('影響','영향','effect,influence');
-INSERT INTO `hanjas` VALUES('役割','역할','part,role');
-INSERT INTO `hanjas` VALUES('後悔','후회','regret,repent,repentance');
-INSERT INTO `hanjas` VALUES('後援','후원','patronage,patronize');
-INSERT INTO `hanjas` VALUES('後繼者','후계자','heir,replacement');
-INSERT INTO `hanjas` VALUES('徒黨','도당','cabal,faction');
-INSERT INTO `hanjas` VALUES('復歸','복귀','comeback,return');
-INSERT INTO `hanjas` VALUES('循環','순환','circulation,cycle');
-INSERT INTO `hanjas` VALUES('徵候','징후','sign,symptom');
-INSERT INTO `hanjas` VALUES('忿怒','분노','exasperation,resentment');
-INSERT INTO `hanjas` VALUES('急迫','급박','imminence,urgency');
-INSERT INTO `hanjas` VALUES('性質','성질','disposition,nature');
-INSERT INTO `hanjas` VALUES('恐怖','공포','dread,terror');
-INSERT INTO `hanjas` VALUES('恥辱','치욕','disgrace,shame');
-INSERT INTO `hanjas` VALUES('恩惠','은혜','benefit,grace');
-INSERT INTO `hanjas` VALUES('情報','정보','information,intelligence');
-INSERT INTO `hanjas` VALUES('惡化','악화','aggravation,degeneration,deterioration');
-INSERT INTO `hanjas` VALUES('惡寒','오한','ague,chill');
-INSERT INTO `hanjas` VALUES('惡意','악의','ill will,malice,spite');
-INSERT INTO `hanjas` VALUES('惡漢','악한','crook,rascal,ruffian,villain');
-INSERT INTO `hanjas` VALUES('惡用','악용','abuse,perversion');
-INSERT INTO `hanjas` VALUES('惡魔','악마','demon,devil,fiend');
-INSERT INTO `hanjas` VALUES('惡黨','악당','rascal,scoundrel');
-INSERT INTO `hanjas` VALUES('想像','상상','imagination,imagine,suppose,think');
-INSERT INTO `hanjas` VALUES('想起','상기','recollection,remember');
-INSERT INTO `hanjas` VALUES('意向','의향','inclination,intention');
-INSERT INTO `hanjas` VALUES('意味','의미','meaning,significance');
-INSERT INTO `hanjas` VALUES('意識','의식','consciousness,sense');
-INSERT INTO `hanjas` VALUES('愛人','애인','lover,mistress');
-INSERT INTO `hanjas` VALUES('愛情','애정','affection,love');
-INSERT INTO `hanjas` VALUES('愼重','신중','discretion,prudence');
-INSERT INTO `hanjas` VALUES('慈悲','자비','charity,mercy');
-INSERT INTO `hanjas` VALUES('態度','태도','attitude,manner');
-INSERT INTO `hanjas` VALUES('慰安','위안','comfort,solace');
-INSERT INTO `hanjas` VALUES('憐愍','연민','mercy,pity');
-INSERT INTO `hanjas` VALUES('憤慨','분개','indignation,resentment');
-INSERT INTO `hanjas` VALUES('懺悔','참회','penitence,repentance');
-INSERT INTO `hanjas` VALUES('戀人','연인','lover,sweetheart');
-INSERT INTO `hanjas` VALUES('成功','성공','hit,make,success');
-INSERT INTO `hanjas` VALUES('成熟','성숙','maturity,ripeness');
-INSERT INTO `hanjas` VALUES('戰鬪','전투','battle,combat,fight');
-INSERT INTO `hanjas` VALUES('所有者','소유자','owner,possessor,proprietor');
-INSERT INTO `hanjas` VALUES('所願','소원','desire,wish');
-INSERT INTO `hanjas` VALUES('手淫','수음','masturbation,onanism');
-INSERT INTO `hanjas` VALUES('扶養','부양','support,sustain');
-INSERT INTO `hanjas` VALUES('批准','비준','ratification,ratify');
-INSERT INTO `hanjas` VALUES('批評','비평','criticism,review');
-INSERT INTO `hanjas` VALUES('承認','승인','acknowledgement,recognition');
-INSERT INTO `hanjas` VALUES('技巧','기교','finesse,technique');
-INSERT INTO `hanjas` VALUES('抑揚','억양','inflection,modulation');
-INSERT INTO `hanjas` VALUES('抑留','억류','detention,internment');
-INSERT INTO `hanjas` VALUES('抱擁','포옹','clinch,embrace');
-INSERT INTO `hanjas` VALUES('抵抗','저항','opposition,resistance');
-INSERT INTO `hanjas` VALUES('拍子','박자','tempo,time');
-INSERT INTO `hanjas` VALUES('拒否','거부','denial,refusal,veto');
-INSERT INTO `hanjas` VALUES('拒絶','거절','refusal,rejection');
-INSERT INTO `hanjas` VALUES('拔萃','발췌','excerpt,extract,selection');
-INSERT INTO `hanjas` VALUES('拘束','구속','restraint,restriction');
-INSERT INTO `hanjas` VALUES('拷問','고문','rack,torture');
-INSERT INTO `hanjas` VALUES('指名','지명','appoint,designate,name');
-INSERT INTO `hanjas` VALUES('指揮','지휘','command,direction');
-INSERT INTO `hanjas` VALUES('指揮者','지휘자','conductor,director');
-INSERT INTO `hanjas` VALUES('指示','지시','indication,instruction');
-INSERT INTO `hanjas` VALUES('按摩','안마','knead,massage');
-INSERT INTO `hanjas` VALUES('挑戰','도전','challenge,defiance');
-INSERT INTO `hanjas` VALUES('挫折','좌절','frustration,setback');
-INSERT INTO `hanjas` VALUES('振動','진동','oscillation,vibration');
-INSERT INTO `hanjas` VALUES('授與','수여','award,grant');
-INSERT INTO `hanjas` VALUES('採用','채용','adopt,embrace,espouse,take');
-INSERT INTO `hanjas` VALUES('探究','탐구','explore,question,research');
-INSERT INTO `hanjas` VALUES('接觸','접촉','contact,touch');
-INSERT INTO `hanjas` VALUES('推理','추리','inference,reasoning');
-INSERT INTO `hanjas` VALUES('掩護','엄호','cover,covering');
-INSERT INTO `hanjas` VALUES('描寫','묘사','depiction,description,picture,portrayal');
-INSERT INTO `hanjas` VALUES('提案','제안','proposal,proposition,suggestion');
-INSERT INTO `hanjas` VALUES('損害','손해','damage,injury,loss');
-INSERT INTO `hanjas` VALUES('撤回','철회','countermand,repeal');
-INSERT INTO `hanjas` VALUES('播種','파종','planting,seeding');
-INSERT INTO `hanjas` VALUES('操縱','조종','handling,manipulate');
-INSERT INTO `hanjas` VALUES('擦過傷','찰과상','abrasion,scratch');
-INSERT INTO `hanjas` VALUES('擴大','확대','enlargement,magnification');
-INSERT INTO `hanjas` VALUES('擴張','확장','expansion,extension');
-INSERT INTO `hanjas` VALUES('支出','지출','expenditure,expense');
-INSERT INTO `hanjas` VALUES('支持','지지','support,sustain');
-INSERT INTO `hanjas` VALUES('支援','지원','backing,support');
-INSERT INTO `hanjas` VALUES('支柱','지주','brace,prop');
-INSERT INTO `hanjas` VALUES('支配人','지배인','executive,manager');
-INSERT INTO `hanjas` VALUES('收益','수익','proceeds,return');
-INSERT INTO `hanjas` VALUES('收穫','수확','harvest,ingathering,reap');
-INSERT INTO `hanjas` VALUES('收縮','수축','constriction,contraction');
-INSERT INTO `hanjas` VALUES('改善','개선','betterment,improvement');
-INSERT INTO `hanjas` VALUES('改譯','개역','retranslation,revision');
-INSERT INTO `hanjas` VALUES('改革','개혁','reform,reformation');
-INSERT INTO `hanjas` VALUES('放出','방출','discharge,expel');
-INSERT INTO `hanjas` VALUES('放射','방사','emission,radiation');
-INSERT INTO `hanjas` VALUES('放牧','방목','grazing,pasture');
-INSERT INTO `hanjas` VALUES('放蕩','방탕','dissipation,prodigality');
-INSERT INTO `hanjas` VALUES('政治家','정치가','politician,statesman');
-INSERT INTO `hanjas` VALUES('救援','구원','relief,rescue');
-INSERT INTO `hanjas` VALUES('救濟','구제','relief,salvation');
-INSERT INTO `hanjas` VALUES('敬意','경의','regard,respect');
-INSERT INTO `hanjas` VALUES('敵對','적대','antagonism,hostility,opposition');
-INSERT INTO `hanjas` VALUES('敷衍','부연','amplification,expatiation');
-INSERT INTO `hanjas` VALUES('文書','문서','document,writing');
-INSERT INTO `hanjas` VALUES('料金','요금','charge,fare,fee');
-INSERT INTO `hanjas` VALUES('斷片','단편','fragment,shred');
-INSERT INTO `hanjas` VALUES('方向','방향','course,direction,way');
-INSERT INTO `hanjas` VALUES('方式','방식','form,method,system');
-INSERT INTO `hanjas` VALUES('方法','방법','manner,method,way');
-INSERT INTO `hanjas` VALUES('方眼紙','방안지','graph paper,section paper');
-INSERT INTO `hanjas` VALUES('旅行','여행','travel,trip');
-INSERT INTO `hanjas` VALUES('旋回','선회','revolution,rotation,turning');
-INSERT INTO `hanjas` VALUES('日射病','일사병','heatstroke,sunstroke');
-INSERT INTO `hanjas` VALUES('明滅','명멸','blinking,flickering');
-INSERT INTO `hanjas` VALUES('昏睡','혼수','lethargy,stupor');
-INSERT INTO `hanjas` VALUES('時代','시대','era,period');
-INSERT INTO `hanjas` VALUES('普及','보급','diffusion,spread');
-INSERT INTO `hanjas` VALUES('普通','보통','generally,ordinarily,usually');
-INSERT INTO `hanjas` VALUES('暗殺者','암살자','assassin,assassinator');
-INSERT INTO `hanjas` VALUES('暗號','암호','code,password');
-INSERT INTO `hanjas` VALUES('暴動','폭동','insurrection,rebellion,revolt,riot,uprising');
-INSERT INTO `hanjas` VALUES('暴君','폭군','despot,tyrant');
-INSERT INTO `hanjas` VALUES('暴露','폭로','disclosure,exposure,revelation');
-INSERT INTO `hanjas` VALUES('暴風','폭풍','gale,windstorm');
-INSERT INTO `hanjas` VALUES('曲藝','곡예','acrobatic,acrobatics');
-INSERT INTO `hanjas` VALUES('書法','서법','calligraphy,penmanship');
-INSERT INTO `hanjas` VALUES('書記','서기','clerk,secretary');
-INSERT INTO `hanjas` VALUES('最初','최초','first,outset');
-INSERT INTO `hanjas` VALUES('會議','회의','assembly,conference,council');
-INSERT INTO `hanjas` VALUES('服從','복종','obedience,resignation,submission');
-INSERT INTO `hanjas` VALUES('期待','기대','expectation,hope');
-INSERT INTO `hanjas` VALUES('期間','기간','period,term');
-INSERT INTO `hanjas` VALUES('本源','본원','principle,root');
-INSERT INTO `hanjas` VALUES('材木','재목','lumber,timber');
-INSERT INTO `hanjas` VALUES('束縛','속박','binding,restraint,restriction');
-INSERT INTO `hanjas` VALUES('果糖','과당','fructose,fruit sugar');
-INSERT INTO `hanjas` VALUES('柔弱','유약','effeminacy,weakness');
-INSERT INTO `hanjas` VALUES('根據','근거','basis,foundation');
-INSERT INTO `hanjas` VALUES('根源','근원','root,source');
-INSERT INTO `hanjas` VALUES('栽培','재배','cultivation,culture');
-INSERT INTO `hanjas` VALUES('條約','조약','pact,treaty');
-INSERT INTO `hanjas` VALUES('極端','극단','extreme,extremity');
-INSERT INTO `hanjas` VALUES('極致','극치','culmination,perfection');
-INSERT INTO `hanjas` VALUES('構內','구내','campus,premise');
-INSERT INTO `hanjas` VALUES('構成','구성','composition,organization');
-INSERT INTO `hanjas` VALUES('槪念','개념','concept,notion');
-INSERT INTO `hanjas` VALUES('標本','표본','example,specimen');
-INSERT INTO `hanjas` VALUES('標語','표어','catchword,motto');
-INSERT INTO `hanjas` VALUES('模型','모형','dummy,model');
-INSERT INTO `hanjas` VALUES('模範','모범','example,exemplar,exemplum,model');
-INSERT INTO `hanjas` VALUES('樣式','양식','pattern,style');
-INSERT INTO `hanjas` VALUES('橋頭堡','교두보','beachhead,bridgehead');
-INSERT INTO `hanjas` VALUES('機會','기회','chance,opportunity');
-INSERT INTO `hanjas` VALUES('機構','기구','mechanism,organization');
-INSERT INTO `hanjas` VALUES('機能','기능','faculty,function');
-INSERT INTO `hanjas` VALUES('機關車','기관차','engine,locomotive');
-INSERT INTO `hanjas` VALUES('權力','권력','authority,power');
-INSERT INTO `hanjas` VALUES('歡迎','환영','reception,welcome');
-INSERT INTO `hanjas` VALUES('正比例','정비례','direct proportion,direct ratio');
-INSERT INTO `hanjas` VALUES('正義','정의','justice,right,righteousness');
-INSERT INTO `hanjas` VALUES('正面','정면','facade,frontage');
-INSERT INTO `hanjas` VALUES('武力','무력','force,sword');
-INSERT INTO `hanjas` VALUES('武器','무기','arm,weapon');
-INSERT INTO `hanjas` VALUES('歸還','귀환','repatriation,return');
-INSERT INTO `hanjas` VALUES('死亡','사망','death,decease');
-INSERT INTO `hanjas` VALUES('死刑','사형','capital punishment,death penalty');
-INSERT INTO `hanjas` VALUES('殘餘','잔여','remainder,residue,rest');
-INSERT INTO `hanjas` VALUES('殘骸','잔해','ruin,wreckage');
-INSERT INTO `hanjas` VALUES('殺人者','살인자','killer,manslayer,murderer');
-INSERT INTO `hanjas` VALUES('殺到','쇄도','flood,inundate,rush');
-INSERT INTO `hanjas` VALUES('殺菌','살균','disinfection,sterilization');
-INSERT INTO `hanjas` VALUES('比率','비율','proportion,ratio');
-INSERT INTO `hanjas` VALUES('民族','민족','nation,race');
-INSERT INTO `hanjas` VALUES('氣質','기질','character,temperament');
-INSERT INTO `hanjas` VALUES('水腫','수종','dropsy,edema');
-INSERT INTO `hanjas` VALUES('水路','수로','channel,waterway');
-INSERT INTO `hanjas` VALUES('水門','수문','sluice gate,water gate');
-INSERT INTO `hanjas` VALUES('汚名','오명','infamy,stigma');
-INSERT INTO `hanjas` VALUES('汚染','오염','contamination,pollution');
-INSERT INTO `hanjas` VALUES('汚點','오점','blot,stain');
-INSERT INTO `hanjas` VALUES('決心','결심','determination,resolve');
-INSERT INTO `hanjas` VALUES('治世','치세','reign,rule');
-INSERT INTO `hanjas` VALUES('法','법','a law, the law,a way, a method');
-INSERT INTO `hanjas` VALUES('注文','주문','bespeak,order');
-INSERT INTO `hanjas` VALUES('洗練','세련','polish,refine');
-INSERT INTO `hanjas` VALUES('活動','활동','action,activity');
-INSERT INTO `hanjas` VALUES('活氣','활기','energy,liveliness');
-INSERT INTO `hanjas` VALUES('流入','유입','afflux,influx');
-INSERT INTO `hanjas` VALUES('流星','유성','falling star,meteor');
-INSERT INTO `hanjas` VALUES('流産','유산','abortion,miscarriage');
-INSERT INTO `hanjas` VALUES('浪費','낭비','extravagance,waste');
-INSERT INTO `hanjas` VALUES('海賊','해적','pirate,sea robber');
-INSERT INTO `hanjas` VALUES('浸水','침수','inundate,inundation');
-INSERT INTO `hanjas` VALUES('浸蝕','침식','corrosion,erosion');
-INSERT INTO `hanjas` VALUES('消毒','소독','disinfection,sterilization');
-INSERT INTO `hanjas` VALUES('淨化','정화','cleanup,purification');
-INSERT INTO `hanjas` VALUES('混亂','혼란','confusion,disorder');
-INSERT INTO `hanjas` VALUES('減少','감소','decrease,reduction');
-INSERT INTO `hanjas` VALUES('準備','준비','preparation,provision');
-INSERT INTO `hanjas` VALUES('溶劑','용제','flux,solvent');
-INSERT INTO `hanjas` VALUES('滅亡','멸망','destruction,downfall,ruin');
-INSERT INTO `hanjas` VALUES('漂流','표류','drift,float');
-INSERT INTO `hanjas` VALUES('潛伏','잠복','ambush,concealment,lurk');
-INSERT INTO `hanjas` VALUES('潮流','조류','tidal current,tide');
-INSERT INTO `hanjas` VALUES('濕氣','습기','dampness,humidity,moisture');
-INSERT INTO `hanjas` VALUES('濾過器','여과기','filter,strainer');
-INSERT INTO `hanjas` VALUES('火夫','화부','fireman,stoker');
-INSERT INTO `hanjas` VALUES('火炎','화염','blaze,flame');
-INSERT INTO `hanjas` VALUES('災難','재난','calamity,misfortune');
-INSERT INTO `hanjas` VALUES('烽火','봉화','beacon,rocket');
-INSERT INTO `hanjas` VALUES('無秩序','무질서','chaos,disorder');
-INSERT INTO `hanjas` VALUES('熱中','열중','enthusiasm,zeal');
-INSERT INTO `hanjas` VALUES('熱心','열심','enthusiasm,zeal');
-INSERT INTO `hanjas` VALUES('爆發','폭발','eruption,explosion');
-INSERT INTO `hanjas` VALUES('牧草','목초','grass,pasture');
-INSERT INTO `hanjas` VALUES('物品','물품','article,goods');
-INSERT INTO `hanjas` VALUES('牽制','견제','contain,diversion');
-INSERT INTO `hanjas` VALUES('犯罪者','범죄자','criminal,culprit');
-INSERT INTO `hanjas` VALUES('狂犬病','광견병','hydrophobia,rabies');
-INSERT INTO `hanjas` VALUES('獨裁者','독재자','autocrat,despot,dictator');
-INSERT INTO `hanjas` VALUES('獸姦','수간','bestiality,sodomy');
-INSERT INTO `hanjas` VALUES('獻身','헌신','dedication,devotion');
-INSERT INTO `hanjas` VALUES('王位','왕위','crown,throne');
-INSERT INTO `hanjas` VALUES('王冠','왕관','crown,diadem');
-INSERT INTO `hanjas` VALUES('現代','현대','modern times,nowadays');
-INSERT INTO `hanjas` VALUES('現金','현금','cash,ready money');
-INSERT INTO `hanjas` VALUES('球體','구체','globe,orb,sphere');
-INSERT INTO `hanjas` VALUES('生存','생존','being,existence');
-INSERT INTO `hanjas` VALUES('生産者','생산자','manufacturer,producer');
-INSERT INTO `hanjas` VALUES('生計','생계','livelihood,living');
-INSERT INTO `hanjas` VALUES('産出','산출','afford,yield');
-INSERT INTO `hanjas` VALUES('甲殼','갑각','carapace,crust');
-INSERT INTO `hanjas` VALUES('申請','신청','application,request');
-INSERT INTO `hanjas` VALUES('異議','이의','dissent,objection,protest');
-INSERT INTO `hanjas` VALUES('疑問','의문','doubt,problem');
-INSERT INTO `hanjas` VALUES('疑心','의심','distrust,doubt,question,suspect,suspicion');
-INSERT INTO `hanjas` VALUES('痲痺','마비','palsy,paralysis');
-INSERT INTO `hanjas` VALUES('登記','등기','registration,registry');
-INSERT INTO `hanjas` VALUES('發火','발화','firing,ignition');
-INSERT INTO `hanjas` VALUES('發狂','발광','craziness,rage');
-INSERT INTO `hanjas` VALUES('發生','발생','incidence,occurrence');
-INSERT INTO `hanjas` VALUES('發疹','발진','eruption,rash');
-INSERT INTO `hanjas` VALUES('發表','발표','announcement,publication');
-INSERT INTO `hanjas` VALUES('發見者','발견자','discoverer,finder');
-INSERT INTO `hanjas` VALUES('發達','발달','development,growth');
-INSERT INTO `hanjas` VALUES('白熱','백열','incandescence,white heat');
-INSERT INTO `hanjas` VALUES('監督','감독','control,superintendence,supervision');
-INSERT INTO `hanjas` VALUES('監視','감시','observation,surveillance');
-INSERT INTO `hanjas` VALUES('目標','목표','mark,objective,target');
-INSERT INTO `hanjas` VALUES('目的','목적','intention,purpose');
-INSERT INTO `hanjas` VALUES('相續','상속','inheritance,succession');
-INSERT INTO `hanjas` VALUES('看板','간판','sign,signboard');
-INSERT INTO `hanjas` VALUES('眞實性','진실성','authenticity,credibility');
-INSERT INTO `hanjas` VALUES('矛盾','모순','contradiction,inconsistency');
-INSERT INTO `hanjas` VALUES('知識','지식','information,knowledge');
-INSERT INTO `hanjas` VALUES('矯正','교정','correction,rectify,remedy');
-INSERT INTO `hanjas` VALUES('石工','석공','mason,stonemason');
-INSERT INTO `hanjas` VALUES('石油','석유','oil,petroleum');
-INSERT INTO `hanjas` VALUES('石炭酸','석탄산','carbolic acid,phenol');
-INSERT INTO `hanjas` VALUES('砲火','포화','fire,gunfire');
-INSERT INTO `hanjas` VALUES('砲術','포술','artillery,gunnery');
-INSERT INTO `hanjas` VALUES('破壞者','파괴자','destroyer,waster');
-INSERT INTO `hanjas` VALUES('破片','파편','fragment,splinter');
-INSERT INTO `hanjas` VALUES('碑文','비문','epigraph,inscription');
-INSERT INTO `hanjas` VALUES('確信','확신','confidence,conviction');
-INSERT INTO `hanjas` VALUES('確認','확인','check,confirmation');
-INSERT INTO `hanjas` VALUES('磁器','자기','china,porcelain');
-INSERT INTO `hanjas` VALUES('礎石','초석','cornerstone,foundation stone');
-INSERT INTO `hanjas` VALUES('祝賀','축하','celebration,congratulation');
-INSERT INTO `hanjas` VALUES('禁止','금지','ban,prohibition');
-INSERT INTO `hanjas` VALUES('禁酒','금주','abstinence,temperance');
-INSERT INTO `hanjas` VALUES('禮儀','예의','courtesy,etiquette');
-INSERT INTO `hanjas` VALUES('秩序','질서','method,regularity');
-INSERT INTO `hanjas` VALUES('程度','정도','degree,grade');
-INSERT INTO `hanjas` VALUES('種別','종별','assortment,classification');
-INSERT INTO `hanjas` VALUES('種族','종족','family,tribe');
-INSERT INTO `hanjas` VALUES('種痘','종두','inoculation,vaccination');
-INSERT INTO `hanjas` VALUES('種類','종류','category,kind,variety');
-INSERT INTO `hanjas` VALUES('種馬','종마','stallion,studhorse');
-INSERT INTO `hanjas` VALUES('積載','적재','carrying,lading');
-INSERT INTO `hanjas` VALUES('空氣','공기','air,atmosphere');
-INSERT INTO `hanjas` VALUES('突出','돌출','projection,protrusion');
-INSERT INTO `hanjas` VALUES('立場','입장','position,situation,standpoint');
-INSERT INTO `hanjas` VALUES('競技','경기','contest,game');
-INSERT INTO `hanjas` VALUES('競爭者','경쟁자','competition,competitor,rival');
-INSERT INTO `hanjas` VALUES('筆名','필명','pen name,pseudonym');
-INSERT INTO `hanjas` VALUES('筋肉','근육','muscle,sinew');
-INSERT INTO `hanjas` VALUES('策士','책사','machinator,tactician');
-INSERT INTO `hanjas` VALUES('節酒','절주','sobriety,temperance');
-INSERT INTO `hanjas` VALUES('範圍','범위','extent,range');
-INSERT INTO `hanjas` VALUES('粘液','점액','mucilage,mucus,phlegm');
-INSERT INTO `hanjas` VALUES('精力','정력','energy,vigor');
-INSERT INTO `hanjas` VALUES('精神','정신','mind,soul,spirit');
-INSERT INTO `hanjas` VALUES('系圖','계도','genealogy,pedigree');
-INSERT INTO `hanjas` VALUES('系統','계통','ancestry,system');
-INSERT INTO `hanjas` VALUES('約定','약정','contract,stipulation');
-INSERT INTO `hanjas` VALUES('紙幣','지폐','note,paper money');
-INSERT INTO `hanjas` VALUES('紛爭','분쟁','dispute,trouble');
-INSERT INTO `hanjas` VALUES('素朴','소박','naivete,simplicity');
-INSERT INTO `hanjas` VALUES('紹介','소개','intro,introduction');
-INSERT INTO `hanjas` VALUES('終局','종국','conclusion,finale');
-INSERT INTO `hanjas` VALUES('結合','결합','combination,combine');
-INSERT INTO `hanjas` VALUES('結果','결과','consequence,result');
-INSERT INTO `hanjas` VALUES('絞殺','교살','hanging,strangulation');
-INSERT INTO `hanjas` VALUES('絶壁','절벽','cliff,precipice');
-INSERT INTO `hanjas` VALUES('絶頂','절정','climax,summit');
-INSERT INTO `hanjas` VALUES('經典','경전','scripture,sutra');
-INSERT INTO `hanjas` VALUES('經營','경영','administration,management');
-INSERT INTO `hanjas` VALUES('經營者','경영자','manager,proprietor');
-INSERT INTO `hanjas` VALUES('織物','직물','fabric,textile');
-INSERT INTO `hanjas` VALUES('繼承','계승','accession,succession');
-INSERT INTO `hanjas` VALUES('缺乏','결핍','shortage,want');
-INSERT INTO `hanjas` VALUES('缺點','결점','defect,fault,weakness');
-INSERT INTO `hanjas` VALUES('群衆','군중','crowd,mob,throng');
-INSERT INTO `hanjas` VALUES('義務','의무','duty,responsibility');
-INSERT INTO `hanjas` VALUES('習慣','습관','custom,habit');
-INSERT INTO `hanjas` VALUES('考案','고안','contrive,device,project');
-INSERT INTO `hanjas` VALUES('耕作','경작','cultivation,culture');
-INSERT INTO `hanjas` VALUES('聖職','성직','holy orders,ministry');
-INSERT INTO `hanjas` VALUES('聯盟','연맹','federation,league');
-INSERT INTO `hanjas` VALUES('肥滿','비만','fatness,obesity');
-INSERT INTO `hanjas` VALUES('肩章','견장','epaulet,shoulder strap');
-INSERT INTO `hanjas` VALUES('背信','배신','betrayal,infidelity');
-INSERT INTO `hanjas` VALUES('能力','능력','ability,faculty');
-INSERT INTO `hanjas` VALUES('脅迫','협박','menace,threat');
-INSERT INTO `hanjas` VALUES('脈拍','맥박','pulsation,pulse');
-INSERT INTO `hanjas` VALUES('膝蓋骨','슬개골','kneecap,patella');
-INSERT INTO `hanjas` VALUES('膽力','담력','courage,nerve');
-INSERT INTO `hanjas` VALUES('自我','자아','ego,self');
-INSERT INTO `hanjas` VALUES('自由','자유','freedom,liberty');
-INSERT INTO `hanjas` VALUES('自發的','자발적','spontaneous,voluntary,volunteer');
-INSERT INTO `hanjas` VALUES('自警團','자경단','vigilance committee,vigilante corps');
-INSERT INTO `hanjas` VALUES('致命的','치명적','fatal,lethal');
-INSERT INTO `hanjas` VALUES('興奮','흥분','agitation,excitement,stimulation');
-INSERT INTO `hanjas` VALUES('航海','항해','navigate,voyage');
-INSERT INTO `hanjas` VALUES('艦隊','함대','armada,fleet');
-INSERT INTO `hanjas` VALUES('花被','화피','floral envelope,perianth');
-INSERT INTO `hanjas` VALUES('芳香','방향','aroma,fragrance,perfume');
-INSERT INTO `hanjas` VALUES('苗床','묘상','nursery,seedbed');
-INSERT INTO `hanjas` VALUES('苗木','묘목','sapling,seedling');
-INSERT INTO `hanjas` VALUES('若干','약간','some, a little,somewhat');
-INSERT INTO `hanjas` VALUES('苦惱','고뇌','agony,anguish');
-INSERT INTO `hanjas` VALUES('苦痛','고통','agony,pain');
-INSERT INTO `hanjas` VALUES('苦行','고행','mortification,penance');
-INSERT INTO `hanjas` VALUES('荒野','황야','wild,wilderness');
-INSERT INTO `hanjas` VALUES('萎縮','위축','atrophy,contraction');
-INSERT INTO `hanjas` VALUES('萬','만','10000,one thousand');
-INSERT INTO `hanjas` VALUES('落膽','낙담','dejection,despondency,discouragement');
-INSERT INTO `hanjas` VALUES('蓄積','축적','accumulation,fund');
-INSERT INTO `hanjas` VALUES('藥學','약학','pharmaceutics,pharmacy');
-INSERT INTO `hanjas` VALUES('處女','처녀','maiden,virgin');
-INSERT INTO `hanjas` VALUES('處理','처리','disposal,disposition,treatment');
-INSERT INTO `hanjas` VALUES('蟯蟲','요충','pinworm,threadworm');
-INSERT INTO `hanjas` VALUES('行列','행렬','line,procession');
-INSERT INTO `hanjas` VALUES('行動','행동','action,behave,conduct');
-INSERT INTO `hanjas` VALUES('行商','행상','peddle,vend');
-INSERT INTO `hanjas` VALUES('行爲','행위','act,deed');
-INSERT INTO `hanjas` VALUES('行進','행진','march,process');
-INSERT INTO `hanjas` VALUES('街路','가로','avenue,street');
-INSERT INTO `hanjas` VALUES('衝突','충돌','collision,conflict');
-INSERT INTO `hanjas` VALUES('表現','표현','expression,presentation');
-INSERT INTO `hanjas` VALUES('衰弱','쇠약','breakdown,debility');
-INSERT INTO `hanjas` VALUES('裁定','재정','award,ruling');
-INSERT INTO `hanjas` VALUES('裝置','장치','apparatus,installation');
-INSERT INTO `hanjas` VALUES('裝飾','장식','decorate,embellish,ornament');
-INSERT INTO `hanjas` VALUES('製作','제작','fabricate,manufacture,production');
-INSERT INTO `hanjas` VALUES('複葉','복엽','biplane,compound leaf');
-INSERT INTO `hanjas` VALUES('複製','복제','duplication,reproduction');
-INSERT INTO `hanjas` VALUES('褐炭','갈탄','brown coal,lignite');
-INSERT INTO `hanjas` VALUES('要塞','요새','fortification,stronghold');
-INSERT INTO `hanjas` VALUES('規則','규칙','regulation,rule');
-INSERT INTO `hanjas` VALUES('觀念','관념','idea,notion');
-INSERT INTO `hanjas` VALUES('解放','해방','emancipation,liberate,liberation,release');
-INSERT INTO `hanjas` VALUES('解散','해산','breakup,dissolution');
-INSERT INTO `hanjas` VALUES('解決','해결','settlement,solution');
-INSERT INTO `hanjas` VALUES('解釋','해석','explanation,interpretation');
-INSERT INTO `hanjas` VALUES('觸手','촉수','feeler,tentacle');
-INSERT INTO `hanjas` VALUES('觸角','촉각','antenna,feeler');
-INSERT INTO `hanjas` VALUES('訂正','정정','correction,revision');
-INSERT INTO `hanjas` VALUES('計略','계략','stratagem,trick');
-INSERT INTO `hanjas` VALUES('討論','토론','debate,discussion');
-INSERT INTO `hanjas` VALUES('記事','기사','account,article,report');
-INSERT INTO `hanjas` VALUES('記念','기념','commemoration,memory');
-INSERT INTO `hanjas` VALUES('記憶','기억','memory,remembrance');
-INSERT INTO `hanjas` VALUES('記章','기장','badge,insignia,medal');
-INSERT INTO `hanjas` VALUES('訪問','방문','call,see,visit');
-INSERT INTO `hanjas` VALUES('訪問者','방문자','visitant,visitor');
-INSERT INTO `hanjas` VALUES('設立','설립','foundation,institution');
-INSERT INTO `hanjas` VALUES('設計','설계','design,plan');
-INSERT INTO `hanjas` VALUES('註釋','주석','annotation,comment,commentary');
-INSERT INTO `hanjas` VALUES('詐欺','사기','fraud,swindle');
-INSERT INTO `hanjas` VALUES('評價','평가','estimation,evaluation,valuation');
-INSERT INTO `hanjas` VALUES('評判','평판','fame,reputation');
-INSERT INTO `hanjas` VALUES('評論','평론','criticism,critique');
-INSERT INTO `hanjas` VALUES('試練','시련','probation,trial');
-INSERT INTO `hanjas` VALUES('試驗','시험','examination,examine,prove');
-INSERT INTO `hanjas` VALUES('詭辯','궤변','sophism,sophistry');
-INSERT INTO `hanjas` VALUES('誇示','과시','display,ostentation');
-INSERT INTO `hanjas` VALUES('認識','인식','cognizance,recognition');
-INSERT INTO `hanjas` VALUES('誘惑','유혹','allurement,entice,tempt');
-INSERT INTO `hanjas` VALUES('語彙','어휘','glossary,vocabulary');
-INSERT INTO `hanjas` VALUES('語調','어조','accent,note');
-INSERT INTO `hanjas` VALUES('誠意','성의','good faith,sincerity');
-INSERT INTO `hanjas` VALUES('調味','조미','flavoring,seasoning');
-INSERT INTO `hanjas` VALUES('調味料','조미료','condiment,seasoning');
-INSERT INTO `hanjas` VALUES('調整','조정','adjustment,regulation');
-INSERT INTO `hanjas` VALUES('調査','조사','examination,inquiry,investigation,probe,research,survey');
-INSERT INTO `hanjas` VALUES('調節','조절','adjustment,regulation');
-INSERT INTO `hanjas` VALUES('請求','청구','ask,claim,demand,request');
-INSERT INTO `hanjas` VALUES('論爭者','논쟁자','controversialist,disputant');
-INSERT INTO `hanjas` VALUES('論評','논평','notice,remark');
-INSERT INTO `hanjas` VALUES('證據','증거','evidence,proof');
-INSERT INTO `hanjas` VALUES('證明','증명','proof,verification');
-INSERT INTO `hanjas` VALUES('議會','의회','congress,parliament');
-INSERT INTO `hanjas` VALUES('譴責','견책','reprimand,reproof');
-INSERT INTO `hanjas` VALUES('變形','변형','deformation,metamorphosis,transformation,variety');
-INSERT INTO `hanjas` VALUES('變種','변종','mutation,variety');
-INSERT INTO `hanjas` VALUES('變遷','변천','change,transition,vicissitude');
-INSERT INTO `hanjas` VALUES('豊富','풍부','abundance,plenty,wealth');
-INSERT INTO `hanjas` VALUES('豫定','예정','program,schedule');
-INSERT INTO `hanjas` VALUES('豫示','예시','betoken,foreshadow,prefigure');
-INSERT INTO `hanjas` VALUES('豫約','예약','booking,subscription');
-INSERT INTO `hanjas` VALUES('豫言','예언','predict,prediction,prognosticate,prognostication');
-INSERT INTO `hanjas` VALUES('負擔','부담','burden,charge,responsibility');
-INSERT INTO `hanjas` VALUES('財源','재원','finance,resource');
-INSERT INTO `hanjas` VALUES('財産','재산','asset,fortune,property');
-INSERT INTO `hanjas` VALUES('貢獻','공헌','contribution,service');
-INSERT INTO `hanjas` VALUES('販路','판로','market,outlet');
-INSERT INTO `hanjas` VALUES('貪慾','탐욕','avarice,greed');
-INSERT INTO `hanjas` VALUES('貫通','관통','penetrate,pierce');
-INSERT INTO `hanjas` VALUES('責任','책임','duty,responsibility');
-INSERT INTO `hanjas` VALUES('貯藏','저장','preservation,storage');
-INSERT INTO `hanjas` VALUES('貴族','귀족','aristocrat,noble');
-INSERT INTO `hanjas` VALUES('買收','매수','buy,corruption');
-INSERT INTO `hanjas` VALUES('費用','비용','cost,expense');
-INSERT INTO `hanjas` VALUES('資料','자료','data,material');
-INSERT INTO `hanjas` VALUES('賞品','상품','prize,trophy');
-INSERT INTO `hanjas` VALUES('賠償','배상','compensation,indemnity,reparation');
-INSERT INTO `hanjas` VALUES('賣上高','매상고','proceed,proceeds,sale');
-INSERT INTO `hanjas` VALUES('質問','질문','inquiry,interrogate,query,question');
-INSERT INTO `hanjas` VALUES('起原','기원','origin,rise');
-INSERT INTO `hanjas` VALUES('趣味','취미','hobby,taste');
-INSERT INTO `hanjas` VALUES('跳躍','도약','leap,skip,spring');
-INSERT INTO `hanjas` VALUES('軍隊','군대','army,troop');
-INSERT INTO `hanjas` VALUES('軟膏','연고','ointment,salve');
-INSERT INTO `hanjas` VALUES('輸卵管','수란관','Fallopian tube,oviduct');
-INSERT INTO `hanjas` VALUES('輸送','수송','transport,transportation');
-INSERT INTO `hanjas` VALUES('辨護','변호','advocacy,defense,pleading');
-INSERT INTO `hanjas` VALUES('辯髮','변발','pigtail,queue');
-INSERT INTO `hanjas` VALUES('迷妄','미망','delusion,illusion');
-INSERT INTO `hanjas` VALUES('迷路','미로','labyrinth,maze');
-INSERT INTO `hanjas` VALUES('追憶','추억','recollection,reminiscence');
-INSERT INTO `hanjas` VALUES('追放','추방','banishment,exile');
-INSERT INTO `hanjas` VALUES('追跡','추적','chase,pursuit');
-INSERT INTO `hanjas` VALUES('逃亡者','도망자','fugitive,runaway');
-INSERT INTO `hanjas` VALUES('逃避','도피','escape,evasion');
-INSERT INTO `hanjas` VALUES('通信','통신','communication,correspondence');
-INSERT INTO `hanjas` VALUES('速度','속도','rate,speed,velocity');
-INSERT INTO `hanjas` VALUES('連累','연루','complicity,implication,involvement');
-INSERT INTO `hanjas` VALUES('連續的','연속적','consecutive,continuing');
-INSERT INTO `hanjas` VALUES('遂行','수행','accomplishment,execution');
-INSERT INTO `hanjas` VALUES('運河','운하','canal,waterway');
-INSERT INTO `hanjas` VALUES('過多','과다','excess,superabundance');
-INSERT INTO `hanjas` VALUES('過度','과도','excess,immoderation');
-INSERT INTO `hanjas` VALUES('道具','도구','implement,tool');
-INSERT INTO `hanjas` VALUES('道標','도표','guide,signpost');
-INSERT INTO `hanjas` VALUES('違反','위반','breach,infract');
-INSERT INTO `hanjas` VALUES('適應','적응','accommodation,adaptation');
-INSERT INTO `hanjas` VALUES('選擇權','선택권','choice,option');
-INSERT INTO `hanjas` VALUES('遺産','유산','bequest,inheritance');
-INSERT INTO `hanjas` VALUES('遺言者','유언자','testate,testator');
-INSERT INTO `hanjas` VALUES('郊外','교외','outskirts,suburb');
-INSERT INTO `hanjas` VALUES('部','부','a department, a part,department, ministry');
-INSERT INTO `hanjas` VALUES('部分','부분','part,portion');
-INSERT INTO `hanjas` VALUES('酵母','효모','leaven,yeast');
-INSERT INTO `hanjas` VALUES('醫師','의사','doctor,physician');
-INSERT INTO `hanjas` VALUES('釋放','석방','acquittal,liberate,release');
-INSERT INTO `hanjas` VALUES('野營','야영','bivouac,camping');
-INSERT INTO `hanjas` VALUES('野砲','야포','field artillery,field gun');
-INSERT INTO `hanjas` VALUES('鎭靜','진정','appeasement,pacification');
-INSERT INTO `hanjas` VALUES('鐘樓','종루','belfry,bell tower');
-INSERT INTO `hanjas` VALUES('鑛脈','광맥','reef,streak');
-INSERT INTO `hanjas` VALUES('長官','장관','chief,secretary');
-INSERT INTO `hanjas` VALUES('閃光','섬광','flash,glint');
-INSERT INTO `hanjas` VALUES('閉鎖','폐쇄','closing,closure');
-INSERT INTO `hanjas` VALUES('開始','개시','beginning,commence,commencement');
-INSERT INTO `hanjas` VALUES('開拓者','개척자','pioneer,settler');
-INSERT INTO `hanjas` VALUES('關心','관심','concern,interest');
-INSERT INTO `hanjas` VALUES('防止','방지','check,prevention');
-INSERT INTO `hanjas` VALUES('降雨','강우','rain,rainfall');
-INSERT INTO `hanjas` VALUES('限定','한정','restrict,restriction');
-INSERT INTO `hanjas` VALUES('限界','한계','bound,limit');
-INSERT INTO `hanjas` VALUES('除名','제명','excommunication,expulsion');
-INSERT INTO `hanjas` VALUES('除外','제외','exception,exclusion');
-INSERT INTO `hanjas` VALUES('隆起','융기','protuberance,rise');
-INSERT INTO `hanjas` VALUES('階級','계급','grade,rank');
-INSERT INTO `hanjas` VALUES('隱退','은퇴','retirement,seclusion');
-INSERT INTO `hanjas` VALUES('雅量','아량','magnanimity,tolerance');
-INSERT INTO `hanjas` VALUES('集合','집합','assembly,gathering');
-INSERT INTO `hanjas` VALUES('雇傭','고용','employ,engage,hire');
-INSERT INTO `hanjas` VALUES('靈魂','영혼','soul,spirit');
-INSERT INTO `hanjas` VALUES('面','면','side,subdivision of a county');
-INSERT INTO `hanjas` VALUES('音色','음색','timbre,tone quality');
-INSERT INTO `hanjas` VALUES('頂上','정상','summit,top');
-INSERT INTO `hanjas` VALUES('順序','순서','order,sequence');
-INSERT INTO `hanjas` VALUES('預言者','예언자','prophet,seer');
-INSERT INTO `hanjas` VALUES('領域','영역','area,domain,region');
-INSERT INTO `hanjas` VALUES('頭腦','두뇌','brain,head');
-INSERT INTO `hanjas` VALUES('類人猿','유인원','anthropoid,troglodyte');
-INSERT INTO `hanjas` VALUES('風潮','풍조','current,tide');
-INSERT INTO `hanjas` VALUES('食糧','식량','provision,ration');
-INSERT INTO `hanjas` VALUES('飼料','사료','feed,fodder');
-INSERT INTO `hanjas` VALUES('飽滿','포만','satiety,surfeit');
-INSERT INTO `hanjas` VALUES('養殖','양식','cultivation,culture');
-INSERT INTO `hanjas` VALUES('餘地','여지','margin,place,room');
-INSERT INTO `hanjas` VALUES('餘裕','여유','margin,room');
-INSERT INTO `hanjas` VALUES('騎手','기수','horseman,rider');
-INSERT INTO `hanjas` VALUES('騰貴','등귀','climb,rise');
-INSERT INTO `hanjas` VALUES('體格','체격','constitution,physique');
-INSERT INTO `hanjas` VALUES('體裁','체재','format,style');
-INSERT INTO `hanjas` VALUES('高原','고원','plateau,tableland');
-INSERT INTO `hanjas` VALUES('高度','고도','altitude,height');
-INSERT INTO `hanjas` VALUES('鬪爭','투쟁','conflict,strife');
-INSERT INTO `hanjas` VALUES('魅力','매력','charm,glamour');
-INSERT INTO `hanjas` VALUES('魅惑','매혹','bewitch,captivation,charm,enchant,fascinate,fascination');
-INSERT INTO `hanjas` VALUES('魔法','마법','magic,sorcery,witchcraft');
-INSERT INTO `hanjas` VALUES('默殺','묵살','shelve,smother');
-INSERT INTO `hanjas` VALUES('點','점','a spot, a blemish,store');
-INSERT INTO `hanjas` VALUES('不足','부족','be short of, lack,lack, want (scarcity, insufficiency)');
-INSERT INTO `hanjas` VALUES('主要','주요','chief, main, essential,to be chief, principal, leading');
-INSERT INTO `hanjas` VALUES('乾燥','건조','dryness, aridity,dry, arid');
-INSERT INTO `hanjas` VALUES('人事','인사','greetings,to greet, say hello');
-INSERT INTO `hanjas` VALUES('仔細','자세','in detail,be detailed');
-INSERT INTO `hanjas` VALUES('付託','부탁','ask sb a favor,request, favor');
-INSERT INTO `hanjas` VALUES('代身','대신','instead of,relieve, replace another');
-INSERT INTO `hanjas` VALUES('作成','작성','to edit, compose, write up,compile, draw up, prepare, fill in/out');
-INSERT INTO `hanjas` VALUES('便','편','untroubled from cares,easily, comfortably');
-INSERT INTO `hanjas` VALUES('傳','전','to transmit, convey,to be transmitted');
-INSERT INTO `hanjas` VALUES('優勝','우승','first place,to take first place');
-INSERT INTO `hanjas` VALUES('克服','극복','to overcome; surmount,conquest, subjugation');
-INSERT INTO `hanjas` VALUES('入力','입력','input,to input (data into the computer)');
-INSERT INTO `hanjas` VALUES('入社','입사','enter/join a company,to join a company');
-INSERT INTO `hanjas` VALUES('入院','입원','hospitalization,to enter a hospital');
-INSERT INTO `hanjas` VALUES('公演','공연','a public performance,to give a public performance, to put on a play,perform');
-INSERT INTO `hanjas` VALUES('公開','공개','opening to the public, making public,open to the public');
-INSERT INTO `hanjas` VALUES('出勤','출근','go to work,to go to work');
-INSERT INTO `hanjas` VALUES('出演','출연','appear on stage, act, sing,going on stage');
-INSERT INTO `hanjas` VALUES('分明','분명','to be clear/obvious,obviously,obviousness,to become clear');
-INSERT INTO `hanjas` VALUES('判斷','판단','a judgment, a conclusion,to make a conclusion');
-INSERT INTO `hanjas` VALUES('募集','모집','collection,call/appeal for');
-INSERT INTO `hanjas` VALUES('匹敵','필적','equal,touch');
-INSERT INTO `hanjas` VALUES('卒業','졸업','to graduate,graduation');
-INSERT INTO `hanjas` VALUES('參席','참석','to attend, take part in,attendance, participation');
-INSERT INTO `hanjas` VALUES('反省','반성','reflection,introspection, self-examination');
-INSERT INTO `hanjas` VALUES('取消','취소','to cancel, call off, take back, retract,cancellation');
-INSERT INTO `hanjas` VALUES('可能','가능','to be possible,possibility');
-INSERT INTO `hanjas` VALUES('合格','합격','to pass an exam,pass an examination');
-INSERT INTO `hanjas` VALUES('增加','증가','increase,rise,grow,an increase, augmentation');
-INSERT INTO `hanjas` VALUES('外出','외출','go out,to go out');
-INSERT INTO `hanjas` VALUES('多幸','다행','good luck,fortunately');
-INSERT INTO `hanjas` VALUES('失手','실수','a mistake,to make a mistake');
-INSERT INTO `hanjas` VALUES('失禮','실례','rudeness, impolite,to be impolite');
-INSERT INTO `hanjas` VALUES('如前','여전','as it used to be, as before; still, persistently, even still,be unchanged, the same as before');
-INSERT INTO `hanjas` VALUES('妊娠','임신','pregnant,to be pregnant');
-INSERT INTO `hanjas` VALUES('始作','시작','to start, begin,to begin, to start,the beginning');
-INSERT INTO `hanjas` VALUES('孝道','효도','filial piety, to be devoted to one''s parents,to serve one''s parents');
-INSERT INTO `hanjas` VALUES('安寧','안녕','to say hello,peacefully,hello/goodbye');
-INSERT INTO `hanjas` VALUES('宏壯','굉장','very much, greatly,wonderful, great, marvelous, awesome');
-INSERT INTO `hanjas` VALUES('定','정','to set,determine,to be determined, settled');
-INSERT INTO `hanjas` VALUES('容恕','용서','to pardon, to forgive, absolve,pardon, forgiveness');
-INSERT INTO `hanjas` VALUES('寄與','기여','contribute, add to,contribution');
-INSERT INTO `hanjas` VALUES('實施','실시','to enforce,put into effect,execution, enforcement,to be enforced');
-INSERT INTO `hanjas` VALUES('實踐','실천','practice,to put sth into practice');
-INSERT INTO `hanjas` VALUES('專攻','전공','major, specialty,to major in sth');
-INSERT INTO `hanjas` VALUES('對','대','face, confront,versus; a pair, counterpart');
-INSERT INTO `hanjas` VALUES('對備','대비','provide for, prepare onself for,be ready for, provision, preparation');
-INSERT INTO `hanjas` VALUES('對答','대답','to answer, reply,an answer');
-INSERT INTO `hanjas` VALUES('工夫','공부','study,to study');
-INSERT INTO `hanjas` VALUES('延期','연기','postponement, deferment,put off, postpone,to be put off, postponed');
-INSERT INTO `hanjas` VALUES('强力','강력','to be strong, powerful,strongly, firmly, resolutely');
-INSERT INTO `hanjas` VALUES('强調','강조','place empasis upon,emphasis, stress');
-INSERT INTO `hanjas` VALUES('待接','대접','treatment,reception, treatment');
-INSERT INTO `hanjas` VALUES('徹底','철저','thoroughness, cleanliness,thoroughly');
-INSERT INTO `hanjas` VALUES('必要','필요','to need,need, requirement,necessity');
-INSERT INTO `hanjas` VALUES('慰勞','위로','to console, cheer sb up,consolation, solace');
-INSERT INTO `hanjas` VALUES('成立','성립','to be concluded, formed,to exist, to come into being');
-INSERT INTO `hanjas` VALUES('所有','소유','possession,to possess, hold, own');
-INSERT INTO `hanjas` VALUES('所聞','소문','a rumor,a rumor');
-INSERT INTO `hanjas` VALUES('所重','소중','to be important, valuable,seriously, with care');
-INSERT INTO `hanjas` VALUES('招待','초대','to invite,an invitation');
-INSERT INTO `hanjas` VALUES('招請','초청','an invitation,to invite');
-INSERT INTO `hanjas` VALUES('指摘','지적','pointing out, indication,to be pointed out to,to indicate, point out');
-INSERT INTO `hanjas` VALUES('提議','제의','a proposal, an offer,make a suggestion');
-INSERT INTO `hanjas` VALUES('操心','조심','to be careful,cautious');
-INSERT INTO `hanjas` VALUES('支給','지급','to provide, pay, allow, provision,supply, pay');
-INSERT INTO `hanjas` VALUES('攻擊','공격','attack,to attack');
-INSERT INTO `hanjas` VALUES('斟酌','짐작','to guess, infer,guess, assumption, conjecture');
-INSERT INTO `hanjas` VALUES('有名','유명','to be famous,famous, well-known, renowned');
-INSERT INTO `hanjas` VALUES('標示','표시','a sign, signal,sign, mark, indicate');
-INSERT INTO `hanjas` VALUES('歸國','귀국','to return to one''s home country,returning to one''s home country');
-INSERT INTO `hanjas` VALUES('歸家','귀가','to return home,returning home');
-INSERT INTO `hanjas` VALUES('治療','치료','medical treatment, medical care,to cure, heal, treat a patient');
-INSERT INTO `hanjas` VALUES('活潑','활발','be lively, sprightly,briskly, actively,intensify');
-INSERT INTO `hanjas` VALUES('活用','활용','utilize, make practical use of,practical use');
-INSERT INTO `hanjas` VALUES('深刻','심각','to be serious, grave,to get serious');
-INSERT INTO `hanjas` VALUES('演出','연출','production, presentation,produce, direct (a play or musical)');
-INSERT INTO `hanjas` VALUES('無理','무리','be unreasonable,to work hard, overdo; impractical');
-INSERT INTO `hanjas` VALUES('無關心','무관심','apathy, indifference,be indifferent to');
-INSERT INTO `hanjas` VALUES('焦點','초점','focus,a focus, a focal point');
-INSERT INTO `hanjas` VALUES('特別','특별','be special, extraordinary,to be special, extraordinary,especially');
-INSERT INTO `hanjas` VALUES('犧牲','희생','sacrifice,sacrifice');
-INSERT INTO `hanjas` VALUES('獨立','독립','independence,to become independent');
-INSERT INTO `hanjas` VALUES('甚','심','to be extreme, intense,intensify, grew worse');
-INSERT INTO `hanjas` VALUES('申告','신고','a statement, declaration,to state, declare');
-INSERT INTO `hanjas` VALUES('當然','당연','be natural; "of course!",of course');
-INSERT INTO `hanjas` VALUES('疲困','피곤','to be very tired, exhausted,fatigue, exhaustion');
-INSERT INTO `hanjas` VALUES('發見','발견','to discover,to be discovered,discovery');
-INSERT INTO `hanjas` VALUES('發音','발음','pronunciation,pronounce');
-INSERT INTO `hanjas` VALUES('相當','상당','fairly, considerably,be proper, suitable,respectable, considerable, suitable');
-INSERT INTO `hanjas` VALUES('硏究','연구','research,to research, investigate');
-INSERT INTO `hanjas` VALUES('確實','확실','to be sure, certain,certainly, for sure');
-INSERT INTO `hanjas` VALUES('祈禱','기도','to pray,a prayer');
-INSERT INTO `hanjas` VALUES('移徙','이사','to move (between houses, apartments),to move (between houses or apartments)');
-INSERT INTO `hanjas` VALUES('稱讚','칭찬','praide, admiration,to praise, compliment, comment');
-INSERT INTO `hanjas` VALUES('答','답','answer, reply,answer');
-INSERT INTO `hanjas` VALUES('簡單','간단','to be simple,simply speaking');
-INSERT INTO `hanjas` VALUES('純粹','순수','to be pure,purity,genuineness');
-INSERT INTO `hanjas` VALUES('膳物','선물','a present, gift,give a gift');
-INSERT INTO `hanjas` VALUES('自然','자연','nature,to be natural,naturally');
-INSERT INTO `hanjas` VALUES('苦悶','고민','worry,  anguish,be in anguish, worried');
-INSERT INTO `hanjas` VALUES('苦生','고생','a hard life; privation,to suffer, to have trials; to do something you do not want to do');
-INSERT INTO `hanjas` VALUES('蒐集','수집','to collect,collection');
-INSERT INTO `hanjas` VALUES('親','친','to be intimate, familiar, close, friendly,to get close, to get friendly');
-INSERT INTO `hanjas` VALUES('觀察','관찰','observe, view, watch,observation, survey');
-INSERT INTO `hanjas` VALUES('解消','해소','resolve, alleviate, release,solution, settlement, resolve, relieve, alleviate');
-INSERT INTO `hanjas` VALUES('記錄','기록','a record,  a document,to record, write down,to be recorded or written down');
-INSERT INTO `hanjas` VALUES('設置','설치','to found, establish, create,establisment, institution,to be established');
-INSERT INTO `hanjas` VALUES('許諾','허락','allow, let, approve, consent, agree to,permission, consent, assent, approval');
-INSERT INTO `hanjas` VALUES('試圖','시도','to try, attempt,make an attempt, give sth a try');
-INSERT INTO `hanjas` VALUES('該當','해당','to be applied, applicable under,to be relevent, applicable (to), fall under,to be applied, applicable under');
-INSERT INTO `hanjas` VALUES('說明','설명','to explain,explanation,to be explained');
-INSERT INTO `hanjas` VALUES('講義','강의','a lecture, discourse,to give a lecture');
-INSERT INTO `hanjas` VALUES('謝過','사과','an apology,to apologize');
-INSERT INTO `hanjas` VALUES('議論','의논','to consult, confer with, discuss,consultation, discussion, conference');
-INSERT INTO `hanjas` VALUES('讓步','양보','to yield, make a concession,yield, concession, compromise');
-INSERT INTO `hanjas` VALUES('豫習','예습','preparation of lessons,to review, prepare lessons, rehearse');
-INSERT INTO `hanjas` VALUES('辱','욕','an insult,swear, cuss, insult; abuse');
-INSERT INTO `hanjas` VALUES('追加','추가','an addition,to be added');
-INSERT INTO `hanjas` VALUES('退勤','퇴근','get off work, leaving the office, return home from work,to go home from work');
-INSERT INTO `hanjas` VALUES('退院','퇴원','to leave the hospital,to be discharged from a hospital');
-INSERT INTO `hanjas` VALUES('通','통','run, lead; flow; go through,number of emails/written letters (counter)');
-INSERT INTO `hanjas` VALUES('通過','통과','passage through,pass through');
-INSERT INTO `hanjas` VALUES('進出','진출','an advance,penetrate into, advance, enter, go');
-INSERT INTO `hanjas` VALUES('進行','진행','to have progressed, be advanced,progress, advance,advance, proceed');
-INSERT INTO `hanjas` VALUES('適用','적용','to apply (sth to sth else),to be applied,application');
-INSERT INTO `hanjas` VALUES('選擇','선택','to choose,a choice');
-INSERT INTO `hanjas` VALUES('重要','중요','to be important, weighty,important, crucial, significant');
-INSERT INTO `hanjas` VALUES('錄音','녹음','to record,recording');
-INSERT INTO `hanjas` VALUES('錯覺','착각','hallucination, illusion, mistake a for b,to mistake a for b, illusion, delusion, to be having illucinations');
-INSERT INTO `hanjas` VALUES('開放','개방','open, throw open,to open, to throw open,to be opened to the public');
-INSERT INTO `hanjas` VALUES('限','한','a limit,limit, restrict');
-INSERT INTO `hanjas` VALUES('電話','전화','telephone,to call');
-INSERT INTO `hanjas` VALUES('食事','식사','a meal,to eat a meal');
-INSERT INTO `hanjas` VALUES('食慾','식욕','appetite,appetite, desire');
-INSERT INTO `hanjas` VALUES('駐車','주차','parking,to park (a car)');
-INSERT INTO `hanjas` VALUES('體驗','체험','an experience,to experience, to undergo');
-INSERT INTO `hanjas` VALUES('高級','고급','high rank; first class,to be high-class');
-INSERT INTO `hanjas` VALUES('點心','점심','lunch,lunchtime');
-INSERT INTO `hanjas` VALUES('不便','불편','to be unpleasant,inconvenience');
-INSERT INTO `hanjas` VALUES('不安','불안','uneasiness, anxiety,to be uneasy, anxious');
-INSERT INTO `hanjas` VALUES('不幸','불행','to be unfortunate,unhappiness');
-INSERT INTO `hanjas` VALUES('不過','불과','nothing more than,only, not more than');
-INSERT INTO `hanjas` VALUES('旅行','여행','trip,to travel');
-INSERT INTO `hanjas` VALUES('練習','연습','practice, exercise, to practice, exercise');
-INSERT INTO `hanjas` VALUES('連結','연결','connect, attach,connect, attach,connection, linking');
-INSERT INTO `hanjas` VALUES('連絡','연락','connection, communication,to contact, get in touch with');
-INSERT INTO `hanjas` VALUES('念慮','염려','anxiety, worry,to worry, be anxious about');
-INSERT INTO `hanjas` VALUES('料理','요리','cooking,to cook (food)');
-INSERT INTO `hanjas` VALUES('流行','유행','trend, vogue, to be popular,to be in fashion, to be popular, to catch on, to break out');
-INSERT INTO `hanjas` VALUES('利用','이용','to use, make use of,to use,to be used');
-INSERT INTO `hanjas` VALUES('理解','이해','to understand,understanding,to be understood');
-
-COMMIT;
+INSERT INTO `hanjas` VALUES
+('牽牛星','견우성','Altair'),
+('兩棲類','양서류','Amphibia'),
+('北氷洋','북빙양','Arctic Ocean'),
+('濠洲','호주','Australia'),
+('聖書','성서','Bible'),
+('白人','백인','Caucasian'),
+('攝氏','섭씨','Celsius'),
+('中米','중미','Central America'),
+('中國','중국','China'),
+('漢字','한자','Chinese character'),
+('中共','중공','Communist China'),
+('死海','사해','Dead Sea'),
+('東印度','동인도','East Indies'),
+('極東','극동','Far East'),
+('金曜日','금요일','Friday'),
+('風疹','풍진','German measles'),
+('獨逸','독일','Germany'),
+('北斗七星','북두칠성','Great Bear'),
+('聖地','성지','Holy Land'),
+('日本','일본','Japan'),
+('韓國','한국','Korea'),
+('下院','하원','Lower House'),
+('滿洲','만주','Manchuria'),
+('地中海','지중해','Mediterranean Sea'),
+('中生代','중생대','Mesozoic era'),
+('西半球','서반구','Occident'),
+('東洋風','동양풍','Oriental'),
+('紅海','홍해','Red Sea'),
+('土曜日','토요일','Saturday'),
+('天狼星','천랑성','Sirius'),
+('南支那海','남지나해','South China Sea'),
+('日曜日','일요일','Sunday'),
+('木曜日','목요일','Thursday'),
+('火曜日','화요일','Tuesday'),
+('水曜日','수요일','Wednesday'),
+('神父','신부','abbe'),
+('省略','생략','abbreviation'),
+('略語','약어','abbreviation'),
+('略字','약자','abbreviation'),
+('退位','퇴위','abdication'),
+('腹部','복부','abdomen'),
+('才能','재능','ability'),
+('異常','이상','abnormality'),
+('原住民','원주민','aboriginal'),
+('膿瘍','농양','abscess'),
+('不在','부재','absence'),
+('缺席','결석','absence'),
+('吸收','흡수','absorption'),
+('禁慾','금욕','abstinence'),
+('抽象的','추상적','abstract'),
+('潤澤','윤택','abundance'),
+('濫用','남용','abuse,misappropriation'),
+('虐待','학대','abuse'),
+('學究的','학구적','academic'),
+('加速','가속','acceleration'),
+('加速度','가속도','acceleration'),
+('事故','사고','accident'),
+('歡呼','환호','acclamation'),
+('喝采','갈채','acclamation'),
+('融通','융통','accommodation'),
+('伴奏','반주','accompaniment'),
+('共犯者','공범자','accomplice'),
+('同類','동류','accomplice'),
+('集積','집적','accumulation'),
+('醋酸','초산','acetic acid'),
+('酸敗','산패','acidification'),
+('酸性','산성','acidity'),
+('面識','면식','acquaintance'),
+('取得','취득','acquisition'),
+('獲得','획득','acquisition'),
+('活躍','활약','activity'),
+('活況','활황','activity'),
+('鍼術','침술','acupuncture'),
+('加數','가수','addend'),
+('執着','집착','adhesion'),
+('粘着','점착','adhesion'),
+('隣接','인접','adjacent'),
+('休會','휴회','adjourn'),
+('修整','수정','adjustment'),
+('行政','행정','administration'),
+('提督','제독','admiral'),
+('感嘆','감탄','admiration'),
+('自認','자인','admission'),
+('訓戒','훈계','admonition'),
+('採擇','채택','adoption'),
+('愛慕','애모','adoration'),
+('崇拜者','숭배자','adorer'),
+('成人','성인','adult'),
+('姦夫','간부','adulterer'),
+('姦通','간통','adultery'),
+('利點','이점','advantage'),
+('副詞','부사','adverb'),
+('逆境','역경','adversity'),
+('廣告','광고','advertisement'),
+('忠告','충고','advice'),
+('助言','조언','advice'),
+('助言者','조언자','adviser'),
+('顧問','고문','adviser'),
+('飛行機','비행기','aeroplane'),
+('審美的','심미적','aesthetic'),
+('加入','가입','affiliation'),
+('斷言','단언','affirmation'),
+('後産','후산','afterbirth'),
+('後腦','후뇌','afterbrain'),
+('後甲板','후갑판','afterdeck'),
+('殘像','잔상','afterimage'),
+('午後','오후','afternoon'),
+('餘震','여진','aftershock'),
+('瑪瑙','마노','agate'),
+('代理店','대리점','agency'),
+('議題','의제','agenda'),
+('集成','집성','aggregation'),
+('侵略的','침략적','aggressive'),
+('侵略者','침략자','aggressor'),
+('動亂','동란','agitation'),
+('農業','농업','agriculture'),
+('農學','농학','agriculture'),
+('禾本學','화본학','agrostology'),
+('不殺生','불살생','ahimsa'),
+('副官','부관','aide'),
+('空中','공중','air'),
+('防空','방공','air defense'),
+('空襲','공습','air raid'),
+('空輸','공수','air transport'),
+('空港','공항','airport'),
+('飛行船','비행선','airship'),
+('敏活','민활','alacrity'),
+('警鐘','경종','alarm bell'),
+('信天翁','신천옹','albatross'),
+('代數','대수','algebra'),
+('殺藻劑','살조제','algicide'),
+('寓話','우화','allegory'),
+('頭韻','두운','alliteration'),
+('合金','합금','alloy'),
+('扁桃','편도','almond'),
+('布施','보시','alms'),
+('沈香','침향','aloe'),
+('交流','교류','alternating current'),
+('大使','대사','ambassador'),
+('琥珀','호박','amber'),
+('野心','야심','ambition'),
+('覇氣','패기','ambition'),
+('救急車','구급차','ambulance'),
+('伏兵','복병','ambush'),
+('改正','개정','amendment'),
+('紫水晶','자수정','amethyst'),
+('友好的','우호적','amicable'),
+('彈藥','탄약','ammunition'),
+('恩赦','은사','amnesty'),
+('大赦','대사','amnesty'),
+('特赦','특사','amnesty'),
+('同化作用','동화작용','anabolism'),
+('類推','유추','analogy'),
+('分析','분석','analysis'),
+('解析','해석','analysis'),
+('無政府','무정부','anarchy'),
+('破門','파문','anathema'),
+('逸話','일화','anecdote'),
+('狹心症','협심증','angina pectoris'),
+('被子植物','피자식물','angiosperm'),
+('角度','각도','angle'),
+('角速度','각속도','angular velocity'),
+('動物','동물','animal'),
+('畜産','축산','animal husbandry'),
+('全滅','전멸','annihilation'),
+('記念日','기념일','anniversary'),
+('註解','주해','annotation'),
+('陽極','양극','anode'),
+('匿名-','익명자','anonym'),
+('匿名','익명','anonymity'),
+('無名','무명','anonymity'),
+('對蹠的','대척적','antipodal'),
+('古物','고물','antique'),
+('反意語','반의어','antonym'),
+('肛門','항문','anus'),
+('大動脈','대동맥','aorta'),
+('格言','격언','aphorism'),
+('催淫劑','최음제','aphrodisiac'),
+('媚藥','미약','aphrodisiac'),
+('養蜂','양봉','apiculture'),
+('默示','묵시','apocalypse'),
+('謝罪','사죄','apology'),
+('變節','변절','apostasy'),
+('妖怪','요괴','apparition'),
+('出頭','출두','appearance'),
+('慾望','욕망','appetite'),
+('應募者','응모자','applicant'),
+('應用','응용','application'),
+('鑑賞','감상','appreciation'),
+('徒弟','도제','apprentice'),
+('見習','견습','apprentice'),
+('接近','접근','approach'),
+('充當','충당','appropriation'),
+('是認','시인','approval'),
+('贊成','찬성','approval'),
+('大略','대략','approximately'),
+('近似値','근사치','approximation'),
+('從物','종물','appurtenance'),
+('適性','적성','aptitude'),
+('水族館','수족관','aquarium'),
+('弓術','궁술','archery'),
+('群島','군도','archipelago'),
+('多島海','다도해','archipelago'),
+('公文書','공문서','archives'),
+('面積','면적','area'),
+('算數','산수','arithmetic'),
+('等差數列','등차수열','arithmetic progression'),
+('方舟','방주','ark'),
+('軍備','군비','armament'),
+('陸軍','육군','army'),
+('氣品','기품','aroma'),
+('整理','정리','arrangement'),
+('配列','배열','arrangement'),
+('編曲','편곡','arrangement'),
+('逮捕','체포','arrest'),
+('到着','도착','arrival'),
+('放火','방화','arson'),
+('藝術','예술','art'),
+('美術館','미술관','art gallery'),
+('動脈','동맥','artery'),
+('條目','조목','article'),
+('條項','조항','article'),
+('造花','조화','artificial flowers'),
+('砲兵','포병','artillery'),
+('石綿','석면','asbestos'),
+('局面','국면','aspect'),
+('樣相','양상','aspect'),
+('抱負','포부','aspiration'),
+('刺客','자객','assassin'),
+('暗殺','암살','assassination'),
+('暴行','폭행','assault'),
+('集會','집회','assembly'),
+('組立','조립','assembly'),
+('資産','자산','asset'),
+('同化','동화','assimilation'),
+('助力','조력','assistance'),
+('助手','조수','assistant'),
+('同僚','동료','associate'),
+('組合','조합','association'),
+('喘息','천식','asthma'),
+('亂視','난시','astigmatism'),
+('占星術','점성술','astrology'),
+('非對稱','비대칭','asymmetry'),
+('無神論','무신론','atheism'),
+('大氣','대기','atmosphere'),
+('環礁','환초','atoll'),
+('原子','원자','atom'),
+('微塵','미진','atom'),
+('心房','심방','atrium'),
+('愛着','애착','attachment'),
+('屬性','속성','attribute'),
+('聽衆','청중','audience'),
+('監査','감사','audit'),
+('講堂','강당','auditorium'),
+('伯母','백모','aunt'),
+('聽診','청진','auscultation'),
+('嚴格','엄격','austerity'),
+('著者','저자','author'),
+('權威','권위','authority'),
+('權能','권능','authority'),
+('權限','권한','authority'),
+('自閉症','자폐증','autism'),
+('自敍傳','자서전','autobiography'),
+('自署','자서','autograph'),
+('自動車','자동차','automobile'),
+('自治','자치','autonomy'),
+('檢屍','검시','autopsy'),
+('助動詞','조동사','auxiliary verb'),
+('有效','유효','availability'),
+('餘技','여기','avocation'),
+('覺醒','각성','awakening'),
+('公理','공리','axiom'),
+('車軸','차축','axle'),
+('氣骨','기골','backbone'),
+('背景','배경','background'),
+('背泳','배영','backstroke'),
+('不良','불량','badness'),
+('保釋','보석','bail'),
+('重曹','중조','baking soda'),
+('實彈','실탄','ball cartridge'),
+('氣球','기구','balloon'),
+('香油','향유','balm'),
+('鳳仙花','봉선화','balsam'),
+('禁制','금제','ban'),
+('繃帶','붕대','bandage'),
+('堤防','제방','bank'),
+('銀行','은행','bank'),
+('破産','파산','bankruptcy'),
+('破綻','파탄','bankruptcy'),
+('旗幟','기치','banner'),
+('宴會','연회','banquet'),
+('洗禮','세례','baptism'),
+('晴雨計','청우계','barometer'),
+('男爵','남작','baron'),
+('兵營','병영','barrack'),
+('彈幕','탄막','barrage'),
+('關門','관문','barrier'),
+('障壁','장벽','barrier'),
+('玄武岩','현무암','basalt'),
+('基地','기지','base'),
+('走壘','주루','base running'),
+('野球','야구','baseball'),
+('地下室','지하실','basement'),
+('地階','지계','basement'),
+('籠球','농구','basketball'),
+('沐浴','목욕','bathing'),
+('浴室','욕실','bathroom'),
+('浴槽','욕조','bathtub'),
+('電池','전지','battery'),
+('陣容','진용','battle array'),
+('戰場','전장','battlefield'),
+('戰艦','전함','battleship'),
+('銃劍','총검','bayonet'),
+('海邊','해변','beach'),
+('光線','광선','beam'),
+('至福','지복','beatitude'),
+('海狸','해리','beaver'),
+('寢臺','침대','bed'),
+('寢具','침구','bedding'),
+('便器','변기','bedpan'),
+('岩床','암상','bedrock'),
+('寢室','침실','bedroom'),
+('麥酒','맥주','beer'),
+('甲蟲','갑충','beetle'),
+('初心者','초심자','beginner'),
+('發端','발단','beginning'),
+('信者','신자','believer'),
+('恩人','은인','benefactor'),
+('有益','유익','beneficial'),
+('安息香','안식향','benzoin'),
+('遺贈','유증','bequest'),
+('死別','사별','bereavement'),
+('脚氣','각기','beriberi'),
+('自轉車','자전거','bicycle'),
+('重婚者','중혼자','bigamist'),
+('重婚','중혼','bigamy'),
+('膽汁','담즙','bile'),
+('撞球','당구','billiards'),
+('複本位制','복본위제','bimetallism'),
+('生化學','생화학','biochemistry'),
+('傳記','전기','biography'),
+('生物學','생물학','biology'),
+('出生','출생','birth'),
+('誕生','탄생','birth'),
+('出産','출산','birth'),
+('紅茶','홍차','black tea'),
+('高爐','고로','blast furnace'),
+('發破','발파','blasting'),
+('漂白','표백','bleaching'),
+('祝福','축복','blessing'),
+('盲點','맹점','blind spot'),
+('封鎖','봉쇄','blockade'),
+('血液','혈액','blood'),
+('血球','혈구','blood cell'),
+('血塊','혈괴','blood clot'),
+('敗血症','패혈증','blood poisoning'),
+('血壓','혈압','blood pressure'),
+('血管','혈관','blood vessel'),
+('流血','유혈','bloodshed'),
+('吸血鬼','흡혈귀','bloodsucker'),
+('吹管','취관','blowpipe'),
+('靑寫眞','청사진','blueprint'),
+('沸騰','비등','boiling'),
+('爆彈','폭탄','bomb'),
+('證書','증서','bond'),
+('焚書','분서','book burning'),
+('書評','서평','book review'),
+('簿記','부기','bookkeeping'),
+('書架','서가','bookshelf'),
+('露店','노점','booth'),
+('戰利品','전리품','booty'),
+('借用','차용','borrowing'),
+('植物學','식물학','botany'),
+('隘路','애로','bottleneck'),
+('境界','경계','boundary'),
+('拳鬪','권투','boxing'),
+('少年','소년','boy'),
+('排斥','배척','boycott'),
+('腦波','뇌파','brain wave'),
+('洗腦','세뇌','brainwashing'),
+('分派','분파','branch'),
+('支流','지류','branch'),
+('支脈','지맥','branch'),
+('烙印','낙인','brand'),
+('絶交','절교','breach'),
+('朝飯','조반','breakfast'),
+('防波堤','방파제','breakwater'),
+('胸部','흉부','breast'),
+('乳房','유방','breast'),
+('胸壁','흉벽','breastwork'),
+('飼育','사육','breeding'),
+('簡潔','간결','brevity'),
+('贈收賄','증수회','bribery'),
+('新婦','신부','bride'),
+('艦橋','함교','bridge'),
+('旅團','여단','brigade'),
+('光彩','광채','brilliance'),
+('剛毛','강모','bristle'),
+('蠶豆','잠두','broad bean'),
+('放送','방송','broadcast'),
+('靑銅','청동','bronze'),
+('蠻行','만행','brutality'),
+('豫算','예산','budget'),
+('建物','건물','building'),
+('球根','구근','bulb'),
+('浮力','부력','buoyancy'),
+('官僚','관료','bureaucrat'),
+('埋葬','매장','burial'),
+('實業','실업','business'),
+('營業','영업','business'),
+('用件','용건','business'),
+('上半身','상반신','bust'),
+('副産物','부산물','byproduct'),
+('船室','선실','cabin'),
+('仙人掌','선인장','cactus'),
+('方解石','방해석','calcite'),
+('打算','타산','calculation'),
+('結石','결석','calculus'),
+('無風','무풍','calm'),
+('平穩','평온','calm, quiet'),
+('誹謗','비방','calumniate'),
+('駱駝','낙타','camel'),
+('迷彩','미채','camouflage'),
+('僞裝','위장','camouflage'),
+('幕舍','막사','camp'),
+('從軍','종군','campaign'),
+('樟腦','장뇌','camphor'),
+('校庭','교정','campus'),
+('燭光','촉광','candlepower'),
+('天蓋','천개','canopy'),
+('隱語','은어','cant'),
+('容量','용량','capacity'),
+('力量','역량','capacity'),
+('極刑','극형','capital punishment'),
+('資本家','자본가','capitalist'),
+('艇長','정장','captain'),
+('逮捕者','체포자','captor'),
+('捕獲','포획','capture'),
+('洗車','세차','car wash'),
+('炭水化物','탄수화물','carbohydrate'),
+('一酸化炭素','일산화탄소','carbon monoxide'),
+('炭酸','탄산','carbonic acid'),
+('炭化','탄화','carbonization'),
+('發癌','발암','carcinogenesis'),
+('板紙','판지','cardboard'),
+('愛撫','애무','caress'),
+('船荷','선하','cargo'),
+('貨物','화물','cargo'),
+('蟲齒','충치','caries'),
+('頌歌','송가','carol'),
+('絨緞','융단','carpet'),
+('運搬','운반','carriage'),
+('保菌者','보균자','carrier'),
+('傳書鳩','전서구','carrier pigeon'),
+('軟骨','연골','cartilage'),
+('乾酪素','건락소','casein'),
+('鑄鐵','주철','cast iron'),
+('鑄鋼','주강','cast steel'),
+('鑄造','주조','casting'),
+('鑄物','주물','casting'),
+('去勢','거세','castration'),
+('負傷者','부상자','casualty'),
+('觸媒','촉매','catalyst'),
+('捕球','포구','catch'),
+('範疇','범주','category'),
+('部門','부문','category'),
+('調達','조달','cater'),
+('毛蟲','모충','caterpillar'),
+('腸線','장선','catgut'),
+('注意','주의','caution'),
+('洞窟','동굴','cave'),
+('空洞','공동','cavity'),
+('祝典','축전','celebration'),
+('名士','명사','celebrity'),
+('天球','천구','celestial sphere'),
+('獨身者','독신자','celibate'),
+('細胞分裂','세포분열','cell division'),
+('遠心力','원심력','centrifugal force'),
+('遠心分離機','원심분리기','centrifugal machine'),
+('龍舌蘭','용설란','century plant'),
+('陶藝','도예','ceramics'),
+('窯業','요업','ceramics'),
+('小腦','소뇌','cerebellum'),
+('腦貧血','뇌빈혈','cerebral anemia'),
+('腦脊髓液','뇌척수액','cerebrospinal fluid'),
+('腦脊髓膜炎','뇌척수막염','cerebrospinal meningitis'),
+('大腦','대뇌','cerebrum'),
+('式典','식전','ceremony'),
+('儀式','의식','ceremony'),
+('連鎖','연쇄','chain'),
+('連鎖店','연쇄점','chain store'),
+('椅子','의자','chair'),
+('講座','강좌','chair'),
+('議長','의장','chairman'),
+('會長','회장','chairman'),
+('挑戰者','도전자','challenger'),
+('侍從','시종','chamberlain'),
+('好機','호기','chance'),
+('契機','계기','chance'),
+('變化','변화','change,variety,variation,mutation'),
+('海峽','해협','channel'),
+('聖歌','성가','chant'),
+('分會','분회','chapter'),
+('品性','품성','character'),
+('文字','문자','character'),
+('特質','특질','characteristic'),
+('特性','특성','characteristic'),
+('特色','특색','characteristic'),
+('木炭','목탄','charcoal'),
+('告發','고발','charge'),
+('電荷','전하','charge'),
+('擔當','담당','charge'),
+('突進','돌진','charge,rush,tear'),
+('魔力','마력','charm'),
+('膺懲','응징','chastisement'),
+('純潔','순결','chastity'),
+('貞淑','정숙','chastity'),
+('沮止','저지','check,arrest,retard'),
+('照査','조사','check'),
+('化學者','화학자','chemist'),
+('化學','화학','chemistry'),
+('胸郭','흉곽','chest'),
+('水痘','수두','chicken pox'),
+('頭目','두목','chief'),
+('寒氣','한기','chill'),
+('合唱','합창','chorus'),
+('彩度','채도','chroma'),
+('年表','연표','chronology'),
+('菊花','국화','chrysanthemum'),
+('桂皮','계피','cinnamon'),
+('圓陣','원진','circle'),
+('回線','회선','circuit'),
+('回報','회보','circular'),
+('流布','유포','circulation'),
+('外心','외심','circumcenter'),
+('割禮','할례','circumcision'),
+('圓周','원주','circumference'),
+('卷積雲','권적운','cirrocumulus'),
+('召喚','소환','cite'),
+('市民','시민','citizen'),
+('都會','도회','city'),
+('市議會','시의회','city council'),
+('民法','민법','civil law'),
+('民權','민권','civil rights'),
+('內亂','내란','civil war'),
+('內戰','내전','civil war'),
+('非戰鬪員','비전투원','civilian'),
+('開化','개화','civilization'),
+('文明','문명','civilization'),
+('要求者','요구자','claimant'),
+('透視','투시','clairvoyance'),
+('千里眼','천리안','clairvoyance'),
+('一門','일문','clan'),
+('閥族','벌족','clan'),
+('部類','부류','class'),
+('古典','고전','classic'),
+('級友','급우','classmate'),
+('粘土','점토','clay'),
+('淸掃','청소','cleaning'),
+('極點','극점','climax'),
+('登攀','등반','climb'),
+('陰核','음핵','clitoris'),
+('締結','체결','close'),
+('終結','종결','close'),
+('閉回路','폐회로','closed circuit'),
+('衣服','의복','clothes'),
+('衣類','의류','clothing'),
+('棍棒','곤봉','club'),
+('石炭','석탄','coal'),
+('炭鑛','탄광','coal mine'),
+('炭坑','탄갱','coal mine'),
+('採炭','채탄','coal mining'),
+('炭層','탄층','coal seam'),
+('合體','합체','coalesce'),
+('炭田','탄전','coalfield'),
+('聯立','연립','coalition'),
+('沿岸','연안','coast'),
+('海岸','해안','coast'),
+('海岸線','해안선','coastline'),
+('球菌','구균','coccus'),
+('略號','약호','code'),
+('成文化','성문화','codification'),
+('共編者','공편자','coeditor'),
+('同棲','동서','cohabitation'),
+('硬貨','경화','coin'),
+('符合','부합','coincidence'),
+('冷戰','냉전','cold war'),
+('寒波','한파','cold wave'),
+('協同','협동','collaboration'),
+('合作','합작','collaboration'),
+('共著','공저','collaboration'),
+('鎖骨','쇄골','collarbone'),
+('收集','수집','collection'),
+('結託','결탁','collusion'),
+('通謀','통모','collusion'),
+('結腸','결장','colon'),
+('植民地','식민지','colony'),
+('顔料','안료','colorant'),
+('縱隊','종대','column'),
+('縱陣','종진','column'),
+('配合','배합','combination'),
+('團結','단결','combination'),
+('聯合','연합','combination'),
+('可燃性','가연성','combustibility'),
+('燃燒','연소','combustion'),
+('喜劇','희극','comedy'),
+('彗星','혜성','comet'),
+('慰安者','위안자','comforter'),
+('通商','통상','commerce'),
+('交易','교역','commerce'),
+('營利的','영리적','commercial'),
+('商法','상법','commercial law'),
+('職權','직권','commission'),
+('手數料','수수료','commission'),
+('將校','장교','commissioned officer'),
+('言質','언질','commitment'),
+('准將','준장','commodore'),
+('公分母','공분모','common denominator'),
+('公倍數','공배수','common multiple'),
+('常識','상식','common sense'),
+('平民','평민','commoner'),
+('共通','공통','commonness'),
+('連邦','연방','commonwealth'),
+('傳達','전달','communication'),
+('聯絡','연락','communication'),
+('共産主義','공산주의','communism'),
+('伴侶','반려','companion'),
+('同伴者','동반자','companion'),
+('同伴','동반','company'),
+('會社','회사','company'),
+('商會','상회','company'),
+('尉官','위관','company officer'),
+('比較','비교','comparison'),
+('同情心','동정심','compassion'),
+('編輯','편집','compilation'),
+('不平','불평','complaint'),
+('餘角','여각','complementary angle'),
+('複合','복합','complex'),
+('追從','추종','compliance'),
+('餘病','여병','complication'),
+('共謀','공모','complicity'),
+('共犯','공범','complicity'),
+('組版','조판','composition'),
+('構圖','구도','composition'),
+('堆肥','퇴비','compost'),
+('沈着','침착','composure'),
+('化合物','화합물','compound'),
+('複利','복리','compound interest'),
+('理解','이해','comprehension'),
+('妥協','타협','compromise'),
+('計算機','계산기','computer'),
+('同志','동지','comrade'),
+('凹面','요면','concavity'),
+('隱蔽','은폐','concealment'),
+('隱匿','은닉','concealment'),
+('集中','집중','concentration'),
+('構想','구상','conception'),
+('受胎','수태','conception'),
+('配慮','배려','concern'),
+('合奏','합주','concert'),
+('協奏曲','협주곡','concerto'),
+('租界','조계','concession'),
+('外耳','외이','concha'),
+('懷柔','회유','conciliation'),
+('結末','결말','conclusion'),
+('結論','결론','conclusion'),
+('歸結','귀결','conclusion'),
+('凝縮','응축','condensation'),
+('煉乳','연유','condensed milk'),
+('聯邦','연방','confederation'),
+('自白','자백','confession'),
+('告白','고백','confession'),
+('監禁','감금','confinement'),
+('押收','압수','confiscation'),
+('直面','직면','confrontation'),
+('混同','혼동','confusion'),
+('昏迷','혼미','confusion'),
+('慶賀','경하','congratulation'),
+('會衆','회중','congregation'),
+('推測','추측','conjecture,infer,speculate,imagine'),
+('臆測','억측','conjecture'),
+('結膜炎','결막염','conjunctivitis'),
+('征服','정복','conquest'),
+('良心','양심','conscience'),
+('奉獻','봉헌','consecration'),
+('承諾','승낙','consent'),
+('顧慮','고려','consideration'),
+('考察','고찰','consideration'),
+('託送','탁송','consignment'),
+('慰藉','위자','consolation'),
+('子音','자음','consonant'),
+('子音-','자음자','consonant'),
+('陰謀','음모','conspiracy'),
+('謀議','모의','conspiracy'),
+('節操','절조','constancy'),
+('常數','상수','constant'),
+('星座','성좌','constellation'),
+('憲法','헌법','constitution'),
+('政體','정체','constitution'),
+('建造','건조','construction'),
+('建設','건설','construction'),
+('建築','건축','construction'),
+('築造','축조','construction'),
+('構造','구조','construction'),
+('領事','영사','consul'),
+('領事館','영사관','consulate'),
+('相談','상담','consultation'),
+('參照','참조','consultation'),
+('消費者','소비자','consumer'),
+('消費','소비','consumption'),
+('蔑視','멸시','contempt'),
+('侮蔑','모멸','contempt'),
+('文脈','문맥','context'),
+('大陸','대륙','continent'),
+('大陸棚','대륙붕','continental shelf'),
+('存續','존속','continuance'),
+('繼續','계속','continuation'),
+('持續','지속','continuation'),
+('撞着','당착','contradiction'),
+('寄附','기부','contribution'),
+('投稿','투고','contribution'),
+('劃策','획책','contrive'),
+('管理','관리','control'),
+('制御','제어','control'),
+('論客','논객','controversialist'),
+('論爭','논쟁','controversy,dispute'),
+('還流','환류','convection'),
+('便益','편익','convenience'),
+('協約','협약','convention'),
+('會話','회화','conversation'),
+('談話','담화','conversation'),
+('轉向','전향','conversion'),
+('改宗','개종','conversion'),
+('回旋','회선','convolution'),
+('護送','호송','convoy'),
+('痙攣','경련','convulsion'),
+('冷却器','냉각기','cooler'),
+('座標','좌표','coordinate'),
+('捕縛','포박','cop'),
+('對處','대처','cope'),
+('複寫','복사','copy'),
+('筆生','필생','copyist'),
+('版權','판권','copyright'),
+('嬌態','교태','coquetry'),
+('珊瑚','산호','coral'),
+('角膜','각막','cornea'),
+('法人','법인','corporation'),
+('微粒子','미립자','corpuscle'),
+('補正','보정','correction'),
+('添削','첨삭','correction'),
+('對應','대응','correspondence'),
+('昇汞','승홍','corrosive sublimate'),
+('轉訛','전와','corruption'),
+('皮層','피층','cortex'),
+('皮質','피질','cortex'),
+('鋼玉','강옥','corundum'),
+('化粧品','화장품','cosmetic'),
+('價格','가격','cost'),
+('原價','원가','cost price'),
+('綿製品','면제품','cotton goods'),
+('採綿器','채면기','cotton picker'),
+('計算','계산','count'),
+('伯爵','백작','count'),
+('顔色','안색','countenance'),
+('逆襲','역습','counterattack'),
+('防諜','방첩','counterespionage'),
+('對位法','대위법','counterpoint'),
+('逆宣傳','역선전','counterpropaganda'),
+('反革命','반혁명','counterrevolution'),
+('副署','부서','countersignature'),
+('田園','전원','country'),
+('進路','진로','course'),
+('針路','침로','course'),
+('課程','과정','course'),
+('一品','일품','course'),
+('好意','호의','courtesy'),
+('法廷','법정','courtroom'),
+('求婚','구혼','courtship'),
+('盟約','맹약','covenant'),
+('牛痘','우두','cow pox'),
+('卑怯','비겁','cowardice'),
+('牧童','목동','cowboy'),
+('分溜','분류','crack'),
+('名工','명공','craftsman'),
+('起重機','기중기','crane'),
+('腦神經','뇌신경','cranial nerve'),
+('頭蓋','두개','cranium'),
+('百日紅','백일홍','crape myrtle'),
+('創造','창조','creation'),
+('創造者','창조자','creator'),
+('生物','생물','creature'),
+('託兒所','탁아소','creche'),
+('債權者','채권자','creditor'),
+('信條','신조','creed'),
+('火葬','화장','cremation'),
+('犯罪','범죄','crime'),
+('犯人','범인','criminal'),
+('廢人','폐인','cripple'),
+('危機','위기','crisis'),
+('批判','비판','criticism'),
+('非難','비난','criticism'),
+('農作物','농작물','crop'),
+('十字架','십자가','cross'),
+('折衷','절충','cross'),
+('斷面','단면','cross section'),
+('混信','혼신','cross talk'),
+('群集','군집','crowd'),
+('殘虐','잔학','cruelty'),
+('殘酷','잔혹','cruelty'),
+('巡航','순항','cruise'),
+('巡洋艦','순양함','cruiser'),
+('水晶','수정','crystal'),
+('立方體','입방체','cube'),
+('立方','입방','cube'),
+('料理','요리','cuisine'),
+('耕作者','경작자','cultivator'),
+('耕耘機','경운기','cultivator'),
+('文化','문화','culture'),
+('修養','수양','culture'),
+('暗渠','암거','culvert'),
+('館長','관장','curator'),
+('治癒','치유','cure'),
+('好奇心','호기심','curiosity'),
+('通貨','통화','currency'),
+('曲線','곡선','curve'),
+('彎曲','만곡','curve'),
+('風習','풍습','custom'),
+('慣例','관례','custom'),
+('顧客','고객','customer'),
+('角皮','각피','cuticle'),
+('週期','주기','cycle'),
+('周波','주파','cycle'),
+('圓筒','원통','cylinder'),
+('短刀','단도','dagger'),
+('乳製品','유제품','dairy products'),
+('損傷','손상','damage'),
+('舞蹈','무도','dancing'),
+('年月日','연월일','date'),
+('黎明','여명','dawn'),
+('晝間','주간','daytime'),
+('停頓','정돈','deadlock'),
+('死神','사신','death'),
+('臨終','임종','deathbed'),
+('負債','부채','debt'),
+('衰微','쇠미','decadence'),
+('腐敗','부패','decay'),
+('減速','감속','deceleration'),
+('決定','결정','decision'),
+('甲板','갑판','deck'),
+('平敍文','평서문','declarative sentence'),
+('減壓','감압','decompression'),
+('老朽','노후','decrepitude'),
+('獻呈','헌정','dedication'),
+('控除','공제','deduction'),
+('打破','타파','defeat'),
+('排便','배변','defecation'),
+('被告','피고','defendant'),
+('防衛','방위','defense'),
+('守備','수비','defense'),
+('守勢','수세','defensive'),
+('缺損','결손','deficit'),
+('定義','정의','definition'),
+('落葉','낙엽','defoliation'),
+('學位','학위','degree'),
+('神格化','신격화','deification'),
+('遲滯','지체','delay'),
+('遲延','지연','delay'),
+('削除','삭제','deletion'),
+('熟考','숙고','deliberation'),
+('審議','심의','deliberation'),
+('非行','비행','delinquency'),
+('配達','배달','delivery'),
+('半神','반신','demigod'),
+('民主主義','민주주의','democracy'),
+('論證','논증','demonstration'),
+('降等','강등','demotion'),
+('分母','분모','denominator'),
+('密度','밀도','density'),
+('出發','출발','departure'),
+('屬國','속국','dependency'),
+('依存','의존','dependent'),
+('品行','품행','deportment'),
+('預金','예금','deposit'),
+('供託者','공탁자','depositor'),
+('預金者','예금자','depositor'),
+('停車場','정거장','depot'),
+('由來','유래','derivation'),
+('下降','하강','descent'),
+('敍述','서술','description'),
+('遺棄','유기','desertion'),
+('指定','지정','designation'),
+('慾求','욕구','desire'),
+('絶望','절망','despair'),
+('必死','필사','desperation'),
+('自暴自棄','자포자기','desperation'),
+('天命','천명','destiny'),
+('驅逐艦','구축함','destroyer'),
+('破壞','파괴','destruction'),
+('細部','세부','detail'),
+('抑留者','억류자','detainee'),
+('拘留','구류','detention'),
+('洗劑','세제','detergent'),
+('低下','저하','deterioration'),
+('廢位','폐위','dethronement'),
+('發展','발전','development'),
+('歸依','귀의','devotion'),
+('露點','노점','dew point'),
+('糊精','호정','dextrin'),
+('糖尿病','당뇨병','diabetes'),
+('診斷','진단','diagnosis'),
+('方言','방언','dialect'),
+('問答','문답','dialogue'),
+('直徑','직경','diameter'),
+('日記','일기','diary'),
+('獨裁的','독재적','dictatorial'),
+('辭典','사전','dictionary'),
+('辭書','사서','dictionary'),
+('困難','곤란','difficulty'),
+('支障','지장','difficulty'),
+('要約','요약','digest,summary'),
+('消化','소화','digestion'),
+('威嚴','위엄','dignity'),
+('尊嚴','존엄','dignity'),
+('貫祿','관록','dignity'),
+('品位','품위','dignity'),
+('餘談','여담','digression'),
+('窮地','궁지','dilemma'),
+('稀釋','희석','dilution'),
+('次元','차원','dimension'),
+('食卓','식탁','dining table'),
+('晩餐','만찬','dinner'),
+('午餐','오찬','dinner'),
+('恐龍','공룡','dinosaur'),
+('外交官','외교관','diplomat'),
+('直流','직류','direct current'),
+('方位','방위','direction'),
+('重役','중역','director'),
+('汚物','오물','dirt'),
+('消失','소실','disappear'),
+('失望','실망','disappointment'),
+('天災','천재','disaster'),
+('災害','재해','disaster'),
+('慘事','참사','disaster'),
+('出費','출비','disbursement'),
+('解雇','해고','discharge'),
+('弟子','제자','disciple'),
+('使徒','사도','disciple'),
+('訓育','훈육','discipline'),
+('懲戒','징계','discipline'),
+('變色','변색','discoloration'),
+('識別','식별','discrimination'),
+('圓盤','원반','discus'),
+('討議','토의','discussion'),
+('論議','논의','discussion'),
+('辯論','변론','discussion'),
+('輕蔑','경멸','disdain,scorn,despise'),
+('變裝','변장','disguise'),
+('嫌惡','혐오','disgust'),
+('急送','급송','dispatch'),
+('急派','급파','dispatch'),
+('分配者','분배자','dispenser'),
+('散亂','산란','dispersion'),
+('陳列','진열','display,exhibit,expose'),
+('表示','표시','display'),
+('不快','불쾌','displeasure'),
+('處分','처분','disposal'),
+('配置','배치','disposition'),
+('反證','반증','disproof'),
+('不合格','불합격','disqualification'),
+('失格','실격','disqualification'),
+('無視','무시','disregard,ignore,neglect'),
+('解剖','해부','dissection'),
+('散布','산포','dissemination'),
+('消散','소산','dissipation'),
+('距離','거리','distance'),
+('歪曲','왜곡','distortion'),
+('分布','분포','distribution'),
+('地區','지구','district'),
+('疑惑','의혹','distrust'),
+('同上','동상','ditto'),
+('利尿劑','이뇨제','diuretic'),
+('多角的','다각적','diversified'),
+('轉換','전환','divert'),
+('神性','신성','divinity'),
+('分配','분배','division'),
+('區劃','구획','division'),
+('師團','사단','division'),
+('離婚','이혼','divorce'),
+('書類','서류','document'),
+('人形','인형','doll'),
+('白雲石','백운석','dolomite'),
+('內需','내수','domestic demand'),
+('優性','우성','dominance'),
+('寄贈者','기증자','donor'),
+('投藥','투약','dosage'),
+('點線','점선','dotted line'),
+('倍加','배가','doubling'),
+('豪雨','호우','downpour'),
+('草案','초안','draft'),
+('草稿','초고','draft'),
+('排水','배수','drainage'),
+('製圖','제도','drawing'),
+('衣裳','의상','dress'),
+('流氷','유빙','drift ice'),
+('訓練','훈련','drill'),
+('酒宴','주연','drinking bout'),
+('飮料水','음료수','drinking water'),
+('運轉','운전','driving'),
+('單峰駱駝','단봉낙타','dromedary'),
+('落下','낙하','drop'),
+('投下','투하','dropping'),
+('旱魃','한발','drought'),
+('藥劑','약제','drug'),
+('鼓手','고수','drummer'),
+('乾電池','건전지','dry cell'),
+('乾船渠','건선거','dry dock'),
+('雜貨','잡화','dry goods'),
+('乾板','건판','dry plate'),
+('決鬪','결투','duel'),
+('公爵','공작','duke'),
+('公國','공국','dukedom'),
+('十二指腸','십이지장','duodenum'),
+('副本','부본','duplicate'),
+('重複','중복','duplication'),
+('二心','이심','duplicity'),
+('王朝','왕조','dynasty'),
+('鼓膜','고막','eardrum'),
+('所得','소득','earnings'),
+('地球','지구','earth'),
+('地震','지진','earthquake'),
+('安心','안심','ease'),
+('經濟','경제','economy'),
+('儉約','검약','economy'),
+('恍惚','황홀','ecstasy'),
+('濕疹','습진','eczema'),
+('浮腫','부종','edema'),
+('勅令','칙령','edict'),
+('抽出','추출','educe'),
+('效果','효과','effect'),
+('效力','효력','efficacy'),
+('利己主義','이기주의','egoism'),
+('彈力','탄력','elasticity'),
+('選擧','선거','election'),
+('選任','선임','election'),
+('有權者','유권자','electorate'),
+('電流','전류','electric current'),
+('電燈','전등','electric light'),
+('電力','전력','electric power'),
+('電氣','전기','electricity'),
+('心電計','심전계','electrocardiograph'),
+('電極','전극','electrode'),
+('電解','전해','electrolysis'),
+('電子','전자','electron'),
+('挽歌','만가','elegy'),
+('哀歌','애가','elegy'),
+('要素','요소','element'),
+('素粒子','소립자','elementary particles'),
+('消去','소거','elimination'),
+('楕圓','타원','ellipse'),
+('雄辯','웅변','eloquence'),
+('解明','해명','elucidation'),
+('築堤','축제','embankment'),
+('當惑','당혹','embarrassment'),
+('大使館','대사관','embassy'),
+('餘燼','여신','ember'),
+('胎兒','태아','embryo'),
+('發生學','발생학','embryology'),
+('移民','이민','emigrant'),
+('皇帝','황제','emperor'),
+('帝國','제국','empire'),
+('皇后','황후','empress'),
+('蓄膿症','축농증','empyema'),
+('乳劑','유제','emulsion'),
+('制定','제정','enactment'),
+('釉藥','유약','enamel'),
+('琺瑯','법랑','enamel'),
+('陣地','진지','encampment'),
+('腦炎','뇌염','encephalitis'),
+('蠶食','잠식','encroachment'),
+('胚乳','배유','endosperm'),
+('忍耐','인내','endurance'),
+('執行','집행','enforcement'),
+('招聘','초빙','engagement'),
+('機關','기관','engine'),
+('技師','기사','engineer'),
+('工學','공학','engineering'),
+('啓蒙','계몽','enlightenment'),
+('入隊','입대','enlistment'),
+('徵募','징모','enlistment'),
+('軍旗','군기','ensign'),
+('確保','확보','ensure'),
+('腸炎','장염','enteritis'),
+('企業','기업','enterprise'),
+('熱意','열의','enthusiasm'),
+('熱狂者','열광자','enthusiast'),
+('入口','입구','entrance'),
+('記入','기입','entry'),
+('列擧','열거','enumeration'),
+('環境','환경','environment'),
+('酵素','효소','enzyme'),
+('酵素學','효소학','enzymology'),
+('震央','진앙','epicenter'),
+('流行病','유행병','epidemic'),
+('亞流','아류','epigone'),
+('揷話','삽화','episode'),
+('書簡','서간','epistle'),
+('同等','동등','equality'),
+('方程式','방정식','equation'),
+('赤道','적도','equator'),
+('等價','등가','equivalence'),
+('紀元','기원','era'),
+('年代','연대','era'),
+('根絶','근절','eradication'),
+('抹消','말소','erasure'),
+('建立','건립','erection'),
+('勃起','발기','erection'),
+('過失','과실','error'),
+('失策','실책','error'),
+('誤差','오차','error'),
+('噴出','분출','eruption'),
+('噴火','분화','eruption'),
+('丹毒','단독','erysipelas'),
+('逃亡','도망','escape'),
+('護衛','호위','escort,convoy'),
+('隨筆','수필','essay'),
+('試論','시론','essay'),
+('本質','본질','essence'),
+('精髓','정수','essence'),
+('疎遠','소원','estrangement'),
+('離間','이간','estrangement'),
+('永遠','영원','eternity, forever'),
+('永久','영구','eternity'),
+('倫理學','윤리학','ethics'),
+('禮法','예법','etiquette'),
+('優生學','우생학','eugenics'),
+('宦官','환관','eunuch'),
+('音便','음편','euphony'),
+('排出','배출','evacuation'),
+('避難者','피난자','evacuee'),
+('夕刊','석간','evening paper'),
+('夜會','야회','evening party'),
+('平等','평등','evenness'),
+('種目','종목','event'),
+('萬事','만사','everything'),
+('證言','증언','evidence,attest,testimony'),
+('展開','전개','evolve'),
+('誇張','과장','exaggeration'),
+('檢査','검사','examination'),
+('審査','심사','examination'),
+('受驗者','수험자','examinee'),
+('優秀','우수','excellence'),
+('卓越','탁월','excellence'),
+('例外','예외','exception'),
+('過剩','과잉','excess'),
+('超過','초과','excess'),
+('絶叫','절규','exclamation'),
+('排他的','배타적','exclusive'),
+('辨明','변명','excuse,apologize,explain'),
+('口實','구실','excuse'),
+('例示','예시','exemplification'),
+('運動','운동','exercise'),
+('演習','연습','exercise'),
+('行使','행사','exercise'),
+('努力','노력','exertion'),
+('呼氣','호기','exhalation'),
+('排氣','배기','exhaust'),
+('消耗','소모','exhaustion'),
+('出品','출품','exhibit'),
+('露出症','노출증','exhibitionism'),
+('出品者','출품자','exhibitor'),
+('亡命','망명','exile'),
+('流刑','유형','exile'),
+('流刑者','유형자','exile'),
+('存在','존재','existence'),
+('現存','현존','existing'),
+('退場','퇴장','exit'),
+('膨脹','팽창','expansion'),
+('豫期','예기','expectation'),
+('方便','방편','expedient'),
+('便法','편법','expedient'),
+('經驗','경험','experience,undergo,see'),
+('實驗','실험','experiment'),
+('滿了','만료','expiration'),
+('開發','개발','exploitation'),
+('探險','탐험','exploration'),
+('破裂','파열','explosion,rupture'),
+('爆藥','폭약','explosive'),
+('輸出','수출','export'),
+('露出','노출','exposure'),
+('外延','외연','extension'),
+('外面','외면','exterior'),
+('外部','외부','external'),
+('死滅','사멸','extinction'),
+('治外法權','치외법권','extraterritoriality'),
+('極度','극도','extreme'),
+('外向性','외향성','extroversion'),
+('充溢','충일','exuberance'),
+('眼球','안구','eyeball'),
+('視力','시력','eyesight'),
+('犬齒','견치','eyetooth'),
+('前面','전면','facade'),
+('表面','표면','face'),
+('面目','면목','face'),
+('施設','시설','facility'),
+('黨派','당파','faction'),
+('因子','인자','factor'),
+('階乘','계승','factorial'),
+('失敗','실패','failure'),
+('減退','감퇴','failure'),
+('故障','고장','failure'),
+('落第','낙제','failure'),
+('氣絶','기절','faint'),
+('卒倒','졸도','fainting'),
+('品評會','품평회','fair'),
+('仙女','선녀','fairy'),
+('童話','동화','fairy tale'),
+('仙境','선경','fairyland'),
+('信義','신의','faith'),
+('陷落','함락','fall'),
+('降下','강하','fall'),
+('墜落','추락','falling'),
+('遊休','유휴','fallow'),
+('假聲','가성','falsetto'),
+('名聲','명성','fame'),
+('家族','가족','family'),
+('饑饉','기근','famine'),
+('空想','공상','fancy'),
+('笑劇','소극','farce'),
+('告別','고별','farewell'),
+('農作','농작','farming'),
+('分冊','분책','fascicle'),
+('斷食','단식','fasting'),
+('絶食','절식','fasting'),
+('脂肪','지방','fat'),
+('運命','운명','fate'),
+('祖國','조국','fatherland'),
+('疲勞','피로','fatigue'),
+('祝祭','축제','feast'),
+('特徵','특징','feature'),
+('長石','장석','feldspar'),
+('重罪','중죄','felony'),
+('肥沃','비옥','fertility'),
+('豊饒','풍요','fertility'),
+('肥料','비료','fertilizer'),
+('領主','영주','feudal lord'),
+('熱病','열병','fever'),
+('忠實','충실','fidelity'),
+('封土','봉토','fief'),
+('分野','분야','field'),
+('無花果','무화과','fig'),
+('鬪鷄','투계','fighting cock'),
+('模樣','모양','figure'),
+('圖形','도형','figure'),
+('美術','미술','fine art'),
+('指紋','지문','fingerprint'),
+('火災','화재','fire'),
+('燒夷彈','소이탄','fire bomb'),
+('消防署','소방서','fire station'),
+('火器','화기','firearm'),
+('爆竹','폭죽','firecracker'),
+('發砲','발포','firing'),
+('商社','상사','firm'),
+('第一','제일','first'),
+('初版','초판','first edition'),
+('前半','전반','first half'),
+('中尉','중위','first lieutenant'),
+('初犯者','초범자','first offender'),
+('魚市場','어시장','fish market'),
+('魚粉','어분','fish meal'),
+('魚油','어유','fish oil'),
+('漁夫','어부','fisher'),
+('漁獲','어획','fishing'),
+('漁船','어선','fishing boat'),
+('漁場','어장','fishing ground'),
+('魚網','어망','fishing net'),
+('固定','고정','fixation'),
+('恒星','항성','fixed star'),
+('備品','비품','fixture'),
+('旗艦','기함','flagship'),
+('側面','측면','flank'),
+('亞麻','아마','flax'),
+('斑點','반점','fleck'),
+('船隊','선대','fleet'),
+('逃走','도주','flight'),
+('浮游','부유','floating'),
+('浮動','부동','floating'),
+('流動資本','유동자본','floating capital'),
+('洪水','홍수','flood'),
+('氾濫','범람','flood'),
+('治水','치수','flood control'),
+('投光器','투광기','floodlight'),
+('建坪','건평','floor space'),
+('花壇','화단','flower bed'),
+('花園','화원','flower garden'),
+('花卉','화훼','flowering plant'),
+('流體','유체','fluid'),
+('螢石','형석','fluorite'),
+('紅潮','홍조','flush'),
+('民俗','민속','folk custom'),
+('民俗音樂','민속음악','folk music'),
+('民謠','민요','folk song'),
+('習俗','습속','folkways'),
+('從者','종자','follower'),
+('食中毒','식중독','food poisoning'),
+('食料品','식료품','foodstuff'),
+('脚光','각광','footlights'),
+('脚注','각주','footnote'),
+('前腦','전뇌','forebrain'),
+('豫報','예보','forecast'),
+('豫想','예상','forecast,expect,anticipate'),
+('前景','전경','foreground'),
+('外務','외무','foreign affairs'),
+('外資','외자','foreign capital'),
+('外國人','외국인','foreigner'),
+('異人','이인','foreigner'),
+('豫知','예지','foreknowledge'),
+('森林','삼림','forest'),
+('林業','임업','forestry'),
+('序文','서문','foreword'),
+('形式','형식','form'),
+('儀禮的','의례적','formal'),
+('形成','형성','formation'),
+('公式','공식','formula'),
+('堡壘','보루','fort'),
+('築城','축성','fortification'),
+('發送','발송','forwarding'),
+('回送','회송','forwarding'),
+('養女','양녀','foster daughter'),
+('土臺','토대','foundation'),
+('棄兒','기아','foundling'),
+('萬年筆','만년필','fountain pen'),
+('水源','수원','fountainhead'),
+('四球','사구','four balls'),
+('乳香','유향','frankincense'),
+('率直','솔직','frankness'),
+('奇形','기형','freak'),
+('冷凍','냉동','freezing'),
+('氷點','빙점','freezing point'),
+('貨車','화차','freight car'),
+('貨物船','화물선','freighter'),
+('狂亂','광란','frenzy'),
+('頻發','빈발','frequency'),
+('淡水','담수','fresh water'),
+('冷凍食品','냉동식품','frozen food'),
+('果實','과실','fruit'),
+('果汁','과즙','fruit juice'),
+('果樹','과수','fruit tree'),
+('燃料','연료','fuel'),
+('正裝','정장','full dress'),
+('滿月','만월','full moon'),
+('基金','기금','fund'),
+('毛皮','모피','fur'),
+('賜暇','사가','furlough'),
+('休暇','휴가','furlough'),
+('家具','가구','furniture'),
+('信管','신관','fuse'),
+('導火線','도화선','fuse'),
+('融解','융해','fusion'),
+('融點','융점','fusion point'),
+('無用','무용','futility'),
+('將來','장래','future'),
+('脚絆','각반','gaiter'),
+('銀河','은하','galaxy'),
+('沒食子','몰식자','gallnut'),
+('膽石','담석','gallstone'),
+('檢流計','검류계','galvanometer'),
+('賭博','도박','gambling'),
+('山峽','산협','gap'),
+('庭園','정원','garden'),
+('園藝','원예','gardening'),
+('氣體','기체','gas'),
+('胃痛','위통','gastralgia'),
+('胃液','위액','gastric juice'),
+('胃炎','위염','gastritis'),
+('胃下垂','위하수','gastroptosis'),
+('胃鏡','위경','gastroscope'),
+('採集','채집','gathering'),
+('計器','계기','gauge'),
+('一般','일반','general'),
+('將軍','장군','general'),
+('庶務','서무','general affairs'),
+('總選擧','총선거','general election'),
+('總支配人','총지배인','general manager'),
+('總會','총회','general meeting'),
+('總則','총칙','general rule'),
+('槪括','개괄','generalization'),
+('紳士','신사','gentleman'),
+('親切','친절','gentleness'),
+('地理','지리','geography'),
+('地政學','지정학','geopolitics'),
+('屈地性','굴지성','geotropism'),
+('細菌','세균','germ'),
+('萌芽','맹아','germination'),
+('動名詞','동명사','gerund'),
+('亡靈','망령','ghost'),
+('怪談','괴담','ghost story'),
+('巨人','거인','giant'),
+('生薑','생강','ginger'),
+('麒麟','기린','giraffe'),
+('要點','요점','gist'),
+('氷醋酸','빙초산','glacial acetic acid'),
+('氷河','빙하','glacier'),
+('一見','일견','glance'),
+('峽谷','협곡','glen'),
+('滑走','활주','glide'),
+('暗影','암영','gloom'),
+('憂鬱','우울','gloom'),
+('陰鬱','음울','gloom'),
+('榮光','영광','glory'),
+('聲門','성문','glottis'),
+('女神','여신','goddess'),
+('代父','대부','godfather'),
+('代母','대모','godmother'),
+('金箔','금박','gold leaf'),
+('淋疾','임질','gonorrhea'),
+('良貨','양화','good money'),
+('周旋','주선','good offices'),
+('亂暴者','난폭자','goon'),
+('痛風','통풍','gout'),
+('政治','정치','government'),
+('政府','정부','government'),
+('與黨','여당','government party'),
+('支配者','지배자','governor'),
+('段階','단계','gradation'),
+('穀物','곡물','grain'),
+('文法','문법','grammar'),
+('文典','문전','grammar'),
+('雄大','웅대','grandeur'),
+('祖父','조부','grandfather'),
+('祖母','조모','grandmother'),
+('花崗岩','화강암','granite'),
+('石墨','석묵','graphite'),
+('格鬪','격투','grappling'),
+('彫像','조상','graven image'),
+('墓地','묘지','graveyard'),
+('重力','중력','gravity'),
+('偉大','위대','greatness'),
+('慾心','욕심','greed'),
+('手榴彈','수류탄','grenade'),
+('地面','지면','ground'),
+('地盤','지반','ground'),
+('樹立','수립','ground'),
+('成長','성장','growth'),
+('生長','생장','growth'),
+('發育','발육','growth'),
+('怨恨','원한','grudge'),
+('遺恨','유한','grudge'),
+('營倉','영창','guardhouse'),
+('案內','안내','guidance'),
+('指導','지도','guidance'),
+('斷頭臺','단두대','guillotine'),
+('砲車','포차','gun carriage'),
+('砲艦','포함','gunboat'),
+('火藥','화약','gunpowder'),
+('銃床','총상','gunstock'),
+('體操','체조','gymnastics'),
+('口臭','구취','halitosis'),
+('幻覺','환각','hallucination'),
+('半減','반감','halve'),
+('手細工','수세공','handicraft'),
+('手藝','수예','handicraft'),
+('欄干','난간','handrail'),
+('握手','악수','handshake'),
+('筆跡','필적','handwriting'),
+('格納庫','격납고','hangar'),
+('宿醉','숙취','hangover'),
+('硬口盖','경구개','hard palate'),
+('硬水','경수','hard water'),
+('硬度','경도','hardness'),
+('無情','무정','hardness'),
+('倍音','배음','harmonic'),
+('調和','조화','harmony'),
+('和聲','화성','harmony'),
+('艙口','창구','hatch'),
+('憎惡','증오','hatred'),
+('乾草','건초','hay'),
+('本社','본사','head office'),
+('本店','본점','head office'),
+('頭痛','두통','headache'),
+('題目','제목','heading'),
+('校長','교장','headmaster'),
+('頭註','두주','headnote'),
+('本部','본부','headquarters'),
+('健康','건강','health'),
+('補聽器','보청기','hearing aid'),
+('心臟','심장','heart'),
+('中心','중심','heart'),
+('心血','심혈','heart''s blood'),
+('熱容量','열용량','heat capacity'),
+('熱線','열선','heat rays'),
+('熱處理','열처리','heat treatment'),
+('熱波','열파','heat wave'),
+('天體','천체','heavenly body'),
+('重水素','중수소','heavy hydrogen'),
+('重油','중유','heavy oil'),
+('重水','중수','heavy water'),
+('覇權','패권','hegemony'),
+('高地','고지','height'),
+('嗣子','사자','heir'),
+('螺旋','나선','helix'),
+('地獄','지옥','hell'),
+('舵手','타수','helmsman'),
+('赤鐵鑛','적철광','hematite'),
+('半球','반구','hemisphere'),
+('痔疾','치질','hemorrhoids'),
+('痔核','치핵','hemorrhoids'),
+('肝炎','간염','hepatitis'),
+('草本','초본','herb'),
+('牧者','목자','herdsman'),
+('今後','금후','hereafter'),
+('遺傳','유전','heredity'),
+('異端','이단','heresy'),
+('世襲','세습','heritage'),
+('隱者','은자','hermit'),
+('英雄','영웅','hero'),
+('勇士','용사','hero'),
+('女傑','여걸','heroine'),
+('躊躇','주저','hesitation'),
+('他','타','heter'),
+('他律','타율','heteronomy'),
+('皮革','피혁','hide'),
+('象形文字','상형문자','hieroglyph'),
+('高氣壓','고기압','high atmospheric pressure'),
+('高血壓','고혈압','high blood pressure'),
+('高周波','고주파','high frequency'),
+('高僧','고승','high priest'),
+('公海','공해','high sea'),
+('高潮','고조','high tide'),
+('大逆','대역','high treason'),
+('滿潮','만조','high water'),
+('暗示','암시','hint,suggestion'),
+('河馬','하마','hippopotamus'),
+('沿革','연혁','history'),
+('神聖','신성','holiness'),
+('家庭','가정','home'),
+('本壘','본루','home plate'),
+('宿題','숙제','homework'),
+('同質','동질','homogeneous'),
+('正直','정직','honesty'),
+('敬語','경어','honorific'),
+('希望','희망','hope'),
+('競馬','경마','horse racing'),
+('馬術','마술','horsemanship'),
+('病院','병원','hospital'),
+('軍勢','군세','host'),
+('敵意','적의','hostility'),
+('家屋','가옥','house'),
+('往診','왕진','house call'),
+('家事','가사','housework'),
+('住宅','주택','housing'),
+('色彩','색채','hue'),
+('色相','색상','hue'),
+('人性','인성','human nature'),
+('人本主義','인본주의','humanism'),
+('屈辱','굴욕','humiliation'),
+('謙遜','겸손','humility'),
+('腐植土','부식토','humus'),
+('空腹','공복','hunger'),
+('雜種','잡종','hybrid'),
+('鹽酸','염산','hydrochloric acid'),
+('靑酸','청산','hydrocyanic acid'),
+('加水分解','가수분해','hydrolysis'),
+('恐水病','공수병','hydrophobia'),
+('雙曲線','쌍곡선','hyperbola'),
+('菌絲','균사','hypha'),
+('僞善','위선','hypocrisy'),
+('假設','가설','hypothesis'),
+('浮氷','부빙','ice floe'),
+('氷水','빙수','ice water'),
+('氷山','빙산','iceberg'),
+('魚龍','어룡','ichthyosaur'),
+('聖像','성상','icon'),
+('思想','사상','idea'),
+('理念','이념','idea'),
+('理想','이상','ideal'),
+('理想主義','이상주의','idealism'),
+('理想化','이상화','idealization'),
+('熟語','숙어','idiom'),
+('無爲','무위','idleness'),
+('牧歌的','목가적','idyllic'),
+('點火','점화','ignition'),
+('無知','무지','ignorance'),
+('回腸','회장','ileum'),
+('惡感情','악감정','ill will'),
+('違法','위법','illegality'),
+('文盲','문맹','illiteracy'),
+('非論理的','비논리적','illogical'),
+('照明','조명','illumination'),
+('照度','조도','illumination'),
+('低能','저능','imbecility'),
+('模倣','모방','imitation'),
+('模造','모조','imitation'),
+('帝政','제정','imperialism'),
+('用具','용구','implement'),
+('輸入','수입','import'),
+('賦課','부과','imposition'),
+('受精','수정','impregnation'),
+('印象','인상','impression'),
+('投獄','투옥','imprisonment'),
+('禁錮','금고','imprisonment'),
+('改良','개량','improvement'),
+('不純','불순','impurity'),
+('權化','권화','incarnation'),
+('香爐','향로','incense burner'),
+('誘因','유인','incentive'),
+('入射','입사','incidence'),
+('燒却','소각','incineration'),
+('包括','포괄','inclusion'),
+('無能力','무능력','incompetence'),
+('無能力者','무능력자','incompetent'),
+('不定','부정','inconstancy'),
+('編入','편입','incorporation'),
+('繁殖','번식','increase,multiply'),
+('孵化','부화','incubation'),
+('不治','불치','incurability'),
+('辨償','변상','indemnity'),
+('自主','자주','independence'),
+('自立','자립','independence'),
+('指標','지표','index'),
+('指數','지수','index number'),
+('間接','간접','indirectness'),
+('無分別','무분별','indiscretion'),
+('個人主義','개인주의','individualism'),
+('個人主義者','개인주의자','individualist'),
+('惹起','야기','induce'),
+('誘發','유발','induce'),
+('誘導','유도','inducement'),
+('誘引','유인','inducement'),
+('工業團地','공업단지','industrial park'),
+('産業','산업','industry'),
+('工業','공업','industry'),
+('內在','내재','indwelling'),
+('無能','무능','inefficiency'),
+('不平等','불평등','inequality'),
+('惰性','타성','inertia'),
+('惰力','타력','inertia'),
+('必然的','필연적','inevitable'),
+('未熟','미숙','inexperience'),
+('惡評','악평','infamy'),
+('幼少','유소','infancy'),
+('劣等','열등','inferiority'),
+('劣等感','열등감','inferiority complex'),
+('不妊','불임','infertility'),
+('內野','내야','infield'),
+('無窮','무궁','infinitude'),
+('炎症','염증','inflammation'),
+('花序','화서','inflorescence'),
+('權勢','권세','influence'),
+('偉力','위력','influence'),
+('有力者','유력자','influencer'),
+('左右','좌우','influence'),
+('見聞','견문','information'),
+('忘恩','망은','ingratitude'),
+('材料','재료','ingredient'),
+('吸入','흡입','inhalation'),
+('傳授','전수','initiation'),
+('注入','주입','injection'),
+('傷害','상해','injury'),
+('危害','위해','injury'),
+('內陸','내륙','inland'),
+('內海','내해','inland sea'),
+('旅館','여관','inn'),
+('內耳','내이','inner ear'),
+('無罪','무죄','innocence'),
+('新機軸','신기축','innovation'),
+('革新','혁신','innovation'),
+('照會','조회','inquiry'),
+('取調','취조','inquiry'),
+('碑銘','비명','inscription'),
+('不安定','불안정','insecurity'),
+('無神經','무신경','insensibility'),
+('揷入','삽입','insertion'),
+('眼識','안식','insight'),
+('識見','식견','insight'),
+('徽章','휘장','insignia'),
+('傲慢','오만','insolence'),
+('監察','감찰','inspection'),
+('靈感','영감','inspiration'),
+('鼓吹','고취','inspiration'),
+('鼓舞','고무','inspiration'),
+('感化','감화','inspiration'),
+('設備','설비','installation'),
+('刹那','찰나','instant'),
+('本能','본능','instinct'),
+('訓令','훈령','instruction'),
+('指令','지령','instruction'),
+('保險','보험','insurance'),
+('暴徒','폭도','insurgent'),
+('反亂者','반란자','insurgent'),
+('積分','적분','integral'),
+('保全','보전','integrity'),
+('知性','지성','intelligence'),
+('智能','지능','intelligence'),
+('集約的','집약적','intensive'),
+('遮斷','차단','interception'),
+('感興','감흥','interest'),
+('利害關係','이해관계','interest'),
+('權益','권익','interest'),
+('內角','내각','interior angle'),
+('對話者','대화자','interlocutor'),
+('幕間','막간','interlude'),
+('媒介','매개','intermediary'),
+('仲介','중개','intermediation'),
+('土葬','토장','interment'),
+('內面的','내면적','internal'),
+('通譯','통역','interpretation'),
+('審問','심문','interrogation'),
+('質問者','질문자','interrogator'),
+('中斷','중단','interruption'),
+('不通','불통','interruption'),
+('介入','개입','intervention'),
+('會見','회견','interview'),
+('面接','면접','interview'),
+('會見者','회견자','interviewer'),
+('親密','친밀','intimacy'),
+('親交','친교','intimacy'),
+('脅迫者','협박자','intimidator'),
+('陶醉','도취','intoxication'),
+('密通','밀통','intrigue'),
+('導入','도입','introduction'),
+('序論','서론','introduction'),
+('亂入者','난입자','intruder'),
+('失效','실효','invalidation'),
+('發明','발명','invention'),
+('搜査','수사','investigation'),
+('任官','임관','investiture'),
+('投資','투자','investment'),
+('出資','출자','investment'),
+('電離','전리','ionization'),
+('虹彩','홍채','iris'),
+('鐵分','철분','iron'),
+('砂鐵','사철','iron sand'),
+('鐵器','철기','ironware'),
+('鐵工','철공','ironworker'),
+('反語','반어','irony'),
+('不條理','부조리','irrationality'),
+('不規則','불규칙','irregularity'),
+('變則','변칙','irregularity'),
+('無責任','무책임','irresponsibility'),
+('灌漑','관개','irrigation'),
+('孤立','고립','isolation'),
+('隔離','격리','isolation'),
+('同型','동형','isomorphism'),
+('地峽','지협','isthmus'),
+('項目','항목','item'),
+('旅程','여정','itinerary'),
+('道程','도정','itinerary'),
+('象牙','상아','ivory'),
+('翡翠','비취','jade'),
+('硬玉','경옥','jadeite'),
+('碧玉','벽옥','jasper'),
+('嫉妬','질투','jealousy'),
+('棧橋','잔교','jetty'),
+('裁判官','재판관','judge'),
+('判事','판사','judge'),
+('柔道','유도','judo'),
+('中學校','중학교','junior high school'),
+('公正','공정','justice'),
+('萬華鏡','만화경','kaleidoscope'),
+('核心','핵심','kernel'),
+('燈油','등유','kerosene'),
+('要衝','요충','key point'),
+('腎臟','신장','kidney'),
+('幼稚園','유치원','kindergarten'),
+('國王','국왕','king'),
+('王國','왕국','kingdom'),
+('廚房','주방','kitchen'),
+('編物','편물','knitting'),
+('陰脣','음순','labium'),
+('勤勞','근로','labor'),
+('勞動者','노동자','laborer'),
+('迷宮','미궁','labyrinth'),
+('乳酸','유산','lactic acid'),
+('淑女','숙녀','lady'),
+('貴婦人','귀부인','lady'),
+('湖水','호수','lake'),
+('兵長','병장','lance corporal'),
+('槍騎兵','창기병','lancer'),
+('陸地','육지','land'),
+('地雷','지뢰','land mine'),
+('地租','지조','land tax'),
+('着陸','착륙','landing'),
+('地主','지주','landlord'),
+('造園','조원','landscape gardening'),
+('言語','언어','language'),
+('瑠璃','유리','lapis lazuli'),
+('消滅','소멸','lapse'),
+('落葉松','낙엽송','larch'),
+('幼蟲','유충','larva'),
+('幼生','유생','larva'),
+('喉頭','후두','larynx'),
+('無氣力','무기력','lassitude'),
+('最後','최후','last'),
+('潛在','잠재','latency'),
+('旋盤','선반','lathe'),
+('汽艇','기정','launch'),
+('熔岩','용암','lava'),
+('法學','법학','law'),
+('鉛毒','연독','lead poisoning'),
+('指導者','지도자','leader'),
+('主役','주역','leading part'),
+('腐葉土','부엽토','leaf mold'),
+('閏年','윤년','leap year'),
+('學問','학문','learning'),
+('講師','강사','lecturer'),
+('講演者','강연자','lecturer'),
+('元帳','원장','ledger'),
+('左派','좌파','left wing'),
+('合法的','합법적','legal'),
+('立法','입법','legislation'),
+('立法者','입법자','legislator'),
+('餘暇','여가','leisure'),
+('癩病','나병','leprosy'),
+('學課','학과','lesson'),
+('課業','과업','lesson'),
+('致死的','치사적','lethal'),
+('字體','자체','lettering'),
+('白血球','백혈구','leucocyte'),
+('水準','수준','level'),
+('司書','사서','librarian'),
+('認可','인가','license'),
+('甘草','감초','licorice'),
+('生命','생명','life'),
+('靭帶','인대','ligament'),
+('輕騎兵','경기병','light cavalry'),
+('輕音樂','경음악','light music'),
+('光波','광파','light wave'),
+('燈臺','등대','lighthouse'),
+('百合','백합','lily'),
+('手足','수족','limb'),
+('限度','한도','limit'),
+('際限','제한','limit'),
+('限定版','한정판','limited edition'),
+('路線','노선','line'),
+('血統','혈통','lineage'),
+('線審','선심','linesman'),
+('獅子','사자','lion'),
+('液化','액화','liquefaction'),
+('液體','액체','liquid'),
+('流動體','유동체','liquid'),
+('液量','액량','liquid measure'),
+('淸算','청산','liquidation'),
+('流動性','유동성','liquidity'),
+('聽取','청취','listening'),
+('文學','문학','literature'),
+('文獻','문헌','literature'),
+('文藝','문예','literature'),
+('快活','쾌활','liveliness'),
+('生活','생활','living'),
+('居室','거실','living room'),
+('荷重','하중','load'),
+('貸付','대부','loan'),
+('貸借','대차','loan'),
+('借款','차관','loan'),
+('局限','국한','localize'),
+('破傷風','파상풍','lockjaw'),
+('下宿','하숙','lodging'),
+('宿泊','숙박','lodging'),
+('宿所','숙소','lodging'),
+('對數','대수','logarithm'),
+('論理學','논리학','logic'),
+('論理','논리','logic'),
+('長壽','장수','longevity'),
+('憧憬','동경','longing'),
+('經度','경도','longitude'),
+('織機','직기','loom'),
+('損失','손실','loss'),
+('擴聲器','확성기','loudspeaker'),
+('愛好','애호','love'),
+('慈愛','자애','love'),
+('戀愛','연애','love'),
+('情事','정사','love affair'),
+('戀歌','연가','love song'),
+('干潮','간조','low tide'),
+('低地','저지','lowland'),
+('忠誠','충성','loyalty'),
+('忠節','충절','loyalty'),
+('潤滑油','윤활유','lubricating oil'),
+('腰痛','요통','lumbago'),
+('月蝕','월식','lunar eclipse'),
+('光澤','광택','lustre'),
+('奢侈','사치','luxury'),
+('策動','책동','machination'),
+('機械','기계','machine'),
+('機關銃','기관총','machine gun'),
+('夫人','부인','madam'),
+('狂氣','광기','madness'),
+('巨匠','거장','maestro'),
+('雜誌','잡지','magazine'),
+('奇術','기술','magic'),
+('幻燈','환등','magic lantern'),
+('磁石','자석','magnet'),
+('磁場','자장','magnetic field'),
+('磁界','자계','magnetic field'),
+('磁束','자속','magnetic flux'),
+('磁針','자침','magnetic needle'),
+('磁氣','자기','magnetism'),
+('磁力','자력','magnetism'),
+('磁鐵鑛','자철광','magnetite'),
+('倍率','배율','magnification'),
+('木蓮','목련','magnolia'),
+('麻雀','마작','mahjong'),
+('郵送','우송','mailing'),
+('主力','주력','main force'),
+('本線','본선','main line'),
+('維持','유지','maintenance'),
+('大前提','대전제','major premise'),
+('長音階','장음계','major scale'),
+('成年','성년','majority'),
+('展性','전성','malleability'),
+('麥芽','맥아','malt'),
+('乳腺','유선','mammary gland'),
+('管理人','관리인','manager'),
+('海牛','해우','manatee'),
+('表明','표명','manifestation'),
+('莊園','장원','manor'),
+('假數','가수','mantissa'),
+('眞言','진언','mantra'),
+('製造','제조','manufacture'),
+('地圖','지도','map'),
+('大理石','대리석','marble'),
+('白鐵鑛','백철광','marcasite'),
+('行軍','행군','march'),
+('欄外','난외','margin'),
+('海産物','해산물','marine products'),
+('符號','부호','mark'),
+('點數','점수','mark'),
+('市價','시가','market price'),
+('侯爵','후작','marquess'),
+('結婚','결혼','marriage'),
+('骨髓','골수','marrow'),
+('沼澤','소택','marsh'),
+('武道','무도','martial art'),
+('武術','무술','martial art'),
+('戒嚴令','계엄령','martial law'),
+('假裝','가장','masquerade'),
+('集團','집단','mass'),
+('名人','명인','master'),
+('傑作','걸작','masterpiece'),
+('名作','명작','masterpiece'),
+('熟達','숙달','mastery'),
+('試合','시합','match'),
+('實現','실현','materialization'),
+('數理的','수리적','mathematic'),
+('數學者','수학자','mathematician'),
+('數學','수학','mathematics'),
+('交配','교배','mating'),
+('入學','입학','matriculation'),
+('最大限度','최대한도','maximum'),
+('市長','시장','mayor'),
+('食券','식권','meal ticket'),
+('意義','의의','meaning'),
+('野卑','야비','meanness'),
+('手段','수단','measure'),
+('測量','측량','measurement'),
+('測定','측정','measurement'),
+('力學','역학','mechanics'),
+('賞牌','상패','medal'),
+('中點','중점','median point'),
+('調停','조정','mediation'),
+('醫術','의술','medicine'),
+('醫學','의학','medicine'),
+('瞑想','명상','meditation'),
+('默想','묵상','meditation'),
+('媒質','매질','medium'),
+('會合','회합','meeting'),
+('會場','회장','meeting place'),
+('諧調','해조','melody'),
+('旋律','선율','melody'),
+('鎔解','용해','melting'),
+('構成員','구성원','member'),
+('腦膜','뇌막','meninges'),
+('閉經期','폐경기','menopause'),
+('暗算','암산','mental arithmetic'),
+('重商主義','중상주의','mercantilism'),
+('商船','상선','merchant ship'),
+('子午線','자오선','meridian'),
+('功績','공적','merit'),
+('中間子','중간자','meson'),
+('救世主','구세주','messiah'),
+('新陳代謝','신진대사','metabolism'),
+('變態','변태','metamorphosis'),
+('轉移','전이','metastasis'),
+('隕石','운석','meteorite'),
+('換喩','환유','metonymy'),
+('雲母','운모','mica'),
+('微生物','미생물','microbe'),
+('小宇宙','소우주','microcosm'),
+('測微計','측미계','micrometer'),
+('中腦','중뇌','midbrain'),
+('産婆','산파','midwife'),
+('風采','풍채','mien'),
+('偏頭痛','편두통','migraine'),
+('移住','이주','migration'),
+('軟鋼','연강','mild steel'),
+('里程標','이정표','milestone'),
+('鬪士','투사','militant'),
+('軍事','군사','military affairs'),
+('軍政','군정','military government'),
+('軍法','군법','military law'),
+('兵役','병역','military service'),
+('牛乳','우유','milk'),
+('乳糖','유당','milk sugar'),
+('讀心術','독심술','mind reading'),
+('心眼','심안','mind''s eye'),
+('坑夫','갱부','miner'),
+('鑛物','광물','mineral'),
+('鑛油','광유','mineral oil'),
+('採鑛','채광','mining'),
+('造幣','조폐','mintage'),
+('被減數','피감수','minuend'),
+('奇蹟','기적','miracle'),
+('靈藥','영약','miracle drug'),
+('誤算','오산','miscalculation'),
+('曲解','곡해','misconstruction'),
+('守錢奴','수전노','miser'),
+('悲慘','비참','misery'),
+('不運','불운','misfortune'),
+('惡政','악정','misgovernment'),
+('失政','실정','misgovernment'),
+('誤報','오보','misinformation'),
+('誤傳','오전','misinformation'),
+('誤植','오식','misprint'),
+('情婦','정부','mistress'),
+('誤解','오해','misunderstanding'),
+('混合','혼합','mixture'),
+('動員','동원','mobilization'),
+('中庸','중용','moderation'),
+('近代的','근대적','modern'),
+('謙讓','겸양','modesty'),
+('水分','수분','moisture'),
+('糖蜜','당밀','molasses'),
+('分子','분자','molecule'),
+('癡漢','치한','molester'),
+('餘勢','여세','momentum'),
+('君主','군주','monarch'),
+('單眼鏡','단안경','monocle'),
+('獨占的','독점적','monopolistic'),
+('單音','단음','monotony'),
+('單調','단조','monotony'),
+('怪物','괴물','monster'),
+('修身','수신','moral'),
+('道義','도의','morality'),
+('午前','오전','morning'),
+('抵當','저당','mortgage'),
+('最惠國','최혜국','most favored nation'),
+('母艦','모함','mother ship'),
+('動機','동기','motive'),
+('原動力','원동력','motive power'),
+('臺紙','대지','mount'),
+('山脈','산맥','mountain range'),
+('山系','산계','mountain system'),
+('粘膜','점막','mucous membrane'),
+('倍數','배수','multiple'),
+('多毛作','다모작','multiple cropping'),
+('乘數','승수','multiplier'),
+('殺人','살인','murder'),
+('博物館','박물관','museum'),
+('音樂','음악','music'),
+('麝香','사향','musk'),
+('點呼','점호','muster'),
+('銃口','총구','muzzle'),
+('神秘','신비','mystery'),
+('神話','신화','myth'),
+('肉眼','육안','naked eye'),
+('裸眼','나안','naked eye'),
+('偏狹','편협','narrowness'),
+('鼻音','비음','nasal'),
+('國債','국채','national debt'),
+('國旗','국기','national flag'),
+('國籍','국적','nationality'),
+('土人','토인','native'),
+('博物學','박물학','natural history'),
+('天理','천리','natural law'),
+('歸化','귀화','naturalization'),
+('勿論','물론','naturally'),
+('天性','천성','nature'),
+('軍港','군항','naval station'),
+('海軍','해군','navy'),
+('小潮','소조','neap tide'),
+('星雲','성운','nebula'),
+('消極的','소극적','negative'),
+('陰電子','음전자','negatron'),
+('怠慢','태만','negligence'),
+('協商','협상','negotiation'),
+('新參者','신참자','neophyte'),
+('神經','신경','nerve'),
+('中和','중화','neutralize'),
+('中性子','중성자','neutron'),
+('新體制','신체제','new order'),
+('消息','소식','news'),
+('惡夢','악몽','nightmare'),
+('夜間','야간','nighttime'),
+('夜想曲','야상곡','nocturne'),
+('雅號','아호','nom de plume'),
+('不信任','불신임','nonconfidence'),
+('非營利的','비영리적','nonprofit'),
+('正午','정오','noon'),
+('正常','정상','normalcy'),
+('正常化','정상화','normalization'),
+('規範的','규범적','normative'),
+('北部','북부','north'),
+('北方','북방','northward'),
+('急降下','급강하','nose dive'),
+('手記','수기','note'),
+('覺書','각서','note'),
+('手帖','수첩','notebook'),
+('通知','통지','notice'),
+('告知','고지','notice'),
+('告示','고시','notice'),
+('注目','주목','notice,remark,observe'),
+('新星','신성','nova'),
+('方今','방금','now'),
+('核分裂','핵분열','nuclear fission'),
+('核融合','핵융합','nuclear fusion'),
+('核實驗','핵실험','nuclear test'),
+('數詞','수사','numeral'),
+('看護','간호','nurse'),
+('童謠','동요','nursery rhyme'),
+('育兒','육아','nursing'),
+('保育','보육','nursing'),
+('堅果','견과','nut'),
+('肥大','비대','obesity'),
+('物體','물체','object'),
+('猥褻','외설','obscenity'),
+('不明瞭','불명료','obscurity'),
+('微賤','미천','obscurity'),
+('遵守','준수','observance'),
+('觀察者','관찰자','observer'),
+('頑固','완고','obstinacy'),
+('職業','직업','occupation'),
+('大洋','대양','ocean'),
+('八邊形','팔변형','octagon'),
+('無臭','무취','odorless'),
+('提供','제공','offer'),
+('獻納','헌납','offering'),
+('老兵','노병','old soldier'),
+('老婆','노파','old woman'),
+('野外','야외','open air'),
+('開場','개장','opening'),
+('開通','개통','opening'),
+('歌劇','가극','opera'),
+('阿片','아편','opium'),
+('對抗','대항','opposition'),
+('壓制','압제','oppression'),
+('壓制者','압제자','oppressor'),
+('傳令','전령','orderly'),
+('鑛石','광석','ore'),
+('原鑛','원광','ore'),
+('編成','편성','organization'),
+('體制','체제','organization'),
+('團體','단체','organization'),
+('創意','창의','originality'),
+('元來','원래','originally'),
+('創始者','창시자','originator'),
+('始祖','시조','originator'),
+('孤兒','고아','orphan'),
+('發振器','발진기','oscillator'),
+('駝鳥','타조','ostrich'),
+('外野','외야','outfield'),
+('無法者','무법자','outlaw'),
+('大要','대요','outline'),
+('槪略','개략','outline'),
+('前哨','전초','outpost'),
+('局外者','국외자','outsider'),
+('門外漢','문외한','outsider'),
+('外套','외투','overcoat'),
+('陸橋','육교','overpass'),
+('監督者','감독자','overseer'),
+('打倒','타도','overthrow'),
+('序曲','서곡','overture'),
+('過勞','과로','overwork'),
+('排卵','배란','ovulation'),
+('蓚酸','수산','oxalic acid'),
+('牛車','우차','oxcart'),
+('酸化','산화','oxidation'),
+('酸素','산소','oxygen'),
+('協定','협정','pact'),
+('讚歌','찬가','paean'),
+('塗料','도료','paint'),
+('宮殿','궁전','palace'),
+('口蓋','구개','palate'),
+('掌紋','장문','palm print'),
+('觸診','촉진','palpation'),
+('中風','중풍','palsy'),
+('膵臟','췌장','pancreas'),
+('伏魔殿','복마전','pandemonium'),
+('穿山甲','천산갑','pangolin'),
+('恐慌','공황','panic'),
+('汎神論','범신론','pantheism'),
+('無言劇','무언극','pantomime'),
+('抛物線','포물선','parabola'),
+('落下傘','낙하산','parachute'),
+('段落','단락','paragraph'),
+('視差','시차','parallax'),
+('緯線','위선','parallel'),
+('平行','평행','parallelism'),
+('小包','소포','parcel'),
+('括弧','괄호','parenthesis'),
+('公園','공원','park'),
+('駐車場','주차장','parking lot'),
+('國會','국회','parliament'),
+('一部','일부','part'),
+('偏愛','편애','partiality'),
+('參加者','참가자','participant'),
+('關與','관여','participation'),
+('參加','참가','participation'),
+('參與','참여','participation'),
+('分詞','분사','participle'),
+('通行','통행','passage'),
+('通路','통로','passage'),
+('乘客','승객','passenger'),
+('船客','선객','passenger'),
+('客船','객선','passenger boat'),
+('客車','객차','passenger car'),
+('旅客機','여객기','passenger plane'),
+('激情','격정','passion'),
+('情慾','정욕','passion'),
+('情熱','정열','passion'),
+('受動態','수동태','passive voice'),
+('旅券','여권','passport'),
+('特許','특허','patent'),
+('賣藥','매약','patent medicine'),
+('家長','가장','patriarch'),
+('族長','족장','patriarch'),
+('愛國者','애국자','patriot'),
+('愛顧','애고','patronage'),
+('鋪道','포도','pavement'),
+('鋪裝','포장','pavement'),
+('鋪石','포석','paving stone'),
+('平和','평화','peace'),
+('講和','강화','peace'),
+('孔雀','공작','peacock'),
+('落花生','낙화생','peanut'),
+('農夫','농부','peasant'),
+('農民','농민','peasant'),
+('獨特','독특','peculiarity'),
+('衒學','현학','pedantry'),
+('臺座','대좌','pedestal'),
+('骨盤','골반','pelvis'),
+('懲役','징역','penal servitude'),
+('罰金','벌금','penalty'),
+('鉛筆','연필','pencil'),
+('看破','간파','penetrate'),
+('半島','반도','peninsula'),
+('陰莖','음경','penis'),
+('習字','습자','penmanship'),
+('芍藥','작약','peony'),
+('人民','인민','people'),
+('知覺','지각','perception'),
+('濾過','여과','percolation'),
+('完全','완전','perfection'),
+('穿孔','천공','perforation'),
+('演技','연기','performance'),
+('香水','향수','perfume'),
+('香料','향료','perfume'),
+('近地點','근지점','perigee'),
+('近日點','근일점','perihelion'),
+('骨膜','골막','periosteum'),
+('潛望鏡','잠망경','periscope'),
+('腹膜','복막','peritoneum'),
+('僞證','위증','perjury'),
+('永續','영속','permanence'),
+('許可','허가','permission'),
+('許容','허용','permission'),
+('順列','순열','permutation'),
+('永存','영존','perpetuity'),
+('迫害者','박해자','persecutor'),
+('擬人法','의인법','personification'),
+('體現','체현','personification'),
+('人員','인원','personnel'),
+('要員','요원','personnel'),
+('熟讀','숙독','perusal'),
+('倒錯','도착','perversion'),
+('悲觀','비관','pessimism'),
+('愛稱','애칭','pet name'),
+('歎願','탄원','petition'),
+('陳情','진정','petition'),
+('請願者','청원자','petitioner'),
+('藥局','약국','pharmacy'),
+('咽頭','인두','pharynx'),
+('現象','현상','phenomenon'),
+('哲學者','철학자','philosopher'),
+('哲人','철인','philosopher'),
+('哲學','철학','philosophy'),
+('哲理','철리','philosophy'),
+('包莖','포경','phimosis'),
+('瀉血','사혈','phlebotomy'),
+('音聲學','음성학','phonetics'),
+('亞燐酸','아인산','phosphoric acid'),
+('光化學','광화학','photochemistry'),
+('光子','광자','photon'),
+('屈光性','굴광성','phototropism'),
+('體育','체육','physical education'),
+('地文學','지문학','physical geography'),
+('物理學者','물리학자','physicist'),
+('物理學','물리학','physics'),
+('重農主義者','중농주의자','physiocrat'),
+('埠頭','부두','pier'),
+('色素','색소','pigment'),
+('巡禮者','순례자','pilgrim'),
+('巡禮','순례','pilgrimage'),
+('丸藥','환약','pill'),
+('代打者','대타자','pinch hitter'),
+('開拓','개척','pioneer'),
+('投手','투수','pitcher'),
+('投球','투구','pitching'),
+('陷穽','함정','pitfall'),
+('坑口','갱구','pithead'),
+('腦下垂體','뇌하수체','pituitary gland'),
+('場所','장소','place'),
+('胎盤','태반','placenta'),
+('疫病','역병','plague'),
+('平服','평복','plain clothes'),
+('直言','직언','plain speaking'),
+('原告','원고','plaintiff'),
+('方策','방책','plan'),
+('圖面','도면','plan'),
+('平面','평면','plane'),
+('遊星','유성','planet'),
+('惑星','혹성','planet'),
+('天象儀','천상의','planetarium'),
+('植物','식물','plant'),
+('血漿','혈장','plasma'),
+('石膏','석고','plaster'),
+('俳優','배우','player'),
+('劇場','극장','playhouse'),
+('掠奪','약탈','plunder,rob'),
+('大過去','대과거','pluperfect'),
+('複數','복수','plural'),
+('合板','합판','plywood'),
+('肺炎','폐렴','pneumonia'),
+('詩人','시인','poet'),
+('韻文','운문','poetry'),
+('指針','지침','pointer'),
+('害毒','해독','poison'),
+('中毒','중독','poisoning'),
+('極性','극성','polarity'),
+('偏光','편광','polarization'),
+('警察','경찰','police'),
+('警察署','경찰서','police station'),
+('警官','경관','policeman'),
+('政策','정책','policy'),
+('方針','방침','policy'),
+('政黨','정당','political party'),
+('政略','정략','politics'),
+('投票','투표','poll'),
+('多角形','다각형','polygon'),
+('石榴','석류','pomegranate'),
+('俗名','속명','popular name'),
+('流行歌','유행가','popular song'),
+('人望','인망','popularity'),
+('人口','인구','population'),
+('細孔','세공','pore'),
+('多孔性','다공성','porosity'),
+('前兆','전조','portent'),
+('舷窓','현창','porthole'),
+('肖像','초상','portrait'),
+('地位','지위','position'),
+('陽電氣','양전기','positive electricity'),
+('確證','확증','positive proof'),
+('陽電子','양전자','positron'),
+('郵便','우편','postal service'),
+('後世','후세','posterity'),
+('消印','소인','postmark'),
+('追伸','추신','postscript'),
+('追白','추백','postscript'),
+('陶工','도공','potter'),
+('陶器','도기','pottery'),
+('動力','동력','power'),
+('練習','연습','practice,rehearse,exercise'),
+('實行','실행','practice'),
+('讚美','찬미','praise'),
+('祈願','기원','prayer'),
+('上席','상석','precedence'),
+('先例','선례','precedent'),
+('判例','판례','precedent'),
+('先行','선행','preceding'),
+('沈澱','침전','precipitation'),
+('捕食','포식','predation'),
+('窮境','궁경','predicament'),
+('述語','술어','predicate'),
+('優待','우대','preferential treatment'),
+('接頭辭','접두사','prefix'),
+('偏見','편견','prejudice'),
+('前提','전제','premise'),
+('豫感','예감','premonition'),
+('先取','선취','preoccupation'),
+('前置詞','전치사','preposition'),
+('老眼','노안','presbyopia'),
+('處方','처방','prescription'),
+('面前','면전','presence'),
+('現在','현재','present'),
+('贈呈','증정','presentation'),
+('提出','제출','presentation'),
+('提示','제시','presentation'),
+('提出者','제출자','presenter'),
+('防腐','방부','preservation'),
+('大統領','대통령','president'),
+('總裁','총재','president'),
+('總長','총장','president'),
+('推定','추정','presumption'),
+('豫防','예방','prevention'),
+('前科','전과','previous conviction'),
+('自慢','자만','pride'),
+('得意','득의','pride'),
+('司祭','사제','priest'),
+('素數','소수','prime number'),
+('王子','왕자','prince'),
+('大君','대군','prince'),
+('王女','왕녀','princess'),
+('主節','주절','principal clause'),
+('正犯者','정범자','principal offender'),
+('主犯','주범','principal offender'),
+('原則','원칙','principle'),
+('原理','원리','principle'),
+('印刷','인쇄','printing'),
+('刑務所','형무소','prison'),
+('監獄','감옥','prison'),
+('私法','사법','private law'),
+('私權','사권','private right'),
+('缺如','결여','privation'),
+('特權','특권','privilege'),
+('特典','특전','privilege'),
+('褒賞','포상','prize'),
+('蓋然性','개연성','probability'),
+('問題','문제','problem'),
+('非凡','비범','prodigy'),
+('生産','생산','production'),
+('作品','작품','production'),
+('公言','공언','profession'),
+('先輩','선배','progenitor'),
+('豫後','예후','prognosis'),
+('前進','전진','progress'),
+('數列','수열','progression'),
+('禁令','금령','prohibition'),
+('計劃','계획','project,design,envision,scheme,plan,proppose'),
+('映寫','영사','projection'),
+('約束','약속','promise'),
+('昇進','승진','promotion'),
+('主唱','주창','promotion'),
+('宣布','선포','promulgation'),
+('代名詞','대명사','pronoun'),
+('預言','예언','prophecy'),
+('提案者','제안자','proponent'),
+('比例','비례','proportion'),
+('企圖','기도','propose'),
+('命題','명제','proposition'),
+('推進','추진','propulsion'),
+('散文','산문','prose'),
+('起訴','기소','prosecution'),
+('眺望','조망','prospect'),
+('試掘者','시굴자','prospector'),
+('繁榮','번영','prosperity'),
+('賣春','매춘','prostitution'),
+('俯伏','부복','prostration'),
+('防禦','방어','protection'),
+('蛋白質','단백질','protein'),
+('抗議','항의','protest'),
+('突起','돌기','protuberance'),
+('供給者','공급자','provider'),
+('但書','단서','proviso'),
+('思慮','사려','prudence'),
+('剪定','전정','pruning'),
+('乾癬','건선','psoriasis'),
+('心理學者','심리학자','psychologist'),
+('心理學','심리학','psychology'),
+('雷鳥','뇌조','ptarmigan'),
+('陰毛','음모','pubes'),
+('公衆','공중','public'),
+('公社','공사','public corporation'),
+('公團','공단','public corporation'),
+('公債','공채','public debt'),
+('公敵','공적','public enemy'),
+('公益','공익','public good'),
+('公聽會','공청회','public hearing'),
+('公法','공법','public law'),
+('與論','여론','public opinion'),
+('檢事','검사','public prosecutor'),
+('公賣','공매','public sale'),
+('公務員','공무원','public servant'),
+('宣傳','선전','publicity'),
+('肺結核','폐결핵','pulmonary tuberculosis'),
+('齒髓','치수','pulp'),
+('粉碎','분쇄','pulverization'),
+('處罰','처벌','punishment'),
+('瞳孔','동공','pupil'),
+('傀儡','괴뢰','puppet'),
+('購入','구입','purchase'),
+('購買者','구매자','purchaser'),
+('煉獄','연옥','purgatory'),
+('精製','정제','purification'),
+('齋戒','재계','purification'),
+('淸淨','청정','purity'),
+('潔白','결백','purity'),
+('追跡者','추적자','pursuer'),
+('膿疱','농포','pustule'),
+('幽門','유문','pylorus'),
+('金字塔','금자탑','pyramid'),
+('角錐','각추','pyramid'),
+('除蟲菊','제충국','pyrethrum'),
+('輝石','휘석','pyroxene'),
+('資格','자격','qualification'),
+('數量','수량','quantity'),
+('分量','분량','quantity'),
+('量子','양자','quantum'),
+('量子論','양자론','quantum theory'),
+('檢疫','검역','quarantine'),
+('石英','석영','quartz'),
+('王妃','왕비','queen'),
+('女王','여왕','queen'),
+('太后','태후','queen mother'),
+('探求','탐구','quest'),
+('流砂','유사','quicksand'),
+('眞髓','진수','quintessence'),
+('定足數','정족수','quorum'),
+('競走','경주','race'),
+('發光','발광','radiation'),
+('放熱','방열','radiation'),
+('輻射','복사','radiation'),
+('半徑','반경','radius'),
+('激怒','격노','rage'),
+('急襲','급습','raid'),
+('鐵道','철도','railroad'),
+('雨期','우기','rainy season'),
+('乾葡萄','건포도','raisin'),
+('糾合','규합','rally'),
+('城壁','성벽','rampart'),
+('兵卒','병졸','rank'),
+('急流','급류','rapid'),
+('追認','추인','ratification'),
+('合理的','합리적','rational'),
+('原料','원료','raw material'),
+('素材','소재','raw material'),
+('反作用','반작용','reaction'),
+('讀者','독자','reader'),
+('讀書','독서','reading'),
+('讀本','독본','reading-book'),
+('再確認','재확인','reaffirmation'),
+('試藥','시약','reagent'),
+('實像','실상','real image'),
+('物權','물권','real rights'),
+('實社會','실사회','real world'),
+('現實','현실','reality'),
+('現實化','현실화','realization'),
+('國土','국토','realm'),
+('再評價','재평가','reappraisal'),
+('再檢討','재검토','reappraisal'),
+('背後','배후','rear'),
+('後尾','후미','rear'),
+('後衛','후위','rear guard'),
+('再武裝','재무장','rearmament'),
+('再軍備','재군비','rearmament'),
+('道理','도리','reason'),
+('理由','이유','reason'),
+('理性','이성','reason'),
+('論法','논법','reasoning'),
+('叛徒','반도','rebel'),
+('謀叛','모반','rebellion'),
+('召還','소환','recall'),
+('領收','영수','receipt'),
+('受取','수취','receipt'),
+('領收證','영수증','receipt'),
+('受話器','수화기','receiver'),
+('應接','응접','reception'),
+('休憩','휴게','recess'),
+('退去','퇴거','recession'),
+('暗誦','암송','recitation'),
+('朗誦','낭송','recitation'),
+('認定','인정','recognition'),
+('認知','인지','recognition'),
+('反動','반동','recoil'),
+('回顧','회고','recollection'),
+('推薦','추천','recommendation'),
+('薦擧','천거','recommendation'),
+('偵察','정찰','reconnaissance'),
+('再考','재고','reconsideration'),
+('成績','성적','record'),
+('回收','회수','recovery'),
+('整流','정류','rectification'),
+('直腸','직장','rectum'),
+('再歸','재귀','recursive'),
+('赤色','적색','red'),
+('赤潮','적조','red tide'),
+('赤葡萄酒','적포도주','red wine'),
+('再割引','재할인','rediscount'),
+('通分','통분','reduce'),
+('縮小','축소','reduction'),
+('暗礁','암초','reef'),
+('審判','심판','referee'),
+('言及','언급','reference'),
+('改定','개정','reform'),
+('改心','개심','reform,regenerate'),
+('茶菓','다과','refreshment'),
+('冷却','냉각','refrigeration'),
+('辭退','사퇴','refusal'),
+('論駁','논박','refutation'),
+('反駁','반박','refutation'),
+('攝政','섭정','regent'),
+('聯隊','연대','regiment'),
+('音域','음역','register'),
+('再交付','재교부','regrant'),
+('悔恨','회한','regret'),
+('定常的','정상적','regular'),
+('規制','규제','regulation'),
+('規定','규정','regulation'),
+('復權','복권','rehabilitation'),
+('統治','통치','reign,govern'),
+('君臨','군림','reign'),
+('馴鹿','순록','reindeer'),
+('再投資','재투자','reinvest'),
+('排除','배제','rejection'),
+('却下','각하','rejection'),
+('否決','부결','rejection'),
+('回春','회춘','rejuvenation'),
+('關聯','관련','relation'),
+('關係','관계','relation'),
+('親戚','친척','relative'),
+('繼電氣','계전기','relay'),
+('遞傳','체전','relay'),
+('中繼','중계','relay'),
+('放免','방면','release'),
+('解除','해제','release'),
+('浮彫','부조','relief'),
+('賞味','상미','relish'),
+('殘滓','잔재','remain'),
+('遺骸','유해','remain'),
+('遺骨','유골','remain'),
+('療法','요법','remedy'),
+('回想','회상','reminiscence'),
+('移動','이동','removal'),
+('除去','제거','removal'),
+('一新','일신','renewal'),
+('刷新','쇄신','renovation'),
+('高名','고명','renown'),
+('修理','수리','repair'),
+('復唱','복창','repetition'),
+('回答','회답','reply'),
+('應酬','응수','reply'),
+('銃聲','총성','report'),
+('通報','통보','report'),
+('靜止','정지','repose'),
+('代表','대표','representative'),
+('叱責','질책','reprimand'),
+('飜刻','번각','reprint'),
+('再生産','재생산','reproduction'),
+('世評','세평','reputation'),
+('要求','요구','request,require,requisition,demand'),
+('要請','요청','request,require'),
+('懇請','간청','request'),
+('需要','수요','request'),
+('必需品','필수품','requisite'),
+('徵發','징발','requisition'),
+('轉賣','전매','resale'),
+('救助','구조','rescue'),
+('救出','구출','rescue'),
+('豫備','예비','reserve'),
+('居住','거주','residence'),
+('居留','거류','residence'),
+('駐在','주재','residence'),
+('辭職','사직','resignation'),
+('辭任','사임','resignation'),
+('抛棄','포기','resignation'),
+('忍從','인종','resignation'),
+('樹脂','수지','resin'),
+('決然','결연','resolutely'),
+('決議','결의','resolution'),
+('議決','의결','resolve'),
+('共鳴','공명','resonance'),
+('共振','공진','resonance'),
+('資力','자력','resource'),
+('機略','기략','resource'),
+('各各','각각','respectively'),
+('應答','응답','response'),
+('安靜','안정','rest'),
+('休養','휴양','rest,recreation'),
+('永眠','영면','rest'),
+('再出發','재출발','restart'),
+('復舊','복구','restoration'),
+('復位','복위','restoration'),
+('還付','환부','restoration'),
+('制止','제지','restraint'),
+('成果','성과','result'),
+('合力','합력','resultant force'),
+('蘇生','소생','resuscitation'),
+('小賣','소매','retail'),
+('家臣','가신','retainer'),
+('臣下','신하','retainer'),
+('保有','보유','retention'),
+('退職者','퇴직자','retiree'),
+('隱居','은거','retirement'),
+('定年','정년','retirement age'),
+('重譯','중역','retranslation'),
+('後退','후퇴','retreat'),
+('退却','퇴각','retreat'),
+('報復','보복','retribution'),
+('逆行','역행','retrograde'),
+('退化','퇴화','retrogression'),
+('再發','재발','return'),
+('返還','반환','return,restore'),
+('歸還者','귀환자','returnee'),
+('再會','재회','reunion'),
+('天啓','천계','revelation'),
+('啓示','계시','revelation'),
+('復讐','복수','revenge'),
+('反射','반사','reverberation'),
+('背面','배면','reverse'),
+('逆轉','역전','reverse'),
+('再吟味','재음미','review'),
+('視察','시찰','review'),
+('復習','복습','review'),
+('改訂','개정','revision'),
+('校訂','교정','revision'),
+('運行','운행','revolution'),
+('狂想曲','광상곡','rhapsody'),
+('律動','율동','rhythm'),
+('韻律','운율','rhythm'),
+('肋骨','늑골','rib'),
+('小銃','소총','rifle'),
+('正當','정당','right'),
+('權利','권리','right'),
+('直角','직각','right angle'),
+('霧氷','무빙','rime'),
+('帳本人','장본인','ringleader'),
+('白癬','백선','ringworm'),
+('騷擾','소요','riot'),
+('騷動','소동','riot'),
+('圓熟','원숙','ripeness'),
+('波紋','파문','ripple'),
+('起床','기상','rising'),
+('敵手','적수','rival'),
+('競爭','경쟁','rival,contest,competition'),
+('河川','하천','river'),
+('道路','도로','road'),
+('車道','차도','roadway'),
+('怒號','노호','roar'),
+('咆哮','포효','roar'),
+('岩石','암석','rock'),
+('鑿岩機','착암기','rock drill'),
+('屋上','옥상','rooftop'),
+('根底','근저','root'),
+('根菜類','근채류','root crop'),
+('根毛','근모','root hair'),
+('根莖','근경','root stalk'),
+('薔薇','장미','rose'),
+('紫檀','자단','rosewood'),
+('演壇','연단','rostrum'),
+('輪番','윤번','rotation'),
+('圓卓','원탁','round table'),
+('潰走','궤주','rout'),
+('航路','항로','route'),
+('放浪','방랑','roving'),
+('王權','왕권','royalty'),
+('摩擦','마찰','rubbing'),
+('紅玉','홍옥','ruby'),
+('沒落','몰락','ruin'),
+('破滅','파멸','ruin'),
+('罫線','괘선','rule'),
+('支配','지배','rule,control,dominate'),
+('統治者','통치자','ruler'),
+('反芻','반추','rumination'),
+('挾殺','협살','rundown'),
+('走者','주자','runner'),
+('走狗','주구','running dog'),
+('流水','유수','running water'),
+('滑走路','활주로','runway'),
+('決裂','결렬','rupture'),
+('發情','발정','rut'),
+('糖類','당류','saccharide'),
+('不可侵','불가침','sacredness'),
+('聰明','총명','sagacity'),
+('航程','항정','sail'),
+('帆布','범포','sailcloth'),
+('帆走','범주','sailing'),
+('出帆','출범','sailing'),
+('船員','선원','sailor'),
+('水夫','수부','sailor'),
+('水兵','수병','sailor'),
+('聖人','성인','saint'),
+('販賣','판매','sale'),
+('賣却','매각','sale'),
+('唾液','타액','saliva'),
+('鹽田','염전','saltpan'),
+('硝石','초석','saltpeter'),
+('同一','동일','sameness'),
+('見本','견본','sample'),
+('裁可','재가','sanction'),
+('制裁','제재','sanction'),
+('聖堂','성당','sanctuary'),
+('砂洲','사주','sandbank'),
+('砂岩','사암','sandstone'),
+('樹液','수액','sap'),
+('靑玉','청옥','sapphire'),
+('肉腫','육종','sarcoma'),
+('石棺','석관','sarcophagus'),
+('衛星','위성','satellite'),
+('諷刺','풍자','satire,irony,innuendo'),
+('滿足','만족','satisfaction'),
+('節約','절약','saving'),
+('貯蓄','저축','saving'),
+('疥癬','개선','scabies'),
+('火傷','화상','scald'),
+('規模','규모','scale'),
+('天秤','천칭','scale'),
+('醜聞','추문','scandal'),
+('疑獄','의옥','scandal'),
+('猩紅熱','성홍열','scarlet fever'),
+('脚本','각본','scenario'),
+('場面','장면','scene'),
+('光景','광경','scene'),
+('風景','풍경','scenery'),
+('學者','학자','scholar'),
+('學識','학식','scholarship'),
+('學校','학교','school'),
+('學齡','학령','school age'),
+('科學','과학','science'),
+('得點','득점','score'),
+('廢物','폐물','scrap'),
+('筆記者','필기자','scribe'),
+('原本','원본','script'),
+('聖典','성전','scripture'),
+('吟味','음미','scrutiny'),
+('壞血病','괴혈병','scurvy'),
+('海水浴','해수욕','sea bathing'),
+('海馬','해마','sea horse'),
+('海面','해면','sea level'),
+('海路','해로','sea route'),
+('魚介','어개','seafood'),
+('印章','인장','seal'),
+('季節','계절','season'),
+('座席','좌석','seat'),
+('海草','해초','seaweed'),
+('裏作','이작','second crop'),
+('少尉','소위','second lieutenant'),
+('秘密','비밀','secrecy'),
+('秘訣','비결','secret'),
+('秘書','비서','secretary'),
+('宗派','종파','sect'),
+('保障','보장','security'),
+('證券','증권','security'),
+('種子','종자','seed'),
+('選拔','선발','selection'),
+('自己','자기','self'),
+('克己','극기','self denial'),
+('私利','사리','self interest'),
+('精液','정액','semen'),
+('年長','연장','seniority'),
+('感覺','감각','sensation'),
+('官能','관능','sense'),
+('好色','호색','sensuality'),
+('文章','문장','sentence'),
+('情趣','정취','sentiment'),
+('感傷','감상','sentiment'),
+('感傷主義','감상주의','sentimentalism'),
+('別居','별거','separation'),
+('後宮','후궁','seraglio'),
+('連載','연재','serialization'),
+('蛇紋石','사문석','serpentine'),
+('血淸','혈청','serum'),
+('勤務','근무','service'),
+('裁縫','재봉','sewing'),
+('尾行者','미행자','shadow'),
+('頁岩','혈암','shale'),
+('株主','주주','shareholder'),
+('板金','판금','sheet metal'),
+('砲彈','포탄','shell'),
+('貝塚','패총','shell heap'),
+('造船','조선','shipbuilding'),
+('船主','선주','shipowner'),
+('出荷','출하','shipping'),
+('震動','진동','shock'),
+('短靴','단화','shoe'),
+('疾走','질주','shoot'),
+('發射','발사','shooting,discharge,catapult'),
+('射出','사출','shooting'),
+('短波','단파','short wave'),
+('短縮','단축','shortening'),
+('彈丸','탄환','shot'),
+('霰彈','산탄','shot'),
+('對決','대결','showdown'),
+('灌木','관목','shrub'),
+('休業','휴업','shutdown'),
+('病床','병상','sickbed'),
+('病室','병실','sickroom'),
+('內職','내직','side line'),
+('餘興','여흥','side show'),
+('人道','인도','sidewalk'),
+('側線','측선','siding'),
+('歎息','탄식','sigh'),
+('署名','서명','signature'),
+('沈默','침묵','silence'),
+('相似','상사','similarity'),
+('單利','단리','simple interest'),
+('單文','단문','simple sentence'),
+('單純','단순','simplicity'),
+('簡素','간소','simplicity'),
+('獨身','독신','single'),
+('單一','단일','single'),
+('姉妹','자매','sister'),
+('着席','착석','sit'),
+('用地','용지','site'),
+('敷地','부지','site'),
+('形勢','형세','situation'),
+('骸骨','해골','skeleton'),
+('皮膚','피부','skin'),
+('散兵','산병','skirmisher'),
+('頭蓋骨','두개골','skull'),
+('摩天樓','마천루','skyscraper'),
+('消石灰','소석회','slaked lime'),
+('粘板岩','점판암','slate'),
+('屠殺','도살','slaughter'),
+('不振','부진','slump'),
+('鎔鑛爐','용광로','smelting furnace'),
+('喫煙','끽연','smoking'),
+('速寫','속사','snapshot'),
+('嘲笑','조소','sneer'),
+('雪原','설원','snow field'),
+('凍石','동석','soapstone'),
+('蹴球','축구','soccer'),
+('社會','사회','society'),
+('協會','협회','society'),
+('男色','남색','sodomy'),
+('軟口蓋','연구개','soft palate'),
+('軟水','연수','soft water'),
+('軟化','연화','softening'),
+('土壤','토양','soil'),
+('土地','토지','soil'),
+('軍人','군인','soldier'),
+('戰士','전사','soldier'),
+('莊嚴','장엄','solemnity'),
+('凝結','응결','solidification'),
+('孤獨','고독','solitude'),
+('獨居','독거','solitude'),
+('溶解','용해','solution'),
+('溶媒','용매','solvent'),
+('多少','다소','somewhat'),
+('唱歌','창가','song'),
+('歌曲','가곡','song'),
+('歌唱','가창','song'),
+('鳴禽','명금','songbird'),
+('魔術','마술','sorcery'),
+('音響','음향','sound'),
+('音波','음파','sound wave'),
+('測深','측심','sounding'),
+('測鉛','측연','sounding lead'),
+('源泉','원천','source'),
+('出處','출처','source'),
+('南東','남동','Southeast'),
+('南西','남서','Southwest'),
+('記念品','기념품','souvenir'),
+('空間','공간','space'),
+('間隔','간격','space'),
+('全長','전장','span'),
+('發作','발작','spasm'),
+('專門','전문','speciality'),
+('正貨','정화','specie'),
+('比重','비중','specific gravity'),
+('比熱','비열','specific heat'),
+('壯觀','장관','spectacle'),
+('眼鏡','안경','spectacle'),
+('分光','분광','spectrum'),
+('思索','사색','speculation'),
+('投機','투기','speculation'),
+('速力','속력','speed'),
+('綴字','철자','spelling'),
+('精蟲','정충','sperm'),
+('精子','정자','sperm'),
+('括約筋','괄약근','sphincter'),
+('脊柱','척주','spinal column'),
+('紡錘','방추','spindle'),
+('降神術','강신술','spiritualism'),
+('脾臟','비장','spleen'),
+('海綿','해면','sponge'),
+('散發的','산발적','sporadic'),
+('配偶者','배우자','spouse'),
+('撒布','살포','sprinkling'),
+('拍車','박차','spur'),
+('分隊','분대','squad'),
+('突風','돌풍','squall'),
+('疾風','질풍','squall'),
+('平方','평방','square'),
+('搾取','착취','squeeze'),
+('安定','안정','stability'),
+('部員','부원','staff'),
+('參謀','참모','staff officer'),
+('舞臺','무대','stage'),
+('驛馬車','역마차','stagecoach'),
+('沈滯','침체','stagnation'),
+('火刑','화형','stake'),
+('鍾乳石','종유석','stalactite'),
+('石筍','석순','stalagmite'),
+('標準','표준','standard'),
+('本位','본위','standard'),
+('主食','주식','staple food'),
+('右舷','우현','starboard'),
+('澱粉','전분','starch'),
+('起點','기점','starting point'),
+('餓死','아사','starvation'),
+('陳述','진술','statement'),
+('聲明','성명','statement'),
+('靜電氣','정전기','static electricity'),
+('靜力學','정역학','statics'),
+('統計','통계','statistics'),
+('汽笛','기적','steam whistle'),
+('汽船','기선','steamship'),
+('鋼鐵','강철','steel'),
+('惡臭','악취','stench'),
+('速記','속기','stenography'),
+('措置','조치','step'),
+('中性','중성','sterility'),
+('滅菌','멸균','sterilization'),
+('胸骨','흉골','sternum'),
+('死産','사산','stillbirth'),
+('竹馬','죽마','stilt'),
+('株券','주권','stock certificate'),
+('鈍感','둔감','stolidity'),
+('氣孔','기공','stoma'),
+('石材','석재','stone'),
+('核果','핵과','stone fruit'),
+('終止','종지','stop'),
+('蓄電池','축전지','storage battery'),
+('百貨店','백화점','store'),
+('暴風雨','폭풍우','storm'),
+('煖爐','난로','stove'),
+('散在','산재','straggling'),
+('兵法','병법','strategy'),
+('戰略','전략','strategy'),
+('層積雲','층적운','stratocumulus'),
+('成層圈','성층권','stratosphere'),
+('地層','지층','stratum'),
+('狹窄','협착','stricture'),
+('構造主義','구조주의','structuralism'),
+('學生','학생','student'),
+('書齋','서재','study'),
+('愚鈍','우둔','stupidity'),
+('花柱','화주','style'),
+('鐵筆','철필','stylus'),
+('昇華','승화','sublimation'),
+('從屬','종속','subordination'),
+('豫約者','예약자','subscriber'),
+('應募','응모','subscription'),
+('陷沒','함몰','subsidence'),
+('子會社','자회사','subsidiary'),
+('物質','물질','substance'),
+('實質','실질','substance'),
+('立證','입증','substantiation'),
+('支署','지서','substation'),
+('代用','대용','substitution'),
+('代入','대입','substitution'),
+('轉借','전차','subtenancy'),
+('小計','소계','subtotal'),
+('減法','감법','subtraction'),
+('地下鐵','지하철','subway'),
+('蔗糖','자당','sucrose'),
+('窒息','질식','suffocation'),
+('自殺','자살','suicide'),
+('適當','적당','suitability'),
+('摘要','적요','summary'),
+('太陽','태양','sun'),
+('日光','일광','sunlight'),
+('日沒','일몰','sunset'),
+('淺薄','천박','superficiality'),
+('超人','초인','superman'),
+('迷信','미신','superstition'),
+('補充','보충','supplement'),
+('補足','보족','supplement'),
+('補遺','보유','supplement'),
+('補給','보급','supply'),
+('贊成者','찬성자','supporter'),
+('抑制','억제','suppression'),
+('鎭壓','진압','suppression'),
+('化膿','화농','suppuration'),
+('至高','지고','supremacy'),
+('奇襲','기습','surprise attack'),
+('超現實主義','초현실주의','surrealism'),
+('殘存','잔존','survive'),
+('生存者','생존자','survivor'),
+('吊橋','적교','suspension bridge'),
+('縫合','봉합','suture'),
+('白鳥','백조','swan'),
+('發汗','발한','sweating'),
+('水泳','수영','swimming'),
+('詐取','사취','swindle'),
+('劍舞','검무','sword dance'),
+('音節','음절','syllable'),
+('象徵的','상징적','symbolic'),
+('同調者','동조자','sympathizer'),
+('同調','동조','sympathy'),
+('交響曲','교향곡','symphony'),
+('症候','증후','symptom'),
+('症候群','증후군','syndrome'),
+('綜合','종합','synthesis'),
+('統合','통합','synthesis'),
+('梅毒','매독','syphilis'),
+('體系','체계','system'),
+('卓子','탁자','table'),
+('卓球','탁구','table tennis'),
+('臺地','대지','tableland'),
+('錠劑','정제','tablet'),
+('戰術','전술','tactics'),
+('策略','책략','tactics'),
+('尾行','미행','tail'),
+('距骨','거골','talus'),
+('風味','풍미','taste'),
+('風致','풍치','taste'),
+('術語','술어','technical terms'),
+('工學者','공학자','technologist'),
+('電報','전보','telegram'),
+('打電','타전','telegraph'),
+('望遠鏡','망원경','telescope'),
+('節制','절제','temperance'),
+('神殿','신전','temple'),
+('傾向','경향','tendency'),
+('緊張','긴장','tension'),
+('張力','장력','tension'),
+('期限','기한','term'),
+('用語','용어','term'),
+('名辭','명사','term'),
+('終點','종점','terminus'),
+('地形','지형','terrain'),
+('地磁氣','지자기','terrestrial magnetism'),
+('領土','영토','territory'),
+('版圖','판도','territory'),
+('試驗管','시험관','test tube'),
+('種皮','종피','testa'),
+('睾丸','고환','testicle'),
+('感謝','감사','thank'),
+('解凍','해동','thaw'),
+('有神論','유신론','theism'),
+('論題','논제','theme'),
+('神學','신학','theology'),
+('理論','이론','theory'),
+('熱力學','열역학','thermodynamics'),
+('定立','정립','thesis'),
+('血栓','혈전','thrombus'),
+('王座','왕좌','throne'),
+('玉座','옥좌','throne'),
+('脛骨','경골','tibia'),
+('時間','시간','time'),
+('時刻','시각','time'),
+('時期','시기','time'),
+('時世','시세','time'),
+('時報','시보','time signal'),
+('先端','선단','tip'),
+('表題','표제','title'),
+('字幕','자막','title'),
+('祝杯','축배','toast'),
+('便所','변소','toilet'),
+('公差','공차','tolerance'),
+('默認','묵인','toleration'),
+('墓石','묘석','tombstone'),
+('扁桃腺','편도선','tonsil'),
+('工具','공구','tool'),
+('齒痛','치통','toothache'),
+('話題','화제','topic'),
+('地勢','지세','topography'),
+('地誌','지지','topography'),
+('魚雷','어뢰','torpedo'),
+('毒素','독소','toxin'),
+('形跡','형적','trace'),
+('形迹','형적','trace'),
+('痕迹','흔적','trace'),
+('曳光彈','예광탄','tracer bullet'),
+('氣管','기관','trachea'),
+('透寫','투사','tracing'),
+('線路','선로','track'),
+('賣買','매매','trade'),
+('商號','상호','trade name'),
+('因習','인습','tradition'),
+('傳統','전통','tradition'),
+('口傳','구전','tradition'),
+('傳承','전승','tradition'),
+('悲劇','비극','tragedy'),
+('轉寫','전사','transcribe'),
+('變貌','변모','transfiguration'),
+('過渡的','과도적','transitional'),
+('飜譯','번역','translation'),
+('譯者','역자','translator'),
+('飜譯者','번역자','translator'),
+('傳送','전송','transmission'),
+('送信','송신','transmission'),
+('發信','발신','transmission'),
+('變移','변이','transmutation'),
+('移項','이항','transposition'),
+('轉位','전위','transposition'),
+('寶物','보물','treasure'),
+('財寶','재보','treasure'),
+('秘藏','비장','treasure'),
+('加工','가공','treatment'),
+('待遇','대우','treatment'),
+('塹壕','참호','trench'),
+('裁判','재판','trial'),
+('審理','심리','trial'),
+('試運轉','시운전','trial run'),
+('部族','부족','tribe'),
+('三頭筋','삼두근','triceps'),
+('三脚','삼각','tripod'),
+('三頭政治','삼두정치','triumvirate'),
+('賞盃','상배','trophy'),
+('賞杯','상배','trophy'),
+('眞理','진리','truth'),
+('眞實','진실','truth'),
+('塊莖','괴경','tuber'),
+('曲調','곡조','tune'),
+('桐油','동유','tung oil'),
+('被膜','피막','tunic'),
+('音叉','음차','tuning fork'),
+('亂氣流','난기류','turbulence'),
+('台風','태풍','typhoon'),
+('暴政','폭정','tyranny'),
+('僭主','참주','tyrant'),
+('醜惡','추악','ugliness'),
+('潰瘍','궤양','ulcer'),
+('極超短波','극초단파','ultrahigh frequency'),
+('暗流','암류','undercurrent'),
+('次官','차관','undersecretary'),
+('諒解','양해','understanding'),
+('起伏','기복','undulation'),
+('失職','실직','unemployment'),
+('統一','통일','unification'),
+('一律','일률','uniformity'),
+('一方的','일방적','unilateral'),
+('齊唱','제창','unison'),
+('普遍的','보편적','universal'),
+('大學','대학','university'),
+('不親切','불친절','unkindness'),
+('養育','양육','upbringing'),
+('尿素','요소','urea'),
+('輸尿管','수뇨관','ureter'),
+('尿道','요도','urethra'),
+('衝動','충동','urge'),
+('火急','화급','urgency'),
+('檢尿','검뇨','urinalysis'),
+('小便','소변','urine'),
+('使用','사용','use'),
+('用途','용도','use'),
+('奪取','탈취','usurpation'),
+('器具','기구','utensil'),
+('實用','실용','utility'),
+('發言','발언','utterance'),
+('發聲','발성','utterance'),
+('空席','공석','vacancy'),
+('眞空','진공','vacuum'),
+('醉狂','취광','vagary'),
+('浮浪','부랑','vagrancy'),
+('溪谷','계곡','valley'),
+('前衛','전위','vanguard'),
+('氣化','기화','vaporization'),
+('變異','변이','variation'),
+('野菜','야채','vegetable'),
+('菜食','채식','vegetable diet'),
+('車輛','차량','vehicle'),
+('靜脈','정맥','vein'),
+('通風','통풍','ventilation'),
+('換氣','환기','ventilation'),
+('心室','심실','ventricle'),
+('冒險者','모험자','venturer'),
+('正確','정확','veracity'),
+('動詞','동사','verb'),
+('多辯','다변','verbosity'),
+('評決','평결','verdict'),
+('檢證','검증','verification'),
+('多能','다능','versatility'),
+('詩形','시형','versification'),
+('超短波','초단파','very high frequency'),
+('氣胞','기포','vesicle'),
+('法衣','법의','vestment'),
+('老練者','노련자','veteran'),
+('獸醫','수의','veterinarian'),
+('惡習','악습','vice'),
+('太守','태수','viceroy'),
+('惡循環','악순환','vicious circle'),
+('盛衰','성쇠','vicissitude'),
+('意見','의견','view'),
+('警戒','경계','vigilance'),
+('惡人','악인','villain'),
+('違背','위배','violation'),
+('侵害','침해','violation'),
+('暴力','폭력','violence'),
+('善良','선량','virtue'),
+('貞操','정조','virtue'),
+('美點','미점','virtue'),
+('效能','효능','virtue'),
+('毒性','독성','virulence'),
+('査證','사증','visa'),
+('內臟','내장','viscera'),
+('粘度','점도','viscosity'),
+('子爵','자작','viscount'),
+('視覺','시각','vision'),
+('天罰','천벌','visitation'),
+('急所','급소','vital'),
+('活力','활력','vitality'),
+('音聲','음성','voice'),
+('火山','화산','volcano'),
+('意志','의지','volition'),
+('體積','체적','volume'),
+('有志','유지','volunteer'),
+('投票者','투표자','voter'),
+('俗惡','속악','vulgarity'),
+('賃金','임금','wage'),
+('腰部','요부','waist'),
+('待合室','대합실','waiting room'),
+('壁新聞','벽신문','wall newspaper'),
+('戰爭','전쟁','war'),
+('戰雲','전운','war cloud'),
+('病棟','병동','ward'),
+('監房','감방','ward'),
+('警告','경고','warning'),
+('軍艦','군함','warship'),
+('洗濯機','세탁기','washing machine'),
+('餘熱','여열','waste heat'),
+('望樓','망루','watchtower'),
+('睡蓮','수련','water lily'),
+('水球','수구','water polo'),
+('瀑布','폭포','waterfall'),
+('波長','파장','wavelength'),
+('薄弱','박약','weakness'),
+('風化','풍화','weathering'),
+('雜草','잡초','weed'),
+('重量','중량','weight'),
+('分銅','분동','weight'),
+('西洋','서양','west'),
+('夢精','몽정','wet dream'),
+('所在','소재','whereabouts'),
+('旋風','선풍','whirlwind'),
+('警笛','경적','whistle'),
+('白色','백색','white'),
+('白夜','백야','white night'),
+('白紙','백지','white paper'),
+('白葡萄酒','백포도주','white wine'),
+('全部','전부','whole'),
+('百日咳','백일해','whooping cough'),
+('未亡人','미망인','widow'),
+('寡婦','과부','widow'),
+('風車','풍차','windmill'),
+('盜聽','도청','wiretap'),
+('智慧','지혜','wisdom'),
+('賢明','현명','wisdom'),
+('魔女','마녀','witch'),
+('鬼才','귀재','wizard'),
+('女子','여자','woman'),
+('婦人','부인','woman'),
+('女性','여성','woman'),
+('單語','단어','word'),
+('語順','어순','word order'),
+('細工','세공','work'),
+('世界','세계','world'),
+('世上','세상','world'),
+('禮拜','예배','worship'),
+('負傷','부상','wound'),
+('花環','화환','wreath'),
+('筆者','필자','writer'),
+('著述','저술','writing'),
+('著作','저작','writing'),
+('木琴','목금','xylophone'),
+('年度','연도','year'),
+('靑春','청춘','youth'),
+('靑年','청년','youth'),
+('年少','연소','youth'),
+('天頂','천정','zenith'),
+('零點','영점','zero'),
+('地帶','지대','zone'),
+('區域','구역','zone'),
+('動物崇拜','동물숭배','zoolatry'),
+('一石二鳥','일석이조','to kill two birds with one stone'),
+('一口二言','일구이언','two-faced'),
+('八方美人','팔방미인','jack of all trades'),
+('弱肉强食','약육강식','survival of the fittest'),
+('多多益善','다다익선','the more the better'),
+('博學多識','박학다식','well informed'),
+('人山人海','인산인해','a very large crowd'),
+('莫上莫下','막상막하','evenly matched'),
+('賢母良妻','형모양처','a good mother and a good wife'),
+('一片丹心','일편단심','devoted; fidelity'),
+('萬壽無疆','만수무강','longevity'),
+('年','년','year'),
+('爲','위','to do for the sake of'),
+('氏','씨','Mister'),
+('境遇','경우','a case; an instance'),
+('中','중','the center, the middle'),
+('-女','그녀','she'),
+('自身','자신','one''s own self, one''s own body'),
+('名','명','person counter'),
+('女子','여자','woman,female'),
+('個','개','unit or  piece'),
+('人間','인간','a person, a human being'),
+('依','의','to be due to, owing to'),
+('番','번','number, how many times'),
+('女性','여성','female'),
+('親舊','친구','a friend'),
+('後','후','after'),
+('男子','남자','boy'),
+('-番','이번','this time'),
+('過程','과정','process or course'),
+('特','특','especially'),
+('時','시','time'),
+('以上','이상','more than, above'),
+('只今','지금','now'),
+('敎育','교육','education'),
+('歷史','역사','history'),
+('冊','책','a book'),
+('當身','당신','you (formal)'),
+('男便','남편','husband'),
+('狀況','상황','state of things'),
+('卽','즉','namely, that is to say'),
+('狀態','상태','condition, state'),
+('以後','이후','after that'),
+('當時','당시','at that time'),
+('最近','최근','recently'),
+('自體','자체','one''s own body'),
+('關','관','refer to or be about'),
+('亦是','역시','as expected, likewise'),
+('房','방','a room'),
+('技術','기술','art or  technique or  ability'),
+('間','간','the interval between'),
+('映畵','영화','a movie'),
+('正-','정말','really'),
+('結局','결국','after all; in the end'),
+('敎授','교수','teaching;  instruction'),
+('-番','한번','once'),
+('大部分','대부분','most '),
+('飮食','음식','food'),
+('表情','표정','facial expression; look'),
+('性格','성격','personality; character, nature'),
+('世紀','세기','century'),
+('車','차','a vehicle'),
+('向','향','to face, look out on'),
+('形態','형태','form, shape'),
+('各','각','each; every'),
+('都市','도시','city'),
+('作業','작업','work'),
+('雰圍氣','분위기','atmosphere, surroundings'),
+('于先','우선','firstly, first of all; before everything'),
+('詩','시','poetry, lines of verse'),
+('國內','국내','inside the country'),
+('比','비','to compare to'),
+('例','예','example'),
+('內','내','inside'),
+('山','산','a mountain'),
+('條件','조건','condition, stipulation'),
+('門','문','door'),
+('敎師','교사','instructor'),
+('大會','대회','a great meeting'),
+('議員','의원','a member'),
+('全-','전혀','entirely, utterly, completely'),
+('子息','자식','one''s children'),
+('學年','학년','a school year'),
+('新聞','신문','a newspaper'),
+('製品','제품','manufactured goods'),
+('氣分','기분','mood'),
+('代','대','era, period'),
+('前','전','before'),
+('演劇','연극','drama, a play'),
+('勞動','노동','labor, work'),
+('過去','과거','the past'),
+('差異','차이','difference, disparity'),
+('時節','시절','season, time, occasion'),
+('物件','물건','a thing'),
+('直接','직접','directly'),
+('作家','작가','writer, author'),
+('佛敎','불교','Buddhism'),
+('時機','시기','an opportunity, a chance'),
+('强','강','to be strong,  powerful'),
+('最高','최고','the best'),
+('故鄕','고향','hometown'),
+('多樣','다양','to be various, diverse'),
+('小說','소설','a novel, fiction story'),
+('-便','한편','one side, one way'),
+('記者','기자','a journalist'),
+('主-','주로','principally, mainly'),
+('外國','외국','a foreign country'),
+('次例','차례','order, precedence; one time, one round'),
+('軍','군','an army'),
+('父母','부모','parents'),
+('當','당','to have, to encounter'),
+('約','약','about, approximately'),
+('一旦','일단','temporarily'),
+('組織','조직','group, organization'),
+('患者','환자','a patient'),
+('變','변','change'),
+('兄','형','an elder brother'),
+('全國','전국','the whole country'),
+('全','전','all, every'),
+('式','식','form, style'),
+('寫眞','사진','picture'),
+('因','인','to be due to, caused by'),
+('男性','남성','male'),
+('對策','대책','countermeasure'),
+('決-','결코','never; by no means'),
+('恒常','항상','always'),
+('回','회','a time, an inning, a round in a game'),
+('具體的','구체적','concretely'),
+('番-','번째','~ times'),
+('基準','기준','a standard or basis'),
+('末','말','end'),
+('現場','현장','on site, on location'),
+('個月','개월','each and every month'),
+('別-','별로','especially, particularly'),
+('大衆','대중','the masses'),
+('各種','각종','all sorts, all varieties'),
+('避','피','to avoid, keep away'),
+('主人','주인','the head of a family,the owner'),
+('線','선','a line, a route'),
+('選手','선수','an athlete'),
+('半','반','half'),
+('觀點','관점','a point of view or a standpoint; outlook'),
+('基本','기본','a foundation'),
+('感情','감정','feelings'),
+('人氣','인기','popularity'),
+('實際-','실제로','in reality'),
+('果然','과연','indeed; sure enough; just as one thought'),
+('以前','이전','formerly, previously, before'),
+('者','자','a person'),
+('中央','중앙','the middle; the heart'),
+('不拘','불구','deformity, malformation'),
+('國際','국제','international'),
+('人生','인생','life'),
+('盞','잔','a cup; a glass'),
+('外','외','except, save for'),
+('三國','삼국','three countries'),
+('願','원','to want'),
+('數','수','the number of sth'),
+('倍','배','times, ~-fold'),
+('授業','수업','instruction, school, teaching'),
+('宗敎','종교','religion, a faith'),
+('層','층','floor; grade, class'),
+('張','장','one piece of sth flat (counter)'),
+('班','반','group, company, party'),
+('或-','혹은','if that''s not the case'),
+('把握','파악','grasp, seize, understand'),
+('篇','편','compilation, editing'),
+('便紙','편지','letter'),
+('共同','공동','association,  union,  collaboration'),
+('方案','방안','a plan, scheme'),
+('少女','소녀','a young girl'),
+('次','차','order, sequence, degree'),
+('關係者','관계자','the interested or affected parties'),
+('歲','세','age in years'),
+('五月','오월','May'),
+('課','과','a lesson; a section; a department'),
+('四月','사월','April'),
+('葛藤','갈등','conflict; troubles'),
+('初期','초기','the early days, the initial period'),
+('美','미','beauty, grace'),
+('視線','시선','one''s line of vision'),
+('言論','언론','a speech, discussion'),
+('昨年','작년','last year'),
+('賃金','임금','wages, pay'),
+('被害','피해','damage'),
+('職場','직장','one''s workplace'),
+('男女','남녀','man and woman'),
+('九月','구월','September'),
+('六月','유월','June'),
+('-中','그중','among the rest of them'),
+('老人','노인','elderly person'),
+('英語','영어','the English language'),
+('出身','출신','a native, place one is from'),
+('反面','반면','one side'),
+('業務','업무','buisness, duty'),
+('入試','입시','an entrance examination'),
+('靑少年','청소년','young boys and girls, teenagers'),
+('取','취','to adopt, assume, take'),
+('社長','사장','company boss'),
+('三月','삼월','March'),
+('業體','업체','a business enterprise'),
+('求','구','to buy, purchase; to look for, to seek, to want'),
+('萬若','만약','if'),
+('歲月','세월','the times, things'),
+('行事','행사','an event, a function'),
+('神','신','a god'),
+('王','왕','king'),
+('漸漸','점점','more and more, by degrees'),
+('近處','근처','nearby, in the vicinity'),
+('事情','사정','circumstances'),
+('都大體','도대체','how on earth?, what the Hell?'),
+('父母-','부모님','parents'),
+('初','초','beginning (of), early, initial'),
+('職員','직원','staff'),
+('相對','상대','counterpart, companion, rival'),
+('度','도','degrees (temperature)'),
+('壁','벽','a wall'),
+('貿易','무역','trade'),
+('身體','신체','the body'),
+('委員','위원','committee member'),
+('法則','법칙','a law, a rule'),
+('自轉車','자전거','bicycle'),
+('位','위','position, grade, rank'),
+('論理','논리','logic'),
+('候補','후보','candidate, nominee'),
+('課題','과제','task, assignment, homework'),
+('視角','시각','angle/point of view.  관점.'),
+('來日','내일','tomorrow'),
+('每日','매일','every day'),
+('漸次','점차','gradually, in steps'),
+('級','급','class, grade, rank'),
+('未來','미래','future'),
+('病','병','sickness'),
+('主人公','주인공','the head of a family; the hero/heroine'),
+('兄-','형님','way a man refers to an older friend (respectful)'),
+('當場','당장','on the spot, immediately'),
+('事物','사물','objects, things'),
+('高等學校','고등학교','high school'),
+('敎室','교실','classroom'),
+('媒體','매체','a medium, medias'),
+('複雜','복잡','be complicated'),
+('領域','영역','territory'),
+('不法','불법','illegal'),
+('色','색','color'),
+('一定','일정','to be regular, established, uniform; changeless, constant, certain, definite ; invariable (mathematics)'),
+('數--','수많다','many and many'),
+('工事','공사','construction work; engineering work'),
+('博士','박사','doctor'),
+('性','성','sex (male or female), gender'),
+('專門家','전문가','a specialist'),
+('但只','단지','simple, merely'),
+('舞踊','무용','dancing, a dance'),
+('海外','해외','abroad, foreign countries'),
+('文化財','문화재','cultural assets'),
+('微笑','미소','smile'),
+('食堂','식당','restaurant'),
+('以來','이래','since, after that, hereafter'),
+('事例','사례','thanks, gratitude'),
+('七月','칠월','July'),
+('平均','평균','average'),
+('訓鍊','훈련','training'),
+('十二月','십이월','December'),
+('論文','논문','dissertation, an academic paper, thesis'),
+('或是','혹시','sometimes'),
+('量','양','quantity, volume'),
+('節次','절차','process, formalities; 수속'),
+('屬','속','belong to, be affiliated with'),
+('以外','이외','except, apart from'),
+('坪','평','a pyeong (roughly 2 square meters)'),
+('一週日','일주일','one whole day'),
+('資源','자원','resources '),
+('示威','시위','a demonstration'),
+('最大','최대','the greatest, the largest'),
+('平素','평소','ordinary times, ordinarily'),
+('見解','견해','an opinion, view'),
+('農事','농사','farming'),
+('住宅','주택','a house'),
+('未安','미안','to be sorry'),
+('人士','인사','people, men of society'),
+('考慮','고려','regard or  respect'),
+('農村','농촌','a farm village'),
+('十月','시월','October'),
+('子女','자녀','one''s children'),
+('八月','팔월','August'),
+('相對方','상대방','conversation partner'),
+('西歐','서구','Western Europe'),
+('幅','폭','width; range'),
+('號','호','a pen name, a title; a number, an issue'),
+('食口','식구','members of a family, your immediate family members (lit. people you eat with)'),
+('-字','글자','a letter, a character'),
+('不動産','부동산','real estate'),
+('孃','양','miss ~'),
+('放學','방학','school holidays'),
+('祖上','조상','ancestors'),
+('大型','대형','large, full-sized'),
+('問題點','문제점','the point at issue'),
+('本格的','본격적','exemplary'),
+('不可能','불가능','impossible'),
+('衝擊','충격','an impact, a shock'),
+('今方','금방','just now;  a moment ago'),
+('南-','남쪽','south side'),
+('色-','색깔','color'),
+('氣','기','energy; breath or  wind'),
+('憂慮','우려','worry,anxiety,fear'),
+('雨傘','우산','an umbrella'),
+('冊床','책상','on the desk'),
+('單位','단위','a unit, a monad'),
+('首都','수도','a capital city'),
+('役','역','a part, a role'),
+('字','자','a Chinese character'),
+('卷','권','a volume, a book (counter)'),
+('時計','시계','clock, timekeeper, timepiece'),
+('中間','중간','in the middle'),
+('大體-','대체로','generally, on the whole'),
+('委員長','위원장','a chairman of a committee'),
+('藝術家','예술가','an artist'),
+('意圖','의도','an intention, an aim'),
+('件','건','a matter or  an object or  a case'),
+('敎會','교회','preach or  moral instruction'),
+('大邱','대구','Daegu city'),
+('科學者','과학자','scientist'),
+('觀光','관광','sightseeing, tourism'),
+('手術','수술','surgery'),
+('食品','식품','groceries'),
+('一月','일월','January'),
+('條','조','article, clause'),
+('會員','회원','a member of a society'),
+('圖書館','도서관','library'),
+('地下','지하','underground'),
+('法律','법률','a law, statute'),
+('傷處','상처','wound'),
+('現','현','the present, the existence, actuality'),
+('畵面','화면','screen'),
+('君','군','Mister'),
+('萬一','만일','if, suppose'),
+('事務室','사무실','office'),
+('二月','이월','February'),
+('罪','죄','a crime, a sin'),
+('後半','후반','the latter/second half'),
+('不滿','불만','dissatisfaction'),
+('種','종','a sort,kind,species'),
+('江','강','river'),
+('觀客','관객','spectator'),
+('數字','숫자','a figure, number'),
+('熱','열','heat'),
+('中世','중세','the Middle Ages'),
+('株式','주식','stock'),
+('商標','상표','trademark, brand'),
+('姑母','고모','a paternal aunt'),
+('民主化','민주화','democratization'),
+('弱','약','to be weak'),
+('宅','댁','you and your family'),
+('財政','재정','finances, economy'),
+('大規模','대규모','on  a large scale'),
+('同','동','the same'),
+('民間','민간','civil, private'),
+('法院','법원','court of justice'),
+('事實上','사실상','actually, in truth'),
+('化粧室','화장실','bathroom'),
+('核','핵','a nucleus, core'),
+('首席','수석','the top seat'),
+('適切','적절','appropriateness'),
+('祭祀','제사','a holiday ceremony'),
+('週末','주말','weekend'),
+('來年','내년','next year'),
+('農産物','농산물','agricultural products'),
+('大學生','대학생','university student'),
+('思考','사고','thought, contemplation'),
+('硏究所','연구소','a reasearch institute'),
+('假令','가령','for example; supposing or admitting'),
+('巨大','거대','huge, gigantic, enormous'),
+('生日','생일','a birthday'),
+('以下','이하','less than, below'),
+('勤勞者','근로자','laborer'),
+('甁','병','a bottle'),
+('輿論','여론','public opinion, public sentiment towards sth'),
+('物價','물가','prices of products'),
+('波濤','파도','waves, billows'),
+('-色','흰색','gray, ash color'),
+('歌手','가수','singer'),
+('單','단','only one, alone'),
+('放送局','방송국','broadcasting station'),
+('預金','예금','deposit money'),
+('直後','직후','immediately after'),
+('先進國','선진국','a developed country'),
+('藥','약','medicine'),
+('窓門','창문','a window'),
+('秒','초','a second'),
+('發揮','발휘','display, exhibit'),
+('中小企業','중소기업','small and medium enterprises'),
+('協力','협력','cooperation, cooperate with'),
+('階層','계층','a class, social stratum'),
+('漫畵','만화','cartoons'),
+('引上','인상','pulling/drawing up'),
+('團地','단지','a public apartment complex'),
+('民主','민주','democracy'),
+('女人','여인','beauty, belle'),
+('運營','운영','manage, administer'),
+('票','표','a marker, indication'),
+('必要性','필요성','necessity '),
+('部位','부위','a region, part'),
+('十一月','십일월','November'),
+('兄弟','형제','brothers and sisters'),
+('華麗','화려','fancy, showy, splendid, colorful'),
+('洋-','양파','an onion'),
+('一種','일종','a kind, a sort, a species'),
+('處地','처지','a situation, circumstances'),
+('撮影','촬영','photographing, filming, recording'),
+('形便','형편','the situation, the state of things (esp. financial)'),
+('徐徐','서서','slowly, little by little'),
+('身分','신분','social position'),
+('-房','안방','the inner room'),
+('自信','자신','self-confidence'),
+('暫時','잠시','for a little while'),
+('虎狼-','호랑이','a tiger'),
+('强化','강화','strengthen'),
+('本來','본래','originally, primarily'),
+('稅金','세금','tax'),
+('實情','실정','the actual situation'),
+('營養','영양','nutrition'),
+('肉體','육체','the flesh, the body'),
+('積極','적극','the positive'),
+('最小限','최소한','at least'),
+('北-','북쪽','northern'),
+('平生','평생','a lifetime'),
+('幹部','간부','executive management'),
+('與件','여건','a postulate, a given condition'),
+('--前','오래전','long ago'),
+('統制','통제','control, regulation'),
+('階段','계단','a staircase, a set of stairs'),
+('反映','반영','reflect, be reflected'),
+('所屬','소속','belong to, attached to'),
+('醉','취','to be drunk'),
+('船長','선장','a captain'),
+('雪糖','설탕','sugar'),
+('時點','시점','point in time'),
+('意思','의사','an intention, a purpose'),
+('世界觀','세계관','a worldview'),
+('競爭力','경쟁력','competitiveness'),
+('情','정','feeling of attachment'),
+('症狀','증상','symptoms'),
+('强制','강제','compulsion, coercion'),
+('料金','요금','a rate, a fare'),
+('用-','용돈','pocket money, money for expenses'),
+('爲主','위주','put first in importance'),
+('飮料','음료','a beverage, a drink'),
+('地境','지경','a boundary, situation,state'),
+('痛症','통증','an ache, pain'),
+('便利','편리','to be convenient, handy'),
+('現金','현금','cash, ready funds, not a credit card'),
+('南部','남부','the southern part'),
+('無條件','무조건','unconditional'),
+('班長','반장','squad leader'),
+('附近','부근','neighborhood, vicinity'),
+('歷史家','역사가','historian'),
+('硏究者','연구자','researcher'),
+('演技者','연기자','a performer, an actor'),
+('警察官','경찰관','a policeman'),
+('勸','권','advise, persuade, recommend'),
+('大門','대문','a big gate'),
+('別途','별도','a separate way'),
+('市內','시내','the city'),
+('室內','실내','in the room'),
+('外交','외교','diplomacy'),
+('課長','과장','the department/section head'),
+('劇','극','drama, play'),
+('茶房','다방','tea room'),
+('實-','실로','really, indeed'),
+('煙氣','연기','smoke, fume'),
+('因緣','인연','cause and occasion'),
+('一行','일행','a party, group of people, troupe; line'),
+('知識人','지식인','an intellectual'),
+('眞摯','진지','to be serious, earnest'),
+('氣溫','기온','temperature'),
+('折半','절반','half'),
+('便安','편안','to be peaceful'),
+('氣候','기후','climate or  weather'),
+('大企業','대기업','big enterprise'),
+('部長','부장','head of a department'),
+('心理','심리','a mental state'),
+('心情','심정','one''s heart, one''s feelings'),
+('正--','정말로','really'),
+('刑事','형사','a criminal, penal case'),
+('戱曲','희곡','a drama, a play'),
+('感動','감동','agitate, stir up the emotions'),
+('急','급','be urgent, pressing, iminent'),
+('大衆文化','대중문화','pop culture'),
+('-氣','물기','moisture'),
+('禮節','예절','propriety, decorum'),
+('特定','특정','specify'),
+('교량','다리','bridge'),
+('部處','부처','Buddha'),
+('溫度','온도','temperature'),
+('絶對-','절대로','absolutely'),
+('眞-','진짜','real'),
+('窓-','창밖','outside the window'),
+('客觀的','객관적','objective'),
+('部隊','부대','unit, troops, squad (military)'),
+('視聽者','시청자','television audience member'),
+('完璧','완벽','perfect'),
+('從業員','종업원','waiter/waitress'),
+('學期','학기','an educational term'),
+('後期','후기','the latter term/period'),
+('牧師','목사','a pastor'),
+('收入','수입','income'),
+('兩-','양쪽','both sides'),
+('例--','예컨대','for example, such as'),
+('運動場','운동장','stadium, playground'),
+('後輩','후배','one''s junior'),
+('景氣','경기','the business market''s state'),
+('國會議員','국회의원','a member of the national assembly'),
+('到底','도저','absolutely impossible; by all means'),
+('政治權','정치권','political rights'),
+('學習','학습','learning, education'),
+('複道','복도','a corridor'),
+('首相','수상','head of sth; the Prime Minister'),
+('映像','영상','an image, picture, reflection; multimedia, movies'),
+('靈魂','영혼','a soul, a spirit'),
+('運轉士','운전사','a driver'),
+('週','주','one week'),
+('乃至','내지','from a to b'),
+('憤怒','분노','rage,anger'),
+('所謂','소위','what is called for'),
+('列車','열차','train'),
+('正式','정식','formality, due form'),
+('卽時','즉시','at once, immediately'),
+('最善','최선','the best, one''s best'),
+('塔','탑','a tower'),
+('韓服','한복','Korean traditional clothing'),
+('唐慌','당황','be confused'),
+('報告書','보고서','report'),
+('傷','상','damage, injure'),
+('食用油','식용유','cooking oil'),
+('業種','업종','types of industry'),
+('韓國語','한국어','Korean (language)'),
+('怯','겁','fear, fright, terror, dread'),
+('官吏','관리','a government official'),
+('國際化','국제화','internationalization'),
+('事前','사전','beforehand, in advance'),
+('市','시','city'),
+('新鮮','신선','fresh'),
+('聯合','연합','combination, federacy, union'),
+('章','장','a chapter in a book'),
+('敵','적','the enemy'),
+('質','질','quality, character'),
+('責任者','책임자','manager, person in charge'),
+('總','총','all, entire, whole'),
+('表','표','a marker, indication'),
+('品目','품목','item'),
+('別','별','classified by'),
+('副作用','부작용','reaction, side effect'),
+('威脅','위협','menace, threat, intimidation'),
+('科目','과목','a subject or  a lesson'),
+('論爭','논쟁','controversy, argument'),
+('數十','수십','tens of sth'),
+('儒敎','유교','Confucianism'),
+('理性','이성','reason, reasoning'),
+('日常','일상','everyday, usual, ordinary'),
+('自動','자동','automatic'),
+('罪悚','죄송','regret, be sorry for'),
+('重要性','중요성','importance, gravity'),
+('品質','품질','product quality'),
+('痕跡','흔적','traces, signs, evidence'),
+('腦','뇌','brains'),
+('封套','봉투','envelope'),
+('社說','사설','an editorial'),
+('主','주','one''s master, ones employer'),
+('何如-','하여튼','anyway, at any rate, in any case (interjection)'),
+('香氣','향기','fragrance, aroma, perfume'),
+('現地','현지','current location'),
+('每年','매년','every year'),
+('燒酒','소주','Korean alchohol'),
+('乘用車','승용차','a passenger car'),
+('語塞','어색','to be awkward, shy with words, speechless'),
+('長點','장점','a merit, strong point'),
+('平凡','평범','plain, average'),
+('弘報','홍보','public information, public relations'),
+('大量','대량','a large quantity'),
+('生鮮','생선','raw fish'),
+('臨時','임시','temporary, special'),
+('桶','통','a tub, a cask'),
+('特殊','특수','characteristic,distinct,unique'),
+('合--','합치다','combine, unite'),
+('企劃','기획','plan, project'),
+('本性','본성','human nature'),
+('生産力','생산력','productive capacity'),
+('留學','유학','study abroad'),
+('裝備','장비','equipment, fittings'),
+('政治人','정치인','politician'),
+('檢討','검토','an examination, investigation, study'),
+('技法','기법','techniques'),
+('弄談','농담','a joke'),
+('擔任','담임','charge, duty'),
+('途中','도중','on the way'),
+('人','인','a person'),
+('字板','자판','keyboard'),
+('前期','전기','the former period/term'),
+('中盤','중반','at the middle stage (of a game or contest, or otherwise)'),
+('各國','각국','each country'),
+('敎科書','교과서','textbook'),
+('多數','다수','a great number'),
+('德分','덕분','indebtedness'),
+('個國','개국','the foundation of a country'),
+('汽車','기차','a train'),
+('使用者','사용자','a user, consumer, employer'),
+('社會主義','사회주의','socialism'),
+('首都圈','수도권','the metropolitan area'),
+('總理','총리','general overseeing, presiding over'),
+('肯定的','긍정적','affirmation, admission'),
+('貸出','대출','lending'),
+('德','덕','virtue, morality'),
+('反','반','to be contrary to'),
+('社員','사원','company employee'),
+('額數','액수','a sum, an amount'),
+('欲心','욕심','greed, selfishness'),
+('直前','직전','just immediately before'),
+('擇','택','choose, select'),
+('家口','가구','family'),
+('江-','강물','river water'),
+('窮極的','궁극적','finally or in the end, 마지막으로'),
+('極-','극히','exceedingly,  extremely'),
+('變動','변동','change, flucutation'),
+('不可避','불가피','inevitable, unavoidable '),
+('運','운','fortune, luck, fate'),
+('日常生活','일상생활','everyday (daily) life'),
+('自尊心','자존심','self-confidence'),
+('證券社','증권사','securities corporation'),
+('津','진','be dark, deep'),
+('草原','초원','a plain, a prarie'),
+('最終','최종','last, final, terminal'),
+('興味','흥미','interest, zeal'),
+('比率','비율','ratio, percentage'),
+('騷音','소음','a noise, cacaphony'),
+('兩國','양국','both countries'),
+('中部','중부','the center, middle part'),
+('茶','차','tea'),
+('菜蔬','채소','vegetables'),
+('環境汚染','환경오염','environmental pollution'),
+('價値觀','가치관','one''s values or sense of values, a value system'),
+('--色','검은색','black, dark'),
+('紀元前','기원전','B.C.'),
+('其他','기타','the others or  the rest'),
+('緊急','긴급','emergency'),
+('無慮','무려','as many as, no less  than'),
+('手票','수표','a check'),
+('實態','실태','the actual conditions,reality'),
+('日程','일정','to be fixed, settled, regular'),
+('接','접','adjoin, be adjacent to'),
+('精誠','정성','true heart, devotion'),
+('制約','제약','a condition, restriction'),
+('加','가','to add'),
+('-醬','간장','soy sauce'),
+('科','과','a course or  branch of study; a department or  a faculty'),
+('國語','국어','the national language; Korean'),
+('上','상','upper'),
+('樂器','악기','musical instrument'),
+('年末','연말','the end, close of the year'),
+('原稿','원고','a manuscript'),
+('差','차','difference, margin'),
+('香','향','perfume, incense'),
+('計座','계좌','account'),
+('末期','말기','the end, final period'),
+('亡','망','go to ruin'),
+('拍手','박수','applause'),
+('富者','부자','a rich person'),
+('西-','서쪽','the west'),
+('孫子','손자','grandson'),
+('新郞','신랑','a bridegroom'),
+('實習','실습','actual training, practice'),
+('自律','자율','self-control, autonomy'),
+('天障','천장','the ceiling'),
+('畵家','화가','a painter, a drawer artist'),
+('賣場','매장','a store, shop'),
+('名稱','명칭','a name,title'),
+('實力','실력','one''s real ability,talent'),
+('人體','인체','the human body'),
+('疾病','질병','a disease, sickness'),
+('體力','체력','physical strength'),
+('各其','각기','each, respectively'),
+('軍士','군사','a soldier, a private'),
+('鬼神','귀신','a ghost'),
+('貴','귀','noble, high; dear; lovable, precious'),
+('-床','밥상','dinner table'),
+('沙果','사과','an apple'),
+('例外','예외','an exception'),
+('琉璃','유리','a glass pane'),
+('最大限','최대한','the most, the maximum, highest'),
+('兄夫','형부','a husband of a girl''s older sister'),
+('今年','금년','this year'),
+('機器','기기','equipment, machinery, instrument'),
+('羅針盤','나침반','a compass'),
+('大學院','대학원','graduate school'),
+('到達','도달','arrival'),
+('辯護士','변호사','lawyer'),
+('像','상','a statue, a figure'),
+('想像力','상상력','imagination, imaginative'),
+('女學生','여학생','female student'),
+('有利','유리','to be profitable, favorable'),
+('自然環境','자연환경','natural surroundings'),
+('地點','지점','a spot, point'),
+('學父母','학부모','students'' parents'),
+('冷藏庫','냉장고','freezer'),
+('連續','연속','continuity, continuous, in succession'),
+('院長','원장','the chief, the head of'),
+('遺物','유물','a relic, antiquity, artifact'),
+('整備','정비','organize; maintain'),
+('--番','지난번','last time'),
+('被害者','피해자','victim'),
+('學用品','학용품','stationary, school supplies'),
+('花盆','화분','flower pot'),
+('褐色','갈색','brown'),
+('感氣','감기','a cold'),
+('江南','강남','south of a river'),
+('反撥','반발','repulsion, a backlash'),
+('飯饌','반찬','side dishes'),
+('抑鬱','억울','to be victimized, treated unfairly'),
+('前-','전날','the day before, the day prior'),
+('健全','건전','healthy, sound, wholesome'),
+('結婚式','결혼식','wedding ceremony'),
+('計算器','계산기','calculator'),
+('廣場','광장','plaza, public square'),
+('堂堂','당당','dignified'),
+('罰','벌','punishment'),
+('-初','애초','the first, the beginning'),
+('依支','의지','count on, depend on, rely on'),
+('初盤','초반','early phase, early stage'),
+('幅--','폭넓다','to be wide-ranging, broad'),
+('學番','학번','year of graduation'),
+('學院','학원','academy'),
+('穀食','곡식','cereals, grains'),
+('別---','별다르다','particular, special'),
+('部品','부품','parts, accessories, components'),
+('西部','서부','the western part'),
+('俗談','속담','a proverb, saying'),
+('市中','시중','in the city'),
+('類似','유사','to be similar, to resemble'),
+('意欲','의욕','volition, will, desire, drive'),
+('隣近','인근','neighborhood'),
+('一般人','일반인','ordinary person, the general public, the public at large'),
+('定期','정기','a fixed time period'),
+('終日','종일','all day, throughout the whole day'),
+('化粧','화장','makeup'),
+('强烈','강렬','intense,  strong, severe'),
+('交通事故','교통사고','traffic accident'),
+('免','면','escape, avoid, get away with'),
+('摸索','모색','evening twilight'),
+('四方','사방','the four directions'),
+('演藝人','연예인','a performer, an entertainer'),
+('月給','월급','monthly salary'),
+('敢','감','daringly, boldly'),
+('强要','강요','insist on, compel, coerce'),
+('慣習','관습','custom, convention'),
+('名義','명의','name, title'),
+('密接','밀접','be close, intimate with'),
+('箱子','상자','a box, case'),
+('數--','수없이','be unable to do sth'),
+('兩','양','both, two'),
+('通帳','통장','a bankbook (check register)'),
+('黑人','흑인','black person'),
+('肝','간','liver'),
+('競技場','경기장','sports stadium, sports field'),
+('-瞳子','눈동자','the pupil (of the eye)'),
+('副會長','부회장','a vice president'),
+('誠實','성실','be ripe'),
+('實際','실제','the truth, a fact'),
+('一切','일체','all-in-one, all, everything, the whole'),
+('透明','투명','to be transparent, clear'),
+('擴散','확산','to get diffused'),
+('經歷','경력','one''s personal history'),
+('大多數','대다수','a large majority'),
+('無料','무료','free'),
+('象徵','상징','symbolize'),
+('演說','연설','a public speech'),
+('日子','일자','a date, the number of days'),
+('恨','한','a grudge, rancor'),
+('觀光客','관광객','a tourist'),
+('悲鳴','비명','a scream'),
+('專用','전용','exclusive or private use'),
+('至極','지극','very, extremely'),
+('請','청','ask, request'),
+('確定','확정','decision, settlement'),
+('假想','가상','imagination'),
+('各自','각자','each one, every one'),
+('間或','간혹','occasionally, at times'),
+('國産','국산','domestic'),
+('道','도','road'),
+('補償','보상','compensation'),
+('庶民','서민','common people'),
+('席','석','a seat,sitting place'),
+('選定','선정','select,choose'),
+('少數','소수','a small number, a few'),
+('媤---','시어머니','one''s husband''s mother'),
+('媤-','시집','one''s husband''s home/family, to marry / take a husband'),
+('年間','연간','for a year'),
+('映畵祭','영화제','movie festival'),
+('豫測','예측','to predict, forecast'),
+('適合','적합','suitability, fitness'),
+('電話番號','전화번호','telephone number'),
+('論','논','argue, discuss, debate'),
+('道德','도덕','immorality'),
+('事務所','사무소','office '),
+('四寸','사촌','a cousin'),
+('賞','상','a prize'),
+('遺跡','유적','remains, relics, ruins'),
+('一生','일생','one''s lifetime'),
+('情報化','정보화','the information age'),
+('種種','종종','sometimes, occasionally'),
+('紙匣','지갑','a purse, wallet'),
+('創作','창작','creation, origination'),
+('趣向','취향','taste, liking, preference'),
+('學級','학급','a class (school)'),
+('效率的','효율적','efficiency'),
+('金額','금액','amount of money'),
+('名節','명절','holiday'),
+('飛行','비행','flying, aviation'),
+('相關--','상관없다','to be of no concern'),
+('壽命','수명','life span'),
+('神奇','신기','to be amazing, marvelous, wonderful'),
+('飮食物','음식물','food and drink'),
+('自信感','자신감','self-confidence'),
+('罪人','죄인','a criminal'),
+('準備物','준비물','stuff that needs to be prepared'),
+('出入','출입','entrance/exit'),
+('快感','쾌감','a pleasant sensation, a good feeling'),
+('何必','하필','why necessarily? why of all things?'),
+('灰色','회색','gray'),
+('巨額','거액','fortune, a large sum of money'),
+('高校','고교','high school'),
+('敎訓','교훈','lesson, moral'),
+('--房','노래방','singing room'),
+('短篇','단편','a piece, fragment'),
+('明確','명확','clear, precise'),
+('先進','선진','seniority, advance'),
+('新規','신규','start anew'),
+('實-','실은','actually, in fact'),
+('良心','양심','conscience'),
+('理事長','이사장','chairman of the board'),
+('利子','이자','interest'),
+('症勢','증세','symptoms'),
+('進級','진급','promotion'),
+('港口','항구','a port, a harbor'),
+('-機','헬기','helicopter'),
+('艱辛','간신','narrowly, barely'),
+('空軍','공군','the air force'),
+('技術者','기술자','technician'),
+('年生','년생','year of birth'),
+('大都市','대도시','large city'),
+('帽子','모자','a hat'),
+('補助','보조','help, assistance, aid'),
+('不利','불리','to be disadvantageous, unfavorable'),
+('睡眠','수면','sleep, slumber'),
+('數千','수천','thousands'),
+('勝負','승부','a contest, match'),
+('新入生','신입생','a new student'),
+('如干','여간','some, a little'),
+('驛','역','a railroad station, depot'),
+('影響力','영향력','influence, power to influence'),
+('禮儀','예의','courtesy, politeness'),
+('以內','이내','within, less than'),
+('支拂','지불','to pay'),
+('派出所','파출소','police precinct station'),
+('板','판','board'),
+('漢文','한문','Chinese writing, Chinese classics'),
+('決勝','결승','finals (in a tournament)'),
+('公共','공공','public, common'),
+('敎養','교양','culture, education'),
+('大槪','대개','mostly, for the most part'),
+('鬚髥','수염','beard'),
+('旅券','여권','a passport'),
+('外貌','외모','outward appearance'),
+('人工','인공','artificial, man-made'),
+('長男','장남','the eldest son'),
+('全般','전반','the whole, all, general'),
+('隻','척','ship, boat, vessel (counter)'),
+('葡萄酒','포도주','grape wine'),
+('學術','학술','science, learning, scolarship'),
+('高喊','고함','shout, yell, scream'),
+('臺詞','대사','speech, dialogue'),
+('罰金','벌금','a fine'),
+('福','복','luck,happiness'),
+('部署','부서','department, one''s post, duty'),
+('城','성','castle, fortress'),
+('小型','소형','small size'),
+('新人','신인','rookie, newbie'),
+('熱情','열정','passion'),
+('絶對','절대','absoluteness'),
+('體重','체중','body weight'),
+('秋夕','추석','Korean Thanksgiving'),
+('包裝','포장','packing, wrapping'),
+('玄關','현관','door, entrance'),
+('現代人','현대인','contemporary/modern man'),
+('惠澤','혜택','a favor, benefit'),
+('綠色','녹색','green'),
+('發電','발전','generate electricity'),
+('番號','번호','a number'),
+('本人','본인','person in question'),
+('商店','상점','a shop, store'),
+('數百','수백','hundreds'),
+('室長','실장','boss, president'),
+('二重','이중','duplication, double'),
+('正門','정문','the front gate, main entrance'),
+('窓','창','window'),
+('親庭','친정','a woman''s maiden home and family'),
+('行','행','to do, act, behave'),
+('個別','개별','an individual, each'),
+('基督敎','기독교','Christianity'),
+('短點','단점','a weakness, flaw, shortcoming, drawback'),
+('目錄','목록','list, inventory'),
+('別名','별명','nickname, alias'),
+('癌','암','cancer'),
+('惹端','야단','clamor, uproar; scolding, telling off'),
+('聯關','연관','relation, connection, concerned with'),
+('陸軍','육군','the army'),
+('飮食店','음식점','restaurant'),
+('人分','인분','portions/servings (counter)'),
+('粥','죽','rice porridge'),
+('菓子','과자','a snack, pastries, candy, cookie'),
+('大學校','대학교','college, university'),
+('房門','방문','door'),
+('病--','병들다','get sick'),
+('相對性','상대성','relativity'),
+('設問','설문','survey, questionnaire'),
+('小說家','소설가','novelist'),
+('留意','유의','to pay attention to, bear in mind, be heedful of'),
+('儒學','유학','Confucianism'),
+('引下','인하','reduction, lowering'),
+('展示會','전시회','an exhibition, show, display'),
+('政治學','정치학','political science'),
+('吐','토','to vomit'),
+('歌詞','가사','words, lyrics'),
+('加入者','가입자','member, subscriber, policyholder'),
+('痲藥','마약','narcotics, drugs'),
+('富','부','wealth, riches'),
+('所用','소용','use, good'),
+('手巾','수건','towel, washcloth'),
+('瞬息間','순식간','a brief instant, a moment'),
+('詩集','시집','a collection of poems'),
+('弱點','약점','weakness, a weak point, a vulnerable point'),
+('洋服','양복','suit'),
+('女','여','a woman, a girl'),
+('年齡','연령','age, years of age'),
+('履歷書','이력서','curriculum vitae, a resume'),
+('周年','주년','anniversary'),
+('重大','중대','important, grave'),
+('中心地','중심지','hub, capital, central (of)'),
+('出版社','출판사','publishing house, publisher, a publishing company'),
+('風俗','풍속','manners, customs, morals'),
+('-層','한층','more, still more'),
+('干涉','간섭','interfere, meddle, butt in on, intrude'),
+('渴症','갈증','thirst'),
+('起源','기원','origin'),
+('亂離','난리','a war, revolt, panic, fuss'),
+('男妹','남매','brother and sister'),
+('相關','상관','care about, be bothered by'),
+('世','세','a generation,age,epoch'),
+('按酒','안주','appetizers for alcohol'),
+('熱氣','열기','heat, hot air; excitement, fever'),
+('電鐵','전철','metro, subway'),
+('通話','통화','call, telephone conversation'),
+('特異','특이','be peculiar, special, unique, eccentric'),
+('假-','가짜','fake, forgery, imitation, counterfeit'),
+('强度','강도','intensity, strength'),
+('急-','급히','fast, quickly, in a hurry'),
+('說得','설득','persuade, convince'),
+('食-','식빵','bread'),
+('運轉者','운전자','the driver'),
+('琉璃窓','유리창','glass window'),
+('差異點','차이점','difference'),
+('總角','총각','a bachelor, a single man'),
+('颱風','태풍','typhoon'),
+('敎職','교직','the teaching profession'),
+('貴重','귀중','to be precious'),
+('技士','기사','technician'),
+('寄宿舍','기숙사','a hostel; residence hall'),
+('單獨','단독','independence'),
+('散策','산책','a walk, stroll'),
+('生氣','생기','animation, life'),
+('書籍','서적','books, publications'),
+('受驗生','수험생','test-taker, examinee'),
+('新世代','신세대','the new generation'),
+('硏究員','연구원','researcher'),
+('戀愛','연애','date, have a relationship with'),
+('連休','연휴','long weekend, holiday'),
+('月曜日','월요일','Monday'),
+('意外-','의외로','unexpectedly, surprisingly'),
+('姨母','이모','a maternal aunt'),
+('鐵','철','steel'),
+('就職','취직','seek employment, get a job'),
+('會館','회관','an assembly hall'),
+('公演場','공연장','auditorium'),
+('近來','근래','of late or  recently'),
+('多情','다정','to be kind, affectionate, warm-hearted'),
+('上流','상류','upper class'),
+('鮮明','선명','to be clear, distinct'),
+('選好','선호','to prefer'),
+('小規模','소규모','small scale'),
+('隨時-','수시로','frequently, often'),
+('視野','시야','visual field'),
+('類型','유형','type, category, class'),
+('前後','전후','sequence, order, front and rear'),
+('質的','질적','qualitative'),
+('齒牙','치아','tooth'),
+('解說','해설','explanation, commentary'),
+('黑白','흑백','black and white; right and wrong'),
+('强盜','강도','robber, burglar'),
+('經費','경비','expense, cost, charge'),
+('經濟力','경제력','economic power'),
+('禁','금','prohibit, ban, forbid'),
+('農事--','농사짓다','to farm'),
+('擔當者','담당자','person in charge'),
+('答辯','답변','an answer, response, reply'),
+('大體','대체','why on earth?, what the hell?'),
+('都心','도심','downtown, city center'),
+('未婚','미혼','unmarried'),
+('放送社','방송사','broadcasting company'),
+('辭表','사표','a written resignation'),
+('生放送','생방송','a live broadcast'),
+('疏忽','소홀','carelessly, roughly, indifferently, negligently'),
+('雙--','쌍둥이','twins'),
+('零下','영하','below zero'),
+('外國語','외국어','foreign language'),
+('子正','자정','midnight'),
+('中學生','중학생','middle school student'),
+('取材','취재','selection, picking out of news articles (by a reporter)'),
+('討論會','토론회','debate, panel discussion, forum'),
+('-盞','한잔','have a drink'),
+('胡---','호주머니','a pocket'),
+('郡','군','a county or district'),
+('-曆','달력','a calendar'),
+('陶瓷器','도자기','ceramics, porcelain, earthenware'),
+('變更','변경','change, alteration'),
+('三寸','삼촌','an uncle'),
+('相當數','상당수','plenty, a lot of, a considerable number'),
+('逍風','소풍','picnic'),
+('新聞紙','신문지','newspaper'),
+('龍','용','a dragon'),
+('人間性','인간성','human nature'),
+('駐韓','주한','residing in Korea'),
+('中年','중년','middle age'),
+('高速道路','고속도로','expressway, freeway'),
+('空冊','공책','notebook'),
+('記號','기호','taste, preference, liking'),
+('內外','내외','the interior and exterior '),
+('補完','보완','to supplement and make complete, to complement sth'),
+('史上','사상','all-time, in history'),
+('思春期','사춘기','adolescence, puberty'),
+('上半期','상반기','the first,upper half'),
+('書店','서점','a bookstore'),
+('新奇','신기','to be amazing, wonderful; to be novel'),
+('新設','신설','startup, found, establish'),
+('實感','실감','actual feeling'),
+('洋襪','양말','a sock'),
+('自家用','자가용','for personal/family use'),
+('點檢','점검','inspection, examination'),
+('早期','조기','an early stage, period'),
+('鐘','종','a bell'),
+('鐘--','종소리','the sound of a bell'),
+('中旬','중순','the second 10 days in a month'),
+('直線','직선','a straight line'),
+('銃','총','a gun'),
+('懷疑','회의','doubt, skepticism'),
+('街路燈','가로등','a street light'),
+('感','감','feelings'),
+('個個人','개개인','individual, each person'),
+('金','금','gold'),
+('急激','급격','rapidly, suddenly'),
+('技能','기능','ability, capacity, skill'),
+('氣-','기막','breathtaking, perfect, wonderful, amazing, super, fantastic'),
+('待機','대기','standing by, waiting in the wings, prepared'),
+('--便','맞은편','opposite side, the other side'),
+('綿','면','cotton'),
+('泊','박','number of nights (counter)'),
+('褓--','보자기','wrapping cloth'),
+('相關--','상관없이','regardless of, no matter that'),
+('設使','설사','diarrhea'),
+('旅館','여관','a hotel, an inn'),
+('妊娠婦','임신부','an expectant mother, a pregnant woman'),
+('長期的','장기적','long-term'),
+('傳說','전설','a tradition, a legend'),
+('節','절','clause,paragraph'),
+('注射','주사','a shot, an injection'),
+('就業','취업','employment, finding a job'),
+('漆','칠','layer, paint, coat'),
+('評','평','a criticism'),
+('下半期','하반기','the second half of the year'),
+('解答','해답','answer, solution'),
+('確立','확립','establish, settle'),
+('感受性','감수성','sensitivity, sensibility'),
+('--便','건너편','the opposite/other side'),
+('景致','경치','view, scene, scenery'),
+('急速','급속','rapidly, swiftly'),
+('急增','급증','surge, sudden rapid increase'),
+('面談','면담','an interview, face-to-face talk'),
+('封紙','봉지','bag'),
+('非常','비상','emergency'),
+('事業者','사업자','businessman'),
+('相對便','상대편','oppenent, rival, competitor, adversary, antagonist'),
+('所望','소망','desire, wish, hope'),
+('受動的','수동적','passively'),
+('-盞','술잔','a glass (for alcohol)'),
+('視聽率','시청률','ratings'),
+('新聞社','신문사','newspaper company'),
+('女軍','여군','a woman soldier'),
+('戀人','연인','lover, boyfriend, girlfriend, sweetheart, couple'),
+('豫選','예선','preliminary round, qualifying round'),
+('圓','원','a circle'),
+('銀杏--','은행나무','a ginko tree'),
+('自負心','자부심','pride'),
+('將次','장차','in the future, someday'),
+('-便','저편','that side,direction'),
+('精神科','정신과','psychiatry'),
+('重要視','중요시','emphasize, regard sth as important, to be crucial'),
+('支店','지점','branch store'),
+('換率','환율','the exchange rate'),
+('降水量','강수량','rainfall, precipitaion'),
+('區廳','구청','a ward/district office'),
+('國內外','국내외','"domestic and foreign"'),
+('旣成','기성','pre-existing, established'),
+('男學生','남학생','male student'),
+('農事-','농사일','farming'),
+('農場','농장','a farm, plantation'),
+('某','모','so-and-so, a certain Mr. X (used to not directly identify sby)'),
+('生','생','raw, uncooked; living'),
+('聖經','성경','the Bible'),
+('所要','소요','to take (time), to cost'),
+('瞬間的','순간적','momentary, in a flash, for an instant'),
+('市廳','시청','city hall'),
+('娛樂','오락','entertainment'),
+('人間關係','인간관계','human relations'),
+('長期間','장기간','for a long period'),
+('戰線','전선','the battle line'),
+('車線','차선','a traffic lane'),
+('肖像畵','초상화','a portrait, a picture'),
+('出張','출장','a business trip'),
+('特殊性','특수성','distinct, unique characteristic'),
+('航空機','항공기','an aircraft'),
+('繪畵','회화','conversation, talk'),
+('興味--','흥미롭다','to be interesting, amusing'),
+('覺悟','각오','determination, resolve'),
+('經濟學','경제학','economics'),
+('關心事','관심사','concern, interest'),
+('國史','국사','national history'),
+('-間','그간','meanwhile, meantime'),
+('劇作家','극작가','playwright, playwriter'),
+('旗','기','flag, ensign, pennant'),
+('奇跡','기적','miracle'),
+('-套','말투','one''s way of talking'),
+('命令語','명령어','directive, command'),
+('沐浴湯','목욕탕','a bathhouse'),
+('變身','변신','metamorphosis, transformation'),
+('父親','부친','father'),
+('事務','사무','office work'),
+('些少','사소','unimportant, trifling, insignificant'),
+('爽快','상쾌','refreshing, exhilirating, brisk'),
+('姓','성','family name, surname, last name'),
+('順位','순위','order, ranking'),
+('雙','쌍','pair, couple'),
+('歷史上','역사상','historically; historical point of view'),
+('演奏','연주','musical performance, recital'),
+('郵遞局','우체국','a post office'),
+('陸上','육상','on land, on the ground'),
+('飮酒','음주','drinking (alcohol)'),
+('離別','이별','parting, separation'),
+('人材','인재','preson of ability/talent'),
+('人種','인종','a human race'),
+('一時的','일시적','temporary, transitory'),
+('中繼放送','중계방송','relay, transmission'),
+('車窓','차창','car/train window'),
+('出發點','출발점','point of departure'),
+('脫出','탈출','to escape, get away from'),
+('禁煙','금연','prohibition of smoking'),
+('旣成世代','기성세대','older generation'),
+('記述','기술','description, depiction'),
+('南北','남북','north and south'),
+('納得','납득','accept, consent, convince, persuade oneself'),
+('段','단','a grade or class'),
+('獨創的','독창적','creative, ingenious, original'),
+('滿點','만점','perfect score'),
+('每-','매달','every month'),
+('保守','보수','conservatism'),
+('保安','보안','security'),
+('師母-','사모님','Madam'),
+('三','삼','three'),
+('色---','색다르다','different, novel'),
+('時日','시일','time, days'),
+('迅速','신속','quick, rapid, speedy'),
+('新製品','신제품','new product'),
+('豫告','예고','warn, give notice'),
+('隱隱','은은','soft, gentle, delicate'),
+('一大','일대','great, remarkable'),
+('自然現象','자연현상','natural phenomena'),
+('停留場','정류장','stop, station, bus-stop'),
+('最新','최신','newest, latest'),
+('害--','해롭다','harmful, injurious, detrimental'),
+('玄關門','현관문','the front door'),
+('--醬','고추장','red pepper paste'),
+('--場','골프장','golf course'),
+('空然','공연','in vain, uselessly'),
+('-前','그전','former days, the past'),
+('金庫','금고','safe, valut'),
+('能動的','능동적','actively'),
+('當分間','당분간','for the present, for now, for a while'),
+('-山','뒷산','the back side of a mountain'),
+('美人','미인','a beautiful girl'),
+('半指','반지','ring'),
+('本','본','model, example'),
+('不平等','불평등','inequality'),
+('山-','산속','the heart of a mountain'),
+('西洋人','서양인','Westerner'),
+('所持品','소지품','one''s belongings/possessions'),
+('食醋','식초','vinegar'),
+('女同生','여동생','younger sister'),
+('聯想','연상','association, reminiscent of, remind'),
+('利害','이해','interests'),
+('潛水艦','잠수함','submarine'),
+('奬學金','장학금','scholarship'),
+('點心時間','점심시간','lunchtime'),
+('知的','지적','intellectual, brainy'),
+('進行者','진행자','emcee, master of ceremonies'),
+('責任感','책임감','sense of responsibility'),
+('體溫','체온','body temperature'),
+('醋-','초밥','sushi'),
+('出入門','출입문','door, gate'),
+('布帳馬車','포장마차','a wheeled snack bar on the street'),
+('航空','항공','airport, airline'),
+('號線','호선','train line number'),
+('休紙','휴지','toilet paper'),
+('高速','고속','high speed'),
+('救','구','rescue a person'),
+('來-','내달','next month'),
+('毒','독','potent; spiteful; firm'),
+('名單','명단','list of names, roll, directory'),
+('無意味','무의미','meaningless, nonsensical'),
+('文句','문구','passage, paragraph'),
+('未滿','미만','under, below; less than'),
+('士氣','사기','morale, fighting spirit'),
+('事務職','사무직','office job'),
+('素質','소질','temperament, character'),
+('食生活','식생활','dietary life'),
+('信號燈','신호등','traffic signal'),
+('新婚旅行','신혼여행','honeymoon'),
+('硏究室','연구실','a laboratory'),
+('組','조','company, group, organization'),
+('卒業生','졸업생','a graduate'),
+('猖披','창피','to be ashamed'),
+('跆拳道','태권도','Taekwondo'),
+('合','합','combine, unite, join, harmonize with, be in accord with'),
+('家庭敎師','가정교사','private tutor'),
+('敎育者','교육자','educator, teacher'),
+('敎材','교재','teaching material, insruction material, textbook'),
+('男','남','a man'),
+('無窮花','무궁화','hibiscus, rose of Sharon'),
+('房--','방바닥','room''s floor'),
+('社會生活','사회생활','social life'),
+('數年','수년','several years'),
+('利用者','이용자','a user; visitor'),
+('資格證','자격증','a qualification certificate'),
+('診療','진료','medical examination and treatment'),
+('窓-','창가','next to a window, the window''s edge'),
+('焦燥','초조','be impatient, irritated'),
+('­盞','한잔','to drink a glass of alchohol'),
+('化粧紙','화장지','paper used for applying makeup'),
+('歌謠','가요','a song'),
+('空-','공짜','free '),
+('方面','방면','direction'),
+('法的','법적','legal'),
+('補修','보수','mend, repair, fix'),
+('社會學','사회학','social science'),
+('性的','성적','sexual'),
+('洗手','세수','hand-washing'),
+('純眞','순진','to be naive, pure'),
+('旅行社','여행사','travel agency'),
+('留學生','유학생','exchange student'),
+('銀','은','silver'),
+('障碍人','장애인','a handicapped person'),
+('再活用品','재활용품','a recycled product'),
+('正反對','정반대','direct opposition, the exact reverse'),
+('學點','학점','unit, point, credit, grade'),
+('閑暇','한가','to be free, not busy'),
+('大綱','대강','approximately, crude, broad, rough, generally'),
+('門-','문밖','outside the door'),
+('不完全','불완전','to be imperfect'),
+('不平','불평','dissatisfaction'),
+('生活環境','생활환경','living environment'),
+('歷史學','역사학','historical studies'),
+('料理師','요리사','chef, cook'),
+('願書','원서','an application form, a written request'),
+('月','월','a month'),
+('理論的','이론적','theoretical'),
+('葬禮','장례','a funeral'),
+('只今-','지금껏','so far, till now'),
+('參席者','참석자','persons present'),
+('窓口','창구','a window'),
+('最低','최저','the lowest, the minimum/lowest price'),
+('必須','필수','necessary, indispensable'),
+('回數','횟수','the number of times, the frequency'),
+('鷄卵','계란','an egg'),
+('校門','교문','a school gate'),
+('緊張感','긴장감','feeling of tension'),
+('每週','매주','every week'),
+('北','북','north'),
+('不利益','불이익','disadvantage, drawback'),
+('不必要','불필요','to be unnecessary'),
+('産婦人科','산부인과','obstetrics and gynecology'),
+('修學','수학','pursuit of knowledge'),
+('外三寸','외삼촌','an uncle on one''s mother''s side'),
+('傳貰','전세','lease'),
+('退職金','퇴직금','severance pay, pension'),
+('還甲','환갑','one''s 60th anniversary'),
+('簡便','간편','simplicity, convenience'),
+('觀光地','관광지','tourist area'),
+('校服','교복','school uniform'),
+('僑胞','교포','a Korean living abroad'),
+('滿','만','just, full'),
+('奔走','분주','be busy, crowded'),
+('--封紙','비닐봉지','plastic bag'),
+('水道--','수도꼭지','a faucet, tap'),
+('軟','연','tender, soft, mild'),
+('陰曆','음력','the lunar calendar'),
+('一回用','일회용','disposable'),
+('專門職','전문직','specialty job'),
+('電話機','전화기','telephone receiver'),
+('--週','지난주','last week'),
+('次男','차남','one''s second eldest son'),
+('採點','채점','marking, grading, scoring'),
+('打字機','타자기','a typewriter'),
+('--中','한밤중','midnight'),
+('看護師','간호사','nurse'),
+('高等學生','고등학생','high school student'),
+('大學敎授','대학교수','university professor'),
+('飛行場','비행장','an airfield'),
+('-甁','술병','a bottle of alcohol'),
+('葉書','엽서','a postcard'),
+('曜日','요일','weekday'),
+('運轉技士','운전기사','the driver'),
+('危險性','위험성','riskiness, jeopardy'),
+('一','일','one'),
+('在學','재학','while in school, attending school'),
+('主觀的','주관적','subjective'),
+('職場人','직장인','a worker'),
+('眞心','진심','sincerely, truly'),
+('冊--','책가방','bookbag'),
+('齒藥','치약','toothpaste'),
+('學科','학과','department (college, university)'),
+('揭示板','게시판','bulletin board'),
+('共通點','공통점','to share something in common'),
+('課外','과외','extracurricular work'),
+('校內','교내','inside the school'),
+('區','구','ward or  district'),
+('內的','내적','internal'),
+('答狀','답장','answer, reply (letter/email)'),
+('無','무','nothing; lacking'),
+('別-','별일','a particular thing'),
+('佛法','불법','Buddhism'),
+('事業家','사업가','businessman'),
+('申請書','신청서','application, application form'),
+('---桶','쓰레기통','garbage can'),
+('羊','양','a sheep, ram'),
+('嶺南','영남','the southeastern part of Korea'),
+('胃','위','the stomach'),
+('日氣','일기','weather'),
+('這番','저번','last time, the other day'),
+('展示場','전시장','an exhibition hall'),
+('正答','정답','correct answer'),
+('除隊','제대','be discharged from the military'),
+('卽席','즉석','instantly, impromptu'),
+('次次','차차','gradually'),
+('匣','갑','case, box, pack'),
+('怯--','겁나다','be frightened or  scared'),
+('金--','금메달','gold medal'),
+('童話冊','동화책','a fairy tale'),
+('-色','밤색','chestnut color, maroon'),
+('性別','성별','sex distinction'),
+('洗濯','세탁','laundry'),
+('所用--','소용없다','to be useless'),
+('-傷','속상','upset, distressed, annoyed'),
+('-手巾','손수건','a handkerchief'),
+('水道-','수돗물','tap water'),
+('數萬','수만','tens of thousands'),
+('輸入品','수입품','an imported product'),
+('食器','식기','dishes, tableware'),
+('案','안','a plan, proposal, suggestion'),
+('安否','안부','safety, welfare'),
+('洋酒','양주','foreign wine/liquors'),
+('映畵俳優','영화배우','movie actor'),
+('一等','일등','first place, first rate/class/grade'),
+('陣痛','진통','labor pains, travail'),
+('最高級','최고급','the highest grade/class'),
+('最上','최상','the best, the finest'),
+('最惡','최악','the worst'),
+('出國','출국','leave a country'),
+('街路樹','가로수','a roadside tree'),
+('間食','간식','snack'),
+('公主','공주','a royal princess'),
+('南','남','south'),
+('--色','노란색','yellow'),
+('舞踊家','무용가','dancer'),
+('碑','비','a monument'),
+('四季節','사계절','the four seasons'),
+('賞金','상금','prize money'),
+('洋--','양상추','lettuce'),
+('女大生','여대생','female college student'),
+('外家-','외갓집','one''s mother''s maiden home'),
+('外---','외할머니','a maternal grandmother'),
+('有能','유능','competent, able, talented'),
+('遺跡地','유적지','historical site'),
+('音樂家','음악가','a musician'),
+('利--','이롭다','beneficial'),
+('人蔘','인삼','ginseng'),
+('人相','인상','look, personal appearance'),
+('再活用','재활용','recycling'),
+('祭祀-','제삿날','anniversary of a person''s death'),
+('參考','참고','to refer, consult'),
+('茶盞','찻잔','a teacup'),
+('初代','초대','first, founder'),
+('齒-','칫솔','a toothbrush'),
+('葡萄','포도','grape(s)'),
+('學歷','학력','academic background, formal schooling'),
+('橫斷步道','횡단보도','crosswalk'),
+('姑母夫','고모부','the husband of one''s paternal aunt'),
+('公衆電話','공중전화','public payphone'),
+('科擧','과거','the state examination'),
+('近郊','근교','suburbs'),
+('多樣性','다양성','variety'),
+('-中','밤중','midnight'),
+('不確實','불확실','be uncertain'),
+('司會者','사회자','chairperson, host, MC, emcee'),
+('松-','송편','rice cake steemed over pine needles'),
+('新婚夫婦','신혼부부','newlyweds'),
+('冶','야','erotic, sexual, racy, risque'),
+('-終日','온종일','all day long, the whole day'),
+('人事-','인사말','words of greeting'),
+('自販機','자판기','vending machine'),
+('丈母-','장모님','a man''s mother in law'),
+('出退勤','출퇴근','commute'),
+('齒科','치과','a dentist'),
+('下','하','below, underneath'),
+('火--','화나다','get angry'),
+('--房','건넌방','the opposite room'),
+('空器','공기','public institution'),
+('企業人','기업인','businessman, entrepreneur'),
+('男--','남동생','younger brother'),
+('安東','안동','Andong city'),
+('反對便','반대편','the opposite side'),
+('富者-','부잣집','rich man''s house'),
+('寫眞機','사진기','camera'),
+('山-','산길','mountain path/road'),
+('修業','수업','vocational training'),
+('市外','시외','outside the city, suburbs'),
+('藥水','약수','medicinal water, mineral water'),
+('藥品','약품','medicine, medical supplies'),
+('洋--','양배추','cabbage'),
+('兩-','양옆','on both sides'),
+('女高生','여고생','female high school student'),
+('女王','여왕','queen'),
+('運動靴','운동화','sneakers, tennis shoes, running shoes, cleats'),
+('一回用品','일회용품','disposable product'),
+('週日','주일','a week'),
+('初等學校','초등학교','elementary school'),
+('初步','초보','novice, newbie, beginner'),
+('學費','학비','tuition'),
+('害','해','damage, injury'),
+('海外旅行','해외여행','overseas travel'),
+('孝子','효자','a devoted son'),
+('江邊','강변','a riverside'),
+('公休日','공휴일','a legal holiday'),
+('校時','교시','school period'),
+('-牌','깡패','gangster'),
+('大衆交通','대중교통','mass transportation'),
+('萬歲','만세','everlasting, eternal; hurrah!'),
+('漫畵家','만화가','cartoonist'),
+('名銜','명함','business card'),
+('番地','번지','street address'),
+('--色','빨간색','deep-red, crimson'),
+('私立','사립','private'),
+('私生活','사생활','private life'),
+('生活水準','생활수준','the standard of living'),
+('碩士','석사','master''s (degree)'),
+('順','순','be gentle, meek, docile'),
+('媤宅','시댁','one''s husband''s family/house'),
+('媤父母','시부모','parents-in-law, one''s husband''s parents'),
+('--間','얼마간','some, somewhat; some time, a while'),
+('外製','외제','foreign brand/import'),
+('音盤','음반','vinyl record'),
+('二','이','two'),
+('理髮所','이발소','barber shop'),
+('葬禮式','장례식','a funeral'),
+('財數','재수','luck, fortune'),
+('再昨年','재작년','the year before last'),
+('電球','전구','electric light bulb'),
+('專門店','전문점','specialty store'),
+('傳統文化','전통문화','traditional culture; cultural heritage'),
+('尊待-','존댓말','honorific speech'),
+('酒煎子','주전자','kettle, teakettle'),
+('初步者','초보자','newbie, beginner, neophyte'),
+('招請狀','초청장','written invitation'),
+('村','촌','unfashionable, unsophisticated'),
+('討論者','토론자','debator, disputant, discussant'),
+('平常時','평상시','normally'),
+('學校生活','학교생활','student'),
+('海物','해물','seafood'),
+('型','형','shape, form'),
+('魂--','혼나다','get frightened, scared'),
+('江北','강북','north of the river'),
+('觀覽','관람','inspection or  viewing'),
+('敎育費','교육비','tuition'),
+('國立','국립','national'),
+('暖房','난방','a heated room'),
+('內容物','내용물','contents'),
+('錄畵','녹화','tree-planting'),
+('每番','매번','every time'),
+('無事','무사','be safe, peaceful'),
+('排球','배구','volleyball'),
+('生活用品','생활용품','necessities for daily life'),
+('扇風機','선풍기','a fan'),
+('女職員','여직원','female employee'),
+('-房','옆방','the room next door'),
+('異性','이성','the opposite sex'),
+('知能','지능','intelligence,intellect, raw intelligence'),
+('靑--','청바지','blue jeans'),
+('治療法','치료법','treatment'),
+('特級','특급','in a special class'),
+('平日','평일','a weekday'),
+('-平生','한평생','a lifetime'),
+('海水浴場','해수욕장','beach'),
+('號室','호실','room number'),
+('休紙桶','휴지통','waste paper basket'),
+('橘','귤','a Jeju orange'),
+('內科','내과','internal medicine'),
+('生活費','생활비','cost of living'),
+('--場','스키장','ski resort'),
+('-門','앞문','the front gate'),
+('冊房','책방','bookstore'),
+('漆板','칠판','blackboard'),
+('九','구','9'),
+('映畵館','영화관','movie theater'),
+('丈母','장모','a man''s mother-in-law'),
+('地下道','지하도','underground road'),
+('古宮','고궁','an ancient palace'),
+('高速--','고속버스','bus for the freeway'),
+('半-','반말','talk down, informal speach'),
+('粉紅色','분홍색','pink color'),
+('四','사','four, the fourth'),
+('孫女','손녀','granddaughter'),
+('水泳場','수영장','swimming pool'),
+('--層','아래층','lower floor'),
+('日本語','일본어','Japanese'),
+('掌匣','장갑','gloves'),
+('初旬','초순','the first third of a month'),
+('下旬','하순','the final third of the month'),
+('旣婚','기혼','married'),
+('圖章','대장','a seal, stamp'),
+('蔘鷄湯','삼계탕','chicken soup'),
+('生辰','생신','a birthday'),
+('市內--','시내버스','inner-city bus'),
+('郵票','우표','a postage stamp'),
+('--色','파란색','blue'),
+('冷麵','냉면','cold noodle soup'),
+('丹楓','단풍','autumn colors, fall foliage'),
+('獨逸語','독일어','German'),
+('丈人','장인','a man''s father in law, the wife''s father'),
+('外----','외할아버지','a maternal grandfather'),
+('入國','입국','entering a country'),
+('體育館','체육관','gymnasium'),
+('最小','최소','at the least, the minimum'),
+('七','칠','seven'),
+('紅茶','홍차','tea, black tea'),
+('國際線','국제선','international airline'),
+('百','백','one hundred'),
+('四十','사십','40'),
+('眼科','안과','ophthalmology'),
+('連絡處','연락처','contact information'),
+('年歲','연세','age, years of age'),
+('禮式場','예식장','a ceremony hall'),
+('月貰','월세','monthly rent'),
+('-層','위층','the upper floor'),
+('人蔘茶','인삼차','ginseng tea'),
+('診察','진찰','checkup, physical examination, investigation'),
+('草綠色','초록색','green'),
+('八','팔','eight'),
+('綠茶','녹차','green tea'),
+('毒感','독감','influenza'),
+('饅頭','만두','Chinese dumplings'),
+('--色','보라색','purple'),
+('軟豆色','연두색','light green'),
+('溫突','온돌','Korean under-floor heating system'),
+('六','육','the number six'),
+('出入國','출입국','entry into a country'),
+('國內線','국내선','domestic airline'),
+('三十','삼십','30'),
+('姓銜','성함','your (his) esteemed name'),
+('洗濯所','세탁소','laundromat'),
+('市外--','시외버스','inter-city bus'),
+('野球場','야구장','baseball field'),
+('五十','오십','fifty'),
+('運動服','운동복','sportswear, exercise clothes'),
+('中國語','중국어','Chinese'),
+('淸掃機','청소기','a vacuum cleaner'),
+('七十','칠십','seventy'),
+('筆筒','필통','pencil case'),
+('學生證','학생증','student identification'),
+('兄嫂','형수','the wife of one''s older brother'),
+('慶尙道','경상도','Kyungsan province'),
+('觀光--','관광버스','tourist bus'),
+('冷房','냉방','a cold or unheated room'),
+('-病','눈병','an eye disease'),
+('沙糖','사탕','sugar'),
+('色鉛筆','색연필','colored pencil'),
+('小兒科','소아과','pediatrics'),
+('陽曆','양력','the solar calendar'),
+('五','오','five'),
+('蹴球場','축구장','soccer field'),
+('韓食','한식','Korean food'),
+('世宗大王','세종대왕','Sejong the Great (invented Hangul, the modern Korean script)'),
+('複寫機','복사기','copy machine, photocopier'),
+('--湯','설렁탕','beef soup with rice'),
+('鍾路','종로','Jongno'),
+('新羅','신라','the Silla Dynasty'),
+('十','십','10'),
+('千','천','thousand'),
+('--色','까만색','black'),
+('來後年','내후년','the year after next year'),
+('媤---','시아버지','one''s husband''s father'),
+('食品店','식품점','grocery store'),
+('約婚女','약혼녀','fiancee'),
+('零上','영상','above zero'),
+('豫買','예매','reservation, advance purchase'),
+('六十','육십','sixty'),
+('八十','팔십','80'),
+('粉筆','분필','chalk'),
+('約婚者','약혼자','a fiance, an engaged person'),
+('洋食','양식','raising, farming, culture'),
+('億','억','one hundred million'),
+('外科','외과','surgery'),
+('製菓店','제과점','bakery'),
+('中食','중식','Chinese food'),
+('便宜店','편의점','convenience store'),
+('--湯','갈비탕','beef-rib soup'),
+('--色','검정색','a large sum of money'),
+('美容室','미용실','beauty salon'),
+('二十','이십','twenty'),
+('忠淸道','충청도','area around Daejon city'),
+('雪嶽山','설악산','Sorak mountain'),
+('朝鮮','조선','the Joseon Dynasty'),
+('仁川空港','인천공항','Incheon International Airport'),
+('大田','대전','Daejon city'),
+('根本','근본','root, foundation, basis'),
+('英國','영국','England'),
+('九十','구십','90'),
+('仁川','인천','Incheon city'),
+('日食','일식','Japanese food'),
+('初等學生','초등학생','an elementary school student'),
+('--色','하얀색','white'),
+('南美','남미','South America'),
+('金剛山','금강산','Diamond mountain'),
+('全州','전주','junju'),
+('全羅道','전라도','southwestern region of South Korea'),
+('北韓','북한','North Korea'),
+('釜山','부산','Busan'),
+('美國','미국','United States of America'),
+('白頭山','백두산','Baekdoo mountain'),
+('百濟','백제','historical Korean government'),
+('北京','북경','Beijing'),
+('江原道','강원도','region surrounding Seoul'),
+('京畿道','경기도','region surrounding Seoul'),
+('景福宮','경복궁','region surrounding Seoul'),
+('慶州','경주','region surrounding Seoul'),
+('高句麗','고구려','region surrounding Seoul'),
+('高麗','고려','region surrounding Seoul'),
+('光州','광주','region surrounding Seoul'),
+('金浦空港','김포공항','Gimpo airport'),
+('蔚山','울산','Ulsan'),
+('湖南','호남','Honam district'),
+('智異山','지리산','Jiri mountain'),
+('濟州島','제주도','Jeju island'),
+('南大門','남대문','Seoul''s old south gate'),
+('漢江','한강','Han river'),
+('漢拏山','한라산','Halla mountain'),
+('韓半島','한반도','the Korean peninsula'),
+('平壤','평양','capital of North Korea'),
+('南大門市場','남대문시장','Namdaemoon shopping center'),
+('南山','남산','Nam mountain'),
+('效用','효용','use,utility'),
+('綿火藥','면화약','cotton powder,guncotton'),
+('一致','일치','agree,agreement,conformity,correspond,jibe'),
+('上昇','상승','climb,rising'),
+('上陸','상륙','disembarkation,landing'),
+('下水','하수','drainage,sewerage'),
+('不一致','불일치','disagreement,discord,discrepancy'),
+('不便','불편','inconvenience,inexpediency'),
+('不信','불신','discredit,distrust,perfidy'),
+('不和','불화','discord,dissension'),
+('不均衡','불균형','disparity,imbalance'),
+('不安','불안','anxiety,suspense,uneasiness'),
+('不幸','불행','misfortune,sorrow,unhappiness'),
+('不正','부정','impropriety,iniquity,injustice'),
+('不法','불법','illegality,injustice'),
+('不注意','부주의','carelessness,inattention'),
+('不貞','부정','infidelity,unchastity'),
+('世代','세대','age,generation'),
+('中傷','중상','asperse,defamation,defame,libel,slander'),
+('中絶','중절','abeyance,interruption'),
+('中耳','중이','middle ear,tympanum'),
+('主婦','주부','housewife,mistress'),
+('主張','주장','advocacy,assertion,contention,insistence'),
+('主權','주권','dominion,sovereignty,supremacy'),
+('主義','주의','doctrine,principle,rule'),
+('主題','주제','subject,theme'),
+('亂雜','난잡','clutter,promiscuity'),
+('事件','사건','affair,case,event'),
+('事實','사실','fact,reality,truth'),
+('事業','사업','business,enterprise,industry'),
+('亡命者','망명자','exile,refugee'),
+('交代','교대','relay,shift'),
+('交叉','교차','crossing,intersection'),
+('交換','교환','commute,exchange,interchange,reciprocity'),
+('交替','교체','change,relay,relief'),
+('交通','교통','intercourse,traffic'),
+('交際','교제','association,company'),
+('人情','인정','human nature,humanity'),
+('人格','인격','character,individuality,personality'),
+('人物','인물','character,personage,personality'),
+('人類','인류','humanity,mankind'),
+('代價','대가','charge,price'),
+('代替','대체','replace,substitute'),
+('代理','대리','deputy,representation'),
+('代理人','대리인','agent,attorney,representative,substitute'),
+('代表者','대표자','delegate,representative'),
+('仲裁','중재','arbitration,intercession,mediation'),
+('任務','임무','duty,function,office'),
+('任命','임명','appointment,commission,designation'),
+('休息','휴식','breathe,repose,rest'),
+('休戰','휴전','armistice,truce'),
+('休日','휴일','day off,holiday'),
+('休止','휴지','cessation,pause,rest'),
+('伸張','신장','elongation,extension'),
+('位置','위치','location,position,situation'),
+('住居','주거','dwelling,residence'),
+('住所','주소','domicile,residence'),
+('住民','주민','citizen,population'),
+('作用','작용','act,action,function,operate,operation'),
+('使命','사명','errand,mission'),
+('使節','사절','delegate,envoy'),
+('使者','사자','emissary,messenger'),
+('例證','예증','exemplification,illustration,instance'),
+('供給','공급','furnish,provide,supply'),
+('侮辱','모욕','affront,contempt,insult'),
+('侵入','침입','intrude,invasion,raid'),
+('侵入者','침입자','intruder,invader'),
+('侵掠','침략','aggression,foray,invasion'),
+('便宜','편의','accommodation,advantage,convenience,expedience'),
+('便覽','편람','handbook,manual'),
+('促進','촉진','acceleration,facilitation,promotion'),
+('俗人','속인','layman,worldling'),
+('保存','보존','conservation,maintenance,preservation'),
+('保留','보류','hold,reserve'),
+('保管','보관','custody,safekeeping,storage'),
+('保證','보증','assurance,assure,ensure,guarantee,insure,pledge,undertake,vouch,warrant,warranty'),
+('保護','보호','care,guardianship,protection,shelter'),
+('保護者','보호자','guardian,protector'),
+('信仰','신앙','belief,faith'),
+('信任','신임','confide,confidence,trust'),
+('信念','신념','belief,faith'),
+('信用','신용','belief,confidence,credence,credit,faith,reliance'),
+('信號','신호','sign,signal,signalize'),
+('信託','신탁','confide,trust'),
+('倉庫','창고','storehouse,warehouse'),
+('個人的','개인적','individual,personal,private'),
+('個性','개성','individuality,personality'),
+('倦怠','권태','boredom,weariness'),
+('假定','가정','assumption,hypothesis,supposition'),
+('偏差','편차','declination,deviation'),
+('停止','정지','abeyance,standstill,stoppage'),
+('偶像','우상','idol,image'),
+('偶然','우연','chance,fortuity'),
+('傍觀者','방관자','bystander,onlooker'),
+('傳導','전도','conduction,transmission'),
+('僞造','위조','falsification,forgery'),
+('價値','가치','merit,value'),
+('償還','상환','redemption,repayment'),
+('優勢','우세','preponderance,superiority'),
+('優美','우미','elegance,grace'),
+('優雅','우아','elegance,grace,refinement'),
+('元氣','원기','energy,pep,vigor,vitality'),
+('元金','원금','capital,principal'),
+('充分','충분','enough,fully,plenty'),
+('先入觀','선입관','preconception,preoccupation'),
+('先天的','선천적','congenital,inborn,innate'),
+('先生','선생','master,teacher'),
+('先驅者','선구자','forerunner,harbinger,pioneer'),
+('光學','광학','optic,optics'),
+('免許','면허','license,permit'),
+('免除','면제','acquit,release'),
+('入場','입장','admission,entrance'),
+('入札','입찰','bid,bidding'),
+('內包','내포','comprehension,connotation'),
+('內容','내용','content,matter'),
+('內部','내부','inside,interior'),
+('全盛期','전성기','golden age,heyday'),
+('全體','전체','entirety,whole'),
+('公害','공해','pollution,public nuisance'),
+('公平','공평','fairness,justice'),
+('共生','공생','paragenesis,symbiosis'),
+('共謀者','공모자','confederate,conspirator'),
+('兵器','병기','arm,weapon'),
+('典型的','전형적','archetypal,normal'),
+('再審','재심','retrial,review'),
+('再建','재건','reconstruction,rehabilitation'),
+('再現','재현','reappearance,reproduction'),
+('再生','재생','rebirth,regeneration,reincarnation'),
+('冒險','모험','adventure,risk'),
+('冬眠','동면','hibernation,winter sleep'),
+('冷氣','냉기','chill,cold'),
+('冷淡','냉담','coolness,indifference'),
+('冷靜','냉정','calm,coolness'),
+('凍傷','동상','chilblain,frostbite'),
+('凝視','응시','regard,stare'),
+('出口','출구','exit,outlet,way out'),
+('出席','출석','attendance,presence'),
+('出版','출판','issue,publication'),
+('出現','출현','appearance,arrival'),
+('分割','분할','division,partition'),
+('分散','분산','decentralization,dispersion'),
+('分裂','분열','disrupt,division'),
+('分解','분해','analysis,disassembly'),
+('分離','분리','detachment,isolation,segregation,separation'),
+('切斷','절단','cut,cutting,section'),
+('切迫','절박','imminence,pressure,urgency'),
+('刑法','형법','criminal law,penal code'),
+('刑罰','형벌','penalty,punishment'),
+('判決','판결','decree,sentence'),
+('利權','이권','concession,interest'),
+('利用','이용','use,utilization,utilize'),
+('利益','이익','gain,interest'),
+('制度','제도','institution,system'),
+('制限','제한','limitation,restriction'),
+('刺戟','자극','excitement,impetus,incentive,stimulus'),
+('前線','전선','front,front line'),
+('割引','할인','discount,reduction'),
+('割當','할당','allotment,assignment'),
+('劃一','획일','standardization,uniformity'),
+('加算','가산','add,addition'),
+('勇敢','용감','bravery,gallantry'),
+('勇氣','용기','courage,nerve'),
+('動作','동작','action,motion,movement'),
+('動悸','동계','palpitation,pulsation'),
+('動搖','동요','agitation,commotion,excitement'),
+('勝利','승리','victory,win'),
+('勝利者','승리자','victor,winner'),
+('勞力','노력','effort,endeavor'),
+('勢力','세력','influence,power'),
+('勤勉','근면','diligence,industry'),
+('勳章','훈장','decoration,medal,order'),
+('勸告','권고','counsel,recommendation'),
+('勸誘','권유','invitation,solicitation'),
+('包含','포함','comprehension,implication,inclusion'),
+('包圍','포위','encirclement,envelopment'),
+('匍匐','포복','crawl,creep,creeping'),
+('化石','화석','fossil,petrifaction'),
+('化身','화신','incarnation,personification'),
+('區分','구분','demarcation,section,sorting'),
+('區別','구별','differentiation,distinction'),
+('協議','협의','conference,consultation'),
+('博愛','박애','charity,humanity,philanthropy'),
+('博覽會','박람회','exhibition,fair'),
+('占領','점령','capture,occupation'),
+('危險','위험','danger,hazard,peril'),
+('卵子','난자','egg cell,ovule,ovum'),
+('原因','원인','cause,source'),
+('原型','원형','model,prototype'),
+('原形質','원형질','plasma,protoplasm'),
+('友情','우정','fellowship,friendship'),
+('反亂','반란','mutiny,rebellion,uprising'),
+('反對','반대','objection,opposition,resistance,reverse'),
+('反對者','반대자','dissenter,objector,opposer'),
+('反復','반복','repeat,repetition'),
+('反感','반감','antipathy,revolt'),
+('反應','반응','reaction,response'),
+('反抗','반항','defiance,resistance,revolt'),
+('反逆','반역','revolt,treachery'),
+('反逆者','반역자','rebel,traitor'),
+('反響','반향','echo,resound,reverberate,reverberation'),
+('取扱','취급','handling,management'),
+('受難','수난','passion,suffering'),
+('口錢','구전','brokerage,commission'),
+('可燃物','가연물','combustible,inflammable'),
+('可能性','가능성','likelihood,possibility,potentiality'),
+('合同','합동','incorporation,union'),
+('合成','합성','composition,compound,synthesis'),
+('同情','동정','commiserate,pity,sympathy'),
+('同意','동의','agreement,consent'),
+('同盟','동맹','alliance,league'),
+('同胞','동포','brethren,compatriot,fellowman'),
+('名譽','명예','credit,honor'),
+('向上','향상','elevation,improvement,rise'),
+('否定','부정','denial,negation'),
+('否認','부인','denial,disapproval,negation,repudiation'),
+('含蓄','함축','connotation,implication'),
+('告訴','고소','accusation,complaint'),
+('周圍','주위','circumference,surrounding'),
+('周邊','주변','circumference,outskirts'),
+('呪文','주문','charm,incantation,spell'),
+('味覺','미각','palate,taste'),
+('呼吸','호흡','breath,respiration'),
+('命令','명령','command,dictate,enjoin,instruction,order,prescribe,require'),
+('和合','화합','concord,harmony,union'),
+('和解','화해','accommodation,compromise,mediation,reconciliation'),
+('哀悼','애도','condolence,regret'),
+('哀願','애원','appeal,petition'),
+('唯心論','유심론','idealism,mentalism,spiritualism'),
+('商人','상인','merchant,trader'),
+('商品','상품','commodity,good,goods,merchandise'),
+('商業','상업','commerce,trade'),
+('喪失','상실','forfeit,loss'),
+('嗜好','기호','liking,taste'),
+('嘲弄','조롱','mockery,ridicule'),
+('噴霧器','분무기','atomizer,sprayer'),
+('嚴肅','엄숙','austerity,gravity,solemnity'),
+('回廊','회랑','corridor,gallery'),
+('回復','회복','restoration,return'),
+('回歸','회귀','recursion,revolution'),
+('回轉','회전','revolution,turning'),
+('回避','회피','avoid,evasion'),
+('固執','고집','insistence,persistence'),
+('國家','국가','country,state'),
+('國民','국민','citizen,people'),
+('圓-','원주','column,cylinder'),
+('圖表','도표','chart,diagram,graph'),
+('地域','지역','area,region'),
+('地方','지방','area,district'),
+('均衡','균형','balance,equilibrium'),
+('執事','집사','butler,deacon,steward'),
+('培養','배양','cultivation,culture'),
+('基礎','기초','basis,foundation'),
+('報告','보고','information,report'),
+('報道','보도','information,report'),
+('報酬','보수','remuneration,reward'),
+('墮落','타락','corruption,degradation,depravity'),
+('壓倒','압도','overcome,overmaster,overpower,overwhelm,whelm'),
+('壓力','압력','pressure,stress'),
+('壓迫','압박','oppression,pressure'),
+('外債','외채','foreign debt,foreign loan'),
+('外觀','외관','appearance,exterior,facade'),
+('夢想','몽상','dream,reverie'),
+('夢遊病','몽유병','sleepwalking,somnambulism'),
+('夢遊病者','몽유병자','noctambulist,sleepwalker'),
+('大團圓','대단원','denouement,finale'),
+('大望','대망','ambition,aspiration'),
+('大砲','대포','artillery,gun'),
+('天國','천국','heaven,paradise'),
+('天才','천재','genius,prodigy'),
+('天然痘','천연두','smallpox,variola'),
+('天職','천직','calling,vocation'),
+('夫婦','부부','couple,pair,spouse'),
+('失踪','실종','abscondence,disappearance'),
+('奉仕','봉사','serve,service'),
+('契約','계약','agreement,compact,contract,covenant'),
+('奧地','오지','backwoods,hinterland,interior'),
+('女店員','여점원','saleswoman,shopgirl'),
+('女給','여급','hostess,waitress'),
+('妖精','요정','fairy,sprite'),
+('妨害','방해','hindrance,interference,obstruction'),
+('委任','위임','commission,consign,entrust'),
+('委託','위탁','commit,trust'),
+('姿勢','자세','attitude,posture'),
+('子孫','자손','descendant,offspring,posterity'),
+('子宮','자궁','uterus,womb'),
+('子葉','자엽','cotyledon,seed leaf'),
+('學園','학원','academy,campus'),
+('宇宙','우주','space,universe'),
+('安全','안전','safety,security'),
+('完了','완료','close,completion'),
+('完成','완성','complete,completion,finish,perfection'),
+('定理','정리','proposition,theorem'),
+('宣告','선고','pronouncement,sentence'),
+('宣言','선언','declaration,proclamation'),
+('家畜','가축','domestic animal,livestock'),
+('家禽','가금','fowl,poultry'),
+('容器','용기','container,vessel'),
+('容積','용적','capacity,volume'),
+('容貌','용모','feature,look'),
+('宿命','숙명','fate,predestination'),
+('密告者','밀고자','rat,squealer'),
+('實例','실례','example,illustration'),
+('實在','실재','existence,reality'),
+('實體','실체','entity,substance'),
+('射手','사수','archer,shooter'),
+('尊敬','존경','esteem,honor,regard,respect,revere,reverence'),
+('尊重','존중','esteem,regard,respect'),
+('對照','대조','antithesis,comparison,contrast'),
+('對立','대립','confrontation,opposition'),
+('對話','대화','conversation,dialogue'),
+('尺度','척도','linear measure,scale'),
+('居住者','거주자','dweller,inhabitant,occupier,resident'),
+('展望','전망','outlook,view'),
+('展示','전시','display,exhibition'),
+('履行','이행','discharge,implementation'),
+('屬領','속령','dependency,possession'),
+('山賊','산적','bandit,brigand'),
+('崇拜','숭배','adoration,worship'),
+('工場','공장','factory,workshop'),
+('左遷','좌천','degradation,demotion'),
+('差別','차별','discrimination,distinction'),
+('市場','시장','market,marketplace'),
+('平價','평가','par,parity'),
+('平衡','평형','counterpoise,equilibrium'),
+('年金','연금','annuity,pension'),
+('年齡','연령','age,year'),
+('幸福','행복','blessedness,happiness'),
+('幸運','행운','fortune,good luck'),
+('幹線','간선','main line,trunk line'),
+('幻像','환상','illusion,phantom,vision'),
+('幻影','환영','illusion,phantom,vision'),
+('幼兒','유아','child,infant'),
+('幼年','유년','childhood,infancy'),
+('幽閉','유폐','confinement,imprisonment,incarceration'),
+('幽靈','유령','apparition,ghost,phantom,specter'),
+('店員','점원','clerk,shop assistant'),
+('廢棄','폐기','repeal,scrap'),
+('廢止','폐지','abolition,rescind,revoke'),
+('延長','연장','elongation,extension,prolongation'),
+('引用','인용','citation,quotation'),
+('彫刻','조각','carving,engraving,grave,sculpture'),
+('影響','영향','effect,influence'),
+('役割','역할','part,role'),
+('後悔','후회','regret,repent,repentance'),
+('後援','후원','patronage,patronize'),
+('後繼者','후계자','heir,replacement'),
+('徒黨','도당','cabal,faction'),
+('復歸','복귀','comeback,return'),
+('循環','순환','circulation,cycle'),
+('徵候','징후','sign,symptom'),
+('忿怒','분노','exasperation,resentment'),
+('急迫','급박','imminence,urgency'),
+('性質','성질','disposition,nature'),
+('恐怖','공포','dread,terror'),
+('恥辱','치욕','disgrace,shame'),
+('恩惠','은혜','benefit,grace'),
+('情報','정보','information,intelligence'),
+('惡化','악화','aggravation,degeneration,deterioration'),
+('惡寒','오한','ague,chill'),
+('惡意','악의','ill will,malice,spite'),
+('惡漢','악한','crook,rascal,ruffian,villain'),
+('惡用','악용','abuse,perversion'),
+('惡魔','악마','demon,devil,fiend'),
+('惡黨','악당','rascal,scoundrel'),
+('想像','상상','imagination,imagine,suppose,think'),
+('想起','상기','recollection,remember'),
+('意向','의향','inclination,intention'),
+('意味','의미','meaning,significance'),
+('意識','의식','consciousness,sense'),
+('愛人','애인','lover,mistress'),
+('愛情','애정','affection,love'),
+('愼重','신중','discretion,prudence'),
+('慈悲','자비','charity,mercy'),
+('態度','태도','attitude,manner'),
+('慰安','위안','comfort,solace'),
+('憐愍','연민','mercy,pity'),
+('憤慨','분개','indignation,resentment'),
+('懺悔','참회','penitence,repentance'),
+('戀人','연인','lover,sweetheart'),
+('成功','성공','hit,make,success'),
+('成熟','성숙','maturity,ripeness'),
+('戰鬪','전투','battle,combat,fight'),
+('所有者','소유자','owner,possessor,proprietor'),
+('所願','소원','desire,wish'),
+('手淫','수음','masturbation,onanism'),
+('扶養','부양','support,sustain'),
+('批准','비준','ratification,ratify'),
+('批評','비평','criticism,review'),
+('承認','승인','acknowledgement,recognition'),
+('技巧','기교','finesse,technique'),
+('抑揚','억양','inflection,modulation'),
+('抑留','억류','detention,internment'),
+('抱擁','포옹','clinch,embrace'),
+('抵抗','저항','opposition,resistance'),
+('拍子','박자','tempo,time'),
+('拒否','거부','denial,refusal,veto'),
+('拒絶','거절','refusal,rejection'),
+('拔萃','발췌','excerpt,extract,selection'),
+('拘束','구속','restraint,restriction'),
+('拷問','고문','rack,torture'),
+('指名','지명','appoint,designate,name'),
+('指揮','지휘','command,direction'),
+('指揮者','지휘자','conductor,director'),
+('指示','지시','indication,instruction'),
+('按摩','안마','knead,massage'),
+('挑戰','도전','challenge,defiance'),
+('挫折','좌절','frustration,setback'),
+('振動','진동','oscillation,vibration'),
+('授與','수여','award,grant'),
+('採用','채용','adopt,embrace,espouse,take'),
+('探究','탐구','explore,question,research'),
+('接觸','접촉','contact,touch'),
+('推理','추리','inference,reasoning'),
+('掩護','엄호','cover,covering'),
+('描寫','묘사','depiction,description,picture,portrayal'),
+('提案','제안','proposal,proposition,suggestion'),
+('損害','손해','damage,injury,loss'),
+('撤回','철회','countermand,repeal'),
+('播種','파종','planting,seeding'),
+('操縱','조종','handling,manipulate'),
+('擦過傷','찰과상','abrasion,scratch'),
+('擴大','확대','enlargement,magnification'),
+('擴張','확장','expansion,extension'),
+('支出','지출','expenditure,expense'),
+('支持','지지','support,sustain'),
+('支援','지원','backing,support'),
+('支柱','지주','brace,prop'),
+('支配人','지배인','executive,manager'),
+('收益','수익','proceeds,return'),
+('收穫','수확','harvest,ingathering,reap'),
+('收縮','수축','constriction,contraction'),
+('改善','개선','betterment,improvement'),
+('改譯','개역','retranslation,revision'),
+('改革','개혁','reform,reformation'),
+('放出','방출','discharge,expel'),
+('放射','방사','emission,radiation'),
+('放牧','방목','grazing,pasture'),
+('放蕩','방탕','dissipation,prodigality'),
+('政治家','정치가','politician,statesman'),
+('救援','구원','relief,rescue'),
+('救濟','구제','relief,salvation'),
+('敬意','경의','regard,respect'),
+('敵對','적대','antagonism,hostility,opposition'),
+('敷衍','부연','amplification,expatiation'),
+('文書','문서','document,writing'),
+('料金','요금','charge,fare,fee'),
+('斷片','단편','fragment,shred'),
+('方向','방향','course,direction,way'),
+('方式','방식','form,method,system'),
+('方法','방법','manner,method,way'),
+('方眼紙','방안지','graph paper,section paper'),
+('旅行','여행','travel,trip'),
+('旋回','선회','revolution,rotation,turning'),
+('日射病','일사병','heatstroke,sunstroke'),
+('明滅','명멸','blinking,flickering'),
+('昏睡','혼수','lethargy,stupor'),
+('時代','시대','era,period'),
+('普及','보급','diffusion,spread'),
+('普通','보통','generally,ordinarily,usually'),
+('暗殺者','암살자','assassin,assassinator'),
+('暗號','암호','code,password'),
+('暴動','폭동','insurrection,rebellion,revolt,riot,uprising'),
+('暴君','폭군','despot,tyrant'),
+('暴露','폭로','disclosure,exposure,revelation'),
+('暴風','폭풍','gale,windstorm'),
+('曲藝','곡예','acrobatic,acrobatics'),
+('書法','서법','calligraphy,penmanship'),
+('書記','서기','clerk,secretary'),
+('最初','최초','first,outset'),
+('會議','회의','assembly,conference,council'),
+('服從','복종','obedience,resignation,submission'),
+('期待','기대','expectation,hope'),
+('期間','기간','period,term'),
+('本源','본원','principle,root'),
+('材木','재목','lumber,timber'),
+('束縛','속박','binding,restraint,restriction'),
+('果糖','과당','fructose,fruit sugar'),
+('柔弱','유약','effeminacy,weakness'),
+('根據','근거','basis,foundation'),
+('根源','근원','root,source'),
+('栽培','재배','cultivation,culture'),
+('條約','조약','pact,treaty'),
+('極端','극단','extreme,extremity'),
+('極致','극치','culmination,perfection'),
+('構內','구내','campus,premise'),
+('構成','구성','composition,organization'),
+('槪念','개념','concept,notion'),
+('標本','표본','example,specimen'),
+('標語','표어','catchword,motto'),
+('模型','모형','dummy,model'),
+('模範','모범','example,exemplar,exemplum,model'),
+('樣式','양식','pattern,style'),
+('橋頭堡','교두보','beachhead,bridgehead'),
+('機會','기회','chance,opportunity'),
+('機構','기구','mechanism,organization'),
+('機能','기능','faculty,function'),
+('機關車','기관차','engine,locomotive'),
+('權力','권력','authority,power'),
+('歡迎','환영','reception,welcome'),
+('正比例','정비례','direct proportion,direct ratio'),
+('正義','정의','justice,right,righteousness'),
+('正面','정면','facade,frontage'),
+('武力','무력','force,sword'),
+('武器','무기','arm,weapon'),
+('歸還','귀환','repatriation,return'),
+('死亡','사망','death,decease'),
+('死刑','사형','capital punishment,death penalty'),
+('殘餘','잔여','remainder,residue,rest'),
+('殘骸','잔해','ruin,wreckage'),
+('殺人者','살인자','killer,manslayer,murderer'),
+('殺到','쇄도','flood,inundate,rush'),
+('殺菌','살균','disinfection,sterilization'),
+('比率','비율','proportion,ratio'),
+('民族','민족','nation,race'),
+('氣質','기질','character,temperament'),
+('水腫','수종','dropsy,edema'),
+('水路','수로','channel,waterway'),
+('水門','수문','sluice gate,water gate'),
+('汚名','오명','infamy,stigma'),
+('汚染','오염','contamination,pollution'),
+('汚點','오점','blot,stain'),
+('決心','결심','determination,resolve'),
+('治世','치세','reign,rule'),
+('法','법','a law, the law,a way, a method'),
+('注文','주문','bespeak,order'),
+('洗練','세련','polish,refine'),
+('活動','활동','action,activity'),
+('活氣','활기','energy,liveliness'),
+('流入','유입','afflux,influx'),
+('流星','유성','falling star,meteor'),
+('流産','유산','abortion,miscarriage'),
+('浪費','낭비','extravagance,waste'),
+('海賊','해적','pirate,sea robber'),
+('浸水','침수','inundate,inundation'),
+('浸蝕','침식','corrosion,erosion'),
+('消毒','소독','disinfection,sterilization'),
+('淨化','정화','cleanup,purification'),
+('混亂','혼란','confusion,disorder'),
+('減少','감소','decrease,reduction'),
+('準備','준비','preparation,provision'),
+('溶劑','용제','flux,solvent'),
+('滅亡','멸망','destruction,downfall,ruin'),
+('漂流','표류','drift,float'),
+('潛伏','잠복','ambush,concealment,lurk'),
+('潮流','조류','tidal current,tide'),
+('濕氣','습기','dampness,humidity,moisture'),
+('濾過器','여과기','filter,strainer'),
+('火夫','화부','fireman,stoker'),
+('火炎','화염','blaze,flame'),
+('災難','재난','calamity,misfortune'),
+('烽火','봉화','beacon,rocket'),
+('無秩序','무질서','chaos,disorder'),
+('熱中','열중','enthusiasm,zeal'),
+('熱心','열심','enthusiasm,zeal'),
+('爆發','폭발','eruption,explosion'),
+('牧草','목초','grass,pasture'),
+('物品','물품','article,goods'),
+('牽制','견제','contain,diversion'),
+('犯罪者','범죄자','criminal,culprit'),
+('狂犬病','광견병','hydrophobia,rabies'),
+('獨裁者','독재자','autocrat,despot,dictator'),
+('獸姦','수간','bestiality,sodomy'),
+('獻身','헌신','dedication,devotion'),
+('王位','왕위','crown,throne'),
+('王冠','왕관','crown,diadem'),
+('現代','현대','modern times,nowadays'),
+('現金','현금','cash,ready money'),
+('球體','구체','globe,orb,sphere'),
+('生存','생존','being,existence'),
+('生産者','생산자','manufacturer,producer'),
+('生計','생계','livelihood,living'),
+('産出','산출','afford,yield'),
+('甲殼','갑각','carapace,crust'),
+('申請','신청','application,request'),
+('異議','이의','dissent,objection,protest'),
+('疑問','의문','doubt,problem'),
+('疑心','의심','distrust,doubt,question,suspect,suspicion'),
+('痲痺','마비','palsy,paralysis'),
+('登記','등기','registration,registry'),
+('發火','발화','firing,ignition'),
+('發狂','발광','craziness,rage'),
+('發生','발생','incidence,occurrence'),
+('發疹','발진','eruption,rash'),
+('發表','발표','announcement,publication'),
+('發見者','발견자','discoverer,finder'),
+('發達','발달','development,growth'),
+('白熱','백열','incandescence,white heat'),
+('監督','감독','control,superintendence,supervision'),
+('監視','감시','observation,surveillance'),
+('目標','목표','mark,objective,target'),
+('目的','목적','intention,purpose'),
+('相續','상속','inheritance,succession'),
+('看板','간판','sign,signboard'),
+('眞實性','진실성','authenticity,credibility'),
+('矛盾','모순','contradiction,inconsistency'),
+('知識','지식','information,knowledge'),
+('矯正','교정','correction,rectify,remedy'),
+('石工','석공','mason,stonemason'),
+('石油','석유','oil,petroleum'),
+('石炭酸','석탄산','carbolic acid,phenol'),
+('砲火','포화','fire,gunfire'),
+('砲術','포술','artillery,gunnery'),
+('破壞者','파괴자','destroyer,waster'),
+('破片','파편','fragment,splinter'),
+('碑文','비문','epigraph,inscription'),
+('確信','확신','confidence,conviction'),
+('確認','확인','check,confirmation'),
+('磁器','자기','china,porcelain'),
+('礎石','초석','cornerstone,foundation stone'),
+('祝賀','축하','celebration,congratulation'),
+('禁止','금지','ban,prohibition'),
+('禁酒','금주','abstinence,temperance'),
+('禮儀','예의','courtesy,etiquette'),
+('秩序','질서','method,regularity'),
+('程度','정도','degree,grade'),
+('種別','종별','assortment,classification'),
+('種族','종족','family,tribe'),
+('種痘','종두','inoculation,vaccination'),
+('種類','종류','category,kind,variety'),
+('種馬','종마','stallion,studhorse'),
+('積載','적재','carrying,lading'),
+('空氣','공기','air,atmosphere'),
+('突出','돌출','projection,protrusion'),
+('立場','입장','position,situation,standpoint'),
+('競技','경기','contest,game'),
+('競爭者','경쟁자','competition,competitor,rival'),
+('筆名','필명','pen name,pseudonym'),
+('筋肉','근육','muscle,sinew'),
+('策士','책사','machinator,tactician'),
+('節酒','절주','sobriety,temperance'),
+('範圍','범위','extent,range'),
+('粘液','점액','mucilage,mucus,phlegm'),
+('精力','정력','energy,vigor'),
+('精神','정신','mind,soul,spirit'),
+('系圖','계도','genealogy,pedigree'),
+('系統','계통','ancestry,system'),
+('約定','약정','contract,stipulation'),
+('紙幣','지폐','note,paper money'),
+('紛爭','분쟁','dispute,trouble'),
+('素朴','소박','naivete,simplicity'),
+('紹介','소개','intro,introduction'),
+('終局','종국','conclusion,finale'),
+('結合','결합','combination,combine'),
+('結果','결과','consequence,result'),
+('絞殺','교살','hanging,strangulation'),
+('絶壁','절벽','cliff,precipice'),
+('絶頂','절정','climax,summit'),
+('經典','경전','scripture,sutra'),
+('經營','경영','administration,management'),
+('經營者','경영자','manager,proprietor'),
+('織物','직물','fabric,textile'),
+('繼承','계승','accession,succession'),
+('缺乏','결핍','shortage,want'),
+('缺點','결점','defect,fault,weakness'),
+('群衆','군중','crowd,mob,throng'),
+('義務','의무','duty,responsibility'),
+('習慣','습관','custom,habit'),
+('考案','고안','contrive,device,project'),
+('耕作','경작','cultivation,culture'),
+('聖職','성직','holy orders,ministry'),
+('聯盟','연맹','federation,league'),
+('肥滿','비만','fatness,obesity'),
+('肩章','견장','epaulet,shoulder strap'),
+('背信','배신','betrayal,infidelity'),
+('能力','능력','ability,faculty'),
+('脅迫','협박','menace,threat'),
+('脈拍','맥박','pulsation,pulse'),
+('膝蓋骨','슬개골','kneecap,patella'),
+('膽力','담력','courage,nerve'),
+('自我','자아','ego,self'),
+('自由','자유','freedom,liberty'),
+('自發的','자발적','spontaneous,voluntary,volunteer'),
+('自警團','자경단','vigilance committee,vigilante corps'),
+('致命的','치명적','fatal,lethal'),
+('興奮','흥분','agitation,excitement,stimulation'),
+('航海','항해','navigate,voyage'),
+('艦隊','함대','armada,fleet'),
+('花被','화피','floral envelope,perianth'),
+('芳香','방향','aroma,fragrance,perfume'),
+('苗床','묘상','nursery,seedbed'),
+('苗木','묘목','sapling,seedling'),
+('若干','약간','some, a little,somewhat'),
+('苦惱','고뇌','agony,anguish'),
+('苦痛','고통','agony,pain'),
+('苦行','고행','mortification,penance'),
+('荒野','황야','wild,wilderness'),
+('萎縮','위축','atrophy,contraction'),
+('萬','만','10000,one thousand'),
+('落膽','낙담','dejection,despondency,discouragement'),
+('蓄積','축적','accumulation,fund'),
+('藥學','약학','pharmaceutics,pharmacy'),
+('處女','처녀','maiden,virgin'),
+('處理','처리','disposal,disposition,treatment'),
+('蟯蟲','요충','pinworm,threadworm'),
+('行列','행렬','line,procession'),
+('行動','행동','action,behave,conduct'),
+('行商','행상','peddle,vend'),
+('行爲','행위','act,deed'),
+('行進','행진','march,process'),
+('街路','가로','avenue,street'),
+('衝突','충돌','collision,conflict'),
+('表現','표현','expression,presentation'),
+('衰弱','쇠약','breakdown,debility'),
+('裁定','재정','award,ruling'),
+('裝置','장치','apparatus,installation'),
+('裝飾','장식','decorate,embellish,ornament'),
+('製作','제작','fabricate,manufacture,production'),
+('複葉','복엽','biplane,compound leaf'),
+('複製','복제','duplication,reproduction'),
+('褐炭','갈탄','brown coal,lignite'),
+('要塞','요새','fortification,stronghold'),
+('規則','규칙','regulation,rule'),
+('觀念','관념','idea,notion'),
+('解放','해방','emancipation,liberate,liberation,release'),
+('解散','해산','breakup,dissolution'),
+('解決','해결','settlement,solution'),
+('解釋','해석','explanation,interpretation'),
+('觸手','촉수','feeler,tentacle'),
+('觸角','촉각','antenna,feeler'),
+('訂正','정정','correction,revision'),
+('計略','계략','stratagem,trick'),
+('討論','토론','debate,discussion'),
+('記事','기사','account,article,report'),
+('記念','기념','commemoration,memory'),
+('記憶','기억','memory,remembrance'),
+('記章','기장','badge,insignia,medal'),
+('訪問','방문','call,see,visit'),
+('訪問者','방문자','visitant,visitor'),
+('設立','설립','foundation,institution'),
+('設計','설계','design,plan'),
+('註釋','주석','annotation,comment,commentary'),
+('詐欺','사기','fraud,swindle'),
+('評價','평가','estimation,evaluation,valuation'),
+('評判','평판','fame,reputation'),
+('評論','평론','criticism,critique'),
+('試練','시련','probation,trial'),
+('試驗','시험','examination,examine,prove'),
+('詭辯','궤변','sophism,sophistry'),
+('誇示','과시','display,ostentation'),
+('認識','인식','cognizance,recognition'),
+('誘惑','유혹','allurement,entice,tempt'),
+('語彙','어휘','glossary,vocabulary'),
+('語調','어조','accent,note'),
+('誠意','성의','good faith,sincerity'),
+('調味','조미','flavoring,seasoning'),
+('調味料','조미료','condiment,seasoning'),
+('調整','조정','adjustment,regulation'),
+('調査','조사','examination,inquiry,investigation,probe,research,survey'),
+('調節','조절','adjustment,regulation'),
+('請求','청구','ask,claim,demand,request'),
+('論爭者','논쟁자','controversialist,disputant'),
+('論評','논평','notice,remark'),
+('證據','증거','evidence,proof'),
+('證明','증명','proof,verification'),
+('議會','의회','congress,parliament'),
+('譴責','견책','reprimand,reproof'),
+('變形','변형','deformation,metamorphosis,transformation,variety'),
+('變種','변종','mutation,variety'),
+('變遷','변천','change,transition,vicissitude'),
+('豊富','풍부','abundance,plenty,wealth'),
+('豫定','예정','program,schedule'),
+('豫示','예시','betoken,foreshadow,prefigure'),
+('豫約','예약','booking,subscription'),
+('豫言','예언','predict,prediction,prognosticate,prognostication'),
+('負擔','부담','burden,charge,responsibility'),
+('財源','재원','finance,resource'),
+('財産','재산','asset,fortune,property'),
+('貢獻','공헌','contribution,service'),
+('販路','판로','market,outlet'),
+('貪慾','탐욕','avarice,greed'),
+('貫通','관통','penetrate,pierce'),
+('責任','책임','duty,responsibility'),
+('貯藏','저장','preservation,storage'),
+('貴族','귀족','aristocrat,noble'),
+('買收','매수','buy,corruption'),
+('費用','비용','cost,expense'),
+('資料','자료','data,material'),
+('賞品','상품','prize,trophy'),
+('賠償','배상','compensation,indemnity,reparation'),
+('賣上高','매상고','proceed,proceeds,sale'),
+('質問','질문','inquiry,interrogate,query,question'),
+('起原','기원','origin,rise'),
+('趣味','취미','hobby,taste'),
+('跳躍','도약','leap,skip,spring'),
+('軍隊','군대','army,troop'),
+('軟膏','연고','ointment,salve'),
+('輸卵管','수란관','Fallopian tube,oviduct'),
+('輸送','수송','transport,transportation'),
+('辨護','변호','advocacy,defense,pleading'),
+('辯髮','변발','pigtail,queue'),
+('迷妄','미망','delusion,illusion'),
+('迷路','미로','labyrinth,maze'),
+('追憶','추억','recollection,reminiscence'),
+('追放','추방','banishment,exile'),
+('追跡','추적','chase,pursuit'),
+('逃亡者','도망자','fugitive,runaway'),
+('逃避','도피','escape,evasion'),
+('通信','통신','communication,correspondence'),
+('速度','속도','rate,speed,velocity'),
+('連累','연루','complicity,implication,involvement'),
+('連續的','연속적','consecutive,continuing'),
+('遂行','수행','accomplishment,execution'),
+('運河','운하','canal,waterway'),
+('過多','과다','excess,superabundance'),
+('過度','과도','excess,immoderation'),
+('道具','도구','implement,tool'),
+('道標','도표','guide,signpost'),
+('違反','위반','breach,infract'),
+('適應','적응','accommodation,adaptation'),
+('選擇權','선택권','choice,option'),
+('遺産','유산','bequest,inheritance'),
+('遺言者','유언자','testate,testator'),
+('郊外','교외','outskirts,suburb'),
+('部','부','a department, a part,department, ministry'),
+('部分','부분','part,portion'),
+('酵母','효모','leaven,yeast'),
+('醫師','의사','doctor,physician'),
+('釋放','석방','acquittal,liberate,release'),
+('野營','야영','bivouac,camping'),
+('野砲','야포','field artillery,field gun'),
+('鎭靜','진정','appeasement,pacification'),
+('鐘樓','종루','belfry,bell tower'),
+('鑛脈','광맥','reef,streak'),
+('長官','장관','chief,secretary'),
+('閃光','섬광','flash,glint'),
+('閉鎖','폐쇄','closing,closure'),
+('開始','개시','beginning,commence,commencement'),
+('開拓者','개척자','pioneer,settler'),
+('關心','관심','concern,interest'),
+('防止','방지','check,prevention'),
+('降雨','강우','rain,rainfall'),
+('限定','한정','restrict,restriction'),
+('限界','한계','bound,limit'),
+('除名','제명','excommunication,expulsion'),
+('除外','제외','exception,exclusion'),
+('隆起','융기','protuberance,rise'),
+('階級','계급','grade,rank'),
+('隱退','은퇴','retirement,seclusion'),
+('雅量','아량','magnanimity,tolerance'),
+('集合','집합','assembly,gathering'),
+('雇傭','고용','employ,engage,hire'),
+('靈魂','영혼','soul,spirit'),
+('面','면','side,subdivision of a county'),
+('音色','음색','timbre,tone quality'),
+('頂上','정상','summit,top'),
+('順序','순서','order,sequence'),
+('預言者','예언자','prophet,seer'),
+('領域','영역','area,domain,region'),
+('頭腦','두뇌','brain,head'),
+('類人猿','유인원','anthropoid,troglodyte'),
+('風潮','풍조','current,tide'),
+('食糧','식량','provision,ration'),
+('飼料','사료','feed,fodder'),
+('飽滿','포만','satiety,surfeit'),
+('養殖','양식','cultivation,culture'),
+('餘地','여지','margin,place,room'),
+('餘裕','여유','margin,room'),
+('騎手','기수','horseman,rider'),
+('騰貴','등귀','climb,rise'),
+('體格','체격','constitution,physique'),
+('體裁','체재','format,style'),
+('高原','고원','plateau,tableland'),
+('高度','고도','altitude,height'),
+('鬪爭','투쟁','conflict,strife'),
+('魅力','매력','charm,glamour'),
+('魅惑','매혹','bewitch,captivation,charm,enchant,fascinate,fascination'),
+('魔法','마법','magic,sorcery,witchcraft'),
+('默殺','묵살','shelve,smother'),
+('點','점','a spot, a blemish,store'),
+('不足','부족','be short of, lack,lack, want (scarcity, insufficiency)'),
+('主要','주요','chief, main, essential,to be chief, principal, leading'),
+('乾燥','건조','dryness, aridity,dry, arid'),
+('人事','인사','greetings,to greet, say hello'),
+('仔細','자세','in detail,be detailed'),
+('付託','부탁','ask sb a favor,request, favor'),
+('代身','대신','instead of,relieve, replace another'),
+('作成','작성','to edit, compose, write up,compile, draw up, prepare, fill in/out'),
+('便','편','untroubled from cares,easily, comfortably'),
+('傳','전','to transmit, convey,to be transmitted'),
+('優勝','우승','first place,to take first place'),
+('克服','극복','to overcome; surmount,conquest, subjugation'),
+('入力','입력','input,to input (data into the computer)'),
+('入社','입사','enter/join a company,to join a company'),
+('入院','입원','hospitalization,to enter a hospital'),
+('公演','공연','a public performance,to give a public performance, to put on a play,perform'),
+('公開','공개','opening to the public, making public,open to the public'),
+('出勤','출근','go to work,to go to work'),
+('出演','출연','appear on stage, act, sing,going on stage'),
+('分明','분명','to be clear/obvious,obviously,obviousness,to become clear'),
+('判斷','판단','a judgment, a conclusion,to make a conclusion'),
+('募集','모집','collection,call/appeal for'),
+('匹敵','필적','equal,touch'),
+('卒業','졸업','to graduate,graduation'),
+('參席','참석','to attend, take part in,attendance, participation'),
+('反省','반성','reflection,introspection, self-examination'),
+('取消','취소','to cancel, call off, take back, retract,cancellation'),
+('可能','가능','to be possible,possibility'),
+('合格','합격','to pass an exam,pass an examination'),
+('增加','증가','increase,rise,grow,an increase, augmentation'),
+('外出','외출','go out,to go out'),
+('多幸','다행','good luck,fortunately'),
+('失手','실수','a mistake,to make a mistake'),
+('失禮','실례','rudeness, impolite,to be impolite'),
+('如前','여전','as it used to be, as before; still, persistently, even still,be unchanged, the same as before'),
+('妊娠','임신','pregnant,to be pregnant'),
+('始作','시작','to start, begin,to begin, to start,the beginning'),
+('孝道','효도','filial piety, to be devoted to one''s parents,to serve one''s parents'),
+('安寧','안녕','to say hello,peacefully,hello/goodbye'),
+('宏壯','굉장','very much, greatly,wonderful, great, marvelous, awesome'),
+('定','정','to set,determine,to be determined, settled'),
+('容恕','용서','to pardon, to forgive, absolve,pardon, forgiveness'),
+('寄與','기여','contribute, add to,contribution'),
+('實施','실시','to enforce,put into effect,execution, enforcement,to be enforced'),
+('實踐','실천','practice,to put sth into practice'),
+('專攻','전공','major, specialty,to major in sth'),
+('對','대','face, confront,versus; a pair, counterpart'),
+('對備','대비','provide for, prepare onself for,be ready for, provision, preparation'),
+('對答','대답','to answer, reply,an answer'),
+('工夫','공부','study,to study'),
+('延期','연기','postponement, deferment,put off, postpone,to be put off, postponed'),
+('强力','강력','to be strong, powerful,strongly, firmly, resolutely'),
+('强調','강조','place empasis upon,emphasis, stress'),
+('待接','대접','treatment,reception, treatment'),
+('徹底','철저','thoroughness, cleanliness,thoroughly'),
+('必要','필요','to need,need, requirement,necessity'),
+('慰勞','위로','to console, cheer sb up,consolation, solace'),
+('成立','성립','to be concluded, formed,to exist, to come into being'),
+('所有','소유','possession,to possess, hold, own'),
+('所聞','소문','a rumor,a rumor'),
+('所重','소중','to be important, valuable,seriously, with care'),
+('招待','초대','to invite,an invitation'),
+('招請','초청','an invitation,to invite'),
+('指摘','지적','pointing out, indication,to be pointed out to,to indicate, point out'),
+('提議','제의','a proposal, an offer,make a suggestion'),
+('操心','조심','to be careful,cautious'),
+('支給','지급','to provide, pay, allow, provision,supply, pay'),
+('攻擊','공격','attack,to attack'),
+('斟酌','짐작','to guess, infer,guess, assumption, conjecture'),
+('有名','유명','to be famous,famous, well-known, renowned'),
+('標示','표시','a sign, signal,sign, mark, indicate'),
+('歸國','귀국','to return to one''s home country,returning to one''s home country'),
+('歸家','귀가','to return home,returning home'),
+('治療','치료','medical treatment, medical care,to cure, heal, treat a patient'),
+('活潑','활발','be lively, sprightly,briskly, actively,intensify'),
+('活用','활용','utilize, make practical use of,practical use'),
+('深刻','심각','to be serious, grave,to get serious'),
+('演出','연출','production, presentation,produce, direct (a play or musical)'),
+('無理','무리','be unreasonable,to work hard, overdo; impractical'),
+('無關心','무관심','apathy, indifference,be indifferent to'),
+('焦點','초점','focus,a focus, a focal point'),
+('特別','특별','be special, extraordinary,to be special, extraordinary,especially'),
+('犧牲','희생','sacrifice,sacrifice'),
+('獨立','독립','independence,to become independent'),
+('甚','심','to be extreme, intense,intensify, grew worse'),
+('申告','신고','a statement, declaration,to state, declare'),
+('當然','당연','be natural; "of course!",of course'),
+('疲困','피곤','to be very tired, exhausted,fatigue, exhaustion'),
+('發見','발견','to discover,to be discovered,discovery'),
+('發音','발음','pronunciation,pronounce'),
+('相當','상당','fairly, considerably,be proper, suitable,respectable, considerable, suitable'),
+('硏究','연구','research,to research, investigate'),
+('確實','확실','to be sure, certain,certainly, for sure'),
+('祈禱','기도','to pray,a prayer'),
+('移徙','이사','to move (between houses, apartments),to move (between houses or apartments)'),
+('稱讚','칭찬','praide, admiration,to praise, compliment, comment'),
+('答','답','answer, reply,answer'),
+('簡單','간단','to be simple,simply speaking'),
+('純粹','순수','to be pure,purity,genuineness'),
+('膳物','선물','a present, gift,give a gift'),
+('自然','자연','nature,to be natural,naturally'),
+('苦悶','고민','worry,  anguish,be in anguish, worried'),
+('苦生','고생','a hard life; privation,to suffer, to have trials; to do something you do not want to do'),
+('蒐集','수집','to collect,collection'),
+('親','친','to be intimate, familiar, close, friendly,to get close, to get friendly'),
+('觀察','관찰','observe, view, watch,observation, survey'),
+('解消','해소','resolve, alleviate, release,solution, settlement, resolve, relieve, alleviate'),
+('記錄','기록','a record,  a document,to record, write down,to be recorded or written down'),
+('設置','설치','to found, establish, create,establisment, institution,to be established'),
+('許諾','허락','allow, let, approve, consent, agree to,permission, consent, assent, approval'),
+('試圖','시도','to try, attempt,make an attempt, give sth a try'),
+('該當','해당','to be applied, applicable under,to be relevent, applicable (to), fall under,to be applied, applicable under'),
+('說明','설명','to explain,explanation,to be explained'),
+('講義','강의','a lecture, discourse,to give a lecture'),
+('謝過','사과','an apology,to apologize'),
+('議論','의논','to consult, confer with, discuss,consultation, discussion, conference'),
+('讓步','양보','to yield, make a concession,yield, concession, compromise'),
+('豫習','예습','preparation of lessons,to review, prepare lessons, rehearse'),
+('辱','욕','an insult,swear, cuss, insult; abuse'),
+('追加','추가','an addition,to be added'),
+('退勤','퇴근','get off work, leaving the office, return home from work,to go home from work'),
+('退院','퇴원','to leave the hospital,to be discharged from a hospital'),
+('通','통','run, lead; flow; go through,number of emails/written letters (counter)'),
+('通過','통과','passage through,pass through'),
+('進出','진출','an advance,penetrate into, advance, enter, go'),
+('進行','진행','to have progressed, be advanced,progress, advance,advance, proceed'),
+('適用','적용','to apply (sth to sth else),to be applied,application'),
+('選擇','선택','to choose,a choice'),
+('重要','중요','to be important, weighty,important, crucial, significant'),
+('錄音','녹음','to record,recording'),
+('錯覺','착각','hallucination, illusion, mistake a for b,to mistake a for b, illusion, delusion, to be having illucinations'),
+('開放','개방','open, throw open,to open, to throw open,to be opened to the public'),
+('限','한','a limit,limit, restrict'),
+('電話','전화','telephone,to call'),
+('食事','식사','a meal,to eat a meal'),
+('食慾','식욕','appetite,appetite, desire'),
+('駐車','주차','parking,to park (a car)'),
+('體驗','체험','an experience,to experience, to undergo'),
+('高級','고급','high rank; first class,to be high-class'),
+('點心','점심','lunch,lunchtime'),
+('不便','불편','to be unpleasant,inconvenience'),
+('不安','불안','uneasiness, anxiety,to be uneasy, anxious'),
+('不幸','불행','to be unfortunate,unhappiness'),
+('不過','불과','nothing more than,only, not more than'),
+('旅行','여행','trip,to travel'),
+('練習','연습','practice, exercise, to practice, exercise'),
+('連結','연결','connect, attach,connect, attach,connection, linking'),
+('連絡','연락','connection, communication,to contact, get in touch with'),
+('念慮','염려','anxiety, worry,to worry, be anxious about'),
+('料理','요리','cooking,to cook (food)'),
+('流行','유행','trend, vogue, to be popular,to be in fashion, to be popular, to catch on, to break out'),
+('利用','이용','to use, make use of,to use,to be used'),
+('理解','이해','to understand,understanding,to be understood');
