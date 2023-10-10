@@ -297,3 +297,17 @@ export async function getCardsForDeck(
     reviewState: states,
   };
 }
+export async function addCardToDeck(
+  deckName: string,
+  hanja: string,
+  hangul: string
+): Promise<void> {
+  const query = `INSERT INTO tags 
+    (hanja, hangul, name)
+    VALUES
+    ('${hanja}', '${hangul}', '${deckName}') ON CONFLICT DO NOTHING;`;
+  const res = await queryDictionary(query);
+  if (res.error !== undefined) {
+    throw new Error(res.error);
+  }
+}
