@@ -351,15 +351,18 @@ export async function getReviewBatch(
     reviews.easiness_factor as easiness_factor,
     reviews.interval as interval
   FROM tags
-  LEFT JOIN reviews ON
+  LEFT OUTER JOIN reviews ON
     tags.hanja = reviews.hanja AND
     tags.hangul = reviews.hangul
   LEFT JOIN hanjas ON
     hanjas.hanja = tags.hanja AND
     hanjas.hangul = tags.hangul
   WHERE tags.name = '${deckName}'
-    AND (unixepoch(datetime('now')) - unixepoch(reviews.last_reviewed)) / (60.0*60.0*24.0) > reviews.interval;
+    AND ((unixepoch(datetime('now')) - unixepoch(reviews.last_reviewed)) / (60.0*60.0*24.0) > reviews.interval
+      OR reviews.interval IS NULL
+      OR reviews.easiness_factor IS NULL);
   `;
+  console.log(query);
   const res = await queryDictionary(query);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
