@@ -127,6 +127,17 @@ export interface ReviewDump {
   lastReviewed: Array<string>;
 }
 
+export interface TagsDump {
+  hanja: Array<string>;
+  hangul: Array<string>;
+  name: Array<string>;
+}
+
+export interface UserDataDump {
+  reviews: ReviewDump;
+  tags: TagsDump;
+}
+
 export const validateReviewDump = (obj: any): ReviewDump => {
   let i = 0;
   const fields = [
@@ -154,6 +165,37 @@ export const validateReviewDump = (obj: any): ReviewDump => {
     }
   }
   const res = obj as ReviewDump;
+  return res;
+};
+
+export const validateTagsDump = (obj: any): ReviewDump => {
+  let i = 0;
+  const fields = ["hanja", "hangul", "name"];
+  for (const field of fields) {
+    if (obj[field] === undefined) {
+      throw new Error(`Field ${field} does not exist on blob.`);
+    }
+    i++;
+    if (i == 0) {
+      const prevailingLength: number = obj[field].length;
+      for (const thisField of fields) {
+        const thisLength: number = obj[thisField].length;
+        if (thisLength != prevailingLength) {
+          throw new Error(
+            `Field ${field} is of length ${thisLength}, not ${prevailingLength}.`
+          );
+        }
+      }
+    }
+  }
+  const res = obj as ReviewDump;
+  return res;
+};
+
+export const validateUserDataDump = (obj: any): UserDataDump => {
+  validateReviewDump(obj["reviews"]);
+  validateTagsDump(obj["tags"]);
+  const res = obj as UserDataDump;
   return res;
 };
 
@@ -437,41 +479,57 @@ export async function removeCardFromDeck(
   }
 }
 
-export async function dumpReviews(): Promise<ReviewDump> {
-  const query = `SELECT hanja, hangul, interval, easiness_factor, last_reviewed FROM reviews;`;
-  const res = await queryDictionary(query);
+export async function dumpUserData(): Promise<UserDataDump> {
+  let query = `SELECT hanja, hangul, interval, easiness_factor, last_reviewed FROM reviews;`;
+  let res = await queryDictionary(query);
   if (res.error !== undefined) {
     throw new Error(res.error);
   }
-  const dump: ReviewDump = {
-    hanja: [],
-    hangul: [],
-    interval: [],
-    easinessFactor: [],
-    lastReviewed: [],
+  const dump: UserDataDump = {
+    reviews: {
+      hanja: [],
+      hangul: [],
+      interval: [],
+      easinessFactor: [],
+      lastReviewed: [],
+    },
+    tags: {
+      hanja: [],
+      hangul: [],
+      name: [],
+    },
   };
   for (const elem of res.values) {
-    dump.hanja.push(elem[0]);
-    dump.hangul.push(elem[1]);
-    dump.interval.push(elem[2]);
-    dump.easinessFactor.push(elem[3]);
-    dump.lastReviewed.push(elem[4]);
+    dump.reviews.hanja.push(elem[0]);
+    dump.reviews.hangul.push(elem[1]);
+    dump.reviews.interval.push(elem[2]);
+    dump.reviews.easinessFactor.push(elem[3]);
+    dump.reviews.lastReviewed.push(elem[4]);
+  }
+  query = `SELECT hanja, hangul, name FROM tags;`;
+  res = await queryDictionary(query);
+  if (res.error !== undefined) {
+    throw new Error(res.error);
+  }
+  for (const elem of res.values) {
+    dump.tags.hanja.push(elem[0]);
+    dump.tags.hangul.push(elem[1]);
+    dump.tags.name.push(elem[2]);
   }
   return dump;
 }
 
-export async function importReviews(reviews: ReviewDump): Promise<void> {
+export async function importUserDataDump(dump: UserDataDump): Promise<void> {
   let i = 0;
-  let query =
-    "INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES";
-  while (i < reviews.hanja.length) {
-    query += `('${reviews.hanja[i]}', '${reviews.hangul[i]}', ${reviews.interval[i]}, ${reviews.easinessFactor[i]}, '${reviews.lastReviewed[i]}')`;
-    if (i + 1 < reviews.hanja.length) {
-      query += `,
-        `;
+  let query = "BEGIN;\n";
+  query +=
+    "INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES\n";
+  while (i < dump.reviews.hanja.length) {
+    query += `('${dump.reviews.hanja[i]}', '${dump.reviews.hangul[i]}', ${dump.reviews.interval[i]}, ${dump.reviews.easinessFactor[i]}, '${dump.reviews.lastReviewed[i]}')`;
+    if (i + 1 < dump.reviews.hanja.length) {
+      query += ",\n";
     } else {
-      query += `
-        `;
+      query += "\n";
     }
     i++;
   }
@@ -483,6 +541,20 @@ export async function importReviews(reviews: ReviewDump): Promise<void> {
   WHERE excluded.hanja = reviews.hanja 
     AND excluded.hangul = reviews.hangul;
     `;
+  i = 0;
+  query += "DELETE FROM tags;\n";
+  query += "INSERT INTO tags(hanja, hangul, name) VALUES\n";
+  while (i < dump.tags.hanja.length) {
+    query += `('${dump.tags.hanja[i]}', '${dump.tags.hangul[i]}', '${dump.tags.name[i]}')`;
+    if (i + 1 < dump.tags.hanja.length) {
+      query += `,
+        `;
+    } else {
+      query += ";\n";
+    }
+    i++;
+  }
+  query += "COMMIT;\n";
   const res = await queryDictionary(query);
   if (res.error !== undefined) {
     throw new Error(res.error);

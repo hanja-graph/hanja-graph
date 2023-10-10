@@ -1,8 +1,7 @@
 import {
-  dumpReviews,
-  importReviews,
-  ReviewDump,
-  validateReviewDump,
+  dumpUserData,
+  importUserDataDump,
+  validateUserDataDump,
 } from "../data/CardDataProvider";
 import { Component } from "react";
 
@@ -23,7 +22,7 @@ export default class SyncView extends Component<SyncViewProps, SyncViewState> {
 
   async exportDatabase() {
     try {
-      const resultDump = await dumpReviews();
+      const resultDump = await dumpUserData();
       const blob = new Blob([JSON.stringify(resultDump)], {
         type: "application/octet-stream",
       });
@@ -56,8 +55,8 @@ export default class SyncView extends Component<SyncViewProps, SyncViewState> {
         const decoder = new TextDecoder("utf-8");
         const decoded = decoder.decode(buffer);
         const parsed = JSON.parse(decoded);
-        const castResult = validateReviewDump(parsed);
-        const res = await importReviews(castResult);
+        const castResult = validateUserDataDump(parsed);
+        const res = await importUserDataDump(castResult);
         console.log(`Import input: ${res}`);
       }
     };
