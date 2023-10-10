@@ -112,6 +112,7 @@ export class Deck {
 export interface CardReviewStateEntry {
   readonly word: Word;
   cardReviewState: CardReviewState;
+  lastReviewed: string;
 }
 
 export interface DeckReviewManifest {
@@ -324,8 +325,17 @@ export async function getCardsForDeck(
 ): Promise<DeckReviewManifest> {
   const query = `SELECT tags.hanja as hanja, 
     tags.hangul AS hangul, 
-  hanjas.english AS english FROM tags 
-  LEFT JOIN hanjas ON tags.hanja = hanjas.hanja AND tags.hangul = hanjas.hangul 
+    hanjas.english AS english,
+    reviews.easiness_factor as easiness_factor,
+    reviews.interval as interval,
+    reviews.last_reviewed as last_reviewed
+  FROM tags 
+  LEFT JOIN hanjas 
+    ON tags.hanja = hanjas.hanja 
+      AND tags.hangul = hanjas.hangul 
+  LEFT JOIN reviews
+    ON tags.hanja = reviews.hanja 
+      AND tags.hangul = reviews.hangul 
   WHERE tags.name = '${deckName}';`;
   const res = await queryDictionary(query);
   let states: Array<CardReviewStateEntry> = [];
@@ -333,7 +343,8 @@ export async function getCardsForDeck(
     // TODO: properly populate cardReviewState from DB
     states.push({
       word: new Word(elem[0], elem[1], elem[2]),
-      cardReviewState: new CardReviewState(0, 1.3, 1),
+      cardReviewState: new CardReviewState(0, elem[3], elem[4]),
+      lastReviewed: elem[5],
     });
   }
   return {
@@ -349,7 +360,8 @@ export async function getReviewBatch(
     hanjas.hangul as hangul, 
     hanjas.english as english,
     reviews.easiness_factor as easiness_factor,
-    reviews.interval as interval
+    reviews.interval as interval,
+    reviews.last_reviewed as last_reviewed
   FROM tags
   LEFT OUTER JOIN reviews ON
     tags.hanja = reviews.hanja AND
@@ -369,6 +381,7 @@ export async function getReviewBatch(
     states.push({
       word: new Word(elem[0], elem[1], elem[2]),
       cardReviewState: new CardReviewState(0, elem[3], elem[4]),
+      lastReviewed: elem[5],
     });
   }
   return {
