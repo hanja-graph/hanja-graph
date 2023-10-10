@@ -362,7 +362,6 @@ export async function getReviewBatch(
       OR reviews.interval IS NULL
       OR reviews.easiness_factor IS NULL);
   `;
-  console.log(query);
   const res = await queryDictionary(query);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
