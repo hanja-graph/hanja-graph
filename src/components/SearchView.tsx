@@ -9,7 +9,7 @@ function SearchResults(props: { words: Array<Word> }) {
       <table>
         <thead>
           <tr>
-            {["hanja", "hangul", "english", "card"].map(
+            {["hanja", "hangul", "english", "card", "+"].map(
               (columnName: any, i: any) => (
                 <td key={i}>{columnName}</td>
               )
