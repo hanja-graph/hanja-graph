@@ -41,7 +41,9 @@ function DeckTable(props: {
                         props.deckName,
                         entry.word.hanja,
                         entry.word.hangul
-                      );
+                      ).then((_) => {
+                        window.location.reload();
+                      });
                     }
                   }}
                   disabled={props.deckName === undefined}
