@@ -17,20 +17,11 @@ function DeckTable(props: {
     <table>
       <thead>
         <tr>
-          {[
-            "hanja",
-            "hangul",
-            "english",
-            /*
-            "easiness",
-            "interval",
-            "last_reviewed",
-            */
-            "card",
-            "+",
-          ].map((columnName: any, i: any) => (
-            <td key={i}>{columnName}</td>
-          ))}
+          {["hanja", "hangul", "english", "card", "+"].map(
+            (columnName: any, i: any) => (
+              <td key={i}>{columnName}</td>
+            )
+          )}
         </tr>
       </thead>
 
@@ -42,11 +33,6 @@ function DeckTable(props: {
                 entry.word.hanja,
                 entry.word.hangul,
                 entry.word.english,
-                /*
-                entry.cardReviewState.easinessFactor,
-                entry.cardReviewState.interval,
-                entry.lastReviewed,
-                */
                 <Link to={`/card/${entry.word.hanjaHangul}`}> card </Link>,
                 <button
                   onClick={() => {

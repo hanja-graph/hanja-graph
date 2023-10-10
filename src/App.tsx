@@ -11,6 +11,7 @@ import SyncView from "./components/SyncView";
 import { initializeAndSeedDictionary } from "./data/CardDataProvider";
 
 import { Routes, Route, Outlet, Link, useParams } from "react-router-dom";
+const debug = false;
 
 export default function App() {
   const [isInitialized, setIsInitialized] = useState(false);
@@ -62,8 +63,6 @@ export default function App() {
 
 function Layout() {
   const [sidebarOpen, setSideBarOpen] = useState(false);
-  // ☰
-  // ⦀
   return (
     <div>
       <button onClick={() => setSideBarOpen(!sidebarOpen)}>
@@ -77,9 +76,11 @@ function Layout() {
           <li>
             <Link to="/sync">Sync</Link>
           </li>
-          <li>
-            <Link to="/db">Database</Link>
-          </li>
+          <div hidden={!debug}>
+            <li>
+              <Link to="/db">Database</Link>
+            </li>
+          </div>
           <li>
             <Link to="/add">Add card</Link>
           </li>
@@ -92,7 +93,7 @@ function Layout() {
         </ul>
       </nav>
       <hr />
-      <div hidden={sidebarOpen}>
+      <div>
         <Outlet />
       </div>
     </div>
