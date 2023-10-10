@@ -7,7 +7,7 @@ export class CardReviewState {
 }
 
 /*
- * https://en.wikipedia.org/wiki/SuperMemo#cite_note-12
+ * https://en.wikipedia.org/wiki/SuperMemo#Description_of_SM-2_algorithm
  */
 export function processReview(
   grade: number,
