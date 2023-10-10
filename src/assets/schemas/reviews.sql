@@ -5,5 +5,6 @@ CREATE TABLE reviews(
   easiness_factor REAL NOT NULL,
   last_reviewed DATETIME,
   FOREIGN KEY (hanja) REFERENCES hanjas(hanja),
-  FOREIGN KEY (hangul) REFERENCES hanjas(hangul)
+  FOREIGN KEY (hangul) REFERENCES hanjas(hangul),
+  PRIMARY KEY (hanja, hangul)
 );

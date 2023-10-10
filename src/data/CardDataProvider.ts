@@ -446,7 +446,31 @@ export async function dumpReviews(): Promise<ReviewDump> {
 }
 
 export async function importReviews(reviews: ReviewDump): Promise<void> {
-  // TODO
-  console.log("TODO: parse");
   console.log(reviews);
+  let i = 0;
+  let query =
+    "INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES";
+  while (i < reviews.hanja.length) {
+    query += `('${reviews.hanja[i]}', '${reviews.hangul[i]}', ${reviews.interval[i]}, ${reviews.easinessFactor[i]}, '${reviews.lastReviewed[i]}')`;
+    if (i + 1 < reviews.hanja.length) {
+      query += `,
+        `;
+    } else {
+      query += `
+        `;
+    }
+    i++;
+  }
+  query += `
+  ON CONFLICT(hanja, hangul) DO UPDATE SET
+    interval=excluded.interval,
+    easiness_factor=excluded.easiness_factor,
+    last_reviewed=excluded.last_reviewed
+  WHERE excluded.hanja = reviews.hanja AND excluded.hangul = reviews.hangul;
+    `;
+  console.log(query);
+  const res = await queryDictionary(query);
+  if (res.error !== undefined) {
+    throw new Error(res.error);
+  }
 }
