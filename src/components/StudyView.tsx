@@ -2,7 +2,8 @@ import React from "react";
 
 import {
   DeckReviewManifest,
-  getCardsForDeck,
+  getReviewBatch,
+  postReview,
 } from "../data/CardDataProvider.js";
 import CardView from "./CardView";
 
@@ -31,7 +32,7 @@ export default class StudyView extends React.Component<
   componentDidMount() {
     const queryData = async () => {
       try {
-        const deck = await getCardsForDeck(this.props.deckName);
+        const deck = await getReviewBatch(this.props.deckName);
         let doneWithCard = [];
         for (const _ in deck.reviewState) {
           doneWithCard.push(false);
@@ -54,6 +55,14 @@ export default class StudyView extends React.Component<
       grade,
       deck.reviewState[cardIdx].cardReviewState
     );
+    // Update database with new values.
+    postReview(
+      deck.reviewState[cardIdx].word.hanja,
+      deck.reviewState[cardIdx].word.hangul,
+      deck.reviewState[cardIdx].cardReviewState.interval,
+      deck.reviewState[cardIdx].cardReviewState.easinessFactor
+    );
+
     const doneWithCard = this.state.doneWithCard;
     if (grade >= 4) {
       doneWithCard[cardIdx] = true;

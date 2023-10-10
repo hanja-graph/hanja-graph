@@ -5,12 +5,14 @@ import hanjaDefinitionSchema from "../assets//schemas/hanja_definition.sql?raw";
 import koreanPronunciationSchema from "../assets//schemas/korean_pronunciation.sql?raw";
 import radicalsSchema from "../assets//schemas/radicals.sql?raw";
 import tagsSchema from "../assets//schemas/tags.sql?raw";
+import reviewsSchema from "../assets//schemas/reviews.sql?raw";
 
 import hanjasData from "../assets//sources/bravender/hanjas.sql?raw";
 import hanjaDefinitionData from "../assets//sources/bravender/hanja_definition.sql?raw";
 import koreanPronunciationData from "../assets//sources/bravender/korean_pronunciation.sql?raw";
 import radicalsData from "../assets//sources/bravender/radicals.sql?raw";
 import tagsData from "../assets//sources/john/tags.sql?raw";
+import reviewsData from "../assets//sources/john/reviews.sql?raw";
 
 export const loadTable = async (
   schema: any,
@@ -58,6 +60,9 @@ export const initializeAndSeedDictionary = async () => {
 
   console.log("Seeding tags.");
   await loadTable(tagsSchema, tagsData, "SELECT * FROM tags LIMIT 1;");
+
+  console.log("Seeding reviews.");
+  await loadTable(reviewsSchema, reviewsData, "SELECT * FROM reviews LIMIT 1;");
   console.log("Done seeding all.");
 };
 
@@ -297,6 +302,60 @@ export async function getCardsForDeck(
     reviewState: states,
   };
 }
+
+export async function getReviewBatch(
+  deckName: string
+): Promise<DeckReviewManifest> {
+  const query = `
+  SELECT hanjas.hanja as hanja, 
+    hanjas.hangul as hangul, 
+    hanjas.english as english,
+    reviews.easiness_factor as easiness_factor,
+    reviews.interval as interval
+  FROM tags
+  LEFT JOIN reviews ON
+    tags.hanja = reviews.hanja AND
+    tags.hangul = reviews.hangul
+  LEFT JOIN hanjas ON
+    hanjas.hanja = tags.hanja AND
+    hanjas.hangul = tags.hangul
+  WHERE tags.name = '${deckName}'
+    AND (unixepoch(datetime('now')) - unixepoch(reviews.last_reviewed)) / (60.0*60.0*24.0) > reviews.interval;
+  `;
+  const res = await queryDictionary(query);
+  let states: Array<CardReviewStateEntry> = [];
+  for (const elem of res.values) {
+    // TODO: properly populate cardReviewState from DB
+    states.push({
+      word: new Word(elem[0], elem[1], elem[2]),
+      cardReviewState: new CardReviewState(0, elem[3], elem[4]),
+    });
+  }
+  return {
+    reviewState: states,
+  };
+}
+
+export async function postReview(
+  hanja: string,
+  hangul: string,
+  interval: number,
+  easinessFactor: number
+): Promise<void> {
+  const query = `
+  UPDATE reviews 
+    SET 
+      last_reviewed = datetime('now'),
+      interval = ${interval},
+      easiness_factor = ${easinessFactor}
+  WHERE reviews.hanja = '${hanja}'
+    AND reviews.hangul = '${hangul}';`;
+  const res = await queryDictionary(query);
+  if (res.error != undefined) {
+    throw new Error(res.error);
+  }
+}
+
 export async function addCardToDeck(
   deckName: string,
   hanja: string,
