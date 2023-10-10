@@ -311,3 +311,16 @@ export async function addCardToDeck(
     throw new Error(res.error);
   }
 }
+
+export async function removeCardFromDeck(
+  deckName: string,
+  hanja: string,
+  hangul: string
+): Promise<void> {
+  const query = `DELETE FROM tags 
+    WHERE hanja = '${hanja}' AND hangul = '${hangul}' AND name = '${deckName}';`;
+  const res = await queryDictionary(query);
+  if (res.error !== undefined) {
+    throw new Error(res.error);
+  }
+}

@@ -3,12 +3,16 @@ import {
   getCardsForDeck,
   DeckReviewManifest,
   CardReviewStateEntry,
+  removeCardFromDeck,
 } from "../data/CardDataProvider";
 import { Link, useParams } from "react-router-dom";
 
 const EMPTY_REVIEW_STATE = { reviewState: [] };
 
-function DeckTable(props: { reviewManifest: DeckReviewManifest }) {
+function DeckTable(props: {
+  reviewManifest: DeckReviewManifest;
+  deckName: string | undefined;
+}) {
   return (
     <table>
       <thead>
@@ -30,6 +34,20 @@ function DeckTable(props: { reviewManifest: DeckReviewManifest }) {
                 entry.word.hangul,
                 entry.word.english,
                 <Link to={`/card/${entry.word.hanjaHangul}`}> card </Link>,
+                <button
+                  onClick={() => {
+                    if (props.deckName !== undefined) {
+                      removeCardFromDeck(
+                        props.deckName,
+                        entry.word.hanja,
+                        entry.word.hangul
+                      );
+                    }
+                  }}
+                  disabled={props.deckName === undefined}
+                >
+                  -
+                </button>,
               ].map((col: any, i: any) => (
                 <td key={i}>{col}</td>
               ))}
@@ -56,7 +74,7 @@ export default function DeckView() {
   }, [deckName]);
   return (
     <div>
-      <DeckTable reviewManifest={tableData} />
+      <DeckTable reviewManifest={tableData} deckName={deckName} />
     </div>
   );
 }
