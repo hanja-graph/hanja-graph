@@ -2,7 +2,6 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import DbBrowser from "./components/DbBrowser";
 import CardView from "./components/CardView";
-import InsertView from "./components/InsertView";
 import StudyView from "./components/StudyView";
 import DecksView from "./components/DecksView";
 import SearchView from "./components/SearchView";
@@ -35,7 +34,6 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="sync" element={<SyncView />} />
             <Route path="db" element={<DbBrowser />} />
-            <Route path="add" element={<InsertView />} />
             <Route path="card">
               <Route index element={<CardWrapper />} />
               <Route path=":hanjaHangul" element={<CardWrapper />} />
@@ -81,9 +79,6 @@ function Layout() {
               <Link to="/db">Database</Link>
             </li>
           </div>
-          <li>
-            <Link to="/add">Add card</Link>
-          </li>
           <li>
             <Link to="/decks">Decks</Link>
           </li>
