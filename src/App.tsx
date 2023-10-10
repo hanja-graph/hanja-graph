@@ -43,6 +43,7 @@ export default function App() {
               <Route path=":searchQuery" element={<SearchView />} />
             </Route>
             <Route path="sync" element={<SyncView />} />
+            <Route path="about" element={<About />} />
             <Route path="db" element={<DbBrowser />} />
             <Route path="card">
               <Route index element={<CardWrapper />} />
@@ -93,7 +94,6 @@ function Layout() {
           </div>
         </ul>
       </nav>
-      <hr />
       <div>
         <Outlet />
       </div>
