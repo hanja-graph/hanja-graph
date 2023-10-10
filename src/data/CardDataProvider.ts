@@ -380,9 +380,9 @@ export async function postReview(
   interval: number,
   easinessFactor: number
 ): Promise<void> {
-  const query = `
-  UPDATE reviews 
-    SET 
+  const query = `INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES
+('${hanja}', '${hangul}', ${interval}, ${easinessFactor}, datetime('now'))
+  ON CONFLICT(hanja, hangul) DO UPDATE SET
       last_reviewed = datetime('now'),
       interval = ${interval},
       easiness_factor = ${easinessFactor}
@@ -446,7 +446,6 @@ export async function dumpReviews(): Promise<ReviewDump> {
 }
 
 export async function importReviews(reviews: ReviewDump): Promise<void> {
-  console.log(reviews);
   let i = 0;
   let query =
     "INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES";
@@ -466,9 +465,9 @@ export async function importReviews(reviews: ReviewDump): Promise<void> {
     interval=excluded.interval,
     easiness_factor=excluded.easiness_factor,
     last_reviewed=excluded.last_reviewed
-  WHERE excluded.hanja = reviews.hanja AND excluded.hangul = reviews.hangul;
+  WHERE excluded.hanja = reviews.hanja 
+    AND excluded.hangul = reviews.hangul;
     `;
-  console.log(query);
   const res = await queryDictionary(query);
   if (res.error !== undefined) {
     throw new Error(res.error);
