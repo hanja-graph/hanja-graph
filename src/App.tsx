@@ -31,16 +31,15 @@ export default function App() {
       <div>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+            <Route path="search">
+              <Route index element={<SearchView />} />
+              <Route path=":searchQuery" element={<SearchView />} />
+            </Route>
             <Route path="sync" element={<SyncView />} />
             <Route path="db" element={<DbBrowser />} />
             <Route path="card">
               <Route index element={<CardWrapper />} />
               <Route path=":hanjaHangul" element={<CardWrapper />} />
-            </Route>
-            <Route path="search">
-              <Route index element={<SearchView />} />
-              <Route path=":searchQuery" element={<SearchView />} />
             </Route>
             <Route path="decks" element={<DecksView />} />
             <Route path="study">
@@ -51,7 +50,7 @@ export default function App() {
               <Route index element={<DeckView />} />
               <Route path=":deckName" element={<DeckView />} />
             </Route>
-            <Route path="*" element={<Home />} />
+            <Route path="*" element={<About />} />
           </Route>
         </Routes>
       </div>
@@ -69,22 +68,22 @@ function Layout() {
       <nav hidden={!sidebarOpen}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/search">Search</Link>
+          </li>
+          <li>
+            <Link to="/decks">Decks</Link>
           </li>
           <li>
             <Link to="/sync">Sync</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
           </li>
           <div hidden={!debug}>
             <li>
               <Link to="/db">Database</Link>
             </li>
           </div>
-          <li>
-            <Link to="/decks">Decks</Link>
-          </li>
-          <li>
-            <Link to="/search">Search</Link>
-          </li>
         </ul>
       </nav>
       <hr />
@@ -95,10 +94,20 @@ function Layout() {
   );
 }
 
-function Home() {
+function About() {
   return (
     <div>
-      <h2>Home</h2>
+      <h2>Hanja graph</h2>
+      <p>
+        Hanja graph is a Korean flash card program. It's designed to help you
+        remember Korean vocabulary by leveraging Hanja as a mnemonic. See{" "}
+        <a href="https://github.com/hanja-graph/hanja-graph">Github</a> for more
+        information.
+      </p>{" "}
+      Use the nav bar to begin. This app is designed to work completely offline.
+      In your current browser session, all data will be saved and persisted.
+      Make sure to use the sync functionality to back up your flash card review
+      state and share it between computers.
     </div>
   );
 }
