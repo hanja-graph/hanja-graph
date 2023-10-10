@@ -9,7 +9,14 @@ import DeckView from "./components/DeckView";
 import SyncView from "./components/SyncView";
 import { initializeAndSeedDictionary } from "./data/CardDataProvider";
 
-import { Routes, Route, Outlet, Link, useParams } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  Outlet,
+  Link,
+  useParams,
+  Navigate,
+} from "react-router-dom";
 const debug = false;
 
 export default function App() {
@@ -50,7 +57,7 @@ export default function App() {
               <Route index element={<DeckView />} />
               <Route path=":deckName" element={<DeckView />} />
             </Route>
-            <Route path="*" element={<About />} />
+            <Route path="*" element={<Navigate to={"/search"} />} />
           </Route>
         </Routes>
       </div>
