@@ -113,7 +113,7 @@ export default class InsertView extends React.Component<
     }
     return (
       <div>
-        <h1>Insert a word</h1>
+        <h2>Insert a word</h2>
         <textarea
           placeholder="Enter a hanja word"
           value={this.state.hanjaWord}

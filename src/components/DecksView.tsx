@@ -54,7 +54,7 @@ export default class DecksView extends React.Component<
     }
     return (
       <div>
-        {"Decks"}
+        <h2>Decks</h2>
         <div>{links}</div>
       </div>
     );

@@ -114,7 +114,7 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
     return (
       <div>
         <div className="App">
-          <h1>Database Browser</h1>
+          <h2>DB</h2>
           <button onClick={this.executeQuery.bind(this)}>Execute </button>
           <button onClick={this.exportDatabase.bind(this)}>Export</button>
           <button onClick={this.importDatabase.bind(this)}>Import</button>

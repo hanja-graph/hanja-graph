@@ -61,9 +61,15 @@ export default function App() {
 }
 
 function Layout() {
+  const [sidebarOpen, setSideBarOpen] = useState(false);
+  // ☰
+  // ⦀
   return (
     <div>
-      <nav>
+      <button onClick={() => setSideBarOpen(!sidebarOpen)}>
+        {sidebarOpen ? "⦀" : "☰"}
+      </button>
+      <nav hidden={!sidebarOpen}>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -86,7 +92,9 @@ function Layout() {
         </ul>
       </nav>
       <hr />
-      <Outlet />
+      <div hidden={sidebarOpen}>
+        <Outlet />
+      </div>
     </div>
   );
 }

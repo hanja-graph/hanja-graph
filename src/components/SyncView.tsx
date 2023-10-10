@@ -67,7 +67,7 @@ export default class SyncView extends Component<SyncViewProps, SyncViewState> {
   render() {
     return (
       <div>
-        <h1>Synchronization</h1>
+        <h2>Synchronization</h2>
         <button onClick={this.exportDatabase.bind(this)}>Export</button>
         <button onClick={this.importDatabase.bind(this)}>Import</button>
         <input id="fileItem" type="file"></input>
