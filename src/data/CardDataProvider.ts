@@ -105,7 +105,7 @@ export class Deck {
 }
 
 export interface CardReviewStateEntry {
-  readonly hanjaHangul: string;
+  readonly word: Word;
   cardReviewState: CardReviewState;
 }
 
@@ -279,13 +279,17 @@ export async function getDecks(): Promise<Array<Deck>> {
 export async function getCardsForDeck(
   deckName: string
 ): Promise<DeckReviewManifest> {
-  const query = `SELECT hanja, hangul FROM tags WHERE name = '${deckName}';`;
+  const query = `SELECT tags.hanja as hanja, 
+    tags.hangul AS hangul, 
+  hanjas.english AS english FROM tags 
+  LEFT JOIN hanjas ON tags.hanja = hanjas.hanja AND tags.hangul = hanjas.hangul 
+  WHERE tags.name = '${deckName}';`;
   const res = await queryDictionary(query);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
     // TODO: properly populate cardReviewState from DB
     states.push({
-      hanjaHangul: `${elem[0]}${elem[1]}`,
+      word: new Word(elem[0], elem[1], elem[2]),
       cardReviewState: new CardReviewState(0, 1.3, 1),
     });
   }

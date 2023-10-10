@@ -6,6 +6,7 @@ import InsertView from "./components/InsertView";
 import StudyView from "./components/StudyView";
 import DecksView from "./components/DecksView";
 import SearchView from "./components/SearchView";
+import DeckView from "./components/DeckView";
 import { initializeAndSeedDictionary } from "./data/CardDataProvider";
 
 import { Routes, Route, Outlet, Link, useParams } from "react-router-dom";
@@ -44,6 +45,10 @@ export default function App() {
             <Route path="study">
               <Route index element={<StudyWrapper />} />
               <Route path=":deckName" element={<StudyWrapper />} />
+            </Route>
+            <Route path="editDeck">
+              <Route index element={<DeckView />} />
+              <Route path=":deckName" element={<DeckView />} />
             </Route>
             <Route path="*" element={<Home />} />
           </Route>

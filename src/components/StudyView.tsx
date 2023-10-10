@@ -97,7 +97,7 @@ export default class StudyView extends React.Component<
         <div>
           <CardView
             hanjaHangul={
-              this.state.deck.reviewState[this.state.cardIdx].hanjaHangul
+              this.state.deck.reviewState[this.state.cardIdx].word.hanjaHangul
             }
           ></CardView>
         </div>
