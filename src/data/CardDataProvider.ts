@@ -118,6 +118,44 @@ export interface DeckReviewManifest {
   reviewState: Array<CardReviewStateEntry>;
 }
 
+export interface ReviewDump {
+  hanja: Array<string>;
+  hangul: Array<string>;
+  interval: Array<number>;
+  easinessFactor: Array<number>;
+  lastReviewed: Array<string>;
+}
+
+export const validateReviewDump = (obj: any): ReviewDump => {
+  let i = 0;
+  const fields = [
+    "hanja",
+    "hangul",
+    "easinessFactor",
+    "lastReviewed",
+    "interval",
+  ];
+  for (const field of fields) {
+    if (obj[field] === undefined) {
+      throw new Error(`Field ${field} does not exist on blob.`);
+    }
+    i++;
+    if (i == 0) {
+      const prevailingLength: number = obj[field].length;
+      for (const thisField of fields) {
+        const thisLength: number = obj[thisField].length;
+        if (thisLength != prevailingLength) {
+          throw new Error(
+            `Field ${field} is of length ${thisLength}, not ${prevailingLength}.`
+          );
+        }
+      }
+    }
+  }
+  const res = obj as ReviewDump;
+  return res;
+};
+
 export async function getHangulforHanja(hanja: string): Promise<Array<string>> {
   assertCharacter(hanja);
   const query = `SELECT hangul FROM korean_pronunciation WHERE hanjas LIKE '%${hanja}%';`;
@@ -382,4 +420,33 @@ export async function removeCardFromDeck(
   if (res.error !== undefined) {
     throw new Error(res.error);
   }
+}
+
+export async function dumpReviews(): Promise<ReviewDump> {
+  const query = `SELECT hanja, hangul, interval, easiness_factor, last_reviewed FROM reviews;`;
+  const res = await queryDictionary(query);
+  if (res.error !== undefined) {
+    throw new Error(res.error);
+  }
+  const dump: ReviewDump = {
+    hanja: [],
+    hangul: [],
+    interval: [],
+    easinessFactor: [],
+    lastReviewed: [],
+  };
+  for (const elem of res.values) {
+    dump.hanja.push(elem[0]);
+    dump.hangul.push(elem[1]);
+    dump.interval.push(elem[2]);
+    dump.easinessFactor.push(elem[3]);
+    dump.lastReviewed.push(elem[4]);
+  }
+  return dump;
+}
+
+export async function importReviews(reviews: ReviewDump): Promise<void> {
+  // TODO
+  console.log("TODO: parse");
+  console.log(reviews);
 }

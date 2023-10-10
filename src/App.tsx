@@ -7,6 +7,7 @@ import StudyView from "./components/StudyView";
 import DecksView from "./components/DecksView";
 import SearchView from "./components/SearchView";
 import DeckView from "./components/DeckView";
+import SyncView from "./components/SyncView";
 import { initializeAndSeedDictionary } from "./data/CardDataProvider";
 
 import { Routes, Route, Outlet, Link, useParams } from "react-router-dom";
@@ -31,6 +32,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="sync" element={<SyncView />} />
             <Route path="db" element={<DbBrowser />} />
             <Route path="add" element={<InsertView />} />
             <Route path="card">
@@ -65,6 +67,9 @@ function Layout() {
         <ul>
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/sync">Sync</Link>
           </li>
           <li>
             <Link to="/db">Database</Link>
