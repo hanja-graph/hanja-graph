@@ -110,26 +110,52 @@ export default class StudyView extends React.Component<
             }
           ></CardView>
         </div>
-        <div>
-          <button onClick={this.onPostReview.bind(this, 0.0)}>No idea</button>
-        </div>
-        <div>
-          <button onClick={this.onPostReview.bind(this, 1.0)}>Familiar</button>
-        </div>
-        <div>
-          <button onClick={this.onPostReview.bind(this, 2.0)}>
-            Would remember
-          </button>
-        </div>
-        <div>
-          <button onClick={this.onPostReview.bind(this, 3.0)}>Hard</button>
-        </div>
-        <div>
-          <button onClick={this.onPostReview.bind(this, 4.0)}>Medium</button>
-        </div>
-        <div>
-          <button onClick={this.onPostReview.bind(this, 5.0)}>Easy</button>
-        </div>
+        <table className="buttons">
+          <tbody>
+            <tr>
+              <td>
+                <button onClick={this.onPostReview.bind(this, 0.0)}>
+                  No idea
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onClick={this.onPostReview.bind(this, 1.0)}>
+                  Familiar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onClick={this.onPostReview.bind(this, 2.0)}>
+                  Incorrect/Easy
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onClick={this.onPostReview.bind(this, 3.0)}>
+                  Correct/Slow
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onClick={this.onPostReview.bind(this, 4.0)}>
+                  Correct/Medium
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onClick={this.onPostReview.bind(this, 5.0)}>
+                  Correct/Fast
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }

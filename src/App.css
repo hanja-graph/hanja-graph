@@ -46,3 +46,13 @@ body {
 }
 
 li { padding: 10px 0px 0px; }
+
+buttons { 
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: red; 
+}
+.buttons button { 
+  width: 100%;
+}

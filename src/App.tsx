@@ -17,7 +17,7 @@ import {
   useParams,
   Navigate,
 } from "react-router-dom";
-const debug = true;
+const debug = false;
 
 export default function App() {
   const [isInitialized, setIsInitialized] = useState(false);
