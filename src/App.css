@@ -38,5 +38,11 @@
 }
 
 button {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(20px + 2vmin);
 }
+
+body {
+    font-size: 1.5em;
+}
+
+li { padding: 10px 0px 0px; }
