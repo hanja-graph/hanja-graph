@@ -43,6 +43,8 @@ const initDBEngine = async function () {
         );
       }
     } catch (e) {
+      console.log("Error while loading OPFS");
+      console.log(e);
       return undefined;
     }
   }
