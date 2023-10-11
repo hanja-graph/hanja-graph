@@ -1,4 +1,4 @@
-/*! coi-serviceworker v0.1.6 - Guido Zuidhof, licensed under MIT */
+/*! coi-serviceworker v0.1.7 - Guido Zuidhof and contributors, licensed under MIT */
 let coepCredentialless = false;
 if (typeof window === 'undefined') {
     self.addEventListener("install", () => self.skipWaiting());
@@ -43,6 +43,9 @@ if (typeof window === 'undefined') {
                     newHeaders.set("Cross-Origin-Embedder-Policy",
                         coepCredentialless ? "credentialless" : "require-corp"
                     );
+                    if (!coepCredentialless) {
+                        newHeaders.set("Cross-Origin-Resource-Policy", "cross-origin");
+                    }
                     newHeaders.set("Cross-Origin-Opener-Policy", "same-origin");
 
                     return new Response(response.body, {
@@ -61,7 +64,7 @@ if (typeof window === 'undefined') {
         const coi = {
             shouldRegister: () => true,
             shouldDeregister: () => false,
-            coepCredentialless: () => false,
+            coepCredentialless: () => (window.chrome !== undefined || window.netscape !== undefined),
             doReload: () => window.location.reload(),
             quiet: false,
             ...window.coi
