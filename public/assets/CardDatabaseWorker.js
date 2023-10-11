@@ -16,6 +16,7 @@
  * Alternative strategies should be implemented if this module fails to
  * initialize.
  */
+
 console.log("service worker loaded");
 importScripts(["./jswasm/sqlite3.js"]);
 console.log("sqlite3.js imported.");
@@ -55,8 +56,7 @@ const mountDictionaryDatabase = async (dbEngine, dbPath) => {
   if (dictionaryDBSingleton) {
     return dictionaryDBSingleton;
   } else {
-    const opfs = dbEngine.opfs;
-    dictionaryDBSingleton = new opfs.OpfsDb(dbPath);
+    dictionaryDBSingleton = new dbEngine.oo1.DB(dbPath);
     return dictionaryDBSingleton;
   }
 };
