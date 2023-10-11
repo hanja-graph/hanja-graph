@@ -16,7 +16,9 @@
  * Alternative strategies should be implemented if this module fails to
  * initialize.
  */
+console.log("service worker loaded");
 importScripts(["./jswasm/sqlite3.js"]);
+console.log("sqlite3.js imported.");
 const CONFIG = {
   print: console.log,
   printErr: console.error,
@@ -27,10 +29,12 @@ let sqlite3Singleton;
 
 const initDBEngine = async function () {
   if (!sqlite3Singleton) {
+    console.log("Attemtping initialization of sqlite3.");
     try {
       const newSqlite3Singleton = await sqlite3InitModule(CONFIG);
       const capi = newSqlite3Singleton.capi;
       if (!capi.sqlite3_vfs_find("opfs") || !newSqlite3Singleton.opfs) {
+        console.log("opfs not found.");
         return undefined;
       } else {
         sqlite3Singleton = newSqlite3Singleton;
