@@ -73,7 +73,7 @@ if __name__ == "__main__":
             head_templates: List[Dict] = word["head_templates"]
             for head_template in head_templates:
                 head_template_name = head_template["name"]
-                if head_template_name == "ko-hanja":
+                if head_template_name in ("ko-hanja/old", "ko-hanja/new", "ko-hanja"):
                     # keys: 'pos', 'head_templates', 'forms', 'word', 'lang', 'lang_code', 'senses'
                     hanja_word: str = word["word"]
                     if "senses" not in word:
@@ -83,27 +83,36 @@ if __name__ == "__main__":
                     for sense in senses:
                         # Links appear to be loosely schematized like this:
                         # [['Hanja', 'hanja#English'], ['견', '견#Korean'], ['dog', 'dog']]
-                        if "links" not in sense:
-                            continue
                         if "args" not in head_template:
                             continue
                         head_template_args = head_template["args"]
-                        links: List[List[str]] = sense["links"]
-                        hangul_words = [link[0] for link in links if link[1][1:] == '#Korean' and link[0] != hanja_word and is_hangul(link[0])]
-                        english_meanings = [link[0] for link in links if link[0].replace(" ", "").isalpha() and link[1].replace(" ","").isalpha()]
+                        hangul_pronunciations = []
+                        english_meanings = []
+                        if "links" in sense:
+                            links: List[List[str]] = []
+                            links += sense["links"]
+                            english_meanings += [link[0] for link in links if link[0].replace(" ", "").isalpha() and link[1].replace(" ","").isalpha()]
                         korean_meanings = [head_template_args[key] for key in head_template_args if len(head_template_args[key]) > 0]
-                        if len(hangul_words) != 1:
-                            continue
+                        hangul_pronunciations += [meaning for meaning in korean_meanings if len(meaning) == 1]
+
+                        if "glosses" in sense:
+                            glosses = sense["glosses"]
+                            english_meanings += glosses
+                        
                         if len(english_meanings) == 0:
                             continue
-                        hangul_word = hangul_words[0]
+                        if len(hangul_pronunciations) == 0:
+                            continue
+                        if len(korean_meanings) == 0:
+                            continue
                         if hanja_word not in all_words:
                             all_words[hanja_word] = {}
-                        if hangul_word not in all_words[hanja_word]:
-                            all_words[hanja_word][hangul_word] = HanjaWord()
+                        for hangul_pronunciation in set(hangul_pronunciations):
+                            if hangul_pronunciation not in all_words[hanja_word]:
+                                all_words[hanja_word][hangul_pronunciation] = HanjaWord()
 
-                        for english_meaning in english_meanings:
-                            all_words[hanja_word][hangul_word].english_meanings.add(english_meaning)
-                        for korean_meaning in korean_meanings:
-                            all_words[hanja_word][hangul_word].korean_meanings.add(korean_meaning)
+                            for english_meaning in english_meanings:
+                                all_words[hanja_word][hangul_pronunciation].english_meanings.add(english_meaning)
+                            for korean_meaning in korean_meanings:
+                                all_words[hanja_word][hangul_pronunciation].korean_meanings.add(korean_meaning)
     print(f"Acquired {len(all_words)} unique hanja words.")
