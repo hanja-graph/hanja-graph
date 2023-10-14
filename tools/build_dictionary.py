@@ -24,11 +24,11 @@
 #ko-root - various word roots, not useful.
 #ko-num, numerical words, used.
 #ko-adverb - more adverbs
-#ko-det - more determiners
-#ko-adjective
-#ko-proverb
-#ko-prop
-#ko-conj/adj
+#ko-det - more determiners, using
+#ko-adjective - more adjectives, using
+#ko-proverb - a few proverbs, not worth messing with
+#ko-prop - a few words, not worth messing with
+#ko-conj/adj - conjugated adjectives, omitting
 
 # Standard library
 from typing import Dict, List, Set, Optional
@@ -393,17 +393,3 @@ if __name__ == "__main__":
                             glosses = glosses_from_word(word)
                             upsert_korean_word(pure_korean_verbs, None, hangul_word, english_meanings, glosses)
     print(f"Acquired {len(pure_korean_verbs[None])} pure Korean verbs.")
-
-    # Temporary: just for listing the most recent thing we're trying to parse.
-    target_template = "ko-det"
-    print(f"Parsing {target_template}.")
-    for word in word_reader(in_filename):
-        if "head_templates" in word:
-            head_templates: List[Dict] = word["head_templates"]
-            for head_template in head_templates:
-                head_template_name = head_template["name"]
-                if head_template_name in (target_template):
-                    focus_word = word["word"]
-                    #print(focus_word)
-                    #print(json.dumps(word, ensure_ascii=False, indent=1))
-                    #blah = input()
