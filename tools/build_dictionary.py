@@ -194,7 +194,7 @@ if __name__ == "__main__":
                                 hangul_for_hanja_based_korean_nouns.add(hangul_pronunciations[0])
     print(f"Acquired {len(hanja_based_korean_nouns)} unique Hanja-based Korean words.")
 
-    print(f"Parsing pure Korean nouns")
+    print(f"Parsing Sino-Korean nouns")
     n_new_characters = 0
     n_new_sino_korean_nouns = 0
     for word in word_reader(in_filename):
@@ -227,6 +227,7 @@ if __name__ == "__main__":
                                 hanja_based_korean_nouns[maybe_hanja_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), maybe_hanja_word)
                                 hangul_for_hanja_based_korean_nouns.add(hangul_word)
                                 n_new_sino_korean_nouns += 1
+    print(f"Acquired {n_new_sino_korean_nouns} new pure Korean nouns and {n_new_characters} new Hanja.")
     
     print(f"Parsing pure Korean nouns")
     pure_korean_nouns: List[KoreanWord] = []
@@ -238,9 +239,6 @@ if __name__ == "__main__":
                 if head_template_name in ("ko-noun"):
                     focus_word = word["word"]
                     if is_hangul(focus_word):
-                        glosses = []
-                        english_meanings = []
-                        hangul_pronunciations = []
                         if focus_word in hangul_for_hanja_based_korean_nouns:
                             continue
                         if "forms" in word:
@@ -252,5 +250,9 @@ if __name__ == "__main__":
                             # Handle the case where the noun has Hanja roots
                             if maybe_hanja_word is None:
                                 # process a pure Korean noun
-                                pass
+                                hangul_word = focus_word
+                                glosses = [] 
+                                english_meanings = english_meanings_from_word(word)
+                                glosses = glosses_from_word(word)
+                                pure_korean_nouns.append(KoreanWord(hangul_word, set(english_meanings), set(glosses), None))
     print(f"Acquired {len(pure_korean_nouns)} new pure Korean nouns.")
