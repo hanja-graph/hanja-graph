@@ -9,11 +9,11 @@
 #ko-pos - particles, etc. Complex concepts and not appropriate for flash cards.
 #ko-hanja/old - Korean nouns. Used.
 #ko-proper noun - proper Korean nouns, used.
-#ko-interj
-#ko-syllable-hanja
-#ko-interjection
-#ko-syllable
-#ko-adv
+#ko-interj - interjections. Not suitable for flash cards.
+#ko-syllable-hanja - Hangul characters. Not in scope.
+#ko-interjection - more interjections
+#ko-syllable - Hangul again
+#ko-adv - adverbs, used.
 #ko-determ
 #ko-adj
 #ko-verb
@@ -150,6 +150,10 @@ def strip_common_verb_suffixes(word: str):
     if word.endswith(' '):
         return True, word.rstrip()
     if word.endswith('—'):
+        return True, word[0:len(word)-1]
+    if word.endswith('히'):
+        return True, word[0:len(word)-1]
+    if word.endswith('로'):
         return True, word[0:len(word)-1]
     return False, word
 
@@ -306,7 +310,7 @@ if __name__ == "__main__":
                                 n_new_sino_korean_nouns += 1
     print(f"Acquired {n_new_sino_korean_nouns} new pure Sion-Korean nouns and {n_new_characters} new Hanja.")
     
-    print(f"Parsing pure Korean nouns")
+    print(f"Parsing pure Korean nouns.")
     pure_korean_nouns: Dict[Optional[str], Dict[str, KoreanWord]] = {}
     for word in word_reader(in_filename):
         if "head_templates" in word:
@@ -338,7 +342,7 @@ if __name__ == "__main__":
             head_templates: List[Dict] = word["head_templates"]
             for head_template in head_templates:
                 head_template_name = head_template["name"]
-                if head_template_name in ("ko-verb"):
+                if head_template_name in ("ko-verb", "ko-adv"):
                     focus_word = word["word"]
                     if "forms" in word:
                         forms: List[Dict] = word["forms"]
@@ -350,8 +354,17 @@ if __name__ == "__main__":
                         if maybe_hanja_word is not None:
                             stripped_hanja, maybe_hanja_word = strip_common_verb_suffixes(maybe_hanja_word)
                             stripped_hangul, maybe_hangul_word = strip_common_verb_suffixes(focus_word)
-                            if stripped_hanja == False or stripped_hangul == False or len(maybe_hanja_word) != len(maybe_hanja_word):
-                                print('Warning: ignoring word "' + maybe_hanja_word + '"')
+                            # ugly as hell, but this is an important word
+                            if maybe_hangul_word == '원래':
+                                for maybe_hanja_word in ["元來", "原來"]:
+                                    english_meanings = english_meanings_from_word(word)
+                                    glosses = glosses_from_word(word)
+                                    upsert_korean_word(sino_korean_nouns, maybe_hanja_word, maybe_hangul_word, english_meanings, glosses)
+                                continue
+                            if len(maybe_hanja_word) != len(maybe_hangul_word):
+                                print(stripped_hangul)
+                                print('Warning: ignoring word "' + focus_word + '"')
+                                print(json.dumps(word, ensure_ascii=False, indent=1))
                             else:
                                 english_meanings = english_meanings_from_word(word)
                                 glosses = glosses_from_word(word)
@@ -365,7 +378,7 @@ if __name__ == "__main__":
             head_templates: List[Dict] = word["head_templates"]
             for head_template in head_templates:
                 head_template_name = head_template["name"]
-                if head_template_name in ("ko-verb"):
+                if head_template_name in ("ko-verb", "ko-adv"):
                     focus_word = word["word"]
                     if "forms" in word:
                         forms: List[Dict] = word["forms"]
@@ -382,7 +395,7 @@ if __name__ == "__main__":
     print(f"Acquired {len(pure_korean_verbs[None])} pure Korean verbs.")
 
     # Temporary: just for listing the most recent thing we're trying to parse.
-    target_template = "ko-proper noun"
+    target_template = "ko-determ"
     print(f"Parsing {target_template}.")
     for word in word_reader(in_filename):
         if "head_templates" in word:
