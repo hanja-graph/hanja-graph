@@ -195,10 +195,8 @@ if __name__ == "__main__":
     print(f"Acquired {len(hanja_based_korean_nouns)} unique Hanja-based Korean words.")
 
     print(f"Parsing pure Korean nouns")
-    pure_korean_nouns: List[KoreanWord] = []
     n_new_characters = 0
     n_new_sino_korean_nouns = 0
-    n_new_pure_korean_nouns = 0
     for word in word_reader(in_filename):
         if "head_templates" in word:
             head_templates: List[Dict] = word["head_templates"]
@@ -229,6 +227,30 @@ if __name__ == "__main__":
                                 hanja_based_korean_nouns[maybe_hanja_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), maybe_hanja_word)
                                 hangul_for_hanja_based_korean_nouns.add(hangul_word)
                                 n_new_sino_korean_nouns += 1
-                            else:
-                                n_new_pure_korean_nouns += 1
-    print(f"Acquired {n_new_characters} new characters, {n_new_sino_korean_nouns} new nouns and {n_new_pure_korean_nouns} new pure Korean nouns.")
+    
+    print(f"Parsing pure Korean nouns")
+    pure_korean_nouns: List[KoreanWord] = []
+    for word in word_reader(in_filename):
+        if "head_templates" in word:
+            head_templates: List[Dict] = word["head_templates"]
+            for head_template in head_templates:
+                head_template_name = head_template["name"]
+                if head_template_name in ("ko-noun"):
+                    focus_word = word["word"]
+                    if is_hangul(focus_word):
+                        glosses = []
+                        english_meanings = []
+                        hangul_pronunciations = []
+                        if focus_word in hangul_for_hanja_based_korean_nouns:
+                            continue
+                        if "forms" in word:
+                            forms: List[Dict] = word["forms"]
+                            maybe_hanja_word: Optional[str] = None
+                            for form in forms:
+                                if 'hanja' in form['tags'] and 'form' in form:
+                                    maybe_hanja_word = form['form']
+                            # Handle the case where the noun has Hanja roots
+                            if maybe_hanja_word is None:
+                                # process a pure Korean noun
+                                pass
+    print(f"Acquired {len(pure_korean_nouns)} new pure Korean nouns.")
