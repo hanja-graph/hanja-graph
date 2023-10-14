@@ -50,6 +50,21 @@ def english_meanings_from_word(word: Dict):
             english_meanings += english_meanings_from_links(links)
     return english_meanings
 
+def korean_meanings_from_word(word: Dict):
+    if "senses" not in word:
+        return []
+    senses = word['senses']
+    korean_meanings = []
+    for sense in senses:
+        if "links" in sense:
+            links: List[str] = sense["links"]
+            korean_meanings += english_meanings_from_links(links)
+            for link in links:
+                if link[1].endswith('#Korean'):
+                    if is_hangul(link[0]):
+                        korean_meanings.append(link[0])
+    return korean_meanings
+
 def glosses_from_word(word: Dict):
     if "senses" not in word:
         return []
@@ -69,6 +84,44 @@ def add_hanja_character(hanja_characters: Dict[str, Dict[str, HanjaCharacterEntr
         hanja_characters[hanja_word][hangul_pronunciation].english_meanings.update(english_meanings)
         hanja_characters[hanja_word][hangul_pronunciation].korean_meanings.update(korean_meanings)
         hanja_characters[hanja_word][hangul_pronunciation].korean_meanings.update(glosses)
+                                
+def upsert_korean_word(word_dict: Dict[Optional[str], Dict[str,KoreanWord]], hanja_word: Optional[str], hangul_word: str, english_meanings: List[str], glosses: List[str]):
+    if hanja_word in word_dict:
+        if hangul_word in word_dict[hanja_word]:
+            word_dict[hanja_word][hangul_word].english_meanings.update(english_meanings)
+            word_dict[hanja_word][hangul_word].glosses.update(glosses)
+        else:
+            word_dict[hanja_word][hangul_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), hanja_word)
+    else:
+        word_dict[hanja_word] = {}
+        word_dict[hanja_word][hangul_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), hanja_word)
+
+def strip_common_verb_suffixes(word: str):
+    if word.endswith('하다'):
+        return True, word[0:len(word)-2]
+    if word.endswith('되다'):
+        return True, word[0:len(word)-2]
+    if word.endswith('보다'):
+        return True, word[0:len(word)-2]
+    if word.endswith('나다'):
+        return True, word[0:len(word)-2]
+    if word.endswith('치다'):
+        return True, word[0:len(word)-2]
+    if word.endswith('뜨다'):
+        return True, word[0:len(word)-2]
+    if word.endswith('막히다'):
+        return True, word[0:len(word)-3]
+    if word.endswith('잇다'):
+        return True, word[0:len(word)-2]
+    if word.endswith('을 먹다'):
+        return True, word[0:len(word)-4]
+    if word.endswith('쓰다'):
+        return True, word[0:len(word)-2]
+    if word.endswith(' '):
+        return True, word.rstrip()
+    if word.endswith('—'):
+        return True, word[0:len(word)-1]
+    return False, word
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -103,7 +156,6 @@ if __name__ == "__main__":
                     if head_template_name not in distinct_head_templates:
                         distinct_head_templates.add(head_template_name)
                         print(f"Head template {head_template_name}")
-                        print(word)
     
     # By showing the head templates, we can determine that words with the following
     # head templates represent Hanja:
@@ -149,9 +201,8 @@ if __name__ == "__main__":
                         add_hanja_character(hanja_characters, hanja_word, hangul_pronunciations, glosses, korean_meanings)
     print(f"Acquired {len(hanja_characters)} unique hanja characters.")
 
-    print(f"Parsing Hanja nouns")
-    hanja_based_korean_nouns: Dict[str, KoreanWord] = {}
-    hangul_for_hanja_based_korean_nouns: Set[str] = set()
+    print(f"Parsing explicit Sino-Korean nouns.")
+    sino_korean_nouns: Dict[Optional[str], Dict[str, KoreanWord]] = {}
     for word in word_reader(in_filename):
         if "head_templates" in word:
             head_templates: List[Dict] = word["head_templates"]
@@ -190,11 +241,10 @@ if __name__ == "__main__":
                                     continue
                                 if 'glosses' in sense:
                                     glosses += sense['glosses']
-                                hanja_based_korean_nouns[hanja_word] = KoreanWord(hangul_pronunciations[0], set(english_meanings), set(glosses), hanja_word)
-                                hangul_for_hanja_based_korean_nouns.add(hangul_pronunciations[0])
-    print(f"Acquired {len(hanja_based_korean_nouns)} unique Hanja-based Korean words.")
+                                upsert_korean_word(sino_korean_nouns, hanja_word, hangul_pronunciations[0], english_meanings, glosses)
+    print(f"Acquired {len(sino_korean_nouns)} unique Hanja-based Korean words.")
 
-    print(f"Parsing Sino-Korean nouns")
+    print(f"Parsing Sino-Korean nouns.")
     n_new_characters = 0
     n_new_sino_korean_nouns = 0
     for word in word_reader(in_filename):
@@ -208,8 +258,6 @@ if __name__ == "__main__":
                         glosses = []
                         english_meanings = []
                         hangul_pronunciations = []
-                        if focus_word in hangul_for_hanja_based_korean_nouns:
-                            continue
                         if "forms" in word:
                             forms: List[Dict] = word["forms"]
                             maybe_hanja_word: Optional[str] = None
@@ -224,13 +272,12 @@ if __name__ == "__main__":
                                 if maybe_hanja_word not in hanja_characters and len(maybe_hanja_word) == 1:
                                     add_hanja_character(hanja_characters, maybe_hanja_word, hangul_word, glosses, [hangul_word])
                                     n_new_characters += 1
-                                hanja_based_korean_nouns[maybe_hanja_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), maybe_hanja_word)
-                                hangul_for_hanja_based_korean_nouns.add(hangul_word)
+                                upsert_korean_word(sino_korean_nouns, maybe_hanja_word, hangul_word, english_meanings, glosses)
                                 n_new_sino_korean_nouns += 1
     print(f"Acquired {n_new_sino_korean_nouns} new pure Korean nouns and {n_new_characters} new Hanja.")
     
     print(f"Parsing pure Korean nouns")
-    pure_korean_nouns: List[KoreanWord] = []
+    pure_korean_nouns: Dict[Optional[str], Dict[str, KoreanWord]] = {}
     for word in word_reader(in_filename):
         if "head_templates" in word:
             head_templates: List[Dict] = word["head_templates"]
@@ -239,8 +286,6 @@ if __name__ == "__main__":
                 if head_template_name in ("ko-noun"):
                     focus_word = word["word"]
                     if is_hangul(focus_word):
-                        if focus_word in hangul_for_hanja_based_korean_nouns:
-                            continue
                         if "forms" in word:
                             forms: List[Dict] = word["forms"]
                             maybe_hanja_word: Optional[str] = None
@@ -254,5 +299,54 @@ if __name__ == "__main__":
                                 glosses = [] 
                                 english_meanings = english_meanings_from_word(word)
                                 glosses = glosses_from_word(word)
-                                pure_korean_nouns.append(KoreanWord(hangul_word, set(english_meanings), set(glosses), None))
+                                upsert_korean_word(pure_korean_nouns, None, hangul_word, english_meanings, glosses)
     print(f"Acquired {len(pure_korean_nouns)} new pure Korean nouns.")
+    
+    print(f"Parsing Sino-Korean verbs.")
+    for word in word_reader(in_filename):
+        if "head_templates" in word:
+            head_templates: List[Dict] = word["head_templates"]
+            for head_template in head_templates:
+                head_template_name = head_template["name"]
+                if head_template_name in ("ko-verb"):
+                    focus_word = word["word"]
+                    if "forms" in word:
+                        forms: List[Dict] = word["forms"]
+                        maybe_hanja_word: Optional[str] = None
+                        for form in forms:
+                            if 'hanja' in form['tags'] and 'form' in form:
+                                maybe_hanja_word = form['form']
+                        # Handle the case where the noun has Hanja roots
+                        if maybe_hanja_word is not None:
+                            stripped_hanja, maybe_hanja_word = strip_common_verb_suffixes(maybe_hanja_word)
+                            stripped_hangul, maybe_hangul_word = strip_common_verb_suffixes(focus_word)
+                            if stripped_hanja == False or stripped_hangul == False or len(maybe_hanja_word) != len(maybe_hanja_word):
+                                print('Warning: ignoring word "' + maybe_hanja_word + '"')
+                            else:
+                                english_meanings = english_meanings_from_word(word)
+                                glosses = glosses_from_word(word)
+                                upsert_korean_word(sino_korean_nouns, maybe_hanja_word, maybe_hangul_word, english_meanings, glosses)
+    print(f"Now at {len(sino_korean_nouns)} Sino-Korean nouns after parsing Sino-korean verbs.")
+    
+    print(f"Parsing pure Korean verbs.")
+    pure_korean_verbs: Dict[Optional[str], Dict[str, KoreanWord]] = {}
+    for word in word_reader(in_filename):
+        if "head_templates" in word:
+            head_templates: List[Dict] = word["head_templates"]
+            for head_template in head_templates:
+                head_template_name = head_template["name"]
+                if head_template_name in ("ko-verb"):
+                    focus_word = word["word"]
+                    if "forms" in word:
+                        forms: List[Dict] = word["forms"]
+                        maybe_hanja_word: Optional[str] = None
+                        for form in forms:
+                            if 'hanja' in form['tags'] and 'form' in form:
+                                maybe_hanja_word = form['form']
+                        # Handle the case where the noun has Hanja roots
+                        if maybe_hanja_word is None:
+                            hangul_word = focus_word
+                            english_meanings = english_meanings_from_word(word)
+                            glosses = glosses_from_word(word)
+                            upsert_korean_word(pure_korean_verbs, None, hangul_word, english_meanings, glosses)
+    print(f"Acquired {len(pure_korean_verbs[None])} pure Korean verbs.")
