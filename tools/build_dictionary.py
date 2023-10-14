@@ -14,10 +14,10 @@
 #ko-interjection - more interjections
 #ko-syllable - Hangul again
 #ko-adv - adverbs, used.
-#ko-determ
-#ko-adj
-#ko-verb
-#ko-verb-set
+#ko-determ - determiners, used.
+#ko-adj - adjectives, used.
+#ko-verb verbs, used.
+#ko-verb-set - more verbs
 #ko-verb-form
 #ko-adj-form
 #ko-suffix
@@ -336,13 +336,13 @@ if __name__ == "__main__":
                                 upsert_korean_word(pure_korean_nouns, None, hangul_word, english_meanings, glosses)
     print(f"Acquired {len(pure_korean_nouns[None])} new pure Korean nouns.")
     
-    print(f"Parsing Sino-Korean verbs.")
+    print(f"Parsing Sino-Korean verbs, adjectives and parts of speech.")
     for word in word_reader(in_filename):
         if "head_templates" in word:
             head_templates: List[Dict] = word["head_templates"]
             for head_template in head_templates:
                 head_template_name = head_template["name"]
-                if head_template_name in ("ko-verb", "ko-adv"):
+                if head_template_name in ("ko-verb", "ko-adv", "ko-determ", "ko-adj", "ko-verb-set"):
                     focus_word = word["word"]
                     if "forms" in word:
                         forms: List[Dict] = word["forms"]
@@ -371,14 +371,14 @@ if __name__ == "__main__":
                                 upsert_korean_word(sino_korean_nouns, maybe_hanja_word, maybe_hangul_word, english_meanings, glosses)
     print(f"Now at {len(sino_korean_nouns)} Sino-Korean nouns after parsing Sino-korean verbs.")
     
-    print(f"Parsing pure Korean verbs.")
+    print(f"Parsing pure Korean verbs, adjectives and parts of speech.")
     pure_korean_verbs: Dict[Optional[str], Dict[str, KoreanWord]] = {}
     for word in word_reader(in_filename):
         if "head_templates" in word:
             head_templates: List[Dict] = word["head_templates"]
             for head_template in head_templates:
                 head_template_name = head_template["name"]
-                if head_template_name in ("ko-verb", "ko-adv"):
+                if head_template_name in ("ko-verb", "ko-adv", "ko-determ", "ko-adj", "ko-verb-set"):
                     focus_word = word["word"]
                     if "forms" in word:
                         forms: List[Dict] = word["forms"]
@@ -395,7 +395,7 @@ if __name__ == "__main__":
     print(f"Acquired {len(pure_korean_verbs[None])} pure Korean verbs.")
 
     # Temporary: just for listing the most recent thing we're trying to parse.
-    target_template = "ko-determ"
+    target_template = "ko-verb-set"
     print(f"Parsing {target_template}.")
     for word in word_reader(in_filename):
         if "head_templates" in word:
