@@ -4,11 +4,11 @@
 # Exhaustive list of head templates as of this writing:
 #ko-hanja/new - Hanja. Used.
 #ko-hanja - Hanja. Used.
-#head
+#head - seems like all words have this. Not parsed.
 #ko-noun - Korean nouns. Used.
-#ko-pos
-#ko-hanja/old
-#ko-proper noun
+#ko-pos - particles, etc. Complex concepts and not appropriate for flash cards.
+#ko-hanja/old - Korean nouns. Used.
+#ko-proper noun - proper Korean nouns, used.
 #ko-interj
 #ko-syllable-hanja
 #ko-interjection
@@ -282,7 +282,7 @@ if __name__ == "__main__":
             head_templates: List[Dict] = word["head_templates"]
             for head_template in head_templates:
                 head_template_name = head_template["name"]
-                if head_template_name in ("ko-noun"):
+                if head_template_name in ("ko-noun", "ko-proper noun"):
                     focus_word = word["word"]
                     if is_hangul(focus_word):
                         glosses = []
@@ -304,7 +304,7 @@ if __name__ == "__main__":
                                     n_new_characters += 1
                                 upsert_korean_word(sino_korean_nouns, maybe_hanja_word, hangul_word, english_meanings, glosses)
                                 n_new_sino_korean_nouns += 1
-    print(f"Acquired {n_new_sino_korean_nouns} new pure Korean nouns and {n_new_characters} new Hanja.")
+    print(f"Acquired {n_new_sino_korean_nouns} new pure Sion-Korean nouns and {n_new_characters} new Hanja.")
     
     print(f"Parsing pure Korean nouns")
     pure_korean_nouns: Dict[Optional[str], Dict[str, KoreanWord]] = {}
@@ -313,7 +313,7 @@ if __name__ == "__main__":
             head_templates: List[Dict] = word["head_templates"]
             for head_template in head_templates:
                 head_template_name = head_template["name"]
-                if head_template_name in ("ko-noun"):
+                if head_template_name in ("ko-noun", "ko-proper noun"):
                     focus_word = word["word"]
                     if is_hangul(focus_word):
                         if "forms" in word:
@@ -330,7 +330,7 @@ if __name__ == "__main__":
                                 english_meanings = english_meanings_from_word(word)
                                 glosses = glosses_from_word(word)
                                 upsert_korean_word(pure_korean_nouns, None, hangul_word, english_meanings, glosses)
-    print(f"Acquired {len(pure_korean_nouns)} new pure Korean nouns.")
+    print(f"Acquired {len(pure_korean_nouns[None])} new pure Korean nouns.")
     
     print(f"Parsing Sino-Korean verbs.")
     for word in word_reader(in_filename):
@@ -382,7 +382,7 @@ if __name__ == "__main__":
     print(f"Acquired {len(pure_korean_verbs[None])} pure Korean verbs.")
 
     # Temporary: just for listing the most recent thing we're trying to parse.
-    target_template = "head"
+    target_template = "ko-proper noun"
     print(f"Parsing {target_template}.")
     for word in word_reader(in_filename):
         if "head_templates" in word:
@@ -391,6 +391,6 @@ if __name__ == "__main__":
                 head_template_name = head_template["name"]
                 if head_template_name in (target_template):
                     focus_word = word["word"]
-                    print(focus_word)
-                    print(word)
-                    blah = input()
+                    #print(focus_word)
+                    #print(json.dumps(word, ensure_ascii=False, indent=1))
+                    #blah = input()
