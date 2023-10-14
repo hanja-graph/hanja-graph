@@ -60,7 +60,7 @@ def glosses_from_word(word: Dict):
             glosses += sense['glosses']
     return glosses
 
-def add_korean_word(hanja_characters: Dict[str, Dict[str, HanjaCharacterEntry]], hanja_word: str, hangul_pronunciations: List[str], glosses: List[str], korean_meanings: List[str]):
+def add_hanja_character(hanja_characters: Dict[str, Dict[str, HanjaCharacterEntry]], hanja_word: str, hangul_pronunciations: List[str], glosses: List[str], korean_meanings: List[str]):
     if hanja_word not in hanja_characters:
         hanja_characters[hanja_word] = {}
     for hangul_pronunciation in set(hangul_pronunciations):
@@ -146,8 +146,8 @@ if __name__ == "__main__":
                             continue
                         if len(korean_meanings) == 0:
                             continue
-                        add_korean_word(hanja_characters, hanja_word, hangul_pronunciations, glosses, korean_meanings)
-    print(f"Acquired {len(hanja_characters)} unique hanja words.")
+                        add_hanja_character(hanja_characters, hanja_word, hangul_pronunciations, glosses, korean_meanings)
+    print(f"Acquired {len(hanja_characters)} unique hanja characters.")
 
     print(f"Parsing Hanja nouns")
     hanja_based_korean_nouns: Dict[str, KoreanWord] = {}
@@ -197,6 +197,8 @@ if __name__ == "__main__":
     print(f"Parsing pure Korean nouns")
     pure_korean_nouns: List[KoreanWord] = []
     n_new_characters = 0
+    n_new_sino_korean_nouns = 0
+    n_new_pure_korean_nouns = 0
     for word in word_reader(in_filename):
         if "head_templates" in word:
             head_templates: List[Dict] = word["head_templates"]
@@ -216,12 +218,17 @@ if __name__ == "__main__":
                             for form in forms:
                                 if 'hanja' in form['tags'] and 'form' in form:
                                     maybe_hanja_word = form['form']
+                            # Handle the case where the noun has Hanja roots
                             if maybe_hanja_word is not None:
                                 hangul_word = focus_word
                                 english_meanings = english_meanings_from_word(word)
                                 glosses = glosses_from_word(word)
                                 if maybe_hanja_word not in hanja_characters and len(maybe_hanja_word) == 1:
-                                    add_korean_word(hanja_characters, maybe_hanja_word, hangul_word, glosses, [hangul_word])
+                                    add_hanja_character(hanja_characters, maybe_hanja_word, hangul_word, glosses, [hangul_word])
                                     n_new_characters += 1
-                        #print(json.dumps(word, indent=2, ensure_ascii=False))
-    print(f"Acquired {n_new_characters} new characters.")
+                                hanja_based_korean_nouns[maybe_hanja_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), maybe_hanja_word)
+                                hangul_for_hanja_based_korean_nouns.add(hangul_word)
+                                n_new_sino_korean_nouns += 1
+                            else:
+                                n_new_pure_korean_nouns += 1
+    print(f"Acquired {n_new_characters} new characters, {n_new_sino_korean_nouns} new nouns and {n_new_pure_korean_nouns} new pure Korean nouns.")
