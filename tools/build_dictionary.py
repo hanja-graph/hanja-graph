@@ -1,5 +1,35 @@
 #!/usr/bin/env python3
 
+# A script for parsing all Korean words out of a Wiktionary dump.
+# Exhaustive list of head templates as of this writing:
+#ko-hanja/new - Hanja. Used.
+#ko-hanja - Hanja. Used.
+#head
+#ko-noun - Korean nouns. Used.
+#ko-pos
+#ko-hanja/old
+#ko-proper noun
+#ko-interj
+#ko-syllable-hanja
+#ko-interjection
+#ko-syllable
+#ko-adv
+#ko-determ
+#ko-adj
+#ko-verb
+#ko-verb-set
+#ko-verb-form
+#ko-adj-form
+#ko-suffix
+#ko-root
+#ko-num
+#ko-adverb
+#ko-det
+#ko-adjective
+#ko-proverb
+#ko-prop
+#ko-conj/adj
+
 # Standard library
 from typing import Dict, List, Set, Optional
 import argparse
@@ -350,3 +380,17 @@ if __name__ == "__main__":
                             glosses = glosses_from_word(word)
                             upsert_korean_word(pure_korean_verbs, None, hangul_word, english_meanings, glosses)
     print(f"Acquired {len(pure_korean_verbs[None])} pure Korean verbs.")
+
+    # Temporary: just for listing the most recent thing we're trying to parse.
+    target_template = "head"
+    print(f"Parsing {target_template}.")
+    for word in word_reader(in_filename):
+        if "head_templates" in word:
+            head_templates: List[Dict] = word["head_templates"]
+            for head_template in head_templates:
+                head_template_name = head_template["name"]
+                if head_template_name in (target_template):
+                    focus_word = word["word"]
+                    print(focus_word)
+                    print(word)
+                    blah = input()
