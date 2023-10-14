@@ -342,7 +342,7 @@ if __name__ == "__main__":
             head_templates: List[Dict] = word["head_templates"]
             for head_template in head_templates:
                 head_template_name = head_template["name"]
-                if head_template_name in ("ko-verb", "ko-adv", "ko-determ", "ko-adj"):
+                if head_template_name in ("ko-verb", "ko-adv", "ko-determ", "ko-adj", "ko-adverb"):
                     focus_word = word["word"]
                     if "forms" in word:
                         forms: List[Dict] = word["forms"]
@@ -378,7 +378,7 @@ if __name__ == "__main__":
             head_templates: List[Dict] = word["head_templates"]
             for head_template in head_templates:
                 head_template_name = head_template["name"]
-                if head_template_name in ("ko-verb", "ko-adv", "ko-determ", "ko-adj", "ko-verb-set"):
+                if head_template_name in ("ko-verb", "ko-adv", "ko-determ", "ko-adj", "ko-verb-set", "ko-adverb"):
                     focus_word = word["word"]
                     if "forms" in word:
                         forms: List[Dict] = word["forms"]
