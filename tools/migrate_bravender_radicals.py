@@ -18,6 +18,6 @@ if __name__ == "__main__":
                 if hanja != ' ':
                     lines.append(f"('{radical}', '{hanja}')")
         with open("src/assets/sources/bravender/new_radicals.sql", "w") as f:
-            f.write("INSERT INTO word_list VALUES\n")
+            f.write("INSERT INTO radicals VALUES\n")
             f.write(',\n'.join(lines))
             f.write('\nON CONFLICT DO NOTHING;')
