@@ -117,7 +117,7 @@ def add_hanja_character(hanja_characters: Dict[str, Dict[str, HanjaCharacterEntr
 
 def build_hanja_english_definition_file(file_path: str, hanja_characters: Dict[str, Dict[str, HanjaCharacterEntry]]):
     with open(file_path, "w") as f:
-        f.write("INSERT INTO `hanja_definition` VALUES\n");
+        f.write("INSERT INTO `english_hanja_definition` VALUES\n");
         for i, hanja in enumerate(hanja_characters):
             for j, hangul in enumerate(hanja_characters[hanja]):
                 if len(hanja_characters[hanja][hangul].english_meanings) > 0:
@@ -426,7 +426,7 @@ if __name__ == "__main__":
                             upsert_korean_word(pure_korean_verbs, None, hangul_word, english_meanings, glosses)
     print(f"Acquired {len(pure_korean_verbs[None])} pure Korean verbs.")
 
-    hanja_english_definitions_path = os.path.join(out_directory, "hanja_definition.sql");
+    hanja_english_definitions_path = os.path.join(out_directory, "english_hanja_definition.sql");
     print(f"Writing hanja English definitions to {hanja_english_definitions_path}.")
     build_hanja_english_definition_file(hanja_english_definitions_path, hanja_characters)
 
