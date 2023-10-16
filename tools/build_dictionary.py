@@ -127,7 +127,6 @@ def build_hanja_english_definition_file(file_path: str, hanja_characters: Dict[s
                     for gloss in hanja_characters[hanja][hangul].glosses:
                         f.write(f"('{hanja}', '{gloss}')");
                 else:
-                    print(f"Warning: no english meanings or glosses for {hanja},{hangul}")
                     continue
                 if i != len(hanja_characters) - 1 and j != len(hanja_characters[hanja]) - 1:
                     f.write(",\n")
