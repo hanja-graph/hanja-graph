@@ -207,16 +207,6 @@ export const validateUserDataDump = (obj: any): UserDataDump => {
   return res;
 };
 
-export async function getHangulforHanja(hanja: string): Promise<Array<string>> {
-  assertCharacter(hanja);
-  const query = `SELECT hangul FROM korean_pronunciation WHERE hanjas LIKE '%${hanja}%';`;
-  const result = await queryDictionary(query);
-  if (result.values.length == 0) {
-    return [];
-  }
-  return result.values.map((elem) => elem.toString());
-}
-
 export async function getWord(hanjahangul: string): Promise<Word | undefined> {
   const query = `SELECT hanja, hangul, english FROM hanjas WHERE  hanja || hangul = '${hanjahangul}';`;
   const queryResult = await queryDictionary(query);
@@ -283,15 +273,6 @@ export async function getSiblings(
     }
   }
   return siblings;
-}
-
-export async function koreanPronunciationDefined(
-  hanjaCharacter: string
-): Promise<boolean> {
-  assertCharacter(hanjaCharacter);
-  const query = `SELECT hangul FROM korean_pronunciation WHERE hanjas like '%${hanjaCharacter}%'`;
-  const results = await queryDictionary(query);
-  return results.values.length > 0;
 }
 
 export async function searchForCardWithHanja(
