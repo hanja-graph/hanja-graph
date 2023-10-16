@@ -101,7 +101,7 @@ export default class DbBrowser extends Component<ReplProps, ReplState> {
   }
 
   async clearDatabase() {
-    await queryDictionary("DROP TABLE hanjas;");
+    await queryDictionary("DROP TABLE word_list;");
     await queryDictionary("DROP TABLE korean_hanja_definition;");
     await queryDictionary("DROP TABLE english_hanja_definition;");
     await queryDictionary("DROP TABLE korean_pronunciation;");

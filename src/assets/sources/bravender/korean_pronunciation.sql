@@ -1,4 +1,4 @@
-INSERT INTO word_list VALUES
+INSERT INTO korean_pronunciation VALUES
 ('仛', '탁'),
 ('侂', '탁'),
 ('倬', '탁'),

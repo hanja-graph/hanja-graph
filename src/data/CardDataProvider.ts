@@ -1,6 +1,6 @@
 import { queryDictionary, QueryResponse } from "../db/CardDatabase.js";
 import { CardReviewState } from "../scheduler/SM2";
-import hanjasSchema from "../assets//schemas/hanjas.sql?raw";
+import wordListScheme from "../assets//schemas/word_list.sql?raw";
 import englishHanjaDefinitionSchema from "../assets//schemas/english_hanja_definition.sql?raw";
 import koreanHanjaDefinitionSchema from "../assets//schemas/korean_hanja_definition.sql?raw";
 import koreanPronunciationSchema from "../assets//schemas/korean_pronunciation.sql?raw";
@@ -8,7 +8,7 @@ import radicalsSchema from "../assets//schemas/radicals.sql?raw";
 import tagsSchema from "../assets//schemas/tags.sql?raw";
 import reviewsSchema from "../assets//schemas/reviews.sql?raw";
 
-import hanjasData from "../assets//sources/bravender/hanjas.sql?raw";
+import wordListData from "../assets//sources/bravender/word_list.sql?raw";
 import englishHanjaDefinitionData from "../assets//sources/bravender/english_hanja_definition.sql?raw";
 import koreanHanjaDefinitionData from "../assets//sources/bravender/korean_hanja_definition.sql?raw";
 import koreanPronunciationData from "../assets//sources/bravender/korean_pronunciation.sql?raw";
@@ -64,7 +64,11 @@ export const initializeAndSeedDictionary = async () => {
     "SELECT * FROM korean_pronunciation LIMIT 1;"
   );
   console.log("Seeding hanja words.");
-  await loadTable(hanjasSchema, hanjasData, "SELECT * FROM hanjas LIMIT 1;");
+  await loadTable(
+    wordListScheme,
+    wordListData,
+    "SELECT * FROM word_list LIMIT 1;"
+  );
 
   console.log("Seeding tags.");
   await loadTable(tagsSchema, tagsData, "SELECT * FROM tags LIMIT 1;");
@@ -92,22 +96,38 @@ export class Word {
   }
 }
 
-const unpackWordFromQuery = (value: any) => {
-  if (value.length == 3) {
-    const hanja = String(value[0]);
-    const hangul = String(value[1]);
-    const english = String(value[2]);
-    return new Word(hanja, hangul, english);
-  }
-  return undefined;
-};
-
 const unpackWordsFromQuery = (queryResult: QueryResponse) => {
   const words: Array<Word> = [];
+  const wordsMap: Map<string, Map<string, Set<string>>> = new Map();
   for (const res of queryResult.values) {
-    const unpacked = unpackWordFromQuery(res);
-    if (unpacked !== undefined) {
-      words.push(unpacked);
+    const hanja = res[0];
+    const hangul = res[1];
+    const english = res[2];
+    let hangulMap: Map<string, Set<string>> = new Map();
+    if (wordsMap.has(hanja)) {
+      hangulMap = wordsMap.get(hanja)!;
+    }
+    let englishSet: Set<string> = new Set();
+    if (hangulMap.has(hangul)) {
+      englishSet = hangulMap.get(hangul)!;
+    }
+    englishSet.add(english);
+    hangulMap.set(hangul, englishSet);
+    wordsMap.set(hanja, hangulMap);
+  }
+  for (const [hanja, hangulMap] of wordsMap) {
+    for (const [hangul, englishList] of hangulMap) {
+      let englishString = "";
+      let i = 0;
+      console.log(englishList);
+      for (const englishDef of englishList) {
+        englishString += englishDef;
+        i++;
+        if (i < englishList.size) {
+          englishString += ", ";
+        }
+      }
+      words.push(new Word(hanja, hangul, englishString));
     }
   }
   return words;
@@ -208,19 +228,12 @@ export const validateUserDataDump = (obj: any): UserDataDump => {
 };
 
 export async function getWord(hanjahangul: string): Promise<Word | undefined> {
-  const query = `SELECT hanja, hangul, english FROM hanjas WHERE  hanja || hangul = '${hanjahangul}';`;
+  const query = `SELECT hanja, hangul, english
+    FROM word_list
+    WHERE hanja || hangul = '${hanjahangul}';`;
   const queryResult = await queryDictionary(query);
-  if (queryResult.values.length > 0) {
-    const values = queryResult.values;
-    if (values.length > 0) {
-      return unpackWordFromQuery(values[0]);
-    }
-  }
-}
-
-export async function addWord(hanja: string, hangul: string, english: string) {
-  const query = `INSERT INTO hanjas (hanja, hangul, english) VALUES ('${hanja}', '${hangul}', '${english}');`;
-  await queryDictionary(query);
+  const results = unpackWordsFromQuery(queryResult);
+  return results[0];
 }
 
 export async function getEnglishDefinitionForHanja(
@@ -231,8 +244,6 @@ export async function getEnglishDefinitionForHanja(
   const englishMeaningQueryResult = await queryDictionary(englishMeaningQuery);
   const koreanMeaningQuery = `SELECT definition FROM korean_hanja_definition WHERE hanja = '${hanja}'`;
   const koreanMeaningQueryResult = await queryDictionary(koreanMeaningQuery);
-  console.log(englishMeaningQueryResult);
-  console.log(koreanMeaningQueryResult);
   let definition: string = "";
   for (const [idx, res] of koreanMeaningQueryResult.values.entries()) {
     definition = definition + res[0];
@@ -261,7 +272,11 @@ export async function getSiblings(
   hangulWord: string
 ): Promise<Array<Word>> {
   assertCharacter(hanja);
-  const hanjaQuery = `SELECT hanja, hangul, english FROM hanjas WHERE hanja LIKE '%${hanja}%' AND hangul != '${hangulWord}';`;
+  // TODO: return multi English definitiosn
+  const hanjaQuery = `
+  SELECT hanja, hangul, english
+    FROM word_list
+  WHERE hanja LIKE '%${hanja}%' AND hangul != '${hangulWord}';`;
   const hanjaQueryResult = await queryDictionary(hanjaQuery);
   const siblings = [];
   if (hanjaQueryResult.values.length > 0) {
@@ -278,24 +293,37 @@ export async function getSiblings(
 export async function searchForCardWithHanja(
   searchQuery: string
 ): Promise<Array<Word>> {
-  const query = `SELECT hanja, hangul, english FROM hanjas WHERE hanja LIKE '%${searchQuery}%'`;
+  const query = `
+  SELECT hanja, hangul, english
+    FROM word_list
+  WHERE hanja LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
+  console.log(results);
   return unpackWordsFromQuery(results);
 }
 
 export async function searchForCardWithHangul(
   searchQuery: string
 ): Promise<Array<Word>> {
-  const query = `SELECT hanja, hangul, english FROM hanjas WHERE hangul LIKE '%${searchQuery}%'`;
+  const query = `
+  SELECT hanja, hangul, english
+  FROM word_list 
+  WHERE hangul LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
+  console.log(query);
+  console.log(results);
   return unpackWordsFromQuery(results);
 }
 
 export async function searchForCardWithEnglish(
   searchQuery: string
 ): Promise<Array<Word>> {
-  const query = `SELECT hanja, hangul, english FROM hanjas WHERE english LIKE '%${searchQuery}%'`;
+  const query = `
+  SELECT hanja, hangul, english
+  FROM word_list 
+  WHERE english LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
+  console.log(results);
   return unpackWordsFromQuery(results);
 }
 
@@ -326,14 +354,14 @@ export async function getCardsForDeck(
 ): Promise<DeckReviewManifest> {
   const query = `SELECT tags.hanja as hanja, 
     tags.hangul AS hangul, 
-    hanjas.english AS english,
+    word_list.english AS english,
     reviews.easiness_factor as easiness_factor,
     reviews.interval as interval,
     reviews.last_reviewed as last_reviewed
   FROM tags 
-  LEFT JOIN hanjas 
-    ON tags.hanja = hanjas.hanja 
-      AND tags.hangul = hanjas.hangul 
+  LEFT JOIN word_list
+    ON tags.hanja = word_list.hanja 
+      AND tags.hangul = word_list.hangul 
   LEFT JOIN reviews
     ON tags.hanja = reviews.hanja 
       AND tags.hangul = reviews.hangul 
@@ -341,7 +369,6 @@ export async function getCardsForDeck(
   const res = await queryDictionary(query);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
-    // TODO: properly populate cardReviewState from DB
     states.push({
       word: new Word(elem[0], elem[1], elem[2]),
       cardReviewState: new CardReviewState(0, elem[3], elem[4]),
@@ -357,9 +384,9 @@ export async function getReviewBatch(
   deckName: string
 ): Promise<DeckReviewManifest> {
   const query = `
-  SELECT hanjas.hanja as hanja, 
-    hanjas.hangul as hangul, 
-    hanjas.english as english,
+  SELECT word_list.hanja as hanja, 
+    word_list.hangul as hangul, 
+    word_list.english AS english,
     reviews.easiness_factor as easiness_factor,
     reviews.interval as interval,
     reviews.last_reviewed as last_reviewed
@@ -367,9 +394,9 @@ export async function getReviewBatch(
   LEFT OUTER JOIN reviews ON
     tags.hanja = reviews.hanja AND
     tags.hangul = reviews.hangul
-  LEFT JOIN hanjas ON
-    hanjas.hanja = tags.hanja AND
-    hanjas.hangul = tags.hangul
+  LEFT JOIN word_list ON
+    word_list.hanja = tags.hanja AND
+    word_list.hangul = tags.hangul
   WHERE tags.name = '${deckName}'
     AND ((unixepoch(datetime('now')) - unixepoch(reviews.last_reviewed)) / (60.0*60.0*24.0) > reviews.interval
       OR reviews.interval IS NULL
@@ -378,7 +405,6 @@ export async function getReviewBatch(
   const res = await queryDictionary(query);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
-    // TODO: properly populate cardReviewState from DB
     states.push({
       word: new Word(elem[0], elem[1], elem[2]),
       cardReviewState: new CardReviewState(0, elem[3], elem[4]),

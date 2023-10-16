@@ -14,7 +14,7 @@ if __name__ == "__main__":
             english_defs_list = english_defs.split(',')
             english_defs_list = [x.strip() for x in english_defs_list]
             for english_def in english_defs_list:
-                lines.append(f"('{query_vals[0]}', '{query_vals[1]}', '{english_def}')")
+                lines.append(f"('{query_vals[0]}', '{query_vals[1]}', '{english_def}', 'noun')")
         with open("src/assets/sources/bravender/word_list.sql", "w") as f:
             f.write("INSERT INTO word_list VALUES\n")
             f.write(',\n'.join(lines))

@@ -170,7 +170,7 @@ def build_hanja_korean_definition_file(file_path: str, hanja_characters: Dict[st
 
 def build_word_list(file_path: str, word_lists: List[Dict[Optional[str], Dict[str, KoreanWord]]]):
     with open(file_path, "w") as f:
-        f.write("INSERT INTO `hanjas ` VALUES\n");
+        f.write("INSERT INTO `word_list` VALUES\n");
         lines = []
         for word_list in word_lists:
             for hanja in word_list:
@@ -494,6 +494,6 @@ if __name__ == "__main__":
     print(f"Writing Hanja Korean definitions to {korean_english_definitions_path}.")
     build_hanja_korean_definition_file(korean_english_definitions_path, hanja_characters)
 
-    word_list_path = os.path.join(out_directory, "hanjas.sql");
+    word_list_path = os.path.join(out_directory, "word_list.sql");
     build_word_list(word_list_path, [sino_korean_nouns, pure_korean_verbs, pure_korean_nouns])
     print(f"Writing word definitions to {word_list_path}.")
