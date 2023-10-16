@@ -1,14 +1,16 @@
 import { queryDictionary, QueryResponse } from "../db/CardDatabase.js";
 import { CardReviewState } from "../scheduler/SM2";
 import hanjasSchema from "../assets//schemas/hanjas.sql?raw";
-import hanjaDefinitionSchema from "../assets//schemas/hanja_definition.sql?raw";
+import englishHanjaDefinitionSchema from "../assets//schemas/english_hanja_definition.sql?raw";
+import koreanHanjaDefinitionSchema from "../assets//schemas/korean_hanja_definition.sql?raw";
 import koreanPronunciationSchema from "../assets//schemas/korean_pronunciation.sql?raw";
 import radicalsSchema from "../assets//schemas/radicals.sql?raw";
 import tagsSchema from "../assets//schemas/tags.sql?raw";
 import reviewsSchema from "../assets//schemas/reviews.sql?raw";
 
 import hanjasData from "../assets//sources/bravender/hanjas.sql?raw";
-import hanjaDefinitionData from "../assets//sources/bravender/hanja_definition.sql?raw";
+import englishHanjaDefinitionData from "../assets//sources/bravender/english_hanja_definition.sql?raw";
+import koreanHanjaDefinitionData from "../assets//sources/bravender/korean_hanja_definition.sql?raw";
 import koreanPronunciationData from "../assets//sources/bravender/korean_pronunciation.sql?raw";
 import radicalsData from "../assets//sources/bravender/radicals.sql?raw";
 import tagsData from "../assets//sources/john/tags.sql?raw";
@@ -43,11 +45,17 @@ export const initializeAndSeedDictionary = async () => {
     radicalsData,
     "SELECT * FROM radicals LIMIT 1;"
   );
-  console.log("Seeding hanja definitions.");
+  console.log("Seeding English Hanja definitions.");
   await loadTable(
-    hanjaDefinitionSchema,
-    hanjaDefinitionData,
-    "SELECT * FROM hanja_definition LIMIT 1;"
+    englishHanjaDefinitionSchema,
+    englishHanjaDefinitionData,
+    "SELECT * FROM english_hanja_definition LIMIT 1;"
+  );
+  console.log("Seeding Korean Hanja definitions.");
+  await loadTable(
+    koreanHanjaDefinitionSchema,
+    koreanHanjaDefinitionData,
+    "SELECT * FROM korean_hanja_definition LIMIT 1;"
   );
   console.log("Seeding Korean pronunciation.");
   await loadTable(
@@ -229,15 +237,33 @@ export async function getEnglishDefinitionForHanja(
   hanja: string
 ): Promise<string | undefined> {
   assertCharacter(hanja);
-  const englishMeaningQuery = `SELECT definition FROM hanja_definition WHERE hanjas = '${hanja}'`;
+  const englishMeaningQuery = `SELECT definition FROM english_hanja_definition WHERE hanja = '${hanja}'`;
   const englishMeaningQueryResult = await queryDictionary(englishMeaningQuery);
-  if (englishMeaningQueryResult.values.length > 0) {
-    const englishMeaningValues = englishMeaningQueryResult.values;
-    if (englishMeaningValues.length > 0) {
-      return englishMeaningValues[0].toString();
+  const koreanMeaningQuery = `SELECT definition FROM korean_hanja_definition WHERE hanja = '${hanja}'`;
+  const koreanMeaningQueryResult = await queryDictionary(koreanMeaningQuery);
+  console.log(englishMeaningQueryResult);
+  console.log(koreanMeaningQueryResult);
+  let definition: string = "";
+  for (const [idx, res] of koreanMeaningQueryResult.values.entries()) {
+    definition = definition + res[0];
+    if (idx + 1 < koreanMeaningQueryResult.values.length) {
+      definition = definition + ", ";
     }
   }
-  return undefined;
+  if (
+    koreanMeaningQueryResult.values.length > 0 &&
+    englishMeaningQueryResult.values.length > 0
+  ) {
+    definition += "/";
+  }
+  for (const [idx, res] of englishMeaningQueryResult.values.entries()) {
+    definition = definition + res[0];
+    if (idx + 1 < englishMeaningQueryResult.values.length) {
+      definition = definition + ", ";
+    } else {
+    }
+  }
+  return definition;
 }
 
 export async function getSiblings(
@@ -302,54 +328,6 @@ export async function fuzzySearch(searchQuery: string): Promise<Array<Word>> {
   words = words.concat(await searchForCardWithHangul(searchQuery));
   words = words.concat(await searchForCardWithEnglish(searchQuery));
   return words;
-}
-
-export async function hanjaDefinitionExists(
-  hanjaCharacter: string
-): Promise<boolean> {
-  assertCharacter(hanjaCharacter);
-  const query = `SELECT hanjas FROM hanja_definition WHERE hanjas = '${hanjaCharacter}'`;
-  const results = await queryDictionary(query);
-  return results.values.length > 0;
-}
-
-async function addHangulPronunciationForHanja(
-  hanjaCharacter: string,
-  hangulPronunciation: string
-) {
-  assertCharacter(hanjaCharacter);
-  assertCharacter(hangulPronunciation);
-  const query = `UPDATE korean_pronunciation SET hanjas = hanjas || '${hanjaCharacter}' WHERE hangul = '${hangulPronunciation};`;
-  await queryDictionary(query);
-}
-
-async function addHanjaMeaning(hanjaCharacter: string, meaning: string) {
-  assertCharacter(hanjaCharacter);
-  const query = `INSERT INTO hanja_definition (hanjas, definition) VALUES ('${hanjaCharacter}', '${meaning}')`;
-  await queryDictionary(query);
-}
-
-export async function addHanjaWordAndDefinition(
-  hanjaCharacter: string,
-  meaning: string,
-  hangulPronunciation: string
-): Promise<void> {
-  assertCharacter(hanjaCharacter);
-  assertCharacter(hangulPronunciation);
-  const hasHanjaDefinition = await hanjaDefinitionExists(hanjaCharacter);
-  const hasKoreanPronunciation = await koreanPronunciationDefined(
-    hangulPronunciation
-  );
-  if (!hasHanjaDefinition && !hasKoreanPronunciation) {
-    await addHangulPronunciationForHanja(hanjaCharacter, hangulPronunciation);
-    await addHanjaMeaning(hanjaCharacter, meaning);
-  } else if (hasHanjaDefinition && hasKoreanPronunciation) {
-    return;
-  } else {
-    throw new Error(
-      "Invalid state: hasHanjaDefinition=${hasHanjaDefinition}, hasKoreanPronunciation=${hasKoreanPronunciation}"
-    );
-  }
 }
 
 export async function getDecks(): Promise<Array<Deck>> {
