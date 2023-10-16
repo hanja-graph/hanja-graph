@@ -114,7 +114,40 @@ def add_hanja_character(hanja_characters: Dict[str, Dict[str, HanjaCharacterEntr
         hanja_characters[hanja_word][hangul_pronunciation].english_meanings.update(english_meanings)
         hanja_characters[hanja_word][hangul_pronunciation].korean_meanings.update(korean_meanings)
         hanja_characters[hanja_word][hangul_pronunciation].korean_meanings.update(glosses)
-                                
+
+def build_hanja_english_definition_file(file_path: str, hanja_characters: Dict[str, Dict[str, HanjaCharacterEntry]]):
+    with open(file_path, "w") as f:
+        f.write("INSERT INTO `hanja_definition` VALUES\n");
+        for i, hanja in enumerate(hanja_characters):
+            for j, hangul in enumerate(hanja_characters[hanja]):
+                if len(hanja_characters[hanja][hangul].english_meanings) > 0:
+                    for english_meaning in hanja_characters[hanja][hangul].english_meanings:
+                        f.write(f"('{hanja}', '{english_meaning}')");
+                elif len(hanja_characters[hanja][hangul].glosses) > 0:
+                    for gloss in hanja_characters[hanja][hangul].glosses:
+                        f.write(f"('{hanja}', '{gloss}')");
+                else:
+                    print(f"Warning: no english meanings or glosses for {hanja},{hangul}")
+                    continue
+                if i != len(hanja_characters) - 1 and j != len(hanja_characters[hanja]) - 1:
+                    f.write(",\n")
+        f.write(";")
+
+def build_hanja_korean_definition_file(file_path: str, hanja_characters: Dict[str, Dict[str, HanjaCharacterEntry]]):
+    with open(file_path, "w") as f:
+        f.write("INSERT INTO `korean_hanja_definition` VALUES\n");
+        for i, hanja in enumerate(hanja_characters):
+            for j, hangul in enumerate(hanja_characters[hanja]):
+                if len(hanja_characters[hanja][hangul].korean_meanings) > 0:
+                    for korean_meaning in hanja_characters[hanja][hangul].korean_meanings:
+                        f.write(f"('{hanja}', '{korean_meaning}')");
+                else:
+                    print(f"Warning: no english meanings or glosses for {hanja},{hangul}")
+                    continue
+                if i != len(hanja_characters) - 1 and j != len(hanja_characters[hanja]) - 1:
+                    f.write(",\n")
+        f.write(";")
+
 def upsert_korean_word(word_dict: Dict[Optional[str], Dict[str,KoreanWord]], hanja_word: Optional[str], hangul_word: str, english_meanings: List[str], glosses: List[str]):
     if hanja_word in word_dict:
         if hangul_word in word_dict[hanja_word]:
@@ -393,3 +426,11 @@ if __name__ == "__main__":
                             glosses = glosses_from_word(word)
                             upsert_korean_word(pure_korean_verbs, None, hangul_word, english_meanings, glosses)
     print(f"Acquired {len(pure_korean_verbs[None])} pure Korean verbs.")
+
+    hanja_english_definitions_path = os.path.join(out_directory, "hanja_definition.sql");
+    print(f"Writing hanja English definitions to {hanja_english_definitions_path}.")
+    build_hanja_english_definition_file(hanja_english_definitions_path, hanja_characters)
+
+    korean_english_definitions_path = os.path.join(out_directory, "korean_hanja_definition.sql");
+    print(f"Writing hanja Korean definitions to {korean_english_definitions_path}.")
+    build_hanja_korean_definition_file(korean_english_definitions_path, hanja_characters)
