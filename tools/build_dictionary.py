@@ -121,13 +121,35 @@ def build_hanja_english_definition_file(file_path: str, hanja_characters: Dict[s
         f.write("INSERT INTO `english_hanja_definition` VALUES\n");
         lines = []
         for hanja in hanja_characters:
+            if len(hanja) != 1:
+                continue
             for hangul in hanja_characters[hanja]:
+                if len(hangul) != 1:
+                    continue
+                if not is_hangul(hangul):
+                    continue
                 if len(hanja_characters[hanja][hangul].english_meanings) > 0:
                     for english_meaning in hanja_characters[hanja][hangul].english_meanings:
                         lines.append(f"('{hanja}', '{english_meaning}')");
                 elif len(hanja_characters[hanja][hangul].glosses) > 0:
                     for gloss in hanja_characters[hanja][hangul].glosses:
                         lines.append(f"('{hanja}', '{gloss}')");
+        f.write(',\n'.join(lines))
+        f.write('\nON CONFLICT DO NOTHING;')
+
+def build_korean_pronunciation_file(file_path: str, hanja_characters: Dict[str, Dict[str, HanjaCharacterEntry]]):
+    with open(file_path, "w") as f:
+        f.write("INSERT INTO `korean_pronunciation` VALUES\n");
+        lines = []
+        for hanja in hanja_characters:
+            if len(hanja) != 1:
+                continue
+            for hangul in hanja_characters[hanja]:
+                if len(hangul) != 1:
+                    continue
+                if not is_hangul(hangul):
+                    continue
+                lines.append(f"('{hanja}', '{hangul}')");
         f.write(',\n'.join(lines))
         f.write('\nON CONFLICT DO NOTHING;')
 
@@ -461,11 +483,15 @@ if __name__ == "__main__":
     print(f"Acquired {len(pure_korean_verbs[None])} pure Korean verbs.")
 
     hanja_english_definitions_path = os.path.join(out_directory, "english_hanja_definition.sql");
-    print(f"Writing hanja English definitions to {hanja_english_definitions_path}.")
+    print(f"Writing Hanja English definitions to {hanja_english_definitions_path}.")
     build_hanja_english_definition_file(hanja_english_definitions_path, hanja_characters)
 
+    korean_pronunciation_path = os.path.join(out_directory, "korean_pronunciation.sql");
+    print(f"Writing Hanja Korean pronuncations to {korean_pronunciation_path}.")
+    build_korean_pronunciation_file(korean_pronunciation_path, hanja_characters)
+
     korean_english_definitions_path = os.path.join(out_directory, "korean_hanja_definition.sql");
-    print(f"Writing hanja Korean definitions to {korean_english_definitions_path}.")
+    print(f"Writing Hanja Korean definitions to {korean_english_definitions_path}.")
     build_hanja_korean_definition_file(korean_english_definitions_path, hanja_characters)
 
     word_list_path = os.path.join(out_directory, "hanjas.sql");

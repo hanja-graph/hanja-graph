@@ -27,6 +27,9 @@ if __name__ == "__main__":
             for definition in definitions:
                 # Remove (some number)
                 definition = re.sub(r"\((\d+)\)", ' ', definition)
+                # Remove U+#### codes
+                definition = re.sub(r" U\+[A-Z0-9]+", ' ', definition)
+                definition = re.sub(r"U\+[A-Z0-9]+ ", ' ', definition)
                 if is_hangul(definition):
                     korean_definitions.append(definition)
                 else:
