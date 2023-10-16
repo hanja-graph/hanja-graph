@@ -129,7 +129,7 @@ def build_hanja_english_definition_file(file_path: str, hanja_characters: Dict[s
                     for gloss in hanja_characters[hanja][hangul].glosses:
                         lines.append(f"('{hanja}', '{gloss}')");
         f.write(',\n'.join(lines))
-        f.write('\n;')
+        f.write('\nON CONFLICT DO NOTHING;')
 
 def build_hanja_korean_definition_file(file_path: str, hanja_characters: Dict[str, Dict[str, HanjaCharacterEntry]]):
     with open(file_path, "w") as f:
@@ -144,7 +144,7 @@ def build_hanja_korean_definition_file(file_path: str, hanja_characters: Dict[st
                     print(f"Warning: no english meanings or glosses for {hanja},{hangul}")
                     continue
         f.write(',\n'.join(lines))
-        f.write('\n;')
+        f.write('\nON CONFLICT DO NOTHING;')
 
 def build_word_list(file_path: str, word_lists: List[Dict[Optional[str], Dict[str, KoreanWord]]]):
     with open(file_path, "w") as f:
@@ -162,7 +162,7 @@ def build_word_list(file_path: str, word_lists: List[Dict[Optional[str], Dict[st
                     else:
                         continue
         f.write(',\n'.join(lines))
-        f.write('\n;')
+        f.write('\nON CONFLICT DO NOTHING;')
 
 def upsert_korean_word(word_dict: Dict[Optional[str], Dict[str,KoreanWord]], hanja_word: Optional[str], hangul_word: str, english_meanings: List[str], glosses: List[str], part_of_speech: str):
     if hanja_word in word_dict:
