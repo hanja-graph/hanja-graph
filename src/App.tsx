@@ -7,6 +7,7 @@ import DecksView from "./components/DecksView";
 import SearchView from "./components/SearchView";
 import DeckView from "./components/DeckView";
 import SyncView from "./components/SyncView";
+import About from "./components/AboutView";
 import { initializeAndSeedDictionary } from "./data/CardDataProvider";
 
 import {
@@ -97,24 +98,6 @@ function Layout() {
       <div>
         <Outlet />
       </div>
-    </div>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <h2>Hanja graph</h2>
-      <p>
-        Hanja graph is a Korean flash card program. It's designed to help you
-        remember Korean vocabulary by leveraging Hanja as a mnemonic. See{" "}
-        <a href="https://github.com/hanja-graph/hanja-graph">Github</a> for more
-        information.
-      </p>{" "}
-      Use the nav bar to begin. This app is designed to work completely offline.
-      In your current browser session, all data will be saved and persisted.
-      Make sure to use the sync functionality to back up your flash card review
-      state and share it between computers.
     </div>
   );
 }
