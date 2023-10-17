@@ -251,34 +251,42 @@ def upsert_korean_word(word_dict: Dict[Optional[str], Dict[str,KoreanWord]], han
 
 def strip_common_verb_suffixes(word: str):
     if word.endswith('하다'):
-        return True, word[0:len(word)-2]
+        return word[0:len(word)-2]
     if word.endswith('되다'):
-        return True, word[0:len(word)-2]
+        return word[0:len(word)-2]
     if word.endswith('보다'):
-        return True, word[0:len(word)-2]
+        return word[0:len(word)-2]
     if word.endswith('나다'):
-        return True, word[0:len(word)-2]
+        return word[0:len(word)-2]
     if word.endswith('치다'):
-        return True, word[0:len(word)-2]
+        return word[0:len(word)-2]
     if word.endswith('뜨다'):
-        return True, word[0:len(word)-2]
+        return word[0:len(word)-2]
     if word.endswith('막히다'):
-        return True, word[0:len(word)-3]
+        return word[0:len(word)-3]
     if word.endswith('잇다'):
-        return True, word[0:len(word)-2]
+        return word[0:len(word)-2]
     if word.endswith('을 먹다'):
-        return True, word[0:len(word)-4]
+        return word[0:len(word)-4]
     if word.endswith('쓰다'):
-        return True, word[0:len(word)-2]
+        return word[0:len(word)-2]
     if word.endswith(' '):
-        return True, word.rstrip()
+        return word.rstrip()
     if word.endswith('—'):
-        return True, word[0:len(word)-1]
+        return word[0:len(word)-1]
     if word.endswith('히'):
-        return True, word[0:len(word)-1]
+        return word[0:len(word)-1]
     if word.endswith('로'):
-        return True, word[0:len(word)-1]
-    return False, word
+        return word[0:len(word)-1]
+    return word
+                            
+def dict_contains_hangul_word(word_dict: Dict[Optional[str], Dict[str,KoreanWord]], hangul_word: str):
+    stripped_hangul_word = strip_common_verb_suffixes(focus_word)
+    for hanja in word_dict:
+        for hangul in word_dict[hanja]:
+            if stripped_hangul_word == hangul or hangul_word == hangul:
+                return True
+    return False
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -492,8 +500,8 @@ if __name__ == "__main__":
                                 maybe_hanja_word = form['form']
                         # Handle the case where the noun has Hanja roots
                         if maybe_hanja_word is not None:
-                            stripped_hanja, maybe_hanja_word = strip_common_verb_suffixes(maybe_hanja_word)
-                            stripped_hangul, maybe_hangul_word = strip_common_verb_suffixes(focus_word)
+                            maybe_hanja_word = strip_common_verb_suffixes(maybe_hanja_word)
+                            maybe_hangul_word = strip_common_verb_suffixes(focus_word)
                             # ugly as hell, but this is an important word
                             if maybe_hangul_word == '원래':
                                 for maybe_hanja_word in ["元來", "原來"]:
@@ -502,7 +510,6 @@ if __name__ == "__main__":
                                     upsert_korean_word(sino_korean_nouns, maybe_hanja_word, maybe_hangul_word, english_meanings, glosses, type_to_pos[head_template_name])
                                 continue
                             if len(maybe_hanja_word) != len(maybe_hangul_word):
-                                print(stripped_hangul)
                                 print('Warning: ignoring word "' + focus_word + '"')
                                 print(json.dumps(word, ensure_ascii=False, indent=1))
                             else:
@@ -529,6 +536,8 @@ if __name__ == "__main__":
                         # Handle the case where the noun has Hanja roots
                         if maybe_hanja_word is None:
                             hangul_word = focus_word
+                            if dict_contains_hangul_word(sino_korean_nouns, hangul_word):
+                                continue
                             english_meanings = english_meanings_from_word(word)
                             glosses = glosses_from_word(word)
                             upsert_korean_word(pure_korean_verbs, None, hangul_word, english_meanings, glosses, type_to_pos[head_template_name])
