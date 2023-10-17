@@ -43,9 +43,9 @@ const initDBEngine = async function () {
       console.log(
         `sqlite3 version=${capi.sqlite3_libversion()}, sourceId=${capi.sqlite3_sourceid()}`
       );
-    } catch (e) {
+    } catch (error) {
       console.log("Error while loading OPFS");
-      console.log(e);
+      console.log(error);
       return undefined;
     }
   }
@@ -57,12 +57,14 @@ const mountDictionaryDatabase = async (poolUtil, dbPath) => {
 };
 
 onmessage = async function (e) {
+  uuid = e.data["uuid"];
   if (e.data["type"] !== undefined && e.data["type"] == "init") {
     const dbEngine = await initDBEngine();
     if (!dbEngine) {
       postMessage({
         initSucceeded: false,
         reason: "Could not create DB engine.",
+        uuid: uuid,
       });
       return;
     }
@@ -74,11 +76,13 @@ onmessage = async function (e) {
       postMessage({
         initSucceeded: false,
         reason: "Could not create or access dictionary DB.",
+        uuid: uuid,
       });
       return;
     }
     postMessage({
       initSucceeded: true,
+      uuid: uuid,
     });
     return;
   } else if (e.data["type"] !== undefined && e.data["type"] == "query") {
@@ -104,28 +108,36 @@ onmessage = async function (e) {
           columns: [],
           values: [],
           error: e.message,
+          uuid: uuid,
         });
         return;
       }
       const result = {
         columns: Object.getOwnPropertyNames(resultRows[0]),
         values: [],
+        uuid: uuid,
       };
       for (let row of resultRows) {
         result.values.push(Object.values(row));
       }
       postMessage(result);
-    } catch (e) {
+    } catch (error) {
       postMessage({
         columns: [],
         values: [],
-        error: e.message,
+        error: error.message,
+        query:
+          e.data !== undefined && e.data["query"] !== undefined
+            ? e.data["query"]
+            : undefined,
+        uuid: uuid,
       });
     }
     postMessage({
       columns: [],
       values: [],
       error: undefined,
+      uuid: uuid,
     });
     return;
   } else if (e.data["type"] !== undefined && e.data["type"] == "export") {
@@ -137,6 +149,7 @@ onmessage = async function (e) {
     const dbArr = dbEngine.capi.sqlite3_js_db_export(dictionaryDB.pointer);
     postMessage({
       buffer: dbArr.buffer,
+      uuid: uuid,
     });
   } else if (e.data["type"] !== undefined && e.data["type"] == "import") {
     const dbData = e.data["buffer"];
@@ -144,6 +157,7 @@ onmessage = async function (e) {
       postMessage({
         status: false,
         reason: "No buffer provided.",
+        uuid: uuid,
       });
     }
     try {
@@ -172,12 +186,14 @@ onmessage = async function (e) {
       );
       postMessage({
         status: true,
+        uuid: uuid,
       });
-    } catch (e) {
-      console.log(e);
+    } catch (error) {
+      console.log(error);
       postMessage({
         status: false,
         reason: e.message,
+        uuid: uuid,
       });
     }
   }
