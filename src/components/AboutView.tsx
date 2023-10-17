@@ -59,8 +59,7 @@ export default function About() {
             <a href="https://kaikki.org/dictionary/Korean/index.html">
               Korean machine-readable dictionary
             </a>
-            (retrieved Jan 2, 2023), based on Wiktionary data, retrieved
-            October17, 2023.
+            (retrieved October 17, 2023), based on Wiktionary data.
           </li>
           <li>
             <a href="https://github.com/tatuylonen/wiktextract">Wiktextract</a>,
