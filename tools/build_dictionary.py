@@ -116,6 +116,9 @@ def add_hanja_character(hanja_characters: Dict[str, Dict[str, HanjaCharacterEntr
         hanja_characters[hanja_word][hangul_pronunciation].korean_meanings.update(korean_meanings)
         hanja_characters[hanja_word][hangul_pronunciation].korean_meanings.update(glosses)
 
+def sanitize(input_string: str):
+    return input_string.replace("'","''")
+
 def build_hanja_english_definition_file(file_path: str, hanja_characters: Dict[str, Dict[str, HanjaCharacterEntry]]):
     with open(file_path, "w") as f:
         f.write("INSERT INTO `english_hanja_definition` VALUES\n");
@@ -130,10 +133,12 @@ def build_hanja_english_definition_file(file_path: str, hanja_characters: Dict[s
                     continue
                 if len(hanja_characters[hanja][hangul].english_meanings) > 0:
                     for english_meaning in hanja_characters[hanja][hangul].english_meanings:
-                        lines.append(f"('{hanja}', '{english_meaning}')");
+                        sanitized_english_meaning = sanitize(english_meaning)
+                        lines.append(f"('{hanja}', '{sanitized_english_meaning}')");
                 elif len(hanja_characters[hanja][hangul].glosses) > 0:
                     for gloss in hanja_characters[hanja][hangul].glosses:
-                        lines.append(f"('{hanja}', '{gloss}')");
+                        sanitized_gloss = sanitize(gloss)
+                        lines.append(f"('{hanja}', '{sanitized_gloss}')");
         f.write(',\n'.join(lines))
         f.write('\nON CONFLICT DO NOTHING;')
 
@@ -161,7 +166,7 @@ def build_hanja_korean_definition_file(file_path: str, hanja_characters: Dict[st
             for hangul in hanja_characters[hanja]:
                 if len(hanja_characters[hanja][hangul].korean_meanings) > 0:
                     for korean_meaning in hanja_characters[hanja][hangul].korean_meanings:
-                        lines.append(f"('{hanja}', '{korean_meaning}')");
+                        lines.append(f"('{hanja}', '{sanitize(korean_meaning)}')");
                 else:
                     print(f"Warning: no english meanings or glosses for {hanja},{hangul}")
                     continue
@@ -177,10 +182,12 @@ def build_word_list(file_path: str, word_lists: List[Dict[Optional[str], Dict[st
                 for hangul in word_list[hanja]:
                     if len(word_list[hanja][hangul].english_meanings) > 0:
                         for english_meaning in word_list[hanja][hangul].english_meanings:
-                            lines.append(f"('{hanja}', '{hangul}', '{english_meaning}', '{word_list[hanja][hangul].part_of_speech}')");
+                            sanitized_english_meaning = sanitize(english_meaning)
+                            lines.append(f"('{hanja}', '{hangul}', '{sanitized_english_meaning}', '{word_list[hanja][hangul].part_of_speech}')");
                     elif len(word_list[hanja][hangul].glosses) > 0:
                         for gloss in word_list[hanja][hangul].glosses:
-                            lines.append(f"('{hanja}', '{hangul}' '{gloss}', '{word_list[hanja][hangul].part_of_speech}')");
+                            sanitized_gloss = sanitize(gloss)
+                            lines.append(f"('{hanja}', '{hangul}' '{sanitized_gloss}', '{word_list[hanja][hangul].part_of_speech}')");
                     else:
                         continue
         f.write(',\n'.join(lines))
