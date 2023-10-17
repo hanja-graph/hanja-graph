@@ -163,6 +163,9 @@ def build_hanja_korean_definition_file(file_path: str, hanja_characters: Dict[st
         f.write("INSERT INTO `korean_hanja_definition` VALUES\n");
         lines = []
         for hanja in hanja_characters:
+            if len(hanja) != 1:
+                print("Warning: Hanja did not have size 1: '" + hanja + "'")
+                continue
             for hangul in hanja_characters[hanja]:
                 if len(hanja_characters[hanja][hangul].korean_meanings) > 0:
                     for korean_meaning in hanja_characters[hanja][hangul].korean_meanings:
@@ -183,26 +186,68 @@ def build_word_list(file_path: str, word_lists: List[Dict[Optional[str], Dict[st
                     if len(word_list[hanja][hangul].english_meanings) > 0:
                         for english_meaning in word_list[hanja][hangul].english_meanings:
                             sanitized_english_meaning = sanitize(english_meaning)
-                            lines.append(f"('{hanja}', '{hangul}', '{sanitized_english_meaning}', '{word_list[hanja][hangul].part_of_speech}')");
+                            if hanja is not None and len(hanja) != len(hangul):
+                                print(f"warning, not processing, hanja='{hanja}', hangul='{hangul}'")
+                                continue
+                            if hanja is None:
+                                lines.append(f"(NULL, '{hangul}', '{sanitized_english_meaning}', '{word_list[hanja][hangul].part_of_speech}')");
+                            else:
+                                lines.append(f"('{hanja}', '{hangul}', '{sanitized_english_meaning}', '{word_list[hanja][hangul].part_of_speech}')");
                     elif len(word_list[hanja][hangul].glosses) > 0:
                         for gloss in word_list[hanja][hangul].glosses:
                             sanitized_gloss = sanitize(gloss)
-                            lines.append(f"('{hanja}', '{hangul}' '{sanitized_gloss}', '{word_list[hanja][hangul].part_of_speech}')");
+                            if hanja is not None and len(hanja) != len(hangul):
+                                print(f"warning, not processing, hanja='{hanja}', hangul='{hangul}'")
+                                continue
+                            if hanja is None:
+                                lines.append(f"(NULL, '{hangul}', '{sanitized_gloss}', '{word_list[hanja][hangul].part_of_speech}')");
+                            else:
+                                lines.append(f"('{hanja}', '{hangul}', '{sanitized_gloss}', '{word_list[hanja][hangul].part_of_speech}')");
                     else:
                         continue
         f.write(',\n'.join(lines))
         f.write('\nON CONFLICT DO NOTHING;')
 
-def upsert_korean_word(word_dict: Dict[Optional[str], Dict[str,KoreanWord]], hanja_word: Optional[str], hangul_word: str, english_meanings: List[str], glosses: List[str], part_of_speech: str):
-    if hanja_word in word_dict:
-        if hangul_word in word_dict[hanja_word]:
-            word_dict[hanja_word][hangul_word].english_meanings.update(english_meanings)
-            word_dict[hanja_word][hangul_word].glosses.update(glosses)
+
+def add_spaces_to_hanja(hanja: Optional[str], hangul: str):
+    if hanja is None:
+        return hanja
+    #  For cases like this:
+    # 歸還不能地點']
+    # 귀환 불능 지점
+    new_hanja = ""
+    i = 0
+    for char in hangul:
+        if char != ' ' and i < len(hanja):
+            new_hanja += hanja[i]
+            i += 1
         else:
-            word_dict[hanja_word][hangul_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), hanja_word, part_of_speech)
+            new_hanja += ' '
+    return new_hanja
+
+def upsert_korean_word(word_dict: Dict[Optional[str], Dict[str,KoreanWord]], hanja_word: Optional[str], hangul_word: str, english_meanings: List[str], glosses: List[str], part_of_speech: str):
+    hanja_words_to_add = []
+    if hanja_word is None:
+        hanja_words_to_add = [None]
     else:
-        word_dict[hanja_word] = {}
-        word_dict[hanja_word][hangul_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), hanja_word, part_of_speech)
+        hanja_words_to_add = [hanja_word]
+        if len(hanja_word.split('／')) > 0:
+                hanja_words_to_add = hanja_word.split('／')
+
+    hanja_words_to_add = [add_spaces_to_hanja(w, hangul_word) for w in hanja_words_to_add]
+    for hanja_word_i in hanja_words_to_add:
+        if hanja_word_i in word_dict:
+            if hanja_word_i is not None and len(hanja_word_i) != len(hangul_word):
+                print(f"Warning: could not process hanja {hanja_word_i}")
+                continue
+            if hangul_word in word_dict[hanja_word_i]:
+                word_dict[hanja_word_i][hangul_word].english_meanings.update(english_meanings)
+                word_dict[hanja_word_i][hangul_word].glosses.update(glosses)
+            else:
+                word_dict[hanja_word_i][hangul_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), hanja_word_i, part_of_speech)
+        else:
+            word_dict[hanja_word_i] = {}
+            word_dict[hanja_word_i][hangul_word] = KoreanWord(hangul_word, set(english_meanings), set(glosses), hanja_word_i, part_of_speech)
 
 def strip_common_verb_suffixes(word: str):
     if word.endswith('하다'):

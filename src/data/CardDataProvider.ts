@@ -16,22 +16,30 @@ import radicalsData from "../assets//sources/bravender/radicals.sql?raw";
 import tagsData from "../assets//sources/john/tags.sql?raw";
 import reviewsData from "../assets//sources/john/reviews.sql?raw";
 
+import wiktionaryEnglishHanjaDefinitions from "../assets//sources/wiktionary/english_hanja_definition.sql?raw";
+import wiktionarykoreanHanjaDefinitions from "../assets//sources/wiktionary/korean_hanja_definition.sql?raw";
+import wiktionaryKoreanPronunciation from "../assets//sources/wiktionary/korean_pronunciation.sql?raw";
+import wiktionaryWordList from "../assets//sources/wiktionary/word_list.sql?raw";
+
 export const loadTable = async (
   schema: any,
-  dataSource: any,
+  dataSources: Array<any>,
   probeQuery: string
 ) => {
   let selectFromHanjasResult = await queryDictionary(probeQuery);
   if (selectFromHanjasResult.error) {
     let seedResult = await queryDictionary(schema);
     console.log(seedResult);
-    seedResult = await queryDictionary(dataSource);
-    console.log(seedResult);
+    for (const dataSource of dataSources) {
+      seedResult = await queryDictionary(dataSource);
+      console.log(seedResult);
+    }
   } else {
     console.log("no need to seed");
   }
   selectFromHanjasResult = await queryDictionary(probeQuery);
   if (selectFromHanjasResult.error) {
+    console.log(selectFromHanjasResult);
     throw new Error(
       `Seeding failed; after seeding, we got error ${selectFromHanjasResult.error}`
     );
@@ -42,39 +50,43 @@ export const initializeAndSeedDictionary = async () => {
   console.log("Seeding radicals");
   await loadTable(
     radicalsSchema,
-    radicalsData,
+    [radicalsData],
     "SELECT * FROM radicals LIMIT 1;"
   );
   console.log("Seeding English Hanja definitions.");
   await loadTable(
     englishHanjaDefinitionSchema,
-    englishHanjaDefinitionData,
+    [englishHanjaDefinitionData, wiktionaryEnglishHanjaDefinitions],
     "SELECT * FROM english_hanja_definition LIMIT 1;"
   );
   console.log("Seeding Korean Hanja definitions.");
   await loadTable(
     koreanHanjaDefinitionSchema,
-    koreanHanjaDefinitionData,
+    [koreanHanjaDefinitionData, wiktionarykoreanHanjaDefinitions],
     "SELECT * FROM korean_hanja_definition LIMIT 1;"
   );
   console.log("Seeding Korean pronunciation.");
   await loadTable(
     koreanPronunciationSchema,
-    koreanPronunciationData,
+    [koreanPronunciationData, wiktionaryKoreanPronunciation],
     "SELECT * FROM korean_pronunciation LIMIT 1;"
   );
   console.log("Seeding hanja words.");
   await loadTable(
     wordListScheme,
-    wordListData,
+    [wordListData, wiktionaryWordList],
     "SELECT * FROM word_list LIMIT 1;"
   );
 
   console.log("Seeding tags.");
-  await loadTable(tagsSchema, tagsData, "SELECT * FROM tags LIMIT 1;");
+  await loadTable(tagsSchema, [tagsData], "SELECT * FROM tags LIMIT 1;");
 
   console.log("Seeding reviews.");
-  await loadTable(reviewsSchema, reviewsData, "SELECT * FROM reviews LIMIT 1;");
+  await loadTable(
+    reviewsSchema,
+    [reviewsData],
+    "SELECT * FROM reviews LIMIT 1;"
+  );
   console.log("Done seeding all.");
 };
 
@@ -119,7 +131,6 @@ const unpackWordsFromQuery = (queryResult: QueryResponse) => {
     for (const [hangul, englishList] of hangulMap) {
       let englishString = "";
       let i = 0;
-      console.log(englishList);
       for (const englishDef of englishList) {
         englishString += englishDef;
         i++;
@@ -298,7 +309,6 @@ export async function searchForCardWithHanja(
     FROM word_list
   WHERE hanja LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
-  console.log(results);
   return unpackWordsFromQuery(results);
 }
 
@@ -310,8 +320,6 @@ export async function searchForCardWithHangul(
   FROM word_list 
   WHERE hangul LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
-  console.log(query);
-  console.log(results);
   return unpackWordsFromQuery(results);
 }
 
@@ -323,7 +331,6 @@ export async function searchForCardWithEnglish(
   FROM word_list 
   WHERE english LIKE '%${searchQuery}%'`;
   const results = await queryDictionary(query);
-  console.log(results);
   return unpackWordsFromQuery(results);
 }
 
