@@ -24,7 +24,6 @@ export const initOPFSWorker = async () => {
   return new Promise((resolve) => {
     const dbWorker = createOrGetDbWorker();
     dbWorker.onmessage = function (e) {
-      console.log(e);
       if (e.data["uuid"] === uuid) {
         resolve(
           e.data.initSucceeded !== undefined ? e.data.initSucceeded : false
