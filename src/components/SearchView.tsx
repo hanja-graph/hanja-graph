@@ -69,24 +69,26 @@ export default function SearchView() {
   }, [searchQuery]);
   return (
     <div>
-      <input
-        type="text"
-        value={searchQueryInput}
-        onChange={(e) => {
-          setSearchQueryInput(e.target.value);
-        }}
-      />
-      <button
-        onClick={() => {
+      <form
+        className="commentForm"
+        onSubmit={() => {
           fuzzySearch(searchQueryInput).then((result) => {
             setTableData(result);
             navigate(`/search/${searchQueryInput}`);
           });
         }}
-        disabled={searchQueryInput.length == 0}
       >
-        Search
-      </button>
+        <input
+          type="text"
+          value={searchQueryInput}
+          onChange={(e) => {
+            setSearchQueryInput(e.target.value);
+          }}
+        />
+        <button type="submit" disabled={searchQueryInput.length == 0}>
+          Search
+        </button>
+      </form>
       <div>
         <SearchResults words={tableData} />
       </div>
