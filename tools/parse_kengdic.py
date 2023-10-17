@@ -51,6 +51,8 @@ if __name__ == "__main__":
             continue
         if len(english) == 0:
             continue
+        if "'" in korean:
+            korean = korean.replace("'", "")
         if len(hanja) > 0:
             split = hanja.split(',')
             if len(split) > 1:

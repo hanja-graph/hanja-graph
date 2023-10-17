@@ -1,0 +1,3 @@
+INSERT INTO `korean_hanja_definition` VALUES
+
+ON CONFLICT DO NOTHING;

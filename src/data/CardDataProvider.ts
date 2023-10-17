@@ -21,6 +21,10 @@ import wiktionarykoreanHanjaDefinitions from "../assets//sources/wiktionary/kore
 import wiktionaryKoreanPronunciation from "../assets//sources/wiktionary/korean_pronunciation.sql?raw";
 import wiktionaryWordList from "../assets//sources/wiktionary/word_list.sql?raw";
 
+import kengdicEnglishHanjaDefinitions from "../assets//sources/kengdic/english_hanja_definition.sql?raw";
+import kengdicKoreanPronunciation from "../assets//sources/kengdic/korean_pronunciation.sql?raw";
+import kengdicWordList from "../assets//sources/kengdic/word_list.sql?raw";
+
 export const loadTable = async (
   schema: any,
   dataSources: Array<any>,
@@ -56,7 +60,11 @@ export const initializeAndSeedDictionary = async () => {
   console.log("Seeding English Hanja definitions.");
   await loadTable(
     englishHanjaDefinitionSchema,
-    [englishHanjaDefinitionData, wiktionaryEnglishHanjaDefinitions],
+    [
+      englishHanjaDefinitionData,
+      wiktionaryEnglishHanjaDefinitions,
+      kengdicEnglishHanjaDefinitions,
+    ],
     "SELECT * FROM english_hanja_definition LIMIT 1;"
   );
   console.log("Seeding Korean Hanja definitions.");
@@ -68,13 +76,17 @@ export const initializeAndSeedDictionary = async () => {
   console.log("Seeding Korean pronunciation.");
   await loadTable(
     koreanPronunciationSchema,
-    [koreanPronunciationData, wiktionaryKoreanPronunciation],
+    [
+      koreanPronunciationData,
+      wiktionaryKoreanPronunciation,
+      kengdicKoreanPronunciation,
+    ],
     "SELECT * FROM korean_pronunciation LIMIT 1;"
   );
   console.log("Seeding hanja words.");
   await loadTable(
     wordListScheme,
-    [wordListData, wiktionaryWordList],
+    [wordListData, wiktionaryWordList, kengdicWordList],
     "SELECT * FROM word_list LIMIT 1;"
   );
 
