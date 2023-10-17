@@ -26,39 +26,34 @@ const CONFIG = {
 };
 const DICTIONARY_DB_FILE_NAME = "card_db.sqlite";
 let dictionaryDBSingleton = undefined;
-let sqlite3Singleton;
+let sqlite3Singleton = undefined;
+let poolSingleton = undefined;
 
 const initDBEngine = async function () {
   if (!sqlite3Singleton) {
     console.log("Attemtping initialization of sqlite3.");
     try {
+      console.log("calling init");
       const newSqlite3Singleton = await sqlite3InitModule(CONFIG);
+      console.log("done calling init");
       const capi = newSqlite3Singleton.capi;
-      if (!capi.sqlite3_vfs_find("opfs") || !newSqlite3Singleton.opfs) {
-        console.log("opfs not found.");
-        return undefined;
-      } else {
-        sqlite3Singleton = newSqlite3Singleton;
-        console.log(
-          `sqlite3 version=${capi.sqlite3_libversion()}, sourceId=${capi.sqlite3_sourceid()}`
-        );
-      }
+      sqlite3Singleton = newSqlite3Singleton;
+      poolSingleton = await sqlite3Singleton.installOpfsSAHPoolVfs();
+      console.log("Successfully initialized OPFS pool implementation");
+      console.log(
+        `sqlite3 version=${capi.sqlite3_libversion()}, sourceId=${capi.sqlite3_sourceid()}`
+      );
     } catch (e) {
       console.log("Error while loading OPFS");
       console.log(e);
       return undefined;
     }
   }
-  return sqlite3Singleton;
+  return poolSingleton;
 };
 
-const mountDictionaryDatabase = async (dbEngine, dbPath) => {
-  if (dictionaryDBSingleton) {
-    return dictionaryDBSingleton;
-  } else {
-    dictionaryDBSingleton = new dbEngine.oo1.DB(dbPath);
-    return dictionaryDBSingleton;
-  }
+const mountDictionaryDatabase = async (poolUtil, dbPath) => {
+  return new poolUtil.OpfsSAHPoolDb(dbPath);
 };
 
 onmessage = async function (e) {
@@ -127,6 +122,12 @@ onmessage = async function (e) {
         error: e.message,
       });
     }
+    postMessage({
+      columns: [],
+      values: [],
+      error: undefined,
+    });
+    return;
   } else if (e.data["type"] !== undefined && e.data["type"] == "export") {
     const dbEngine = await initDBEngine();
     const dictionaryDB = await mountDictionaryDatabase(
