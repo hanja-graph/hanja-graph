@@ -44,6 +44,9 @@ button {
 body {
     font-size: 1.5em;
 }
+input {
+    font-size: calc(20px + 2vmin);
+}
 
 li { padding: 10px 0px 0px; }
 
