@@ -94,7 +94,7 @@ def build_hanja_korean_definition_file(file_path: str, hanja_characters: Dict[st
                     for korean_meaning in hanja_characters[hanja][hangul].korean_meanings:
                         lines.append(f"('{hanja}', '{sanitize(korean_meaning)}')");
                 else:
-                    print(f"Warning: no english meanings or glosses for {hanja},{hangul}")
+                    print(f"Warning: no korean meanings or glosses for {hanja},{hangul}")
                     continue
         f.write(',\n'.join(lines))
         f.write('\nON CONFLICT DO NOTHING;')
