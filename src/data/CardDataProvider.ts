@@ -509,10 +509,12 @@ export async function removeCardFromDeck(
   hanja: string | null,
   hangul: string
 ): Promise<void> {
-  const hanjaString = hanja == null ? "NULL" : `'${hanja}'`;
+  const hanjaString = hanja == null ? "hanja IS NULL" : `hanja = '${hanja}'`;
   const query = `DELETE FROM tags 
-    WHERE hanja = ${hanjaString} AND hangul = '${hangul}' AND name = '${deckName}';`;
+    WHERE ${hanjaString} AND hangul = '${hangul}' AND name = '${deckName}';`;
+  console.log(query);
   const res = await queryDictionary(query);
+  console.log(res);
   if (res.error !== undefined) {
     throw new Error(res.error);
   }
