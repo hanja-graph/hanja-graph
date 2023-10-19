@@ -468,7 +468,7 @@ export async function postReview(
   interval: number,
   easinessFactor: number
 ): Promise<void> {
-  const hanjaString = hanja == null ? "NULL" : "${hanja}";
+  const hanjaString = hanja == null ? "NULL" : `'${hanja}'`;
   const query = `INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES
 (${hanjaString}, '${hangul}', ${interval}, ${easinessFactor}, datetime('now'))
   ON CONFLICT(hanja, hangul) DO UPDATE SET
