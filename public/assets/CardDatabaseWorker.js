@@ -33,9 +33,7 @@ const initDBEngine = async function () {
   if (!sqlite3Singleton) {
     console.log("Attemtping initialization of sqlite3.");
     try {
-      console.log("calling init");
       const newSqlite3Singleton = await sqlite3InitModule(CONFIG);
-      console.log("done calling init");
       const capi = newSqlite3Singleton.capi;
       sqlite3Singleton = newSqlite3Singleton;
       poolSingleton = await sqlite3Singleton.installOpfsSAHPoolVfs();

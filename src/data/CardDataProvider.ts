@@ -373,14 +373,10 @@ export async function getCardsForDeck(
 ): Promise<DeckReviewManifest> {
   const query = `SELECT tags.hanja as hanja, 
     tags.hangul AS hangul, 
-    word_list.english AS english,
     reviews.easiness_factor as easiness_factor,
     reviews.interval as interval,
     reviews.last_reviewed as last_reviewed
   FROM tags 
-  LEFT JOIN word_list
-    ON tags.hanja = word_list.hanja 
-      AND tags.hangul = word_list.hangul 
   LEFT JOIN reviews
     ON tags.hanja = reviews.hanja 
       AND tags.hangul = reviews.hangul 
@@ -388,10 +384,14 @@ export async function getCardsForDeck(
   const res = await queryDictionary(query);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
+    const word = await getWord(`${elem[0]}${elem[1]}`);
+    if (word === undefined) {
+      throw new Error("Cound not fetch word.");
+    }
     states.push({
-      word: new Word(elem[0], elem[1], elem[2]),
-      cardReviewState: new CardReviewState(0, elem[3], elem[4]),
-      lastReviewed: elem[5],
+      word: word,
+      cardReviewState: new CardReviewState(0, elem[2], elem[3]),
+      lastReviewed: elem[4],
     });
   }
   return {
@@ -403,9 +403,8 @@ export async function getReviewBatch(
   deckName: string
 ): Promise<DeckReviewManifest> {
   const query = `
-  SELECT word_list.hanja as hanja, 
-    word_list.hangul as hangul, 
-    word_list.english AS english,
+  SELECT reviews.hanja as hanja, 
+    reviews.hangul as hangul, 
     reviews.easiness_factor as easiness_factor,
     reviews.interval as interval,
     reviews.last_reviewed as last_reviewed
@@ -413,9 +412,6 @@ export async function getReviewBatch(
   LEFT OUTER JOIN reviews ON
     tags.hanja = reviews.hanja AND
     tags.hangul = reviews.hangul
-  LEFT JOIN word_list ON
-    word_list.hanja = tags.hanja AND
-    word_list.hangul = tags.hangul
   WHERE tags.name = '${deckName}'
     AND ((unixepoch(datetime('now')) - unixepoch(reviews.last_reviewed)) / (60.0*60.0*24.0) > reviews.interval
       OR reviews.interval IS NULL
@@ -424,10 +420,14 @@ export async function getReviewBatch(
   const res = await queryDictionary(query);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
+    const word = await getWord(`${elem[0]}${elem[1]}`);
+    if (word === undefined) {
+      throw new Error("Cound not fetch word.");
+    }
     states.push({
-      word: new Word(elem[0], elem[1], elem[2]),
-      cardReviewState: new CardReviewState(0, elem[3], elem[4]),
-      lastReviewed: elem[5],
+      word: word,
+      cardReviewState: new CardReviewState(0, elem[2], elem[3]),
+      lastReviewed: elem[4],
     });
   }
   return {
