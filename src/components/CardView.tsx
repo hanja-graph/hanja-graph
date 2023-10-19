@@ -5,18 +5,11 @@ import {
   getWord,
   getSiblings,
   getEnglishDefinitionForHanja,
+  Word,
 } from "../data/CardDataProvider.js";
 
 class CardViewProps {
   constructor(readonly hanjaHangul: string) {}
-}
-
-class Word {
-  constructor(
-    readonly hanja: string,
-    readonly hangul: string,
-    readonly english: string
-  ) {}
 }
 
 class SiblingViewProps {
@@ -52,7 +45,7 @@ class SiblingView extends React.Component<SiblingViewProps, SiblingViewState> {
 class SiblingsViewProps {
   constructor(
     readonly siblings: Array<Word>,
-    readonly hanja: string,
+    readonly hanja: string | null,
     readonly englishMeaning: string
   ) {}
 }
@@ -65,6 +58,7 @@ class SiblingsView extends React.Component<SiblingsViewProps, any> {
   render() {
     let rows = [];
     let i = 0;
+    console.log(this.state);
     for (const elem of this.props.siblings) {
       rows.push(<SiblingView key={i} word={elem} />);
       i++;
@@ -112,15 +106,23 @@ export default class CardView extends React.Component<
         const word = await getWord(props.hanjaHangul);
         if (word) {
           const siblingsLists: Array<SiblingsViewProps> = [];
-          for (let i = 0; i < word.hanja.length; i++) {
-            const hanja = word.hanja[i];
-            const siblings = await getSiblings(hanja, word.hangul);
-            let englishMeaning = await getEnglishDefinitionForHanja(hanja);
-            siblingsLists.push({
-              siblings: siblings,
-              hanja: hanja,
-              englishMeaning: englishMeaning ? englishMeaning : "",
-            });
+          for (let i = 0; i < word.hangul.length; i++) {
+            const hanja = word.hanja;
+            if (hanja == null) {
+              siblingsLists.push({
+                siblings: [],
+                hanja: null,
+                englishMeaning: "",
+              });
+            } else {
+              const siblings = await getSiblings(hanja[i], word.hangul);
+              let englishMeaning = await getEnglishDefinitionForHanja(hanja[i]);
+              siblingsLists.push({
+                siblings: siblings,
+                hanja: hanja[i],
+                englishMeaning: englishMeaning ? englishMeaning : "",
+              });
+            }
           }
           this.setState({
             word: word,
@@ -142,24 +144,37 @@ export default class CardView extends React.Component<
   render() {
     const rows = [];
     let extra = "";
+    console.log("render");
+    console.log(this.state);
+    console.log(this.state.word);
     if (this.state.word) {
       for (let i = 0; i < this.state.word.hangul.length; i++) {
         if (i < this.state.siblings.length) {
-          rows.push(
-            <Popup
-              trigger={<button>{this.state.word.hangul[i]}</button>}
-              position="right top"
-              key={i}
-            >
-              <div>
-                <SiblingsView
-                  siblings={this.state.siblings[i].siblings}
-                  hanja={this.state.siblings[i].hanja}
-                  englishMeaning={this.state.siblings[i].englishMeaning}
-                />
-              </div>
-            </Popup>
-          );
+          if (this.state.word.hanja == null) {
+            console.log("null hanja");
+            rows.push(
+              <button key={i} disabled={true}>
+                {this.state.word.hangul[i]}
+              </button>
+            );
+          } else {
+            console.log("non-null hanja");
+            rows.push(
+              <Popup
+                trigger={<button>{this.state.word.hangul[i]}</button>}
+                position="right top"
+                key={i}
+              >
+                <div>
+                  <SiblingsView
+                    siblings={this.state.siblings[i].siblings}
+                    hanja={this.state.siblings[i].hanja}
+                    englishMeaning={this.state.siblings[i].englishMeaning}
+                  />
+                </div>
+              </Popup>
+            );
+          }
         } else {
           extra = extra + this.state.word.hangul[i];
         }

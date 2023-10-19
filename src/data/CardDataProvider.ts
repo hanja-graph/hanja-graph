@@ -272,7 +272,6 @@ export async function getWord(hanjahangul: string): Promise<Word | undefined> {
     WHERE hanja || hangul = '${hanjahangul}' OR hanja IS NULL AND hangul = '${hanjahangul}';`;
   const queryResult = await queryDictionary(query);
   const results = unpackWordsFromQuery(queryResult);
-  console.log(results);
   return results[0];
 }
 
@@ -308,11 +307,13 @@ export async function getEnglishDefinitionForHanja(
 }
 
 export async function getSiblings(
-  hanja: string,
+  hanja: string | null,
   hangulWord: string
 ): Promise<Array<Word>> {
+  if (hanja == null) {
+    return [];
+  }
   assertCharacter(hanja);
-  // TODO: return multi English definitiosn
   const hanjaQuery = `
   SELECT DISTINCT hanja, hangul
     FROM word_list
@@ -424,8 +425,8 @@ export async function getReviewBatch(
   deckName: string
 ): Promise<DeckReviewManifest> {
   const query = `
-  SELECT reviews.hanja as hanja, 
-    reviews.hangul as hangul, 
+  SELECT tags.hanja as hanja, 
+    tags.hangul as hangul, 
     reviews.easiness_factor as easiness_factor,
     reviews.interval as interval,
     reviews.last_reviewed as last_reviewed
@@ -439,9 +440,14 @@ export async function getReviewBatch(
       OR reviews.easiness_factor IS NULL);
   `;
   const res = await queryDictionary(query);
+  console.log(res);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
-    const word = await getWord(`${elem[0]}${elem[1]}`);
+    let hanjaHangul = `${elem[0]}${elem[1]}`;
+    if (elem[0] === null) {
+      hanjaHangul = elem[1];
+    }
+    const word = await getWord(hanjaHangul);
     if (word === undefined) {
       throw new Error("Cound not fetch word.");
     }
@@ -457,13 +463,14 @@ export async function getReviewBatch(
 }
 
 export async function postReview(
-  hanja: string,
+  hanja: string | null,
   hangul: string,
   interval: number,
   easinessFactor: number
 ): Promise<void> {
+  const hanjaString = hanja == null ? "NULL" : "${hanja}";
   const query = `INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES
-('${hanja}', '${hangul}', ${interval}, ${easinessFactor}, datetime('now'))
+(${hanjaString}, '${hangul}', ${interval}, ${easinessFactor}, datetime('now'))
   ON CONFLICT(hanja, hangul) DO UPDATE SET
       last_reviewed = datetime('now'),
       interval = ${interval},
