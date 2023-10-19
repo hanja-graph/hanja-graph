@@ -50,6 +50,18 @@ export const loadTable = async (
   }
 };
 
+const wordRelevanceSort = (a: Word, b: Word) => {
+  if (a.hanja === null && b.hanja !== null) {
+    return 1;
+  }
+  if (a.hangul.length === b.hangul.length && b.hanja !== undefined) {
+    return -1;
+  } else if (a.hangul.length === b.hangul.length && a.hanja !== undefined) {
+    return 1;
+  }
+  return a.hangul.length - b.hangul.length;
+};
+
 export const initializeAndSeedDictionary = async () => {
   console.log("Seeding radicals");
   await loadTable(
@@ -297,17 +309,16 @@ export async function getSiblings(
   assertCharacter(hanja);
   // TODO: return multi English definitiosn
   const hanjaQuery = `
-  SELECT hanja, hangul, english
+  SELECT DISTINCT hanja, hangul
     FROM word_list
-  WHERE hanja LIKE '%${hanja}%' AND hangul != '${hangulWord}';`;
+  WHERE hanja LIKE '%${hanja}%' AND hangul != '${hangulWord}' ORDER BY length(hangul) LIMIT 10;`;
   const hanjaQueryResult = await queryDictionary(hanjaQuery);
-  const siblings = [];
-  if (hanjaQueryResult.values.length > 0) {
-    const siblingResults = hanjaQueryResult.values;
-    for (const rec of siblingResults) {
-      if (rec.length == 3) {
-        siblings.push(new Word(String(rec[0]), String(rec[1]), String(rec[2])));
-      }
+  const siblings: Array<Word> = [];
+  const siblingResults = hanjaQueryResult.values;
+  for (const rec of siblingResults) {
+    const word = await getWord(`${rec[0]}${rec[1]}`);
+    if (word) {
+      siblings.push(word);
     }
   }
   return siblings;
@@ -355,6 +366,7 @@ export async function fuzzySearch(searchQuery: string): Promise<Array<Word>> {
   words = words.concat(await searchForCardWithHanja(searchQuery));
   words = words.concat(await searchForCardWithHangul(searchQuery));
   words = words.concat(await searchForCardWithEnglish(searchQuery));
+  words.sort(wordRelevanceSort);
   return words;
 }
 

@@ -60,6 +60,7 @@ export default function SearchView() {
     if (searchQuery !== undefined && searchQuery.length > 0) {
       setSearchQueryInput(searchQuery);
       fuzzySearch(searchQuery).then((result) => {
+        console.log(result);
         setTableData(result);
       });
     } else {
