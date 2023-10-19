@@ -6,14 +6,14 @@ export default function About() {
         Hanja graph is a Korean flash card program and dictionary. You can use
         it to look up words, and to save and review flash cards using spaced
         repetition.
-        <p>
-          It's designed to help you remember Korean vocabulary by leveraging
-          Hanja as a mnemonic.
-        </p>
-        <p>
-          See <a href="https://github.com/hanja-graph/hanja-graph">Github</a>{" "}
-          for more information. This program is and always will be free.
-        </p>
+      </p>
+      <p>
+        It's designed to help you remember Korean vocabulary by leveraging Hanja
+        as a mnemonic.
+      </p>
+      <p>
+        See <a href="https://github.com/hanja-graph/hanja-graph">Github</a> for
+        more information. This program is and always will be free.
       </p>
       <h3>Using offline</h3>
       <p>
@@ -46,44 +46,42 @@ export default function About() {
         request against one of these files.
       </p>
       <h3>Thanks</h3>
-      <p>
-        Thanks to the compilers of the following data sources.
-        <ul>
-          <li>
-            <a href="https://github.com/dbravender/hanja-dictionary">
-              Bravender Hanja Dictionary
-            </a>
-            (retrieved Jan 2, 2023)
-          </li>
-          <li>
-            <a href="https://kaikki.org/dictionary/Korean/index.html">
-              Korean machine-readable dictionary
-            </a>
-            (retrieved October 17, 2023), based on Wiktionary data.
-          </li>
-          <li>
-            <a href="https://github.com/tatuylonen/wiktextract">Wiktextract</a>,
-            used to produce the above dump.
-          </li>
-          <li>
-            <a href="https://github.com/garfieldnate/kengdic">Kengdic</a>
-            (retrieved October 17), a large crowdsourced Korean dictionary
-            project. 2023.
-          </li>
-          <li>
-            <a href="https://react.dev/">ReactJS</a>, the ubiquitious front-end
-            framework.
-          </li>
-          <li>
-            <a href="https://www.sqlite.org/index.html">SQLLite</a>, the blazing
-            fast local database service that works in WASM.{" "}
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/SuperMemo">SM-2</a>, the
-            second version of the SuperMemo algorithm.{" "}
-          </li>
-        </ul>
-      </p>
+      <p>Thanks to the compilers of the following data sources.</p>
+      <ul>
+        <li>
+          <a href="https://github.com/dbravender/hanja-dictionary">
+            Bravender Hanja Dictionary
+          </a>
+          (retrieved Jan 2, 2023)
+        </li>
+        <li>
+          <a href="https://kaikki.org/dictionary/Korean/index.html">
+            Korean machine-readable dictionary
+          </a>
+          (retrieved October 17, 2023), based on Wiktionary data.
+        </li>
+        <li>
+          <a href="https://github.com/tatuylonen/wiktextract">Wiktextract</a>,
+          used to produce the above dump.
+        </li>
+        <li>
+          <a href="https://github.com/garfieldnate/kengdic">Kengdic</a>
+          (retrieved October 17), a large crowdsourced Korean dictionary
+          project. 2023.
+        </li>
+        <li>
+          <a href="https://react.dev/">ReactJS</a>, the ubiquitious front-end
+          framework.
+        </li>
+        <li>
+          <a href="https://www.sqlite.org/index.html">SQLLite</a>, the blazing
+          fast local database service that works in WASM.{" "}
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/SuperMemo">SM-2</a>, the second
+          version of the SuperMemo algorithm.{" "}
+        </li>
+      </ul>
     </div>
   );
 }
