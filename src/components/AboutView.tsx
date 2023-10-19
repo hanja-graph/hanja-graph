@@ -74,7 +74,7 @@ export default function About() {
           framework.
         </li>
         <li>
-          <a href="https://www.sqlite.org/index.html">SQLLite</a>, the blazing
+          <a href="https://www.sqlite.org/index.html">SQLite</a>, the blazing
           fast local database service that works in WASM.{" "}
         </li>
         <li>
