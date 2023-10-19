@@ -122,13 +122,17 @@ function assertCharacter(maybeCharacter: string) {
 
 export class Word {
   constructor(
-    readonly hanja: string,
+    readonly hanja: string | null,
     readonly hangul: string,
     readonly english: string
   ) {}
 
   public get hanjaHangul() {
-    return `${this.hanja}${this.hangul}`;
+    if (this.hanja !== null) {
+      return `${this.hanja}${this.hangul}`;
+    } else {
+      return `${this.hangul}`;
+    }
   }
 }
 
@@ -265,9 +269,10 @@ export const validateUserDataDump = (obj: any): UserDataDump => {
 export async function getWord(hanjahangul: string): Promise<Word | undefined> {
   const query = `SELECT hanja, hangul, english
     FROM word_list
-    WHERE hanja || hangul = '${hanjahangul}';`;
+    WHERE hanja || hangul = '${hanjahangul}' OR hanja IS NULL AND hangul = '${hanjahangul}';`;
   const queryResult = await queryDictionary(query);
   const results = unpackWordsFromQuery(queryResult);
+  console.log(results);
   return results[0];
 }
 
@@ -396,9 +401,13 @@ export async function getCardsForDeck(
   const res = await queryDictionary(query);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
-    const word = await getWord(`${elem[0]}${elem[1]}`);
-    if (word === undefined) {
-      throw new Error("Cound not fetch word.");
+    let hanjaHangul = `${elem[0]}${elem[1]}`;
+    if (elem[0] === null) {
+      hanjaHangul = elem[1];
+    }
+    const word = await getWord(hanjaHangul);
+    if (word === undefined || word === null) {
+      continue;
     }
     states.push({
       word: word,
@@ -469,13 +478,19 @@ export async function postReview(
 
 export async function addCardToDeck(
   deckName: string,
-  hanja: string,
+  hanja: string | null,
   hangul: string
 ): Promise<void> {
-  const query = `INSERT INTO tags 
+  let query = `INSERT INTO tags 
+    (hanja, hangul, name)
+    VALUES
+    (NULL, '${hangul}', '${deckName}') ON CONFLICT DO NOTHING;`;
+  if (hanja !== null) {
+    query = `INSERT INTO tags 
     (hanja, hangul, name)
     VALUES
     ('${hanja}', '${hangul}', '${deckName}') ON CONFLICT DO NOTHING;`;
+  }
   const res = await queryDictionary(query);
   if (res.error !== undefined) {
     throw new Error(res.error);

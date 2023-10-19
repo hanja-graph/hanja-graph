@@ -46,7 +46,10 @@ export default function About() {
         request against one of these files.
       </p>
       <h3>Thanks</h3>
-      <p>Thanks to the compilers of the following data sources.</p>
+      <p>
+        Thanks to the creators of the following algorithms, packages and data
+        sources.
+      </p>
       <ul>
         <li>
           <a href="https://github.com/dbravender/hanja-dictionary">
