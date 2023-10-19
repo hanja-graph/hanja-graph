@@ -144,21 +144,16 @@ export default class CardView extends React.Component<
   render() {
     const rows = [];
     let extra = "";
-    console.log("render");
-    console.log(this.state);
-    console.log(this.state.word);
     if (this.state.word) {
       for (let i = 0; i < this.state.word.hangul.length; i++) {
         if (i < this.state.siblings.length) {
           if (this.state.word.hanja == null) {
-            console.log("null hanja");
             rows.push(
               <button key={i} disabled={true}>
                 {this.state.word.hangul[i]}
               </button>
             );
           } else {
-            console.log("non-null hanja");
             rows.push(
               <Popup
                 trigger={<button>{this.state.word.hangul[i]}</button>}
