@@ -20,6 +20,12 @@ class SiblingViewState {
   constructor(readonly revealed: boolean = false) {}
 }
 
+const contentStyle = {
+  height: "70vh",
+  width: "100%",
+  overflow: "auto",
+};
+
 class SiblingView extends React.Component<SiblingViewProps, SiblingViewState> {
   constructor(props: SiblingViewProps) {
     super(props);
@@ -159,6 +165,8 @@ export default class CardView extends React.Component<
                 trigger={<button>{this.state.word.hangul[i]}</button>}
                 position="right top"
                 key={i}
+                modal
+                contentStyle={contentStyle}
               >
                 <div>
                   <SiblingsView
