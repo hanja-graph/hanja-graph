@@ -200,9 +200,16 @@ export interface TagsDump {
   name: Array<string>;
 }
 
+export interface ExtraWordsDump {
+  hanja: Array<string>;
+  hangul: Array<string>;
+  english: Array<string>;
+}
+
 export interface UserDataDump {
   reviews: ReviewDump;
   tags: TagsDump;
+  extra_words: ExtraWordsDump;
 }
 
 export const validateReviewDump = (obj: any): ReviewDump => {
@@ -487,6 +494,25 @@ export async function postReview(
   }
 }
 
+export async function addWord(
+  hanja: string | null,
+  hangul: string,
+  english: string
+): Promise<void> {
+  let hanjaString = "NULL";
+  if (hanja) {
+    hanjaString = `'${hanja}'`;
+  }
+  let query = `INSERT INTO word_list
+    (hanja, hangul, english, word_type)
+    VALUES
+    (${hanjaString}, '${hangul}', '${english}', 'custom') ON CONFLICT DO NOTHING;`;
+  const res = await queryDictionary(query);
+  if (res.error !== undefined) {
+    throw new Error(res.error);
+  }
+}
+
 export async function addCardToDeck(
   deckName: string,
   hanja: string | null,
@@ -544,6 +570,11 @@ export async function dumpUserData(): Promise<UserDataDump> {
       hangul: [],
       name: [],
     },
+    extra_words: {
+      hanja: [],
+      hangul: [],
+      english: [],
+    },
   };
   for (const elem of res.values) {
     dump.reviews.hanja.push(elem[0]);
@@ -562,12 +593,36 @@ export async function dumpUserData(): Promise<UserDataDump> {
     dump.tags.hangul.push(elem[1]);
     dump.tags.name.push(elem[2]);
   }
+  query = `SELECT hanja, hangul, english FROM word_list WHERE word_type = 'custom';`;
+  res = await queryDictionary(query);
+  for (const elem of res.values) {
+    dump.extra_words.hanja.push(elem[0]);
+    dump.extra_words.hangul.push(elem[1]);
+    dump.extra_words.english.push(elem[2]);
+  }
   return dump;
 }
 
 export async function importUserDataDump(dump: UserDataDump): Promise<void> {
   let i = 0;
   let query = "BEGIN;\n";
+  if (dump.extra_words.english.length > 0) {
+    query +=
+      "INSERT INTO word_list(hanja, hangul, english, word_type) VALUES\n";
+    while (i < dump.extra_words.hanja.length) {
+      query += `('${dump.extra_words.hanja}', '${dump.extra_words.hangul[i]}', '${dump.extra_words.english[i]}')`;
+      if (i + 1 < dump.reviews.hanja.length) {
+        query += ",\n";
+      } else {
+        query += "\n";
+      }
+      i++;
+    }
+    query += `
+  ON CONFLICT(hanja, hangul, english) DO NOTHING;
+    `;
+  }
+
   query +=
     "INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES\n";
   while (i < dump.reviews.hanja.length) {
