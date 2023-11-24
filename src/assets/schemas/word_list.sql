@@ -4,5 +4,6 @@ CREATE TABLE `word_list` (
   `english` text NOT NULL,
   `word_type` text NOT NULL,
   PRIMARY KEY (hanja, hangul, english),
-  CONSTRAINT CHK_HanjasHangulLength CHECK (LENGTH(hanja) = LENGTH(hangul) OR hanja IS NULL)
+  CONSTRAINT CHK_HanjasHangulLength CHECK (LENGTH(hanja) = LENGTH(hangul) OR hanja IS NULL),
+  CONSTRAINT UC_HanjaHangul UNIQUE (hanja,hangul)
 );

@@ -51,7 +51,10 @@ const initDBEngine = async function () {
 };
 
 const mountDictionaryDatabase = async (poolUtil, dbPath) => {
-  return new poolUtil.OpfsSAHPoolDb(dbPath);
+  if (!dictionaryDBSingleton) {
+    dictionaryDBSingleton = new poolUtil.OpfsSAHPoolDb(dbPath);
+  }
+  return dictionaryDBSingleton;
 };
 
 onmessage = async function (e) {
@@ -175,7 +178,6 @@ onmessage = async function (e) {
       await dbAccessHandle.flush();
       await dbAccessHandle.close();
       console.log(`Read ${writtenSize} bytes.`);
-      dictionaryDBSingleton = undefined;
       dictionaryDB = await mountDictionaryDatabase(
         dbEngine,
         "/" + DICTIONARY_DB_FILE_NAME

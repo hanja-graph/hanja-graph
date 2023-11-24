@@ -403,7 +403,7 @@ export async function getCardsForDeck(
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
     let hanjaHangul = `${elem[0]}${elem[1]}`;
-    if (elem[0] === null) {
+    if (elem[0] === "NULL") {
       hanjaHangul = elem[1];
     }
     const word = await getWord(hanjaHangul);
@@ -440,11 +440,10 @@ export async function getReviewBatch(
       OR reviews.easiness_factor IS NULL);
   `;
   const res = await queryDictionary(query);
-  console.log(res);
   let states: Array<CardReviewStateEntry> = [];
   for (const elem of res.values) {
     let hanjaHangul = `${elem[0]}${elem[1]}`;
-    if (elem[0] === null) {
+    if (elem[0] === "NULL") {
       hanjaHangul = elem[1];
     }
     const word = await getWord(hanjaHangul);
@@ -462,20 +461,25 @@ export async function getReviewBatch(
   };
 }
 
+const buildHanjaString = (hanja: string | null) => {
+  return hanja === null ? "'NULL'" : `'${hanja}'`;
+};
+
 export async function postReview(
   hanja: string | null,
   hangul: string,
   interval: number,
   easinessFactor: number
 ): Promise<void> {
-  const hanjaString = hanja == null ? "NULL" : `'${hanja}'`;
   const query = `INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES
-(${hanjaString}, '${hangul}', ${interval}, ${easinessFactor}, datetime('now'))
+(${buildHanjaString(
+    hanja
+  )}, '${hangul}', ${interval}, ${easinessFactor}, datetime('now'))
   ON CONFLICT(hanja, hangul) DO UPDATE SET
       last_reviewed = datetime('now'),
       interval = ${interval},
       easiness_factor = ${easinessFactor}
-  WHERE reviews.hanja = '${hanja}'
+  WHERE reviews.hanja = ${buildHanjaString(hanja)}
     AND reviews.hangul = '${hangul}';`;
   const res = await queryDictionary(query);
   if (res.error != undefined) {
@@ -496,7 +500,9 @@ export async function addCardToDeck(
     query = `INSERT INTO tags 
     (hanja, hangul, name)
     VALUES
-    ('${hanja}', '${hangul}', '${deckName}') ON CONFLICT DO NOTHING;`;
+    (${buildHanjaString(
+      hanja
+    )}, '${hangul}', '${deckName}') ON CONFLICT DO NOTHING;`;
   }
   const res = await queryDictionary(query);
   if (res.error !== undefined) {
@@ -509,12 +515,11 @@ export async function removeCardFromDeck(
   hanja: string | null,
   hangul: string
 ): Promise<void> {
-  const hanjaString = hanja == null ? "hanja IS NULL" : `hanja = '${hanja}'`;
   const query = `DELETE FROM tags 
-    WHERE ${hanjaString} AND hangul = '${hangul}' AND name = '${deckName}';`;
-  console.log(query);
+    WHERE ${buildHanjaString(
+      hanja
+    )} AND hangul = '${hangul}' AND name = '${deckName}';`;
   const res = await queryDictionary(query);
-  console.log(res);
   if (res.error !== undefined) {
     throw new Error(res.error);
   }
@@ -566,7 +571,11 @@ export async function importUserDataDump(dump: UserDataDump): Promise<void> {
   query +=
     "INSERT INTO reviews(hanja, hangul, interval, easiness_factor, last_reviewed) VALUES\n";
   while (i < dump.reviews.hanja.length) {
-    query += `('${dump.reviews.hanja[i]}', '${dump.reviews.hangul[i]}', ${dump.reviews.interval[i]}, ${dump.reviews.easinessFactor[i]}, '${dump.reviews.lastReviewed[i]}')`;
+    query += `(${buildHanjaString(dump.reviews.hanja[i])}, '${
+      dump.reviews.hangul[i]
+    }', ${dump.reviews.interval[i]}, ${dump.reviews.easinessFactor[i]}, '${
+      dump.reviews.lastReviewed[i]
+    }')`;
     if (i + 1 < dump.reviews.hanja.length) {
       query += ",\n";
     } else {
@@ -586,7 +595,9 @@ export async function importUserDataDump(dump: UserDataDump): Promise<void> {
   query += "DELETE FROM tags;\n";
   query += "INSERT INTO tags(hanja, hangul, name) VALUES\n";
   while (i < dump.tags.hanja.length) {
-    query += `('${dump.tags.hanja[i]}', '${dump.tags.hangul[i]}', '${dump.tags.name[i]}')`;
+    query += `(${buildHanjaString(dump.tags.hanja[i])}, '${
+      dump.tags.hangul[i]
+    }', '${dump.tags.name[i]}')`;
     if (i + 1 < dump.tags.hanja.length) {
       query += `,
         `;

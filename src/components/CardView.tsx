@@ -64,7 +64,6 @@ class SiblingsView extends React.Component<SiblingsViewProps, any> {
   render() {
     let rows = [];
     let i = 0;
-    console.log(this.state);
     for (const elem of this.props.siblings) {
       rows.push(<SiblingView key={i} word={elem} />);
       i++;
