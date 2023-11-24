@@ -31,7 +31,7 @@ let poolSingleton = undefined;
 
 const initDBEngine = async function () {
   if (!sqlite3Singleton) {
-    console.log("Attemtping initialization of sqlite3.");
+    console.log("Attempting initialization of sqlite3.");
     try {
       const newSqlite3Singleton = await sqlite3InitModule(CONFIG);
       const capi = newSqlite3Singleton.capi;
@@ -165,8 +165,6 @@ onmessage = async function (e) {
         DICTIONARY_DB_FILE_NAME
       );
       dictionaryDB.close();
-      const opfs = dbEngine.opfs;
-      await opfs.rmfr("/sql");
       const root = await navigator.storage.getDirectory();
       const dbFileHandle = await root.getFileHandle(DICTIONARY_DB_FILE_NAME, {
         create: true,

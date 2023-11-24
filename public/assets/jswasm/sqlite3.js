@@ -10869,6 +10869,9 @@ globalThis.sqlite3ApiBootstrap.initializers.push(function(sqlite3){
 globalThis.sqlite3ApiBootstrap.initializers.push(function(sqlite3){
 
 const installOpfsVfs = function callee(options){
+    return Promise.reject(
+      new Error("OPFS disabled by developer."
+    ));
   if(!globalThis.SharedArrayBuffer
     || !globalThis.Atomics){
     return Promise.reject(
